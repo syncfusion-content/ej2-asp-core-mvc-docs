@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Item Configuration in ##Platform_Name## Toolbar Component | Syncfusion
-description: Learn here all about Item Configuration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Item Configuration in ##Platform_Name## Toolbar | Syncfusion
+description: Configure Syncfusion ##Platform_Name## Toolbar items with built-in command types like Button, Separator, and Input, or use a custom item template.
 platform: ej2-asp-core-mvc
 control: Item Configuration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Item Configuration in ASP.NET MVC Toolbar control
+# Item Configuration in ##Platform_Name## Toolbar
 
 The Toolbar can be rendered by defining an array of items. Items can be constructed with the following built-in command types or item template.
 

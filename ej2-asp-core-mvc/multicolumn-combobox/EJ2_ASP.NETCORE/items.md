@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Items in ##Platform_Name## MultiColumn Combobox Control | Syncfusion
-description: Checkout and learn about Items in Syncfusion ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Items in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Learn how to configure items with text and value properties in the Syncfusion ##Platform_Name## MultiColumn ComboBox for dynamic representation.
 platform: ej2-asp-core-mvc
 control: Items
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Items in ##Platform_Name## MultiColumn Combobox control
+# Items in ##Platform_Name## MultiColumn ComboBox
 
 ## Setting text
 

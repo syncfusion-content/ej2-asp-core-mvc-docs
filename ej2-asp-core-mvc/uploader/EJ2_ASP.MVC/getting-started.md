@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Uploader Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## File Upload | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## File Upload control. Explore setup, async upload, configuration, and rendering examples.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Uploader Control
+# Getting Started with ##Platform_Name## File Upload
 
 This section briefly explains how to include the [ASP.NET MVC Uploader](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) control in an ASP.NET MVC application using Visual Studio.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Query Builder Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Query Builder control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to get started with ##Platform_Name## Query Builder, including installation, package configuration, data binding, and rule creation.
 platform: ej2-asp-core-mvc
 control: Query Builder
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Query Builder Control
+# Getting Started with ##Platform_Name## Query Builder
 
 This section briefly explains how to include the [ASP.NET Core Query Builder](https://www.syncfusion.com/aspnet-core-ui-controls/query-builder) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/), and [Visual Studio Code](https://code.visualstudio.com/).
 

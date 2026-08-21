@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Limits in ##Platform_Name## Range Slider Control | Syncfusion
-description: Learn here all about Limits in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Limits in ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to configure movement limits, handle locking, and drag interval restrictions in Syncfusion ##Platform_Name## Range Slider.
 platform: ej2-asp-core-mvc
 control: Limits
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Movement Limits and Drag Interval
+# Limits in ##Platform_Name## Range Slider
 
 The slider limits restrict the slider thumb between a particular range. This is used if higher or lower value affects the process or product where the slider is being used.
 

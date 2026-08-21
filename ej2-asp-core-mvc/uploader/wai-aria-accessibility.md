@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Wai Aria Accessibility in ##Platform_Name## Uploader Component
-description: Learn here all about Wai Aria Accessibility in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## File Upload | Syncfusion
+description: Review Syncfusion ##Platform_Name## File Upload accessibility compliance with WCAG 2.2 AA, Section 508, screen reader, RTL, and color contrast.
 platform: ej2-asp-core-mvc
 control: Wai Aria Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in Uploader Control
+# Accessibility in ##Platform_Name## File Upload
 
 The Uploader component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Timeline Control | Syncfusion
-description: Checkout and learn about Accessibility in Syncfusion ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Timeline | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## Timeline meets WCAG 2.2, Section 508, ARIA roles, and keyboard navigation accessibility standards.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ##Platform_Name## Timeline Control
+# Accessibility in ##Platform_Name## Timeline
 
 The Timeline control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

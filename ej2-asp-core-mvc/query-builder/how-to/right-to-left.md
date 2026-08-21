@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right To Left in ##Platform_Name## Query Builder Component
-description: Learn here all about Right To Left in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Right to Left in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to enable right-to-left (RTL) support in ##Platform_Name## Query Builder using the EnableRtl property.
 platform: ej2-asp-core-mvc
 control: Right To Left
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Right to left (RTL)
+# Right-to-Left (RTL) in ##Platform_Name## Query Builder
 
 RTL provides an option to switch the text direction and layout of the Query Builder component from right-to-left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL, set the `EnableRtl` to true.
 

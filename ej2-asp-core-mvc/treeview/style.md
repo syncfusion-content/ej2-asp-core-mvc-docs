@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styles and Appearance in ##Platform_Name## TreeView component | Syncfusion
-description: Checkout and learn here all about styles and appearance in Syncfusion ##Platform_Name# TreeView component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## TreeView | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## TreeView appearance using CSS that targets node height, full row, text, icons, and expand-collapse indicators.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Styles and Appearance in ##Platform_Name## TreeView Component
+# Style in ##Platform_Name## TreeView
 
 The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
 

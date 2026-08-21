@@ -1,10 +1,10 @@
 ---
 layout: post
-title: animation in ASP.NET Core Predefined Dialogs | Syncfusion
-description: Checkout and learn about animation in ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Animation in ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Learn how to configure animation in ##Platform_Name## Predefined Dialogs using animationSettings, including delay, duration, and animation effects.
 platform: ej2-asp-core-mvc
 control: Animation
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

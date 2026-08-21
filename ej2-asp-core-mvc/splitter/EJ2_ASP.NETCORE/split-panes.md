@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Split Panes in ##Platform_Name## Splitter Component
-description: Learn here all about Split Panes in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Split Panes in ##Platform_Name## Splitter | Syncfusion
+description: Learn how to create and manage split panes in Syncfusion ##Platform_Name## Splitter, including layouts, multiple panes, nested splitters, and pane operations.
 platform: ej2-asp-core-mvc
 control: Split Panes
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Split panes
+# Split Panes in ##Platform_Name## Splitter
 
 This section explain about split panes behaviours.
 
@@ -255,7 +255,7 @@ Output be like the below.
 
 ## See Also
 
-* [Resizable split panes](./resizing/)
-* [Collapsible panes](./expand-and-collapse/)
-* [Define size to a panes](./pane-sizing/ )
-* [Specify content to a panes](./pane-content/)
+* [Resizable split panes](./resizing)
+* [Collapsible panes](./expand-and-collapse)
+* [Define size to a panes](./pane-sizing)
+* [Specify content to a panes](./pane-content)

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: customization in ASP.NET Core Predefined Dialogs | Syncfusion
-description: Checkout and learn about customization in ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Customization in ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Learn how to customize ##Platform_Name## Predefined Dialogs, including action buttons, close behavior, and custom dialog content.
 platform: ej2-asp-core-mvc
 control: Customization
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -59,10 +59,10 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 
 When rendering the predefined dialogs through utility methods, You can close the dialog using the following ways. The default values of `closeOnEscape` and `showCloseIcon` is `false`.
 
-* By pressing the escape key if the [closeOnEscape](https://ej2.syncfusion.com/documentation/api/dialog/#closeonescape) property is enabled.
-* By clicking the close button if the [showCloseIcon](https://ej2.syncfusion.com/documentation/api/dialog/#showcloseicon) property is enabled.
+* By pressing the escape key if the [closeOnEscape](https://ej2.syncfusion.com/documentation/api/dialog/index-default#closeonescape) property is enabled.
+* By clicking the close button if the [showCloseIcon](https://ej2.syncfusion.com/documentation/api/dialog/index-default#showcloseicon) property is enabled.
 
-You can also manually close the Dialogs by creating an instance to the dialog and call the [hide](https://ej2.syncfusion.com/documentation/api/dialog/#hide) method.
+You can also manually close the Dialogs by creating an instance to the dialog and call the [hide](https://ej2.syncfusion.com/documentation/api/dialog/index-default#hide) method.
 
 Use the following code for **alert**, **confirm** and **prompt** to demonstrates the different ways of hiding the utility dialog.
 

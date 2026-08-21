@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Alignment in ##Platform_Name## Timeline Control | Syncfusion
-description: Checkout and learn about Alignment in Syncfusion ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Alignment in ##Platform_Name## Timeline | Syncfusion
+description: Display Syncfusion ##Platform_Name## Timeline content in `Before`, `After`, `Alternate`, or `AlternateReverse` alignment using the `align` property.
 platform: ej2-asp-core-mvc
 control: Alignment
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Alignment in ##Platform_Name## Timeline control
+# Alignment in ##Platform_Name## Timeline
 
 You can display the Timeline content `Before`, `After`, `Alternate` and `AlternateReverse` by using the [align](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Align) property. The oppositeContent will be displayed parallel to the content when configured.
 

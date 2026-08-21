@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Query Builder Component
-description: Learn here all about Template in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to customize the Query Builder user interface in ##Platform_Name## using templates such as the header template.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Templates
+# Templates in ##Platform_Name## Query Builder
 
 ## Header Template
 

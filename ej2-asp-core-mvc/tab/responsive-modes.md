@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive Modes in ##Platform_Name## Tab Component
-description: Learn here all about Responsive Modes in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: Responsive Modes in ##Platform_Name## Tabs | Syncfusion
+description: Render the Syncfusion ##Platform_Name## Tabs in scrollable or popup overflow modes when items exceed the viewable area width.
 platform: ej2-asp-core-mvc
 control: Responsive Modes
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Responsive Modes
+# Responsive Modes in ##Platform_Name## Tabs
 
 The following section explains about rendering Tab when its width exceeds the viewable area or particularly in a given width. The available modes are as follows:
 
@@ -93,5 +93,5 @@ The Popup is the another type of `overflowMode` in which the Tab container holds
 
 ## See Also
 
-* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection/)
-* [Collapsible Tab](./how-to/create-collapsible-tabs/)
+* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection)
+* [Collapsible Tab](./how-to/create-collapsible-tabs)
