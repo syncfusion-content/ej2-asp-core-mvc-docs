@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right To Left in ##Platform_Name## Radio Button Component
-description: Learn here all about Right To Left in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
+title: Right-to-Left in ##Platform_Name## Radio Button | Syncfusion
+description: Learn how to enable right-to-left (RTL) support in ##Platform_Name## Radio Button using the enableRtl property.
 platform: ej2-asp-core-mvc
 control: Right To Left
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Right-To-Left
+# Right-to-Left Support in ##Platform_Name## Radio Button
 
 RadioButton component has RTL support. This can be achieved by setting [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.RadioButton.html#Syncfusion_EJ2_Buttons_RadioButton_EnableRtl) as `true`.
 

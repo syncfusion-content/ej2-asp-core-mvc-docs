@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show Slider From Hidden State in ##Platform_Name## Range Slider Control
-description: Learn here all about Show Slider From Hidden State in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Show Range Slider from a Hidden State in ##Platform_Name## | Syncfusion
+description: Learn how to render a ##Platform_Name## Range Slider in a hidden state and display it dynamically using the refresh method.
 platform: ej2-asp-core-mvc
 control: Show Slider From Hidden State
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Show Slider from Hidden State
+# Show Range Slider from a Hidden State
 
 This section demonstrates how-to render the Slider control in hidden state and make it visible in button click. We can initialize Slider in hidden state by setting display as none to it.
 

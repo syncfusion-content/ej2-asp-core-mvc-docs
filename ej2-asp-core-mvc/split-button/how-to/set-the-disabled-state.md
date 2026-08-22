@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set The Disabled State in ##Platform_Name## Split Button Component
-description: Learn here all about Set The Disabled State in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
+title: Set the Disabled State in ##Platform_Name## Split Button | Syncfusion
+description: Learn how to disable the Syncfusion ##Platform_Name## Split Button by using the disabled property to prevent user interaction when required.
 platform: ej2-asp-core-mvc
 control: Set The Disabled State
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set the disabled state
+# Set the Disabled State in ##Platform_Name## Split Button
 
 SplitButton component can be enabled or disabled by disabled property. To disable SplitButton component, set the [`disabled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_Disabled) property as true.
 

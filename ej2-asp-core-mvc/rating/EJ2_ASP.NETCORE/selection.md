@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Rating Control | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Selection in ##Platform_Name## Rating | Syncfusion
+description: Learn how to configure rating selection behavior in Syncfusion ##Platform_Name## Rating, including minimum values, single selection, and reset options.
 platform: ej2-asp-core-mvc
 control: Selection
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Selection in ASP.NET Core Rating Control
+# Selection in ##Platform_Name## Rating
 
 The ASP.NET Core Rating control allows users to rate something using a visual scale, and the selection state can be changed by the user clicking or tapping on the stars in the rating scale or through code. The Rating control has a minimum value and a reset button, and provides customization options for the selected rating value and selection behavior.
 

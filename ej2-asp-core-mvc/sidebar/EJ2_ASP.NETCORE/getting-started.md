@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Sidebar Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to get started with Syncfusion ##Platform_Name## Sidebar. Explore setup, positioning, backdrop support, animations, gestures, and customization.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Sidebar Control
+# Getting Started with ##Platform_Name## Sidebar
 
 This section briefly explains how to include the [ASP.NET Core Sidebar](https://www.syncfusion.com/aspnet-core-ui-controls/sidebar) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

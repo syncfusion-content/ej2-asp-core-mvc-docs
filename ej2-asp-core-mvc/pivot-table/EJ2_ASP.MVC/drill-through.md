@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drill Through in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table opens a raw-data grid in a new window on double-click via the AllowDrillThrough property and DrillThrough module.
+title: Drill through in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table shows the raw, unaggregated records behind any aggregated value cell on double-click through the drill-through grid.
 platform: ej2-asp-core-mvc
 control: Drill Through
 publishingplatform: ##Platform_Name##
@@ -10,11 +10,9 @@ documentation: ug
 
 <!-- markdownlint-disable MD012 -->
 
-# Drill Through in ASP.NET MVC Pivot Table
+# Drill through in ASP.NET MVC Pivot Table
 
 The drill-through feature in the Pivot Table component allows users to view the raw, unaggregated data behind any aggregated cell in the Pivot Table. To enable this feature, set the [`AllowDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDrillThrough) property to **true**. By double-clicking an aggregated cell, users can view its detailed raw data in a data grid displayed in a new window. The new window shows the row header, column header, and measure name of the selected cell at the top. Additionally, users can include or exclude fields available in the data grid using the column chooser option.
-
-To use the drill-through feature, inject the `DrillThrough` module in the Pivot Table.
 
 Below is an example of enabling drill-through in a Pivot Table:
 
@@ -86,7 +84,7 @@ Below is an example of enabling drill-through with a pivot chart:
 
 > This property is applicable only for the OLAP data source.
 
-The [`MaxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MaxRowsInDrillThrough) property specifies the maximum number of rows to be returned during a drill-through operation. By default, this property is set to **"10000"**, meaning that if it is not explicitly defined, up to 10,000 rows will be returned.
+The [`MaxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MaxRowsInDrillThrough) property specifies the maximum number of rows to be returned during a drill-through operation. By default, this property is set to **10000**, meaning that if it is not explicitly defined, up to 10,000 rows will be returned.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -128,7 +126,7 @@ The [`DrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 - `rawData`: Contains the raw, unaggregated data for the clicked cell.
 - `rowHeaders`: Contains the row header of the clicked cell.
 - `value`: Contains the value of the clicked cell.
-- `cancel`: It is a boolean property and by setting this to **true**, dialog won’t be created.
+- `cancel`: A Boolean property. When set to `true`, the drill-through dialog is not created.
 
 Below is an example of using the [`DrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DrillThrough) event in a Pivot Table:
 
@@ -160,7 +158,7 @@ Below is an example of using the [`DrillThrough`](https://help.syncfusion.com/cr
 The event [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) triggers after a double-click on a value cell in the Pivot Table and fires right after the data grid is initialized in the drill-through popup. This event allows users to interact with the data grid, which displays the raw data behind the aggregated value cell. Users can perform operations such as `sorting`, `grouping`, and `filtering` within the data grid according to their specific needs. The event includes the following parameters:
 
 * `gridObj` - It holds the data grid instance to be rendered inside the drill-through popup.
-* `cellInfo` - Gives details about the clicked cell, including rawData (unaggregated data), rowHeaders, columnHeaders, and value.
+* `cellInfo` - Gives details about the clicked cell, including `rawData` (unaggregated data), `rowHeaders`, `columnHeaders`, and `value`.
 
 The following example demonstrates how to enable `sorting`, `filtering`, and `grouping` in the data grid displayed within the drill-through popup. This is achieved by configuring the `gridObj` in the [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event.
 

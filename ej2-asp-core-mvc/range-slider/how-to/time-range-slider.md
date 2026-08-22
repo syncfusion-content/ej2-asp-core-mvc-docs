@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Time Range Slider in ##Platform_Name## Range Slider Control
-description: Learn here all about Time Range Slider in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Time Formatting in ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to display and format time values in ##Platform_Name## Range Slider using tick and tooltip customization.
 platform: ej2-asp-core-mvc
 control: Time Range Slider
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Time Range Slider
+# Time Formatting in Range Slider
 
 The time formatting can be achieved same as the date formatting using [`renderingTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_RenderingTicks) and [`change`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_Change) events. The process of time formatting is explained in the below sample.
 
