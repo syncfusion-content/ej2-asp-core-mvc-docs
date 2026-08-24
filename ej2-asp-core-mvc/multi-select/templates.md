@@ -233,7 +233,7 @@ In the following sample, when the data fetch request fails, the MultiSelect disp
 
 The Summary Tag Template feature displays selected items as a formatted summary text in the input field instead of listing all selections individually. This is especially useful in CheckBox mode when working with large datasets and using the SelectAll option, as it significantly improves performance.
 
-The [summaryTagCount](../api/multi-select/#summarytagcount) property sets a threshold—when the number of selected items exceeds this threshold, the [summaryTagTemplate](../api/multi-select/#summarytagtemplate) displays a custom formatted text instead of individual items.
+The [summaryTagCount](../api/multi-select#summarytagcount) property sets a threshold—when the number of selected items exceeds this threshold, the [summaryTagTemplate](../api/multi-select#summarytagtemplate) displays a custom formatted text instead of individual items.
 
 ### Template Placeholder Properties
 
