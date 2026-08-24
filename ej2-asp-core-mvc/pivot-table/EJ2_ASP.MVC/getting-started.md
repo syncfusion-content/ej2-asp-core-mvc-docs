@@ -107,7 +107,7 @@ The output is shown below.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PivotTable/ASP.NET%20MVC%20Razor%20Examples).
 
-## See also
+## See Also
 
 * [Data Binding](./data-binding)
 * [Field List](./field-list)

@@ -338,7 +338,7 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endtabs %}
 {% endif %}
 
-## See also
+## See Also
 
 * [Drill through](./drill-through)
 * [Row and column](./row-and-column)
