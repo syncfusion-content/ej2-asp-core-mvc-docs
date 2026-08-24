@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table supports WAI-ARIA roles, keyboard interaction, and screen reader support that align with WCAG 2.2 and Section 508 guidelines.
+description: Learn how the ##Platform_Name## Pivot Table supports WAI-ARIA, keyboard navigation, screen readers, WCAG 2.2, and Section 508.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
