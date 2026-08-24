@@ -411,6 +411,6 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endtabs %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Configure data grid-options on editing](./how-to/configure-data-grid-options-on-editing-mode)
