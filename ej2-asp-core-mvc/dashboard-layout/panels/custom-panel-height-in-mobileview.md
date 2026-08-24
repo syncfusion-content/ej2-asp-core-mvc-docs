@@ -57,3 +57,5 @@ The following sample demonstrates setting custom heights for panels in mobile vi
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Custom Panel Height in Mobile View](./../images/custom-panel-height-in-mobileview.png)
