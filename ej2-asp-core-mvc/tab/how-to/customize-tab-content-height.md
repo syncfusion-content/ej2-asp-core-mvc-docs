@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize Tab content height in ##Platform_Name## | Syncfusion
+title: How to customize Tab content height in ##Platform_Name## Tabs | Syncfusion
 description: Set the Syncfusion ##Platform_Name## Tab content height using the `heightAdjustMode` property with None, Auto, Content, or Fill options.
 platform: ej2-asp-core-mvc
 control: Tabs
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to customize Tab content height in ##Platform_Name##
+# How to customize Tab content height in ##Platform_Name## Tabs
 
 You can change the Tab content height by using the [heightAdjustMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_HeightAdjustMode) property. By default, the Tab content `heightAdjustMode` property is set to [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.HeightStyles.html#Syncfusion_EJ2_Navigations_HeightStyles_Content) value.
 

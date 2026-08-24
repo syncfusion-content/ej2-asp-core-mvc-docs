@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to load Tab items dynamically in ##Platform_Name##
+# How to load Tab items dynamically in ##Platform_Name## Tabs
 
 Tabs can be added dynamically by passing an array of items and an index value to the `addTab` method.
 

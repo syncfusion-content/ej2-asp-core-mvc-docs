@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to render Tab items using template in ##Platform_Name##
+# How to render Tab items using template in ##Platform_Name## Tabs
 
 You can bind any data in Tab items, by simply using the content template property in ASP.NET Tab.
 

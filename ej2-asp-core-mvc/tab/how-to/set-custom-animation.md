@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to set custom animation in ##Platform_Name##
+# How to set custom animation in ##Platform_Name## Tabs
 
 Tab supports custom animations for both previous and next Tab actions from the animation options provided by the `Animation` library. The animation property also allows you to set easing, duration, and various other effects.
 

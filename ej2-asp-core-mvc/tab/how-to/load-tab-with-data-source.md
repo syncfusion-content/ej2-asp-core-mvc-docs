@@ -3,11 +3,12 @@ layout: post
 title: How to load tab with data source in ##Platform_Name## Tabs | Syncfusion
 description: Bind Syncfusion ##Platform_Name## Tabs items from a remote data source by mapping the `header` and `content` fields using `DataManager` and OData service.
 control: Tabs
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to load Tab with data source in ##Platform_Name##
+# How to load Tab with data source in ##Platform_Name## Tabs
 
 {% if page.publishingplatform == "aspnet-core" %}
 

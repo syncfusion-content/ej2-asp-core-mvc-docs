@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize selected Tab styles in ##Platform_Name## | Syncfusion
+title: How to customize selected Tab styles in ##Platform_Name## Tabs | Syncfusion
 description: Customize the selected Tab style in Syncfusion ##Platform_Name## Tab by overriding the header and active Tab CSS classes with custom styles.
 platform: ej2-asp-core-mvc
 control: Tabs
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to customize selected Tab styles in ##Platform_Name##
+# How to customize selected Tab styles in ##Platform_Name## Tabs
 
 You can customize the Tab style by overriding its header and active Tab CSS classes. Define an HTML string to add animation and customize the Tab header and pass it to [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabHeader.html#Syncfusion_EJ2_Navigations_TabHeader_Text) property. Now you can override the style using custom CSS classes added to the Tab elements.
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to enable Tab key navigation in ##Platform_Name##
+# How to enable Tab key navigation in ##Platform_Name## Tabs
 
 The `TabIndex` property of a Tab item is used to enable Tab key navigation for that particular item. When a positive value is assigned to the `TabIndex` property, it allows the user to switch focus to the next or previous Tab item using the Tab or Shift+Tab keys. By default, the user can only switch between Tab items using the arrow keys.
 

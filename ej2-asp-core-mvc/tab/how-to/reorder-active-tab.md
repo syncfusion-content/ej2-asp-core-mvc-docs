@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to reorder active Tab in ##Platform_Name##
+# How to reorder active Tab in ##Platform_Name## Tabs
 
 You can able to prevent the changing of the active Tab item on resizing the browser when overflow mode is popup by using the [reorderActiveTab](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_ReorderActiveTab) property. By default, the active Tab is reordered when you select a Tab item from the popup. If You set `reorderActiveTab` to **false**, the active Tab item from the popup will not be reordered and the active item is highlighted inside the popup. The following code example demonstrates how to prevent the active Tab from being reordered within the popup.
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to create wizard using Tab in ##Platform_Name##
+# How to create wizard using Tab in ##Platform_Name## Tabs
 
 {% if page.publishingplatform == "aspnet-core" %}
 

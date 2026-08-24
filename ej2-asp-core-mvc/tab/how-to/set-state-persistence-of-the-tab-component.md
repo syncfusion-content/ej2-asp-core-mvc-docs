@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to set state persistence in ##Platform_Name##
+# How to set state persistence in ##Platform_Name## Tabs
 
 State persistence allows the Tab to retain the current modal value in the browser cookies for state maintenance. You enable state persistence through the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_EnablePersistence) property which is set to **false** by default. When it is set to **true**, some of the Tabs control model values will be retained even after refreshing the page.
 
