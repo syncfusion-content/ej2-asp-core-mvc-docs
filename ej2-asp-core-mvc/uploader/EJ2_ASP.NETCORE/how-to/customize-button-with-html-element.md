@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize the browse button in Uploader | Syncfusion
+title: How to customize browse button in ASP.NET Core Uploader | Syncfusion
 description: Customize the Syncfusion ASP.NET Core File Upload browse button with an HTML element using the buttons property to render user-defined browse markup.
 platform: ej2-asp-core-mvc
 control: Customize Button With Html Element

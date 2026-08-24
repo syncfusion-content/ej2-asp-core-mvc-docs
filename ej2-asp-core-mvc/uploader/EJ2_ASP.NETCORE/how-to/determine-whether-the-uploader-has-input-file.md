@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to determine whether the File Upload has an input file
+# How to check if ASP.NET Core File Upload has an input file
 
 You can validate whether the file input has a value by setting the **required** attribute on the uploader input element.
 
