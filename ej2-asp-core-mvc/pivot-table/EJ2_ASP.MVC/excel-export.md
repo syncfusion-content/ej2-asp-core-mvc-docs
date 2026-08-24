@@ -1,23 +1,22 @@
 ---
 layout: post
-title: Excel Export in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table exports pivot data to Excel (.xlsx) and CSV files via the ExcelExport and CSVExport methods.
+title: Excel export in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table exports pivot data to Excel and CSV using the ExcelExport module, with options to customize file and cell appearance.
 platform: ej2-asp-core-mvc
 control: Excel Export
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Excel export in ASP.NET MVC Pivot Table
 
-# Excel Export in ASP.NET MVC Pivot Table
-
-The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, inject the `ExcelExport` module into the Pivot Table and set the  [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property of the [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**.
+The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, Set the  [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property of the [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**.
 
 ## Export data to an Excel file
 
 Pivot Table data can be exported to an Excel file (.xlsx format) while preserving all formatting and structure. This format is compatible with Microsoft Excel and other spreadsheet applications. To export the data to Excel, invoke the `excelExport` method.
 
-> The Pivot Table component can be exported to Excel format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
+> The Pivot Table component can be exported to Excel format using options available in the toolbar. For more details, see the [Toolbar](./tool-bar) documentation.
 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -49,7 +48,7 @@ Pivot Table data can be exported to an Excel file (.xlsx format) while preservin
 
 Pivot Table data can be exported to a plain text CSV file. The CSV format is lightweight and compatible with most spreadsheet and data analysis applications. To export the data to CSV, invoke the `csvExport` method.
 
-> The Pivot Table component can be exported to CSV format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
+> The Pivot Table component can be exported to CSV format using options available in the toolbar. For more details, see the [Toolbar](./tool-bar) documentation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -526,6 +525,8 @@ By default, the Pivot Table exports all data records, which can result in larger
 
 ## Events
 
+The Pivot Table provides the following events to monitor and customize the Excel export process. Use them to alter cell content, style, or capture export completion.
+
 ### ExcelQueryCellInfo
 
 The [`ExcelQueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ExcelQueryCellInfo) event is triggered during the creation of each row and value cell while exporting data to Excel. This event offers options to change the content and style of individual cells in the exported Excel document, improving the flexibility and appearance of exported reports.
@@ -535,7 +536,7 @@ The event provides the following arguments:
 * `value` – Represents the value of the current cell in the exported Excel sheet.
 * `column` – Provides details about the column to which the current cell belongs.
 * `data` – Contains all data for the row that includes the current cell.
-* `style`– Defines the style settings (such as font, color, borders) applied to the current cell.
+* `style` – Defines the style settings (such as font, color, borders) applied to the current cell.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
