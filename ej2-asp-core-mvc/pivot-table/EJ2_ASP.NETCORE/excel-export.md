@@ -1,23 +1,22 @@
 ---
 layout: post
-title: Excel Export in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table exports pivot data to Excel (.xlsx) and CSV files via the excelExport and csvExport methods.
+title: Excel export in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table exports pivot data to Excel and CSV using the ExcelExport module, with options to customize file and cell appearance.
 platform: ej2-asp-core-mvc
 control: Excel Export
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Excel export in ASP.NET Core Pivot Table
 
-# Excel Export in ASP.NET Core Pivot Table
-
-The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, inject the `ExcelExport` module into the Pivot Table and set the [`allowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property of the [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**.
+The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, Set the [`allowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property of the [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**.
 
 ## Export data to an Excel file
 
 Pivot Table data can be exported to an Excel file (.xlsx format) while preserving all formatting and structure. This format is compatible with Microsoft Excel and other spreadsheet applications. To export the data to Excel, invoke the `excelExport` method.
 
-> The Pivot Table component can be exported to Excel format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
+> The Pivot Table component can be exported to Excel format using options available in the toolbar. For more details, see the [Toolbar](./tool-bar) documentation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +47,7 @@ Pivot Table data can be exported to an Excel file (.xlsx format) while preservin
 
 Pivot Table data can be exported to a plain text CSV file. The CSV format is lightweight and compatible with most spreadsheet and data analysis applications. To export the data to CSV, invoke the `csvExport` method.
 
-> The Pivot Table component can be exported to CSV format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
+> The Pivot Table component can be exported to CSV format using options available in the toolbar. For more details, see the [Toolbar](./tool-bar) documentation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -522,6 +521,8 @@ By default, the Pivot Table exports all data records, which can result in larger
 {% endif %}
 
 ## Events
+
+The Pivot Table provides the following events to monitor and customize the Excel export process. Use them to alter cell content, style, or capture export completion.
 
 ### ExcelQueryCellInfo
 

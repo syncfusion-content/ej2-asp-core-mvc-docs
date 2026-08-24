@@ -1,17 +1,16 @@
 ---
 layout: post
-title: EJ1 API Migration in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to migrate Pivot Grid API usage from Essential JS 1 to the ASP.NET MVC Pivot Table by mapping data source, rows, columns, and values.
+title: EJ1 API migration in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table maps properties, methods, and events from Essential JS 1 PivotGrid to the EJ2 Pivot Table component.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# EJ1 API migration in ASP.NET MVC Pivot Table
 
-# Migration from Essential JS 1 to Pivot Table
-
-This article describes the API migration process of Pivot Grid component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of the Pivot Table component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Data Binding
 
@@ -103,7 +102,7 @@ This article describes the API migration process of Pivot Grid component from Es
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-|Show/hide drill though feature|**property:** enableDrillThrough<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").EnableDrillThrough(true)`|**property:** allowDrillThrough<br/><br/>`@Html.EJS().PivotView("PivotView").AllowDrillThrough(true).Render()`|
+|Show/hide drill through feature|**property:** enableDrillThrough<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").EnableDrillThrough(true)`|**property:** allowDrillThrough<br/><br/>`@Html.EJS().PivotView("PivotView").AllowDrillThrough(true).Render()`|
 |Event Triggers when cell clicked in pivot grid control|**event:** drillThrough<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.DrillThrough("onDrillThrough"))`<br/><br/>`function onDrillThrough() { }`|**event:** drillThrough<br/><br/>`@Html.EJS().PivotView("PivotView").DrillThrough("onDrillThrough").Render()`<br/><br/>`function onDrillThrough() { }`|
 
 ## Cell Editing
@@ -125,10 +124,10 @@ This article describes the API migration process of Pivot Grid component from Es
 |Show/hide hyperlink to summary cells|**property:** enableSummaryCellHyperlink<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").HyperlinkSettings(hypLink => hypLink.EnableSummaryCellHyperlink(true))`|**property:** showSummaryCellHyperlink<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkSettings( new PivotViewHyperLinkSettings { showSummaryCellHyperlink =true }).Render()`|
 |Show/hide hyperlink using specific conditions|Not Applicable|**property:** conditionalSettings<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkSettings(hyperlinksettings => hyperlinksettings..ConditionalSettings( format =>{format.Conditions(Condition.Between).Measure("Units Sold").Value1(150).Value2(200).Add();})).Render()`|
 |Show/hide hyperlink for row or column|Not Applicable|**property:** headerText<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkSettings( new PivotViewHyperLinkSettings { headerText ='FY 2015.Q1.Units Sold' }).Render()`|
-|Event Triggers when row headers clicked in pivot grid control|**event:** rowHeaderHyperlinkClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.RowHeaderHyperlinkClick("onClick"))`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkCellClick("onClick").Render()`<br/><br/>`function onClick() { }`|
-|Event Triggers when column headers clicked in pivot grid control|**event:** columnHeaderHyperlinkClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.ColumnHeaderHyperlinkClick("onClick"))`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkCellClick("onClick").Render()`<br/><br/>`function onClick() { }`|
-|Event Triggers when value cells clicked in pivot grid control|**event:** valueCellHyperlinkClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.ValueCellHyperlinkClick("onClick"))`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkCellClick("onClick").Render()`<br/><br/>`function onClick() { }`|
-|Event Triggers when summary cells clicked in pivot grid control|**event:** summaryCellHyperlinkClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.SummaryCellHyperlinkClick("onClick"))`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkCellClick("onClick").Render()`<br/><br/>`function onClick() { }`|
+|Event Triggers when row headers clicked in pivot table|**event:** rowHeaderHyperlinkClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.RowHeaderHyperlinkClick("onClick"))`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkCellClick("onClick").Render()`<br/><br/>`function onClick() { }`|
+|Event Triggers when column headers clicked in pivot table|**event:** columnHeaderHyperlinkClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.ColumnHeaderHyperlinkClick("onClick"))`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkCellClick("onClick").Render()`<br/><br/>`function onClick() { }`|
+|Event Triggers when value cells clicked in pivot table|**event:** valueCellHyperlinkClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.ValueCellHyperlinkClick("onClick"))`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkCellClick("onClick").Render()`<br/><br/>`function onClick() { }`|
+|Event Triggers when summary cells clicked in pivot table|**event:** summaryCellHyperlinkClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.SummaryCellHyperlinkClick("onClick"))`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`@Html.EJS().PivotView("PivotView").HyperlinkCellClick("onClick").Render()`<br/><br/>`function onClick() { }`|
 
 ## Defer Layout Update
 
@@ -182,16 +181,16 @@ This article describes the API migration process of Pivot Grid component from Es
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-|Set width for pivot grid|Not Applicable|**property:** width<br/><br/>`@Html.EJS().PivotView("PivotView").Width(800).Render()`|
-|Set height for pivot grid|Not Applicable|**property:** height<br/><br/>`@Html.EJS().PivotView("PivotView").Height(400).Render()`|
-|Set row height for pivot grid|Not Applicable|**property:** rowHeight<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { RowHeight = 60 }).Render()`|
-|Set column width for pivot grid|Not Applicable|**property:** columnWidth<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { ColumnWidth = 120 }).Render()`|
-|Drag and drop column headers in pivot grid|Not Applicable|**property:** allowReordering<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { AllowReordering = true }).Render()`|
-|Resizing the column headers in pivot grid|**property:** enableColumnResizing<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").EnableColumnResizing(true)`|**property:** allowResizing<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { AllowResizing = true }).Render()`|
-|Wrap the cell content in pivot grid|Not Applicable|**property:** allowTextWrap<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { AllowTextWrap = true }).Render()`|
-|Display cell border in pivot grid|Not Applicable|**property:** gridLines<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { GridLines = "Vertical" }).Render()`|
+|Set width for pivot table|Not Applicable|**property:** width<br/><br/>`@Html.EJS().PivotView("PivotView").Width(800).Render()`|
+|Set height for pivot table|Not Applicable|**property:** height<br/><br/>`@Html.EJS().PivotView("PivotView").Height(400).Render()`|
+|Set row height for pivot table|Not Applicable|**property:** rowHeight<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { RowHeight = 60 }).Render()`|
+|Set column width for pivot table|Not Applicable|**property:** columnWidth<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { ColumnWidth = 120 }).Render()`|
+|Drag and drop column headers in pivot table|Not Applicable|**property:** allowReordering<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { AllowReordering = true }).Render()`|
+|Resizing the column headers in pivot table|**property:** enableColumnResizing<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").EnableColumnResizing(true)`|**property:** allowResizing<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { AllowResizing = true }).Render()`|
+|Wrap the cell content in pivot table|Not Applicable|**property:** allowTextWrap<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { AllowTextWrap = true }).Render()`|
+|Display cell border in pivot table|Not Applicable|**property:** gridLines<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { GridLines = "Vertical" }).Render()`|
 |Cell selection|**property:** enableCellSelection<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").EnableCellSelection(true)`|**property:** allowSelection<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { AllowSelection = true }).Load("onLoad").Render()`<br/><br/>`function onLoad()  {`<br/>`pivotObj = document.getElementById('PivotView').ej2_instances[0];`<br/>`pivotObj.gridSettings.selectionSettings = {`<br/>`cellSelectionMode: 'Box',`<br/>`type: 'Multiple',`<br/> `mode: 'Cell' };`<br/>`}`|
-|Display overflow cell content in pivot grid|Not Applicable|**property:** clipMode<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { ClipMode = "Clip" }).Render()`|
+|Display overflow cell content in pivot table|Not Applicable|**property:** clipMode<br/><br/>`@Html.EJS().PivotView("PivotView").GridSettings(new PivotViewGridSettings { ClipMode = "Clip" }).Render()`|
 |Cell Editing|**property:** enableCellEditing<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").EnableCellEditing(true)`|Not Applicable|
 |Cell double click|**property:** enableCellDoubleClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").EnableCellDoubleClick(true)`|Not Applicable|
 |Cell context|**property:** enableCellContext<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").EnableCellContext(true)`|Not Applicable|
@@ -215,4 +214,4 @@ This article describes the API migration process of Pivot Grid component from Es
 |Event Triggers after the control populated with data source|**event:** renderSuccess<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.RenderSuccess("onRenderSuccess"))`<br/><br/>`function onRenderSuccess() { }`|**event:** dataBound<br/><br/>`@Html.EJS().PivotView("PivotView").DataBound("onDataBound").Render()`<br/><br/>`function onDataBound() { }`|
 |Event Triggers after the control created|Not Applicable|**event:** created<br/><br/>`@Html.EJS().PivotView("PivotView").Created("onCreated").Render()`<br/><br/>`function onCreated() { }`|
 |Event Triggers when destroy the control|Not Applicable|**event:** destroyed<br/><br/>`@Html.EJS().PivotView("PivotView").Destroyed("onDestroyed").Render()`<br/><br/>`function onDestroyed() { }`|
-|Event Triggers the cell clicked in pivot grid control|**event:** cellClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.CellClick("onCellClick"))`<br/><br/>`function onCellClick() { }`|**event:** cellClick<br/><br/>`@Html.EJS().PivotView("PivotView").CellClick("onCellClick").Render()`<br/><br/>`function onCellClick() { }`|
+|Event Triggers the cell clicked in pivot table|**event:** cellClick<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid1").ClientSideEvents(clientSideEvents => clientSideEvents.CellClick("onCellClick"))`<br/><br/>`function onCellClick() { }`|**event:** cellClick<br/><br/>`@Html.EJS().PivotView("PivotView").CellClick("onCellClick").Render()`<br/><br/>`function onCellClick() { }`|

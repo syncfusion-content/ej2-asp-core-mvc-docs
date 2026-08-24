@@ -1,30 +1,27 @@
 ---
 layout: post
-title: Field List in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table Field List provides an Excel-like UI to add, remove, and rearrange fields across columns, rows, values, and filters.
+title: Field list in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table exposes a field list panel to add, remove, and rearrange fields across rows, columns, values, and filters at runtime.
 platform: ej2-asp-core-mvc
 control: Field List
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Field List in ASP.NET Core Pivot Table
+# Field list in ASP.NET Core Pivot Table
 
 The Field List makes it easy to organize and analyze data in your Pivot Table. It provides a user-friendly interface similar to Microsoft Excel that allows you to add or remove fields and move them between different axes like columns, rows, values, and filters. You can also apply sorting and filtering options while working with your data.
 
 The Field List can be displayed in two different ways to work with your Pivot Table:
 
-* **In-built Field List (Popup)**: Shows a field list icon in the Pivot Table interface. Click this icon to open the field list in a dialog box.
-* **Stand-alone Field List (Fixed)**: Displays the field list in a fixed position on your web page alongside the Pivot Table.
+* **In-built Field List (Popup)**: Shows a Field List icon in the Pivot Table interface. Click this icon to open the Field List in a dialog box.
+* **Stand-alone Field List (Fixed)**: Displays the Field List in a fixed position on your web page alongside the Pivot Table.
 
 ## In-built Field List (Popup)
 
 The built-in field list provides quick access to modify your Pivot Table report settings without taking up permanent space on your webpage. To enable this option, set the [`showFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property of the Pivot Table to **true**. A field list icon will then appear in the top-left corner of the Pivot Table. When you click this icon, the field list dialog opens.
 
 > The field list icon appears in the top right corner of the Pivot Table when the grouping bar is enabled.
-
-To use the field list, you need to inject the `FieldList` module in the Pivot Table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -324,7 +321,7 @@ Users can filter members in the row, column, and filter axes by selecting the fi
 
 ## Sorting members
 
-The Pivot Table allows users to sort members in the row and column axes using a sort icon next to each field. By clicking this icon, users can arrange members in either ascending or descending order at runtime. This option helps users organize data in a way that suits their needs. For more details on sorting members, [refer here](./sorting).
+The Pivot Table allows users to sort members in the row and column axes using a sort icon next to each field. By clicking this icon, users can arrange members in either ascending or descending order at runtime. This option helps users organize data in a way that suits their needs. For more details, see the [Sorting](./sorting) documentation.
 
 ![Sorting the field list](images/fieldlist_sorticon.png)
 
@@ -490,6 +487,8 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 ## Events
 
+The Pivot Table and Field List provide the following events to monitor and synchronize field list operations. Use them to track UI actions, customize behavior, or keep the two components in sync.
+
 ### EnginePopulated
 
 The [`enginePopulated`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) event is available in both the Pivot Table and the Field List. It triggers after the data engine is populated with the updated report settings, allowing the Pivot Table and Field List to stay in sync when changes are made.
@@ -528,7 +527,7 @@ This event includes the following parameters: `e-datasourcesettings`, [`pivotFie
 
 The `fieldListRefreshed` event triggers whenever a change occurs in the field list UI, such as adding, removing, or rearranging fields, or applying sort or filter options. This event provides two parameters: `dataSourceSettings` and [`pivotValues`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues). These parameters allow users to track and respond to updates in the field list. The event applies only to the static field list.
 
-For example, when a user sorts a field in the field list, the field list updates, and the `fieldListRefreshed` event triggers. Users can perform custom operation inside that event.
+For example, when a user sorts a field in the field list, the field list updates, and the [`fieldListRefreshed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_FieldListRefreshed) event triggers. Users can perform custom operations inside that event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -614,7 +613,7 @@ The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 > **Note**: This parameter is available only when the action involves a specific field, such as filtering, sorting, removing a field from the grouping bar, editing, or changing the aggregation type.
 
-* `cancel`: A boolean property that allows you to prevent the current action from completing. Set this to **true** to stop the action from proceeding.
+* `cancel`: A Boolean property that allows you to prevent the current action from completing. Set this to `` `true` `` to stop the action from proceeding.
 
 In the following sample, you can restrict opening the popup field list by setting the **args.cancel** option to **true** in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionBegin) event.
 
@@ -692,7 +691,7 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
-* `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
+* `actionName`: It holds the name of the current action that failed. The following are the UI actions and their names:
 
 | Action | Action Name|
 |------|-------------|
