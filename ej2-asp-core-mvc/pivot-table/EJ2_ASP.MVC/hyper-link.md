@@ -1,38 +1,41 @@
 ---
 layout: post
 title: Hyperlink in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table shows hyperlinks in row, column, and value cells via HyperlinkSettings and conditionalSettings.
+description: Learn how the ASP.NET MVC Pivot Table adds hyperlinks to row, column, and value cells through HyperlinkSettings for interactive navigation and drill-through.
 platform: ej2-asp-core-mvc
 control: Hyper Link
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Hyperlink in ASP.NET MVC Pivot Table
 
-The Pivot Table component provides built-in support for displaying hyperlinks within individual cells. This feature allows users to link data in specific cells, enhancing interactivity and navigation.
+The Pivot Table component provides built-in support for displaying hyperlinks within individual cells. This feature allows users to link data in specific cells, enhancing interactivity and navigation. Common use cases include linking a value cell to a related detail report, opening an external resource from a row header, or highlighting summary cells that match a business rule.
 
 Hyperlinks can be selectively enabled for various cell types, including:
 
 - Row headers
 - Column headers
-- Value cells  
-- Summary cells  
+- Value cells
+- Summary cells
 
 You can control hyperlink behavior using the [`HyperlinkSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html) property, which can be defined during the initial rendering through the code-behind.
 
-## Available Hyperlink Settings
+## Available hyperlink settings
 
-The following properties are available in hyperlinkSettings:
+The following properties are available in `HyperlinkSettings`. Each property is optional; combine them to control which cells display hyperlinks
 
-* [`ShowHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowHyperlink): It allows to set the visibility of hyperlink in all cells.
-* [`ShowRowHeaderHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowRowHeaderHyperlink): It allows to set the visibility of hyperlink in row headers.
-* [`ShowColumnHeaderHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowColumnHeaderHyperlink): It allows to set the visibility of hyperlink in column headers.
-* [`ShowValueCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowValueCellHyperlink): It allows to set the visibility of hyperlink in value cells.
-* [`ShowSummaryCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowSummaryCellHyperlink): It allows to set the visibility of hyperlink in summary cells.
-* [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText): It allows to set the visibility of hyperlink based on header text.
-* [`ConditionalSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html): It allows to set the visibility of hyperlink based on specific condition.
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| [`ShowHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in all cells. |
+| [`ShowRowHeaderHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowRowHeaderHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in row headers. |
+| [`ShowColumnHeaderHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowColumnHeaderHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in column headers. |
+| [`ShowValueCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowValueCellHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in value cells. |
+| [`ShowSummaryCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowSummaryCellHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in summary cells. |
+| [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText) | `string` | `null` | Shows hyperlinks for cells whose header text matches the specified value. |
+| [`ConditionalSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html) | `Condition` | `Condition.NotEquals` | Shows hyperlinks for cells whose values match the specified conditions. |
+
+> **Precedence:** When `ShowHyperlink` is `true`, individual `show*Hyperlink` flags are ignored. `HeaderText` and `PivotViewConditionalSettings` are evaluated after the cell-type filters.
 
 > By default, the hyperlink options are disabled for all cells in the pivot table.
 
@@ -40,9 +43,11 @@ The following properties are available in hyperlinkSettings:
 
 ## Hyperlink for all cells
 
-The pivot table provides an option to display hyperlinks across **all cells** currently visible in the table. To enable this functionality, set the [`ShowHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowHyperlink) property to **true** within the [`HyperlinkSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html).
+The pivot table provides an option to display hyperlinks for **all cells** in the table. To enable this functionality, set the [`ShowHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowHyperlink) property to **true** within the [`HyperlinkSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html).
 
-Once enabled, hyperlinks will be shown consistently in row headers, column headers, value cells, and summary cells.
+> **Prerequisite:** The Pivot Table must have at least one row, column, and value field configured so that all cell types render with content.
+
+Once enabled, hyperlinks are shown consistently in row headers, column headers, value cells, and summary cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -195,14 +200,61 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 ![Summary cell hyperlink](images/hyperlink-summary.png)
 
-## Condition based hyperlink
+## Header-based hyperlink
 
-The pivot table has an option to show hyperlink in the cells based on specific conditions. It can be configured using the [`ConditionalSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html) class through code behind, during initial rendering. The settings required are:
+The pivot table supports displaying hyperlinks in cells that match specific row or column headers. This functionality can be enabled using the [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText) property, which is configured through code-behind during initial rendering.
 
-* [`Measure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Measure): Specifies the value field name, in-order to set the visibility of hyperlink for the same when condition is met.
-* [`Conditions`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Conditions): Specifies the operator type such as [**Condition.Equals**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Condition.html), [**Condition.GreaterThan**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Condition.html), [**Condition.LessThan**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Condition.html), etc.
-* [`Value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Value1): Specifies the start value.
-* [`Value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Value2): Specifies the end value.
+In the example below, the value **FY 2015.Q1.Units Sold** is assigned to [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText), which means the pivot table shows hyperlinks only in cells that match this specific header combination.
+
+N>  The **dot (`.`)** character in `FY 2015.Q1.Units Sold` is the default delimiter used to identify the header levels in the row and column axes. To use a different delimiter, configure the [HeaderDelimiter](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter) property in [ValueSortSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings) before the Pivot Table renders.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/hyper-link/headers/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Headers.cs" %}
+{% include code-snippet/pivot-table/hyper-link/headers/Headers.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/hyper-link/headers/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Headers.cs" %}
+{% include code-snippet/pivot-table/hyper-link/headers/Headers.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Header-based hyperlink](images/hyperlink-header.png)
+
+## Condition-based hyperlink
+
+The pivot table supports displaying hyperlinks in specific cells based on defined conditions. This functionality can be configured through code-behind during initial rendering using the [`ConditionalSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html) property.
+
+* [`Measure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Measure) (`string`): Specifies the value field name for which the hyperlink should be shown when the condition is met.
+* [`Conditions`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Conditions) (`Condition `): Specifies the operator type. The supported operators include:
+  * `Condition.Equals`
+  * `Condition.NotEquals`
+  * `Condition.GreaterThan`
+  * `Condition.GreaterThanOrEqual`
+  * `Condition.LessThan`
+  * `Condition.LessThanOrEqual`
+  * `Condition.Between` (uses both `value1` and `value2`)
+  * `Condition.NotBetween` (uses both `value1` and `value2`)
+* [`Value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Value1) (`double`): Sets the starting (or only) value for the condition.
+* [`Value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Value2) (`double`): Sets the ending value for range-based comparisons (`Between`, `NotBetween`). Ignored for other operators.
+
+> **URL source:** The hyperlink target for condition-based cells is taken from a column on the data source whose name matches the value field defined in `Measure`. If your data source does not contain such a column, the cell is rendered as plain text.
+
+In the example below, the pivot table is configured to display hyperlinks only in cells where the "Units Sold" field value is between **100** and **200**. This highlights specific aggregated values that meet the given condition.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -263,54 +315,20 @@ You can apply conditions for specific row or column using [`Label`](https://help
 {% endtabs %}
 {% endif %}
 
-
-## Header based hyperlink
-
-The pivot table supports displaying hyperlinks in cells based on specific row or column headers. This functionality can be enabled using the [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText) property, which is configured through code-behind during initial rendering.
-
-In the below code example, the value **FY 2015.Q1.Units Sold** is assigned to [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText), which means the pivot table will show hyperlinks only in cells that match this specific header combination.
-
-N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [HeaderDelimiter](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter) in the [ValueSortSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings) property to any other delimiter instead of the default separator.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/hyper-link/headers/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Headers.cs" %}
-{% include code-snippet/pivot-table/hyper-link/headers/Headers.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/hyper-link/headers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Headers.cs" %}
-{% include code-snippet/pivot-table/hyper-link/headers/Headers.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Header-based hyperlink](images/hyperlink-header.png)
-
 ## Event
 
 The pivot table triggers the [`HyperlinkCellClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_HyperlinkCellClick) event whenever a hyperlink cell is clicked. This event allows you to either customize the clicked cell or retrieve information about it.
 
-It provides two parameters:
+> **Prerequisite:** Hyperlink cells must be enabled via `HyperlinkSettings`; the event does not fire on cells that are not hyperlinks.
+
+It provides the following parameters:
 
 * `currentCell`: Refers to the clicked cell element, which can be modified as needed.
-* `cancel`: If set to **true**, prevents any changes from being applied to the cell.
-* `data`: Contains detailed information about the clicked cell, including its value, row and column headers, position, and whether it’s a summary cell.
+* `cancel`: If set to **true**, prevents the default click behavior from running (for example, navigation). Set to **false** to let the click proceed normally and your custom code run in addition.
+* `data`: Contains detailed information about the clicked cell, including its value, row and column headers, position, and whether it is a summary cell.
 * `nativeEvent`: Represents the original browser event triggered by the click, useful for advanced event handling.
 
-In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion ASP.NET MVC Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos/#/tailwind3/pivot-table/hyper-link.html). The `cancel` property is set to **false** to enable this interaction.
+In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion ASP.NET MVC Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos/#/tailwind3/pivot-table/hyper-link.html). The `cancel` property is set to **false** to allow this interaction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

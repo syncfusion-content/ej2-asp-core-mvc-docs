@@ -1,19 +1,18 @@
 ---
 layout: post
 title: PDF Export in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table exports the rendered pivot report to a PDF document via AllowPdfExport and the PdfExport method.
+description: Learn how the ASP.NET MVC Pivot Table exports pivot data to PDF using the PdfExport module, with options to customize page size, orientation, and styling.
 platform: ej2-asp-core-mvc
 control: Pdf Export
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# PDF export in ASP.NET MVC Pivot Table
 
-# PDF Export in ASP.NET MVC Pivot Table
+The ASP.NET Core Pivot Table allows you to export Pivot Table data as a PDF document. To enable PDF export, inject the `PDFExport` module into the Pivot Table and set the [`AllowPdfExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowPdfExport) property to **true**. Once enabled, use the `PdfExport` method to generate and download the file.
 
-The ASP.NET Core Pivot Table lets users easily export their pivot table data as a PDF document. By setting the [`AllowPdfExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowPdfExport) property to **true** in the Pivot Table configuration, users can enable PDF export. Once enabled, you can use the `pdfExport` method to generate and download the PDF file.
-
-In the following example, an external button is used to start the PDF export process. When the user clicks the button, the `pdfExport` method is called so that the Pivot Table data can be saved as a PDF file.
+In the following example, an external button is used to start the PDF export process. When the user clicks the button, the `PdfExport` method is called so that the Pivot Table data can be saved as a PDF file.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,9 +37,9 @@ In the following example, an external button is used to start the PDF export pro
 {% endtabs %}
 {% endif %}
 
-## Multiple Pivot Table exporting
+## Exporting multiple Pivot Tables
 
-Multiple Pivot Tables can be exported to the same or different pages in a single PDF file for easy comparison. Each Pivot Table requires a unique HTML element ID, such as **PivotTable1** and **PivotTable2**. To export multiple Pivot Tables, provide their IDs in the `pivotTableIds` property of the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html), then pass the configured [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) to the `pdfExport` method with `isMultipleExport` set to **true** to enable multiple Pivot Table export mode.
+Multiple Pivot Tables can be exported to the same or different pages in a single PDF file for easy comparison. Each Pivot Table requires a unique HTML element ID, such as **PivotTable1** and **PivotTable2**. To export multiple Pivot Tables, provide their IDs in the `PivotTableIds` property of the [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html), then pass the configured [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) to the `PdfExport` method with `IsMultipleExport` set to **true** to enable multiple Pivot Table export mode.
 
 > Note: PivotView PDF export uses Grid's PdfExportProperties model for configuration.
 
