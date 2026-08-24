@@ -11,8 +11,9 @@ documentation: ug
 
 # How to determine whether the File Upload has an input file
 
-By setting **required** attribute to uploader input element, you can validate the file input has any value in it. 
-In the below sample, set required attribute to the uploader input element and showcase the validation failure message using `data-required-message` attribute.
+You can validate whether the file input has a value by setting the **required** attribute on the uploader input element.
+
+The following sample sets the required attribute on the uploader input element and shows the validation error message using the `data-required-message` attribute.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,6 +38,4 @@ In the below sample, set required attribute to the uploader input element and sh
 {% endtabs %}
 {% endif %}
 
-
-
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.
