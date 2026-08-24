@@ -243,7 +243,7 @@ To remove a previously applied date grouping, right-click the relevant date-base
 
 Custom grouping is an option that enables users to group data types (date, time, number, or string) into custom fields based on specific requirements. This functionality can be accessed through the user interface by right-clicking a header in the Pivot Table.
 
-> The selection settings must have `Mode` set to `Cell` and `Yype` set to `Multiple` for the **Group** option to appear in the context menu. See the [Limitations](#limitations) section below.
+> The selection settings must have `Mode` set to `Cell` and `Type` set to `Multiple` for the **Group** option to appear in the context menu. See the [Limitations](#limitations) section below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
