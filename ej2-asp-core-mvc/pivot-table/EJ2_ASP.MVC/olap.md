@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OLAP in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to configure the ASP.NET MVC Pivot Table with OLAP cube data sources, including license registration and project setup in Visual Studio.
+description: Learn how to configure the ASP.NET MVC Pivot Table connects to OLAP cubes and analyzes multidimensional data with MDX queries, axes, measures, and drill operations.
 platform: ej2-asp-core-mvc
 control: Olap
 publishingplatform: ##Platform_Name##
