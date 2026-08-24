@@ -1,17 +1,16 @@
 ---
 layout: post
 title: Getting Started with ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to create a new ASP.NET MVC Web App in Visual Studio and install Syncfusion.EJ2.AspNet.MVC plus Themes NuGet packages to render the Pivot Table.
+description: Learn how to get started with the ASP.NET MVC Pivot Table. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET MVC Pivot Table
 
-This section briefly explains how to include the [ASP.NET MVC Pivot Table](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table) control in your ASP.NET MVC application using Visual Studio.
+This section guides you through the steps to create a simple [ASP.NET MVC Pivot Table](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table) using the Syncfusion `PivotView` component in an ASP.NET MVC application. It demonstrates how to set up and use the component to display and analyze data effectively.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
@@ -39,7 +38,7 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key. To register a license key in your application, refer to the [Licensing topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview).
 
-## Add namespace
+## Adding namespace
 
 Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file under the `Views` folder so that the Syncfusion HTML helpers are available in all Razor views.
 
@@ -49,7 +48,7 @@ Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file under th
 </namespaces>
 ```
 
-## Add stylesheet and script resources
+## Adding stylesheet and script resources
 
 Here, the theme and script are referred using CDN inside the `<head>` of the `~/Views/Shared/_Layout.cshtml` file as follows,
 
@@ -85,7 +84,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC Pivot Table control
+## Adding ASP.NET MVC Pivot Table control
 
 * Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Pivot Table control using the `@Html.EJS().PivotView()` HTML helper in the `~/Views/Home/Index.cshtml` page.
 

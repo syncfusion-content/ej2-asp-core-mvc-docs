@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Drill Down in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table expands or collapses hierarchical row and column members on demand for relational data sources.
+title: Drill down in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table expands and collapses row and column members for hierarchical data exploration using built-in drill down and drill up.
 platform: ej2-asp-core-mvc
 control: Drill Down
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Drill Down in ASP.NET MVC Pivot Table
+# Drill down in ASP.NET MVC Pivot Table
 
 ## Drill down and drill up
 
@@ -48,7 +47,7 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 {% endtabs %}
 {% endif %}
 
-## Expand All
+## Expand all
 
 > This property is applicable only for the relational data source.
 
@@ -154,7 +153,7 @@ The following example demonstrates how to configure a Pivot Table where all head
 
 ![All expanded except one member](images/expandall_except.png)
 
-## Expand or Collapse Specific Members
+## Expand or collapse specific members
 
 The Pivot Table component enables users to programmatically expand or collapse specific members in any field placed under the row or column axes. This can be achieved using the [`PivotViewDrilledMember`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDrilledMember.html) property. The following properties of [`PivotViewDrilledMember`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDrilledMember.html) are described below:
 
@@ -193,13 +192,15 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 
 ## Event
 
+The Pivot Table provides the following events to monitor drill down and drill up operations. Use them to track, customize, or intercept a specific stage of the user interaction lifecycle.
+
 ### Drill
 
 The [`Drill`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Drill) event is triggered each time a field member in the Pivot Table is expanded or collapsed. This event allows customization of drill actions, such as modifying the delimiter or changing the behavior for specific items. The event provides the following parameters:
 
 * `drillInfo`: Contains information about the currently drilled field member.
 * `pivotview`: A reference to the Pivot Table component instance.
-* `cancel`: Specifies whether to prevent the current drill operation. Set this property to true in the event handler to cancel the action.
+* `cancel`: Specifies whether to prevent the current drill operation. Set this property to `true` in the event handler to cancel the action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -238,7 +239,7 @@ The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 - `cancel`: Allows you to block the current action by setting it to `true`.
 
-In the below sample, drill down and drill up action can be restricted by setting the **args.cancel** option to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
+In the following sample, the drill down and drill up actions can be restricted by setting the `args.cancel` option to `true` in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -265,11 +266,11 @@ In the below sample, drill down and drill up action can be restricted by setting
 
 ### ActionComplete
 
-The event [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) triggers when a UI action such as drill down or drill up, is completed. This allows user to identify the current UI actions being completed at runtime. It has the following parameters:
+The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event triggers when a UI action such as drill down or drill up is completed. This allows users to identify the UI actions being completed at runtime. It has the following parameters:
 
 * `dataSourceSettings`: It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
 
-* `actionName`: It holds the name of the current action completed. The following are the UI actions and their names:
+* `actionName`: It holds the name of the completed action. The following are the UI actions and their names:
 
 | Action | Action Name|
 |------|-------------|
@@ -336,3 +337,9 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## See also
+
+* [Drill through](./drill-through)
+* [Row and column](./row-and-column)
+* [Aggregation](./aggregation)
