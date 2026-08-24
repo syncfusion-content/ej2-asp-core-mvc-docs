@@ -3,15 +3,14 @@ layout: post
 title: Localization in ##Platform_Name## Tabs | Syncfusion
 description: Localize the close button tooltip text of the Syncfusion ##Platform_Name## Tabs component using the L10n `load` function for any culture.
 platform: ej2-asp-core-mvc
-control: Localization
+control: Tab
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Localization in ##Platform_Name## Tab control
 
-# Localization in ##Platform_Name## Tabs
-
-Localization library allows to localize the default text content of Tab. In Tab, The close button's tooltip text alone will be localize based on culture.
+The localization library allows you to localize the default text content of the Tab. In Tab, the close button's tooltip text alone will be localize based on culture.
 
 | Locale key | en-US (default) |
 |------|------|
@@ -21,7 +20,7 @@ Localization library allows to localize the default text content of Tab. In Tab,
 
 To load translation object in an application use `load` function of `L10n` class.
 
-In the below sample, `French` culture is set to Tab and change the close button's tooltip text.
+In the below sample, the `French` culture is applied to the Tab, and the close button tooltip text is changed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,3 +45,8 @@ In the below sample, `French` culture is set to Tab and change the close button'
 {% endtabs %}
 {% endif %}
 
+## See also
+
+* [How to load Tab with DataSource](./how-to/load-tab-with-data-source)
+* [How to load Tab items dynamically](./how-to/load-tab-items-dynamically)
+* [How to render the Tab items using content template](./how-to/render-the-tab-items-using-content-template)
