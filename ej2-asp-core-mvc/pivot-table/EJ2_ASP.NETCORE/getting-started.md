@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core Pivot Table | Syncfusion
-description: Learn how to create a new ASP.NET Core Web App in Visual Studio and install the Syncfusion.AspNetCore.PivotView NuGet package to render the Pivot Table.
+description: Learn how to get started with the ASP.NET Core Pivot Table. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Pivot Table
 publishingplatform: ##Platform_Name##
@@ -10,11 +10,11 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Pivot Table
 
-This section briefly explains how to include the [ASP.NET Core Pivot Table](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/), and [Visual Studio Code](https://code.visualstudio.com/).
+This section guides you through the steps to create a simple [ASP.NET Core Pivot Table](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table) using the Syncfusion `PivotView` component in an ASP.NET Core application. It demonstrates how to set up and use the component to display and analyze data effectively.
 
 > **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Code Studio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
-## Create an new ASP.NET Core Web App with Razor pages
+## Create a new ASP.NET Core Web App with Razor pages
 
 {% tabcontents %}
 
@@ -84,7 +84,7 @@ dotnet add package Syncfusion.AspNetCore.Themes -v {{ site.releaseversion }}
 
 {% endtabcontents %}
 
-## Add ASP.NET Core Tag Helpers
+## Adding ASP.NET Core Tag Helpers
 
 After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.PivotView` Tag Helpers.
 
@@ -97,7 +97,7 @@ After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file 
 {% endhighlight %}
 {% endtabs %}
 
-## Add stylesheet and script resources
+## Adding stylesheet and script resources
 
 The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
@@ -131,7 +131,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Pivot Table control
+## Adding ASP.NET Core Pivot Table control
 
 Add the [ASP.NET Core Pivot Table](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table) control in the **~/Pages/Index.cshtml** file.
 
@@ -174,7 +174,7 @@ dotnet run
 
 ![ASP.NET Core Pivot Table Control](images/pivottable-fields.webp)
 
-## See also
+## See Also
 
 1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

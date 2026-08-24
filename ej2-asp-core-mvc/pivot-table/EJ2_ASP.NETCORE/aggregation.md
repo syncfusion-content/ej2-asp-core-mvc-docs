@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Aggregation in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table performs value-axis aggregations like Sum, Avg, Min, Max, Count, and DifferenceFrom on relational data.
+description: Learn how the ASP.NET Core Pivot Table aggregates grouped values using built-in types like Sum, Count, Average, Min, Max, Product, Median, and more.
 platform: ej2-asp-core-mvc
 control: Aggregation
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 # Aggregation in ASP.NET Core Pivot Table
 
@@ -15,7 +14,7 @@ documentation: ug
 
 End users can perform calculations on groups of values (specifically for value fields placed in the value axis) by using different aggregation types. By default, values are combined by summing them. Additional aggregation types are described below.
 
-> Numeric fields support all aggregation types listed below, except **CalculatedField**. Fields of type string, date, datetime, boolean, and similar types support only [**Count**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) and **DistinctCount** aggregation.
+> Numeric fields support all aggregation types listed below. Fields of type string, date, datetime, boolean, and similar types support only [**Count**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) and **DistinctCount** aggregation.
 
 | Operator | Description |
 |------|-------------|
@@ -27,13 +26,13 @@ End users can perform calculations on groups of values (specifically for value f
 | Max| Displays the maximum value for the selected field.|
 | Avg| Displays the average (mean) of the selected field values.|
 | Median| Displays the median value for the selected field.|
-| Index| Displays the index value for the selected field data.|
+| Index| Displays a sequential index number (1, 2, 3, …) for the selected field values in the pivot result.|
 | PopulationStDev| Displays the standard deviation of the population for the selected field.|
 | SampleStDev| Displays the sample standard deviation for the selected field.|
 | PopulationVar| Displays the variance of the population for the selected field.|
 | SampleVar| Displays the sample variance for the selected field.|
 | RunningTotals| Displays the running total for the selected field values.|
-| PercentageOfRunningTotals| Cumulative percentage of running totals (client-side engine only).|
+| PercentageOfRunningTotals| Displays the cumulative percentage of running totals (client-side engine only).|
 | DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
 | PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
@@ -44,13 +43,15 @@ End users can perform calculations on groups of values (specifically for value f
 | PercentageOfParentRowTotal| Displays the pivot table values with percentage of its parent total in each row.|
 | CalculatedField| Displays the pivot table with calculated field values. It allows user to create a new calculated field alone.|
 
+> **Note:** **CalculatedField** is not an aggregation type. It enables you to create a new calculated field that is derived from existing fields using a formula. See the [Calculated Field](./calculated-field) section for details.
+
 ## Assigning aggregation type for value fields through API
 
-For each value field, the aggregation type can be set using the property [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_Type) in [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.ValuesDataSourceSettings.html). Meanwhile, aggregation types like [**DifferenceFrom**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) and [**PercentageOfDifferenceFrom**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) can check for specific field of specific item using [`baseField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField) and [`baseItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem) properties. Likewise, **PercentageOfParentTotal** type can for specific field using [`baseField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField) property. For instance, the aggregation type [**DifferenceFrom**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.  
+For each value field, the aggregation type can be set using the property [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_Type) in [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.ValuesDataSourceSettings.html). Aggregation types like [**DifferenceFrom**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) and [**PercentageOfDifferenceFrom**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) also require a specific field and item, which are configured using the [`baseField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField) and [`baseItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem) properties. Likewise, the **PercentageOfParentTotal** type can be scoped to a specific field using the [`baseField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField) property. For instance, the aggregation type [**DifferenceFrom**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) takes the specified field and its corresponding member as input, then compares its value against other members in the same field and across different fields to compute the appropriate output value.
 
-* [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_Type): It allows to set the aggregate type of the field.
-* [`baseField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField): It allows to set the specific field to aggregate the values.
-* [`baseItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem): It allows to set the specific member to aggregate the values.
+* [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_Type): It allows you to set the aggregate type of the field.
+* [`baseField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField): It allows you to set the specific field to aggregate the values.
+* [`baseItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem): It allows you to set the specific member to aggregate the values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,11 +80,11 @@ For each value field, the aggregation type can be set using the property [`type`
 
 ![DifferenceFrom aggregation type](images/aggregation_differencefrom.png)
 
-> By default, the aggregation will be considered as [**Sum**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as [**Count**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html).
+> By default, the aggregation is set to [**Sum**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) for value fields that have a number type, and to [**Count**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) for value fields that have non-number type values such as string, date, datetime, boolean, and so on.
 
 ## Modifying aggregation type for value fields at runtime
 
-You can dynamically modify the aggregation type for value fields in the Pivot Table component through the UI at runtime. Value fields, displayed in the grouping bar and field list, include a dropdown icon that allows you to select from various aggregation types (e.g., [**Sum**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), **Average**, [**Count**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html)). Once you select a new aggregation type, the pivot table updates instantly to reflect the change, providing a seamless experience for data analysis.
+You can dynamically modify the aggregation type for value fields in the Pivot Table component through the UI at runtime. Value fields, displayed in the grouping bar and field list, include a dropdown icon that allows you to select from various aggregation types (e.g., **Sum**, **Average**, **Count**). Once you select a new aggregation type, the pivot table updates instantly to reflect the change, providing a seamless experience for data analysis.
 
 <!-- markdownlint-disable MD012 -->
 ![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.png)
@@ -195,19 +196,21 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 ## Event
 
+The Pivot Table provides the following events to monitor aggregation-related UI actions. Each event lets you track or intercept a specific stage of the user interaction lifecycle.
+
 ### AggregateCellInfo
 
 The [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event triggers each time a value cell is rendered. This allows users to override the cell's value or skip formatting. The event provides the following parameters:
 
-* `fieldName` - It holds current cell's field name.
-* `row` - It holds current cell's row value.
-* `column` - It holds current cell's column value.
-* `value` - It holds value of current cell.
-* `cellSets` - It holds raw data for the aggregated value cell.
-* `rowCellType` - It holds row cell type value.
-* `columnCellType` - It holds column cell type value.
-* `aggregateType` - It holds aggregate type of the cell.
-* `skipFormatting` - boolean property, it allows to skip formatting if applied.
+* `fieldName` - It holds the current cell's field name.
+* `row` - It holds the current cell's row value.
+* `column` - It holds the current cell's column value.
+* `value` - It holds the value of the current cell.
+* `cellSets` - It holds the raw data for the aggregated value cell.
+* `rowCellType` - It holds the row cell type value.
+* `columnCellType` - It holds the column cell type value.
+* `aggregateType` - It holds the aggregate type of the cell.
+* `skipFormatting` - Boolean property that allows you to skip formatting if applied.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -238,11 +241,11 @@ The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 * `dataSourceSettings`: Contains the current data source settings such as input data source, rows, columns, values, filters, format settings and more.
 
-* `actionName`: Provides the name of the current action initiated. For example, when selecting aggregation, the action name is **Aggregate field**.
+* `actionName`: Provides the name of the current action. For example, when selecting aggregation, the action name is **Aggregate field**.
 
 * `fieldInfo`: Contains information regarding the selected value field.
 
-> Note: This option applies only to actions performed through the field-based UI, such as filtering, sorting, removing a field from the grouping bar, editing, and changing the aggregation type.
+> Note: This event applies only to actions performed through the field-based UI, such as filtering, sorting, removing a field from the grouping bar, editing, and changing the aggregation type.
 
 * `cancel`: Allows restricting the current action.
 

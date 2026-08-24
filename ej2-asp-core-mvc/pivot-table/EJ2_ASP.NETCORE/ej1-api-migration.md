@@ -1,17 +1,16 @@
 ---
 layout: post
-title: EJ1 API Migration in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how to migrate Pivot Grid API usage from Essential JS 1 to the ASP.NET Core Pivot Table by mapping data source, rows, columns, and values.
+title: EJ1 API migration in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table maps properties, methods, and events from Essential JS 1 PivotGrid to the EJ2 Pivot Table component.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# EJ1 API migration in ASP.NET Core Pivot Table
 
-# Migration from Essential JS 1 to Pivot Table
-
-This article describes the API migration process of Pivot Grid component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of the Pivot Table component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Data Binding
 
@@ -59,7 +58,7 @@ This article describes the API migration process of Pivot Grid component from Es
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-|Show/hide field list pop-up button on pivot grid|Not Applicable|**property:** showFieldList<br/><br/>`<ejs-pivotview id="PivotView" showFieldList= "true"></ejs-pivotview>`|
+|Show/hide field list pop-up button on pivot table|Not Applicable|**property:** showFieldList<br/><br/>`<ejs-pivotview id="PivotView" showFieldList= "true"></ejs-pivotview>`|
 |Defer update|**property:** enableDeferUpdate<br/><br/>`<ej-pivot-grid id="PivotGrid" enable-defer-update= "true"></ej-pivot-grid>`|Not Applicable|
 |Control initialization|**component:** PivotSchemaDesigner<br/><br/>`<ej-pivot-schema-designer id="PivotSchemaDesigner"></ej-pivot-schema-designer>`|**component:** PivotFieldListComponent<br/><br/>`<ejs-pivotfieldlist id="PivotFieldList"></ejs-pivotfieldlist>`|
 |Render mode|Not Applicable|**property:** renderMode<br/><br/>`<ejs-pivotfieldlist id="PivotFieldList" renderMode= "Fixed"></ejs-pivotfieldlist>`|
@@ -103,7 +102,7 @@ This article describes the API migration process of Pivot Grid component from Es
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-|Show/hide drill though feature|**property:** enableDrillThrough<br/><br/>`<ej-pivot-grid id="PivotGrid" enable-drill-through= "true"></ej-pivot-grid>`|**property:** allowDrillThrough<br/><br/>`<ejs-pivotview id="PivotView" allowDrillThrough= "true"></ejs-pivotview>`|
+|Show/hide drill through feature|**property:** enableDrillThrough<br/><br/>`<ej-pivot-grid id="PivotGrid" enable-drill-through= "true"></ej-pivot-grid>`|**property:** allowDrillThrough<br/><br/>`<ejs-pivotview id="PivotView" allowDrillThrough= "true"></ejs-pivotview>`|
 |Event Triggers when cell clicked in pivot grid control|**event:** drillThrough<br/><br/>`<ej-pivot-grid id="PivotGrid" drill-through= "onDrillThrough"></ej-pivot-grid>`<br/><br/>`function onDrillThrough() { }`|**event:** drillThrough<br/><br/>`<ejs-pivotview id="PivotView" drillThrough= "onDrillThrough"></ejs-pivotview>`<br/><br/>`function onDrillThrough() { }`|
 
 ## Cell Editing
@@ -125,10 +124,10 @@ This article describes the API migration process of Pivot Grid component from Es
 |Show/hide hyperlink to summary cells|**property:** enableSummaryCellHyperlink<br/><br/>`<ej-pivot-grid id="PivotGrid">`<br/>`<e-hyperlink enable-summary-cell-hyperlink="true"></e-hyperlink>`<br/>`</ej-pivot-grid>`|**property:** showSummaryCellHyperlink<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-hyperlinkSettings showSummaryCellHyperlink="true"></e-hyperlinkSettings>`<br/>`</ejs-pivotview>`|
 |Show/hide hyperlink using specific conditions|Not Applicable|**property:** conditionalSettings<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-hyperlinkSettings>`<br/>`<e-conditionalsettings>`<br/>`<e-format measure="Sold" conditions="Between" value1="150" value2="200"></e-format>`<br/>`</e-conditionalsettings>`<br/>`</e-hyperlinkSettings>`<br/>`</ejs-pivotview>`|
 |Show/hide hyperlink for row or column|Not Applicable|**property:** headerText<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-hyperlinkSettings headerText: 'FY 2015.Q1.Units Sold'></e-hyperlinkSettings>`<br/>`</ejs-pivotview>`|
-|Event Triggers when row headers clicked in pivot grid control|**event:** rowHeaderHyperlinkClick<br/><br/>`<ej-pivot-grid id="PivotGrid" row-header-hyperlink-click= "onClick"></ej-pivot-grid>`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview id="PivotView" hyperlinkCellClick= "onClick"></ejs-pivotview>`<br/><br/>`function onClick() { }`|
-|Event Triggers when column headers clicked in pivot grid control|**event:** columnHeaderHyperlinkClick<br/><br/>`<ej-pivot-grid id="PivotGrid" column-header-hyperlink-click= "onClick"></ej-pivot-grid>`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview id="PivotView" hyperlinkCellClick= "onClick"></ejs-pivotview>`<br/><br/>`function onClick() { }`|
-|Event Triggers when value cells clicked in pivot grid control|**event:** valueCellHyperlinkClick<br/><br/>`<ej-pivot-grid id="PivotGrid" value-cell-hyperlink-click= "onClick"></ej-pivot-grid>`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview id="PivotView" hyperlinkCellClick= "onClick"></ejs-pivotview>`<br/><br/>`function onClick() { }`|
-|Event Triggers when summary cells clicked in pivot grid control|**event:** summaryCellHyperlinkClick<br/><br/>`<ej-pivot-grid id="PivotGrid" summary-cell-hyperlink-click= "onClick"></ej-pivot-grid>`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview id="PivotView" hyperlinkCellClick= "onClick"></ejs-pivotview>`<br/><br/>`function onClick() { }`|
+|Event Triggers when row headers clicked in pivot table|**event:** rowHeaderHyperlinkClick<br/><br/>`<ej-pivot-grid id="PivotGrid" row-header-hyperlink-click= "onClick"></ej-pivot-grid>`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview id="PivotView" hyperlinkCellClick= "onClick"></ejs-pivotview>`<br/><br/>`function onClick() { }`|
+|Event Triggers when column headers clicked in pivot table|**event:** columnHeaderHyperlinkClick<br/><br/>`<ej-pivot-grid id="PivotGrid" column-header-hyperlink-click= "onClick"></ej-pivot-grid>`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview id="PivotView" hyperlinkCellClick= "onClick"></ejs-pivotview>`<br/><br/>`function onClick() { }`|
+|Event Triggers when value cells clicked in pivot table|**event:** valueCellHyperlinkClick<br/><br/>`<ej-pivot-grid id="PivotGrid" value-cell-hyperlink-click= "onClick"></ej-pivot-grid>`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview id="PivotView" hyperlinkCellClick= "onClick"></ejs-pivotview>`<br/><br/>`function onClick() { }`|
+|Event Triggers when summary cells clicked in pivot table|**event:** summaryCellHyperlinkClick<br/><br/>`<ej-pivot-grid id="PivotGrid" summary-cell-hyperlink-click= "onClick"></ej-pivot-grid>`<br/><br/>`function onClick() { }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview id="PivotView" hyperlinkCellClick= "onClick"></ejs-pivotview>`<br/><br/>`function onClick() { }`|
 
 ## Defer Layout Update
 
@@ -182,16 +181,16 @@ This article describes the API migration process of Pivot Grid component from Es
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-|Set width for pivot grid|Not Applicable|**property:** width<br/><br/>`<ejs-pivotview id="PivotView" width= 800></ejs-pivotview>`|
-|Set height for pivot grid|Not Applicable|**property:** height<br/><br/>`<ejs-pivotview id="PivotView" height= 400></ejs-pivotview>`|
-|Set row height for pivot grid|Not Applicable|**property:** rowHeight<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings rowHeight= 60></e-gridSettings>`<br/>`</ejs-pivotview>`|
-|Set column width for pivot grid|Not Applicable|**property:** columnWidth<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings columnWidth= 120></e-gridSettings>`<br/>`</ejs-pivotview>`|
-|Drag and drop column headers in pivot grid|Not Applicable|**property:** allowReordering<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings allowReordering= "true"></e-gridSettings>`<br/>`</ejs-pivotview>`|
-|Resizing the column headers in pivot grid|**property:** enableColumnResizing<br/><br/>`<ej-pivot-grid id="PivotGrid" enable-column-resizing= "true"></ej-pivot-grid>`|**property:** allowResizing<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings allowResizing= "true"></e-gridSettings>`<br/>`</ejs-pivotview>`|
-|Wrap the cell content in pivot grid|Not Applicable|**property:** allowTextWrap<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings allowTextWrap= "true"></e-gridSettings>`<br/>`</ejs-pivotview>`|
-|Display cell border in pivot grid|Not Applicable|**property:** gridLines<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings gridLines= "Vertical"></e-gridSettings>`<br/>`</ejs-pivotview>`|
+|Set width for pivot table|Not Applicable|**property:** width<br/><br/>`<ejs-pivotview id="PivotView" width= 800></ejs-pivotview>`|
+|Set height for pivot table|Not Applicable|**property:** height<br/><br/>`<ejs-pivotview id="PivotView" height= 400></ejs-pivotview>`|
+|Set row height for pivot table|Not Applicable|**property:** rowHeight<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings rowHeight= 60></e-gridSettings>`<br/>`</ejs-pivotview>`|
+|Set column width for pivot table|Not Applicable|**property:** columnWidth<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings columnWidth= 120></e-gridSettings>`<br/>`</ejs-pivotview>`|
+|Drag and drop column headers in pivot table|Not Applicable|**property:** allowReordering<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings allowReordering= "true"></e-gridSettings>`<br/>`</ejs-pivotview>`|
+|Resizing the column headers in pivot table|**property:** enableColumnResizing<br/><br/>`<ej-pivot-grid id="PivotGrid" enable-column-resizing= "true"></ej-pivot-grid>`|**property:** allowResizing<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings allowResizing= "true"></e-gridSettings>`<br/>`</ejs-pivotview>`|
+|Wrap the cell content in pivot table|Not Applicable|**property:** allowTextWrap<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings allowTextWrap= "true"></e-gridSettings>`<br/>`</ejs-pivotview>`|
+|Display cell border in pivot table|Not Applicable|**property:** gridLines<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings gridLines= "Vertical"></e-gridSettings>`<br/>`</ejs-pivotview>`|
 |Cell selection|**property:** enableCellSelection<br/><br/>`<ej-pivot-grid id="PivotGrid" enable-cell-selection= "true"></ej-pivot-grid>`|**property:** allowSelection<br/><br/>`<ejs-pivotview id="PivotView" load= "onLoad">`<br/>`<e-gridSettings allowSelection= "true"></e-gridSettings>`<br/>`</ejs-pivotview>`<br/><br/>`function onLoad()  {`<br/>`pivotObj = document.getElementById('PivotView').ej2_instances[0];`<br/>`pivotObj.gridSettings.selectionSettings = {`<br/>`cellSelectionMode: 'Box',`<br/>`type: 'Multiple',`<br/> `mode: 'Cell' };`<br/>`}`|
-|Display overflow cell content in pivot grid|Not Applicable|**property:** clipMode<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings clipMode= "Clip"></e-gridSettings>`<br/>`</ejs-pivotview>`|
+|Display overflow cell content in pivot table|Not Applicable|**property:** clipMode<br/><br/>`<ejs-pivotview id="PivotView">`<br/>`<e-gridSettings clipMode= "Clip"></e-gridSettings>`<br/>`</ejs-pivotview>`|
 |Cell Editing|**property:** enableCellEditing<br/><br/>`<ej-pivot-grid id="PivotGrid" enable-cell-editing= "true"></ej-pivot-grid>`|Not Applicable|
 |Cell double click|**property:** enableCellDoubleClick<br/><br/>`<ej-pivot-grid id="PivotGrid" enable-cell-double-click= "true"></ej-pivot-grid>`|Not Applicable|
 |Cell context|**property:** enableCellContext<br/><br/>`<ej-pivot-grid id="PivotGrid" enable-cell-context= "true"></ej-pivot-grid>`|Not Applicable|
@@ -215,4 +214,4 @@ This article describes the API migration process of Pivot Grid component from Es
 |Event Triggers after the control populated with data source|**event:** renderSuccess<br/><br/>`<ej-pivot-grid id="PivotGrid" render-success= "onRenderSuccess"></ej-pivot-grid>`<br/><br/>`function onRenderSuccess() { }`|**event:** dataBound<br/><br/>`<ejs-pivotview id="PivotView" dataBound= "onDataBound"></ejs-pivotview>`<br/><br/>`function onDataBound() { }`|
 |Event Triggers after the control created|Not Applicable|**event:** created<br/><br/>`<ejs-pivotview id="PivotView" created= "onCreated"></ejs-pivotview>`<br/><br/>`function onCreated() { }`|
 |Event Triggers when destroy the control|Not Applicable|**event:** destroyed<br/><br/>`<ejs-pivotview id="PivotView" destroyed= "onDestroyed"></ejs-pivotview>`<br/><br/>`function onDestroyed() { }`|
-|Event Triggers the cell clicked in pivot grid control|**event:** cellClick<br/><br/>`<ej-pivot-grid id="PivotGrid" cell-click= "onCellClick"></ej-pivot-grid>`<br/><br/>`function onCellClick() { }`|**event:** cellClick<br/><br/>`<ejs-pivotview id="PivotView" cellClick= "onCellClick"></ejs-pivotview>`<br/><br/>`function onCellClick() { }`|
+|Event Triggers the cell clicked in pivot table|**event:** cellClick<br/><br/>`<ej-pivot-grid id="PivotGrid" cell-click= "onCellClick"></ej-pivot-grid>`<br/><br/>`function onCellClick() { }`|**event:** cellClick<br/><br/>`<ejs-pivotview id="PivotView" cellClick= "onCellClick"></ejs-pivotview>`<br/><br/>`function onCellClick() { }`|
