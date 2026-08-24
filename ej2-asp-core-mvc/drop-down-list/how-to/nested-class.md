@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nested Class in ##Platform_Name## DropDownList Component
+title: Nested Class in ##Platform_Name## DropDownList Component | Syncfusion
 description: Learn here all about nested class in Syncfusion ##Platform_Name## DropDownList component of Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Nested Class
