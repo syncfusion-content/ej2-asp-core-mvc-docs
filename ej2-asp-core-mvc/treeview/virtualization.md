@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## TreeView Control | Syncfusion
-description: Learn here all about Virtualization in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Virtualization in ##Platform_Name## Tree View | Syncfusion
+description: Learn how to improve ##Platform_Name## Tree View performance with UI virtualization by rendering visible nodes only and loading items dynamically on scroll.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Virtualization in ##Platform_Name## TreeView control
+# Virtualization in ##Platform_Name## Tree View
 
 The TreeView control supports UI virtualization to enhance performance when handling a large amount of data. This feature optimizes rendering by initially gathering all data but only rendering a subset of it during the initial load. The remaining items are then loaded dynamically as the user scrolls within the TreeView container.
 
