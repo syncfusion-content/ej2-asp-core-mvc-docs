@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Timepicker Component
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## TimePicker | Syncfusion
+description: Adapt the Syncfusion ##Platform_Name## TimePicker to various languages by parsing and formatting the time with internationalization and culture-specific localization.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Globalization
+# Globalization in ##Platform_Name## TimePicker
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) and also add culture specific customization and translation to the text [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization).
 
-By default, TimePicker time format and meridian names are specific to the `American English` culture. It utilizes the [Essential JavaScript 2 Internationalization](../common/internationalization) package to parse and format the date object based on the culture by using the official [UNICODE CLDR](https://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data.
+By default, TimePicker time format and meridian names are specific to the `American English` culture. It utilizes the [Essential JavaScript 2 Internationalization](../common/internationalization) package to parse and format the date object based on the culture by using the official [UNICODE CLDR](https://cldr.unicode.org) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data.
 
 * Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Locale) property.
 
@@ -70,7 +69,8 @@ The following example demonstrates the TimePicker in `German` culture.
 {% include code-snippet/timepicker/globalization/globalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -79,7 +79,8 @@ The following example demonstrates the TimePicker in `German` culture.
 {% include code-snippet/timepicker/globalization/globalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -88,7 +89,7 @@ The following example demonstrates the TimePicker in `German` culture.
 
 The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_EnableRtl) property to set the RTL direction.
 
-The following code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using [`L10n.load`](https://ej2.syncfusion.com/documentation/api/base/l10n/) method.
+The following code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using [`L10n.load`](https://ej2.syncfusion.com/documentation/api/base/l10n) method.
 
 The following example demonstrates TimePicker in `Arabic` culture with right-to-left direction.
 
@@ -99,7 +100,8 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 {% include code-snippet/timepicker/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -108,6 +110,7 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 {% include code-snippet/timepicker/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

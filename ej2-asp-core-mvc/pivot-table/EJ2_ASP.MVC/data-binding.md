@@ -388,9 +388,9 @@ The following options are available for field mapping:
 **Field identification and display**
 
 * [`Name`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_Name_System_String_) - Specifies the field name from your data source.
-* [`Caption`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_Caption_System_String_) - Sets a user-friendly display name for the field. This display name will appear in the Pivot Table UI instead of the original field name..
+* [`Caption`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_Caption_System_String_) - Sets a user-friendly display name for the field. This display name will appear in the Pivot Table UI instead of the original field name.
 * [`GroupName`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_GroupName_System_String_) - Groups related fields under a folder name in the field list UI for better organization.
-* [`DataType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_DataType_System_String_) - It is to specify the type of the field like 'string', 'number', 'datetime', 'date', and 'boolean'.
+* [`DataType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_DataType_System_String_) - Specifies the field data type such as 'string', 'number', 'datetime', 'date', or 'boolean'.
 
 **Aggregation and calculation**
 
@@ -622,7 +622,7 @@ The [`Load`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotVi
 
 The load event provides the following parameters:
 
-- `dataSourceSettings` filters.
+- `dataSourceSettings`: Defines the current report configuration including data source, rows, columns, values, and filters.
 - `defaultFieldListOrder`: Defines the default field list order that determines how fields appear in the field list panel.
 - `fieldsType`: Defines the type of specific fields, such as whether they should be treated as numbers, dates, or text.
 - `pivotview`: Defines the Pivot Table instance object that provides access to all component methods and properties.

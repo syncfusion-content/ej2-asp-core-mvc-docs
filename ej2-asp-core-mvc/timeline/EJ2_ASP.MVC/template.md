@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Timeline Control | Syncfusion
-description: Checkout and learn about Template in Syncfusion ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## Timeline | Syncfusion
+description: Customize each Syncfusion ##Platform_Name## Timeline item with the `template` property to modify dot items, templated content, and progress bar styling.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template in ##Platform_Name## Timeline control
+# Template in ##Platform_Name## Timeline
 
 The Timeline control allows you to customize the appearance for each item by using the [template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Template) property to modify the dot items, templated contents, progress bar styling and more.
 

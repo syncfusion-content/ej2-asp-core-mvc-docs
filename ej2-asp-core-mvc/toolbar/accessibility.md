@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Toolbar Component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Toolbar | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## Toolbar meets WAI-ARIA, ARIA roles, and keyboard navigation accessibility standards for assistive devices.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Accessibility in ##Platform_Name## Toolbar Component
+# Accessibility in ##Platform_Name## Toolbar
 
 The Toolbar component has been designed,  keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/) specifications, and applying the WAI-ARIA roles, states, and properties along with keyboard support for people who use assistive devices. WAI-ARIA accessibility support is achieved through attributes like `aria-label`, and `aria-orientation`, It provides information about elements in a document for assistive technology.  The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/practices/), and has been tested in major screen readers.
 

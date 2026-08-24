@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## Uploader | Syncfusion
-description: Learn here all about style and appearance in ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## File Upload | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## File Upload appearance with CSS that targets the wrapper, browse button, file list, and progress bar.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style and appearance in Uploader Component
+# Style and Appearance in ##Platform_Name## File Upload
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
 

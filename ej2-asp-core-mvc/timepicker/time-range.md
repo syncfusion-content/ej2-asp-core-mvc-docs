@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Time Range in ##Platform_Name## Timepicker Component
-description: Learn here all about Time Range in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
+title: Time Range in ##Platform_Name## TimePicker | Syncfusion
+description: Restrict the Syncfusion ##Platform_Name## TimePicker to a time range by setting the `min` and `max` properties to define selectable time boundaries.
 platform: ej2-asp-core-mvc
 control: Time Range
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Time Range
+# Time Range in ##Platform_Name## TimePicker
 
 TimePicker provides an option to select a time value within a specified range by using the [min](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Min) and [max](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Max) properties. The min value should always be lesser than the max value.
 

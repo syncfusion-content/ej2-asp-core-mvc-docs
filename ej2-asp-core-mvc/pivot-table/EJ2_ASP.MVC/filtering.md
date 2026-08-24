@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Filtering in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table applies member, label, and value filtering on row, column, and filter axes via the Field List or FilterSettings.
+description: Learn how the ASP.NET MVC Pivot Table filters rows and columns using member, label, and value filtering for focused data analysis.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 # Filtering in ASP.NET MVC Pivot Table
 
@@ -280,7 +279,7 @@ To enable label filtering, set the [`AllowLabelFilter`](https://help.syncfusion.
 
 ![Resultant pivot table on label filter](images/labelfiltering_grid.png)
 
-> In label filtering UI, based on the field chosen, it’s member data type is automatically recognized and filtering operation will be carried out. Where as in code behind, user need to define the data type through a property and it has been explained in the immediate section below.
+> In the label filtering UI, the member data type is automatically recognized based on the field chosen, and the filtering operation is carried out accordingly. In code-behind, however, users need to define the data type through a property, as explained in the following section.
 
 ### Filtering string data type through code
 
@@ -531,7 +530,9 @@ You can clear the applied value filter by clicking the "Clear" option at the bot
 
 ![Clearing the existing value filter](images/clearvaluefilter.png)
 
-## Event
+## Events
+
+The Pivot Table provides the following events to monitor filtering operations. Use them to track, customize, or cancel a filter action at runtime.
 
 ### MemberFiltering
 
@@ -541,11 +542,11 @@ This event provides access to the current filter settings, enabling you to custo
 
 The event includes the following parameters:
 
-* `cancel` - A boolean property that stops the filter from being applied when set to **true**.
+* [`Cancel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.CancelEventArgs.html) - A Boolean property that stops the filter from being applied when set to `true`.
 * `filterSettings` - Contains the current [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html) including filter items, types, and conditions.
-* `dataSourceSettings` - Holds the updated `dataSourceSettings` after the filter is applied.
+* `dataSourceSettings` - Holds the updated [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) after the filter is applied.
 
-For example, you can use the [`MemberFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MemberFiltering) event to block the filter action by setting `args.cancel` parameter to **true**. This is shown below:
+For example, you can use the [`MemberFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MemberFiltering) event to block the filter action by setting the `args.cancel` parameter to `true`. This is shown below:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -614,9 +615,9 @@ The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 > **Note**: The `fieldInfo` property is available only when the action involves a specific field, such as filtering, sorting, removing a field from the grouping bar, editing, or changing the aggregation type.
 
-- `cancel`: A boolean property that allows you to prevent the current action from completing. Set this to **true** to stop the action.
+- `cancel`: A Boolean property that allows you to prevent the current action from completing. Set this to `true` to stop the action.
 
-In the example below, you can prevent a filter action by setting **args.cancel** to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
+In the example below, you can prevent a filter action by setting `args.cancel` to `true` in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -684,7 +685,7 @@ The event provides the following parameters:
 
 The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
-* `actionName`: It holds the name of the current action failed. For example, if the action fails while filtering, the action name will be shown as **Filter field**.
+* `actionName`: It holds the name of the current action that failed. For example, if the action fails while filtering, the action name will be shown as **Filter field**.
 
 * `errorInfo`: It holds the error information of the current UI action.
 

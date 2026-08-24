@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Tooltip Control | Syncfusion
-description: Learn here all about animation support in Syncfusion ##Platform_Name## Tooltip component, its elements and more.
+title: Animation in ##Platform_Name## Tooltip | Syncfusion
+description: Configure animation effects for the Syncfusion ##Platform_Name## Tooltip using the animation property to control duration, delay, and easing transitions.
 platform: ej2-asp-core-mvc
 control: Animation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Animation in Tooltip Control
+# Animation in ##Platform_Name## Tooltip
 
 To animate the Tooltip, a set of specific animation effects are available, and it can be controlled using the `animation` property. The animation property also allows you to set delay, duration, and various other effects of your choice.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Tooltip Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Tooltip | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Tooltip appearance with CSS that targets the wrapper, popup, tip pointer, and inner content selectors.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Styles and Appearance
+# Style in ##Platform_Name## Tooltip
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

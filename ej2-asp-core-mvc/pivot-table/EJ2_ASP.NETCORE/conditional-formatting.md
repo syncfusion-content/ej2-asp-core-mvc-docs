@@ -59,7 +59,7 @@ The conditional formatting can be applied at runtime through the built-in dialog
 Conditional formatting can also be applied programmatically during component initialization using the 
 Conditional formatting can also be included in the pivot table through code-behind using the [`e-conditionalformatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html) property in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). This approach allows you to define formatting rules directly in the code-behind, ensuring that specific styling conditions are automatically applied when the Pivot Table loads. The required properties to apply a new conditional formatting are,
 
-* [applyGrandTotals](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_ApplyGrandTotals): This boolean property allows you to restrict conditional formatting for grand totals in the row and column axes. By default, this property is set to **true**.
+* [applyGrandTotals](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_ApplyGrandTotals): This Boolean property allows you to restrict conditional formatting for grand totals in the row and column axes. By default, this property is set to **true**.
 * [`measure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_Measure): Specifies the value field name for which style will be applied.
 * [`conditions`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_Conditions): Defines the operator type used for conditional formatting, such as equals, greater than, less than, etc.
 *  [`value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_Value1): Specifies the starting value for the conditional formatting.
@@ -68,10 +68,10 @@ Conditional formatting can also be included in the pivot table through code-behi
 
 The [`e-field-style`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html) object includes the following properties, which you can use to customize the appearance of value cells:
 
-* [`backgroundColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html#Syncfusion_EJ2_PivotView_PivotViewStyle_BackgroundColor): It allows to set the background color to the value cell in the Pivot Table.
-* [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html#Syncfusion_EJ2_PivotView_PivotViewStyle_Color): It allows to set the font color to the value cell in the Pivot Table.
-* [`fontFamily`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html#Syncfusion_EJ2_PivotView_PivotViewStyle_FontFamily): It allows to set the font family to the value cell in the Pivot Table.
-* [`fontSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html#Syncfusion_EJ2_PivotView_PivotViewStyle_FontSize): It allows to set the font size to the value cell in the Pivot Table.
+* [`backgroundColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html#Syncfusion_EJ2_PivotView_PivotViewStyle_BackgroundColor): It allows you to set the background color of the value cell in the Pivot Table.
+* [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html#Syncfusion_EJ2_PivotView_PivotViewStyle_Color): It allows you to set the font color of the value cell in the Pivot Table.
+* [`fontFamily`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html#Syncfusion_EJ2_PivotView_PivotViewStyle_FontFamily): It allows you to set the font family of the value cell in the Pivot Table.
+* [`fontSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html#Syncfusion_EJ2_PivotView_PivotViewStyle_FontSize): It allows you to set the font size of the value cell in the Pivot Table.
 
 ## Opening conditional formatting dialog programmatically
 
@@ -207,23 +207,25 @@ You can apply conditional formatting for specific row or column using [`label`](
 
 ## Editing and removing existing conditional format
 
-Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the "Value", "Condition" and "Format" options based on user requirement and click "OK". To remove a conditional format, click the "Delete" icon besides the respective condition.
+Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the **Value**, **Condition**, and **Format** options based on the user's requirements, and click **OK**. To remove a conditional format, click the **Delete** icon next to the respective condition.
 
 ![Editing and removing conditional formatting rules](images/cformatting_remove.png)
 
 ## Event
 
+The Pivot Table provides the following event to monitor conditional formatting operations. Use it to customize the conditions or styles applied at runtime.
+
 ### ConditionalFormatting
 
-The `conditionalFormatting` event is triggered when the “ADD CONDITION” button is clicked in the conditional formatting dialog, enabling users to define custom conditions instead of default conditions at runtime. To utilize this event, the [`allowConditionalFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowConditionalFormatting) property of the Pivot Table component must be set to **true**. This event provides the following parameters:
+The `conditionalFormatting` event is triggered when the “ADD CONDITION” button is clicked in the conditional formatting dialog, enabling users to define custom conditions instead of the default conditions at runtime. To use this event, the [`allowConditionalFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowConditionalFormatting) property of the Pivot Table component must be set to **true**. This event provides the following parameters:
 
-* `applyGrandTotals` - Allows to apply conditional formatting to the grand totals of row and column axis in the Pivot Table.
+* `applyGrandTotals` - Allows you to apply conditional formatting to the grand totals of the row and column axes in the Pivot Table.
 * `conditions` - Allows you to choose the operator type such as equals, greater than, less than, etc. for conditional formatting.
-* `label` - Allows to set the header text of a specific row/column field to apply conditional formatting.
-* `measure` - Allows to set the value field name to apply conditional formatting.
-* `style` - Allows to set the custom styles for the formatting applied values in the Pivot Table.
-* `value1` - Allows to set the start value for applying conditional formatting.
-* `value2` - Allows to set the end value for applying conditional formatting. This property is applicable only for conditions like **Between** and **NotBetween**.
+* `label` - Allows you to set the header text of a specific row/column field to apply conditional formatting.
+* `measure` - Allows you to set the value field name to apply conditional formatting.
+* `style` - Allows you to set the custom styles for the formatted values in the Pivot Table.
+* `value1` - Allows you to set the start value for applying conditional formatting.
+* `value2` - Allows you to set the end value for applying conditional formatting. This property is applicable only for conditions like **Between** and **NotBetween**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

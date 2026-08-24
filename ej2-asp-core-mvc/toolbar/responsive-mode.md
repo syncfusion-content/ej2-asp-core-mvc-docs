@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive Mode in ##Platform_Name## Toolbar | Syncfusion
-description: Learn here all about Responsive Mode in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Display the Syncfusion ##Platform_Name## Toolbar in Scrollable or Popup mode when commands exceed the viewable area width.
 platform: ej2-asp-core-mvc
 control: Responsive Mode
 publishingplatform: ##Platform_Name##
