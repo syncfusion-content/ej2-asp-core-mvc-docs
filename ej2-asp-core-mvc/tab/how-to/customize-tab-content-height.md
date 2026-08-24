@@ -1,22 +1,21 @@
 ---
 layout: post
-title: How to customize tab content height in ##Platform_Name## Tabs | Syncfusion
-description: Set the Syncfusion ##Platform_Name## Tabs content height using the `heightAdjustMode` property with None, Auto, Content, or Fill options.
+title: How to customize Tab content height in ##Platform_Name## | Syncfusion
+description: Set the Syncfusion ##Platform_Name## Tab content height using the `heightAdjustMode` property with None, Auto, Content, or Fill options.
 platform: ej2-asp-core-mvc
-control: Customize Tab Content Height
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# How to customize Tab content height in ##Platform_Name##
 
-# How to customize tab content height in ##Platform_Name## Tabs
+You can change the Tab content height by using the [heightAdjustMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_HeightAdjustMode) property. By default, the Tab content `heightAdjustMode` property is set to [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.HeightStyles.html#Syncfusion_EJ2_Navigations_HeightStyles_Content) value.
 
-You can change the Tab content height by using the `heightAdjustMode` property. By default, the Tab content `heightAdjustMode` property is set to `Content` value.
-
-* **None**: Each tab content height is set based on the Tab height. This value is used only the tab component having the `height` property.
-* **Auto**: Each tab content height will take the maximum height of all other tabs content.
-* **Content**: Each tab content height is set based on their own content.
-* **Fill**: Each tab content height is set based on the full height of Tabs parent element.
+* [None](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.HeightStyles.html#Syncfusion_EJ2_Navigations_HeightStyles_None): Each Tab content height is set based on the Tab height. This value is used only the Tab content having the [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_Height) property.
+* [Auto](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.HeightStyles.html#Syncfusion_EJ2_Navigations_HeightStyles_Auto): Each Tab content height will take the maximum height of all other Tab content.
+* [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.HeightStyles.html#Syncfusion_EJ2_Navigations_HeightStyles_Content): Each Tab content height is set based on their own content.
+* [Fill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.HeightStyles.html#Syncfusion_EJ2_Navigations_HeightStyles_Fill): Each Tab content height is set based on the full height of Tab parent element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

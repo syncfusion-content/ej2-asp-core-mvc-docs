@@ -3,17 +3,17 @@ layout: post
 title: Render Tab Items Using Template in ##Platform_Name## Tabs | Syncfusion
 description: Render Syncfusion ##Platform_Name## Tabs items from any data using the content template property with the `e-tab-header` and `e-content` classes.
 platform: ej2-asp-core-mvc
-control: Render The Tab Items Using Content Template
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# How to render tab items using template in ##Platform_Name## Tabs
+# How to render Tab items using template in ##Platform_Name##
 
 You can bind any data in Tab items, by simply using the content template property in ASP.NET Tab.
 
-In the below demo, the tab items are given as [chart](../../chart), [grid](../../grid), [calender](../../calendar) using the content template. In the content template you can give the header using `e-tab-header` and content using `e-content` class.
+In the below demo, the Tab items are given as [chart](../../chart), [grid](../../grid), [calender](../../calendar) using the content template. In the content template you can give the header using `e-tab-header` and content using `e-content` class.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

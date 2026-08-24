@@ -1,19 +1,18 @@
 ---
 layout: post
-title: How to customize tab scroll step in ##Platform_Name## Tabs | Syncfusion
-description: Customize the Syncfusion ##Platform_Name## Tabs scrolling distance when clicking the left or right navigation icons by setting the `scrollStep` property.
+title: How to customize Tab scroll step in ##Platform_Name## | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Tab scrolling distance when clicking the left or right navigation icons by setting the `scrollStep` property.
 platform: ej2-asp-core-mvc
-control: Customize Tab Scroll Step
+control: Tab
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# How to customize Tab scroll step in ##Platform_Name##
 
-# How to customize tab scroll step in ##Platform_Name## Tabs
+The Tab control supports customizing the scrolling distance when users click the left or right navigation icons. We can customize [ScrollStep](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_ScrollStep) property to control the scrolling distance. Refer to the following code example.
 
-Tab supports to customize the scrolling distance when you click the left and right side navigation icons. we can customize `ScrollStep` property for scrolling distance. Refer to the following code example.
-
-By using Tab scrollStep property, pass a required value to customize tab scrollStep.
+Set the `ScrollStep` property to the desired value to customize the scroll distance.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
