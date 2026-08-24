@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Template Configuration in ##Platform_Name## Toolbar Component | Syncfusion
-description: Learn here all about Template Configuration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to configure templates in ##Platform_Name## Toolbar | Syncfusion
+description: Render the Syncfusion ##Platform_Name## Toolbar from an item-based collection or by HTML elements using the `target` property with element IDs.
 platform: ej2-asp-core-mvc
 control: Template Configuration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Template Configuration
+# How to configure templates in ##Platform_Name## Toolbar
 
 The Toolbar can be rendered by item based collection and by HTML elements.  To render it based on the given HTML element, use `id` as the `target` property. To render the Toolbar, follow the below structure of the HTML elements:
 
@@ -51,7 +50,7 @@ Here, the template ID, `#template_toolbar` is directly appended to the Toolbar.
 
 ## Popup customization
 
-`Popup` is one of the supported responsive modes of the Toolbar. The Toolbar commands, popup mode priority and button text mode customizations are achieved in the item based rendering through property declaration. For more information on popup mode, refer [here](./responsive-mode/)
+`Popup` is one of the supported responsive modes of the Toolbar. The Toolbar commands, popup mode priority and button text mode customizations are achieved in the item based rendering through property declaration. For more information on popup mode, refer [here](./responsive-mode)
 
 The above behavior can also be achieved with template rendering by defining `equivalent class` names instead of property declaration.
 

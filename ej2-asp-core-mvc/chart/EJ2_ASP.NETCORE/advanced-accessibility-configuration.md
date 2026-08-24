@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility customization in Syncfusion Accumulation chart Component
-description: Learn here all about Accessibility customization in Syncfusion ASP MVC Accumulation Chart component of Syncfusion Essential JS 2 and more.
+title: Accessibility Customization in ##Platform_Name## Chart | Syncfusion
+description: Learn here all about Accessibility customization in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility customization
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Accessibility customization in ##Platform_Name## Chart component
+# Accessibility Customization in ##Platform_Name## Chart
 
-The Syncfusion® ##Platform_Name## Chart component is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Chart component's accessibility customization are briefly explained in this section.
+The ##Platform_Name## Chart component is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Chart component's accessibility customization are briefly explained in this section.
 
 The chart component has a number of characteristics that enable accessibility features to be customized, including:
 

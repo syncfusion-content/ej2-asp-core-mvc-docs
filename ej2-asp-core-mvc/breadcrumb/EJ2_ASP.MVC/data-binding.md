@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Breadcrumb Component
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## Breadcrumb | Syncfusion
+description: Bind Breadcrumb items from local JSON or remote data sources in ##Platform_Name## using url and text fields for navigation links.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding in Breadcrumb
+# Data Binding in ##Platform_Name## Breadcrumb
 
 ## Items based on current Url
 
@@ -22,7 +22,8 @@ The Breadcrumb items can be generated from the current URL of the page, if the `
 {% include code-snippet/breadcrumb/url/current-url/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Current-url.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -31,7 +32,8 @@ The Breadcrumb items can be generated from the current URL of the page, if the `
 {% include code-snippet/breadcrumb/url/current-url/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Current-url.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -40,7 +42,7 @@ Output be like the below.
 
 ![Breadcrumb Sample](./images/breadcrumb-current-url.PNG)
 
-N> This output screenshot shows the [Bind to Location](https://ej2.syncfusion.com/aspnetcore/Breadcrumb/BindToLocation#/bootstrap5) sample.
+N> This output screenshot shows the [Bind to Location](https://ej2.syncfusion.com/aspnetmvc/breadcrumb/bindtolocation#/fluent2) sample.
 <br/> This sample is hosted in different location, so the breadcrumb is rendered with different location instead of the actual location.
 
 ### Static URL

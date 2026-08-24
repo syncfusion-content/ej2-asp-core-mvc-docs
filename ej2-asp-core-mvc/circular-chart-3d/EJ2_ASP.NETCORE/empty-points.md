@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Empty points in ##Platform_Name## Syncfusion 3D Circular Chart Component
+title: Empty Points in ##Platform_Name## 3D Circular Chart | Syncfusion
 description: Learn here all about empty points in Syncfusion ##Platform_Name## 3D Circular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Empty points
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Empty points in ##Platform_Name## 3D Circular Chart Component
+# Empty Points in ASP.NET Core 3D Circular Chart
 
 Data points containing `null` or `undefined` values are considered empty points. These empty data points are ignored and not plotted in the 3D Circular Chart. You can customize the handling of empty points using the `EmptyPointSettings` property in the series. The default mode for empty points is `Gap`. Other supported modes include `Average`, `Drop`, and `Zero`.
 

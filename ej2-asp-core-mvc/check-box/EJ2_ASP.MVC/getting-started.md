@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## CheckBox Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## CheckBox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Checkbox | Syncfusion
+description: Add the Syncfusion.EJ2.MVC5 package, register the script manager, and render an ##Platform_Name## Checkbox with checked and indeterminate states.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC CheckBox Control
 
-This section briefly explains about how to include [ASP.NET MVC CheckBox](https://www.syncfusion.com/aspnet-mvc-ui-controls/checkbox) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC CheckBox](https://www.syncfusion.com/aspnet-mvc-ui-controls/checkbox) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC CheckBox](https:
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -95,20 +95,20 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC CheckB
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC CheckBox control will be rendered in the default web browser.
 
-![ASP.NET MVC CheckBox Control](images/check-box.png)
+![ASP.NET MVC CheckBox Control](images/check-box.webp)
 
 ## Change the CheckBox state
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 CheckBox contains 3 different states visually, they are:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 CheckBox contains 3 different states visually:
 * Checked
 * Unchecked
 * Indeterminate
 
-The CheckBox [Checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In checked state a tick mark will be added to the visualization of CheckBox.
+The CheckBox [Checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In the checked state, a tick mark will be added to the visualization of CheckBox.
 
 ### Indeterminate
 
-The CheckBox indeterminate state can be set through [Indeterminate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. The Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
+The CheckBox indeterminate state can be set through the [Indeterminate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Indeterminate) property. The CheckBox indeterminate state masks the real value of the CheckBox visually. The CheckBox cannot be changed to the indeterminate state through the user interface; this state can be achieved only through the property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

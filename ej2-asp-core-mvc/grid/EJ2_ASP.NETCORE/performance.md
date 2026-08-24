@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance tips for ASP.NET Core Grid | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of ASP.NET Core Grid even binding large data set.
+title: ##Platform_Name## Grid Performance | Syncfusion
+description: Learn how to optimize ##Platform_Name## Data Grid performance with virtualization, paging, efficient data operations, and best practices for large datasets.
 platform: ej2-asp-core-mvc
 control: Grid
 documentation: ug
 ---
 
-# Performance tips for ASP.NET Core Grid
+# Performance Tips for ASP.NET Core Data Grid
 
 This article is a comprehensive guide on improving the loading performance of the ASP.NET Core Grid, especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the ASP.NET Core Grid during data binding, ensuring a smooth and efficient user experience.
 
@@ -65,7 +65,7 @@ The ASP.NET Core Grid provides support for various adaptors (OData, ODataV4, Web
 
 ## How to avoid MaxJsonLength error while passing large amount of records
 
-The ASP.NET Core Grid is client-server based. So, we send the data as JSON object between client and server. The reported issue occurs due to the serialization of the large-sized JSON object. We need to increase the maximum length for serializing the large-sized JSON object. You have to alter the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property on your web.config file or in the place of deserialization.
+The ASP.NET Core Grid is client-server based. So, we send the data as JSON object between client and server. The reported issue occurs due to the serialization of the large-sized JSON object. We need to increase the maximum length for serializing the large-sized JSON object. You have to alter the [MaxJsonLength](https://learn.microsoft.com/en-us/archive/msdn-technet-forums/ab1a5864-46e2-4c57-9511-dc3f60cc314a) property on your web.config file or in the place of deserialization.
 
 **Solution: 1**
 
@@ -86,6 +86,6 @@ The ASP.NET Core Grid is client-server based. So, we send the data as JSON objec
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
 
-## Microsoft excel limitation while exporting millions of records to excel file format
+## Microsoft Excel limitation while exporting millions of records to excel file format
 
-By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) link for more details on Microsoft excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.
+By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits) link for more details on Microsoft Excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.

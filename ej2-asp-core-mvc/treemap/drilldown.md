@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drilldown in ##Platform_Name## Treemap Component
-description: Learn here all about Drilldown in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Drilldown in ##Platform_Name## TreeMap | Syncfusion
+description: Learn here all about Drilldown in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drilldown
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drill-down
+# Drilldown in ##Platform_Name## TreeMap
 
 The TreeMap supports drill-down to expose the hierarchy, achieved by clicking a node. If an item is clicked in the TreeMap, it will be moved to the next level or sub level hierarchy and returned back to the previous level by clicking the node.
 

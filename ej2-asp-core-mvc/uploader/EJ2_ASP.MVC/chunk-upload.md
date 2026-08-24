@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chunk Upload in ##Platform_Name## Uploader Component | Syncfusion
-description: Learn here all about Chunk Upload in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: Chunk Upload in ##Platform_Name## File Upload | Syncfusion
+description: Enable chunk upload in the Syncfusion ##Platform_Name## File Upload using chunkSize to split large files for AJAX-based pause, resume, and retry.
 platform: ej2-asp-core-mvc
 control: Chunk Upload
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Chunk upload in ##Platform_Name## Uploader control
+# Chunk Upload in ##Platform_Name## File Upload
 
 The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
 
@@ -61,7 +61,7 @@ To modify the chunk upload, the following options can be used.
 
 * **RetryAfterDelay** - If error occurs while sending any chunk request from JavaScript, hold the operation for 500 milliseconds (by default), and retry the operation using chunk. This can be achieved by using the [asyncSettings.retryAfterDelay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_RetryAfterDelay) property. You can modify the holding time interval in milliseconds.
 
-* **RetryCount** - Specifies the number of retry actions performed when the file fails to upload. By default, retry action is performed 3 times. If the file fails to upload continuously, the request is aborted and the uploader [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderBuilder.html#Syncfusion_EJ2_Inputs_UploaderBuilder_Failure_System_String_) event will trigger.
+* **RetryCount** - Specifies the number of retry actions performed when the file fails to upload. By default, retry action is performed 3 times. If the file fails to upload continuously, the request is aborted and the uploader [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) event will trigger.
 
 The following sample specifies the chunk upload delay with 3000 milliseconds and the retry count is 5. The failure event is triggered as the wrong saveUrl is used.
 

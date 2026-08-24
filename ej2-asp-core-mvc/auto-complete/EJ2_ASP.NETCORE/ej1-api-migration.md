@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Auto Complete Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## AutoComplete | Syncfusion
+description: Migrate the ##Platform_Name## AutoComplete from Essential JS 1 to Essential JS 2 with side-by-side API maps for data binding, filtering, and events.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ##Platform_Name## AutoComplete
 
 This article describes the API migration process of AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use multiselection support in autocomplete, use MultiSelect component.
@@ -56,7 +56,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 | **Animation** | **Property:** *animate-type* <br/> `<ej-autocomplete id="autocomplete" animate-type=AnimateType.none></ej-autocomplete>` | **Not Applicable** |
 | **Focusing the list item** | **Property:** *auto-focus*<br/> `<ej-autocomplete id="autocomplete" auto-focus="true"></ej-autocomplete>` |**Not applicable** |
 | **Delaying the popup open time** | **Property:** *delay-suggestion-timeout*<br/> `<ej-autocomplete id="autocomplete" delay-suggestion-timeout=500></ej-autocomplete>` | **Not applicable** |
-| **Popup text when there is no popup items** | **Property:** *empty-result-text*<br/> `<ej-autocomplete id="autocomplete" empty-result-text="no records"></ej-autocomplete>`  |<https://ej2.syncfusion.com/aspnetcore/AutoComplete/Template#/material> |
+| **Popup text when there is no popup items** | **Property:** *empty-result-text*<br/> `<ej-autocomplete id="autocomplete" empty-result-text="no records"></ej-autocomplete>`  |<https://ej2.syncfusion.com/aspnetcore/autocomplete/template#/fluent2> |
 | **Enable/disable the duplicate option** | **Property:** *enable-distinct*<br/> `<ej-autocomplete id="autocomplete" enable-distinct="true"></ej-autocomplete>` |**Not applicable**  |
 | **Popup height** | **Property:** *popup-height*<br/> `<ej-autocomplete id="autocomplete" popup-height="300px"></ej-autocomplete>` |**Property:** *popupHeight* <br/> `<ejs-autocomplete id="autocomplete" popupHeight="300px"></ejs-autocomplete>` |
 | **Popup Width** | **Property:** *popup-width*<br/> `<ej-autocomplete id="autocomplete" popup-width="300px"></ej-autocomplete>` |**Property:** *popupWidth* <br/> `<ej-autocomplete id="autocomplete" popupWidth="300px"></ej-autocomplete>`|

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Mention Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Mention | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Mention control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ejmvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Mention Control
+# Getting Started with ##Platform_Name## Mention
 
 This section briefly explains about how to include [ASP.NET MVC Mention](https://www.syncfusion.com/aspnet-mvc-ui-controls/mention) control in your ASP.NET MVC application using Visual Studio.
 
@@ -20,7 +20,7 @@ This section briefly explains about how to include [ASP.NET MVC Mention](https:/
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -94,7 +94,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Mentio
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Mention control will be rendered in the default web browser.
 
-![ASP.NET MVC Mention control](./images/mention-control.png)
+![ASP.NET MVC Mention control](./images/mention-control.webp)
 
 ## Binding data source
 

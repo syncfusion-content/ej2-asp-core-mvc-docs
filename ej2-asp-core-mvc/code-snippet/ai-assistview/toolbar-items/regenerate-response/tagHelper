@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2.InteractiveChat;
+@using System.Text.Json;
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" prompts="@(ViewData["Prompts"])" promptRequest="onPromptRequest" created="onCreated">
+        <e-aiassistview-responsetoolbarsettings items="@(ViewData["ToolbarItems"])" ></e-aiassistview-responsetoolbarsettings>
+    </ejs-aiassistview>
+</div>
+
+<script>
+    var assistObj = null;
+
+    var regenerateResponses = @Html.Raw(JsonSerializer.Serialize(ViewData["RegenerateResponses"]));
+
+    function onCreated() {
+        assistObj = ej.base.getComponent(document.getElementById('aiAssistView'), 'aiassistview');
+    }
+
+    function onPromptRequest(args) {
+        setTimeout(function () {
+            var foundPrompt = assistObj.prompts.find(prompt => prompt.prompt == args.prompt);
+            var defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            var response;
+            if (foundPrompt) {
+                var randomIndex = Math.floor(Math.random() * regenerateResponses.length);
+                response = regenerateResponses[randomIndex];
+                } else {
+                    response = "For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services.";
+                }
+                assistObj.addPromptResponse(response);
+            }, 1000);
+    }
+</script>

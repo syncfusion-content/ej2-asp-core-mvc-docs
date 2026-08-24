@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Syncfusion Accumulation Chart Component
+title: Legend in ##Platform_Name## Accumulation Chart | Syncfusion
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend in ##Platform_Name## Accumulation Chart Component
+# Legend in ASP.NET Core Accumulation Chart
 
 Like chart, the legend is also available for accumulation charts, which gives information about the points. By default, the legend will be placed on the right if the width of the chart is high or will be placed on the bottom if the height of the chart is high. Other customization features regarding the legend element are same as the [`chart legend`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html). Here, the legend for a point can be collapsed by giving the empty string to the x value of the point.
 
@@ -440,6 +440,40 @@ public class PieChartData
 {% endhighlight %}
 {% highlight c# tabtitle="Layout.cs" %}
 {% include code-snippet/chart/accumulation-charts/legend/layout/layout.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Legend template
+
+Legend templates allow you to replace default legend icons and text with custom HTML for each series. This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.
+
+You can customize the legend items by using the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_LegendSettings) property of [`legendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_LegendSettings). Legend interactions (click to toggle series) remain unless [`ToggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_LegendSettings#togglevisibility) is set to false. Templates work with all legend positions, alignments, and paging.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/legend/template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/legend/template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/chart/accumulation-charts/legend/template/template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Source Binding in ##Platform_Name## Menu Control | Syncfusion
-description: Learn here all about Data Source Binding And Custom Menu Items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: Data Source Binding in ##Platform_Name## Menu | Syncfusion
+description: Bind Syncfusion ##Platform_Name## Menu to local arrays or remote data source via the items property, fields mapping, and ajax POST requests using fetch.
 platform: ej2-asp-core-mvc
 control: Data Source Binding And Custom Menu Items
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data source binding and Custom menu items
+# Data Source Binding in ##Platform_Name## Menu
 
 ## Data binding
 
@@ -85,7 +85,7 @@ In the following example, **id**, **pId**, and **text** columns from self-refere
 
 ## Custom menu items
 
-The Menu can be customized using Essential<sup style="font-size:70%">&reg;</sup> JS2 [Template engine](https://ej2.syncfusion.com/documentation/common/template-engine.html) to render the elements.
+The Menu can be customized using Essential<sup style="font-size:70%">&reg;</sup> JS2 [Template engine](https://ej2.syncfusion.com/documentation/common/template-engine) to render the elements.
 
 To customize menu items in your application, set your customized template string to the [`template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_Template) property.
 In the following example, the menu has been rendered with customized menu items.

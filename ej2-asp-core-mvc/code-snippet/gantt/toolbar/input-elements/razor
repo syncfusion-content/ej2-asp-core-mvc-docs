@@ -1,4 +1,0 @@
-  @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").Toolbar(new List<string>() 
-  { "Add", "Cancel", "CollapseAll", "Delete", "Edit", "ExpandAll", "NextTimeSpan", "PrevTimeSpan", "Search", "Update",{type:'Input', template: new NumericTextBox({ format: 'c2', value:1, width:150 })} }).TaskFields(ts =>
-   ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
-   ).EditSettings(es=>es.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Render()

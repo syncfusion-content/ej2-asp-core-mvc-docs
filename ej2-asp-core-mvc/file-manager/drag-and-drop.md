@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to enable drag and drop in the ##Platform_Name## File Manager to move or upload files between folders using built-in drag events.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Drag And Drop
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Drag And Drop
+# Drag and Drop in ##Platform_Name## File Manager
 
 The File Manager allows moving files or folders between directories using the `allowDragAndDrop` property. It also supports uploading a file by dragging it from Windows Explorer to the File Manager control. You can enable or disable this support by using the `allowDragAndDrop` property of File Manager.
 

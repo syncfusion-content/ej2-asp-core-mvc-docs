@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Excel Like Filter in Syncfusion ##Platform_Name## Grid 
-description: Learn here all about Excel Like Filter in Syncfusion ##Platform_Name## Grid of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Excel Like Filter | Syncfusion
+description: Learn how to use Excel Like Filter in ##Platform_Name## Data Grid with checkbox filters, search, remote data binding, and customizable filter templates.
 platform: ej2-asp-core-mvc
 control: Excel Like Filter
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Excel like filter in ASP.NET MVC Grid component
+# Excel Like Filter in ASP.NET MVC Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the grid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel like filtering is especially useful when dealing with large datasets and complex filtering requirements.
 
@@ -44,6 +44,21 @@ Here is an example that showcasing how to render the check box filter within the
 {% endtabs %}
 
 ![Filter bar](../images/filtering/excel-filter-checbox.gif)
+
+## Filter modes
+ 
+The Grid `Excel` and `CheckBox` filtering features support two modes, `Default` and `Immediate`. In `Default` mode, filter changes are applied only after clicking the "Filter" or "OK" button in the filter dialog, which is the default behavior. In `Immediate` mode, filters are applied automatically when filter items are checked or unchecked in the filter dialog.
+ 
+The following example enables immediate mode by setting the `filterSettings.mode` property to `Immediate`:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/filtering/excelfilter-checkbox1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="excelfilter.cs" %}
+{% include code-snippet/grid/filtering/excelfilter-checkbox1/excelfilter.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Customize the filter choice count
 
@@ -223,4 +238,4 @@ In the provided example, On-Demand Excel filter has been enabled for the ASP.NET
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)

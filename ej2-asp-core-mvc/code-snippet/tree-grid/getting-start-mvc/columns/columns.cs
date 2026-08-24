@@ -2,92 +2,41 @@ public class HomeController : Controller
 {
     public ActionResult Index()
     {
-        return View(TreeGridItems.GetTreeData());
+        List<Task> task = new List<Task>();
+ 
+        Task parent1 = new Task { TaskID = 1, TaskName = "Planning", StartDate = new DateTime(2025, 2, 4), EndDate = new DateTime(2025, 2, 7), Duration = 4, Children = new List<Task>() };
+        parent1.Children.Add(new Task(2, "Plan timeline", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
+        parent1.Children.Add(new Task(3, "Plan budget", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
+ 
+        Task parent2 = new Task { TaskID = 4, TaskName = "Design", StartDate = new DateTime(2025, 2, 10), EndDate = new DateTime(2025, 2, 14), Duration = 5, Children = new List<Task>() };
+ 
+        parent2.Children.Add(new Task(5, "Software Specification", new DateTime(2025, 2, 10), new DateTime(2025, 2, 12), 3));
+        parent2.Children.Add(new Task(6, "Design Documentation", new DateTime(2025, 2, 13), new DateTime(2025, 2, 14), 2));
+        parent2.Children.Add(new Task(7, "Design complete", new DateTime(2025, 2, 14), new DateTime(2025, 2, 14), 1));
+ 
+        task.Add(parent1);
+        task.Add(parent2);
+        ViewBag.DataSource = task;
+        return View();
     }
-}
-public class TreeGridItems
-{
-    public TreeGridItems() { }
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public int Duration { get; set; }
-    public List<TreeGridItems> Children { get; set; }
-
-    public static List<TreeGridItems> GetTreeData()
+ 
+    public class Task
     {
-        List<TreeGridItems> BusinessObjectCollection = new List<TreeGridItems>();
-
-        TreeGridItems Record1 = null;
-
-        Record1 = new TreeGridItems()
+        public Task() { }
+        public int? TaskID { get; set; }
+        public string TaskName { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public int? Duration { get; set; }
+        public List<Task> Children { get; set; }
+ 
+        public Task(int taskID, string taskName, DateTime start, DateTime end, int duration)
         {
-            TaskId = 1,
-            TaskName = "Planning",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5,
-            Children = new List<TreeGridItems>(),
-        };
-        TreeGridItems Child1 = new TreeGridItems()
-        {
-            TaskId = 2,
-            TaskName = "Plan timeline",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-
-        TreeGridItems Child2 = new TreeGridItems()
-        {
-            TaskId = 3,
-            TaskName = "Plan budget",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        TreeGridItems Child3 = new TreeGridItems()
-        {
-            TaskId = 4,
-            TaskName = "Allocate resources",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        Record1.Children.Add(Child1);
-        Record1.Children.Add(Child2);
-        Record1.Children.Add(Child3);
-        TreeGridItems Record2 = new TreeGridItems()
-        {
-            TaskId = 6,
-            TaskName = "Design",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3,
-            Children = new List<TreeGridItems>()
-        };
-        TreeGridItems Child5 = new TreeGridItems()
-        {
-            TaskId = 7,
-            TaskName = "Software Specification",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-
-        TreeGridItems Child6 = new TreeGridItems()
-        {
-            TaskId = 8,
-            TaskName = "Develop prototype",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-        TreeGridItems Child7 = new TreeGridItems()
-        {
-            TaskId = 9,
-            TaskName = "Get approval from customer",
-            StartDate = new DateTime(2024, 06, 27),
-            Duration = 2
-        };
-        Record2.Children.Add(Child5);
-        Record2.Children.Add(Child6);
-        Record2.Children.Add(Child7);
-        BusinessObjectCollection.Add(Record1);
-        BusinessObjectCollection.Add(Record2);
-        return BusinessObjectCollection;
+            this.TaskID = taskID;
+            this.TaskName = taskName;
+            this.StartDate = start;
+            this.EndDate = end;
+            this.Duration = duration;
+        }
     }
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Linear Gauge Control | Syncfusion
+title: Getting Started with ##Platform_Name## Linear Gauge | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Linear Gauge control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Linear Gauge Control
+# Getting Started with ASP.NET MVC Linear Gauge
 
 This section briefly explains about how to include [ASP.NET MVC Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET MVC application using Visual Studio.
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Linear Gauge](ht
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Linear
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Linear Gauge control will be rendered in the default web browser.
 
-![ASP.NET MVC Linear Gauge Control](images/lineargauge-control.png)
+![ASP.NET MVC Linear Gauge Control](images/lineargauge-control.webp)
 
 ## Add Gauge Title
 
@@ -109,7 +109,7 @@ The title for the Linear Gauge can be set using [Title](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Linear Gauge with Title](images/lineargauge-with-title.png)
+![ASP.NET MVC Linear Gauge with Title](images/lineargauge-with-title.webp)
 
 ## Axis
 
@@ -131,4 +131,4 @@ new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/LinearGauge/ASP.NET%20MVC%20Razor%20Examples).
 
-N> You can also explore our [ASP.NET MVC Linear Gauge example](https://ej2.syncfusion.com/aspnetmvc/LinearGauge/DefaultFunctionalities#/bootstrap5) that shows you how to render the Linear Gauge in ASP.NET MVC.
+N> You can also explore our [ASP.NET MVC Linear Gauge example](https://ej2.syncfusion.com/aspnetmvc/lineargauge/defaultfunctionalities#/fluent2) that shows you how to render the Linear Gauge in ASP.NET MVC.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Button Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Button | Syncfusion
+description: Add the Syncfusion ##Platform_Name## Button to a project by installing the Syncfusion.EJ2.MVC5 NuGet package and wiring up scripts.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Button Control
+# Getting Started with ##Platform_Name## Button
 
-This section briefly explains about how to include [ASP.NET MVC Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/button) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/button) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Button](https://
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -99,7 +99,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Change Button type
 
-To change the default Button to flat Button, set the [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-flat`.
+To change the default Button to a flat Button, set the [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-flat`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Views in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Views in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Views in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to switch between Large Icons and Details views in the ##Platform_Name## File Manager for flexible file browsing.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Views
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Views in File Manager Control
+# Views in ##Platform_Name## File Manager
 
 The view section displays files and folders for user browsing. The `view` API can also be used to change the initial view of the File Manager.
 

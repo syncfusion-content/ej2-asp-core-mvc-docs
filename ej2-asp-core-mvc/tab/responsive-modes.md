@@ -1,26 +1,25 @@
 ---
 layout: post
-title: Responsive Modes in ##Platform_Name## Tab Component
-description: Learn here all about Responsive Modes in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: Responsive Modes in ##Platform_Name## Tabs | Syncfusion
+description: Render the Syncfusion ##Platform_Name## Tabs in scrollable or popup overflow modes when items exceed the viewable area width.
 platform: ej2-asp-core-mvc
-control: Responsive Modes
+control: Tab
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Responsive Modes in ##Platform_Name## Tab control
 
-# Responsive Modes
-
-The following section explains about rendering Tab when its width exceeds the viewable area or particularly in a given width. The available modes are as follows:
+The following section explains how the Tab is rendered when its width exceeds the viewable area or particularly in a given width. The available modes are as follows:
 
 * Scrollable
 * Popup
 
 ## Scrollable
 
-The default overflow mode is Scrollable. Scrollable display mode supports displaying the Tab header items in a single line with horizontal scrolling enabled, when the item overflows to the available space.
+The default overflow mode is Scrollable. Scrollable display mode supports displaying the Tab header items in a single line with horizontal scrolling enabled, when items exceed the available space.
 
-* The right and left navigation arrow is added at the start and end of the Tab header through which user can navigate towards overflowed items of the Tab header.
+* The right and left navigation arrows are added at the start and end of the Tab header through which users can navigate towards overflowed items of the Tab header.
 * You can also see the overflowed items using touch and swipe action on the header and content section.
 * By default, navigation icon in the left direction is disabled, you can see the overflowed items by moving in the right direction.
 * By clicking the arrow or by holding the arrow continuously, you can see the overflowed items.
@@ -53,8 +52,6 @@ The default overflow mode is Scrollable. Scrollable display mode supports displa
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Popup
 
@@ -89,9 +86,7 @@ The Popup is the another type of `overflowMode` in which the Tab container holds
 {% endtabs %}
 {% endif %}
 
+## See also
 
-
-## See Also
-
-* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection/)
-* [Collapsible Tab](./how-to/create-collapsible-tabs/)
+* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection)
+* [Collapsible Tab](./how-to/create-collapsible-tabs)

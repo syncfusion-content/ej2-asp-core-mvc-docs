@@ -1,0 +1,53 @@
+@Html.EJS().Chart("container")
+.PrimaryXAxis(px =>
+    px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+)
+.LegendSettings(l => l.Visible(true))
+.Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .Name("Vietnam")
+        .Marker(m => m.Visible(true))
+        .LabelSettings(ls => ls.Visible(true))
+        .DataSource(ViewBag.vietnamData)
+        .Add();
+
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .Name("Indonesia")
+        .Marker(m => m.Visible(true))
+        .LabelSettings(ls => ls.Visible(true))
+        .DataSource(ViewBag.indonesiaData)
+        .Add();
+
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .Name("France")
+        .Marker(m => m.Visible(true))
+        .LabelSettings(ls => ls.Visible(true))
+        .DataSource(ViewBag.franceData)
+        .Add();
+
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .Name("Poland")
+        .Marker(m => m.Visible(true))
+        .LabelSettings(ls => ls.Visible(true))
+        .DataSource(ViewBag.polandData)
+        .Add();
+
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .Name("Mexico")
+        .Marker(m => m.Visible(true))
+        .LabelSettings(ls => ls.Visible(true))
+        .DataSource(ViewBag.mexicoData)
+        .Add();
+})
+.Render()

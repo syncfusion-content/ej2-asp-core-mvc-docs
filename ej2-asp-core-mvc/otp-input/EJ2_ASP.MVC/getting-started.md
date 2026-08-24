@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## OTP Input Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## OTP Input | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## OTP Input control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: OTP Input
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC OTP Input control
+# Getting Started with ##Platform_Name## OTP Input
 
-This section briefly explains about how to include `ASP.NET MVC OTP Input` control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the `ASP.NET MVC OTP Input` control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ This section briefly explains about how to include `ASP.NET MVC OTP Input` contr
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -94,4 +94,4 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC OTP In
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC OTP Input control will be rendered in the default web browser.
 
-![ASP.NET MVC OTP Input Control](images/otp-default.png)
+![ASP.NET MVC OTP Input Control](images/otp-default.webp)

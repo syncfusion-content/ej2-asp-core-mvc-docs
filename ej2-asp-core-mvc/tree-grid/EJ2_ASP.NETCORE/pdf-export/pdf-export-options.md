@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PDF Export Options in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about PDF Export Options in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid PDF Export Options | Syncfusion
+description: Learn about PDF export options in ##Platform_Name## TreeGrid, including exporting selected records, hidden columns, custom fonts, and advanced settings.
 platform: ej2-asp-core-mvc
 control: PDF Export Options
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# PDF Export Options
+# PDF Export Options in ##Platform_Name## TreeGrid
 
 ## To customize PDF export
 
@@ -52,7 +52,6 @@ By default, treegrid uses **Helvetica** font in the exported document. You can c
 * TimesRoman
 * Courier
 * Symbol
-* ZapfDingbats
 
 The code example for changing default font,
 
@@ -221,11 +220,11 @@ PDF export provides an option to export hidden columns of TreeGrid by defining t
 
 ### Show or hide columns on exported PDF
 
-You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) and [`pdfExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PdfExportComplete.html) events.
+You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ToolbarClick) and [`pdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PdfExportComplete) events.
 
-In [`toolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) event, based on **args.item.text** as **PDF Export**. We can show or hide columns by setting [`visible`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Visible.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **true** or **false** respectively.
+In [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ToolbarClick) event, based on **args.item.text** as **PDF Export**. We can show or hide columns by setting [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Visible) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **true** or **false** respectively.
 
-In the [`pdfExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PdfExportComplete.html) event, We have reversed the state back to the previous state.
+In the [`pdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PdfExportComplete) event, We have reversed the state back to the previous state.
 
 In the below example, we have **Duration** as a hidden column in the treegrid. While exporting, we have changed **Duration** to visible column and **StartDate** as hidden column.
 
@@ -254,4 +253,4 @@ In the below example, we have **Duration** as a hidden column in the treegrid. W
 
 
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

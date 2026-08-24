@@ -1,9 +1,0 @@
- <ejs-kanban id="Kanban" keyField="ContactTitle">
-                <e-data-manager url="DataSource" crudUrl="UpdateData" adaptor="UrlAdaptor" crossdomain="true"></e-data-manager>
-                <e-kanban-columns>
-                    <e-kanban-column headerText="Order Administrator" keyField="Order Administrator"></e-kanban-column>
-                    <e-kanban-column headerText="Sales Representative" keyField="Sales Representative"></e-kanban-column>
-                    <e-kanban-column headerText="Export Administrator" keyField="Export Administrator"></e-kanban-column>
-                </e-kanban-columns>
-                <e-kanban-cardsettings headerField="SupplierID" contentField="ContactName"></e-kanban-cardsettings>
-            </ejs-kanban>

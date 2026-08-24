@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn here all about templates and how to use them in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Template in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn about the templates available in the Syncfusion ##Platform_Name## Speed Dial, including item and popup templates for customizing content and layout.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template in ASP.NET MVC SpeedDial Control
+# Template in ##Platform_Name## Speed Dial
 
 This section explains available templates in Speed Dial Control and its usage.
 

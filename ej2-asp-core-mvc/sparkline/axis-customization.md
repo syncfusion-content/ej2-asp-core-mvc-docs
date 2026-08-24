@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis Customization in ##Platform_Name## Sparkline Component
+title: Axis Customization in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Axis Customization in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis Customization
@@ -9,18 +9,18 @@ documentation: ug
 ---
 
 
-# Axis Customization
+# Axis Customization in ##Platform_Name## Sparkline
 
 You can customize axis value types and min and max values of the sparkline.
 
 ## Change value type of the sparkline
 
-You can change the sparkline value type by setting the [`valueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~ValueType.html) property to `Numeric`, `Category`, or `DateTime`.
+You can change the sparkline value type by setting the [valueType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html) property to [Numeric](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html#Syncfusion_EJ2_Sparkline_ValueType_Numeric), [Category](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html#Syncfusion_EJ2_Sparkline_ValueType_Category), or [DateTime](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html#Syncfusion_EJ2_Sparkline_ValueType_DateTime).
 <!-- markdownlint-disable MD036 -->
 
 **DateTime**
 
-You can assign date-time values to the sparkline by setting the [`valueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~ValueType.html) property to `DateTime`.
+You can assign date-time values to the sparkline by setting the [valueType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html) property to [DateTime](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html#Syncfusion_EJ2_Sparkline_ValueType_DateTime).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -51,7 +51,7 @@ You can assign date-time values to the sparkline by setting the [`valueType`](ht
 
 **Category**
 
-You can assign category values to the sparkline by setting [`valueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~ValueType.html) to `Category`.
+You can assign category values to the sparkline by setting [valueType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html) to [Category](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html#Syncfusion_EJ2_Sparkline_ValueType_Category).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,7 +80,7 @@ You can assign category values to the sparkline by setting [`valueType`](https:/
 
 **Numeric**
 
-You can assign numeric values to the sparkline by setting [`valueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~ValueType.html) to `Numeric`.
+You can assign numeric values to the sparkline by setting [valueType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html) to [Numeric](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sparkline.ValueType.html#Syncfusion_EJ2_Sparkline_ValueType_Numeric).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -111,7 +111,7 @@ You can assign numeric values to the sparkline by setting [`valueType`](https://
 
 ## Change min and max values of axis
 
-You can change the min and max values of x-axis by setting the [`minX`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineAxisSettings~MinX.html) and [`maxX`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineAxisSettings~MaxX.html) values to the [`axisSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineAxisSettings.html) property. You can also change the min and max values of y-axis by setting the [`minY`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineAxisSettings~MinY.html) and [`maxY`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineAxisSettings~MaxY.html) values to the [`axisSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineAxisSettings.html) property.
+You can change the min and max values of x-axis by setting the [`minX`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineAxisSettings.html#Syncfusion_EJ2_Charts_SparklineAxisSettings_MinX) and [`maxX`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineAxisSettings.html#Syncfusion_EJ2_Charts_SparklineAxisSettings_MaxX) values to the [`axisSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineAxisSettings.html) property. You can also change the min and max values of y-axis by setting the [`minY`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineAxisSettings.html#Syncfusion_EJ2_Charts_SparklineAxisSettings_MinY) and [`maxY`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineAxisSettings.html#Syncfusion_EJ2_Charts_SparklineAxisSettings_MaxY) values to the [`axisSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineAxisSettings.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -140,7 +140,7 @@ You can change the min and max values of x-axis by setting the [`minX`](https://
 
 ## Change value of axis
 
-You can set horizontal axis line value of the sparkline by setting [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineAxisSettings~Value.html) to the [`axisSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineAxisSettings.html) property. The following code example shows this.
+You can set horizontal axis line value of the sparkline by setting [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineAxisSettings.html#Syncfusion_EJ2_Charts_SparklineAxisSettings_Value) to the [`axisSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineAxisSettings.html) property. The following code example shows this.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -169,7 +169,7 @@ You can set horizontal axis line value of the sparkline by setting [`value`](htt
 
 ## Axis line customization
 
-Axis of the sparkline can be collapsed using the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineLineSettings~Visible.html) property in [`lineSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineLineSettings.html); this is not applicable for win-loss. You can customize the [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineLineSettings~Color.html), [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineLineSettings~Width.html), [`opacity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineLineSettings~Opacity.html), and [`dashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineLineSettings~DashArray.html) of axis line.
+Axis of the sparkline can be collapsed using the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineLineSettings.html#Syncfusion_EJ2_Charts_SparklineLineSettings_Visible) property in [`lineSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineLineSettings.html); this is not applicable for win-loss. You can customize the [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineLineSettings.html#Syncfusion_EJ2_Charts_SparklineLineSettings_Color), [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineLineSettings.html#Syncfusion_EJ2_Charts_SparklineLineSettings_Width), [`opacity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineLineSettings.html#Syncfusion_EJ2_Charts_SparklineLineSettings_Opacity), and [`dashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineLineSettings.html#Syncfusion_EJ2_Charts_SparklineLineSettings_DashArray) of axis line.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

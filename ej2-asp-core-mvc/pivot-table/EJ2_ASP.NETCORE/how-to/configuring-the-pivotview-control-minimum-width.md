@@ -1,19 +1,28 @@
 ---
 layout: post
-title: Configuring the minimum width in the Syncfusion ##Platform_Name## Pivot Table control
-description: Learn all about configuring the minimum width in the Syncfusion ##Platform_Name## Pivot Table control of syncfusion and more.
+title: How to Set Minimum Width in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to set a custom minimum width on the ASP.NET Core Pivot Table via the minWidth property, with 400px default when Grouping Bar is enabled.
 platform: ej2-asp-core-mvc
 control: Configuring the minimum width in the Pivot Table control.
 documentation: ug
 publishingplatform: ##Platform_Name## 
 ---
-# Configuring the minimum width in the ##Platform_Name## Pivot Table control
+# How to Configure the Minimum Width in ASP.NET Core Pivot Table
 
-The pivot table control allows you to configure its minimum width using the `minWidth` property. This property is useful for ensuring the component maintains a consistent layout and responsiveness across different screen sizes.
+The ASP.NET Core Pivot Table component provides the `minWidth` property to define the minimum width threshold for the component. This configuration ensures the pivot table maintains optimal usability and prevents layout issues when the container size decreases below the specified minimum width value.
 
-> When the pivot table has the [Grouping Bar](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/grouping-bar) enabled, the `minWidth` property is set to **400** pixels by default to accommodate the grouping bar UI elements. Without the [Grouping Bar](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/grouping-bar), the `minWidth` property defaults to **310** pixels.
+## Default minimum width behavior
 
-To customize the minimum width, set the `minWidth` property to your desired value (in pixels) as shown below:
+The pivot table automatically sets appropriate default minimum width values based on its current configuration:
+
+| Configuration | Default Minimum Width | Purpose |
+|---------------|----------------------|---------|
+| With [Grouping Bar](../grouping-bar) enabled | 400 pixels | Accommodates grouping bar UI elements and drag-drop functionality |
+| Without [Grouping Bar](../grouping-bar) | 310 pixels | Provides sufficient space for basic pivot table operations |
+
+## Setting custom minimum width
+
+To customize the minimum width according to specific layout requirements, configure the `minWidth` property with the desired pixel value:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

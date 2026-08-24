@@ -1,16 +1,22 @@
 ---
 layout: post
-title: Configure Data Grid Options On Editing Mode in ##Platform_Name## Pivot Table Component
-description: Learn here all about Configure Data Grid Options On Editing Mode in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
+title: How to Configure Grid in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to configure sort, group, and filter on the ASP.NET MVC Pivot Table's drill-through data grid via the BeginDrillThrough event.
 platform: ej2-asp-core-mvc
 control: Configure Data Grid Options On Editing Mode
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Configure data grid options on editing mode
+# How to Configure Grid in ASP.NET MVC Pivot Table
 
-You can access the data grid options such as sort, group, filter on editing mode using the [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event in the pivot table. The event occurs in every value cell on double click and provides the data grid information before display the drill through grid pop-up.
+The ASP.NET MVC Pivot Table component provides the ability to configure various data grid options when working with drill-through functionality in editing mode. When users double-click on value cells (cells containing aggregated data), the component displays the underlying raw data in a drill-through grid popup. The [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event allows users to access and configure grid features such as sorting, grouping, and filtering before displaying the drill-through grid popup.
+
+## Implementation
+
+The [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event occurs when users double-click on any value cell in the pivot table. This event provides access to the grid instance and its configuration options before displaying the drill-through popup, enabling users to customize the grid behavior according to their requirements.
+
+> Grid features are segregated into individual feature-wise modules. For example, to use the sorting feature, the `Sort` module must be injected using the `Grid.Inject(Sort)` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

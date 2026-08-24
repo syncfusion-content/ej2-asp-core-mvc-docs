@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Achieve File Upload Programmatically in ##Platform_Name## Uploader Control | Syncfusion
-description: Learn here all about Achieve File Upload Programmatically in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: How to upload files programmatically in ##Platform_Name## | Syncfusion
+description: Upload files programmatically in the Syncfusion ASP.NET Core File Upload using the upload method and the getFilesData API to list selected files.
 platform: ej2-asp-core-mvc
 control: Achieve File Upload Programmatically
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Achieve file upload programmatically
+# How to upload files programmatically in ASP.NET Core File Upload
 
 You can upload a file programmatically using upload method. The selected files data, get from getFilesData public method in uploader.
 
@@ -42,4 +42,4 @@ The upload method behaves differently based on its arguments.
 
 
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.

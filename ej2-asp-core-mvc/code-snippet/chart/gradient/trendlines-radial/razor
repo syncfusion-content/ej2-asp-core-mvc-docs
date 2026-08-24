@@ -1,0 +1,44 @@
+@{
+    var trendlineGradient = new Syncfusion.EJ2.Charts.ChartRadialGradient
+    {
+        Cx = 0.5,
+        Cy = 0.5,
+        Fx = 0.5,
+        Fy = 0.5,
+        R = 0.5,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#F97316", Offset = 0,   Opacity = 1 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#4F46E5", Offset = 100, Opacity = 1 }
+        }
+    };
+}
+
+@(Html.EJS().Chart("container")
+    .Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline)
+              .XName("Month")
+              .YName("Orders")
+              .Marker(mr => mr.Visible(true))
+              .Trendlines(tl =>
+              {
+                  tl.Type(Syncfusion.EJ2.Charts.TrendlineTypes.Linear)
+                    .Width(3)
+                    .Name("Trend")
+                    .RadialGradient(trendlineGradient).Add();
+              })
+              .DataSource(ViewBag.dataSource).Add();
+    })
+    .PrimaryXAxis(px => px
+        .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+        .MajorGridLines(mg => mg.Width(0))
+    )
+    .PrimaryYAxis(py => py
+        .LineStyle(ls => ls.Width(0))
+        .MajorTickLines(mt => mt.Width(0))
+    )
+    .LegendSettings(leg => leg.Visible(true))
+    .Title("Retail Orders Processed")
+    .Render()
+)

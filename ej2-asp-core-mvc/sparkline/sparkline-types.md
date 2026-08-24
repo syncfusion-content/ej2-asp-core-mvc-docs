@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sparkline Types in ##Platform_Name## Sparkline Component
-description: Learn here all about Sparkline Types in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Sparkline | Syncfusion
+description: Learn here all about Types in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sparkline Types
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sparkline Types
+# Types in ##Platform_Name## Sparkline
 
 Different types of shapes can be used to represent the sparkline. You can change the sparkline type by setting the type property. Sparkline supports the following types:
 
@@ -25,7 +25,7 @@ The following code sample shows different types of sparklines.
 
 **Line**
 
-The [`Line`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~Type.html) type is used to render the sparkline series as line.
+The [`Line`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineType.html#Syncfusion_EJ2_Charts_SparklineType_Line) type is used to render the sparkline series as line.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -54,7 +54,7 @@ The [`Line`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfu
 
 **Column**
 
-The [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~Type.html) type is used to render the sparkline series as column.
+The [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineType.html#Syncfusion_EJ2_Charts_SparklineType_Column) type is used to render the sparkline series as column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -83,7 +83,7 @@ The [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Sync
 
 **Pie**
 
-The [`Pie`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~Type.html) type is used to render the sparkline series as pie.
+The [`Pie`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineType.html#Syncfusion_EJ2_Charts_SparklineType_Pie) type is used to render the sparkline series as pie.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -112,7 +112,7 @@ The [`Pie`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfus
 
 **Win Loss**
 
-The [`WinLoss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~Type.html) type is used to render the sparkline series as Win Loss.
+The [`WinLoss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineType.html#Syncfusion_EJ2_Charts_SparklineType_WinLoss) type is used to render the sparkline series as Win Loss.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -141,7 +141,7 @@ The [`WinLoss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syn
 
 **Area**
 
-The [`Area`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~Type.html) type is used to render the sparkline series as area.
+The [`Area`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineType.html#Syncfusion_EJ2_Charts_SparklineType_Area) type is used to render the sparkline series as area.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

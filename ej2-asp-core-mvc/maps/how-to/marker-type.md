@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marker Type in Syncfusion ##Platform_Name## Maps Component
+title: How to add marker types in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Marker Type in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Marker Type
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Marker types in ##Platform_Name## Maps Component
+# How to add marker types in ##Platform_Name## Maps
 
 ## Add different types of markers
 

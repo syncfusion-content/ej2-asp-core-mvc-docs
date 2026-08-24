@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Dialog Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Dialog | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## Dialog control in an MVC application using Visual Studio with Html helper and TagHelper support.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Dialog Control
+# Getting Started with ##Platform_Name## Dialog
 
-This section briefly explains about how to include [ASP.NET MVC Dialog](https://www.syncfusion.com/aspnet-mvc-ui-controls/modal-dialog) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Dialog](https://www.syncfusion.com/aspnet-mvc-ui-controls/modal-dialog) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Dialog](https://
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -95,13 +95,13 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Dialog
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Dialog control will be rendered in the default web browser.
 
-![ASP.NET MVC Dialog Control](images/dialog-getting.png)
+![ASP.NET MVC Dialog Control](images/dialog-getting.webp)
 
 N> In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document.body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
 
 ## Modal Dialog
 
-A [modal](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
+A [modal](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) shows an overlay behind the Dialog. So, the user should interact with the Dialog compulsorily before interacting with the remaining content in an application.
 
 While the user clicks the overlay, the action can be handled through the [OverlayClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_OverlayClick) event. In the below sample, the Dialog close action is performed while clicking on the overlay.
 
@@ -113,9 +113,9 @@ N> When the modal dialog is opened, the Dialog's target scrolling will be disabl
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Modal Dialog](images/modal-dialog-getting.png)
+![ASP.NET MVC Modal Dialog](images/modal-dialog-getting.webp)
 
-N>In the dialog control, If the dialog is rendered based on the body, then the dialog get the height is based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, we can set the CSS style for the html and body to get the dialog height.
+N>In the dialog control, if the dialog is rendered based on the body, then the dialog gets its height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, we can set the CSS style for the html and body to get the dialog height.
 
 ```css
 
@@ -141,7 +141,7 @@ The Dialog provides built-in support to render the `buttons` on the footer (for 
 
 The primary button will be focused automatically on open the Dialog, and add the [Click](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.DialogDialogButton.html#Syncfusion_EJ2_Popups_DialogDialogButton_Click) event to handle the actions.
 
-N> When the Dialog initialize with more than one primary buttons, the first primary button gets focus on open the Dialog.
+N> When the Dialog initializes with more than one primary button, the first primary button gets focus when opening the Dialog.
 
 The below sample render with button and its click event.
 
@@ -190,7 +190,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/Grid/DialogEditing#/bootstrap5)
+* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/grid/dialogediting#/fluent2)
 * [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
 * [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)

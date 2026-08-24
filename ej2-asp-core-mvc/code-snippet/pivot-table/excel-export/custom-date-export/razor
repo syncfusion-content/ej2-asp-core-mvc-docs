@@ -1,0 +1,24 @@
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+formatsettings.Name("Date").Type("date").Format("EEE, MMM d, ''yy").Add();
+}).Rows(rows =>
+{
+rows.Name("Date").Add();
+}).Columns(columns =>
+{
+columns.Name("Products").Caption("Product Categories").Add();
+}).Values(values =>
+{
+values.Name("Sold").Caption("Units Sold").Add();
+})).AllowExcelExport(true).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+</script>

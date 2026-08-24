@@ -1,0 +1,25 @@
+using OpenAI;
+using OpenAI.Chat;
+using Azure;
+using Azure.AI.OpenAI;
+
+namespace AssistViewDemo.Controllers
+{
+    public class HomeController : Controller
+    {
+
+        public List<ToolbarItemModel> Items { get; set; } = new List<ToolbarItemModel>();
+
+        public IActionResult Index()
+        {
+            Items.Add(new ToolbarItemModel { iconCss = "e-icons e-refresh", align = "Right" });
+            ViewBag.Items = Items;
+            return View();
+        }
+        public class ToolbarItemModel
+        {
+            public string iconCss { get; set; }
+            public string align { get; set; }
+        }
+    }
+}

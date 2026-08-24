@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Handle No Color Support in ##Platform_Name## Color Picker Control | Syncfusion
-description: Learn here all about Handle No Color Support in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
+title: How to handle no color in ##Platform_Name## Color Picker | Syncfusion
+description: Enable a no-color tile in Syncfusion ##Platform_Name## Color Picker by setting noColor to true so users can clear their color selection.
 platform: ej2-asp-core-mvc
 control: Handle No Color Support
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Handle no color support in Color Picker Control
+# How to handle no color in ##Platform_Name## Color Picker
 
 The ColorPicker component supports no color functionality. By clicking the no color tile from palette, the selected color becomes `empty` and considered as no color has been selected from color picker.
 

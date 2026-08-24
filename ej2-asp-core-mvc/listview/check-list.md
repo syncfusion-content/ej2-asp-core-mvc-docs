@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Check List in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Check List in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Check List in ##Platform_Name## ListView | Syncfusion
+description: Render Syncfusion ##Platform_Name## ListView with checkboxes per item using showCheckBox and handle checked items via checkboxChange event or fields mapping.
 platform: ej2-asp-core-mvc
 control: Check List
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Checklist in ##Platform_Name## ListView Control
+# Check List in ##Platform_Name## ListView
 
 The ListView supports checkbox in default and group-lists which is used to select multiple items. The checkbox can be enabled by the [`showCheckBox`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListView.html#Syncfusion_EJ2_Lists_ListView_ShowCheckBox) property.
 

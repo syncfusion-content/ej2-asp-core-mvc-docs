@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Show Field List When Pivot Table Empty in ##Platform_Name## Pivot Table Component
-description: Learn here all about Show Field List When Pivot Table Empty in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
+title: Show Field List when Empty in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to auto-open the ASP.NET Core Pivot Table's Field List when no fields are configured, via the dataBound event and the onShowFieldList method.
 platform: ej2-asp-core-mvc
 control: Show Field List When Pivot Table Empty
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Show field list when pivot table is empty
+# How to Show Field List when Empty in ASP.NET Core Pivot Table
 
-When there are no fields in a pivot table's row, column, value, and filter axes, a field list can still be displayed. To do so, use the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound)event and call the `onShowFieldList` method as shown below.
-
+When there are no fields configured in a pivot table's row, column, value, and filter axes, the field list can be automatically displayed to help users configure the pivot table. This is particularly useful in scenarios where users start with an empty pivot configuration and need immediate access to available fields for setup. To achieve this functionality, use the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event and call the `onShowFieldList` method as demonstrated below.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

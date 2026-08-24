@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend and Customization in ##Platform_Name## Syncfusion Chart Component
+title: Legend in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend and in ##Platform_Name## Chart Component
+# Legend in ##Platform_Name## Chart
 
 Legend provides information about the series rendered in the chart.
 
@@ -510,6 +510,35 @@ The [`Layout`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Chart
 {% endhighlight %}
 {% highlight c# tabtitle="Layout.cs" %}
 {% include code-snippet/chart/axis/legend/layout/layout.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Legend template
+
+Legend templates allow you to replace default legend icons and text with custom HTML for each series. This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.
+
+You can customize the legend items by using the [`template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_LegendSettings) property of [`legendSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_LegendSettings). Legend interactions (click to toggle series) remain unless [`ToggleVisibility`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_LegendSettings#togglevisibility) is set to false. Templates work with all legend positions, alignments, and paging.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/chart/axis/legend/template/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/chart/axis/legend/template/template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

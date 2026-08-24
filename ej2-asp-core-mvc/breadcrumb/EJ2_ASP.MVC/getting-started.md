@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Breadcrumb Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Breadcrumb | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## Breadcrumb by adding the EJ2 MVC5 NuGet package and rendering a navigation trail in your app.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Breadcrumb Control
+# Getting Started with ##Platform_Name## Breadcrumb
 
 This section briefly explains about how to include [ASP.NET MVC Breadcrumb](https://www.syncfusion.com/aspnet-mvc-ui-controls/breadcrumb) control in your ASP.NET MVC application using Visual Studio.
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Breadcrumb](http
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 

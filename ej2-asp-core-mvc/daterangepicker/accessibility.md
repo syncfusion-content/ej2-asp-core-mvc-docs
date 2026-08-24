@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Daterangepicker Component
-description: Learn here all about accessibility in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## DateRangePicker | Syncfusion
+description: Syncfusion ##Platform_Name## DateRangePicker meets WCAG 2.2 AA, Section 508, and ADA accessibility standards with full keyboard and screen reader support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## DateRangePicker
 
 The DateRangePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -17,7 +17,7 @@ The accessibility compliance for the DateRangePicker component is outlined below
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | AA |
 | [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -25,7 +25,6 @@ The accessibility compliance for the DateRangePicker component is outlined below
 | [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 
 <style>
     .post .post-content img {
@@ -41,9 +40,9 @@ The accessibility compliance for the DateRangePicker component is outlined below
 
 ## WAI-ARIA attributes
 
-The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. DateRangePicker provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied as an input element.
+The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. DateRangePicker provides built-in compliance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied as an input element.
 
-To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
+To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility) section.
 
 It helps people with disabilities by providing information about the widget for assistive technology in the screen readers. DateRangePicker control contains grid role and grid cell for each day cell.
 
@@ -53,7 +52,7 @@ It helps people with disabilities by providing information about the widget for 
 
 ## Keyboard Interaction
 
-Use the below keys to interact with the DateRangePicker. This control implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+Use the below keys to interact with the DateRangePicker. This control implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 It supports the following list of shortcut keys:
 
@@ -98,7 +97,8 @@ N> To focus the DateRangePicker control use the `alt+t` keys.
 {% include code-snippet/daterangepicker/accessibility/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -107,7 +107,9 @@ N> To focus the DateRangePicker control use the `alt+t` keys.
 {% include code-snippet/daterangepicker/accessibility/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
+
 {% endif %}
 
 ## Ensuring accessibility

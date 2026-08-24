@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## ListView | Syncfusion
+description: Migrate Syncfusion EJ1 ##Platform_Name## ListView to EJ2 by mapping tag prefixes, namespaces, and APIs from Syncfusion.JavaScript.ListView to ej2-ListView.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ##Platform_Name## ListView
 
 This article describes the API migration process of ListView control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
 
@@ -18,7 +18,7 @@ This article describes the API migration process of ListView control from Essent
 | Fields | **Property:**  *fieldSettings*  <br  /> `<ej-list-view enable-group-list=true>`<br/>`<e-field-settings text="text"/>`<br/>`</ej-list-view>` | **Property:**  *fields*  <br  />  **Inner properties:**  *child, enabled, groupBy htmlAttributes, iconCss, id, isChecked, isVisible, sortBy, tableName, text, tooltip.*  <br/><br/>  `<ejs-listview id="list" dataSource="ViewBag.data">`<br/>`<e-listview-fieldsettings groupBy="category" />`<br/>`</ejs-listview>`|
 | Template | **Property:**  *render-template*  <br/> `<ej-list-view id="list" render-template="true" template-id="template"></ej-list-view>` <br/> <br/> `<div id="template"><div>Data 1</div><div>Data 2</div><div>Data 3</div> </div>`| **Property:**  *template*  <br  /> `@{ var template = "<div class='template'>${text}</div>"; }` <br/><br/> `<ejs-listview id="list" dataSource="ViewBag.data" template=@template />`|
 | Animation | **Not Applicable** | **Property:**  *animation*  <br  /> `List<object> animation = new List<object>();` <br/>  `animation.Add(new { effect = "SlideLeft", duration = "400", easing = "ease" });` <br/><br/> `<ejs-listview id="list" dataSource="ViewBag.data" animation="ViewBag.animation" />`|
-| Enable | **Not Applicable** |**Property:**  *enable*  <br  /> `<ejs-listview id="list" dataSource="ViewBag.data" enable="true" />`|
+| Enabled | **Not Applicable** |**Property:**  *enabled*  <br  /> `<ejs-listview id="list" dataSource="ViewBag.data" enabled="true" />`|
 | Template for grouping | **Not Applicable** | **Property:**  *groupTemplate*  <br  /> `@{ var groupTemplate = "<div class='template'>${text}</div>"; }` <br/><br/> `<ejs-listview id="list" dataSource="ViewBag.data" groupTemplate="@groupTemplate" />`  |
 | Template for header |**Not Applicable** | **Property:**  *headerTemplate*  <br  /> `@{ var headerTemplate = "<div class='template'>${text}</div>"; }` <br/><br/> `<ejs-listview id="list" dataSource="ViewBag.data" headerTemplate="@headerTemplate" />`|
 | HTML attributes |**Not Applicable**| **Property:**  *htmlAttributes*  <br  /> `@{`<br/>`IDictionary<string, object> htmlAttribute = new Dictionary<string, object>();`<br/>`htmlAttribute.Add("class", "listViewCustom");`<br/>`}` <br/><br/> `<ejs-listview id="list" dataSource="ViewBag.data" htmlAttributes="htmlAttribute" />`|

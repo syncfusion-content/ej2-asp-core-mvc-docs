@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load The Content As Partial View in ##Platform_Name## Tab Component
-description: Learn here all about Load The Content As Partial View in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: How to load content as partial view in ##Platform_Name## Tabs | Syncfusion
+description: Load Syncfusion ##Platform_Name## Tabs content as partial views by combining dynamic item creation with AJAX or EJ2 DataManager for embedded controls.
 platform: ej2-asp-core-mvc
 control: Load The Content As Partial View
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Load the content as partial view to Tab
+# How to load content as partial view in ##Platform_Name## Tabs
 
 Since Tab is a Navigation control, it doesn't have support to load any content directly or using any DataAdaptor. But it is provided with the items support. So to load the content as partial view, you would need to make use of the AJAX or EJ2 Datamanager as described in our [How-To](./load-tab-with-data-source) section help document.
 

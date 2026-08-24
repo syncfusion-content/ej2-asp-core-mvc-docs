@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Bullet Chart Component | Syncfusion
+title: Tooltip in ##Platform_Name## Bullet Chart | Syncfusion
 description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip in Bullet Chart Control
+# Tooltip in ASP.NET Core Bullet Chart
 
 When the mouse is hovered over a bar in the Bullet Chart, the tooltip displays important summary about the actual and the target bar values.
 
@@ -48,7 +48,7 @@ public class TooltipData
 
 
 
-![Bullet Chart displays ToolTip](images/blazor-bulletchart-tooltip.png)
+![Bullet Chart displays ToolTip](images/bulletchart-tooltip.png)
 
 ## Tooltip template
 

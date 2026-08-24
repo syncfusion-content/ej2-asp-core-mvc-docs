@@ -1,0 +1,57 @@
+
+
+@Html.EJS().Chart("coalChart")
+    .Title("Top 3 Countries by Coal Production (2022–2024)")
+    .LegendRender("legendRender")
+    .Load("load")
+    .Width("70%")
+    .PrimaryXAxis(px => px.Interval(1)
+                          .EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+                          .MajorGridLines(mg => mg.Width(0)))
+    .PrimaryYAxis(py => py.Title("Coal Production (Million Tonnes)")
+                          .LabelFormat("{value}t"))
+    .ChartArea(area => area.Border(b => b.Width(0)))
+    .Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+              .XName("x").YName("y")
+              .DataSource(ViewBag.ChinaData)
+              .Name("China")
+              .Animation(a => a.Enable(false))
+              .Marker(m => m.DataLabel(dl => dl.Visible(true)))
+              .Add();
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("x").YName("y").DataSource(ViewBag.IndiaData).Name("India").Animation(a => a.Enable(false))
+              .Marker(m => m.DataLabel(dl => dl.Visible(true)))
+              .Add(); series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+              .XName("x").YName("y")
+              .DataSource(ViewBag.IndonesiaData)
+              .Name("Indonesia")
+              .Animation(a => a.Enable(false))
+              .Marker(m => m.DataLabel(dl => dl.Visible(true)))
+              .Add();
+    }).LegendSettings(legend => legend.Visible(true).Template("#legendTemplate")).Tooltip(tt => tt.Enable(true)).Render()
+<script>
+        function legendRender(args) {
+        var chart = document.getElementById('coalChart').ej2_instances[0];
+        const matchedSeries: SeriesModel = (chart.series as SeriesModel[]).filter(
+            (s: SeriesModel): boolean => s.name === args.text
+        )[0];
+        const opacity: string = (matchedSeries && matchedSeries.visible === false) ? '0.5' : '1';
+        args.template = args.template
+            .replace('opacity:1;', 'opacity:' + opacity + ';')
+            .replace('src=""', 'src="' + (legendIcons[args.text] || '') + '"')
+            .replace('color:;', 'color:' + args.fill + ';')
+            .replace('></span>', '>' + args.text + '</span>');
+        }
+
+        function load(args) {
+        loadChartTheme(args);
+        var chart = document.getElementById('coalChart').ej2_instances[0];
+        chart.legendSettings.template = '<div class="coal-legend-item" style="display:flex;align-items:center;gap:8px;padding:4px 8px;opacity:1;transition:opacity .3s;cursor:pointer;">' +
+                  '<img class="e-icon" src="" width="24" height="24" style="border-radius:4px;object-fit:cover;" />' +
+                  '<span class="e-label" style="font-size:13px;font-weight:bold;color:;"></span>' +
+                  '</div>';
+        var isDevice = ej.base.Browser.isDevice;
+        }
+</script>
+

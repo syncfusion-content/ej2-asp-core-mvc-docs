@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting Grid in Server in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Exporting Grid in Server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Server-Side PDF Export | Syncfusion
+description: Learn how to export ##Platform_Name## Data Grid data using server-side PDF generation, API endpoints, and efficient export processing for large datasets.
 platform: ej2-asp-core-mvc
 control: Exporting Grid in Server
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Exporting Grid in Server in ASP.NET Core Grid Component
+# Server dependencies in ASP.NET Core Data Grid
 
 The Grid component provides an option to export grid data to a PDF document on the server side using the Grid server export library. This allows you to perform PDF export operations on the server, providing additional security and flexibility. To enable server-side PDF exporting, you need to configure the server dependencies and implement the necessary server configuration.
 
@@ -42,7 +42,7 @@ The following code snippet shows server configuration using ASP.NET Core Control
 {% endhighlight %}
 {% endtabs %}
 
->Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
+>Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.NET-Core).
 
 
 ## Export grid as memory stream
@@ -64,7 +64,7 @@ public object PdfExport(string gridModel)
 
 ## Merge grid's memory stream
 
-The [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/pdf/merge-documents).
+The [Essential PDF](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/merge-documents).
 
 You can merge a memory stream, a file stream, and a local file with the Grid's memory stream in the following ways:
 
@@ -72,7 +72,7 @@ You can merge a memory stream, a file stream, and a local file with the Grid's m
 
 If you already have a memory stream, you can directly use it to merge with the Grid's memory stream.
 
-In the following code, the [Merge](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.PdfDocumentBase.html#Syncfusion_Pdf_PdfDocumentBase_Merge_Syncfusion_Pdf_PdfDocumentBase_Syncfusion_Pdf_Parsing_PdfLoadedDocument_) method of the [PdfDocumentBase](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.PdfDocumentBase.html) class is used to merge the grid's memory stream with an existing memory stream.
+In the following code, the [Merge](https://help.syncfusion.com/cr/document-processing/Syncfusion.Pdf.PdfDocumentBase.html#Syncfusion_Pdf_PdfDocumentBase_Merge_Syncfusion_Pdf_PdfDocumentBase_Syncfusion_Pdf_Parsing_PdfLoadedDocument_) method of the [PdfDocumentBase](https://help.syncfusion.com/cr/document-processing/Syncfusion.Pdf.PdfDocumentBase.html) class is used to merge the grid's memory stream with an existing memory stream.
 
 ```ts
 using Syncfusion.Pdf;

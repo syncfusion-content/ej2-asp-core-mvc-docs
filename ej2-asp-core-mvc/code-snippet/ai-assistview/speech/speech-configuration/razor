@@ -1,0 +1,136 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+@{
+    var buttonSettings = new {
+        content = "Start Recording",
+        stopContent = "Stop Recording",
+        iconCss = "e-icons e-microphone",
+        stopIconCss = "e-icons e-microphone-off"
+    };
+}
+
+<div class="integration-speechtotext-section">
+    @Html.EJS().AIAssistView("aiAssistView").BannerTemplate("#bannerContent").PromptRequest("onPromptRequest").Created("onCreated").ToolbarSettings(new AIAssistViewToolbarSettings()
+    {
+        Items = ViewBag.Items,
+        ItemClicked = "toolbarItemClicked"
+    }).SpeechToTextSettings(new AIAssistViewSpeechToTextSettings()
+    {
+        Enable = true,
+        Lang = "en-US",
+        AllowInterimResults = true,
+        ButtonSettings = buttonSettings
+    }).Render()
+</div>
+
+
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-listen-icon"></div>
+        <i>Configure language, button text, and enable interim results for real-time transcription.</i>
+    </div>
+</script>
+
+
+<script>
+    var assistObj = null;
+    function onCreated() {
+        assistObj = ej.base.getComponent(document.getElementById("aiAssistView"), "aiassistview");
+    }
+
+    function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            assistObj.prompts = [];
+            stopStreaming = true;
+        }
+    }
+
+    function onPromptRequest(args) {
+        if (!args.prompt.trim() || !aiAssistView)
+        {
+            return;
+        }
+        const defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+        assistObj.addPromptResponse(defaultResponse, true);
+    }
+</script>
+
+
+<style>
+   .integration-speechtotext-section {
+    height: 350px;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.integration-speechtotext-section .e-view-container {
+    margin: auto;
+}
+
+.integration-speechtotext-section .e-banner-view {
+    margin-left: 0;
+}
+
+.integration-speechtotext-section .banner-content .e-listen-icon:before {
+    font-size: 25px;
+}
+
+.integration-speechtotext-section .banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.integration-speechtotext-section #assistview-sendButton {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.integration-speechtotext-section #speechToText.visible,
+.integration-speechtotext-section #assistview-sendButton.visible {
+    display: inline-block;
+}
+
+.integration-speechtotext-section #speechToText,
+.integration-speechtotext-section #assistview-sendButton {
+    display: none;
+}
+
+@@media only screen and (max-width: 750px) {
+    .integration-speechtotext-section {
+        width: 100%;
+    }
+}
+
+.integration-speechtotext-section .e-footer-wrapper {
+    display: flex;
+    border: 1px solid #c1c1c1;
+    padding: 5px 5px 5px 10px;
+    margin: 5px 5px 0 5px;
+    border-radius: 30px;
+}
+
+.integration-speechtotext-section .content-editor {
+    width: 100%;
+    overflow-y: auto;
+    font-size: 14px;
+    min-height: 25px;
+    max-height: 200px;
+    padding: 10px;
+}
+
+.integration-speechtotext-section .content-editor[contentEditable='true']:empty:before {
+    content: attr(placeholder);
+    color: #6b7280;
+    font-style: italic;
+}
+
+.integration-speechtotext-section .option-container {
+    align-self: flex-end;
+}
+</style>

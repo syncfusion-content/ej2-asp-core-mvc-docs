@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Tooltip Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Tooltip | Syncfusion
+description: Discover the Syncfusion ##Platform_Name## Tooltip accessibility features: built-in WAI-ARIA support, keyboard navigation, and screen reader compatibility.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## Tooltip
 
-The Tooltip component has been designed, keeping in mind the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications, and applies the WAI-ARIA roles, states, and properties along with keyboard support. This makes it easy for people who use assistive technologies (AT) or who completely rely on keyboard navigation. As per the accessibility standard, the Tooltip opens on target elements to which it is attached as and when those target elements receive either keyboard focus or when the mouse hovers over it. When `esc` key is pressed, the Tooltip closes.
+The Tooltip component has been designed, keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/practices/) specifications, and applies the WAI-ARIA roles, states, and properties along with keyboard support. This makes it easy for people who use assistive technologies (AT) or who completely rely on keyboard navigation. As per the accessibility standard, the Tooltip opens on target elements to which it is attached as and when those target elements receive either keyboard focus or when the mouse hovers over it. When `esc` key is pressed, the Tooltip closes.
 
 The Tooltip is made available to screen readers using the `aria-describedby` property. To be accurate, it must be used with an ARIA compliant browser along with the screen reader running from backend.
 
@@ -68,4 +68,4 @@ In the following preview sample, focusing the input element through `tab` key op
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Accessibility](./images/tooltip-container.png)
+![ASP .NET Core - Tooltip - Accessibility](./images/tooltip-container.webp)

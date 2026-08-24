@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows Customization in Syncfusion ##Platform_Name## Tree Grid Component
-description: Learn here all about rows customization in Syncfusion ##Platform_Name## Tree Grid component and much more.
+title: ##Platform_Name## TreeGrid Rows | Syncfusion
+description: Learn how to work with rows in ##Platform_Name## TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: ej2-asp-core-mvc
 control: Row
 publishingplatform: ##Platform_Name##
@@ -9,14 +9,14 @@ documentation: ug
 ---
 
 
-# Rows in ##Platform_Name## Tree Grid Component
+# Rows in ##Platform_Name## TreeGrid
 
 The row represents record details fetched from data source.
 
 ## Customize rows
 
-You can customize the appearance of a row by using the [`RowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html) event.
-The [`RowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html) event triggers for every row. In the event handler, you can get the **args** which contains details of the row.
+You can customize the appearance of a row by using the [`RowDataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDataBound) event.
+The [`RowDataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDataBound) event triggers for every row. In the event handler, you can get the **args** which contains details of the row.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,4 +80,4 @@ Refer to the following example.
 
 
 
-N> Refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to learn how to present and manipulate data.
+N> Refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to learn how to present and manipulate data.

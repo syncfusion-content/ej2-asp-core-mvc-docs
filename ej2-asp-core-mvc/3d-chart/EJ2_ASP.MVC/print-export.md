@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print and Export in ##Platform_Name## 3D Chart Component
+title: Print and Export in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about print and export in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print and Export
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print and Export in ##Platform_Name## 3D Chart Component
+# Print and Export in ASP.NET MVC 3D Chart
 
 ## Print
 

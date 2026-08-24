@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Nested Items in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Nested Items in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Use nested File Manager in ##Platform_Name## | Syncfusion
+description: Learn how to integrate the ##Platform_Name## File Manager within components such as Tab and Dialog to build flexible and interactive application layouts.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Nested Items
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Nested File Manager
+# Nested items in ##Platform_Name## File Manager component
 
 File Manager can be rendered inside other controls like Tab, Dialog, and more.
 

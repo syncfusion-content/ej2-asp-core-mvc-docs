@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Comparative Bar in ##Platform_Name## Bullet Chart Component
+title: Target Bar in ##Platform_Name## Bullet Chart | Syncfusion
 description: Learn here all about Comparative Bar in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Comparative Bar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Target bar
+# Target Bar in ASP.NET MVC Bullet Chart
 
 The line marker that runs perpendicular to the orientation of the graph is known as the **Comparative Measure** and it is used as a target marker to compare against the feature measure value. This is also called as the **Target Bar** in the Bullet Chart. To display the target bar, the [`TargetField`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_TargetField) should be mapped to the appropriate field from the datasource.
 
@@ -38,7 +38,7 @@ The line marker that runs perpendicular to the orientation of the graph is known
 
 
 
-![Target Bar in Bullet Chart](images/blazor-bullet-chart-target-bar.png)
+![Target Bar in Bullet Chart](images/bullet-chart-target-bar.png)
 
 ## Types of target bar
 
@@ -67,7 +67,7 @@ The shape of the target bar can be customized using the [`TargetTypes`](https://
 {% endtabs %}
 {% endif %}
 
-![Rectangle Target Bar with Bullet Chart](images/blazor-bullet-chart-rectangle-target-bar.png)
+![Rectangle Target Bar with Bullet Chart](images/bullet-chart-rectangle-target-bar.png)
 
 ## Target bar customization
 
@@ -101,4 +101,4 @@ The following properties can be used to customize the target bar. Also, you can 
 
 
 
-![Customizing Target Bar in Bullet Chart](images/blazor-bullet-chart-target-bar-customization.png)
+![Customizing Target Bar in Bullet Chart](images/bullet-chart-target-bar-customization.png)

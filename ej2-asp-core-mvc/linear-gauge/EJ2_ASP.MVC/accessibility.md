@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ##Platform_Name## Linear Gauge component.
+title: Accessibility in Syncfusion ##Platform_Name## Linear Gauge | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Linear Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -17,7 +17,7 @@ The accessibility compliance for the Linear Gauge component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [WCAG 2.2 Support](../common/accessibility) | AA |
 | [Section 508 Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | [Screen Reader Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | [Right-To-Left Support](../common/accessibility) | Not Applicable |
@@ -25,7 +25,6 @@ The accessibility compliance for the Linear Gauge component is outlined below.
 | [Mobile Device Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | [Keyboard Navigation Support](../common/accessibility) | Not Applicable |
 | [Accessibility Checker Validation](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Axe-core Accessibility Validation](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 
 <style>
     .post .post-content img {

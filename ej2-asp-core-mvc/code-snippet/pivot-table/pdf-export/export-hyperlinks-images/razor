@@ -1,0 +1,79 @@
+@Html.EJS().Button("pdf").Content("Pdf Export").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ShowSubTotals(false).ShowRowGrandTotals(false).ExpandAll(true)
+.FilterSettings(filterSettings =>
+{
+    filterSettings.Name("Title").Items(ViewBag.filterMembers).Type("Include").Add();
+})
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("FirstName").Add(); rows.Name("EmployeeID").Caption("Employee Image").Add();
+}).Columns(columns =>
+{
+    columns.Name("Title").Add();
+}).Values(values =>
+{
+    values.Name("Salary").Add(); values.Name("OrdersCount").Add();
+})).AllowPdfExport(true).GridSettings(gridSettings => gridSettings.PdfQueryCellInfo("pdfQueryCellInfo")).Render()
+<script>
+    var pivotObj;
+    window.getCellContent = function (args) {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        if (args.cellInfo && args.cellInfo.axis === 'row' && args.cellInfo.valueSort.axis === 'EmployeeID') {
+            var employeeId_2 = Number(args.cellInfo.actualText);
+            var employee = pivotObj.dataSourceSettings.dataSource.find(function (emp) { return emp.EmployeeID === employeeId_2; });
+            if (employee && employee.EmployeeImage) {
+                var imgSrc = 'data:image/png;base64,' + employee.EmployeeImage;
+                return '<div class="image"><img class="university-logo" src="' + imgSrc + '" width="87" height="87" alt="' + (employee.EmployeeID || '') + '" onload="handleImageLoad(this)"/></div>';
+            }
+        }
+        return '';
+    };
+    window.handleImageLoad = function (imgElement) {
+        try {
+            var cell = imgElement.closest('th, td');
+            if (cell) {
+                var cellValue = cell.querySelector('.e-cellvalue');
+                if (cellValue) {
+                    cellValue.style.display = 'none';
+                }
+            }
+        }
+        catch (error) {
+            console.warn('Error handling image load:', error);
+        }
+    };
+    document.getElementById('pdf').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pdfExport();
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.data && args.data.axis === 'row') {
+            pivotObj = document.getElementById('PivotView').ej2_instances[0];
+            if (args.data.valueSort && args.data.valueSort.axis === 'FirstName') {
+                var firstName_1 = args.data.actualText;
+                var employee = pivotObj.dataSourceSettings.dataSource.find(function (emp) { return emp.FirstName === firstName_1; });
+                if (employee && employee.EmailID) {
+                    args.hyperLink = {
+                        target: 'mailto:' + employee.EmailID,
+                        displayText: args.value
+                    };
+                }
+            }
+            if (args.data.valueSort && args.data.valueSort.axis === 'EmployeeID') {
+                var employeeId_1 = Number(args.data.actualText);
+                var employee = pivotObj.dataSourceSettings.dataSource.find(function (emp) { return emp.EmployeeID === employeeId_1; });
+                if (employee && employee.EmployeeImage) {
+                    args.image = {
+                        base64: employee.EmployeeImage,
+                        height: 57.5,
+                        width: 57.5
+                    };
+                }
+            }
+        }
+    }
+</script>

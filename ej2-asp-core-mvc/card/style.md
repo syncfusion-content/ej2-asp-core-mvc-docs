@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and Appearance in ##Platform_Name## Card Component
-description: Learn here all about style and appearance in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Card | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Card colors, headers, dividers, action buttons, and horizontal layout with the documented CSS class overrides.
 platform: ej2-asp-core-mvc
 control: card
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style and Appearance of Card Component
+# Style in ##Platform_Name## Card
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 

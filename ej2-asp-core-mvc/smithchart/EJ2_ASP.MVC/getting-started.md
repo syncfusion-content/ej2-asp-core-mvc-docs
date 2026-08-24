@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Smithchart Control | Syncfusion
+title: Getting Started with ##Platform_Name## Smith Chart | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC SmithChart Control
+# Getting Started with ##Platform_Name## Smith Chart
 
 This section briefly explains about how to include [ASP.NET MVC SmithChart](https://www.syncfusion.com/aspnet-mvc-ui-controls/smith-chart) control in your ASP.NET MVC application using Visual Studio.
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC SmithChart](http
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -95,6 +95,6 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC SmithC
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC SmithChart control will be rendered in the default web browser.
 
-![ASP.NET MVC SmithChart Control](images/smithchart-control.png)
+![ASP.NET MVC SmithChart Control](images/smithchart-control.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/SmithChart/ASP.NET%20MVC%20Razor%20Examples).

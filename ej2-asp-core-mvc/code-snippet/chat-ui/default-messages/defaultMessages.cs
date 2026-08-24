@@ -4,9 +4,10 @@ public ChatUIUser CurrentUser { get; set; }
 public List<ChatUIMessage> ChatMessagesData { get; set; } = new List<ChatUIMessage>();
 public ChatUIUser CurrentUserModel { get; set; } = new ChatUIUser() { Id = "user1", User = "Albert" };
 public ChatUIUser MichaleUserModel { get; set; } = new ChatUIUser() { Id = "user2", User = "Michale Suyama" };
-
-public ActionResult Default()
+ 
+public void OnGet()
 {
+ 
     CurrentUser = CurrentUserModel;
     ChatMessagesData.Add(new ChatUIMessage()
     {
@@ -23,7 +24,5 @@ public ActionResult Default()
         Text = "I’ll review it and send feedback by today.",
         Author = CurrentUserModel
     });
-    ViewBag.ChatMessagesData = ChatMessagesData;
-    ViewBag.CurrentUser = CurrentUser;
-    return View();
+ 
 }

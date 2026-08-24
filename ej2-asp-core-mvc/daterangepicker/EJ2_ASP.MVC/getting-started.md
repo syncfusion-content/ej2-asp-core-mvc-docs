@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Daterangepicker | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## DateRangePicker | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## DateRangePicker control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC DateRangePicker Control
+# Getting Started with ##Platform_Name## DateRangePicker
 
-This section briefly explains about how to include [ASP.NET MVC DateRangePicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/daterangepicker) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC DateRangePicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/daterangepicker) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC DateRangePicker]
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -95,11 +95,11 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DateRa
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DateRangePicker control will be rendered in the default web browser.
 
-![ASP.NET MVC DateRangePicker Control](images/daterangepicker-control.png)
+![ASP.NET MVC DateRangePicker Control](images/daterangepicker-control.webp)
 
 ## Setting the start and end date
 
-The start and end date in a range can be defined with the help of [StartDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_StartDate) and [EndDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_EndDate) property. The following example demonstrates to set the start and end date on initializing the DateRangePicker.
+The start and end date in a range can be defined with the help of the [StartDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_StartDate) and [EndDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_EndDate) properties. The following example demonstrates how to set the start and end date when initializing the DateRangePicker.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -107,7 +107,7 @@ The start and end date in a range can be defined with the help of [StartDate](ht
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC DateRangePicker with Start and End Date Ranges](images/daterangepicker-with-specific-date.png)
+![ASP.NET MVC DateRangePicker with Start and End Date Ranges](images/daterangepicker-with-specific-date.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/DateRangePicker/ASP.NET%20MVC%20Razor%20Examples).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ListView Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## ListView | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## ListView control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC ListView control
+# Getting Started with ##Platform_Name## ListView
 
 This section briefly explains about how to include [ASP.NET MVC ListView](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview) control in your ASP.NET MVC application using Visual Studio.
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC ListView](https:
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -110,7 +110,7 @@ After initialization, populate the ListView with data using the [DataSource](htt
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC ListView control will be rendered in the default web browser.
 
-![ASP.NET MVC ListView Control](images/listview.png)
+![ASP.NET MVC ListView Control](images/listview.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ListView/ASP.NET%20MVC%20Razor%20Examples).
 

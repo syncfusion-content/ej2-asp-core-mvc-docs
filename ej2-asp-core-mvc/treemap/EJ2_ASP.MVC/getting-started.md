@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## TreeMap Control | Syncfusion
+title: Getting Started with ##Platform_Name## TreeMap | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## TreeMap control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC TreeMap Control
+# Getting Started with ASP.NET MVC TreeMap
 
 This section briefly explains about how to include [ASP.NET MVC TreeMap](https://www.syncfusion.com/aspnet-mvc-ui-controls/treemap) control in your ASP.NET MVC application using Visual Studio.
 
@@ -20,7 +20,7 @@ This section briefly explains about how to include [ASP.NET MVC TreeMap](https:/
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -122,6 +122,6 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC TreeMa
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC TreeMap control will be rendered in the default web browser.
 
-![ASP.NET MVC TreeMap Control](images/treemap-control.png)
+![ASP.NET MVC TreeMap Control](images/treemap-control.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/TreeMap/ASP.NET%20MVC%20Razor%20Examples).

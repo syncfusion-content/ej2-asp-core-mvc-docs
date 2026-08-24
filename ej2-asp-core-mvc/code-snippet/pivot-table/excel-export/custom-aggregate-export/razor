@@ -1,0 +1,66 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("pivotview").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).GridSettings(new PivotViewGridSettings { ColumnWidth = 140 }).ShowFieldList(true).AggregateCellInfo("aggregateCell").DataBound("onDataBound").AllowExcelExport(true).Render()
+<script>
+    var SummaryType = [
+        'Sum',
+        'Count',
+        'DistinctCount',
+        'Avg',
+        'CustomAggregateType1',
+        'CustomAggregateType2'
+    ];
+    var L10n = ej.base.L10n;
+    L10n.load({
+        'en-US': {
+            pivotview: {
+                CustomAggregateType1: 'Custom Aggregate Type 1',
+                CustomAggregateType2: 'Custom Aggregate Type 2',
+            },
+            pivotfieldlist: {
+                CustomAggregateType1: 'Custom Aggregate Type 1',
+                CustomAggregateType2: 'Custom Aggregate Type 2',
+            }
+        }
+    });
+    function onDataBound() {
+        var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+        pivotObj.getAllSummaryType = function () {
+            return SummaryType;
+        };
+        pivotObj.pivotFieldListModule.aggregateTypes = SummaryType;
+        pivotObj.pivotFieldListModule.getAllSummaryType = function () {
+            return SummaryType;
+        };
+        pivotObj.dataSourceSettings.values[0].type = 'CustomAggregateType1';
+        pivotObj.dataSourceSettings.values[1].type = 'CustomAggregateType2';
+    }
+    function aggregateCell(args) {
+        if (args.aggregateType === 'CustomAggregateType1') {
+            args.value = args.value * 100;
+        }
+        if (args.aggregateType === 'CustomAggregateType2') {
+            args.value = args.value / 100;
+        }
+    }
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('pivotview').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+</script>

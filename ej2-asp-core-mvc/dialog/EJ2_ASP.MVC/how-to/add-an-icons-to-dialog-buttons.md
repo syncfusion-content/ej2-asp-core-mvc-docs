@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add Icons to Buttons in ##Platform_Name## Dialog Component
-description: Learn here all about adding icons to Buttons in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: How to add icons to Dialog buttons in ##Platform_Name## Dialog | Syncfusion
+description: Add icons to the Syncfusion ##Platform_Name## Dialog footer buttons using the Buttons or FooterTemplate property and the icon configuration.
 platform: ej2-asp-core-mvc
 control: Dialog
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Add Icons to Buttons in Dialog Component
+# How to add icons to Dialog buttons in ##Platform_Name## Dialog
 
 You can add icons to the dialog buttons using the [`Buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property or [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) property . For detailed information about dialog buttons, refer to the documentation section.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Achieve Invisible Upload in ##Platform_Name## Uploader Control | Syncfusion
-description: Learn here all about Achieve Invisible Upload in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: How to achieve invisible upload in ##Platform_Name## | Syncfusion
+description: Achieve an invisible upload in the Syncfusion ASP.NET Core File Upload by handling the selected event to process files without showing the UI.
 platform: ej2-asp-core-mvc
 control: Achieve Invisible Upload
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Achieve invisible upload
+# How to achieve invisible upload in ASP.NET Core File Upload
 
 You can achieve the invisible upload feature by using the [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event in uploader control.
 
@@ -40,4 +40,4 @@ Refer to the following example.
 
 
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.

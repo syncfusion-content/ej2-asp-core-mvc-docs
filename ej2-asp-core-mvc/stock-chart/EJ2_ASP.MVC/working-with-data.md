@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Working With Data in ##Platform_Name## Stock Chart Component
+title: Working with Data in ##Platform_Name## Stock Chart | Syncfusion
 description: Learn here all about Working With Data in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Working With Data
+control: Working with Data
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Working with Data
+# Working with Data in ##Platform_Name## Stock Chart
 
 Chart can visualise data bound from local or remote data.
 
@@ -76,4 +76,4 @@ When no data is available to render in the stock chart, the `NoDataTemplate` pro
 
 ## See Also
 
-* [Series Types](./series-types/)
+* [Series Types](./series-types)

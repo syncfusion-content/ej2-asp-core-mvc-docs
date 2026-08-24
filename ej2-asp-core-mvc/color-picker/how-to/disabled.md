@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disabled in ##Platform_Name## Color Picker Control | Syncfusion
-description: Learn here all about Disabled in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
+title: How to disable Color Picker in ##Platform_Name## Color Picker | Syncfusion
+description: Disable Syncfusion ##Platform_Name## Color Picker by setting the disabled property to true so the popup cannot be opened.
 platform: ej2-asp-core-mvc
 control: Disabled
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Disabled in Color Picker Control
+# How to disable Color Picker in ##Platform_Name## Color Picker
 
 To achieve disabled state in ColorPicker, set the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Disabled) property to `true`. The ColorPicker pop-up cannot be accessed in disabled state.
 

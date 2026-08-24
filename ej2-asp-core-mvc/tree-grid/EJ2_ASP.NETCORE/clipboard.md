@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard in ##Platform_Name## Tree Grid Component
-description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Clipboard | Syncfusion
+description: Learn how to use clipboard operations in ##Platform_Name## TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 platform: ej2-asp-core-mvc
 control: Clipboard
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Clipboard
+# Clipboard in ##Platform_Name## TreeGrid
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 
@@ -184,4 +184,4 @@ N> To perform paste functionality, it requires the selection `mode` to be `Cell`
 
 * Since the string values are not parsed to number and date type, so when the copied string type cells are pasted to number type cells then it will display as **NaN**. For date type cells, when the copied string format cells are pasted to date type cells then it will display as an **empty cell**.
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

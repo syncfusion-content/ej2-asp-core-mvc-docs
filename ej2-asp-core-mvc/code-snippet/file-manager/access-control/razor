@@ -3,10 +3,10 @@
         <!-- Declare File Manager control -->
         @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
         {
-            Url = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/FileOperations",
-            GetImageUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/GetImage",
-            UploadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/Upload",
-            DownloadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/Download"
+            Url = "https://physical-service.syncfusion.com/api/FileManagerAccess/FileOperations",
+            GetImageUrl = "https://physical-service.syncfusion.com/api/FileManagerAccess/GetImage",
+            UploadUrl = "https://physical-service.syncfusion.com/api/FileManagerAccess/Upload",
+            DownloadUrl = "https://physical-service.syncfusion.com/api/FileManagerAccess/Download"
         }).View(Syncfusion.EJ2.FileManager.ViewType.Details).Render()
         <!-- end of File Manager control -->
     </div>

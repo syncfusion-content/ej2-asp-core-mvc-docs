@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Manipulate ListView As Grid Layout in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Manipulate ListView As Grid Layout in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to use ListView as a grid layout in ##Platform_Name## | Syncfusion
+description: Render a Syncfusion ##Platform_Name## ListView multi-column grid by combining cssClass with template that arranges items in two or three columns.
 platform: ej2-asp-core-mvc
 control: Manipulate ListView As Grid Layout
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Manipulate ListView as Grid Layout
+# How to use ListView as a grid layout in ##Platform_Name##
 
 In ListView, list items can be rendered in grid layout with following data manipulations.
 
@@ -71,7 +71,7 @@ In this section, we will discuss about ListView data manipulations.
 
 ### Add Item
 
-We can add list item using [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view/#additem) API. This will accept array of data as argument.
+We can add list item using [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view#additem) API. This will accept array of data as argument.
 
 ```typescript
 
@@ -83,7 +83,7 @@ In the below sample, you can add new fruit item by clicking add button which wil
 
 ### Remove item
 
-We can remove list item using [`removeItem`](https://ej2.syncfusion.com/documentation/api/list-view/#removeitem) API. This will accept fields with `id` or list item element as argument.
+We can remove list item using [`removeItem`](https://ej2.syncfusion.com/documentation/api/list-view#removeitem) API. This will accept fields with `id` or list item element as argument.
 
 ```typescript
 
@@ -95,7 +95,7 @@ In the below sample, you can remove fruit by hovering the fruit item which will 
 
 ### Sort Items
 
-ListView can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) as `Ascending` or `Descending`.
+ListView can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/documentation/api/list-view#sortorder) as `Ascending` or `Descending`.
 
 ```typescript
 

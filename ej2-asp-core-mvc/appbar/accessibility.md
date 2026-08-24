@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Appbar Control | Syncfusion
+title: Accessibility in ##Platform_Name## AppBar | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Appbar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Accessibility in ##Platform_Name## Appbar Control
+# Accessibility in ##Platform_Name## AppBar
 
-The accessibility compliance for the Appbar component is outlined below.
+The accessibility compliance for the AppBar control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | AA |
 | [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
@@ -23,7 +23,6 @@ The accessibility compliance for the Appbar component is outlined below.
 | Mobile Device Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) Validation | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Axe-core](https://www.npmjs.com/package/axe-core) Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 
 <style>
     .post .post-content img {
@@ -44,9 +43,9 @@ The AppBar component provides the focus element navigation based on its's tab ke
 
 ## Ensuring accessibility
 
-The Appbar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The AppBar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Appbar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/appbar.html) in a new window to evaluate the accessibility of the Appbar component with accessibility tools.
+The accessibility compliance of the AppBar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/appbar.html) in a new window to evaluate the accessibility of the AppBar component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/appbar.html" %}
 

@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Predefined Dialogs | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Learn how to get started with ##Platform_Name## Predefined Dialogs, including setup, configuration, and displaying Alert, Confirm, and Prompt dialogs.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ejmvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Predefined Dialogs
-This section briefly explains about how to include ASP.NET MVC Predefined Dialogs in your ASP.NET MVC application using Visual Studio.
+# Getting Started with ##Platform_Name## Predefined Dialogs
+
+This section briefly explains how to include ASP.NET MVC Predefined Dialogs in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -20,7 +21,7 @@ This section briefly explains about how to include ASP.NET MVC Predefined Dialog
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -84,15 +85,15 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Open ASP.NET MVC Predefined Dialogs
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Pregefined Dialogs in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Predefined Dialogs in `~/Views/Home/Index.cshtml` page.
 
-Once you completed the setup, you can open predefined dialogs from any where in application using `Alert`,`Confirm` or `Prompt` methods in `DialogUtility`.
+Once you have completed the setup, you can open predefined dialogs from anywhere in the application using `Alert`, `Confirm` or `Prompt` methods in `DialogUtility`.
 
 ### Show alert dialog
 
-An alert dialog box used to display an errors, warnings, and information alerts that needs user awareness. This can be achieved by using the `DialogUtility.alert` method. The alert dialog is displayed along with the `OK` button. When user clicks on `OK` button, alert dialog will get closed.
+An alert dialog box is used to display errors, warnings, and information alerts that need user awareness. This can be achieved by using the `DialogUtility.alert` method. The alert dialog is displayed along with the `OK` button. When the user clicks the `OK` button, the alert dialog will close.
 
-In the below code example, alert dialog displayed on button click action.
+In the below code example, the alert dialog is displayed on button click action.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -106,9 +107,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ### Show confirm dialog
 
-A confirm dialog box used to displays a specified message along with the `OK` and `Cancel` buttons.This can be achieved by using the `DialogUtility.confirm` method. It is used to get approval from the user, and it appears before any critical action. After get approval from the user the dialog will disappear automatically.
+A confirm dialog box is used to display a specified message along with the `OK` and `Cancel` buttons. This can be achieved by using the `DialogUtility.confirm` method. It is used to get approval from the user, and it appears before any critical action. After getting approval from the user, the dialog will disappear automatically.
 
-In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
+In the below code example, the confirm dialog is displayed on `OK` and `Cancel` button click action.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -120,9 +121,9 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 
 ### Show Prompt dialog
 
-A prompt dialog is used to get the input from the user. When the user clicks the `OK` button the input value from the dialog is returned. If the user clicks the `Cancel` button the null value is returned. After getting the input from the user the dialog will disappear automatically.
+A prompt dialog is used to get input from the user. When the user clicks the `OK` button, the input value from the dialog is returned. If the user clicks the `Cancel` button, the null value is returned. After getting the input from the user, the dialog will disappear automatically.
 
-In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
+In the below code example, the prompt dialog is displayed on `OK` and `Cancel` button click action.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -137,9 +138,9 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 
 ## See also
 
-* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/Grid/DialogEditing#/bootstrap5)
-* [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
-* [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
-* [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
-* [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
-* [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/grid/dialogediting#/fluent2)
+* [Load dialog content using AJAX](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/load-dialog-content-using-ajax)
+* [How to position the dialog on center of the page on scrolling](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
+* [Prevent closing of modal dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/prevent-closing-of-modal-dialog)
+* [Close dialog while click on outside of dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/close-dialog-while-click-on-outside-of-dialog)
+* [How to make a reusable alert and confirm dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/render-a-dialog-using-utility-functions)

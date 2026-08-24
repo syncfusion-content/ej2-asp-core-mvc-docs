@@ -1,19 +1,19 @@
 ---
 layout: post
-title: File System Provider in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about File System Provider in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: File System Provider in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to connect the ##Platform_Name## File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: File System Provider
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# File system provider
+# File System Provider in ##Platform_Name## File Manager
 
 The file system provider allows the File Manager control to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
 
-The following file providers are added in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 File Manager control.
+The following file providers are added in EJ2 File Manager control.
 
 * [Physical file system provider](#physical-file-system-provider)
 * [Azure cloud file system Provider](#azure-cloud-file-system-provider)
@@ -128,7 +128,7 @@ The Amazon ***S3*** (*Simple Storage Service*) cloud file system provider allows
 
 ```typescript
 
-git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider.git  amazon-s3-aspcore-file-provider.git
+git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider  amazon-s3-aspcore-file-provider.git
 
 ```
 
@@ -252,7 +252,7 @@ In ASP.NET Core, File Transfer Protocol file system provider allows the users to
 
 ```typescript
 
-git clone https://github.com/SyncfusionExamples/ftp-aspcore-file-provider.git  ftp-aspcore-file-provider.git
+git clone https://github.com/SyncfusionExamples/ftp-aspcore-file-provider  ftp-aspcore-file-provider.git
 
 ```
 
@@ -379,7 +379,7 @@ npm install @syncfusion/ej2-filemanager-node-filesystem
 
 ```typescript
 
-git clone  https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem.git node-filesystem-provider
+git clone  https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem node-filesystem-provider
 
 ```
 
@@ -444,7 +444,7 @@ cd google-drive-aspcore-file-provider
 
 ```
 
-Google Drive file system provider use the [Google Drive APIs](https://developers.google.com/drive/api/v3/reference/) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
+Google Drive file system provider use the [Google Drive APIs](https://developers.google.com/workspace/drive/api/reference/rest/v3) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
 
 After generating the client secret data, copy the JSON data to the following specified JSON files in the cloned location.
 
@@ -568,7 +568,7 @@ Here, the `Files` denotes the `rootNode` and the subsequent object refers to the
 
 ![generate_key](images/generate_key.png)
 
-* Next, you will need to clone the [`firebase-realtime-database-apscore-file-provider`](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider) repository. Once cloned, simply open the project in Visual Studio and restore the NuGet package.
+* Next, you will need to clone the [`firebase-realtime-database-aspcore-file-provider`](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider) repository. Once cloned, simply open the project in Visual Studio and restore the NuGet package.
 
 * Once you have generated the secret key, you will need to replace the JSON in the `access_key.json` file in the Firebase Realtime Database provider project with the newly generated key. This will enable authentication and allow you to perform read and write operations.
 
@@ -651,7 +651,7 @@ npm install @syncfusion/ej2-filemanager-ibm-cos-node-file-provider
 
 ```typescript
 
-git clone  https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider.git
+git clone  https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider
 
 ```
 

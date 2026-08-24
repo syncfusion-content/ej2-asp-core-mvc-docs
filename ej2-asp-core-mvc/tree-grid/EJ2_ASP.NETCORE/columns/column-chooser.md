@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Chooser in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Column Chooser in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Column Chooser | Syncfusion
+description: Learn how to use the column chooser in ##Platform_Name## TreeGrid to show, hide, and manage column visibility dynamically.
 platform: ej2-asp-core-mvc
 control: Column Chooser
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Chooser in ##Platform_Name## Tree Grid Component
+# Column Chooser in ##Platform_Name## TreeGrid
 
 The column chooser has options to show or hide columns dynamically. It can be enabled by defining the `showColumnChooser` as true.
 
@@ -34,7 +34,7 @@ The column chooser has options to show or hide columns dynamically. It can be en
 
 
 
-N> You can hide the column names in column chooser by defining the `showInColumnChooser` property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper as false.
+N> You can hide the column names in column chooser by defining the `showInColumnChooser` property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper as false.
 
 ## Open column chooser by external button
 
@@ -74,7 +74,7 @@ To implement a custom column chooser template in the TreeGrid, use the following
 
 * **columnChooserSettings.renderCustomColumnChooser** -  Allows you to override the default column chooser UI with a fully customized layout.
 
-In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](../../api/treeview/#nodeclicked) and [keyPress](../../api/treeview/#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
+In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](../../api/treeview#nodeclicked) and [keyPress](../../api/treeview#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
 
 The column chooser footer is customized using `columnChooserSettings.footerTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `columnChooserSettings.headerTemplate` to include a title and an icon.
 
@@ -89,4 +89,4 @@ The column chooser footer is customized using `columnChooserSettings.footerTempl
 
 ![Column Chooser Template TreeGrid](../images/column-chooser-template.png)
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

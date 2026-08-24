@@ -1,0 +1,21 @@
+<ejs-sankey id="sankey-container" width="90%" height="450px">
+    <e-sankey-nodes>
+        @foreach (var node in ViewBag.SankeyNodes)
+        {
+            <e-sankey-node id="@node.Id"></e-sankey-node>
+        }
+    </e-sankey-nodes>
+    <e-sankey-links>
+        @foreach (var link in ViewBag.SankeyLinks)
+        {
+            <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
+        }
+    </e-sankey-links>
+    <e-sankey-tooltipsettings enable="true" nodeTemplate='@("#sankeyTooltipTemplate")'>
+    </e-sankey-tooltipsettings>
+</ejs-sankey>
+
+<script id="sankeyTooltipTemplate" type="text/x-template">
+    <div style="padding:10px; border-radius:6px"><b>${sourceNodeName} → ${targetNodeName}</b><br />Value: ${value}
+    </div>
+</script>

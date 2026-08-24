@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Numerictextbox Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Numeric Textbox | Syncfusion
+description: Learn to set up and configure the Syncfusion ##Platform_Name## Numeric Textbox control with step-by-step instructions, code examples, and best practices.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC NumericTextBox Control
+# Getting Started with ##Platform_Name##NumericTextbox
 
-This section briefly explains about how to include [ASP.NET MVC NumericTextBox](https://www.syncfusion.com/aspnet-core-ui-controls/numeric-textbox) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC NumericTextBox](https://www.syncfusion.com/aspnet-core-ui-controls/numeric-textbox) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC NumericTextBox](
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Numeri
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NumericTextBox control will be rendered in the default web browser.
 
-![ASP.NET MVC NumericTextBox Control](images/gettingStarted.png)
+![ASP.NET MVC NumericTextBox Control](images/gettingStarted.webp)
 
 ## Range validation
 
@@ -111,9 +111,9 @@ The validation behavior depends on the [StrictMode](https://help.syncfusion.com/
 
 ## Formatting the value
 
-User can set the format of the NumericTextBox control using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format, when the control is in focused out state. For more information about formatting the value, refer to this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/formats).
+Users can set the format of the NumericTextBox control using the [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format when the control is in the focused-out state. For more information about formatting the value, refer to this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/formats).
 
-The below example demonstrates format the value by using currency format value `c2`.
+The below example demonstrates how to format the value by using currency format value `c2`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -121,7 +121,7 @@ The below example demonstrates format the value by using currency format value `
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC NumericTextBox with Format Value](images/format.png)
+![ASP.NET MVC NumericTextBox with Format Value](images/format.webp)
 
 ## Precision of numbers
 
@@ -135,7 +135,7 @@ You can restrict the number of decimals to be entered in the NumericTextBox by u
 {% endhighlight %}
 {% endtabs %}
 
-![Restricting Decimal Values in ASP.NET MVC NumericTextBox](images/precision.png)
+![Restricting Decimal Values in ASP.NET MVC NumericTextBox](images/precision.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/NumericTextBox/ASP.NET%20MVC%20Razor%20Examples).
 

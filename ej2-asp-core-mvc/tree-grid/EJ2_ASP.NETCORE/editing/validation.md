@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Validation in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Validation | Syncfusion
+description: Learn how to configure validation in ##Platform_Name## TreeGrid, including required fields, custom rules, and error handling during editing.
 platform: ej2-asp-core-mvc
 control: Validation
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Validation in ##Platform_Name## Tree Grid Component
+# Validation in ##Platform_Name## TreeGrid
 
 ## Column validation
 
-Column validation allows you to validate the edited or added row data and it display errors for invalid fields before saving data. TreeGrid uses **Form Validator** component for column validation. You can set validation rules by defining the [`validationRules`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ValidationRules.html) in [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
+Column validation allows you to validate the edited or added row data and it display errors for invalid fields before saving data. TreeGrid uses **Form Validator** component for column validation. You can set validation rules by defining the [`validationRules`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValidationRules) in [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,4 +71,4 @@ In the below demo, custom validation applied for **Priority** column.
 
 
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

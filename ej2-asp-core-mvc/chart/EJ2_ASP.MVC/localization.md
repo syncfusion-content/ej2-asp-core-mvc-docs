@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Chart Component
+title: Localization in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Localization in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# Localization in ##Platform_Name## Chart
 
 Localization library allows to localize the default text content of Chart. In Chart component, it has the static text on some features(like zooming toolbars) and this can be changed to any other culture(Arabic, Deutsch, French, etc) by defining the locale value and translation object.
 
@@ -48,7 +48,7 @@ Localization library allows to localize the default text content of Chart. In Ch
 
 To load translation object in an application use load function of L10n class.
 
-For more information about localization, refer this [`localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization/)
+For more information about localization, refer this [`localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)
 
 {% if page.publishingplatform == "aspnet-core" %}
 

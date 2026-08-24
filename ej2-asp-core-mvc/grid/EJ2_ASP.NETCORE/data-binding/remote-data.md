@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Remote Data in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Remote Data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Remote Data Binding | Syncfusion
+description: Learn how to bind remote data sources in ##Platform_Name## Data Grid using adaptors, configure server-side operations, and manage data efficiently.
 platform: ej2-asp-core-mvc
 control: Remote Data
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Remote data in ASP.NET Core Grid Component
+# Remote Data Binding in ASP.NET Core Data Grid
 
 In ASP.NET Core Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the `dataSource` property of the ASP.NET Core Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
 
@@ -626,7 +626,7 @@ The following screenshot represents the grid action with custom binding
 
 Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
 
-By default, the Syncfusion Grid component exports only the records on the current page. However, the Syncfusion ASP.Net core Grid component allows you to export all records, including those from multiple pages, by configuring the `pdfExportProperties` and `excelExportProperties`.
+By default, the Syncfusion Grid component exports only the records on the current page. However, the Syncfusion ASP.NET core Grid component allows you to export all records, including those from multiple pages, by configuring the `pdfExportProperties` and `excelExportProperties`.
 
 To export all records, including those from multiple pages, configure the `pdfExportProperties.dataSource` for PDF exporting and `excelExportProperties.dataSource` for Excel exporting within the [toolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 

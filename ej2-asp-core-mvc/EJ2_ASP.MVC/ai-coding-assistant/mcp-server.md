@@ -12,7 +12,7 @@ documentation: ug
 
 ## Overview
 
-The [SyncfusionAspNetMvcAssistant](https://www.npmjs.com/package/@syncfusion/aspnetmvc-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that provides intelligent assistance for developers using Syncfusion's ASP.NET MVC controls. This tool seamlessly integrates with compatible [MCP clients](https://modelcontextprotocol.io/clients) to enhance your development workflow when building ASP.NET MVC applications with Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
+The [SyncfusionAspNetMvcAssistant](https://www.npmjs.com/package/@syncfusion/aspnetmvc-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) server that provides intelligent assistance for developers using Syncfusion's ASP.NET MVC controls. This tool seamlessly integrates with compatible [MCP clients](https://modelcontextprotocol.io/docs/2026-07-28/develop/build-client) to enhance your development workflow when building ASP.NET MVC applications with Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
 ### Key Benefits
 
@@ -25,12 +25,12 @@ The [SyncfusionAspNetMvcAssistant](https://www.npmjs.com/package/@syncfusion/asp
 Before using [SyncfusionAspNetMvcAssistant](https://www.npmjs.com/package/@syncfusion/aspnetmvc-assistant), ensure you have:
 
 * Required [node](https://nodejs.org/en/) version >= 18
-* A [compatible MCP client](https://modelcontextprotocol.io/clients) (Visual Studio Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio](https://www.syncfusion.com/code-studio/), etc.)
+* A [compatible MCP client](https://modelcontextprotocol.io/docs/2026-07-28/develop/build-client) (Visual Studio Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio](https://www.syncfusion.com/code-studio/), etc.)
 * An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
-  - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)
+  - [Commercial License](https://www.syncfusion.com/sales/pricing)
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)
   - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
-* An active [API KEY](https://syncfusion.com/account/api-key)
+* An active [API KEY](https://www.syncfusion.com/account/api-key)
 
 ## Unlimited Access
 
@@ -87,7 +87,7 @@ Below are setup instructions for popular MCP clients:
 
 * In [Code Studio](https://www.syncfusion.com/code-studio/), open MCP Marketplace and navigate to the `Custom Servers` tab.
 * Enter the Server Name as `aspnetmvc-mcp`, choose Server Type as npm package, and set the NPM Package name to `@syncfusion/aspnetmvc-assistant`.
-* Add an environment variable as `Syncfusion_API_Key` and value as your [Syncfusion API key](https://syncfusion.com/account/api-key), then click **Install Server**.
+* Add an environment variable as `Syncfusion_API_Key` and value as your [Syncfusion API key](https://www.syncfusion.com/account/api-key), then click **Install Server**.
 * Once installed, the server will appear in the User Installed Server list, and will be added to the **config.yaml** file.
 * The server is now ready for use in Code Studio. For more details, refer to the [Code Studio documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/customservers#npm-server).
 
@@ -119,7 +119,7 @@ Below are setup instructions for popular MCP clients:
 
 * Confirm the server is active by checking for a message like: `SyncfusionAspNetMvcAssistant is running...` in the output.
 
-* For additional guidance, refer to the [Visual Studio Code documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_add-an-mcp-server).
+* For additional guidance, refer to the [Visual Studio Code documentation](https://code.visualstudio.com/docs/agent-customization/mcp-servers#_add-an-mcp-server).
 
 ### Visual Studio (GitHub Copilot MCP)
 
@@ -173,7 +173,7 @@ To configure an MCP server for a specific workspace, you can create a `.cursor/m
 }
 ```
 
-For more details, refer to the [Cursor documentation](https://cursor.com/docs/context/mcp#using-mcp-json).
+For more details, refer to the [Cursor documentation](https://cursor.com/docs/mcp).
 
 ### JetBrains IDEs
 
@@ -204,7 +204,7 @@ For more details, refer to the [Cursor documentation](https://cursor.com/docs/co
  
 For further assistance, see the [JetBrains documentation](https://www.jetbrains.com/help/ai-assistant/mcp.html#connect-to-an-mcp-server).
 
-> For more detailed information about configuring MCP servers in various clients, refer to the official documentations, e.g., [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp#mcp-config-json)
+> For more detailed information about configuring MCP servers in various clients, refer to the official documentations, e.g., [Windsurf](https://docs.devin.ai/desktop/cascade/mcp)
 
 ## Usage
 

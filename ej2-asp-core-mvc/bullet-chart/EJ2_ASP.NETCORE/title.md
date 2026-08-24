@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title in ##Platform_Name## Bullet Chart Component | Syncfusion
+title: Title and Subtitle in ##Platform_Name## Bullet Chart | Syncfusion
 description: Learn here all about Title in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Title
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Title and subtitle in Bullet Chart Control
+# Title and Subtitle in Bullet Chart
 
 ## Title
 
@@ -45,7 +45,7 @@ public class DefaultBulletData
 
 
 
-![Bullet Chart with Title](images/blazor-bullet-chart-with-title.png)
+![Bullet Chart with Title](images/bullet-chart-with-title.png)
 
 ## Subtitle
 
@@ -81,7 +81,7 @@ public class SubTitleData
 
 
 
-![Bullet Chart with Subtitle](images/blazor-bullet-chart-subtitle.png)
+![Bullet Chart with Subtitle](images/bullet-chart-subtitle.png)
 
 ## Title and subTitle position
 
@@ -223,7 +223,7 @@ public class BottomPositionData
 
 
 
-![Title and Subtitle Position in Bullet Chart](images/blazor-bullet-chart-title-positions.png)
+![Title and Subtitle Position in Bullet Chart](images/bullet-chart-title-positions.png)
 
 ## Title customization
 
@@ -293,4 +293,4 @@ public class Custom
 
 
 
-![Customizing Title and Subtitle in Bullet Chart](images/blazor-bullet-chart-title-customization.png)
+![Customizing Title and Subtitle in Bullet Chart](images/bullet-chart-title-customization.png)

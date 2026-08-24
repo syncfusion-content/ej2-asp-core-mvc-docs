@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## MultiColumn ComboBox Control | Syncfusion
+title: Getting Started with ##Platform_Name## MultiColumn Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## MultiColumn ComboBox control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC MultiColumn ComboBox control
 
-This section briefly explains about how to include `ASP.NET MVC MultiColumn ComboBox` control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the `ASP.NET MVC MultiColumn ComboBox` control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include `ASP.NET MVC MultiColumn Comb
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -98,7 +98,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC MultiC
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC MultiColumn ComboBox control will be rendered in the default web browser.
 
-![ASP.NET MVC MultiColumn ComboBox Control](images/default.png)
+![ASP.NET MVC MultiColumn ComboBox Control](images/default.webp)
 
 ## Configure the popup list
 
@@ -106,7 +106,7 @@ By default, the width of the popup list automatically adjusts according to the M
 
 The height and width of the popup list can also be customized using the `PopupHeight` and `PopupWidth` properties respectively.
 
-In the following sample, popup list's width and height are configured.
+In the following sample, the popup list's width and height are configured.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -117,4 +117,4 @@ In the following sample, popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
 
-![Popup](images/popup.png)
+![Popup](images/popup.webp)

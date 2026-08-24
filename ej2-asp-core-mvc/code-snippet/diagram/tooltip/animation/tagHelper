@@ -1,8 +1,0 @@
-<ejs-diagram id="container" width="100%" height="700px" constraints="Default,Tooltip">
-    <e-diagram-nodes>
-        <e-diagram-node id='node1' offsetX="100" offsetY="100" width="100" height="100">
-           <e-node-tooltip content="Node" position ="@ViewBag.position" constraints="Default,Tooltip" relativeMode="Object">
-             </e-node-tooltip>
-        </e-diagram-node>
-    </e-diagram-nodes>
-</ejs-diagram>

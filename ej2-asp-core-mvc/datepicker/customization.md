@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Datepicker Component
-description: Learn here all about customization in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## DatePicker | Syncfusion
+description: Customize Syncfusion ##Platform_Name## DatePicker appearance with the cssClass property and style day cells via the renderDayCell event.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization
+# Customization in ##Platform_Name## DatePicker
 
 You can customize the entire appearance of the input element and Calendar by using custom [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_CssClass) property, and also you can use the calendar's [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_RenderDayCell) event to customize the appearance of the each day cell.
 
@@ -43,7 +43,8 @@ The following example disables the weekends of every month using `renderDayCell`
 {% include code-snippet/datepicker/customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -52,7 +53,8 @@ The following example disables the weekends of every month using `renderDayCell`
 {% include code-snippet/datepicker/customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

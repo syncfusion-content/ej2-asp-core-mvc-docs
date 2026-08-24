@@ -16,7 +16,7 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-})).AllowPdfExport(true).OnPdfCellRender("onPdfCellRender").Render()
+})).AllowPdfExport(true).GridSettings(gridSettings => gridSettings.PdfQueryCellInfo("pdfQueryCellInfo")).Render()
 
 <script>
     var pivotObj;
@@ -24,9 +24,9 @@
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
         pivotObj.pdfExport();
     }
-    function onPdfCellRender(args) {
-        if (args.pivotCell && args.pivotCell.valueSort && args.pivotCell.valueSort.levelName === 'France.Mountain Bikes') {
-            args.cell.height = 30
+    function pdfQueryCellInfo(args) {
+        if (args.data && args.data.rowHeaders === 'France.Mountain Bikes' && args.cell && args.cell.gridRow) {
+            args.cell.gridRow.height = 100;
         }
     }
 </script>

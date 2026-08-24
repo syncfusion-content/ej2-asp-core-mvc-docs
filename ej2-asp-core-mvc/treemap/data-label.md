@@ -1,16 +1,28 @@
 ---
 layout: post
-title: Data Label in ##Platform_Name## Treemap Component
-description: Learn here all about Data Label in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Data Label in ##Platform_Name## TreeMap | Syncfusion
+description: Learn here all about Data Label in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Label
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Label
+# Data Label in ##Platform_Name## TreeMap
 
 Data Labels are used to identify the name of items or groups in the TreeMap component. Data Labels will be shown by specifying the data source properties in the `labelPath` of the `leafItemSettings`.
+
+## Add labels
+
+Add labels to show additional information about the items in the TreeMap. By default, the visibility of the label is `true`. Customize label visibility using the `showLabels` property in `leafItemSettings`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/treemap/getting-started/labels/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core TreeMap with Label](images/treemap-with-labels.webp)
 
 ## Format
 
@@ -76,7 +88,7 @@ The template supports customizing labels of each leaf node using the `labelTempl
 
 ## InterSectAction
 
-When the label size in each item exceeds the actual size, use the `interSectAction` property in the `leafItemSettings` to customise the labels.
+When the label size in each item exceeds the actual size, use the `interSectAction` property in the `leafItemSettings` to customize the labels.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

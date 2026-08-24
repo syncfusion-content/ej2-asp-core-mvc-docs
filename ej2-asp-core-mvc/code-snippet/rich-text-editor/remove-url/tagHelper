@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="rteImage">
-    <e-richtexteditor-insertimagesettings saveUrl="/Home/SaveImage" removeUrl="/Home/RemoveImage" path="../Uploads/" />
-</ejs-richtexteditor>

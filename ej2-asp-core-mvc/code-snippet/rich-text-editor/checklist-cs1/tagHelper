@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="check-list">
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

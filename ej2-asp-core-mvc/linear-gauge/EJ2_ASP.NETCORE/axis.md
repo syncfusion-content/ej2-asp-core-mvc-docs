@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis in ##Platform_Name## Linear Gauge Component
+title: Axis in ##Platform_Name## Linear Gauge | Syncfusion
 description: Learn here all about Axis in Syncfusion ##Platform_Name## Linear Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Value Bar in ##Platform_Name## Bullet Chart Component | Syncfusion
+title: Actual Bar in ##Platform_Name## Bullet Chart | Syncfusion
 description: Learn here all about Value Bar in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Value Bar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Actual bar in Bullet Chart Control
+# Actual Bar in ASP.NET Core Bullet Chart
 
 To display the primary data or the current value of the data being measured known as the **Feature Measure** that should be encoded as a bar. This is called as the **Actual Bar** or the **Feature Bar** in the Bullet Chart, and to display the actual bar the [`ValueField`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_ValueField) should be mapped to the appropriate field from the data source.
 
@@ -43,7 +43,7 @@ public class DefaultBulletData
 
 
 
-![Actual Bar in Bullet Chart](images/blazor-bullet-chart-actual-bar.png)
+![Actual Bar in Bullet Chart](images/bullet-chart-actual-bar.png)
 
 ## Types of actual bar
 
@@ -79,7 +79,7 @@ public class ActualBarTypeData
 
 
 
-![Bullet Chart with Dot Actual Bar](images/blazor-bullet-chart-dot-actual-bar.png)
+![Bullet Chart with Dot Actual Bar](images/bullet-chart-dot-actual-bar.png)
 
 ## Actual bar customization
 
@@ -151,4 +151,4 @@ public class FillColorCustomization
 
 
 
-![Customizing Actual Bar in Bullet Chart](images/blazor-bullet-chart-actual-bar-customization.png)
+![Customizing Actual Bar in Bullet Chart](images/bullet-chart-actual-bar-customization.png)

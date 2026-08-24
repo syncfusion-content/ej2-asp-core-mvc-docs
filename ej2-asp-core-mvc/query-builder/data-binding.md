@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Query Builder Component
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to bind local and remote data sources to ##Platform_Name## Query Builder using DataManager, OData services, Web API, UrlAdaptor, and Grid integration.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data binding
+# Data Binding in ##Platform_Name## Query Builder
 
 The Query Builder uses `DataManager` to bind the data source, which supports both RESTful JSON data services binding and local JavaScript object array binding. The `DataSource` property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kinds of data binding method.
 
@@ -49,7 +49,7 @@ N> By default, DataManager uses JsonAdaptor for local data-binding.
 
 ## Remote data
 
-To bind remote  data to the query builder, assign service data as an instance of  `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/#datasource) property. To interact with remote data source, provide the endpoint `url`.
+To bind remote  data to the query builder, assign service data as an instance of  `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder#datasource) property. To interact with remote data source, provide the endpoint `url`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -109,7 +109,7 @@ N> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
 
 ### Binding with ODatav4 services
 
-The ODatav4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume ODatav4 services. For more details on ODatav4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind ODatav4 service, use the `ODataV4Adaptor`.
+The ODatav4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume ODatav4 services. For more details on ODatav4 services, refer to the [`odata documentation`](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html). To bind ODatav4 service, use the `ODataV4Adaptor`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

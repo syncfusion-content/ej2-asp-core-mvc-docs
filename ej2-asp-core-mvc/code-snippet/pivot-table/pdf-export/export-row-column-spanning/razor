@@ -1,0 +1,42 @@
+@Html.EJS().Button("pdf").Content("Pdf Export").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).EmptyCellsTextContent("**").ExpandAll(true)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").ShowNoDataItems(true).Add(); rows.Name("State").ShowNoDataItems(true).Add();
+}).Columns(columns =>
+{
+    columns.Name("Date").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Quantity").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).AllowPdfExport(true).GridSettings(gridSettings => gridSettings.PdfQueryCellInfo("pdfQueryCellInfo").QueryCellInfo("queryCellInfo")).Render().Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('pdf').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pdfExport();
+    }
+    function queryCellInfo(args) {
+        const colIndex = Number(args.cell.getAttribute('aria-colindex'));
+        const currentCell = args.data[colIndex - 1];
+        if (currentCell.formattedText === '**' &&
+            currentCell.actualText === 'Quantity' &&
+            ['Canada.New Mexico', 'United States.British Columbia'].includes(currentCell.rowHeaders)) {
+            args.rowSpan = 2;
+            args.colSpan = 2;
+        }
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.value === '**' &&
+            args.data.actualText === 'Quantity' &&
+            ['Canada.New Mexico', 'United States.British Columbia'].includes(args.data.rowHeaders)) {
+            args.cell.rowSpan = 2;
+            args.cell.colSpan = 2;
+        }
+    }
+</script>

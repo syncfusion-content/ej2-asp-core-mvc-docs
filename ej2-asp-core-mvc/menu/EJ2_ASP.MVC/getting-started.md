@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Menu Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Menu control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Menu | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Menu control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Menu Control
+# Getting Started with ##Platform_Name## Menu
 
 This section briefly explains about how to include [ASP.NET MVC Menu](https://www.syncfusion.com/aspnet-core-ui-controls/menu-bar) control in your ASP.NET MVC application using Visual Studio.
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Menu](https://ww
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -150,7 +150,7 @@ public ActionResult Index()
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Menu control will be rendered in the default web browser.
 
-![ASP.NET MVC Menu Control](images/menu.png)
+![ASP.NET MVC Menu Control](images/menu.webp)
 
 N> This example demonstrates the basic rendering of Menu with items support. For more information about data source support, refer to the [Data Source Binding](./data-source-binding-and-custom-menu-items#data-binding) section.
 
@@ -220,7 +220,7 @@ public ActionResult Index()
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Menu with Separator](images/menu-with-separator.png)
+![ASP.NET MVC Menu with Separator](images/menu-with-separator.webp)
 
 N> The `separator` property should not be given along with the other fields in the `MenuItem`. You can also enable the separator to group **horizontal** menu items.
 

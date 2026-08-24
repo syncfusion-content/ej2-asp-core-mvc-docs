@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Sidebar Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Sidebar control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Sidebar Control
+# Getting Started with ##Platform_Name## Sidebar
 
 This section briefly explains about how to include [ASP.NET MVC Sidebar](https://www.syncfusion.com/aspnet-mvc-ui-controls/sidebar) control in your ASP.NET MVC application using Visual Studio.
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Sidebar](https:/
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -163,6 +163,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Sidebar with Menu Component](https://ej2.syncfusion.com/aspnetmvc/Sidebar/SidebarWithMenu#/material)
-* [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetmvc/Sidebar/PanelWithResponsive#/material)
-* [Usecase Sample](https://ej2.syncfusion.com/showcase/aspnetmvc/webmail/ )
+* [Sidebar with Menu Component](https://ej2.syncfusion.com/aspnetmvc/sidebar/sidebarwithmenu#/fluent2)
+* [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetmvc/sidebar/panelwithresponsive#/fluent2)
+* [Use Case Sample](https://ej2.syncfusion.com/showcase/aspnetmvc/webmail/ )

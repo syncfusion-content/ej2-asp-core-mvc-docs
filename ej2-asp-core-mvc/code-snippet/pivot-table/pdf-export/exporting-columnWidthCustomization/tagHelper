@@ -1,9 +1,10 @@
 <ejs-button id="pdf" content="Pdf Export" isPrimary="true"></ejs-button>
 
-<ejs-pivotview id="PivotView" height="300" allowPdfExport="true" enableVirtualization="true" onPdfCellRender="onPdfCellRender">
+<ejs-pivotview id="PivotView" height="300" allowPdfExport="true" enableVirtualization="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
-            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1"
+                useGrouping="true"></e-field>
         </e-formatsettings>
         <e-rows>
             <e-field name="Country"></e-field>
@@ -18,6 +19,7 @@
             <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
     </e-datasourcesettings>
+    <e-gridSettings columnWidth=120 pdfHeaderQueryCellInfo="pdfHeaderQueryCellInfo"></e-gridSettings>
 </ejs-pivotview>
 
 <script>
@@ -26,9 +28,11 @@
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
         pivotObj.pdfExport();
     }
-    function onPdfCellRender(args) {
-        if (args.pivotCell && args.pivotCell.valueSort && args.pivotCell.valueSort.levelName === 'FY 2015.Units Sold') {
-            args.column.width = 60
+    function pdfHeaderQueryCellInfo(args) {
+        if (args.gridCell && args.gridCell.valueSort && args.gridCell.valueSort.levelName === 'FY 2015.Units Sold'
+            && args.cell && args.cell.row && args.cell.row.pdfGrid && args.cell.row.pdfGrid.gridColumns
+            && args.cell.row.pdfGrid.gridColumns.columns[args.gridCell.colIndex]) {
+            args.cell.row.pdfGrid.gridColumns.columns[args.gridCell.colIndex].width = 250;
         }
     }
 </script>

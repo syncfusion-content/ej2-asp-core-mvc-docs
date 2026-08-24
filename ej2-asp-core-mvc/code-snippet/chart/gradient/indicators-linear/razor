@@ -1,0 +1,62 @@
+@{
+    var indicatorGradient = new Syncfusion.EJ2.Charts.ChartLinearGradient
+    {
+        X1 = 0,
+        Y1 = 0,
+        X2 = 1,
+        Y2 = 0,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#7C3AED", Offset = 0,   Opacity = 1 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#F59E0B", Offset = 100, Opacity = 1 }
+        }
+    };
+}
+
+@(Html.EJS().Chart("container")
+    .Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
+              .XName("Date")
+              .YName("y")
+              .Low("Low")
+              .High("High")
+              .Close("Close")
+              .Volume("Volume")
+              .Open("Open")
+              .Width(2)
+              .Name("Equity Price")
+              .DataSource(ViewBag.dataSource).Add();
+    })
+    .Indicators(ind =>
+    {
+        ind.Type(Syncfusion.EJ2.Charts.TechnicalIndicators.Ema)
+           .Field(Syncfusion.EJ2.Charts.FinancialDataFields.Close)
+           .SeriesName("Equity Price")
+           .XName("Date")
+           .Width(2)
+           .Period(3)
+           .LinearGradient(indicatorGradient).Add();
+    })
+    .PrimaryXAxis(px => px
+        .Title("Months")
+        .ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+        .IntervalType(Syncfusion.EJ2.Charts.IntervalType.Months)
+        .LabelFormat("MMM yyyy")
+        .EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+        .MajorGridLines(mg => mg.Width(0))
+    )
+    .PrimaryYAxis(py => py
+        .Title("Price (USD)")
+        .LabelFormat("${value}")
+        .Minimum(90)
+        .Maximum(130)
+        .Interval(10)
+        .LineStyle(ls => ls.Width(0))
+        .MajorTickLines(mt => mt.Width(0))
+    )
+    .Tooltip(tp => tp.Enable(true))
+    .LegendSettings(leg => leg.Visible(false))
+    .Title("Equity Price - Jan-Nov 2025")
+    .Render()
+)

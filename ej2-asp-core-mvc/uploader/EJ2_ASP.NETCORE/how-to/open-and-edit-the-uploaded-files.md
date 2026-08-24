@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open And Edit The Uploaded Files in ##Platform_Name## Uploader Component
-description: Learn here all about Open And Edit The Uploaded Files in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: How to open and edit uploaded files in ##Platform_Name## | Syncfusion
+description: Open and edit uploaded files in the Syncfusion ASP.NET Core File Upload by storing the path in the success event and serving it from the server.
 platform: ej2-asp-core-mvc
 control: Open And Edit The Uploaded Files
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Open and edit the uploaded files
+# How to open and edit uploaded files in ASP.NET Core File Upload
 
 The uploader control allows you to modify the file after uploading to the server, which can be achieved using [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) event of the uploader.
 
@@ -40,4 +40,4 @@ You can retrieve the saved file path in the uploader success event and assign it
 
 
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.

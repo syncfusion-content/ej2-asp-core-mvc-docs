@@ -1,1 +1,0 @@
-@Html.EJS().RichTextEditor("read-only").Readonly(true).Value(ViewBag.value).Render()

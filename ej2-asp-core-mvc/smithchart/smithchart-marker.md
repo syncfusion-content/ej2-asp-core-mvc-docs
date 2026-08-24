@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smithchart Marker in ##Platform_Name## Smithchart Component
+title: Marker and DataLabels in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Smithchart Marker in Syncfusion ##Platform_Name## Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Marker
@@ -11,7 +11,8 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Marker & Datalabels
+# Marker and Datalabels in ##Platform_Name## Smith Chart
+
 
 Markers and Datalabels are used to provide information about the data points in the series. You can add a shape to adorn each data point. By default marker and datalabel both are disabled in smithchart. You can enable both of them by setting visible property as true in marker and datalabel settings
 

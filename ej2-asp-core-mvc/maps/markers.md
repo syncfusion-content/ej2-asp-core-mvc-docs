@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markers in Syncfusion ##Platform_Name## Maps Component
+title: Markers in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Markers in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Markers
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Markers in ##Platform_Name## Maps Component
+# Markers in ##Platform_Name## Maps
 
 Markers are notes that are used to leave a message on the Maps. It indicates or marks a specific location with desired symbols on the Maps. It can be enabled by setting the `Visible` property of the `MapsMarker` to **true**.
 

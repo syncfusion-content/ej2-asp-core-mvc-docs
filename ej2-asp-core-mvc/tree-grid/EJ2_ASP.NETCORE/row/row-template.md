@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Template in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Row Template in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Row Template | Syncfusion
+description: Learn how to use row templates in ##Platform_Name## TreeGrid to customize row layouts, display custom content, and enhance data presentation.
 platform: ej2-asp-core-mvc
 control: Row Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row Template in ##Platform_Name## Tree Grid Component
+# Row Template in ##Platform_Name## TreeGrid
 
 The **rowTemplate** has an option to customize the look and behavior of the treegrid rows. The [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate) property accepts either the **template** string or HTML element ID.
 
@@ -83,4 +83,4 @@ Row template feature is not compatible with all the features which are available
 
 
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

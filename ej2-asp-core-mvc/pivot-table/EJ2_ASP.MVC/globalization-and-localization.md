@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Pivot Table Control | Syncfusion
-description: Learn here all about Globalization And Localization in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Globalization and Localization in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table adapts to different cultures by loading CLDR JSON data for internationalization and using the L10n class for localization.
 platform: ej2-asp-core-mvc
 control: Globalization And Localization
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Globalization in Pivot Table Control
+# Globalization and Localization in ASP.NET MVC Pivot Table
 
-Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/base/intl.html)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetmvc/documentation/base/localization.html)).
+Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization)).
 
 ## Internationalization
 
@@ -19,7 +19,7 @@ Internationalization library provides support for formatting and parsing the num
 
 By default, all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component are specific to English culture ('en-US'). If you want to go with the different culture other than English, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
+* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
 ```
 npm install cldr-data --save
@@ -27,7 +27,7 @@ npm install cldr-data --save
 
 Once the package installed, you can find the culture specific JSON data under the location `/scripts/cldr-data`.
 
-* Now use the [`loadCultureFiles`](https://ej2.syncfusion.com/aspnetmvc/documentation/base/intl.html#loading-culture-data) method to load the culture specific CLDR JSON data.
+* Now use the [`loadCultureFiles`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#loading-culture-data) method to load the culture specific CLDR JSON data.
 
 In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` location. In ASP.NET Core refer the culture files directly from `/wwwroot/scripts/cldr-data` location as like the below code examples for both ASP.NET Core and MVC
 
@@ -107,7 +107,7 @@ N> * By default, `locale` value is `en-US`. If you want to change the `en-US` cu
 
 ### Decimal separators 
 
-The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/#changing-current-locale) with appropriate culture string as its parameter. 
+The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization#changing-current-locale) with appropriate culture string as its parameter. 
 
 The following example demonstrates the decimal separators in `Deutsch` culture.
 
@@ -136,11 +136,11 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 
 
-![output](images/localede.png)
+![Pivot table values with German locale decimal separators](images/localede.png)
 
 ## Localization
 
-The [`Localization`](https://ej2.syncfusion.com/aspnetmvc/documentation/base/localization.html) library allows you to localize default text content of the Pivot Table. The pivot Table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
+The [`Localization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization) library allows you to localize default text content of the Pivot Table. The pivot Table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
 
 The following list of properties and its values are used in the pivot table.
 
@@ -252,15 +252,16 @@ PercentageOfColumnTotal | % of Column Total
 NotEquals | Not Equals
 AllValues | All Values
 conditionalFormatting | Conditional Formatting
-apply | APPLY
+applyToGrandTotal | Apply to Grand Total
+apply | Apply
 condition | Add Condition
 formatLabel | Format
 valueFieldSettings | Value field settings
-baseField | Base field :
-baseItem | Base item :
-summarizeValuesBy | Summarize values by :
+baseField | Base field
+baseItem | Base item
+summarizeValuesBy | Summarize values by
 sourceName | Field name :
-sourceCaption | Field caption :
+sourceCaption | Field caption
 example | e.g:
 editorDataLimitMsg |  more items. Search to refine further.
 details | Details
@@ -301,9 +302,10 @@ fieldList | Show fieldlist
 grid | Show table
 toolbarFormatting | Conditional formatting
 chart | Chart
+columnChart | Column
 reportMsg | Please enter valid report name!!!
 reportList | Report list
-removeConfirm | Are you sure want to delete this report?
+removeConfirm | Are you sure you want to delete this report?
 emptyReport | No reports found!!
 bar | Bar
 line | Line
@@ -313,7 +315,7 @@ polar | Polar
 of | of
 emptyFormat | No format found!!!
 emptyInput | Enter a value
-newReportConfirm | Want to save changes to report?
+newReportConfirm | Do you want to save the changes to this report?
 emptyReportName | Enter a report name
 qtr | Qtr
 null | null
@@ -339,7 +341,7 @@ false | False
 decimalPlaces | Decimal Places
 numberFormat | Number Formatting
 memberType | Field Type
-formatString | Format String
+formatString | Format
 expressionField | Expression
 customFormat | Enter custom format string
 selectedHierarchy | Parent Hierarchy
@@ -350,13 +352,13 @@ Measure | Measure
 Dimension | Dimension
 Standard | Standard
 blank | (Blank)
-fieldTooltip | Drag and drop fields to create an expression. And, if you want to edit the existing the calculated fields! Then you can achieve it by simply selecting the field under 'Calculated Members'.
+fieldTooltip | Drag and drop fields to create an expression. And, if you want to edit the existing calculated fields! Then you can achieve it by simply selecting the field under 'Calculated Members'.
 QuarterYear | Quarter Year
 fieldTitle | Field Name
 drillError | Cannot show the raw items of calculated fields.
 caption | Field Caption
 copy | Copy
-defaultReport | Default report
+defaultReport | Sample Report
 customFormatString | Custom Format
 invalidFormat | Invalid Format.
 group | Group
@@ -382,11 +384,11 @@ spline | Spline
 stackingcolumn100 | 100% Stacked Column
 stackingbar100 | 100% Stacked Bar
 stackingarea100 | 100% Stacked Area
-bubble | bubble
+bubble | Bubble
 pareto | Pareto
 radar | Radar
 chartTypeSettings | Chart type settings
-multipleAxes | Multiple Axes
+multipleAxes | Multiple Axis
 sortAscending | Sort ascending order
 sortDescending | Sort descending order
 sortNone | Sort data order
@@ -428,6 +430,8 @@ goToLastPage | Go to last page
 combined | Combined
 subTotalPosition | Subtotals position
 auto | Auto
+loading | Loading...
+add | Add
 
 The following list of properties and its values are used in the pivot field list.
 
@@ -442,7 +446,7 @@ dropValPrompt | Drop value here
 addPrompt | Add field here
 adaptiveFieldHeader | Choose field
 centerHeader | Drag fields between axes below:
-add | add
+add | Add
 drag | Drag
 filter | Filter
 filtered | Filtered
@@ -537,13 +541,13 @@ Days | Days
 Hours | Hours
 Minutes | Minutes
 Seconds | Seconds
-apply | APPLY
+apply | Apply
 valueFieldSettings | Value field settings
 sourceName | Field name :
-sourceCaption | Field caption :
-summarizeValuesBy | Summarize values by :
-baseField | Base field :
-baseItem | Base item :
+sourceCaption | Field caption
+summarizeValuesBy | Summarize values by
+baseField | Base field
+baseItem | Base item
 example | e.g:
 editorDataLimitMsg |  more items. Search to refine further.
 deferLayoutUpdate | Defer Layout Update
@@ -554,7 +558,7 @@ fieldDropErrorAction | The field you are moving cannot be placed in that area of
 MoreOption | More...
 memberType | Field Type
 selectedHierarchy | Parent Hierarchy
-formatString | Format String
+formatString | Format
 expressionField | Expression
 olapDropText | Example: [Measures].[Order Quantity] + ([Measures].[Order Quantity] * 0.10)
 customFormat | Enter custom format string
@@ -565,7 +569,7 @@ Currency | Currency
 Percent | Percent
 Custom | Custom
 blank | (Blank)
-fieldTooltip | Drag and drop fields to create an expression. And, if you want to edit the existing the calculated fields! You can achieve it by simply selecting the field under 'Calculated Members'.
+fieldTooltip | Drag and drop fields to create an expression. And, if you want to edit the existing calculated fields! You can achieve it by simply selecting the field under 'Calculated Members'.
 fieldTitle | Field Name
 QuarterYear | Quarter Year
 caption | Field Caption
@@ -582,6 +586,8 @@ of | of
 removeCalculatedField | Are you sure you want to delete this calculated field?
 yes | Yes
 no | No
+qtr | Qtr
+grandTotal | Grand Total
 None | None
 
 N> To find the latest localization keywords of pivotview and pivotfieldlist for different languages, visit this [GitHub](https://github.com/syncfusion/ej2-locale) repository.

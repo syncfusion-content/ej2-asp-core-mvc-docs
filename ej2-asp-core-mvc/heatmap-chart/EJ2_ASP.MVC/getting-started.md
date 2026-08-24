@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## HeatmapChart Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## HeatmapChart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Heatmap Chart | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Heatmap Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC HeatMapChart Control
+# Getting Started with ASP.NET MVC HeatMap Chart
 
 This section briefly explains about how to include [ASP.NET MVC HeatMapChart](https://www.syncfusion.com/aspnet-mvc-ui-controls/heatmap-chart) control in your ASP.NET MVC application using Visual Studio.
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC HeatMapChart](ht
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -132,7 +132,7 @@ public ActionResult Index()
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC HeatMapChart control will be rendered in the default web browser.
 
-![ASP.NET MVC HeatMap Chart with Data](images/heatmap-with-data.png)
+![ASP.NET MVC HeatMap Chart with Data](images/heatmap-with-data.webp)
 
 ## Enable axis labels
 
@@ -169,7 +169,7 @@ public ActionResult Index()
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Axis](images/heatmap-with-axis-labels.png)
+![ASP.NET MVC HeatMapChart with Axis](images/heatmap-with-axis-labels.webp)
 
 ## Add heat map title
 
@@ -213,7 +213,7 @@ public ActionResult Index()
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Title](images/heatmap-with-title.png)
+![ASP.NET MVC HeatMapChart with Title](images/heatmap-with-title.webp)
 
 ## Enable legend
 
@@ -225,7 +225,7 @@ Use a legend for the heat map in the [LegendSettings](https://help.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Legend](images/heatmap-with-legend.png)
+![ASP.NET MVC HeatMapChart with Legend](images/heatmap-with-legend.webp)
 
 ## Add data label
 
@@ -237,7 +237,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with DataLabel](images/heatmap-with-datalabel.png)
+![ASP.NET MVC HeatMapChart with DataLabel](images/heatmap-with-datalabel.webp)
 
 ## Add custom cell palette
 
@@ -249,7 +249,7 @@ The default palette settings of the heat map cells can be customized by using th
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Custom Cell Palette](images/heatmap-with-palette.png)
+![ASP.NET MVC HeatMapChart with Custom Cell Palette](images/heatmap-with-palette.webp)
 
 ## Enable tooltip
 
@@ -261,8 +261,8 @@ The tooltip is used when you cannot display information by using the data labels
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Tooltip](images/heatmap-with-tooltip.png)
+![ASP.NET MVC HeatMapChart with Tooltip](images/heatmap-with-tooltip.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/HeatMap/ASP.NET%20MVC%20Razor%20Examples).
 
-N> You can explore our [ASP.NET MVC HeatMap Chart example](https://ej2.syncfusion.com/aspnetmvc/HeatMapChart/Default#/bootstrap5) that shows you how to render the HeatMap Chart in ASP.NET MVC.
+N> You can explore our [ASP.NET MVC HeatMap Chart example](https://ej2.syncfusion.com/aspnetcore/heatmapchart/default#/fluent2) that shows you how to render the HeatMap Chart in ASP.NET MVC.

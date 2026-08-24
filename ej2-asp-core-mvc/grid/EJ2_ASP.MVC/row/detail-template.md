@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Detail Template in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Detail Template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Detail Template | Syncfusion
+description: Learn how to use Detail Templates in ##Platform_Name## Data Grid to display expandable row details, embed custom components, and customize data layouts.
 platform: ej2-asp-core-mvc
 control: Detail Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Detail template in ASP.NET MVC Grid component 
+# Detail Template in ASP.NET MVC Data Grid
 
 The detail template in the Grid component allows you to display additional information about a specific row in the grid by expanding or collapsing detail content. This feature is useful when you need to show additional data or custom content that is specific to each row in the grid. You can use the [DetailTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property to define an HTML template for the detail row. This template can include any HTML element or ASP.NET MVC component that you want to display as detail content.
 
@@ -107,6 +107,3 @@ Detail template is not supported with the following features:
 * Lazy load grouping
 * State persistence
 
-## See also
-
-* [Detail row events](../hierarchy-grid#detail-row-events)

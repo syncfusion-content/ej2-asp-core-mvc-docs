@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Card Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Card control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Card | Syncfusion
+description: Create your first ##Platform_Name## Card, add the Syncfusion.EJ2 theme, and render a header with title and content in an MVC Razor view.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Card Control
+# Getting Started with ##Platform_Name## Card Control
 
 This section briefly explains about how to include [ASP.NET MVC Card](https://www.syncfusion.com/aspnet-mvc-ui-controls/card) control in your ASP.NET MVC application using Visual Studio.
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Card](https://ww
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Add stylesheet
 
@@ -78,11 +78,11 @@ You can create Card with a header in a specific structure. For adding header you
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Card](images/card-control.png)
+![ASP.NET MVC Card](images/card-control.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Card/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
-* [Real time example using Card](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
+* [Real time example using Card](https://ej2.syncfusion.com/aspnetmvc/kanban/workflow#/fluent2)
 * [How to add a header and content](https://ej2.syncfusion.com/aspnetmvc/documentation/card/header-content)

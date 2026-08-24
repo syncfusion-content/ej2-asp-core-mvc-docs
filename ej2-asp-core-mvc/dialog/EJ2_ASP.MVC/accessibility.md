@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Dialog Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Dialog | Syncfusion
+description: Syncfusion ##Platform_Name## Dialog follows WCAG 2.2, Section 508, and ADA standards with screen reader, keyboard, and right-to-left support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## Dialog
 
 The Dialog component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -17,7 +17,7 @@ The accessibility compliance for the Dialog component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | AA |
 | [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -25,7 +25,6 @@ The accessibility compliance for the Dialog component is outlined below.
 | [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 
 <style>
     .post .post-content img {
@@ -41,7 +40,7 @@ The accessibility compliance for the Dialog component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Dialog characterized with complete ARIA Accessibility support which helps to accessible by on-screen readers and other assistive technology devices. This component designed with the reference of the guidelines document given in [WAI ARAI Accessibility Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal).
+The Dialog characterized with complete ARIA Accessibility support which helps to accessible by on-screen readers and other assistive technology devices. This component designed with the reference of the guidelines document given in [WAI ARAI Accessibility Practices](https://www.w3.org/WAI/ARIA/apg/).
 
 The Dialog control uses the `Dialog` role and following ARIA properties to its element based on its state.
 
@@ -54,7 +53,7 @@ The Dialog control uses the `Dialog` role and following ARIA properties to its e
 
 ## Keyboard interaction
 
-Keyboard interaction of Dialog control has designed based on [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal) described for Dialog. User can use the following shortcut keys to interact with the Dialog.
+Keyboard interaction of Dialog control has designed based on [WAI-ARIA Practices](https://www.w3.org/WAI/ARIA/apg/) described for Dialog. User can use the following shortcut keys to interact with the Dialog.
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -66,7 +65,7 @@ Keyboard interaction of Dialog control has designed based on [WAI-ARIA Practices
 <td>
 <kbd>Esc</kbd></td><td>
 Closes the Dialog. This functionality can be controlled by using
-<a href="https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Popups.Dialog~CloseOnEscape.html" target="_blank"> `closeOnEscape`</a> </td></tr>
+<a href="https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_CloseOnEscape" target="_blank" aria-label="closeOnEscape"> `closeOnEscape`</a></td></tr>
 <tr>
 <td>
 <kbd>Enter</kbd></td><td>

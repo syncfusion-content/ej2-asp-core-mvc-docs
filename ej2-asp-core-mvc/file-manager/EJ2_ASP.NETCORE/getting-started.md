@@ -1,98 +1,142 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## File Manager Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core File Manager | Syncfusion
+description: Learn how to get started with the ASP.NET Core File Manager and explore setup, configuration, and core feature examples.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Getting Started with ASP.NET Core File Manager
 
-# Getting started with ASP.NET Core File Manager Control
+This section briefly explains how to include the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
-This section briefly explains about how to include [ASP.NET Core FileManager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using Visual Studio.
+## Create an ASP.NET Core Web App with Razor pages
 
-## Prerequisites
+{% tabcontents %}
 
-[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
+{% tabcontent Visual Studio %}
 
-## Create ASP.NET Core web application with Razor pages
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
+{% endtabcontent %}
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
+{% tabcontent Visual Studio Code %}
 
-## Install ASP.NET Core package in the application
-
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Terminal" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+dotnet new webapp -o RazorPagesMovie
+code -r RazorPagesMovie
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app), the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project) or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
+{% endtabcontent %}
 
-Open **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` TagHelper.
+{% endtabcontents %}
+
+## Install the required ASP.NET Core packages
+
+Install [Syncfusion.AspNetCore.FileManager](https://www.nuget.org/packages/Syncfusion.AspNetCore.FileManager/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) NuGet packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
+2. Search the required NuGet packages (`Syncfusion.AspNetCore.FileManager` and `Syncfusion.AspNetCore.Themes`) and install them.
+
+Alternatively, you can install the same packages using the Package Manager Console with the following command.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-@addTagHelper *, Syncfusion.EJ2
+Install-Package Syncfusion.AspNetCore.FileManager -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following commands.
+
+{% tabs %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet add package Syncfusion.AspNetCore.FileManager -v {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.Themes -v {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+## Add the ASP.NET Core Tag Helper
+
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.FileManager` Tag Helpers.
+
+{% tabs %}
+{% highlight cshtml tabtitle="_ViewImports.cshtml" %}
+
+@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.FileManager
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
+The theme stylesheet and script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** 
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <!-- ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
+    <!-- ASP.NET Core controls scripts -->
+    <script src="_content/Syncfusion.AspNetCore.FileManager/scripts/sf-file-manager.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+## Register the Script Manager
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
-
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
-
-Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
-    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <!-- ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core File Manager control
+## Add the ASP.NET Core File Manager control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core File Manager tag helper in **~/Pages/Index.cshtml** page.
+Add the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in the **~/Pages/Index.cshtml** file.
+
+Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files accessed by the File Manager.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/file-manager/getting-started/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
@@ -102,7 +146,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
-using WebApplication4.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
@@ -110,8 +153,10 @@ using Microsoft.AspNetCore.Cors;
 using Syncfusion.EJ2.FileManager.Base;
 using Syncfusion.EJ2.FileManager.PhysicalFileProvider;
 
-namespace WebApplication4.Controllers
+// Replace "FileManagerProject" with your project name.
+namespace FileManagerProject.Controllers
 {
+    [Route("[controller]")]
     public class HomeController : Controller
     {
         public PhysicalFileProvider operation;
@@ -124,7 +169,7 @@ namespace WebApplication4.Controllers
             this.operation = new PhysicalFileProvider();
             this.operation.RootFolder(this.basePath + "\\" + this.root);
         }
-
+        [Route("FileOperations")]
         public object FileOperations([FromBody] FileManagerDirectoryContent args)
         {
             var fullPath = (this.basePath + "\\" + this.root + args.Path).Replace("/", "\\");
@@ -168,7 +213,9 @@ namespace WebApplication4.Controllers
         }
 
         // uploads the file(s) into a specified path
-        public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
+        [Route("Upload")]
+        [DisableRequestSizeLimit]
+        public IActionResult Upload(string path, long size, IList<IFormFile> uploadFiles, string action)
         {
             try
             {
@@ -219,6 +266,7 @@ namespace WebApplication4.Controllers
         }
 
         // downloads the selected file(s) and folder(s)
+        [Route("Download")]
         public IActionResult Download(string downloadInput)
         {
             var options = new JsonSerializerOptions
@@ -230,145 +278,63 @@ namespace WebApplication4.Controllers
         }
 
         // gets the image(s) from the given path
+        [Route("GetImage")]
         public IActionResult GetImage(FileManagerDirectoryContent args)
         {
             return this.operation.GetImage(args.Path, args.Id, false, null, null);
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core File Manager control will be rendered in the default web browser.
+After creating a controller for the File Manager service, register it in the `Program.cs` file using:
 
-![File Manager getting started](images/getting-started.PNG)
+{% tabs %}
+{% highlight c# tabtitle="Program.cs" %}
+
+app.MapControllers();
+
+{% endhighlight %}
+{% endtabs %}
+
+## Run the application
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control will render in your default web browser.
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following command.
+
+{% tabs %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet run
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+![File Manager getting started](images/getting-started.webp)
 
 N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
 
-## File Download support
-
-To perform the download operation, initialize the `DownloadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager control.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/file-download-url/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-## File Upload support
-
-To perform the upload operation, initialize the `UploadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager Control.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/file-upload-url/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-## Image Preview support
-
-To perform the image preview support in the File Manager control, need to initialize the `GetImageUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager control.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/image-preview/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![File Manager Sample](images/getimage.png)
-
-## File Manager Overview
-
-By default, the File Manager control  having  extra module like [`NavigationPane`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~NavigationPaneSettings.html), [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html), [`ContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ContextMenuSettings.html) module.
-
-In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/overview/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![File Manager overview](./images/overview.PNG)
-
-N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~CssClass.html) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
-
-## Switching initial view of the File Manager
-
-The initial view of the File Manager can be changed to details or largeicons view with the help of [view](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html) property. By default, the File Manager will be rendered in large icons view. When the File Manager is initially rendered, [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Created.html) will be triggered. This event can be utilized for performing operations once the File Manager has been successfully created.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/view/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![File Manager switching view ](./images/overview.PNG)
-
-## Maintaining control state on page reload
-
-The File Manager supports maintaining the control state on page reload. This can be achieved by enabling [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnablePersistence.html) property which maintains the following,
-* Previous view of the File Manager - [View](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html)
-* Previous path of the File Manager - [Path](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Path.html)
-* Previous selected items of the File Manager - [SelectedItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~SelectedItems.html)
-
-For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Success.html) event will be triggered and [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Failure.html) event will be triggered if the request gets failed.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/persistence/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![File Manager enable persistence](images/enable_persistence.PNG)
-
-N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
-
-## Rendering control in right-to-left direction
-
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnableRtl.html) API to true.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/rtl/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![Right to Left Support in ASP.NET Core FileManager](./images/enable_rtl.PNG)
-
-## Specifying the current path of the File Manager
-
-The current path of the File Manager can be specified initially or dynamically using the [path](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Path.html) property.
-
-The following code snippet demonstrates specifying the current path in File Manager on rendering.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/path/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core File Manager with Specific Path](images/path.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20Core%20Tag%20Helper%20Examples).
-
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+3. [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations#ajax-settings-configuration)
+4. [Getting Started with File Manager Overview ](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/user-interface#file-manager-overview)
+5. [Working with File Manager Views in ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/views)
+6. [Perform File Operations in File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations)
+7. [Uploading Files in ASP.NET Core File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/upload)
+8. [File Upload Operations in File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/customization)

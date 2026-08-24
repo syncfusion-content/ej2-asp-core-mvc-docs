@@ -1,0 +1,5 @@
+<div class="control-section">
+    <div class="control_wrapper textbox-control-section">
+        <ejs-textbox id="default" placeholder="Enter your comments" maxLength="20"></ejs-textbox>
+    </div>
+</div>

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Multiple Selection in ##Platform_Name## Syncfusion File Manager Control | Syncfusion
-description: Learn here all about Multiple Selection in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Multiple Selection in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to enable multiple selection in the ##Platform_Name## File Manager using Ctrl/Shift keys and checkboxes to select many files at once.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Multiple Selection
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Multiple Selection in File Manager
+# Multiple Selection in ##Platform_Name## File Manager
 
 The File Manager allows multiple file selection through the `allowMultiSelection`) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The `fileSelect` event will be triggered when the items of File Manager control is selected or unselected.
 

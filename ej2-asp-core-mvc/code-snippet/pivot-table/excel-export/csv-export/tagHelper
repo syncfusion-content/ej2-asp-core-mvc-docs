@@ -1,4 +1,4 @@
-<ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
+<ejs-button id="csv" content="Export To CSV" isPrimary="true"></ejs-button>
 
 <ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
@@ -22,7 +22,7 @@
 
 <script>
     var pivotObj;
-    document.getElementById('excel').onclick = function () {
+    document.getElementById('csv').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
         pivotObj.csvExport();
     }

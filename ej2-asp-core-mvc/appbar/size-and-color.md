@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Size and Color with ##Platform_Name## AppBar Control | Syncfusion
+title: Size and Color in ##Platform_Name## AppBar | Syncfusion
 description: Check out and learn about Size and Color with the ##Platform_Name## AppBar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Size and Color
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Size and Color with ##Platform_Name## AppBar Control
+# Size and Color in ##Platform_Name## AppBar
 
 ## Size
 

@@ -1,0 +1,25 @@
+<ejs-sankey id="sankey-container" width="90%" height="450px" legendItemRendering="onLegendItemRendering">
+    <e-sankey-nodes>
+        @foreach (var node in ViewBag.SankeyNodes)
+        {
+            <e-sankey-node id="@node.Id"></e-sankey-node>
+        }
+    </e-sankey-nodes>
+    <e-sankey-links>
+        @foreach (var link in ViewBag.SankeyLinks)
+        {
+            <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
+        }
+    </e-sankey-links>
+    <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>
+    <e-sankey-legendsettings visible="true" position="Bottom"></e-sankey-legendsettings>
+</ejs-sankey>
+
+<script>
+    function onLegendItemRendering(args) {
+        if (args && args.text) {
+            args.text = args.text.toUpperCase();
+        }
+        args.fill = '#333';
+    }
+</script>

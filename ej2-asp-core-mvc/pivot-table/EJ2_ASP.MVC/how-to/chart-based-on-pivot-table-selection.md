@@ -1,16 +1,24 @@
 ---
 layout: post
-title: Chart Based On Pivot Table Selection in ##Platform_Name## Pivot Table Component
-description: Learn here all about Chart Based On Pivot Table Selection in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
+title: How to Plot Chart from Cells in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to plot an ASP.NET MVC Chart control from cells selected in the ASP.NET MVC Pivot Table, using the CellSelected event and PivotSelectionSettings.
 platform: ej2-asp-core-mvc
 control: Chart Based On Pivot Table Selection
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Render chart control based on cell selection
+# How to Render Chart Based on Cell Selection in ASP.NET MVC Pivot Table
 
-The cell selection support is enabled using the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_AllowSelection) property and its type and mode are configured using the [`PivotViewSelectionSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html) property. The [`cellSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellSelected) event gets fired on every selection operation performed in the pivot table. This event returns the selected cell informations, like row header name, column header name, measure name, and value. Based on this information, the [`chart`](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/getting-started) control will be plotted.
+The ASP.NET MVC Pivot Table component supports creating charts based on cell selections within the pivot table. This customization allows charts to be plotted dynamically using data from selected cells, providing visual representation of specific data segments.
+
+## Configuration
+
+Cell selection is enabled using the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_AllowSelection) property. The selection behavior is configured through the [`PivotViewSelectionSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html) property to define selection type and mode.
+
+## Implementation
+
+The [`CellSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellSelected) event triggers when cells are selected in the pivot table. This event provides selected cell information including row header name, column header name, measure name, and values. Using this data, the [`chart`](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/getting-started) control can be plotted accordingly.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

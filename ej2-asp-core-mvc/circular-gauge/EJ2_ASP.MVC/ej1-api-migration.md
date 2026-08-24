@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Circular Gauge Component
+title: EJ1 API Migration in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ASP.NET MVC Circular Gauge
 
 This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

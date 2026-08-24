@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrate Chart in Syncfusion ##Platform_Name## Grid
-description: Learn here all about integrate Chart in Syncfusion ##Platform_Name## Grid of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Integrate Chart in Grid | Syncfusion
+description: Learn how to integrate charts in ##Platform_Name## Data Grid by embedding charts in cells or detail views to visualize and analyze data effectively.
 platform: ej2-asp-core-mvc
 control: Integrate Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Integrate Chart in Syncfusion ASP.NET MVC Grid
+# Integrate Chart in ASP.NET MVC Data Grid
 
 The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
 
@@ -22,7 +22,7 @@ To integrate Charts into your Grid, follow these steps:
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ### Install ASP.NET MVC package in the application
 
@@ -144,7 +144,7 @@ Use the [ContextMenuClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 * Use the `gridChart.render` to render the Chart. It accepts three arguments discussed below:
 
-  * `chartArgs`: Contains Grid instance, [Chart type](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/chart-types), and selected records.
+  * `chartArgs`: Contains Grid instance, [Chart type](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/chart-types/line), and selected records.
 
   * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's Chart Model for detailed configurations, options, and customization possibilities.
 

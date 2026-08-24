@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive Mode in ##Platform_Name## Toolbar Component
-description: Learn here all about Responsive Mode in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Responsive Mode in ##Platform_Name## Toolbar | Syncfusion
+description: Display the Syncfusion ##Platform_Name## Toolbar in Scrollable or Popup mode when commands exceed the viewable area width.
 platform: ej2-asp-core-mvc
 control: Responsive Mode
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Responsive Mode
+# Responsive Mode in ##Platform_Name## Toolbar
 
 This section explains the supported display modes of the Toolbar when the content exceeds the viewing area. Possible modes are:
 
@@ -87,7 +87,7 @@ Property     | Description
 
 If primary priority commands also exceed available space, they are moved to the popup container at top order position and placed before the secondary priority commands.
 
-N> You can maintain toolbar item on popup always by using the [ShowAlwaysInPopup](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem~ShowAlwaysInPopup.html) property, and this behavior is not applicable for toolbar items with [Overflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem~Overflow.html) property as 'show'.
+N> You can maintain toolbar item on popup always by using the [ShowAlwaysInPopup](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_ShowAlwaysInPopup) property, and this behavior is not applicable for toolbar items with [Overflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_Overflow) property as 'show'.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

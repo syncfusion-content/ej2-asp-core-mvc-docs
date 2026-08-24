@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn here all about events and how to use them in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Events in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn about the events available in the Syncfusion ##Platform_Name## Speed Dial, including opening, closing, rendering, and item interaction events.
 platform: ej2-asp-core-mvc
 control: Events
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in ASP.NET MVC SpeedDial Control
+# Events in ##Platform_Name## Speed Dial
 
 This section describes the Speed Dial events that will be triggered when appropriate actions are performed. The following events are available in the Speed Dial Control.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Immutable Mode in ##Platform_Name## Tree Grid Component
-description: Learn here all about Immutable Mode in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: Immutable mode in ##Platform_Name## Treegrid control | Syncfusion
+description: Learn here all about Immutable mode in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Immutable Mode
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Immutable Mode
+# Immutable mode in ##Platform_Name## Treegrid control
 
-The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and [`deep compare`](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
+The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and deep compare concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 
 To enable this feature, you have to set the `EnableImmutableMode` property as **true**.
 
-N>* This feature uses the primary key value for data comparison. So, you need to provide the [`IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) column.
+N>* This feature uses the primary key value for data comparison. So, you need to provide the [`IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -52,4 +52,4 @@ The following features are not supported in the immutable mode:
 * Column reorder
 * Virtualization
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

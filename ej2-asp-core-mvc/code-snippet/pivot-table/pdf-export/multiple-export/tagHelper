@@ -1,17 +1,20 @@
+
 <ejs-button id="pdf" content="Pdf Export" isPrimary="true"></ejs-button>
 
-<ejs-pivotview id="PivotView" height="300" allowPdfExport="true">
+<ejs-pivotview id="PivotTable1" height="300" allowPdfExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
         </e-formatsettings>
+        <e-filtersettings>
+            <e-field name="Year" type="Include" items="@ViewBag.filterMembers"></e-field>
+        </e-filtersettings>
         <e-rows>
             <e-field name="Country"></e-field>
             <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
             <e-field name="Year" caption="Year"></e-field>
-            <e-field name="Quarter"></e-field>
         </e-columns>
         <e-values>
             <e-field name="Sold" caption="Units Sold"></e-field>
@@ -20,14 +23,16 @@
     </e-datasourcesettings>
 </ejs-pivotview>
 <br />
-<ejs-pivotview id="PivotGrid2" height="300" allowPdfExport="true">
+<ejs-pivotview id="PivotTable2" height="300" allowPdfExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
         </e-formatsettings>
+        <e-filtersettings>
+            <e-field name="Country" type="Include" items="@ViewBag.countryFilterMembers"></e-field>
+        </e-filtersettings>
         <e-columns>
             <e-field name="Country"></e-field>
-            <e-field name="Products"></e-field>
         </e-columns>
         <e-rows>
             <e-field name="Year" caption="Year"></e-field>
@@ -41,15 +46,12 @@
 </ejs-pivotview>
 
 <script>
-    var pivotObj; var pivotObj2;
     document.getElementById('pdf').onclick = function () {
-        pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        pivotObj2 = document.getElementById('PivotGrid2').ej2_instances[0];
-
-        var firstGridPdfExport = pivotObj.grid.pdfExport({}, true);
-        firstGridPdfExport.then(function (pdfData) {
-            pivotObj2.pdfExport({}, false, pdfData);
-
-        });
+        var pivotObj = document.getElementById('PivotTable1').ej2_instances[0];
+        var pdfExportProperties = {
+            multipleExport: { type: 'AppendToPage', blankSpace: 100 },
+            pivotTableIds: ['PivotTable1', 'PivotTable2']
+        };
+        pivotObj.pdfExport(pdfExportProperties, true);
     }
 </script>

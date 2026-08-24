@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to localize the ##Platform_Name## File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Localization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Localization
+# Localization in ##Platform_Name## File Manager
 
 The File Manager can be localized to any culture by defining its texts and messages in the corresponding culture. The default locale of the File Manager is `en`(English). The following table represents the default texts and messages of the File Manager in `en` culture.
 
@@ -138,3 +138,34 @@ The example below shows how to add the German culture locale(`de-DE`)
 The output will look like the image below.
 
 ![Localization](./images/localization.png)
+
+## Rendering component in right-to-left direction
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRtl) API to true.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/rtl/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Right to Left Support in ASP.NET Core FileManager](./images/enable_rtl.PNG)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+It is possible to render the File Manager in right-to-left direction by setting the [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRtl) API to true.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/rtl/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/file-manager/rtl/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![FileManager enablertl](images/enable_rtl.png)
+
+{% endif %}

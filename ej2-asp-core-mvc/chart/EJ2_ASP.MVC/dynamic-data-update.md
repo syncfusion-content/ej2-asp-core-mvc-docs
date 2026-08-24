@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic data update in ##Platform_Name## Syncfusion Chart Component
+title: Dynamic Data Update in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about dynamic data update in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dynamic Data Update
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dynamic data update in ##Platform_Name## Chart Component
+# Dynamic Data Update in ##Platform_Name## Chart
 
 ## Adding a new data point
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding Header and Footer in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Adding Header and Footer in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Excel Export Header & Footer | Syncfusion
+description: Learn how to add headers and footers to Excel exports in ##Platform_Name## TreeGrid, including configuration, customization, and export options.
 platform: ej2-asp-core-mvc
 control: Adding Header and Footer
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Adding Header and Footer
+# Adding Headers and Footers in ##Platform_Name## TreeGrid
 
 The excel export provides an option to include header and footer content for exported excel document.
 
@@ -38,4 +38,4 @@ The excel export provides an option to include header and footer content for exp
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

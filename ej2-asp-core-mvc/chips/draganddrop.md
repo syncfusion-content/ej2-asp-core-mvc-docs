@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in ##Platform_Name## Chips Control | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ##Platform_Name## Chips | Syncfusion
+description: Drag and drop Syncfusion ##Platform_Name## Chips within or across ChipLists using allowDragAndDrop, with dragStart, dragging, and dragStop events for control.
 platform: ej2-asp-core-mvc
 control: Drag and drop
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drag and drop in Chips control
+# Drag and Drop in ##Platform_Name## Chips
 
 The Chips control enables drag and drop functionality for any chip when [`allowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_AllowDragAndDrop) is set to **true**. Chips can be dragged and dropped within the same or across external ChipList containers.
 

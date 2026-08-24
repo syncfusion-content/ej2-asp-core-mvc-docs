@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding Header and Footer in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Adding Header and Footer in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid PDF Headers and Footers | Syncfusion
+description: Learn how to add and customize headers and footers in PDF exports for the ##Platform_Name## TreeGrid, including text, page numbers, lines, and images.
 platform: ej2-asp-core-mvc
 control: Adding Header and Footer
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Adding Header and Footer
+# Adding Headers and Footers in ##Platform_Name## TreeGrid
 
 You can customize text, page number, line, page size and changing orientation in header and footer.
 
@@ -101,7 +101,7 @@ Supported page number types:
 
 ## Insert an image in header or footer
 
-Image (Base64 string) can be added in the exported document in header/footer using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#properties).
+Image (Base64 string) can be added in the exported document in header/footer using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#properties).
 
 ```typescript
 
@@ -149,4 +149,4 @@ The below code illustrates the pdf export customization.
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

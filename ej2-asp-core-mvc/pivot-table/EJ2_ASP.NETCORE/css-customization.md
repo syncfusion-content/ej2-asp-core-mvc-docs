@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Css Customization in ##Platform_Name## Pivot Table Component
-description: Learn here all about Css Customization in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: CSS Customization in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table uses CSS to hide axes, align text in headers and value cells, and style the Field List and Grouping Bar UI elements.
 platform: ej2-asp-core-mvc
 control: Css Customization
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,15 @@ documentation: ug
 ---
 
 
-# Style and Appearance
+# CSS Customization in ASP.NET Core Pivot Table
 
-## Hiding Axis
+The ASP.NET Core Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 
-The visibility of row, column, value and filter axis in Field List and Grouping Bar can be changed using custom CSS setting. To do so, refer the code sample below:
+## Hiding axis
+
+The visibility of the row, column, value, and filter axis areas in both the Field List dialog and Grouping Bar can be controlled using custom CSS styling. Each axis area has specific CSS classes that allow precise targeting for customization.
+
+The following code example demonstrates how to hide the column axis in both the Grouping Bar and Field List within the Pivot Table. The CSS includes necessary height and spacing adjustments to prevent layout gaps and maintain visual consistency:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,11 +42,17 @@ The visibility of row, column, value and filter axis in Field List and Grouping 
 {% endtabs %}
 {% endif %}
 
+**Note:** The CSS selectors above assume the Pivot Table component has the ID **PivotView**. Replace this with your actual component ID or use appropriate class-based selectors for your implementation.
 
+The CSS selectors target the following Pivot Table elements:
+- `.e-group-columns`: Hides the column axis in the Grouping Bar.
+- `.e-group-filters`: Adjusts the height of the filter axis to compensate for the hidden column axis in the Grouping Bar.
+- `.e-field-list-columns`: Hides the column axis in the Field List dialog.
+- `.e-field-list-values`: Adjusts the layout of the value axis when the column section is hidden in the Field List dialog.
 
-## Text Alignment
+## Text alignment
 
-The alignment of text inside row headers, column headers, value cells and summary cells can be changed using custom CSS setting. To do so, refer the code sample below:
+The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells (additional selectors for column headers, row headers, and summary cells are included as commented CSS in the sample):
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -67,11 +77,11 @@ The alignment of text inside row headers, column headers, value cells and summar
 {% endtabs %}
 {% endif %}
 
+## Customize header, value, and summary cell styles
 
+Pivot Table elements such as header cells, value cells, and summary cells can be styled using built-in CSS class names. This enables comprehensive visual customization of the component's appearance to match application themes and design requirements.
 
-## Customize header, value and summary cell style
-
-The elements in pivot table like header cell, value cell and summary cell style can be customized using built-in CSS names. To do so, refer the code sample below:
+The following code sample demonstrates how to apply custom background colors to different cell types:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -98,4 +108,10 @@ The elements in pivot table like header cell, value cell and summary cell style 
 
 
 
-![output](images/pivottable-css.png)
+![Custom CSS applied to Pivot Table header](images/pivottable-css.png)
+
+The CSS classes target the following Pivot Table elements:
+- `.e-headercell`: Styles column header cells.
+- `.e-rowsheader`: Styles row header cells.
+- `.e-summary:not(.e-gtot)`: Styles subtotal summary cells (excluding grand totals).
+- `.e-gtot`: Styles grand total cells.

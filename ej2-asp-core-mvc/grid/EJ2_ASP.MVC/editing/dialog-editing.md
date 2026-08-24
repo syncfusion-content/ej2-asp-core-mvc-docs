@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dialog Editing in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Dialog Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Dialog Editing | Syncfusion
+description: ##Platform_Name## Grid dialog editing opens record editors in modal dialogs, supports templates, enforces validation, and manages single-record save workflows.
 platform: ej2-asp-core-mvc
 control: Dialog Editing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Dialog editing in ASP.NET MVC Grid component
+# Dialog Editing in ASP.NET MVC Data Grid
 
 Dialog editing is a feature in the Grid component that allows you to edit the data of the currently selected row using a dialog window. With dialog editing, you can easily modify cell values and save the changes back to the data source.This feature is particularly beneficial in scenarios where you need to quickly modify data without navigating to a separate page or view, and it streamlines the process of editing multiple cells.
 
@@ -33,7 +33,7 @@ The edit dialog in the Grid component allows you to customize its appearance and
 
 To customize the edit dialog, you need to handle the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the Grid component and perform the necessary modifications based on the **requestType** parameter. The **requestType** parameter identifies the type of action being performed, such as **beginEdit** for editing a record or **add** for adding a new record.
 
->You can refer the Grid [Default text](../global-local/) list for more localization.
+>You can refer the Grid [Default text](../global-local) list for more localization.
 
 The following example that demonstrates how to customize the edit dialog using the `ActionComplete` event:
 

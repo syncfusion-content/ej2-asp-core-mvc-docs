@@ -1,0 +1,85 @@
+<ejs-button id="pdf" content="Export To PDF" isPrimary="true"></ejs-button>
+
+<ejs-pivotview id="PivotView" height="300" allowPdfExport="true" cellTemplate="${getCellContent(data)}">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="true" showSubTotals="false"
+        showRowGrandTotals="false">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+        </e-formatsettings>
+        <e-filtersettings>
+            <e-field name="Title" type="Include" items="@ViewBag.filterMembers"></e-field>
+        </e-filtersettings>
+        <e-rows>
+            <e-field name="FirstName"></e-field>
+            <e-field name="EmployeeID" caption="Employee Image"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Title"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Salary"></e-field>
+            <e-field name="OrdersCount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+    <e-gridSettings Layout="Tabular" columnWidth=120 pdfQueryCellInfo="pdfQueryCellInfo"></e-gridSettings>
+</ejs-pivotview>
+
+<script>
+    var pivotObj;
+    window.getCellContent = function (args) {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        if (args.cellInfo && args.cellInfo.axis === 'row' && args.cellInfo.valueSort.axis === 'EmployeeID') {
+            var employeeId_2 = Number(args.cellInfo.actualText);
+            var employee = pivotObj.dataSourceSettings.dataSource.find(function (emp) { return emp.EmployeeID === employeeId_2; });
+            if (employee && employee.EmployeeImage) {
+                var imgSrc = 'data:image/png;base64,' + employee.EmployeeImage;
+                return '<div class="image"><img class="university-logo" src="' + imgSrc + '" width="87" height="87" alt="' + (employee.EmployeeID || '') + '" onload="handleImageLoad(this)"/></div>';
+            }
+        }
+        return '';
+    };
+    window.handleImageLoad = function (imgElement) {
+        try {
+            var cell = imgElement.closest('th, td');
+            if (cell) {
+                var cellValue = cell.querySelector('.e-cellvalue');
+                if (cellValue) {
+                    cellValue.style.display = 'none';
+                }
+            }
+        }
+        catch (error) {
+            console.warn('Error handling image load:', error);
+        }
+    };
+    document.getElementById('pdf').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pdfExport();
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.data && args.data.axis === 'row') {
+            pivotObj = document.getElementById('PivotView').ej2_instances[0];
+            if (args.data.valueSort && args.data.valueSort.axis === 'FirstName') {
+                var firstName_1 = args.data.actualText;
+                var employee = pivotObj.dataSourceSettings.dataSource.find(function (emp) { return emp.FirstName === firstName_1; });
+                if (employee && employee.EmailID) {
+                    args.hyperLink = {
+                        target: 'mailto:' + employee.EmailID,
+                        displayText: args.value
+                    };
+                }
+            }
+            if (args.data.valueSort && args.data.valueSort.axis === 'EmployeeID') {
+                var employeeId_1 = Number(args.data.actualText);
+                var employee = pivotObj.dataSourceSettings.dataSource.find(function (emp) { return emp.EmployeeID === employeeId_1; });
+                if (employee && employee.EmployeeImage) {
+                    args.image = {
+                        base64: employee.EmployeeImage,
+                        height: 57.5,
+                        width: 57.5
+                    };
+                }
+            }
+        }
+    }
+</script>

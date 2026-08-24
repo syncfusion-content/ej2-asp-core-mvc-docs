@@ -1,0 +1,91 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Syncfusion.EJ2
+
+<style>
+    #editableText {
+        width: 100%;
+        min-height: 120px;
+        max-height: 300px;
+        overflow-y: auto;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+</style>
+
+@{
+    ViewData["Title"] = "AI Assistance";
+}
+
+<div class="container" style="height: 350px; width: 650px;">
+    <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onSummarizeClick()">Content Summarize</button>
+    <div id="editableText" contenteditable="true">
+        <p>Inline AI Assist component provides intelligent text processing capabilities that enhance user productivity. It leverages advanced natural language processing to understand context and deliver precise suggestions. Users can seamlessly integrate AI-powered features into their applications.</p>
+        <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
+    </div>
+    
+    @Html.EJS().AIAssistView("inlineAIAssist").PromptRequest("onPromptRequest").Created("onCreated").ResponseSettings(new Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings { ItemSelect = "onItemSelect" }).Render()
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+<script>
+
+    var assistObj = null;
+    function onCreated() {
+        assistObj = this;
+    }
+
+    function onItemSelect(args) {
+        if (args.command.label === 'Accept') {
+            var editable = document.getElementById('editableText');
+            if (editable) {
+                editable.innerHTML = '<p>' + assistObj.prompts[assistObj.prompts.length - 1].response + '</p>';
+            }
+            assistObj.hidePopup();
+        } else if (args.command.label === 'Discard') {
+            assistObj.hidePopup();
+        }
+    }
+
+    function onSummarizeClick() {
+        if (assistObj) {
+            assistObj.showPopup();
+        }
+    }
+
+    function onPromptRequest(args) {
+        setTimeout(async () => {
+            let responseText = '';
+            try {
+                const response = await fetch('/Home/GetAIResponse', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: args.prompt })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                responseText = data; // Adjust to data.response if the JSON is { response: "text" }
+                let current = '';
+                let i = 0;
+                const typingSpeed = 15; // ms per character; adjust as needed
+                const interval = setInterval(() => {
+                    if (i < responseText.length) {
+                        current += responseText.charAt(i);
+                        assistObj.addResponse(marked.parse(current), false);
+                        i++;
+                    } else {
+                        assistObj.addResponse(marked.parse(current), true);
+                        clearInterval(interval);
+                    }
+                }, typingSpeed);
+            } catch (error) {
+                assistObj.addResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.', true);
+            }
+        }, 2000); // Match the 2000ms delay from the reference sample
+    }
+</script>

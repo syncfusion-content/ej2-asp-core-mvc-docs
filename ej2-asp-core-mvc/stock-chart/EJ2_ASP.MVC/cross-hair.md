@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cross Hair in ##Platform_Name## Syncfusion Stock Chart Component
+title: Cross Hair in ##Platform_Name## Stock Chart | Syncfusion
 description: Learn here all about Cross Hair in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cross Hair
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Add Crosshair
+# Cross Hair in ##Platform_Name## Stock Chart
 
 Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
 
@@ -94,6 +94,50 @@ The [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts
 {% include code-snippet/stock-chart/user-interaction/crosshair-trackball/custom/custom.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
+
+## Crosshair label customization
+
+The [`crosshairLabelRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_CrosshairLabelRender) event is triggered before each crosshair axis label is rendered in the stock chart. This event allows you to customize the appearance and content of the crosshair labels or prevent specific labels from being displayed.
+
+The event arguments include:
+
+* `text` – The default text displayed in the crosshair label. You can modify this value to show custom content.
+* `value` – The actual data value at the crosshair position.
+* `axisName` – The name of the axis associated with the label.
+* `axisOrientation` – The orientation of the axis (`Horizontal` or `Vertical`).
+* `textStyle` – Defines the font properties of the label text such as color, size, and font family.
+* `fill` – Specifies the background color of the crosshair label.
+* `cancel` – Set this property to **true** to prevent the label from being rendered.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/user-interaction/crosshair-trackball/crosshair-label-render/tagHelper %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="Crosshair-label-render.cs" %}
+{% include code-snippet/stock-chart/user-interaction/crosshair-trackball/crosshair-label-render/crosshair-label-render.cs %}
+{% endhighlight %}
+
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/user-interaction/crosshair-trackball/crosshair-label-render/razor %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="Crosshair-label-render.cs" %}
+{% include code-snippet/stock-chart/user-interaction/crosshair-trackball/crosshair-label-render/crosshair-label-render.cs %}
+{% endhighlight %}
+
+{% endtabs %}
+
 {% endif %}
 
 **Snap to data**

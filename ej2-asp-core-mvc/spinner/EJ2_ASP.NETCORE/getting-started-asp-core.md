@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Spinner Component
-description: Checkout and learn about getting started with ##Platform_Name## Spinner component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Spinner | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Spinner control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started Asp Core
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Spinner Control
+# Getting Started with ##Platform_Name## Spinner
 
-This section briefly explains about how to include ASP.NET Core Spinner control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the ASP.NET Core Spinner control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -20,11 +20,11 @@ This section briefly explains about how to include ASP.NET Core Spinner control 
 
  * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
- * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
+ * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}

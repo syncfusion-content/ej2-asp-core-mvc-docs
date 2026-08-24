@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Async in ##Platform_Name## Uploader Component | Syncfusion
-description: Learn here all about Async in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: Asynchronous Upload in ##Platform_Name## File Upload | Syncfusion
+description: Configure async file uploads in the Syncfusion ##Platform_Name## File Upload with save and remove action URLs plus auto-upload and multi-file selection.
 platform: ej2-asp-core-mvc
 control: Async
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Asynchronous upload in Uploader
+# Asynchronous Upload in ##Platform_Name## File Upload
 
 The uploader control allows you to upload the files asynchronously. 
 The upload process requires save and remove action URL to manage the upload process in the server.
@@ -92,7 +92,7 @@ After uploading the files to server location, the color of the selected file nam
 * When the file is uploaded successfully, the event [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) triggers to handle the operation after upload.
 * When the file is failed to upload, the event [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) triggers with information, which cause this failure.
 
-You can cancel the upload process by setting the upload event argument [eventargs.cancel](https://ej2.syncfusion.com/documentation/api/uploader/uploadingEventArgs/#cancel) to true.
+You can cancel the upload process by setting the upload event argument [eventargs.cancel](https://ej2.syncfusion.com/documentation/api/uploader/uploadingeventargs#cancel) to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -254,7 +254,7 @@ The remove handler receives the posted files and handle the remove operation in 
 * When the files are removed successfully from the server, the [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) event triggers to denote the process has completed.
 * When remove action fails, the event [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) triggers with information, which cause failure in remove process.
 
-N> You can differentiate the file operation whether the success event triggers from save or remove action in its arguments [eventArgs.operation](https://ej2.syncfusion.com/documentation/api/uploader/successEventArgs/#operation).
+N> You can differentiate the file operation whether the success event triggers from save or remove action in its arguments [eventArgs.operation](https://ej2.syncfusion.com/documentation/api/uploader/successeventargs#operation).
 
 You can remove the files which is not uploaded locally by clicking the remove icon. In this case, the success or failure events will not be triggered.
 
@@ -368,7 +368,7 @@ By default, the uploader processes the files to upload once the files are select
 
 Auto upload output be like the below.
 
-![uploader](./images/uploader-auto-01.png)
+![uploader](./images/uploader-auto-01.webp)
 
 Auto upload false output be like the below.
 
@@ -455,7 +455,7 @@ The following code block shows how to add the additional headers with save and r
 
 ```
 
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
 
 ## See Also
 

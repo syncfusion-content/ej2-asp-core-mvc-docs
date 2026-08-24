@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Circular Gauge Control
+# Getting Started with ASP.NET MVC Circular Gauge
 
 This section briefly explains about how to include [ASP.NET MVC Circular Gauge](https://www.syncfusion.com/aspnet-mvc-ui-controls/circular-gauge) control in your ASP.NET MVC application using Visual Studio.
 
@@ -20,7 +20,7 @@ This section briefly explains about how to include [ASP.NET MVC Circular Gauge](
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -96,7 +96,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Circul
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Circular Gauge control will be rendered in the default web browser.
 
-![ASP.NET MVC Circular Gauge Control](images/circulargauge-control.png)
+![ASP.NET MVC Circular Gauge Control](images/circulargauge-control.webp)
 
 ## Add Gauge Title
 
@@ -123,6 +123,6 @@ axes.EndAngle(120).StartAngle(240).Radius("90%").Minimum(0).Maximum(120).Add()).
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC CircularGauge with Axis](images/circulargauge-with-axis.png)
+![ASP.NET MVC CircularGauge with Axis](images/circulargauge-with-axis.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20MVC%20Razor%20Examples).

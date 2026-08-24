@@ -1,0 +1,32 @@
+@Html.EJS().Chart("container")
+.PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
+.PrimaryYAxis(py => py.Title("Value"))
+.LegendSettings(l => l.Visible(true))
+.Tooltip(tt => tt.Enable(true).FollowPointer(true))
+.Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+        .XName("x")
+        .YName("y")
+        .Name("Vietnam")
+        .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.vietnamData)
+        .Add();
+
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+        .XName("x")
+        .YName("y")
+        .Name("France")
+        .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.franceData)
+        .Add();
+
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+        .XName("x")
+        .YName("y")
+        .Name("Mexico")
+        .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.mexicoData)
+        .Add();
+})
+.Render()

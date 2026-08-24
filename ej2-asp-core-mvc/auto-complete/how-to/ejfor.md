@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ejfor in ##Platform_Name## Auto Complete Component
+title: Render AutoCompleteFor in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Ejfor in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ejfor
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# AutoCompleteFor
+# Render AutoCompleteFor in ##Platform_Name## AutoComplete
 
 The AutoCompleteFor control can be rendered by passing values and data from the model. The selected values can be retrieved during form submit using the post method.
 

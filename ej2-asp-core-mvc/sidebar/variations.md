@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Variations in ##Platform_Name## Sidebar Component
-description: Learn here all about Variations in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Sidebar Types in ##Platform_Name## Sidebar | Syncfusion
+description: Learn about the available Sidebar types in Syncfusion ##Platform_Name## Sidebar, including Over, Push, Slide, and Auto modes.
 platform: ej2-asp-core-mvc
 control: Variations
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Types
+# Sidebar Types in ##Platform_Name## Sidebar
 
-The Sidebar component's expand behaviour can be modified based on the purpose of use.
+The Sidebar component's expand behavior can be modified based on the purpose of use.
 
 ## Expanding types of Sidebar
 
@@ -19,14 +19,14 @@ The Sidebar can be set to initialize based on four different types that are cons
 
 | Item    | Description                                                                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`Over`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Type.html)  | Sidebar floats over the main content area.                                                                                                                    |
-| [`Push`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Type.html)  | Sidebar pushes the main content area to appear side-by-side, and shrinks the main content within the screen width.                                            |
-| [`Slide`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Type.html) | Sidebar translates the x and y positions of main content area based on the Sidebar width. The main content area will not be adjusted within the screen width. |
-| [`Auto`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Type.html)  | Sidebar with [`Over`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Type.html) type in mobile resolution, and [`Push`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Type.html) type in other higher resolutions.                                                                       |
+| [`Over`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.SidebarType.html#Syncfusion_EJ2_Navigations_SidebarType_Over)  | Sidebar floats over the main content area.                                                                                                                    |
+| [`Push`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.SidebarType.html#Syncfusion_EJ2_Navigations_SidebarType_Push)  | Sidebar pushes the main content area to appear side-by-side, and shrinks the main content within the screen width.                                            |
+| [`Slide`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.SidebarType.html#Syncfusion_EJ2_Navigations_SidebarType_Slide) | Sidebar translates the x and y positions of main content area based on the Sidebar width. The main content area will not be adjusted within the screen width. |
+| [`Auto`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.SidebarType.html#Syncfusion_EJ2_Navigations_SidebarType_Auto)  | Sidebar with [`Over`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.SidebarType.html#Syncfusion_EJ2_Navigations_SidebarType_Over) type in mobile resolution, and [`Push`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.SidebarType.html#Syncfusion_EJ2_Navigations_SidebarType_Push) type in other higher resolutions.                                                                       |
 
-N> [`Auto`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Type.html) is the default expand mode.
+N> [`Auto`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.SidebarType.html#Syncfusion_EJ2_Navigations_SidebarType_Auto) is the default expand mode.
 
-In the following sample, Sidebar component's expand behaviour are demonstrated.
+In the following sample, Sidebar component's expand behavior are demonstrated.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

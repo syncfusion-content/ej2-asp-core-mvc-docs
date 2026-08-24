@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cross Hair And Track Ball in Syncfusion ##Platform_Name## Chart Component
+title: Cross Hair and Track Ball in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Cross Hair and Track Ball in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cross Hair And Track Ball
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Crosshair in ##Platform_Name## Chart Component
+# Cross Hair and Track Ball in ##Platform_Name## Chart
 
 Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
 
@@ -94,6 +94,46 @@ The [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts
 {% include code-snippet/chart/user-interaction/crosshair-trackball/custom/custom.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
+
+## Crosshair label customization
+
+The [`CrosshairLabelRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_CrosshairLabelRender) event is triggered before each crosshair axis label is rendered. This event allows you to customize the label content and appearance, or prevent a label from being displayed.
+
+Event arguments:
+
+* `text` – The label text that can be modified.
+* `value` – The data value at the crosshair position.
+* `axisName` – The axis identifier (for example, `primaryXAxis`).
+* `axisOrientation` – The orientation of the axis (`Horizontal` or `Vertical`).
+* `textStyle` – Font properties used to customize the label text.
+* `fill` – Background color of the label.
+* `cancel` – Set this property to **true** to skip rendering the label.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/crosshair-trackball/crosshair-label-render/tagHelper %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="Crosshair-label-render.cs" %}
+{% include code-snippet/chart/user-interaction/crosshair-trackball/crosshair-label-render/crosshair-label-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/crosshair-trackball/crosshair-label-render/razor %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="Crosshair-label-render.cs" %}
+{% include code-snippet/chart/user-interaction/crosshair-trackball/crosshair-label-render/crosshair-label-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 {% endif %}
 
 **Snap to data**

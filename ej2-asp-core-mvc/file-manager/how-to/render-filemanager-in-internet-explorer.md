@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Render File Manager In IE ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Render File Manager In Internet Explorer in Syncfusion ##Platform_Name## File Manager control of syncfusion and more.
+title: Render ##Platform_Name## File Manager in Internet Explorer | Syncfusion
+description: Learn how to render the ##Platform_Name## File Manager in Internet Explorer by adding the required polyfill script before the component scripts.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Render File Manager In Internet Explorer
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Render File Manager in Internet Explorer
 
-In the Internet Explorer browser, ES6 promise polyfills are required to run the File Manager control. Click this  [`link`](https://ej2.syncfusion.com/aspnetcore/documentation/browser/?no-cache=1) to learn more about the EJ2 controls' browser compatibility.
+In the Internet Explorer browser, ES6 promise polyfills are required to run the File Manager control. Click this  [`link`](https://ej2.syncfusion.com/aspnetcore/documentation/browser) to learn more about the EJ2 controls' browser compatibility.
 
 To render the File Manager control in the Internet Explorer browser, add the ES6 promise polyfill script above the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Scripts in the `layout` page.
 

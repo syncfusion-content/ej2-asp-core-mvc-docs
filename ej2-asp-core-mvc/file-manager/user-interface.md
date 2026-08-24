@@ -1,15 +1,15 @@
 ---
 layout: post
-title: User Interface in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about User Interface in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: User Interface in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to use the ##Platform_Name## File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: User Interface
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# User Interface Structure
+# User Interface in ##Platform_Name## File Manager
 
 The File Manager UI comprises several sections such as view, toolbar, breadcrumb, context menu, and more. The UI of the File Manager is enhanced with injectable modules like `Details View` for browsing files and folders in a grid, `Navigation Pane` for folder navigation, and `Toolbar` for file operations. The File Manager with all feature modules have the following sections in its UI.
 
@@ -28,6 +28,41 @@ The basic File Manager is a light weight control with all the basic functions. T
 * [Context Menu](#context-menu) (For accessing file operations)
 
 ![Basic File Manager](./images/default-ui.png)
+
+## File Manager Overview
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+By default, the File Manager control  having  extra module like [`NavigationPane`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_NavigationPaneSettings), [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ToolbarSettings), [`ContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ContextMenuSettings) module.
+
+In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/overview/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![File Manager overview](./images/overview.PNG)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+By default, the File Manager control  having  extra module like [NavigationPane](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_NavigationPaneSettings), [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ToolbarSettings), [ContextMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ContextMenuSettings) module.
+
+In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/overview/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/file-manager/overview/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![FileManager overview](images/overview.png)
+
+{% endif %}
 
 ## Toolbar
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ButtonGroup control |Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Button Group | Syncfusion
+description: Add the Syncfusion ##Platform_Name## Button Group to a project by installing the Syncfusion.EJ2.MVC5 NuGet package.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Button Group Control
+# Getting Started with ##Platform_Name## Button Group
 
-This section briefly explains about how to include a simple [ASP.NET MVC ButtonGroup](https://www.syncfusion.com/aspnet-mvc-ui-controls/button-group) in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include a simple [ASP.NET MVC ButtonGroup](https://www.syncfusion.com/aspnet-mvc-ui-controls/button-group) in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include a simple [ASP.NET MVC ButtonG
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -98,11 +98,11 @@ To create simple ButtonGroup add the div tag with class name as `e-btn-group` an
 
 Output be like the below.
 
-![ButtonGroup Sample](./images/button-group.png)
+![ButtonGroup Sample](./images/button-group.webp)
 
 ## Run the application
 
-After successful compilation of your application, simply press `F5` to run the application.
+After successful compilation of the application, press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app.
 
 The following example shows a default rendering of ButtonGroup.
 
@@ -117,11 +117,11 @@ The following example shows a default rendering of ButtonGroup.
 
 ## Orientation
 
-ButtonGroup can be arranged in a vertical and horizontal orientation. By default, it is horizontally aligned.
+ButtonGroup can be arranged in vertical or horizontal orientation. By default, it is horizontally aligned.
 
 ### Vertical Orientation
 
-ButtonGroup can be aligned vertically by using the built-in CSS class `e-vertical` to the target element.
+ButtonGroup can be aligned vertically by applying the built-in CSS class `e-vertical` to the target element.
 
 The following example illustrates how to achieve vertical orientation in ButtonGroup.
 
@@ -134,7 +134,7 @@ The following example illustrates how to achieve vertical orientation in ButtonG
 {% endhighlight %}
 {% endtabs %}
 
-N> ButtonGroup does not support SplitButton component nesting in a vertical orientation.
+N> Button Group does not support SplitButton component nesting in a vertical orientation.
 
 ## See Also
 

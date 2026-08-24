@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vertical Chart in ##Platform_Name## Charts
+title: Vertical Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Vertical Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Vertical Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Vertical Chart in ##Platform_Name## Charts
+# Vertical Chart in ##Platform_Name## Chart
 
 ## Vertical Chart
 

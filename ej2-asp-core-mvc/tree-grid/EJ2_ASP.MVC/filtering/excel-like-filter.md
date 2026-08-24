@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel Like Filter in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Excel Like Filter in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Excel-Like Filter | Syncfusion
+description: Learn how to use Excel-like filtering in ##Platform_Name## TreeGrid, including filter menus, search, checkbox filtering, and custom filter options.
 platform: ej2-asp-core-mvc
 control: Excel Like Filter
 publishingplatform: ##Platform_Name##
@@ -9,10 +9,10 @@ documentation: ug
 ---
 
 
-# Excel Like Filter in ##Platform_Name## Tree Grid Component
+# Excel-Like Filter in ##Platform_Name## TreeGrid
 
 You can enable Excel like filter by defining.
-[`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~Type.html) of [`FilterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) as **Excel**.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
+[`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridFilterSettings_Type) of [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) as **Excel**.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -68,4 +68,4 @@ You can change the default excel-filter operator by changing the column operator
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

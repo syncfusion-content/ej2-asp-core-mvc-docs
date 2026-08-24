@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in ASP.NET MVC Mention control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## Mention | Syncfusion
+description: Bind Syncfusion ##Platform_Name## Mention to local arrays or remote data using the dataSource property with DataManager, OData, and Web API adaptor support.
 platform: ej2-asp-core-mvc
 control: Data binding
-publishingplatform: ejmvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Working with Data in Mention
+# Working with Data in ##Platform_Name## Mention
 
 The Mention loads the data either from local data source or remote data services using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DataSource) property. It supports the data type of  either `array` or `DataManager`.
 
@@ -82,7 +82,7 @@ The Mention supports retrieval of data from remote data services with the help o
 
 ### OData v4 adaptor - Binding OData v4 service
 
-The ODataV4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [odata documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the `ODataV4Adaptor`.
+The ODataV4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [odata documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html). To bind OData v4 service, use the `ODataV4Adaptor`.
 
 The following sample displays the first 6 contacts from `Customers` table of the `Northwind` Data Service.
 

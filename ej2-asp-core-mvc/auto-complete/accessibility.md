@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Auto Complete Control | Syncfusion
+title: Accessibility in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ##Platform_Name## AutoComplete Control
+# Accessibility in ##Platform_Name## AutoComplete
 
 The AutoComplete control has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the `WAI-ARIA` roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
@@ -19,7 +19,7 @@ The accessibility compliance for the AutoComplete component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | AA |
 | [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -27,7 +27,6 @@ The accessibility compliance for the AutoComplete component is outlined below.
 | [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 
 <style>
     .post .post-content img {
@@ -63,10 +62,10 @@ You can use the following key shortcuts to access the AutoComplete without inter
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Arrow Down</kbd> | In popup hidden state, opens the suggestion list. In popup open state, selects the first item when no item is selected, else selects the item next to the currently selected item. |
-| <kbd>Arrow Up</kbd> | In popup hidden state, opens the suggestion list. In popup open state, selects the last item when no item is selected, else selects the item previous to the currently selected one. |
-| <kbd>Page Down</kbd> | Scrolls down to the next page and selects the first item when popup list opens. |
-| <kbd>Page Up</kbd> | Scrolls up to previous page and select the first item when popup list open. |
+| <kbd>Arrow Down</kbd> | In popup hidden state, opens the suggestion list. In popup open state, focus the first item when no item is selected, else focus the item next to the currently selected item. |
+| <kbd>Arrow Up</kbd> | In popup hidden state, opens the suggestion list. In popup open state, focus the last item when no item is selected, else focus the item previous to the currently selected one. |
+| <kbd>Page Down</kbd> | Scrolls down to the next page and focus the first item when popup list opens. |
+| <kbd>Page Up</kbd> | Scrolls up to previous page and focus the first item when popup list open. |
 | <kbd>Enter</kbd> | Selects the focused item and set to AutoComplete control. |
 | <kbd>Tab</kbd> | Focuses on the next tab indexed element when the popup is closed. Otherwise, closes the popup list and remains the focus in control suppose if it is in an open state. |
 | <kbd>Shift + tab </kbd> | Focuses the previous tab indexed element when the popup is closed. Otherwise, closes the popup list and remains the focus in control suppose if it is in an open state. |

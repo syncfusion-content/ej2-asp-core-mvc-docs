@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Columns in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Columns | Syncfusion
+description: Learn how to define and configure columns in ##Platform_Name## Data Grid, including column types, widths, templates, and behaviors for effective data presentation.
 platform: ej2-asp-core-mvc
 control: Columns
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Columns in ASP.NET Core Grid Component
+# Columns in ASP.NET Core Data Grid
 
-In Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
+In [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid), Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 
 ## Column types
 
@@ -195,7 +195,7 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 
 ### Format template column value 
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid, you have the ability to customize the display of data in a column through the use of template columns. Formatting template column values is essential for enhancing the visual representation of data in a web application. It allows the customization of the appearance of specific column data, such as dates and numbers, to improve readability and user understanding.
+In the ASP.NET Core Grid, you have the ability to customize the display of data in a column through the use of template columns. Formatting template column values is essential for enhancing the visual representation of data in a web application. It allows the customization of the appearance of specific column data, such as dates and numbers, to improve readability and user understanding.
 
 To illustrate how to format a template column value, consider the following example where the **OrderDate** column is formatted to display dates in the **‘dd/MMM/yyyy’** format.
 
@@ -309,7 +309,7 @@ The `autoFitColumns` method resizes the column to fit the widest cell's content 
 
 ![Column AutoFit](../images/columns/autofit.png)
 
-> You can autoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
+> You can AutoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
 ### AutoFit columns with empty space
 
@@ -453,7 +453,7 @@ Here's an example of how to show or hide a column based on the field in the ASP.
 
 ## Controlling Grid actions
 
-You can component various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid using the following properties:
+You can component various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the ASP.NET Core Grid using the following properties:
 
 * `allowEditing`: Enables or disables editing for a column.
 * [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering): Enables or disables filtering for a column.
@@ -583,7 +583,7 @@ grid.refreshColumns();
 ```
 ## Responsive columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 
@@ -603,5 +603,5 @@ In this example, we have a Grid that displays data with three columns: **Order I
 * [Group Column by Format](../grouping#group-by-format)
 * [How to set complex column as Foreignkey column](../how-to/complex-column-as-foreign-key-column)
 * [Complex Data Binding with list of Array Of Objects](../how-to/list-of-array-of-objects)
-* [How to display image on the base64 Grid column](https://support.syncfusion.com/kb/article/9862/how-to-display-a-picture-on-the-base64-grid-column-in-javascript-application)
+* [How to display image on the base64 Grid column](https://support.syncfusion.com/kb/article/9862/how-to-display-a-picture-on-base64-grid-column-in-javascript-grid)
 * [How to change the data source or columns dynamically](../data-binding/how-to-change-the-data-source-or-columns-dynamically)

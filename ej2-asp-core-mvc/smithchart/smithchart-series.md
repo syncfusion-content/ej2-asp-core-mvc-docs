@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smithchart Series in ##Platform_Name## Smithchart Component
+title: Series in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Smithchart Series in Syncfusion ##Platform_Name## Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Series
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Series
+# Series in ##Platform_Name## Smith Chart
 
 You can add any number of series to the smithchart as per your requirement. You can use series setting to either add or customize the data. For the points or datasource added in the series, line is drawn. You can customize the each series as per your requirement with marker, datalabel, animation, opacity and so on.
 

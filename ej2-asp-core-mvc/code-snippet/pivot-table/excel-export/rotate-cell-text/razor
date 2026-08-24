@@ -1,0 +1,46 @@
+@{
+    var dropDownData = new int[] { 90, 135, 180, 270 };
+}
+<div style="display: flex; gap: 20px; align-items: center;">
+    @Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <label>Select a degree:</label>
+        @Html.EJS().DropDownList("dropDown").Width("150px").Placeholder("Select a degree").DataSource(dropDownData).Render()
+    </div>
+</div>
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+columns.Name("Year").Caption("Year").Add();
+}).Values(values =>
+{
+values.Name("Sold").Caption("Units Sold").Add();
+})).AllowExcelExport(true).GridSettings(gridSettings =>
+{
+    gridSettings.ExcelHeaderQueryCellInfo("excelHeaderQueryCellInfo");
+    gridSettings.ExcelQueryCellInfo("excelQueryCellInfo");
+}).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+    function excelHeaderQueryCellInfo(args) {
+        var dropDownListObject = document.getElementById("dropDown").ej2_instances[0];
+        args.style = { rotation: dropDownListObject.value };
+    }
+    function excelQueryCellInfo(args) {
+        var dropDownListObject = document.getElementById("dropDown").ej2_instances[0];
+        args.style = { rotation: dropDownListObject.value };
+    }
+</script>

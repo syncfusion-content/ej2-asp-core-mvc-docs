@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Timepicker Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## TimePicker | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## TimePicker meets WCAG 2.2, Section 508, ARIA roles, and keyboard navigation accessibility standards.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## TimePicker
 
 The web accessibility makes web applications and its content more accessible to people with disabilities without any barriers. It especially it tracks the dynamic value changes and DOM changes.
 
@@ -19,7 +19,7 @@ The accessibility compliance for the TimePicker component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | AA |
 | [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -27,7 +27,6 @@ The accessibility compliance for the TimePicker component is outlined below.
 | [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 
 <style>
     .post .post-content img {
@@ -43,7 +42,7 @@ The accessibility compliance for the TimePicker component is outlined below.
 
 ## WAI-ARIA attributes
 
-The TimePicker control has covered the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications with the following list of WAI-ARIA attributes: `aria-haspopup`, `aria-selected`, `aria-disabled`, `aria-activedescendant`, `aria-expanded`, `aria-owns`, and `aria-autocomplete`.
+The TimePicker control has covered the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/practices/) specifications with the following list of WAI-ARIA attributes: `aria-haspopup`, `aria-selected`, `aria-disabled`, `aria-activedescendant`, `aria-expanded`, `aria-owns`, and `aria-autocomplete`.
 
 Here in TimePicker, the `combobox` plays the role of input element, and the `listbox` plays the role of popup element.
 
@@ -67,7 +66,7 @@ Here in TimePicker, the `combobox` plays the role of input element, and the `lis
 
 Keyboard accessibility is one of the most important aspects of web accessibility. Disabled people like blind and those who have motor disabilities or birth defects use keyboard shortcuts more than the mouse.
 
-The TimePicker control has built-in keyboard accessibility support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+The TimePicker control has built-in keyboard accessibility support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/practices/).
 
 N> It supports the following list of shortcut keys to interact with the TimePicker control.
 
@@ -93,7 +92,8 @@ In the below sample use the `alt+t` keys to focus the TimePicker control.
 {% include code-snippet/timepicker/accessibility/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -102,7 +102,8 @@ In the below sample use the `alt+t` keys to focus the TimePicker control.
 {% include code-snippet/timepicker/accessibility/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## Ensuring accessibility

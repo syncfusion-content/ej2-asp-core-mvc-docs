@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Persisting Data in Server in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Persisting Data in Server in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Persisting Data in Server | Syncfusion
+description: Learn how to persist edited data in a database using RESTful services and DataManager in the ##Platform_Name## TreeGrid.
 platform: ej2-asp-core-mvc
 control: Persisting Data in Server
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Persisting Data in Server
+# Persisting data in Server in ##Platform_Name## TreeGrid
 
 Edited data can be persisted in the database using the RESTful web services.
 
@@ -196,4 +196,4 @@ You can use the following code example to use **RemoteSaveAdaptor** in TreeGrid.
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

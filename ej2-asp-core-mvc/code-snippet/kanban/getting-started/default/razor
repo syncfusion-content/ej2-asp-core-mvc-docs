@@ -1,7 +1,0 @@
- @Html.EJS().Kanban("kanban").Columns(col =>
-            {
-           col.HeaderText("To Do").KeyField("Open").Add();
-           col.HeaderText("In Progress").KeyField("InProgress").Add();
-           col.HeaderText("Testing").KeyField("Testing").Add();
-           col.HeaderText("Done").KeyField("Close").Add();
-       }).Render()

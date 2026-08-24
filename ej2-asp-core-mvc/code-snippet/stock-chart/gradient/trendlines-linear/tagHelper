@@ -1,0 +1,39 @@
+@{
+    var trendlineGradient = new Syncfusion.EJ2.Charts.ChartLinearGradient
+    {
+        X1 = 0,
+        Y1 = 0,
+        X2 = 0,
+        Y2 = 1,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#6A0DAD", Offset = 0,   Opacity = 1, Lighten = 0, Brighten = 0 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#FFFF00", Offset = 100, Opacity = 1, Lighten = 0, Brighten = 0 }
+        }
+    };
+}
+
+<ejs-stockchart id="container" title="Historical Indian Rupee Rate (INR USD)">
+    <e-stockchart-primaryxaxis title="Months"></e-stockchart-primaryxaxis>
+    <e-stockchart-primaryyaxis title="Rupees against Dollars" interval="5">
+    </e-stockchart-primaryyaxis>
+    <e-stockchart-chartarea>
+        <e-chartarea-border width="0"></e-chartarea-border>
+    </e-stockchart-chartarea>
+    <e-stockchart-series-collection>
+        <e-stockchart-series dataSource="@ViewBag.dataSource" type="Candle"
+            xName="date" high="high" low="low" open="open" close="close"
+            volume="volume" name="Apple Inc" fill="#0066FF">
+            <e-stockchartseries-trendlines>
+                <e-stockchartseries-trendline type="MovingAverage"
+                    enableTooltip="false" width="2"
+                    linearGradient="@trendlineGradient">
+                </e-stockchartseries-trendline>
+            </e-stockchartseries-trendlines>
+        </e-stockchart-series>
+    </e-stockchart-series-collection>
+    <e-stockchart-tooltipsettings enable="true"></e-stockchart-tooltipsettings>
+    <e-stockchart-seriestype></e-stockchart-seriestype>
+    <e-stockchart-indicatortype></e-stockchart-indicatortype>
+    <e-stockchart-exporttype></e-stockchart-exporttype>
+</ejs-stockchart>

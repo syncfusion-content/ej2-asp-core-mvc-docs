@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Integration of Dialogflow in ##Platform_Name## Chat UI Control | Syncfusion
-description: Checkout and learn about Integration of Dialogflow in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Integration with Dialogflow in ##Platform_Name## Chat UI | Syncfusion®
+description: Checkout and learn about Integration with Dialogflow in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Integration of Dialogflow
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Integrate Google Dialogflow with ASP.NET MVC Chat UI control
+# Integrate Google Dialogflow with ##Platform_Name## Chat UI control
 
-The Chat UI control integrates with [Google Dialogflow](https://cloud.google.com/dialogflow/docs) to enable advanced conversational AI features in your ASP.NET MVC applications. The control acts as a user interface for a support bot, where user prompts are sent to the Dialogflow service via API calls, providing natural language understanding and context-aware responses.
+The Chat UI control integrates with [Google Dialogflow](https://docs.cloud.google.com/dialogflow/docs) to enable advanced conversational AI features in your ASP.NET MVC applications. The control acts as a user interface for a support bot, where user prompts are sent to the Dialogflow service via API calls, providing natural language understanding and context-aware responses.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ Before starting, ensure you have the following:
 
 * **Node.js**: Version 16 or higher with npm.
 
-* **Google Account**: To access [Google Dialogflow](https://cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com/).
+* **Google Account**: To access [Google Dialogflow](https://docs.cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com).
 
 * **Syncfusion Chat UI**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
 
@@ -41,7 +41,7 @@ Install-Package Newtonsoft.Json
 
 ## Set Up the Dialogflow Agent
 
-1. In the dialogflow console, create an [agent](https://cloud.google.com/agent-assist/docs), set a name (e.g., `MyChatBot`), and configure the default language (e.g., English - `en`).
+1. In the dialogflow console, create an [agent](https://docs.cloud.google.com/gemini-enterprise-cx/agent-assist), set a name (e.g., `MyChatBot`), and configure the default language (e.g., English - `en`).
 
 2. Add intents with training phrases and responses (e.g., greetings, FAQs). Test using the dialogflow simulator.
 

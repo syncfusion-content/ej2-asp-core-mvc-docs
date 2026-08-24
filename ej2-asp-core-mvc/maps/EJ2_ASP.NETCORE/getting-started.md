@@ -1,120 +1,167 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Maps Component
-description: Checkout and learn about getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Maps | Syncfusion
+description: Check out and learn about getting started with ASP.NET Maps control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: Maps
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Maps Component
+# Getting Started with ASP.NET Core Maps
 
-This section briefly explains about how to include [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) component in your ASP.NET Core application using Visual Studio.
+This section explains how to add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps-library) control to your application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/) and [Visual Studio Code](https://code.visualstudio.com/).
+
+To get started quickly with the ASP.NET Core Maps control, watch the following video:
 
 {% youtube "https://www.youtube.com/watch?v=kwE6ikF7QYQ" %}
 
-## Prerequisites
+## Create an ASP.NET Core Web App with Razor pages
 
-[System requirements for ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
+{% tabcontents %}
 
-## Create ASP.NET Core web application with Razor pages
+{% tabcontent Visual Studio %}
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
+{% endtabcontent %}
 
-## Install ASP.NET Core package in the application
+{% tabcontent Visual Studio Code %}
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Terminal" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+dotnet new webapp -o RazorPagesMovie
+code -r RazorPagesMovie
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio-code#create-a-razor-pages-web-app), or the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
+{% endtabcontent %}
 
-Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+{% endtabcontents %}
+
+## Install the required ASP.NET Core packages
+
+Install [Syncfusion.AspNetCore.Maps](https://www.nuget.org/packages/Syncfusion.AspNetCore.Maps/) NuGet package. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
+2. Search the required NuGet package (`Syncfusion.AspNetCore.Maps`) and install it.
+
+Alternatively, you can install the same packages using the Package Manager Console with the following command.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-@addTagHelper *, Syncfusion.EJ2
+Install-Package Syncfusion.AspNetCore.Maps -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
 
-## Add script resources
+{% endtabcontent %}
 
-Here, script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following command.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet add package Syncfusion.AspNetCore.Maps -v {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+## Add the ASP.NET Core Tag Helpers
+
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Maps` Tag Helpers.
+
+{% tabs %}
+{% highlight cshtml tabtitle="_ViewImports.cshtml" %}
+
+@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.Maps
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add Script Resources
+
+Include the [script reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml**.
+
+{% tabs %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Maps/scripts/sf-maps.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+## Register the Script Manager
 
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
-
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
-    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <!-- ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Maps component
+## Add the ASP.NET Core Maps Control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps tag helper in `~/Pages/Index.cshtml` page.
+Add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps-library) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
-@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2.Maps
+
 <ejs-maps id="maps">
 </ejs-maps>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Render shapes from GeoJSON data
+## Render Shapes from WorldMap.json Data
 
-Elements in the Maps will be rendered in the layers. So, add a layer to the Maps by using the [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) property. Now bind the GeoJSON data to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property.
+Elements in the Maps control are rendered as layers. Add a layer to the Maps control using the [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) property. Then, bind the **WorldMap.json** data to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 @using Newtonsoft.Json
 @using Syncfusion.EJ2.Maps
+
 @{
     string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
+    var WorldMapData = JsonConvert.DeserializeObject(allText);
 }
 
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
+        <e-maps-layer shapeData="WorldMapData">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
@@ -122,242 +169,39 @@ Elements in the Maps will be rendered in the layers. So, add a layer to the Maps
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps component will be rendered in the default web browser.
+## Run the application
 
-![ASP.NET Core Maps Component](images/maps-control.png)
+{% tabcontents %}
 
-N> Map layers will render only if `ShapeData` is provided. Refer to the map data values for the world map [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-637657487).
+{% tabcontent Visual Studio %}
 
-## Bind data source to map
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps-library) control will render in your default web browser.
 
-The following properties in layers are used for binding the data source to the map.
+{% endtabcontent %}
 
-* [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource)
-* [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath)
-* [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath)
+{% tabcontent Visual Studio Code %}
 
-The [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource) property takes set of key/value pair as input. For example, a list of objects can be provided as input. This data is further used in a tooltip, data label, legend and color mapping.
-
-The [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath) property is used to reference the key in data source. Whereas, the [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath) property is used to reference the column name in [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) to identify the shape. Both properties are related to each other. When the values of the [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath) property in the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource) property and the value of [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath) in the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property match, then the associated object from the data source is bound to the corresponding shape.
-
-The JSON object **"electionData.json"** is used as data source in the below code.
-
-```html
-[
-    { Country: 'China', Membership: 'Permanent' },
-    { Country: 'France', Membership: 'Permanent' },
-    { Country: 'Russia', Membership: 'Permanent' },
-    { Country: 'United Kingdom', Membership: 'Permanent' },
-    { Country: 'United States', Membership: 'Permanent' },
-    { Country: 'Bolivia', Membership: 'Non-Permanent' },
-    { Country: 'Eq. Guinea', Membership: 'Non-Permanent' },
-    { Country: 'Ethiopia', Membership: 'Non-Permanent' },
-    { Country: "Côte d'Ivoire", Membership: 'Permanent' },
-    { Country: 'Kazakhstan', Membership: 'Non-Permanent' },
-    { Country: 'Kuwait', Membership: 'Non-Permanent' },
-    { Country: 'Netherlands', Membership: 'Non-Permanent' },
-    { Country: 'Peru', Membership: 'Non-Permanent' },
-    { Country: 'Poland', Membership: 'Non-Permanent' },
-    { Country: 'Sweden', Membership: 'Non-Permanent' },
-];
-
-```
+Open the terminal and run the following command.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="Terminal" %}
 
-@using Newtonsoft.Json
-@using Syncfusion.EJ2.Maps;
-
-@{
-    var propertyPath = new[] { "name" };
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-    string allText1 = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/electiondata.json");
-    var electionData = JsonConvert.DeserializeObject(allText1);
-}
-
-<ejs-maps id="maps">
-    <e-maps-layers>
-        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country" shapePropertyPath="propertyPath">
-        </e-maps-layer>
-    </e-maps-layers>
-</ejs-maps>
+dotnet run
 
 {% endhighlight %}
 {% endtabs %}
 
-## Apply color mapping
+{% endtabcontent %}
 
-The color mapping feature supports customization of shape colors based on the underlying value of shape received from the bound data. To apply the color to the shapes, specify the field name from the data source to the  [`ColorValuePath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsShapeSettings.html#Syncfusion_EJ2_Maps_MapsShapeSettings_ColorValuePath) property of [`MapsShapeSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsShapeSettings.html) class.
+{% endtabcontents %}
 
-Specify the color and value in the [`MapsColorMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsColorMapping.html) property. Here **"#D84444"** is specified for **Permanent** countries and **"#316DB5"** is specified for **Non-Permanent** countries.
+![ASP.NET Core Maps Control](images/maps-control.webp)
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+N> Map layers render only when [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided. Refer to the [world map data values](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-637657487).
 
-@using Newtonsoft.Json
-@using Syncfusion.EJ2.Maps;
+N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Maps/ASP.NET%20Core%20Tag%20Helper%20Examples) to understand how this getting started example works.
 
-@{
-    var propertyPath = new[] { "name" };
-    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
-        new  MapsColorMapping{ Color = "#EDB46F", Value= "Permanent"  },
-        new MapsColorMapping { Color= "#F1931B", Value = "Non-Permanent" }
-    };
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-    string allText1 = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/electiondata.json");
-    var electionData = JsonConvert.DeserializeObject(allText1);
-}
+## See Also
 
-<ejs-maps id="maps">
-    <e-maps-layers>
-        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country" shapePropertyPath="propertyPath">
-            <e-layersettings-shapesettings colorValuePath="Membership" fill="#E5E5E5" colorMapping="colormapping"></e-layersettings-shapesettings>
-        </e-maps-layer>
-    </e-maps-layers>
-</ejs-maps>
-
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Maps with Color Mapping](images/maps-color-mapping.png)
-
-N> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
-
-## Add title to Maps
-
-The title can be added to the Maps using the [`MapsTitleSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTitleSettings.html) class to provide information to the user about the shapes rendered in the Maps.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-@using Syncfusion.EJ2.Maps
-@using Newtonsoft.Json
-@{
-    var titleStyle = new MapsFont
-    {
-        Size = "10px",
-        Color = "red",
-        FontFamily = "Sans-serif"
-    };
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-}
-
-<ejs-maps id="maps">
-    <e-maps-titlesettings text="Maps component" textStyle="titleStyle"></e-maps-titlesettings>
-    <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
-        </e-maps-layer>
-    </e-maps-layers>
-</ejs-maps>
-
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Maps with Title](images/maps-title.png)
-
-## Enable legend
-
-Legend can be added to the Maps to summarize the data bound to the map. To enable legend for the Maps, set the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html#Syncfusion_EJ2_Maps_MapsLegendSettings_Visible) property of [`MapsLegendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html) class to **true**.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-@using Syncfusion.EJ2.Maps;
-@{
-    var propertyPath = new[] { "name" };
-    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
-        new  MapsColorMapping{ Color = "#EDB46F",Value= "Permanent"  },
-        new MapsColorMapping { Color= "#F1931B", Value = "Non-Permanent" }
-    };
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-    string allText1 = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/electiondata.json");
-    var electionData = JsonConvert.DeserializeObject(allText1);
-}
-
-<ejs-maps id="maps">
-    <e-maps-legendsettings visible="true" position="Top"></e-maps-legendsettings>
-    <e-maps-layers>
-        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country" shapePropertyPath="propertyPath">
-            <e-layersettings-shapesettings colorValuePath="Membership" fill="#E5E5E5" colorMapping="colormapping"></e-layersettings-shapesettings>
-        </e-maps-layer>
-    </e-maps-layers>
-</ejs-maps>
-
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Maps with Legend](images/maps-legend.png)
-
-N> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
-
-## Add data label
-
-The data labels can be added to the Maps to show additional information of the shapes in the Maps. This can be achieved by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Visible) property to **true** in the [`MapsDataLabelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html) class.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-@using Syncfusion.EJ2.Maps
-@using Newtonsoft.Json
-
-@{
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-}
-
-<ejs-maps id="maps">
-    <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
-            <e-layersettings-datalabelsettings visible="true" labelPath="name" smartLabelMode="@Syncfusion.EJ2.Maps.SmartLabelMode.Trim"></e-layersettings-datalabelsettings>
-            <e-layersettings-shapesettings autofill="true"></e-layersettings-shapesettings>
-        </e-maps-layer>
-    </e-maps-layers>
-</ejs-maps>
-
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Maps with DataLabel](images/maps-datalabel.png)
-
-## Enable tooltip
-
-When the data labels can't display the information due to space constraints, the tooltip is used. The tooltip can be enabled by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html#Syncfusion_EJ2_Maps_MapsTooltipSettings_Visible) property of the [`MapsTooltipSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html) class to **true**.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-@using Syncfusion.EJ2.Maps
-@using Newtonsoft.Json
-
-@{
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-}
-
-<ejs-maps id="maps">
-    <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
-            <e-layersettings-datalabelsettings visible="true" labelPath="name" smartLabelMode="@Syncfusion.EJ2.Maps.SmartLabelMode.Trim">
-            </e-layersettings-datalabelsettings>
-            <e-layersettings-tooltipsettings visible="true" valuePath="name"></e-layersettings-tooltipsettings>
-            <e-layersettings-shapesettings autofill="true"></e-layersettings-shapesettings>
-        </e-maps-layer>
-    </e-maps-layers>
-</ejs-maps>
-
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Maps with Tooltip](images/maps-tooltip.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Maps/ASP.NET%20Core%20Tag%20Helper%20Examples).
-
-## See also
-
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Numerictextbox Control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Numeric TextBox | Syncfusion
+description: Learn to configure globalization in ##Platform_Name## Numeric TextBox with localization, culture-specific formatting, and RTL support.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 ---
 
 
-# Globalization in NumericTextBox Control
+# Globalization in ##Platform_Name## NumericTextBox
 
 ## Internationalization
 
-Internationalization library provides support for formatting and parsing the number by using the official [Unicode CLDR](https://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in internationalization support to adapt based on culture. For more information about internationalization, refer to this [link](../common/internationalization).
+Internationalization library provides support for formatting and parsing the number by using the official [Unicode CLDR](https://cldr.unicode.org) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in internationalization support to adapt based on culture. For more information about internationalization, refer to this [link](../common/internationalization).
 
 By default, all the Essential<sup style="font-size:70%">&reg;</sup> JS 2  control are specific to English culture (en-US). If you want to go with the different culture other than `English`, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
+* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec#json).
 
 ```
 npm install cldr-data --save
@@ -59,7 +59,7 @@ loadCultureFiles('de');
 
 ## Localization
 
-[Localization](../common/localization/) library allows users to localize the default text contents of the NumericTextBox to different cultures using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Locale) property.
+[Localization](../common/localization) library allows users to localize the default text contents of the NumericTextBox to different cultures using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Locale) property.
 
 In NumericTextBox, spin buttons title for the tooltip will be localized based on the culture.
 

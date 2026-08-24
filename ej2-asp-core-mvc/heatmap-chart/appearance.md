@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in Syncfusion ##Platform_Name## Heatmap Chart Component
+title: Appearance in ##Platform_Name## HeatMap Chart | Syncfusion
 description: Learn here all about Appearance in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Appearance in ##Platform_Name## HeatMap Chart Component
+# Appearance in ##Platform_Name## HeatMap Chart
 
 ## Cell customization
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-You can customize the cell by using the [cellSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellSettings.html) property.
+You can customize the cell by using the [cellSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_CellSettings) property.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -278,7 +278,7 @@ The value displayed in the HeatMap cell can be changed using the [CellRender](ht
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The text attributes of the data label such as font-family, font-size, and color can be customized using the [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_TextStyle) in the [cellSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellSettings.html) property.
+The text attributes of the data label such as font-family, font-size, and color can be customized using the [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_TextStyle) in the [cellSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_CellSettings) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

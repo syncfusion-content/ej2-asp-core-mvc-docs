@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internationalization in ##Platform_Name## Chart Component
+title: Internationalization in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Internationalization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Internationalization
+# Internationalization in ##Platform_Name## Chart
 
 Chart provides supports for internationalization for the following chart elements.
 
@@ -17,7 +17,7 @@ Chart provides supports for internationalization for the following chart element
 * Axis label.
 * Tooltip.
 
-For more information about number and date formatter, you can refer [`internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html).
+For more information about number and date formatter, you can refer [`internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization).
 
 <!-- markdownlint-disable MD036 -->
 **Globalization**

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: About ##Platform_Name## File Manager Component | Syncfusion
+description: Learn about the ##Platform_Name## File Manager, its key capabilities, and the common scenarios it supports for managing files on the server.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# ##Platform_Name## File Manager Overview
 
 The **File Manager** is a graphical user interface control for managing the file system that allows the users to perform most common file operation like accessing, editing, and sorting the files and folders. Also, this control has easy navigation functionality for browsing the folders to select a file or folder from the file system.
 

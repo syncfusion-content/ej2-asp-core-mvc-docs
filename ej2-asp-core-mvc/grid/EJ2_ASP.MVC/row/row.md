@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Row in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row | Syncfusion
+description: Learn how to configure and customize rows in ##Platform_Name## Data Grid using Syncfusion. Manage row events, selection, styling, and interaction capabilities.
 platform: ej2-asp-core-mvc
 control: Row
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row in ASP.NET MVC Grid control
+# Row in ASP.NET MVC Data Grid
 
 Each row typically represents a single record or item from a data source. Rows in a grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow users to interact with the data in the grid. Users can select rows, edit cell values, perform sorting or filtering operations, and trigger events based on actions.
 

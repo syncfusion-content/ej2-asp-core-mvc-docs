@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Create Collapsible Tabs in ##Platform_Name## Tab Component
-description: Learn here all about Create Collapsible Tabs in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: How to create collapsible tabs in ##Platform_Name## Tabs | Syncfusion
+description: Add collapse and expand functionality to Syncfusion ##Platform_Name## Tabs by toggling a custom CSS class in each tab's click event handler.
 platform: ej2-asp-core-mvc
-control: Create Collapsible Tabs
+control: Tab
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Create collapsible Tabs
+# How to create collapsible tabs in ##Platform_Name## Tabs
 
-You can achieve collapse and expand functionality in Tab by adding/removing a custom CSS class in the click event handler for each tab.
+You can implement collapse and expand functionality in the Tab by adding/removing a custom CSS class in the click event handler for each tab.
 
-* Define a CSS class to set the style property display as none. Here 'collapse' class is added to the content element for hiding it.
-* Bind the `select`  event for Tab to collapse the initially selected Tab item and bind custom click handler for the Tab headers.
-* In the event handler, add and remove 'collapse' class to hide and show the corresponding Tab content.
+* Define a CSS class to set the style property display as none. Here `collapse` class is added to the content element for hiding it.
+* Bind the [selected](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.navigations.tab.html#Syncfusion_EJ2_Navigations_Tab_Selected) event for Tab to collapse the initially selected Tab item and bind custom click handler for the Tab headers.
+* n the event handler, add or remove the `collapse` class to show or hide the corresponding tab content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

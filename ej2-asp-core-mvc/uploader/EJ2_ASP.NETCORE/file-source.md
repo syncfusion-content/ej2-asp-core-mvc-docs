@@ -1,7 +1,7 @@
 ---
 layout: post
-title: File Source in ##Platform_Name## Uploader Control | Syncfusion
-description: Learn here all about File Source in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: File Source in ##Platform_Name## File Upload | Syncfusion
+description: Configure file sources for the Syncfusion ##Platform_Name## File Upload: select, drop, paste-from-clipboard, and directory uploads with rename support.
 platform: ej2-asp-core-mvc
 control: File Source
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# File source in Uploader Control
+# File Source in ##Platform_Name## File Upload
 
 ## Paste to upload
 
@@ -251,7 +251,7 @@ Output be like the below.
 
 ![uploader](./images/uploader-customize-drop.png)
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
 
 ## See Also
 

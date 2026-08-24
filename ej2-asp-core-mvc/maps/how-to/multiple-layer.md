@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple Layer in Syncfusion ##Platform_Name## Maps Component
+title: Add multiple layers in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Multiple Layer in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Multiple Layer
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Adding multiple layers in the Map
+# How to add multiple layers in ##Platform_Name## Maps
 
 The multilayer support allows loading multiple shape files in a single container and enables Maps to display more information. The shape layer is the main layer of the Maps. Multiple layers can be added in a shape layer as **SubLayer** using the `Type` property.
 

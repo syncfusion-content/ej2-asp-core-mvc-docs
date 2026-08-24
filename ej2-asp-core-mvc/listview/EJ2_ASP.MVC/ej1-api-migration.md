@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## ListView | Syncfusion
+description: Migrate Syncfusion EJ1 ##Platform_Name## ListView to EJ2 by mapping tag prefixes, namespaces, and APIs from Syncfusion.JavaScript.ListView to ej2-ListView.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ##Platform_Name## ListView
 
 This article describes the API migration process of ListView control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
@@ -18,7 +18,7 @@ This article describes the API migration process of ListView control from Essent
 | Fields | **Property:**  *FieldSettings*  <br/><br/>  `@Html.EJ().ListView("list").FieldSettings(e => e.Text("text"))` | **Property:**  *Fields*  <br/><br/>  **Inner properties:**  *child, enabled, groupBy htmlAttributes, iconCss, id, isChecked etc.*  <br/><br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).Fields(new Syncfusion.EJ2.Lists.ListViewFieldSettings { GroupBy="type"}).Render()`|
 | Template | **Property:**  *RenderTemplate*  <br/><br/>  `@Html.EJ().ListView("list").RenderTemplate(true)`<br/>`.TemplateId("template")`  <br/>  <br/>  `<div id="template"><div>Data 1</div><div>Data 2</div><div>Data 3</div> </div>`| **Property:**  *Template*  <br/><br/>  `@{ var template = "<div class='template'>${text}</div>"; }`  <br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).Template(template).Render()`|
 | Animation | **Not Applicable** | **Property:**  *Animation*  <br/><br/>  `List<object> animation = new List<object>();`  <br/>  `animation.Add(new { effect = "SlideLeft", duration = "400", easing = "ease" });`  <br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).Animation(ViewBag.animation).Render()`|
-| Enable | **Not Applicable** |**Property:**  *Enable*  <br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).Enable(true).Render()`|
+| Enabled | **Not Applicable** |**Property:**  *Enabled*  <br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).Enabled(true).Render()`|
 | Template for grouping | **Not Applicable** | **Property:**  *GroupTemplate*  <br/><br/>  `@{ var groupTemplate = "<div class='template'>${text}</div>"; }`  <br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).GroupTemplate(groupTemplate).Render()` |
 | Template for header |**Not Applicable** | **Property:**  *HeaderTemplate*  <br/><br/>  `@{ var headerTemplate = "<div class='template'>${text}</div>"; }`  <br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).HeaderTemplate(headerTemplate).Render()`|
 | HTML attributes |**Not Applicable**| **Property:**  *HtmlAttributes*  <br/><br/>  `@{`<br/>`IDictionary<string, object> htmlAttribute = new Dictionary<string, object>();`<br/>`htmlAttribute.Add("class", "listViewCustom");`<br/>`}`  <br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).HtmlAttributes(htmlAttribute).Render()`|

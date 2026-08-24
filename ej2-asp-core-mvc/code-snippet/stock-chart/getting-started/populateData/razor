@@ -12,5 +12,3 @@
 		args.stockChart.series[0].dataSource = data;
 	}
 </script>
-
-

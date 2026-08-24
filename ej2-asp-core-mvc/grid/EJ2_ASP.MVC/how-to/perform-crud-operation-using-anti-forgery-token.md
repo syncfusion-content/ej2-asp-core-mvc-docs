@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Perform Crud Operation Using Anti Forgery Token in ##Platform_Name## Grid Component
-description: Learn here all about Perform Crud Operation Using Anti Forgery Token in Syncfusion ##Platform_Name## Grid component of syncfusion and more.
+title: ##Platform_Name## Grid Anti-Forgery Token CRUD Operations | Syncfusion
+description: Learn how to secure CRUD operations in ##Platform_Name## Data Grid using anti-forgery tokens and custom adaptors to prevent CSRF attacks.
 platform: ej2-asp-core-mvc
 control: Perform Crud Operation Using Anti Forgery Token
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Perform CRUD operation using anti-forgery token
+# CRUD with Anti-Forgery Tokens in ##Platform_Name## Data Grid
 
-Anti-forgery token is used between the client and server to prevent cross-site request forgery (CSRF) attack. For more information on preventing CSRF attack, refer to the [link](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.1#authentication-fundamentals).
+Anti-forgery token is used between the client and server to prevent cross-site request forgery (CSRF) attack. For more information on preventing CSRF attack, refer to the [link](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.1).
 
 While performing grid save operation, you can send anti-forgery token along with the save request using the below custom adaptor.
 
@@ -80,4 +80,4 @@ Now assign the custom adaptor to the grid as follows.
 {% endhighlight %}
 {% endtabs %}
 
-N> You can find the full sample at our [GitHub repository](https://github.com/SyncfusionSamples/ej2-mvc-grid-antiforgerytoken).
+N> You can find the full sample at our [GitHub repository](https://github.com/SyncfusionExamples/ej2-mvc-grid-antiforgerytoken).

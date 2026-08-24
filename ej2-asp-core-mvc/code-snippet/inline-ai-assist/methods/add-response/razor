@@ -1,0 +1,58 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<style>
+    #editableText {
+        width: 100%;
+        min-height: 120px;
+        max-height: 300px;
+        overflow-y: auto;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+</style>
+
+<div class="container" style="height: 350px; width: 650px;">
+    <button id="addResponse" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onAddResponseClick()">Add Response</button>
+    <div id="editableText" contenteditable="true">
+        <p>Inline AI Assist component provides intelligent text processing capabilities that enhance user productivity. It leverages advanced natural language processing to understand context and deliver precise suggestions. Users can seamlessly integrate AI-powered features into their applications.</p>
+        <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
+    </div>
+    
+    @Html.EJS().InlineAIAssist("response").RelateTo("#addResponse").Created("onCreated").PromptRequest("onPromptRequest").ResponseSettings(new Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings { ItemSelect = "onItemSelect" }).Render()
+</div>
+
+<script>
+    var inlineAssist;
+    
+    function onCreated() {
+        inlineAssist = this;
+    }
+    
+    function onPromptRequest(args) {
+        setTimeout(function () {
+            var defaultResponse = 'For real-time prompt processing, connect the Inline AI Assist component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            inlineAssist.addResponse(defaultResponse);
+        }, 1000);
+    }
+    
+    function onItemSelect(args) {
+        if (args.command.label === 'Accept') {
+            var editable = document.getElementById('editableText');
+            if (editable) {
+                editable.innerHTML = '<p>' + inlineAssist.prompts[inlineAssist.prompts.length - 1].response + '</p>';
+            }
+            inlineAssist.hidePopup();
+        } else if (args.command.label === 'Discard') {
+            inlineAssist.hidePopup();
+        }
+    }
+    
+    function onAddResponseClick() {
+        if (inlineAssist) {
+            inlineAssist.showPopup();
+            inlineAssist.addResponse('Dynamic response');
+        }
+    }
+</script>

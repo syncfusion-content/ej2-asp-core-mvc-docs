@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Tab Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Tabs | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Tabs appearance using CSS to modify the tab root, header items, content items, and header background.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# CSS Structure
+# Style in ##Platform_Name## Tabs
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
+The following CSS structures can be used to modify the Tab's appearance.
 
 ## Customizing Tab
 

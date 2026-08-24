@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Render Editor in Dialog in ##Platform_Name## ImageEditor | Syncfusion
-description: Learn here all about Render Image Editor in Dialog in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: How to open ImageEditor in Dialog in ##Platform_Name## | Syncfusion
+description: Open Syncfusion ##Platform_Name## ImageEditor inside a Dialog by combining ej2-dialog and ej2-image-editor to edit previewed uploaded images.
 platform: ej2-asp-core-mvc
-control: Render Image Editor in Dialog
+control: Dialog 
 publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Render Image Editor in Dialog

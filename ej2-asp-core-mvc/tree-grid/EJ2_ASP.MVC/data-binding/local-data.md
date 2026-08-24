@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Local Data in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Local Data in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Local Data | Syncfusion
+description: Learn to bind local data to ##Platform_Name## TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: ej2-asp-core-mvc
 control: Local Data
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Local Data in ##Platform_Name## Tree Grid Component
+# Local Data in ##Platform_Name## TreeGrid
 
 In Local Data binding, data source for rendering the TreeGrid control is retrieved from the same application locally.
 
@@ -18,13 +18,13 @@ Two types of Data binding are possible with the TreeGrid control.
 * Hierarchical Datasource binding
 * Self-Referential Data binding (Flat Data)
 
-To bind local data to the treegrid, you can assign a JavaScript object array to the [`DataSource`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DataSource.html) property. The local data source can also be provided as an instance of the **DataManager**.
+To bind local data to the treegrid, you can assign a JavaScript object array to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource) property. The local data source can also be provided as an instance of the **DataManager**.
 
 N> By default, **DataManager** uses **JsonAdaptor** for local data-binding.
 
 ## Hierarchy data source binding
 
-The [`ChildMapping`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ChildMapping.html) property is used to map the child records in hierarchy data source.
+The [`ChildMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ChildMapping) property is used to map the child records in hierarchy data source.
 
 The following code example shows you how to bind the hierarchical local data into the TreeGrid control.
 
@@ -56,9 +56,9 @@ N> * Remote data binding is not supported for Hierarchy Data.
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields, ID field and parent ID field.
 
-* **ID Field**: This field contains unique values used to identify nodes. Its name is assigned to the [`IdMapping`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridBuilder~IdMapping.html) property.
+* **ID Field**: This field contains unique values used to identify nodes. Its name is assigned to the [`IdMapping`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridBuilder~IdMapping.html) property.
 
-* **Parent ID Field**: This field contains values that indicate parent nodes. Its name is assigned to the [`ParentIdMapping`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridBuilder~ParentIdMapping.html) property.
+* **Parent ID Field**: This field contains values that indicate parent nodes. Its name is assigned to the [`ParentIdMapping`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridBuilder~ParentIdMapping.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -104,4 +104,4 @@ primaryParent | Specifies the Primary data
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

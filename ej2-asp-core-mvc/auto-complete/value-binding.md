@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Value Binding in ##Platform_Name## Auto Complete Control | Syncfusion
+title: Value Binding in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Value Binding in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Value Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Value binding in AutoComplete Component
+# Value Binding in ##Platform_Name## AutoComplete
 
 Value binding in the AutoComplete control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The AutoComplete component provides flexibility in binding both primitive data types and complex objects.
 

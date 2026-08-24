@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Upload in Syncfusion ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Upload in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Upload in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to upload files in the ##Platform_Name## File Manager with chunk uploads, directory uploads, and drag-and-drop support.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Upload
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upload in File Manager control
+# Upload in ##Platform_Name## File Manager
 
 The File Manager control provides a `uploadSettings` property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
 
 ## Directory Upload
 
-The `directoryUpload` property controls whether users can browse and upload entire directories (folders) in the Syncfusion File Manager control. 
+The `directoryUpload` property controls whether users can browse and upload entire directories (folders) in the File Manager control. 
 
 To enable directory upload, set the `directoryUpload` property to `true` in the `uploadSettings` configuration.
 
@@ -26,7 +26,7 @@ To learn more about the folder upload actions, refer to this [link](https://ej2.
 
 ## Sequential Upload
 
-The `sequentialUpload` property controls whether users can upload files one by one in a sequential manner in the Syncfusion File Manager control. 
+The `sequentialUpload` property controls whether users can upload files one by one in a sequential manner in the File Manager control. 
 
 To enable sequential upload, set the `sequentialUpload` property to `true` in the `uploadSettings` configuration.
 
@@ -79,9 +79,9 @@ By setting the `allowedExtensions` property, you restrict the file types that ca
 
 The File Manager control provides support for external drag-and-drop functionality for uploading files by dragging it from local file system to File Manager.
 
-To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/documentation/api/uploader#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
+To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/documentation/api/uploader/index-default#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
 
->**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/documentation/api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager control.
+>**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/documentation/api/file-manager/index-default#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager control.
 
 The following example demonstrates the uploadSettings customizations.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open and Save in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Open and Save in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: Open and Save in ##Platform_Name## ImageEditor | Syncfusion
+description: Open images from local, URL, base64, or stream sources in Syncfusion ##Platform_Name## ImageEditor, then save them as PNG, JPEG, SVG, or PDF.
 platform: ej2-asp-core-mvc
 control: Open and Save
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Open and Save in the ##Platform_Name## Image Editor control
+# Open and Save in ##Platform_Name## ImageEditor
 
 To import an image into the canvas, it must first be converted into a blob object. The Uploader component can be used to facilitate the process of uploading an image from the user interface. Once the image has been uploaded, it can then be converted into a blob and drawn onto the canvas. 
 

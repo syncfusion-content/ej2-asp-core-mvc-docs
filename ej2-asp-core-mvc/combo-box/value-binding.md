@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value Binding in ##Platform_Name## Combo Box Control | Syncfusion
-description: Learn here all about Value Binding in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
+title: Value Binding in ##Platform_Name## ComboBox | Syncfusion
+description: Bind primitive values or complex objects to Syncfusion ##Platform_Name## ComboBox via the value property for local arrays, remote sources, or custom data.
 platform: ej2-asp-core-mvc
 control: Value Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Value binding in ComboBox Component
+# Value Binding in ##Platform_Name## ComboBox
 
 Value binding in the ComboBox control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The ComboBox component provides flexibility in binding both primitive data types and complex objects.
 

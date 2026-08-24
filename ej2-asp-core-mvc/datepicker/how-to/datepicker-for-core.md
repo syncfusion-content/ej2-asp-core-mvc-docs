@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Datepicker For Core in ##Platform_Name## Datepicker Component
-description: Learn here all about Datepicker for Core in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: How to render DatePickerFor in ##Platform_Name## DatePicker | Syncfusion
+description: Render Syncfusion ##Platform_Name## DatePickerFor from a model and retrieve the selected date during form submission using the HTTP post method.
 platform: ej2-asp-core-mvc
 control: Datepicker For Core
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Render DatePickerFor
+# How to render DatePickerFor in ##Platform_Name## DatePicker
 
 The DatePickerFor component can be rendered by passing a value from the model. The selected date value can be retrieved during form submission using the post method at the server end.
 

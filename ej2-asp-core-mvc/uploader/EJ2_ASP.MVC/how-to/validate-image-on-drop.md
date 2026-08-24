@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validate Image On Drop in ##Platform_Name## Uploader Component
-description: Learn here all about Validate Image On Drop in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: How to validate dropped images in ##Platform_Name## | Syncfusion
+description: Validate image files on drop in the Syncfusion ASP.NET MVC File Upload by setting image/* in allowedExtensions or accept attribute and filtering in events.
 platform: ej2-asp-core-mvc
 control: Validate Image On Drop
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Validate image/* on drop
+# How to validate dropped images in ASP.NET MVC File Upload
 
 The uploader control allows you to select all types of images using the *image/ ** to [allowedExtensions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions) property. You can directly set it to accept the attribute of uploader element.
 
@@ -40,4 +40,4 @@ By default, it is working fine when you select a file by clicking the browse but
 
 
 
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.

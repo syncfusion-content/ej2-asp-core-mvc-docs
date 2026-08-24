@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cascading in ##Platform_Name## Drop Down List Component | Syncfusion
-description: Learn here all about cascading in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to configure cascading ##Platform_Name## DropDownList | Syncfusion
+description: Configure cascading Syncfusion ##Platform_Name## DropDownList where child list data loads based on the parent selection using the change event handler.
 platform: ej2-asp-core-mvc
 control: Cascading
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Configure the Cascading DropDownList
+# How to configure cascading ##Platform_Name## DropDownList
 
-The cascading DropDownList is a series of DropDownList, where the value of one DropDownList depends upon another's value. This can be configured by using the [change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownListBuilder.html#Syncfusion_EJ2_DropDowns_DropDownListBuilder_Change_System_String_) event of the parent DropDownList. Within that change event handler, data has to be loaded to the child DropDownList based on the selected value of the parent DropDownList.
+The cascading DropDownList is a series of DropDownList, where the value of one DropDownList depends upon another's value. This can be configured by using the [change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the parent DropDownList. Within that change event handler, data has to be loaded to the child DropDownList based on the selected value of the parent DropDownList.
 
-The following example, shows the cascade behavior of country, state, and city DropDownList. Here, the [dataBind](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownListBuilder.html#Syncfusion_EJ2_DropDowns_DropDownListBuilder_DataBound_System_String_) method is used to reflect the property changes immediately to the DropDownList.
+The following example, shows the cascade behavior of country, state, and city DropDownList. Here, the [dataBind](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_DataBound) method is used to reflect the property changes immediately to the DropDownList.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

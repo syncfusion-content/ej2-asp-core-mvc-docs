@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## AppBar Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## AppBar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## AppBar | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## AppBar by adding the EJ2 MVC5 NuGet package and rendering a top app bar in your app.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC AppBar Control
+# Getting Started with ##Platform_Name## AppBar
 
 This section briefly explains about how to include ASP.NET MVC AppBar control in your ASP.NET MVC application using Visual Studio.
 
@@ -20,7 +20,7 @@ This section briefly explains about how to include ASP.NET MVC AppBar control in
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -107,4 +107,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC AppBar Control](images/getting_started.png)
 
-N> You can refer to our [ASP.NET MVC AppBar](https://www.syncfusion.com/aspnet-mvc-ui-controls/appbar) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC AppBar Example](https://ej2.syncfusion.com/aspnetmvc/AppBar/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the AppBar in ASP.NET MVC.
+N> You can refer to our [ASP.NET MVC AppBar](https://www.syncfusion.com/aspnet-mvc-ui-controls/appbar) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC AppBar Example](https://ej2.syncfusion.com/aspnetmvc/appbar/defaultfunctionalities#/fluent2) that shows you how to render and configure the AppBar in ASP.NET MVC.

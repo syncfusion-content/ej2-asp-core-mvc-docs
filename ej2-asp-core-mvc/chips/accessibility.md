@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Chips Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Chips | Syncfusion
+description: Learn keyboard navigation and ARIA support for Syncfusion ##Platform_Name## Chips, including Enter to select and Delete to remove chips from a ChipList.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in Chips Control
+# Accessibility in ##Platform_Name## Chips
 
 ## Keyboard interaction
 

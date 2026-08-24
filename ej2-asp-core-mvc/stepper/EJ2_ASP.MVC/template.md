@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about Template in ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to customize step content and appearance in the Syncfusion ##Platform_Name## Stepper using templates and contextual step data.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template in ##Platform_Name## Stepper control
+# Template in ##Platform_Name## Stepper
 
 The Stepper control allows you to customize the default appearance and content of each step, creating a personalized experience for the user. You can use the [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Template) propety to set the template content for the steps.
 

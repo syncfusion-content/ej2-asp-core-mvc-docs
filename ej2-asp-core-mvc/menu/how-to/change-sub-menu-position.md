@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Change Sub Menu Position in ##Platform_Name## Menu Control | Syncfusion
-description: Learn here all about Change Sub Menu Position in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: How to change sub menu position in ##Platform_Name## Menu | Syncfusion
+description: Reposition Syncfusion ##Platform_Name## Menu sub menu popup by overriding top and left in the beforeOpen event args before the sub menu opens.
 platform: ej2-asp-core-mvc
 control: Change Sub Menu Position
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Change sub menu position
+# How to change sub menu position in ##Platform_Name## Menu
 
-The submenu position can be changed by using the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event. Assign the top and left position where you want to open the submenu to the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event arguments `args.top` and `args.left` respectively.
+The submenu position can be changed by using the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_BeforeOpen) event. Assign the top and left position where you want to open the submenu to the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_BeforeOpen) event arguments `args.top` and `args.left` respectively.
 
 In the below sample, the sub menu opens above the parent menu item.
 
@@ -39,4 +39,4 @@ In the below sample, the sub menu opens above the parent menu item.
 
 
 
-N> For custom positioning, set both `top` and `left` position in the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event.
+N> For custom positioning, set both `top` and `left` position in the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_BeforeOpen) event.

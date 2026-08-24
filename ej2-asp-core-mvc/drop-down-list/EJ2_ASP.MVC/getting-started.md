@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## DropDownList | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## DropDownList control of Syncfusion Essential JS 2 and more details.
+description: Learn how to get started with the Syncfusion ##Platform_Name## DropDownList control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC DropDownList Control
+# Getting Started with ##Platform_Name## DropDownList
 
-This section briefly explains about how to include [ASP.NET MVC DropDownList](https://www.syncfusion.com/aspnet-mvc-ui-controls/dropdown-list) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC DropDownList](https://www.syncfusion.com/aspnet-mvc-ui-controls/dropdown-list) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC DropDownList](ht
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -102,7 +102,7 @@ public ActionResult Index()
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DropDownList control will be rendered in the default web browser.
 
-![ASP.NET MVC DropDownList Control](images/dropdownlist-control.png)
+![ASP.NET MVC DropDownList Control](images/dropdownlist-control.webp)
 
 ## Binding data source
 
@@ -129,7 +129,7 @@ By default, the width of the popup list automatically adjusts according to the D
 
 The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_PopupWidth) properties respectively.
 
-In the following sample, popup list's width and height are configured.
+In the following sample, the popup list's width and height are configured.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disabled Items in ##Platform_Name## AutoComplete Control | Syncfusion
+title: Disabled Items in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Disabled Items in Syncfusion ##Platform_Name## AutoComplete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Disabled Items
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Disabled Items in ##Platform_Name## AutoComplete Control
+# Disabled Items in ##Platform_Name## AutoComplete
 
 The AutoComplete provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings.html#Syncfusion_EJ2_DropDowns_AutoCompleteFieldSettings_Disabled) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
 

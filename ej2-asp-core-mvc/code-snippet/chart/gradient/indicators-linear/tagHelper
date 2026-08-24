@@ -1,0 +1,41 @@
+@{
+    var indicatorGradient = new Syncfusion.EJ2.Charts.ChartLinearGradient
+    {
+        X1 = 0,
+        Y1 = 0,
+        X2 = 1,
+        Y2 = 0,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#7C3AED", Offset = 0,   Opacity = 1 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#F59E0B", Offset = 100, Opacity = 1 }
+        }
+    };
+}
+
+<ejs-chart id="container" title="Equity Price - Jan-Nov 2025">
+    <e-chart-primaryxaxis title="Months" valueType="DateTime"
+        intervalType="Months" labelFormat="MMM yyyy"
+        edgeLabelPlacement="Shift">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Price (USD)" labelFormat="${value}"
+        minimum="90" maximum="130" interval="10">
+        <e-linestyle width="0"></e-linestyle>
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="@ViewBag.dataSource" xName="Date" yName="y"
+                  low="Low" high="High" close="Close" volume="Volume" open="Open"
+                  width="2" name="Equity Price" type="Candle">
+        </e-series>
+    </e-series-collection>
+    <e-chart-indicators>
+        <e-chart-indicator type="Ema" field="Close" seriesName="Equity Price"
+            xName="Date" width="2" period="3"
+            linearGradient="@indicatorGradient">
+        </e-chart-indicator>
+    </e-chart-indicators>
+    <e-chart-tooltipsettings enable="true"></e-chart-tooltipsettings>
+    <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+</ejs-chart>

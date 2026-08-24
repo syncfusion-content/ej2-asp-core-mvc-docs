@@ -8,7 +8,8 @@ using System.Web;
 using System;
 using System.IO;
 
-namespace WebApplication.Controllers
+// Replace `FileManagerProject` with your project name.
+namespace FileManagerProject.Controllers
 {
     public class HomeController : Controller
     {

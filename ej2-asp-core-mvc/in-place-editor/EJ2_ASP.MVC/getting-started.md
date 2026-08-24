@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## InPlaceEditor Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## InPlaceEditor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC InplaceEditor | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET MVC InplaceEditor control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC In-place Editor Control
+# Getting Started with ASP.NET MVC InplaceEditor
 
-This section briefly explains about how to include [ASP.NET MVC In-place Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/in-place-editor) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC In-place Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/in-place-editor) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC In-place Editor]
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -99,7 +99,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Add the In-place Editor with Textbox
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC TextBox control is rendered in In-place Editor with the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property sets as Text.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC TextBox control is rendered in In-place Editor with the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property set as Text.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -110,7 +110,7 @@ By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tex
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with TextBox](images/inplaceeditor-with-textbox.png)
+![ASP.NET MVC In-place Editor with TextBox](images/inplaceeditor-with-textbox.webp)
 
 ## Configuring DropDownList
 
@@ -127,7 +127,7 @@ In the following sample, `Type` and `Model` values are configured to render the 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with DropDownList](images/inplaceeditor-with-dropdownlist.png)
+![ASP.NET MVC In-place Editor with DropDownList](images/inplaceeditor-with-dropdownlist.webp)
 
 ## Integrate DatePicker
 
@@ -144,7 +144,7 @@ In the following sample, `Type` and `Model` values are configured to render the 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with DatePicker](images/inplaceeditor-with-datepicker.png)
+![ASP.NET MVC In-place Editor with DatePicker](images/inplaceeditor-with-datepicker.webp)
 
 In the following sample, type and model values are configured to render the TextBox, DropDownList and DatePicker control.
 
@@ -161,15 +161,15 @@ In the following sample, type and model values are configured to render the Text
 
 ## Submitting data to the server (save)
 
-You can submit editor value to the server by configuring the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Url), [Adaptor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Adaptor) and [PrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PrimaryKey).
+You can submit the editor value to the server by configuring the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Url), [Adaptor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Adaptor) and [PrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PrimaryKey) properties.
 
 | Property   | Usage                                           |
 |------------|---------------------------------------------------------|
 | **`Url`**        | Gets the URL for server submit action.        |
 | **`Adaptor`**    | Specifies the adaptor type that is used by DataManager to communicate with DataSource.  |
-| **`PrimaryKey`** | Defines the unique primary key of editable field which can be used for saving data in the data-base. |
+| **`PrimaryKey`** | Defines the unique primary key of the editable field which can be used for saving data in the database. |
 
-N> The `PrimaryKey` property is mandatory. If it's not set, edited data are not sent to the server.
+N> The `PrimaryKey` property is mandatory. If it's not set, edited data is not sent to the server.
 
 ## Refresh with modified value
 
@@ -184,7 +184,7 @@ The edited data is submitted to the server and you can see the new values gettin
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with Editing Value](images/getting-started.png)
+![ASP.NET MVC In-place Editor with Editing Value](images/getting-started.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/InPlaceEditor/ASP.NET%20MVC%20Razor%20Examples).
 

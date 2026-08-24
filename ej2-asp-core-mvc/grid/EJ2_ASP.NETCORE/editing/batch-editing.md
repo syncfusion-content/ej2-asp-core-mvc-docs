@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Batch Editing in Syncfusion ##Platform_Name## Grid Control | Syncfusion
-description: Learn here all about Batch Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Batch Editing | Syncfusion
+description: Learn how to perform batch editing in ##Platform_Name## Data Grid, update multiple records efficiently, customize edit workflows, and save changes in bulk.
 platform: ej2-asp-core-mvc
 control: Batch Editing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Batch editing in ASP.NET Core Grid component
+# Batch Editing in ASP.NET Core Data Grid
 
 Batch editing is a powerful feature in the Grid component that allows you to edit multiple cells simultaneously. It provides a convenient way to make changes to multiple cells and save them in a single request to the data source. This feature is particularly useful when dealing with large datasets or when you need to update multiple cells at once.
 
@@ -181,3 +181,24 @@ Here's an example that demonstrates how to achieve immediate saving or updating 
 {% endtabs %}
 
 ![Save or update the changes immediately](../images/editing/batch-save.gif)
+
+## Enable Undo / Redo
+ 
+The Grid supports Undo / Redo actions in batch editing, allowing changes such as cell edits, row additions, and row deletions to be reverted or reapplied before saving. This feature can be enabled by setting the `editSettings.enableUndoRedo` property to **true**.
+ 
+Undo and redo operations can be performed using keyboard shortcuts. Press Ctrl + Z to undo an action, and Ctrl + Y to redo an action.
+ 
+In addition, **Undo** and **Redo** toolbar items can be added to the Grid toolbar to perform these actions through the user interface.
+
+Here's an example that demonstrates how to enable Undo / Redo in batch editing:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/undo-redo-edit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="save-update.cs" %}
+{% include code-snippet/grid/edit/undo-redo-edit/undo-redo.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+> Note: The maximum number of undo and redo actions stored in the stack can be controlled using the `editSettings.undoRedoLimit` property. This property limits the number of actions that can be reverted or reapplied during a batch editing session. The default value is `20`.

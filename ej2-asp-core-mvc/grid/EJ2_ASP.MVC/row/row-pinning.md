@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Pinning in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Row Pinning in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row Pinning | Syncfusion
+description: Learn how to pin rows in ##Platform_Name## Data Grid using Syncfusion. Keep important rows fixed at the top while supporting data operations.
 platform: ej2-asp-core-mvc
 control: Row Pinning
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row Pinning in EJ2 ASP.NET MVC Grid Control
+# Row Pinning in ASP.NET MVC Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid control provides option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful when you want to keep specific rows always visible for quick reference or priority viewing, regardless of user interactions.
 
@@ -58,7 +58,7 @@ Pinned rows can be selected in the same way as regular rows. Their selection sta
 ## Filtering and sorting with pinned rows
 
 Row pinning remains fully compatible with filtering and sorting operations in the Grid. When a filter is applied, both the pinned section and the scrollable content display only the rows that meet the filter criteria, ensuring consistent and predictable results. This unified filtering behavior keeps the interface clear and prevents mismatches between pinned and unpinned data.
- 
+
 When sorting is applied to any column, pinned rows are reordered using the same sorting rules while remaining fixed at the top of the grid. This ensures that pinned rows stay visible and correctly positioned, even as the rest of the data is reorganized. The combined behavior provides a smooth and intuitive experience, allowing data to be refined and analyzed without losing visibility of important pinned records.
 
 {% tabs %}

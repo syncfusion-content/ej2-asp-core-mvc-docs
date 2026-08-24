@@ -7,8 +7,7 @@
         ItemClicked = "toolbarItemClicked"
     }).ResponseToolbarSettings(new AIAssistViewResponseToolbarSettings()
     {
-        Items = ViewBag.ResponseItems,
-        ItemClicked = "onResponseToolbarItemClicked"
+        Items = ViewBag.ResponseItems
     }).Render()
 </div>
 
@@ -27,7 +26,6 @@
 <script>
     var assistObj = null;
     var stopStreaming = false;
-    var currentUtterance;
 
     // Initializes the AIAssistView component reference when created
     function onCreated() {
@@ -39,35 +37,6 @@
         if (args.item.iconCss === 'e-icons e-refresh') {
             assistObj.prompts = [];
             stopStreaming = true;
-        }
-    }
-
-    // Handles clicks on response toolbar items, such as copying, reading aloud, liking, or disliking the response
-    function onResponseToolbarItemClicked(args) {
-        const responseHtml = assistObj.prompts[args.dataIndex].response;
-        if (responseHtml) {
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = responseHtml;
-            const text = (tempDiv.textContent || tempDiv.innerText || '').trim();
-            if (args.item.iconCss === 'e-icons e-audio' || args.item.iconCss === 'e-icons e-assist-stop') {
-                if (currentUtterance) {
-                    speechSynthesis.cancel();
-                    currentUtterance = null;
-                    assistObj.responseToolbarSettings.items[1].iconCss = 'e-icons e-audio';
-                    assistObj.responseToolbarSettings.items[1].tooltip = 'Read Aloud';
-                } else {
-                    const utterance = new SpeechSynthesisUtterance(text);
-                    utterance.onend = () => {
-                        currentUtterance = null;
-                        assistObj.responseToolbarSettings.items[1].iconCss = 'e-icons e-audio';
-                        assistObj.responseToolbarSettings.items[1].tooltip = 'Read Aloud';
-                    };
-                    speechSynthesis.speak(utterance);
-                    currentUtterance = utterance;
-                    assistObj.responseToolbarSettings.items[1].iconCss = 'e-icons e-assist-stop';
-                    assistObj.responseToolbarSettings.items[1].tooltip = 'Stop';
-                }
-            }
         }
     }
 

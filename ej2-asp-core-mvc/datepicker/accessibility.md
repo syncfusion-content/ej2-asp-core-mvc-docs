@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Datepicker Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## DatePicker | Syncfusion
+description: Syncfusion ##Platform_Name## DatePicker meets WCAG 2.2 AA, Section 508, and ADA accessibility standards with full keyboard and screen reader support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## DatePicker
 
 The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 
@@ -19,7 +19,7 @@ The accessibility compliance for the DatePicker component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | AA |
 | [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -27,7 +27,6 @@ The accessibility compliance for the DatePicker component is outlined below.
 | [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 
 <style>
     .post .post-content img {
@@ -43,9 +42,9 @@ The accessibility compliance for the DatePicker component is outlined below.
 
 ## WAI-ARIA attributes
 
-DatePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
+DatePicker provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
 
-To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
+To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility) section.
 
 It helps to provide information about the widget for assistive technology to the disabled person in screen reader.
 
@@ -57,7 +56,7 @@ It helps to provide information about the widget for assistive technology to the
 
 ## Keyboard Interaction
 
-You can use the following keys to interact with the DatePicker. The control implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+You can use the following keys to interact with the DatePicker. The control implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 It supports the below list of shortcut keys.
 
@@ -102,7 +101,8 @@ N> To focus the DatePicker control use the `alt+t` keys.
 {% include code-snippet/datepicker/accessibility/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -111,7 +111,9 @@ N> To focus the DatePicker control use the `alt+t` keys.
 {% include code-snippet/datepicker/accessibility/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
+
 {% endif %}
 
 ## Ensuring accessibility

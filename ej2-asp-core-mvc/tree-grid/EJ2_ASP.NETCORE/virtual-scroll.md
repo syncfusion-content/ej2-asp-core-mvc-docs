@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual in Syncfusion ##Platform_Name## Tree Grid Component
-description: Learn here all about Virtual in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid Virtual Scrolling | Syncfusion
+description: Learn how to use virtual scrolling in ##Platform_Name## TreeGrid for large datasets, including row and column virtualization and performance optimization.
 platform: ej2-asp-core-mvc
 control: Virtual
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tree Grid Virtualization
+# Virtual Scrolling in ##Platform_Name## TreeGrid
 
 TreeGrid allows you to load large amount of data without performance degradation.
 
@@ -129,4 +129,4 @@ N> Column's `Width` is required for column virtualization. If column's width is 
     8. Autofill
     9. Column chooser
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

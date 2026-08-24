@@ -1,0 +1,53 @@
+
+<ejs-accumulationchart id="accPieTH"    legendRender="legendRender"
+                       load="load" title="Mobile Browser Statistics">
+    <!-- Legend with base template -->
+    <e-accumulationchart-legendsettings visible="true" template="#legendTemplate"></e-accumulationchart-legendsettings>
+
+    <!-- Tooltip -->
+    <e-accumulationchart-tooltipsettings enable="true"></e-accumulationchart-tooltipsettings>
+
+    <!-- Series -->
+    <e-accumulation-series-collection>
+        <e-accumulation-series type="@Syncfusion.EJ2.Charts.AccumulationType.Pie"
+                               dataSource="ViewBag.StatisticsDetails"
+                               xName="Browser"
+                               yName="Users"
+                               pointColorMapping="Color">
+            <e-accumulationseries-datalabel visible="true"
+                                            format="{value}M"
+                                            position="@Syncfusion.EJ2.Charts.AccumulationLabelPosition.Outside">
+            </e-accumulationseries-datalabel>
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
+
+
+<script>
+  function legendRender(args) {
+      var chart = document.getElementById('accPieTH').ej2_instances[0];
+      var points = (chart.series && chart.series[0] && chart.series[0].points) ? chart.series[0].points : [];
+      var pt = points.find(function (p) { return p.x === args.text; });
+
+      var browser = args.text;
+      var users = (pt && pt.y != null) ? pt.y : '';
+      var color = args.fill;
+
+      var tpl = args.template;
+      tpl = tpl
+        .replace('color:;', 'color:' + color + ';')
+        .replace('<span class="browser-name"', '<span class="browser-name">' + browser)
+        .replace('<span class="browser-info"', '<span class="browser-info"><b>' + users + ' million</b> people use ' + browser);
+
+      args.template = tpl;
+  }
+  function load(args) {
+        var chart = document.getElementById('accPie').ej2_instances[0];
+        chart.legendSettings.template = `<div style="display:flex; align-items:center; gap:8px; padding:4px 0; line-height:1.1;">
+      <div style="display:flex; flex-direction:column;">
+          <span class="browser-name" style="font-weight:800; font-size:14px; color:;"></span>
+          <span class="browser-info" style="font-size:12px; opacity:0.85;"></span>
+      </div>
+   </div>`;
+        }
+</script>

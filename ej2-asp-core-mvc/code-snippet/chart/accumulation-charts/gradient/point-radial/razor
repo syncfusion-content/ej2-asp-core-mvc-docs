@@ -1,0 +1,42 @@
+@(Html.EJS().AccumulationChart("container")
+    .Series(sr =>
+    {
+        sr.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+          .XName("Category")
+          .YName("Share")
+          .Name("Share by Category")
+          .DataLabel(dl => dl
+              .Visible(true)
+              .Name("DataLabel")
+              .Position(Syncfusion.EJ2.Charts.AccumulationLabelPosition.Outside)
+              .ConnectorStyle(cs => cs.Length("10px"))
+              .Font(f => f.Size("12px"))
+          )
+          .Border(br => br.Color("#FFFFFF").Width(2))
+          .DataSource(ViewBag.dataSource).Add();
+    })
+    .PointRender("pointRender")
+    .LegendSettings(leg => leg.Visible(true).Position(Syncfusion.EJ2.Charts.LegendPosition.Right))
+    .Tooltip(tp => tp.Enable(true))
+    .EnableSmartLabels(true)
+    .Title("Orders by Category")
+    .Render()
+)
+
+<script>
+    var baseColors = ["#0072B2", "#E69F00", "#009E73", "#D55E00", "#CC79A7", "#56B4E9", "#F0E442", "#999999", "#7F3C8D"];
+    function pointRender(args) {
+        var idx = args.point.index;
+        var base = baseColors[idx % baseColors.length];
+        args.radialGradient = {
+            cx: 0.35, cy: 0.35, fx: 0.35, fy: 0.35, r: 0.85,
+            gradientColorStop: [
+                { offset: 0,   color: base, opacity: 1    },
+                { offset: 20,  color: base, opacity: 0.98 },
+                { offset: 50,  color: base, opacity: 0.96 },
+                { offset: 80,  color: base, opacity: 0.94 },
+                { offset: 100, color: base, opacity: 0.92 }
+            ]
+        };
+    }
+</script>

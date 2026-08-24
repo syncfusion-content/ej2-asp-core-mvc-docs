@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## List Box Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## ListBox | Syncfusion
+description: Syncfusion ##Platform_Name## ListBox follows WCAG 2.2, Section 508, and ADA standards with WAI-ARIA roles, keyboard navigation, and right-to-left support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in List Box Component
+# Accessibility in ##Platform_Name## ListBox
 
 The ListBox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -16,7 +16,7 @@ The accessibility compliance for the ListBox component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | AA |
 | [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -24,7 +24,6 @@ The accessibility compliance for the ListBox component is outlined below.
 | Mobile Device Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Axe-core](https://www.npmjs.com/package/axe-core) Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 
 <style>
     .post .post-content img {
@@ -55,15 +54,16 @@ The ListBox component followed the [keyboard interaction](https://www.w3.org/WAI
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Up arrow</kbd> | Moves focus to the previous option. |
-| <kbd>Down arrow</kbd> | Moves focus to the next option. |
+| <kbd>Up arrow</kbd> | Moves focus to and selects the previous item. |
+| <kbd>Down arrow</kbd> | Moves focus to and selects the next item. |
 | <kbd>Home</kbd> | Moves focus to first option. |
 | <kbd>End</kbd> | Moves focus to last option. |
 | <kbd>Space</kbd> | Changes the selection state of the focused option. |
 | <kbd>Ctrl + A</kbd> | Selects all options in the list. |
 | <kbd>Ctrl + Shift + Home</kbd> | Selects the focused option and all options up to the first option. |
 | <kbd>Ctrl + Shift + End</kbd> | Selects the focused option and all options down to the last option. |
-| <kbd>Ctrl + (Up or Down)</kbd> | Press Ctrl key with up / down arrow or mouse to select multiple items. |
+| <kbd>Ctrl + Up</kbd> | Moves focus to the previous item. |
+| <kbd>Ctrl + Down</kbd> | Moves focus to the next item. |
 
 ## Ensuring accessibility
 

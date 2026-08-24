@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## File Manager | Syncfusion
+description: Learn about the accessibility support in the ##Platform_Name## File Manager, including WCAG 2.2, Section 508, ADA, and WAI-ARIA role compliance.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## File Manager
 
 The File Manager control has been designed with keeping the `WAI-ARIA` specifications in mind, and applying the `WAI-ARIA` roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support, which makes navigation easy for people who use assistive technologies (AT) or for users who completely rely on keyboard navigation.
 

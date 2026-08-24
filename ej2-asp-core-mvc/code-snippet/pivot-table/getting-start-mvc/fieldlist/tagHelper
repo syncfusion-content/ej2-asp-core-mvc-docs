@@ -1,3 +1,4 @@
+@page
 @{
     List<PivotData> pivotData = new List<PivotData>();
     pivotData.Add(new PivotData { Sold = 31, Amount = 52824, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q1" });

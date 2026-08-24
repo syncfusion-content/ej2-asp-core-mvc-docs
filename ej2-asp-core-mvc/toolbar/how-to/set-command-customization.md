@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Set Command Customization in ##Platform_Name## Toolbar Component | Syncfusion
-description: Learn here all about Set Command Customization in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to set command customization in ##Platform_Name## Toolbar | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Toolbar commands by setting HTML attributes like ID, class, style, and role using the `htmlAttributes` property.
 platform: ej2-asp-core-mvc
 control: Set Command Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Set command customization
+# How to set command customization in ##Platform_Name## Toolbar
 
 The `htmlAttributes` property of the Toolbar item is used to set the HTML attributes ('ID', 'class', 'style' ,'role') for the commands.
 

@@ -1,4 +1,0 @@
-<ejs-diagram id="container" width="100%" height="700px" getNodeDefaults="@ViewBag.getNodeDefaults" getConnectorDefaults="@ViewBag.getConnectorDefaults">
- <e-diagram-datasourcesettings id="Name" parentId="Category" dataManager="new DataManager() { Data = (List<HierarchicalDetails>)ViewBag.Nodes }"></e-diagram-datasourcesettings>
-        <e-diagram-layout type="HierarchicalTree" horizontalSpacing="40" verticalSpacing="40" margin="ViewBag.marginValue" orientation="TopToBottom"></e-diagram-layout>
-</ejs-diagram>

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Print in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Print | Syncfusion
+description: Learn how to print ##Platform_Name## Data Grid content with print customization options, formatted layouts, and print-ready output for grid data.
 platform: ej2-asp-core-mvc
 control: Print
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print in ASP.NET MVC Grid component
+# Print in ASP.NET MVC Data Grid
 
 The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to easily generate and print a representation of the grid's content for better offline accessibility and documentation. You can enable this feature using either the grid's toolbar or the programmatically available `print` method.
 
@@ -31,8 +31,8 @@ When printing a webpage, some print options, such as layout, paper size, and mar
 
 * [Chrome](https://support.google.com/chrome/answer/1069693?hl=en&visit_id=1-636335333734668335-3165046395&rd=1)
 * [Firefox](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)
-* [Safari](http://www.mintprintables.com/print-tips/adjust-margins-osx/)
-* [IE](http://www.helpteaching.com/help/print/index.htm)
+* [Safari](https://mintprintables.com/print-tips/adjust-margins-osx/)
+* [IE](https://www.helpteaching.com/help/print/index.htm)
 
 ## Print by external button
 

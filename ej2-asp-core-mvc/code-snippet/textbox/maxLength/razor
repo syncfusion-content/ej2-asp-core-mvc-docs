@@ -1,0 +1,5 @@
+<div class="control-section">
+    <div class="control_wrapper textbox-control-section">
+        @Html.EJS().TextBox("default").Placeholder("Enter your comments").MaxLength(20).Render()
+    </div>
+</div>

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: File Operations in ##Platform_Name## Syncfusion File Manager Control | Syncfusion
-description: Learn here all about File Operations in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: File Operations in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to perform file operations in the ##Platform_Name## File Manager, including read, create, delete, rename, copy, move, upload, and download.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: File Operations
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# File Operations in File Manager Control
+# File Operations in ##Platform_Name## File Manager
 
 The File Manager control is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the File Manager control. Additionally, previewing of image files is provided in the File Manager control.
 
@@ -804,7 +804,7 @@ The following table represents the request parameters of *download* operations.
             permission:null,
             _fm_created:"2019-07-22T12:15:45.081Z",
             _fm_modified:"2019-07-22T12:15:45.097Z",
-            _fm_imageUrl:"https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage?path=/1.png",
+            _fm_imageUrl:"https://physical-service.syncfusion.com/api/FileManager/GetImage?path=/1.png",
             _fm_imageAttr:
             {
                 alt:"1.png"
@@ -1027,3 +1027,83 @@ The following table provides the default context menu item and the corresponding
         </td>
     </tr>
 </table>
+
+## Ajax Settings Configuration
+
+The File Manager control supports the configuration of specific AJAX endpoints to manage file operations, including uploads, downloads, and image retrieval.
+
+### File Download support
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+To perform the download operation, initialize the `DownloadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager control.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/file-download-url/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To perform the download operation, initialize the `DownloadUrl` property in a [AjaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager control.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/file-download-url/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+### File Upload support
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+To perform the upload operation, initialize the `UploadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager Control.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/file-upload-url/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To perform the upload operation, initialize the [UploadUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManagerAjaxSettings.html#Syncfusion_EJ2_FileManager_FileManagerAjaxSettings_UploadUrl) property in a [AjaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager Control.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/file-upload-url/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+### Image Preview support
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+To perform the image preview support in the File Manager control, need to initialize the `GetImageUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager control.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/image-preview/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![File Manager Sample](images/getimage.png)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To perform the image preview support in the File Manager control, need to initialize the [GetImageUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManagerAjaxSettings.html#Syncfusion_EJ2_FileManager_FileManagerAjaxSettings_GetImageUrl) property in a [AjaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager control.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/image-preview/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![File Manager Sample](images/getimage.png)
+
+{% endif %}

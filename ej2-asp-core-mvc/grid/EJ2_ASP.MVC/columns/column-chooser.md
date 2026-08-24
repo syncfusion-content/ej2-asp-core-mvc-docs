@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Chooser in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Column Chooser in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## Grid Column Chooser | Syncfusion
+description: Learn how to show, hide, and manage column visibility in ##Platform_Name## Data Grid using the Column Chooser for a customizable view.
 platform: ej2-asp-core-mvc
 control: Column Chooser
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column chooser in ASP.NET MVC Grid component
+# Column Chooser in ASP.NET MVC Data Grid
 
 The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [ShowColumnChooser](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) property as **true**.
 
@@ -24,6 +24,23 @@ The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</su
 ![Column chooser](../images/column-chooser/Colum-chooser.png)
 
 > The column chooser dialog displays the header text of each column by default. If the header text is not defined for a column, the corresponding column field name is displayed instead.
+
+## Column chooser modes
+ 
+The Grid column chooser supports two modes, `Default` and `Immediate`. In `Default` mode, column visibility changes are applied only after clicking the "OK" button in the column chooser dialog. In `Immediate` mode, column visibility changes are applied automatically when columns are checked or unchecked through the checkboxes in the column chooser.
+ 
+The following example enables immediate mode by setting the `columnChooserSettings.mode` property to `Immediate`:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/Columnchooser-immediate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
+{% include code-snippet/grid/columns/Columnchooser-immediate/columnchooser.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+> The `columnChooserSettings.immediateModeDelay` property can be used to control how quickly visibility changes are applied in immediate mode. This property specifies the delay interval, in milliseconds, before the update is executed. The default value is `0`, which applies changes immediately.
 
 ## Hide column in column chooser dialog
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar items in ##Platform_Name## AI AssistView Control | Syncfusion
-description: Checkout and learn about Toolbar items in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Toolbar Items in ##Platform_Name## AI AssistView | Syncfusion®
+description: Checkout and learn about Toolbar Items in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Toolbar items
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Toolbar items in ##Platform_Name## AI AssistView control
+# Toolbar Items in ##Platform_Name## AI AssistView
 
 You can render the AI AssistView toolbar items by using the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewToolbarSettings_Items) property in the [ToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewToolbarSettings.html), [ResponseToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewResponseToolbarSettings.html), [PromptToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewPromptToolbarSettings.html) & `FooterToolbarSettings` properties.
 
@@ -359,6 +359,46 @@ The [ItemClicked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.In
 {% endhighlight %}
 {% highlight c# tabtitle="ResponseItemClick.cs" %}
 {% include code-snippet/ai-assistview/toolbar-items/responseItemClick/responseItemClick.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Regenerate responses
+
+The AI AssistView allows users to `regenerate` responses to request a new response for the same prompt. The navigation buttons with `previous` and `next` buttons are rendered along with a response index indicator (e.g., `1 / 3`) allowing users to navigate between all regenerated responses for the prompt.
+
+> The navigation UI appears automatically once more than one response is available for a prompt either regenerated or preloaded using the `RegeneratedResponses` property in the [Prompts](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Prompts) collection.
+
+#### Adding regenerate item
+
+You can enable the regenerate button by adding the `e-assist-regenerate` icon to the `ResponseToolbarSettings` property.
+
+#### Adding regenerated response
+
+When regenerated, it triggers the [PromptRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptRequest) event with the existing prompt, enabling you to call your preferred AI service again and update the response using the `addPromptResponse` method.
+
+In the following example, AI AssistView control rendered with the built-in `regenerate` toolbar item in the response toolbar.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/toolbar-items/regenerate-response/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RegenerateResponse.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/regenerate-response/regenerate-responsemvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+#### Pre-loading regenerated responses
+
+You can use the `RegeneratedResponses` property in the [Prompts](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Prompts) collection to pre-load multiple responses for a prompt at the initial render, without requiring the user to trigger the regenerate action. Users can navigate between the pre-loaded responses using the `previous` and `next` buttons in the response navigation UI.
+
+In the following example, the `RegeneratedResponses` property is used to pre-load multiple responses for a prompt.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/toolbar-items/regenerate-preload/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RegeneratePreload.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/regenerate-preload/regenerate-preloadmvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 

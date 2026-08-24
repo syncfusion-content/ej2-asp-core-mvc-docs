@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Calendar Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Calendar | Syncfusion
+description: Add the Syncfusion ##Platform_Name## Calendar to a project by installing the Syncfusion.EJ2.MVC5 NuGet package.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Calendar Control
+# Getting Started with ##Platform_Name## Calendar
 
-This section briefly explains about how to include [ASP.NET MVC Calendar](https://www.syncfusion.com/aspnet-mvc-ui-controls/calendar) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Calendar](https://www.syncfusion.com/aspnet-mvc-ui-controls/calendar) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Calendar](https:
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -95,13 +95,13 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Calend
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Calendar control will be rendered in the default web browser.
 
-![ASP.NET MVC Calendar Control](images/calendar-control.png)
+![ASP.NET MVC Calendar Control](images/calendar-control.webp)
 
 ## Setting the value within min and max dates
 
 After rendering a simple Calendar control by following the above steps, configure the Calendar to set a value within a specific range using its value, min, and max properties.
 
-Here the Calendar allows you to select a date within the range from 5th to 27th of this month.
+Here, the Calendar allows selecting a date within the range from the 5th to the 27th of this month.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -109,7 +109,7 @@ Here the Calendar allows you to select a date within the range from 5th to 27th 
 {% endhighlight %}
 {% endtabs %}
 
-![Specific Min and Max Date Selection in ASP.NET MVC Calendar](images/calendar-with-min-and-max-dates.png)
+![Specific Min and Max Date Selection in ASP.NET MVC Calendar](images/calendar-with-min-and-max-dates.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Calendar/ASP.NET%20MVC%20Razor%20Examples).
 

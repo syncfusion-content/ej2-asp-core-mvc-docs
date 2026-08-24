@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## TreeView Control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## TreeView | Syncfusion
+description: Bind the Syncfusion ##Platform_Name## TreeView to local hierarchical or self-referential data, and remote sources via DataManager with on-demand lazy loading.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Data Binding in TreeView Control
+# Data Binding in ##Platform_Name## TreeView
 
-The TreeView control provides the option to load data either from local data sources or from remote data services. This can be done through the `dataSource` property that is a member of the `fields` property. The `dataSource` property supports array of JavaScript objects and [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
+The TreeView control provides the option to load data either from local data sources or from remote data services. This can be done through the `dataSource` property that is a member of the `fields` property. The `dataSource` property supports array of JavaScript objects and [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager). It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
 TreeView has `load on demand` (Lazy load) enabled by default. It reduces the bandwidth size when consuming huge data. It initially loads first-level nodes, and when a parent node is expanded, it loads the child nodes based on the `parentID/child` member.
 

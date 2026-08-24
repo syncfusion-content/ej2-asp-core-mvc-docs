@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Custom Thumbnail in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Customize Custom Thumbnail in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Customize thumbnails in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to customize thumbnails in the ##Platform_Name## File Manager by adding your own icons for file types and folders in the LargeIcons view.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Customize Custom Thumbnail
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to add custom thumbnail in File Manager
+# How to customize thumbnails in ##Platform_Name## File Manager
 
 The default appearance of the File Manager can be customized with your own icon by using the `showThumbnail` property.
 
