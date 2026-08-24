@@ -3,15 +3,14 @@ layout: post
 title: How to add nested tabs in ##Platform_Name## Tabs | Syncfusion
 description: Render nested Syncfusion ##Platform_Name## Tabs by adding a Tab element inside the parent Tab's `content` property and initializing it in a selected event handler.
 platform: ej2-asp-core-mvc
-control: Add Nested Tabs
+control: Tab
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Add nested Tabs in ##Platform_Name## Tab control
 
-# How to add nested tabs in ##Platform_Name## Tabs
-
-Tab supports to render the nested level of Tabs by using `content` property. You can add the nested Tab element inside the parent Tab `content` property. To render the nested Tab, initialize the component using the id of Tab from a selected event handler.
+Tab supports nested levels of Tabs through its `content` property. You can add the nested Tab element inside the parent Tab `content` property. Render the nested Tab by initializing the control with the nested `<ejs-tab>` element's id from the parent Tab's [selected](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.navigations.tab.html#Syncfusion_EJ2_Navigations_Tab_Selected) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
