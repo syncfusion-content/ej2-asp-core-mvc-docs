@@ -57,5 +57,5 @@ The Dialog content can be customized through the [`content`](https://help.syncfu
 
 ## See Also
 
-* [How to add an icon to dialog buttons](./how-to/add-an-icons-to-dialog-buttons)
-* [How to customize the dialog appearance](./how-to/customize-the-dialog-appearance)
+* [How to add an icon to Dialog buttons](./how-to/add-an-icons-to-dialog-buttons)
+* [How to customize the Dialog appearance](./how-to/customize-the-dialog-appearance)

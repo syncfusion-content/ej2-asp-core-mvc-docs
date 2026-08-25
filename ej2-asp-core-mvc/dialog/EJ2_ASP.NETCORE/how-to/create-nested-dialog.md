@@ -20,7 +20,7 @@ Create two div elements with ids `#dialog` and `#innerDialog` in your CSHTML vie
 
 **Step 2**:
 
-Initialize both Dialogs in your CSHTML markup. One dialog is initialized as the parent Dialog, and the other as the child Dialog with its [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.popups.dialog.html#Syncfusion_EJ2_Popups_Dialog_Target) property configured.
+Initialize both Dialogs in your CSHTML markup. One Dialog is initialized as the parent Dialog, and the other as the child Dialog with its [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.popups.dialog.html#Syncfusion_EJ2_Popups_Dialog_Target) property configured.
 
 **Step 3**:
 

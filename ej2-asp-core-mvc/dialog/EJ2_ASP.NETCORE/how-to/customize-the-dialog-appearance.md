@@ -10,7 +10,7 @@ documentation: ug
 
 # How to customize the Dialog appearance in ##Platform_Name## Dialog
 
-You can customize the Dialog appearance by providing a dialog template through the [`e-content-template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ContentTemplate) tag.
+You can customize the Dialog appearance by providing a Dialog template through the [`e-content-template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ContentTemplate) tag.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
