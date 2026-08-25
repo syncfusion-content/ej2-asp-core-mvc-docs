@@ -11,22 +11,22 @@
         {
         Panel.Id("Panel0").SizeX(1).SizeY(1).Row(0).Col(0)
         .Content("<div class='content'>0</div>")
-        .mobilePanelHeight (0.25)
+       .MobilePanelHeight(0.25)
         .Add();
     
         Panel.Id("Panel1").SizeX(1).SizeY(1).Row(0).Col(1)
         .Content("<div class='content'>1</div>")
-        .mobilePanelHeight (0.5)
+       .MobilePanelHeight(0.5)
         .Add();
     
         Panel.Id("Panel2").SizeX(1).SizeY(1).Row(1).Col(0)
         .Content("<div class='content'>2</div>")
-        .mobilePanelHeight (0.75)
+       .MobilePanelHeight(0.75)
         .Add();
     
         Panel.Id("Panel3").SizeX(1).SizeY(1).Row(2).Col(0)
         .Content("<div class='content'>3</div>")
-        .mobilePanelHeight (1)
+       .MobilePanelHeight(1)
         .Add();
         })
         .Render()
