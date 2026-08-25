@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Add Custom Aggregation in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to add a custom aggregation type to the ASP.NET MVC Pivot Table's aggregate menu via the AggregateCellInfo event.
+title: How to add a custom aggregation in ASP.NET MVC Pivot Table | Syncfusion
+description: Step-by-step example showing how to add a custom aggregation type to the menu in the ASP.NET MVC Pivot Table through the aggregation menu.
 platform: ej2-asp-core-mvc
 control: Add custom aggregation type to the menu
 publishingplatform: ##Platform_Name## 
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD009 -->
 
-# How to Add Custom Aggregation in ASP.NET MVC Pivot Table
+# How to add a custom aggregation in ASP.NET MVC Pivot Table
 
 The ASP.NET MVC Pivot Table component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 
@@ -19,6 +19,17 @@ The ASP.NET MVC Pivot Table component allows you to extend its functionality by 
 You can use the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event to add your own custom aggregate types to the pivot table's aggregate menu. This event fires after the pivot table has been fully rendered, making it the perfect spot to modify the component's UI elements.
 
 In the following example, we have added two custom aggregation types **CustomAggregateType 1** (which calculates a weighted average) and **CustomAggregateType 2** (which calculates the percentage of total) to the aggregate menu.
+
+The calculation logic for these custom aggregation types is implemented using the [`AggregateCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event. This event provides parameters including:
+- `fieldName` - Holds the current cell's field name.
+- `row` - Holds the current cell's row value.
+- `column` - Holds the current cell's column value.
+- `value` - Holds the value of the current cell.
+- `cellSets` - Holds raw data for the aggregated value cell.
+- `rowCellType` - Holds the row cell type value.
+- `columnCellType` - Holds the column cell type value.
+- `aggregateType` - Holds the aggregate type of the cell.
+- `skipFormatting` - Boolean property that allows skipping formatting if applied.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,17 +1,16 @@
 ---
 layout: post
 title: Tooltip in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table displays contextual tooltips on value cells via the ShowTooltip property, including row and column header info on hover.
+description: Learn how the ASP.NET MVC Pivot Table shows contextual tooltips on value cells and headers, with the showTooltip property to enable or disable them.
 platform: ej2-asp-core-mvc
 control: Tool Tip
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Tooltip in ASP.NET MVC Pivot Table
 
-The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowTooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
+The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowTooltip) property to **true** or **false**. By default, the tooltip is enabled in the pivot table and shows the cell value with its row and column headers.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,7 +35,7 @@ The tooltip displays contextual information when users hover over value cells in
 {% endtabs %}
 {% endif %}
 
-## Tooltip Template
+## Tooltip template
 
 Users can customize the tooltip in the Pivot Table component by setting the [`TooltipTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_TooltipTemplate) property with their own HTML elements. This property accepts either an HTML string or an element ID. Use the following placeholders within the HTML to display dynamic values:
 
@@ -48,7 +47,7 @@ Users can customize the tooltip in the Pivot Table component by setting the [`To
 - `${aggregateType}` – Specifies the aggregate type of the selected value cell.
 - `${value}` – Displays the formatted value of the selected value cell.
 
-Tooltip customization can be applied to both pivot table and pivot chart together, or configured individually. To customize the Pivot Table tooltip, define the HTML template via the [`TooltipTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_TooltipTemplate) property as described above. To set a custom tooltip for the Pivot Chart only, use the `template` property within the `tooltip` object of the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) property.
+You can apply tooltip customization to both the Pivot Table and Pivot Chart together, or to either one individually. To customize the Pivot Table tooltip, define the HTML template via the [`TooltipTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_TooltipTemplate) property as described above. To set a custom tooltip for the Pivot Chart only, use the `template` property within the `tooltip` object of the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) property.
 
 The example below shows how to define the Pivot Table tooltip template in `index.html` and assign it to the [`TooltipTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_TooltipTemplate) property. The Pivot Chart tooltip is customized by setting an HTML string in the `tooltip` property of [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
 

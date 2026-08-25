@@ -1,23 +1,22 @@
 ---
 layout: post
 title: Server-Side Pivot Engine in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table connects to a server-side pivot engine via Syncfusion.Pivot.Engine and a Web API to reduce network traffic.
+description: Learn how the ASP.NET MVC Pivot Table coffloads aggregation, filtering, sorting, and grouping to a server-side engine for processing very large datasets.
 platform: ej2-asp-core-mvc
 control: Server Side Pivot Engine
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Server-side pivot engine in ASP.NET MVC Pivot Table
 
-> By default, the Pivot Table processes and displays data using its built-in engine with the given data source. Alternatively, you can use a server-side pivot engine to connect external data to the Pivot Table, which is especially useful when working with large datasets. This option is applicable only for relational data sources.
-
-# Server-Side Pivot Engine in ASP.NET MVC Pivot Table
+By default, the Pivot Table processes and displays data using its built-in engine with the given data source. You can also use a server-side pivot engine to connect external data to the Pivot Table, which is especially useful when working with large datasets. This option is applicable only for relational data sources.
 
 This section explains how to use the Syncfusion<sup style="font-size:70%">&reg;</sup> assembly [`Syncfusion.Pivot.Engine`](https://www.nuget.org/packages/Syncfusion.Pivot.Engine/) in a server-side application. The server-side engine performs operations such as aggregation, filtering, sorting, and grouping on the server. Only the information required for the Pivot Table viewport is sent to the client through a web service (Web API), instead of transferring the entire data source. This approach helps reduce network traffic and improves Pivot Table rendering performance when working with large data sets. It works efficiently with the virtual scrolling option and supports all existing features in the Pivot Table.
 
-## Quick steps to render the Pivot Table by using the server-side Pivot Engine
+## Quick steps to render the Pivot Table with the server-side engine
 
-### Download and installing Server-side Pivot Engine
+### Download and install the server-side pivot engine
 
 1. Download the ASP.NET Core-based standalone Pivot Table [application](https://github.com/SyncfusionExamples/server-side-pivot-engine-for-pivot-table) from the GitHub repository. This application includes all necessary files to set up and use the server-side Pivot Engine.
 
@@ -38,7 +37,7 @@ This section explains how to connect the Pivot Table to the server-side Pivot En
 Run the **PivotController** application (downloaded and installed in the previous section) in Visual Studio. This hosts the server-side Pivot Engine on a local server, typically at a URL like `https://localhost:44350/api/pivot/post`. Ensure the application is running before proceeding.
 
 2. **Configure the Pivot Table for server-side mode**  
-In your ASP.NET MVC application, update the Pivot Table’s settings to connect to the server-side Pivot Engine. Set the [`mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_RenderMode) property in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to `Server`. Then, specify the URL of the running **PivotController** application in the [`URL`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property.
+In your ASP.NET MVC application, update the Pivot Table’s settings to connect to the server-side Pivot Engine. Set the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_RenderMode) property in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to `Server`. Then, specify the URL of the running **PivotController** application in the [`URL`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property.
 
 ```html
 
@@ -128,7 +127,6 @@ public class PivotViewData
         return VirtualData;
     }
 }
-
 ```
 
 To bind this data source, set the model type **PivotViewData** to the **TValue** parameter of the **PivotEngine** class, as shown below:
@@ -148,12 +146,10 @@ public async Task<object> GetData(FetchData param)
             cacheEntry.SetSize(1);
             cacheEntry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddMinutes(60);
 
-            // Here bind the collection type data source.
+            // Bind the collection-based data source here.
             return new DataSource.PivotViewData().GetVirtualData();
-
         });
 }
-
 ```
 
 Finally, configure the Pivot Table by setting the appropriate report in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to match the data source, as shown below:
@@ -213,7 +209,7 @@ public class PivotJSONData
 To use this data with the Pivot Table, assign the model type **PivotJSONData** to the **TValue** parameter of the **PivotEngine** class.
 
 ```csharp
-private PivotEngine<DataSource.PivotJSONData> PivotEngine = new PivotEngine<DataSource. PivotJSONData>();
+private PivotEngine<DataSource.PivotJSONData> PivotEngine = new PivotEngine<DataSource.PivotJSONData>();
 ```
 
 Next, retrieve the JSON data in the **GetData** method of the **PivotController.cs** file. This example shows how to load the **sales-analysis.json** file from the local server:
@@ -227,7 +223,7 @@ public async Task<object> GetData(FetchData param)
             cacheEntry.SetSize(1);
             cacheEntry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddMinutes(60);
 
-            // Here bind JSON type data source from the sales-analysis.json file.
+            // Bind JSON data source from the sales-analysis.json file.
             return new DataSource.PivotJSONData().ReadJSONData(_hostingEnvironment.ContentRootPath + "\\DataSource\\sales-analysis.json");
         });
 }
@@ -274,11 +270,10 @@ public async Task<object> GetData(FetchData param)
         cacheEntry.SetSize(1);
         cacheEntry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddMinutes(60);
 
-        // Here bind JSON type data source from remote server.
+        // Bind JSON data source from a remote server.
         return new DataSource.PivotJSONData().ReadJSONData("http://cdn.syncfusion.com/data/sales-analysis.json");
     });
 }
-
 ```
 
 #### CSV
@@ -305,7 +300,6 @@ public class PivotCSVData
     public double TotalCost { get; set; }
     public double TotalProfit { get; set; }
 
-
     public List<string[]> ReadCSVData(string url)
     {
         List<string[]> data = new List<string[]>();
@@ -315,7 +309,6 @@ public class PivotCSVData
             while ((line = reader.ReadLine()) != null)
             {
                 line = line.Trim();
-
                 if (!string.IsNullOrWhiteSpace(line))
                 {
                     data.Add(line.Split(','));
@@ -325,13 +318,12 @@ public class PivotCSVData
         }
     }
 }
-
 ```
 
 To bind the CSV data, set the **PivotCSVData** model as the **TValue** type for the **PivotEngine** class:
 
 ```csharp
-private PivotEngine<DataSource.PivotCSVData> PivotEngine = new PivotEngine<DataSource. PivotCSVData>();
+private PivotEngine<DataSource.PivotCSVData> PivotEngine = new PivotEngine<DataSource.PivotCSVData>();
 ```
 
 Next, retrieve the CSV data in the **GetData** method of the **PivotController.cs** file:
@@ -344,12 +336,10 @@ public async Task<object> GetData(FetchData param)
         {
             cacheEntry.SetSize(1);
             cacheEntry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddMinutes(60);
-
-            // Here bind CSV type data source from sales.csv file.
+            // Bind CSV data from the local sales.csv file.
             return new DataSource.PivotCSVData().ReadCSVData(_hostingEnvironment.ContentRootPath + "\\DataSource\\sales.csv");
         });
 }
-
 ```
 
 Finally, configure the Pivot Table with the appropriate report settings based on the CSV data source:
@@ -392,11 +382,10 @@ public async Task<object> GetData(FetchData param)
             cacheEntry.SetSize(1);
             cacheEntry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddMinutes(60);
 
-            // Here bind CSV type data source from remote server.
+            // Bind the CSV-type data source from remote server.
             return new DataSource.PivotCSVData().ReadCSVData("http://cdn.syncfusion.com/data/sales-analysis.csv");
         });
 }
-
 ```
 
 #### DataTable
@@ -427,7 +416,6 @@ public class BusinessObjectsDataView
         return dt;
     }
 }
-
 ```
 
 To bind the data source, set the model type **PivotViewData** to the **TValue** property of the **PivotEngine** class, as shown below:
@@ -447,11 +435,10 @@ public async Task<object> GetData(FetchData param)
             cacheEntry.SetSize(1);
             cacheEntry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddMinutes(60);
 
-            // Here bind the DataTable.
+            // Bind the DataTable here.
             return new DataSource.BusinessObjectsDataView().GetDataTable();
         });
 }
-
 ```
 
 Finally, configure the Pivot Table by setting the appropriate report using the [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) property. Below is an example configuration that connects to the server-side data source:
@@ -509,7 +496,6 @@ public class PivotExpandoData
         return Orders;
     }
 }
-
 ```
 
 To use this data source with the server-side pivot engine, specify **ExpandoObject** as the model type for `TValue` in the `PivotEngine` class:
@@ -529,11 +515,10 @@ public async Task<object> GetData(FetchData param)
             cacheEntry.SetSize(1);
             cacheEntry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddMinutes(60);
 
-            // Here returns ExpandoObject type data source.
+            // Returns ExpandoObject type data source.
             return new DataSource.PivotExpandoData().GetExpandoData();
         });
 }
-
 ```
 
 Finally, configure the `dataSourceSettings` property for the Pivot Table on the client side. Set the appropriate fields for rows, columns, and values to match the ExpandoObject properties:
@@ -602,7 +587,6 @@ public class PivotDynamicData
         }
     }
 }
-
 ```
 
 To use this data source in the server-side code, assign the **PivotDynamicData** class to the **TValue** of the `PivotEngine` class:
@@ -673,7 +657,6 @@ public async Task<EngineProperties> GetEngine(FetchData param)
             return await PivotEngine.GetEngine(param);
         });
 }
-
 ```
 
 Engine properties are saved in RAM using a unique ID (GUID) that is received from the client-side source code. This GUID is randomly generated and changes if the user refreshes the page or opens the Pivot Table in a new browser tab or window. Because of this, each GUID in the memory cache holds information unique to that session, allowing each Pivot Table instance to work independently.
@@ -691,7 +674,7 @@ The memory cache is configured to expire after 60 minutes to help free up RAM. I
 
 ## Excel Export
 
-The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Once the API is set, the user needs to call the  `excelExport` method to export the pivot table to Excel by clicking an external button.
+The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport)as **true**. Once the API is set, the user needs to call the  `excelExport` method to export the pivot table to Excel by clicking an external button.
 
 > The pivot table component can be exported to Excel format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
@@ -724,11 +707,10 @@ The server-side engine seamlessly supports Excel export functionality, enabling 
 </script>
 ```
 
-
 To enable export functionality in a server-side controller, initialize the **ExcelExport** class to handle export file generation.
 
 ```csharp
- private ExcelExport excelExport = new ExcelExport();
+    private ExcelExport excelExport = new ExcelExport();
 ```
 
 Then, based on the **Action** parameter (**onExcelExport** or **onCsvExport**), invoke the **ExportToExcel** method in the **Post** method of the **PivotController.cs** file.
@@ -824,12 +806,11 @@ The Excel export provides an option to include header and footer content for the
 </script>
 ```
 
-
 ![Add header and footer while exporting](./images/add-header-and-footer-while-exporting.png)
 
 ## CSV Export
 
-The Excel export allows pivot table data to be exported in **CSV** file format as well. To enable CSV export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Once the API is set, the user needs to call the `csvExport` method to export the pivot table to CSV by clicking an external button.
+The Excel export allows pivot table data to be exported in **CSV** file format as well. To enable CSV export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property as **true**. Once the API is set, the user needs to call the `csvExport` method to export the pivot table to CSV by clicking an external button.
 
 > The pivot table component can be exported to CSV format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
@@ -998,7 +979,6 @@ Then, based on the **Action** parameter (**onPivotExcelExport** or **onPivotCsvE
             }
         }
 ```
-
 
 ![Export as Pivot](./images/export-as-pivot.png)
 

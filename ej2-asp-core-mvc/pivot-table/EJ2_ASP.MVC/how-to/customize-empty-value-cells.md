@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to Customize Empty Cells in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to set custom text in empty ASP.NET MVC Pivot Table value cells via the EmptyCellsTextContent property under DataSourceSettings.
+title: How to customize empty value cells in ASP.NET MVC Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize empty value cells in the ASP.NET MVC Pivot Table with custom text and styling.
 platform: ej2-asp-core-mvc
 control: Customize Empty Value Cells
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Customize Empty Value Cells in ASP.NET MVC Pivot Table
+# How to customize empty value cells in ASP.NET MVC Pivot Table
 
-When working with pivot table, certain combinations of row and column headers may not have corresponding data values, resulting in empty cells. The ASP.NET MVC Pivot Table component allows you to display custom text in these empty cells instead of leaving them blank, thereby improving the visual presentation and enhancing the user experience of your pivot table.
+When working with the pivot table, certain combinations of row and column headers may not have corresponding data values, resulting in empty cells. The ASP.NET MVC Pivot Table component allows you to display custom text in these empty cells instead of leaving them blank, thereby improving the visual presentation and enhancing the user experience of your pivot table.
 
 ## Configuration
 

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: How to Apply Cell Styles in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to style cells in the ASP.NET MVC Pivot Table via the QueryCellInfo and HeaderCellInfo events in GridSettings, applying CSS to values and headers.
+title: How to apply custom styles to Pivot Table cells | Syncfusion
+description: Step-by-step example showing how to apply custom styles to pivot cells in the ASP.NET MVC Pivot Table using event handlers.
 platform: ej2-asp-core-mvc
 control: Apply custom style to pivot cells 
 documentation: ug
 publishingplatform: ##Platform_Name## 
 ---
 
-# How to Apply Custom Styles to Pivot Cells in ASP.NET MVC Pivot Table
+# How to apply custom styles to Pivot Table cells in ASP.NET MVC
 
 The ASP.NET MVC Pivot Table component allows you to alter the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 
 ## Overview
 
 You can apply custom styles to different types of cells in the pivot table:
-- Use the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event in [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) to style row headers and value cells.
+- Use the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event to style row headers and value cells.
 - Use the [`HeaderCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event to style column headers.
 
 Both events are available through the [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) property of the Pivot Table component.
@@ -23,7 +23,7 @@ Both events are available through the [`PivotViewGridSettings`](https://help.syn
 ## Implementation example
 
 The following example shows how to apply styles to:
-- The column header **"Sold Amount"** under **"FY 2016"** using the [`HeaderCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event in [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) event.
+- The column header **"Sold Amount"** under **"FY 2016"** using the [`HeaderCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event.
 - The row header **"Germany"** and its aggregated values using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
 - Styles are applied by adding the **"e-custom"** CSS class to the cell elements.
 
@@ -52,4 +52,4 @@ The following example shows how to apply styles to:
 
 ![Apply custom style to pivot cells](../images/apply-custom-styles.png)
 
-N> The **dot(.)** character in **FY 2016.Sold Amount** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [`HeaderDelimiter`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter) in the [`PivotViewValueSortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html) property to any other delimiter instead of the default separator.
+N> The **dot(.)** character in **FY 2016.Sold Amount** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [`HeaderDelimiter`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter) in the [`PivotViewValueSortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html) property to any other delimiter instead of the default separator.
