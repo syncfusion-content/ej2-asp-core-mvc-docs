@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to add tooltips to ##Platform_Name## DropDownList items | Syncfusion
-description: Attach a Syncfusion Tooltip to ##Platform_Name## DropDownList items by handling the beforeRender event on the list item and showing the item's Name and Code as the tooltip content.
+description: Add a Syncfusion Tooltip to ##Platform_Name## DropDownList items via beforeRender, displaying each item's Name and Code in the tooltip.
 platform: ej2-asp-core-mvc
 control: Tooltip
 publishingplatform: ##Platform_Name##
