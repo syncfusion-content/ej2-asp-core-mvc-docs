@@ -133,7 +133,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 Add the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in the **~/Pages/Index.cshtml** file.
 
-Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files accessed by the File Manager.
+Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files accessed by the ASP.NET Core File Manager.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -288,7 +288,7 @@ namespace FileManagerProject.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-After creating a controller for the File Manager service, register it in the `Program.cs` file using:
+After creating a controller for the ASP.NET Core File Manager service, register it in the `Program.cs` file using:
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" %}
@@ -326,15 +326,15 @@ dotnet run
 
 ![File Manager getting started](images/getting-started.webp)
 
-N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
+N> The ASP.NET Core File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for ASP.NET Core File Manager service.
 
 ## See also
 
 1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 3. [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations#ajax-settings-configuration)
-4. [Getting Started with File Manager Overview ](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/user-interface#file-manager-overview)
+4. [Getting Started with ASP.NET Core File Manager Overview ](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/user-interface#file-manager-overview)
 5. [Working with File Manager Views in ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/views)
-6. [Perform File Operations in File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations)
+6. [Perform File Operations in ASP.NET Core File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations)
 7. [Uploading Files in ASP.NET Core File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/upload)
-8. [File Upload Operations in File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/customization)
+8. [File Upload Operations in ASP.NET Core File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/customization)
