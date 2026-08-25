@@ -11,27 +11,27 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## DropdownTree
 
-The Dropdown Tree control has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for users who use assistive technologies (AT) and those who completely rely on keyboard navigation.
+The DropdownTree is designed following the WAI-ARIA specifications and applies WAI-ARIA roles, states, and properties, along with keyboard support. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for users who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 
 ## ARIA attributes
 
-The Dropdown Tree control uses the `listbox` role. Each tree parent item in the popup has `group` role and each item in the popup has `treeitem` role. The following ARIA attributes are used in the Dropdown Tree control:
+The DropdownTree control uses the `listbox` role. Each tree parent item in the popup has a `group` role and each item in the popup has a `treeitem` role. The following ARIA attributes are used in the DropdownTree control:
 
-| **Properties** | **Functionalities** |
+| **ARIA Attribute** | **Description** |
 | --- | --- |
-| aria-haspopup | Indicates whether the Dropdown Tree input element has a popup list or not. |
+| aria-haspopup | Indicates whether the DropdownTree input element has a popup list or not. |
 | aria-expanded | Indicates whether the popup list is expanded or not. |
 | aria-selected | Indicates the selected option. |
-| aria-readonly | Indicates the readonly state of the Dropdown Tree element. |
-| aria-disabled | Indicates whether the Dropdown Tree component is in the disabled state or not. |
-| aria-activedescendent | This attribute holds the ID of the active list item to focus its descendant child element. |
+| aria-readonly | Indicates the readonly state of the DropdownTree element. |
+| aria-disabled | Indicates whether the DropdownTree component is in the disabled state or not. |
+| aria-activedescendant | This attribute holds the ID of the active list item to focus its descendant child element. |
 | aria-owns | This attribute contains the ID of the popup list to indicate popup as a child element. |
 
 ## Keyboard interaction
 
-The Dropdown Tree functionalities can be interactive when keyboard shortcuts are used.
+The DropdownTree functionalities can be used interactively with keyboard shortcuts.
 
-Dropdown Tree supports the following keyboard shortcuts.
+DropdownTree supports the following keyboard shortcuts.
 
 | Interaction Keys | Description |
 |------|---------|
