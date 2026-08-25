@@ -1,15 +1,14 @@
 ---
 layout: post
-title: How to create wizard using tab in ##Platform_Name## Tabs | Syncfusion
+title: How to create wizard using Tab in ##Platform_Name## Tabs | Syncfusion
 description: Build a multi-step reservation wizard using Syncfusion ##Platform_Name## Tabs with integrated DropDownList, DatePicker, Grid, and validation between each step.
 platform: ej2-asp-core-mvc
-control: Tab
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# How to create wizard using tab in ##Platform_Name## Tabs
+# How to create wizard using Tab in ##Platform_Name## Tabs
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -23,7 +22,7 @@ Tab items can be disabled during initial control rendering by passing a Boolean 
 
 In the following wizard example, each Tab is integrated with required controls to complete the reservation. Each field is provided with validation for all mandatory options to proceed to next tabs. Using Tab item's template property the controls are added into content.
 
-Create the following contents for each tab in the wizard.
+Create the following contents for each Tab in the wizard.
 1. **Search tab:**
    Created with [`DropDownList`] to select the source, destination and type of ticket. A [`DatePicker`] for choosing the date of journey.
 2. **Train tab:**
@@ -33,7 +32,7 @@ Create the following contents for each tab in the wizard.
 4. **Payment tab:**
    Calculate the ticket cost based on location, passenger count and ticket type. Generate data for Grid with passenger details, train number and ticket cost summary.
 
-You can go back on each tab using buttons available in it and tabs are disabled to navigate through tab header click actions. Once you end the wizard all the data is cleared and wizard goes back to the starting tab.
+You can go back on each Tab using buttons available in it and tabs are disabled to navigate through Tab header click actions. Once you end the wizard all the data is cleared and wizard goes back to the starting tab.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
