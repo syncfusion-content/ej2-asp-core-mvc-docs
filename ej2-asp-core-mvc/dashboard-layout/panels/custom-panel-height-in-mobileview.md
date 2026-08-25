@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mobile Panel Height ##Platform_Name## Dashboard Layout| Syncfusion
-description: Set custom panel heights for mobile view in Syncfusion ##Platform_Name## Dashboard Layout using the mobilePanelHeight property for optimized responsive layouts.
+title: Mobile Panel Height in ##Platform_Name## Dashboard Layout | Syncfusion
+description: Set custom per-panel heights in mobile view in Syncfusion ##Platform_Name## Dashboard Layout using the mobilePanelHeight property for finer height control.
 platform: ej2-asp-core-mvc
 control: Setting Header Of Panels
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Custom Panel Height in Mobile View in ##Platform_Name## Dashboard Layout
+# Mobile Panel Height in ##Platform_Name## Dashboard Layout
 
 The Dashboard Layout component supports responsive mobile layout through the [`mediaQuery`](../../api/dashboard-layout#mediaquery) property. However, in mobile view, all panels use a uniform height calculation based on the [`sizeY`](../../api/dashboard-layout/panelModel#sizey) property. The [`mobilePanelHeight`](../../api/dashboard-layout/panelModel#mobilepanelheight) property allows specifying a custom height for individual panels in mobile view, enabling better optimization of responsive layouts.
 
