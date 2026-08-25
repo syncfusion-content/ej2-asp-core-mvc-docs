@@ -3,15 +3,14 @@ layout: post
 title: Add min and max buttons to ##Platform_Name## Dialog header | Syncfusion
 description: Add minimize and maximize custom buttons to the Syncfusion ##Platform_Name## Dialog header using the headerTemplate property and button click events.
 platform: ej2-asp-core-mvc
-control: dialog
+control: Dialog
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Add dialog min and max buttons
+# Add dialog min and max buttons to ##Platform_Name## Dialog header
 
-##Platform_Name## Dialog allows end users to either minimize or maximize the Dialog component. You can add minimize and maximize custom buttons near the close icon in the Dialog header using the `headerTemplate` property and handle the actions in the button click events, as shown in the following sample.
-
+The ##Platform_Name## Dialog supports adding custom minimize and maximize buttons to the Dialog header. You can add these buttons near the close icon in the Dialog header by using the `headerTemplate` property and handling the actions in the button click events, as shown in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

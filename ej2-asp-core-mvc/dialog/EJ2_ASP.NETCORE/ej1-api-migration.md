@@ -19,7 +19,7 @@ This article describes the API migration process of Dialog control from Essentia
 | ---------- | ----------------------- | ----------------------- |
 | Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> <br/>`<ej-dialog id="dialog" allow-keyboard-navigation="true"></ej-dialog>` | No separate Property for enable/disable keyboard navigation.  Its enabled by default. |
 | Localization | **Property** : locale<br/> <br/>`<ej-dialog id="dialog" locale="es-ES"></ej-dialog>` | **Property** : locale<br/> <br/>`<ejs-dialog id="dialog" locale="es-ES"></ejs-dialog>` |
-| Right to left | **Property:** enableRTL<br/> <br/>`<ej-dialog id="dialog" enable-rtl="true"></ej-dialog>` | **Property:** enableRTL<br/> <br/>`<ejs-dialog id="dialog" enableRtl="true"></ejs-dialog>` |
+| Right to left | **Property** : enableRTL<br/> <br/>`<ej-dialog id="dialog" enable-rtl="true"></ej-dialog>` | **Property** : enableRTL<br/> <br/>`<ejs-dialog id="dialog" enableRtl="true"></ejs-dialog>` |
 
 ## Header
 
@@ -34,14 +34,14 @@ This article describes the API migration process of Dialog control from Essentia
 | Event triggers when expanding the collapsed dialog | **Event:** expand<br/> <br/>`<ej-dialog id="dialog" expand="expandAction"></ej-dialog>`<br/><br/>`function expandAction(args) {}`<br/> | Not Applicable |
 | Event triggers when collapsing the expanded dialog | **Event:** collapse<br/> <br/>`<ej-dialog id="dialog" collapse="collapseAction"></ej-dialog>`<br/><br/>`function collapseAction(args) {}`<br/> | Not Applicable |
 | Pin | **Property** : actionButtons<br/> <br/>`@{List<string> icon = new List<string>() { "pin" }; }`<br/><br/>`<ej-dialog id="dialog" action-buttons="icon">`<br/> | Not Applicable |
-| Header visibility | **Property:** showHeader<br/> <br/>`<ej-dialog id="dialog" show-header="true"></ej-dialog>` | Not Applicable |
+| Header visibility | **Property** : showHeader<br/> <br/>`<ej-dialog id="dialog" show-header="true"></ej-dialog>` | Not Applicable |
 | Close on escape key press | **Property** : closeOnEscape<br/> <br/>`<ej-dialog id="dialog" closeOnEscape="true"></ej-dialog>` | **Property** : closeOnEscape<br/> <br/>`<ejs-dialog id="dialog" closeOnEscape="true"></ejs-dialog>` |
 
 ## Footer
 
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
-| Footer Content | **Property** :footerTemplateId<br/> <br/>`<ej-dialog id="dialog" footer-templateId="sample"></ej-dialog>` | **Property:** footerTemplate<br/> <br/>`<ejs-dialog id="dialog" footerTemplate="<button>Submit</button>"></ejs-dialog>` |
+| Footer Content | **Property** :footerTemplateId<br/> <br/>`<ej-dialog id="dialog" footer-templateId="sample"></ej-dialog>` | **Property** : footerTemplate<br/> <br/>`<ejs-dialog id="dialog" footerTemplate="<button>Submit</button>"></ejs-dialog>` |
 | Footer action buttons | Not applicable | **Property** : buttons<br/> <br/>`<ejs-dialog id="dialog"><e-dialog-buttons><e-dialog-dialogbutton buttonModel="ViewBag.defaultbutton"></e-dialog-dialogbutton></e-dialog-buttons><ejs-dialog>`<br/><br/>`public IActionResult DefaultFunctionalities() { {content = "Ok"} return View(); }`<br/> |
 | Footer visibility | **Property** : showFooter<br/> <br/>`<ej-dialog id="dialog" show-footer="true"></ej-dialog>` | Not Applicable |
 
@@ -61,8 +61,8 @@ This article describes the API migration process of Dialog control from Essentia
 |------------|-------------------------|-------------------------|
 | Enabling Animation | **Property** : enableAnimation<br/> <br/>`<ej-dialog id="dialog" enable-animation="true" ></ej-dialog>`| Not Applicable |
 | Animation effects | **Property** : animation.show.effect<br/> <br/>`<ej-dialog id="dialog"></ej-dialog>`<br/><br/>`<e-animation><e-show effect="Slide" /></e-animation>`<br/> | **Property** : animationSettings.effect<br/><br/> `@{ var defaultanimation = new Syncfusion.EJ2.Popups.DialogAnimationSettings { Effect = Syncfusion.EJ2.Popups.DialogEffect.Zoom }; }`<br/><br/>`<ejs-dialog id="dialog" animationSettings="defaultanimation"><ejs-dialog>`<br/> |
-| Animation duration | **Property:** animation.show.duration<br/> <br/>`<ej-dialog id="dialog"></ej-dialog>`<br/><br/>`<e-animation><e-show duration="500" effect="Slide" /></e-animation>`<br/> | **Property** : animationSettings.duration<br/> <br/> `@{ var defaultanimation = new Syncfusion.EJ2.Popups.DialogAnimationSettings { Effect = Syncfusion.EJ2.Popups.DialogEffect.Zoom, Duration = Syncfusion.EJ2.Popups.DialogEffect.Duration(500)}; }`<br/><br/>`<ejs-dialog id="dialog" animationSettings="defaultanimation"><ejs-dialog>`<br/> |
-| Animation delay | Not applicable | **Property:** animationSettings.delay<br/> <br/> `@{ var defaultanimation = new Syncfusion.EJ2.Popups.DialogAnimationSettings { Effect = Syncfusion.EJ2.Popups.DialogEffect.Zoom, Duration = Syncfusion.EJ2.Popups.DialogEffect.Duration(500), Delay = Syncfusion.EJ2.Popups.DialogEffect.Duration(500)}; }`<br/><br/>`<ejs-dialog id="dialog" animationSettings="defaultanimation"><ejs-dialog>`<br/> |
+| Animation duration | **Property** : animation.show.duration<br/> <br/>`<ej-dialog id="dialog"></ej-dialog>`<br/><br/>`<e-animation><e-show duration="500" effect="Slide" /></e-animation>`<br/> | **Property** : animationSettings.duration<br/> <br/> `@{ var defaultanimation = new Syncfusion.EJ2.Popups.DialogAnimationSettings { Effect = Syncfusion.EJ2.Popups.DialogEffect.Zoom, Duration = Syncfusion.EJ2.Popups.DialogEffect.Duration(500)}; }`<br/><br/>`<ejs-dialog id="dialog" animationSettings="defaultanimation"><ejs-dialog>`<br/> |
+| Animation delay | Not applicable | **Property** : animationSettings.delay<br/> <br/> `@{ var defaultanimation = new Syncfusion.EJ2.Popups.DialogAnimationSettings { Effect = Syncfusion.EJ2.Popups.DialogEffect.Zoom, Duration = Syncfusion.EJ2.Popups.DialogEffect.Duration(500), Delay = Syncfusion.EJ2.Popups.DialogEffect.Duration(500)}; }`<br/><br/>`<ejs-dialog id="dialog" animationSettings="defaultanimation"><ejs-dialog>`<br/> |
 
 ## Draggable and resizing
 
@@ -95,7 +95,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
-| Render dialog in visible/hidden state | **Property:** showOnInit<br/> <br/>`<ej-dialog id="dialog" show-onInit="true" ></ej-dialog>` | **Property:** visible<br/> <br/>`<ejs-dialog id="dialog" visible="false"></ejs-dialog>` |
+| Render dialog in visible/hidden state | **Property** : showOnInit<br/> <br/>`<ej-dialog id="dialog" show-onInit="true" ></ej-dialog>` | **Property** : visible<br/> <br/>`<ejs-dialog id="dialog" visible="false"></ejs-dialog>` |
 
 ## Dialog mode
 
@@ -114,7 +114,7 @@ This article describes the API migration process of Dialog control from Essentia
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Enable/Disable the control | **Property** : enabled <br/><br/> `<ej-dialog id="dialog" enabled="false" ></ej-dialog>` | Not Applicable |
-| Enable/ Disable page scrolling | **Property:** backgroundScroll<br/> <br/>`<ej-dialog id="dialog" background-scroll="false" ></ej-dialog>` | No separate Property for disabling page scroll. By default, scrolling prevented for modal dialog |
+| Enable/ Disable page scrolling | **Property** : backgroundScroll<br/> <br/>`<ej-dialog id="dialog" background-scroll="false" ></ej-dialog>` | No separate Property for disabling page scroll. By default, scrolling prevented for modal dialog |
 
 ## State maintenance
 
@@ -127,17 +127,17 @@ This article describes the API migration process of Dialog control from Essentia
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Adjusting Height | **Property** : height <br/><br/>`<ej-dialog id="dialog" height="400" ></ej-dialog>` | **Property** : height <br/><br/> `<ejs-dialog id="dialog" height="50%"></ejs-dialog>` |
-| Adjusting width | **Property:** width <br/><br/>`<ej-dialog id="dialog" width="400" ></ej-dialog>` | **Property** : width <br/><br/> `<ejs-dialog id="dialog" width="50%"></ejs-dialog>` |
-| Adding custom class | **Property:** cssClass <br/><br/>`<ej-dialog id="dialog" css-class="custom-class" ></ej-dialog>` | **Property**: cssClass <br/><br/> `<ejs-dialog id="dialog" cssClass="custom-class"></ejs-dialog>` |
-| Adding zIndex | **Property:** zIndex <br/><br/> `<ej-dialog id="dialog" zindex="2000" ></ej-dialog>` | **Property:** zIndex <br/><br/> `<ejs-dialog id="dialog" zindex="2000"></ejs-dialog>` |
-| Maximum height | **Property:** maxHeight  <br/><br/> `<ej-dialog id="dialog" max-height="600" ></ej-dialog>` | Not Applicable |
-| Maximum width | **Property:** maxWidth <br/><br/> `<ej-dialog id="dialog" max-width="600" ></ej-dialog>` | Not Applicable |
-| Minimum height | **Property:** minHeight <br/><br/> `<ej-dialog id="dialog" min-height="600" ></ej-dialog>` | Not Applicable |
-| Minimum width | **Property:** minWidth <br/><br/> `<ej-dialog id="dialog" min-width="300" ></ej-dialog>` | Not Applicable |
-| Adding html attributes | **Property:** htmlAttributes <br/><br/> `<ej-dialog id="dialog" html-attributes="htmlAttributes"></ej-dialog>`<br/><br/>`function htmlAttributes(): object { class: 'my-class' }` <br/> | Not Applicable |
-| Custom icon in the header | **Property:** faviconCSS <br/><br/> `<ej-dialog id="dialog" faviconCSS="custom-icon" ></ej-dialog>` | Not Applicable |
-| Rounded corner appearance | **Property:** showRoundedCorner <br/><br/> `<ej-dialog id="dialog" show-rounded-corner="true" ></ej-dialog>` | Not Applicable |
-| Make control flexible for mobile view | **Property:** isResponsive <br/><br/> `<ej-dialog id="dialog" is-responsive="true" ></ej-dialog>` | Not Applicable |
+| Adjusting width | **Property** : width <br/><br/>`<ej-dialog id="dialog" width="400" ></ej-dialog>` | **Property** : width <br/><br/> `<ejs-dialog id="dialog" width="50%"></ejs-dialog>` |
+| Adding custom class | **Property** : cssClass <br/><br/>`<ej-dialog id="dialog" css-class="custom-class" ></ej-dialog>` | **Property**: cssClass <br/><br/> `<ejs-dialog id="dialog" cssClass="custom-class"></ejs-dialog>` |
+| Adding zIndex | **Property** : zIndex <br/><br/> `<ej-dialog id="dialog" zindex="2000" ></ej-dialog>` | **Property** : zIndex <br/><br/> `<ejs-dialog id="dialog" zindex="2000"></ejs-dialog>` |
+| Maximum height | **Property** : maxHeight  <br/><br/> `<ej-dialog id="dialog" max-height="600" ></ej-dialog>` | Not Applicable |
+| Maximum width | **Property** : maxWidth <br/><br/> `<ej-dialog id="dialog" max-width="600" ></ej-dialog>` | Not Applicable |
+| Minimum height | **Property** : minHeight <br/><br/> `<ej-dialog id="dialog" min-height="600" ></ej-dialog>` | Not Applicable |
+| Minimum width | **Property** : minWidth <br/><br/> `<ej-dialog id="dialog" min-width="300" ></ej-dialog>` | Not Applicable |
+| Adding html attributes | **Property** : htmlAttributes <br/><br/> `<ej-dialog id="dialog" html-attributes="htmlAttributes"></ej-dialog>`<br/><br/>`function htmlAttributes(): object { class: 'my-class' }` <br/> | Not Applicable |
+| Custom icon in the header | **Property** : faviconCSS <br/><br/> `<ej-dialog id="dialog" faviconCSS="custom-icon" ></ej-dialog>` | Not Applicable |
+| Rounded corner appearance | **Property** : showRoundedCorner <br/><br/> `<ej-dialog id="dialog" show-rounded-corner="true" ></ej-dialog>` | Not Applicable |
+| Make control flexible for mobile view | **Property** : isResponsive <br/><br/> `<ej-dialog id="dialog" is-responsive="true" ></ej-dialog>` | Not Applicable |
 | Close the Dialog | **Method:** close() <br/><br/> `<ej-dialog id="dialog"></ej-dialog>` <br/>$('#dialog').ejDialog('close') | **Method** : hide() <br/> <br/>`<ejs-dialog id="dialog"></ejs-dialog>`<br/><br/>`var dialogObj= document.getElementById("dialog").ej2Instances[0]; dialogObj.hide();` <br/> |
 | Event triggers before the dialog closes | **Event:** beforeClose <br/> <br/>`<ej-dialog id="dialog" before-close="onBeforeClose"></ej-dialog>`<br/><br/>`function onBeforeClose(args) {}` <br/> | **Event:** beforeClose <br/> <br/>`<ejs-dialog id="dialog" beforeClose="onBeforeClose"></ejs-dialog>`<br/><br/>`function onBeforeClose(args) {}`<br/> |
 | Event triggers when the dialog closes | **Event:** close <br/> <br/>`<ej-dialog id="dialog" close="onClose"></ej-dialog>`<br/><br/>`function onClose(args) {}` <br/> | **Event:** close <br/><br/>`<ejs-dialog id="dialog" close="onClose"></ejs-dialog>`<br/><br/>`function onClose(args) {}` <br/> |
