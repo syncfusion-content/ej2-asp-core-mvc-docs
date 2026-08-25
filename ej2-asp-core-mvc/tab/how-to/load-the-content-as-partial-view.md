@@ -3,17 +3,16 @@ layout: post
 title: How to load content as partial view in ##Platform_Name## Tabs | Syncfusion
 description: Load Syncfusion ##Platform_Name## Tabs content as partial views by combining dynamic item creation with AJAX or EJ2 DataManager for embedded controls.
 platform: ej2-asp-core-mvc
-control: Load The Content As Partial View
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # How to load content as partial view in ##Platform_Name## Tabs
 
-Since Tab is a Navigation control, it doesn't have support to load any content directly or using any DataAdaptor. But it is provided with the items support. So to load the content as partial view, you would need to make use of the AJAX or EJ2 Datamanager as described in our [How-To](./load-tab-with-data-source) section help document.
+Since Tabs is a navigation control, it does not have built-in support to load content directly or via any DataManager adaptor. However, it supports adding items dynamically. To load content as a partial view, you can use AJAX or the EJ2 DataManager. For more information, refer to the [How to load Tab with data source](./load-tab-with-data-source) documentation.
 
-In the below demo, we have explained on how to create the Tab items dynamically and then to load the other Syncfusion<sup style="font-size:70%">&reg;</sup> controls in it from partial views.
+In the below demo, we have explained on how to create the Tab items dynamically and then to load the other ##Platform_Name## controls in it from partial views.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

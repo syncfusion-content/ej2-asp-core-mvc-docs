@@ -3,12 +3,12 @@ layout: post
 title: Responsive Modes in ##Platform_Name## Tabs | Syncfusion
 description: Render the Syncfusion ##Platform_Name## Tabs in scrollable or popup overflow modes when items exceed the viewable area width.
 platform: ej2-asp-core-mvc
-control: Tab
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Responsive Modes in ##Platform_Name## Tab control
+# Responsive Modes in ##Platform_Name## Tabs control
 
 The following section explains how the Tab is rendered when its width exceeds the viewable area or particularly in a given width. The available modes are as follows:
 

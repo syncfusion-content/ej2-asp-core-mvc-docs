@@ -3,7 +3,7 @@ layout: post
 title: Content Render Modes in ##Platform_Name## Tabs | Syncfusion
 description: Render Syncfusion ##Platform_Name## Tabs content using on-demand lazy loading, dynamic, or initial rendering modes for optimal performance.
 platform: ej2-asp-core-mvc
-control: Tab
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
