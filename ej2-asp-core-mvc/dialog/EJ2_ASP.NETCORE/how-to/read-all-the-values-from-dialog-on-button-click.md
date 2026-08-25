@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Read dialog values on button click in ##Platform_Name## | Syncfusion
+title: Read Dialog values on button click in ##Platform_Name## | Syncfusion
 description: Read all input values from the Syncfusion ##Platform_Name## Dialog by binding an action handler to the footer buttons via the Buttons property.
 platform: ej2-asp-core-mvc
-control: Read All The Values From Dialog On Button Click
+control: Read All the Values from Dialog on Button Click
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # How to read Dialog values on button click in ##Platform_Name## Dialog
 
-You can read the dialog element values by binding the action handler to the footer buttons. The [`buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property provides the options to bind events to the action buttons. For detailed information about buttons, refer to the [`footer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) section. In the below sample, value of input elements within the dialog has been checked in the footer button click event and send the values as the content of confirmation dialog.
+You can read the Dialog element values by binding the action handler to the footer buttons. The [`buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property provides the options to bind events to the action buttons. For detailed information about buttons, refer to the [`footer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) section. In the below sample, the values of input elements within the Dialog are checked in the footer button click event and sent as the content of a confirmation Dialog.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
