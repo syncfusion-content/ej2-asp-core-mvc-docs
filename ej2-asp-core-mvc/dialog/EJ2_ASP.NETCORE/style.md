@@ -8,14 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Style in ##Platform_Name## Dialog
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
 ## Customizing the dialog header
 
-Use the following CSS to customize the dialog header properties.
+Use the following CSS to customize the Dialog header properties.
 
 ```CSS
 .e-dialog .e-dlg-header {
@@ -27,7 +26,7 @@ Use the following CSS to customize the dialog header properties.
 
 ## Customizing the dialog content
 
-Use the following CSS to customize the dialog content properties.
+Use the following CSS to customize the Dialog content properties.
 
 ```CSS
 .e-dialog .e-dlg-content {
@@ -38,7 +37,7 @@ Use the following CSS to customize the dialog content properties.
 }
 ```
 
-## Customizing modal dialog overlay
+## Customizing the modal dialog overlay
 
 Use the following CSS to customize the modal dialog overlay.
 
@@ -65,7 +64,7 @@ Use the following CSS to customize the dialog resize icon.
 }
 ```
 
-The above CSS demonstration uses the font awesome icon.
+The CSS above uses the Font Awesome icon.
 
 ## Customizing the dialog close button
 

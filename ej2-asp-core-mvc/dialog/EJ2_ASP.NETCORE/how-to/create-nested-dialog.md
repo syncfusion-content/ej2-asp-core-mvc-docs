@@ -8,22 +8,23 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # How to create nested Dialog in ##Platform_Name## Dialog
 
-A Dialog can be nested within another Dialog. The below sample contains parent and child Dialog (inner Dialog).
+A Dialog can be nested within another Dialog. The following sample demonstrates a parent Dialog with a child Dialog (inner Dialog) contained within it.
+
+## Implementation Steps
 
 **Step 1**:
 
-Create two div elements with id `#dialog` and `#innerDialog`.
+Create two div elements with ids `#dialog` and `#innerDialog` in your CSHTML view file.
 
 **Step 2**:
 
-Initialize the Dialog as mentioned in the below sample.
+Initialize both Dialogs in your CSHTML markup. One dialog is initialized as the parent Dialog, and the other as the child Dialog with its [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.popups.dialog.html#Syncfusion_EJ2_Popups_Dialog_Target) property configured.
 
 **Step 3**:
 
-Set the inner Dialog target as `#dialog`.
+Set the inner Dialog's [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.popups.dialog.html#Syncfusion_EJ2_Popups_Dialog_Target) property to `"#dialog"` (the ID of the parent Dialog element). This constrains the child Dialog within the parent's boundaries.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
