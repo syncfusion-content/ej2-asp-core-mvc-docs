@@ -11,11 +11,11 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## TreeView
 
-The TreeView control has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation.
+The [TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) control has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 
 ## ARIA attributes
 
-The TreeView control uses the `tree` role, and each tree parent node has a `group` role where each node has `treeitem` role. The following ARIA attributes are used in TreeView:
+The TreeView control uses the `tree` role, and each tree parent node has a `group` role where each node has the `treeitem` role. The following ARIA attributes are used in TreeView:
 
 | **Properties** | **Functionalities** |
 | --- | --- |
