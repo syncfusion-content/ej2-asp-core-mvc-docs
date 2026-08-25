@@ -43,8 +43,8 @@ namespace WebApplication1.Controllers
             items.Add(new ListItems() { Text = "Aberdeen", Value = "103" });
             items.Add(new ListItems() { Text = "Alexandria", Value = "102" });
             items.Add(new ListItems() { Text = "Albany", Value = "101" });
-            items.Add(new ListItems() { Text = "Beacon ", Value = "104" });
-            items.Add(new ListItems() { Text = "Brisbane ", Value = "105" });
+            items.Add(new ListItems() { Text = "Beacon", Value = "104" });
+            items.Add(new ListItems() { Text = "Brisbane", Value = "105" });
             return items;
         }
     }

@@ -33,7 +33,7 @@ This article describes the API migration process of  DropDownList component from
 | **Server filtering** | **Property**: *EnableServerFiltering* <br/>`@Html.EJ().DropDownList("selectCompany").EnableServerFiltering(true)` | **Property**: *AllowFiltering* <br/>`@Html.EJS().DropDownList("customers").AllowFiltering(true).Render()` |
 | **Filter type** | **Property**: *FilterType* <br/>`@Html.EJ().DropDownList("selectCompany").FilterType(SearchFilterType.StartsWith)` | <https://ej2.syncfusion.com/aspnetmvc/dropdownlist/filtering#/fluent2> |
 | **No Records Template** |	**Not Applicable** | **Property**: *NoRecordsTemplate* <br/> `@Html.EJS().DropDownList("games").NoRecordsTemplate("<span class='norecord'> NO DATA AVAILABLE</span>").Render()` |
-| **Filter Bar watermarktext** | **Not Applicable** | **Property**: *FilterBarPlaceholder* <br/>`@Html.EJS().DropDownList("customers").FilterBarPlaceholder(true).Render()` |
+| **Filter Bar Watermarktext** | **Not Applicable** | **Property**: *FilterBarPlaceholder* <br/>`@Html.EJS().DropDownList("customers").FilterBarPlaceholder("search").Render()` |
 | **Ignore casing and diacritics** | **Not Applicable** | **Property**: *IgnoreAccent*<br/>`@Html.EJS().DropDownList("customers").IgnoreAccent(true).Render()` |
 | **Incremental search** | **Property**: *EnableIncrementalSearch*<br/>`@Html.EJ().DropDownList("selectCompany").EnableIncrementalSearch(true)` | **By default it is true** |
 | **Case sensitivity** | **Property**: *CaseSensitiveSearch*<br/>`@Html.EJ().DropDownList("selectCompany").CaseSensitiveSearch(true)` | <https://ej2.syncfusion.com/aspnetmvc/dropdownlist/filtering#/fluent2> |
@@ -45,11 +45,11 @@ This article describes the API migration process of  DropDownList component from
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *Template* <br/>`@Html.EJ().DropDownList("selectCompany").Template("<div><img class='imgId' src='../Content/Employees/${Image}.png' alt='employee'/> <div class='ename'> ${Text} </div><div class='role'> ${Role} </div><div class='cont'> ${Country} </div></div>")` | **Property**: *ItemTemplate*<br/>`@Html.EJS().DropDownList("customers").ItemTemplate("@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")").Render()` |
 | **Group Template** | **Not Applicable** | **Property**: *GroupTemplate* <br/>`@Html.EJS().DropDownList("customers").GroupTemplate("@Html.Raw("<strong>${City}</strong>")").Render()` |
-| **ValueTemplate** | **Not Applicable** | **Property**: *ValueTemplate* <br/>`@Html.EJS().DropDownList("customers").ValueTemplate(""@Html.Raw("<span>${FirstName} - ${City}</span>")").Render()` |
+| **ValueTemplate** | **Not Applicable** | **Property**: *ValueTemplate* <br/>`@Html.EJS().DropDownList("customers").ValueTemplate("@Html.Raw("<span>${FirstName} - ${City}</span>")").Render()` |
 | **Header Template** | **Property**: *HeaderTemplate* <br/>`@Html.EJ().DropDownList("selectCompany").HeaderTemplate("<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>").Render()` | **Property**: *HeaderTemplate* <br/>`@Html.EJS().DropDownList("customers").HeaderTemplate("@Html.Raw("<span class='head'><span class='name'>Name</span><span class='city'>City</span></span>")").Render()` |
-| **FooterTemplate** | **Not applicable** |	**Property**: *FooterTemplate* <br/>`@Html.EJS().DropDownList("customers").FooterTemplate("@Html.Raw("<span class='foot'> Total list items: " + 8 + "</span>")").Render()` |
-| **No records Template** | **Not applicable** | **Property**: *NoRecordsTemplate* <br/>`@Html.EJS().DropDownList("customers").NoRecordsTemplate("@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")").Render()` |
-| **Action failure Template** | **Not applicable** | **Property**: *ActionFailureTemplate* <br/>`@Html.EJS().DropDownList("customers").ActionFailureTemplate("@Html.Raw("<span class='action-failure'> Data fetch get fails</span>")").Render()` |
+| **FooterTemplate** | **Not Applicable** |	**Property**: *FooterTemplate* <br/>`@Html.EJS().DropDownList("customers").FooterTemplate("@Html.Raw("<span class='foot'> Total list items: " + 8 + "</span>")").Render()` |
+| **No records Template** | **Not Applicable** | **Property**: *NoRecordsTemplate* <br/>`@Html.EJS().DropDownList("customers").NoRecordsTemplate("@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")").Render()` |
+| **Action failure Template** | **Not Applicable** | **Property**: *ActionFailureTemplate* <br/>`@Html.EJS().DropDownList("customers").ActionFailureTemplate("@Html.Raw("<span class='action-failure'> Data fetch get fails</span>")").Render()` |
 
 ## Virtual Scrolling
 
@@ -68,7 +68,7 @@ This article describes the API migration process of  DropDownList component from
 
 | Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
-| **Default** |	**Property**: *EnableSorting* <br/>`@Html.EJ().DropDownList("customers").EnableSorting(true)` | **Enabled only on using sortorder **Property**** |
+| **Default** |	**Property**: *EnableSorting* <br/>`@Html.EJ().DropDownList("customers").EnableSorting(true)` | **Enabled by setting the sortorder **Property**** |
 | **Order of sorting** | **Property**: *SortOrder* <br/>`@Html.EJ().DropDownList("customers").SortOrder("SortOrder.Descending")` | **Property**: *SortOrder* <br/>`@Html.EJS().DropDownList("customers").SortOrder("Ascending").Render()`|
 
 ## Popup
@@ -113,7 +113,7 @@ This article describes the API migration process of  DropDownList component from
 
 | Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
-| **Globalization** | **Property**: *Locale*<br/>`@Html.EJ().DropDownList("customers").Locale("fr-FE")` | **Property**: *Locale*<br/>`@Html.EJS().DropDownList("customers").Locale("fr-FE").Render()` |
+| **Globalization** | **Property**: *Locale*<br/>`@Html.EJ().DropDownList("customers").Locale("fr-FR")` | **Property**: *Locale*<br/>`@Html.EJS().DropDownList("customers").Locale("fr-FR").Render()` |
 | **Rtl support** |	**Property**: *EnableRtl*<br/>`@Html.EJ().DropDownList("customers").EnableRtl(true)` | **Property**: *EnableRtl*<br/>`@Html.EJS().DropDownList("customers").EnableRtl(true).Render()` |
 
 ## Miscellaneous
@@ -132,7 +132,7 @@ This article describes the API migration process of  DropDownList component from
 
 | Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
-| Selecting particular index | **Property**: *selected-index*<br/>`@Html.EJ().DropDownList("dropdown").Index(3)` | **Property**: *index*<br/>`@Html.EJS().DropDownList("customers").Index(3).Render()` |
+| **Selecting particular index**| **Property**: *selected-index*<br/>`@Html.EJ().DropDownList("dropdown").Index(3)` | **Property**: *index*<br/>`@Html.EJS().DropDownList("customers").Index(3).Render()` |
 | **Selecting particular value** | **Property**: *value*<br/>`@Html.EJ().DropDownList("dropdown").Value(3)` | **Property**: *value*<br/>`@Html.EJS().DropDownList("customers").Value(3).Render()` |
 | **Selecting particular text** | **Property**: *text* <br/>`@Html.EJ().DropDownList("dropdown").Text("data")` | **Property**: *text*<br/>`@Html.EJS().DropDownList("customers").Text("data").Render()` |
 | **Target id** | **Property**: *targetId* <br/>`@Html.EJ().DropDownList("dropdown").TargetId("data")` | **Not applicable** |
@@ -143,19 +143,19 @@ This article describes the API migration process of  DropDownList component from
 | **Get selected value** | **Method**: *getSelectedItem*<br/>`@Html.EJ().DropDownList("dropdown")`<br/> <br/>$('#dropdown').ejDropDownList('getSelectedItem') | **Not applicable** |
 | **Get selected text** | **Method**: *getSelectedText*<br/>`@Html.EJ().DropDownList("dropdown")`<br/> <br/>$('#dropdown').ejDropDownList('getSelectedText') | **Property**: *text*<br/>`@Html.EJS().DropDownList("customers").Text("data").Render()` |
 | **Select event** | **Event**: *select*<br/>`@Html.EJ().DropDownList("dropdown").select("onSelect")` | **Event**: *select*<br/>`@Html.EJS().DropDownList("customers").Select("onSelect").Render()` |
-| **Addition of Html attributes** | **Property**: *html-attributes*<br/>`@Html.EJS().DropDownList("customers").HtmlAttributes((IDictionary<string,object>)ViewData["HtmlAttrData"])` | **Property**: *htmlAttributes*<br/>`@Html.EJS().DropDownList("customers").HtmlAttributes(@ViewBag.data).Render()` |
+| **Addition of Html attributes** | **Property**: *html-attributes*<br/>`@Html.EJS().DropDownList("customers").HtmlAttributes((IDictionary<string,object>)ViewData["HtmlAttrData"])` | **Property**: *HtmlAttributes*<br/>`@Html.EJS().DropDownList("customers").HtmlAttributes(@ViewBag.data).Render()` |
 
 ## Common
 
 | Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
-| **Adding new item** | **Method** : *addItem*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/><br/>`$('#dropdown').ejDropDownList("addItem", {text:"India"});` | **Method**: *addItem*<br/>`<ejs-dropdownlist/>`<br/> <br/>`var ddlObj = document.getElementById(dropdownlist).ej2_Instances[0];`<br/><br/>`ddlObj.addItem({Id: 'game4', Game: 'Golf'}, 2);` |
+| **Adding new item** | **Method** : *addItem*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/><br/>`$('#dropdown').ejDropDownList("addItem", {text:"India"});` | **Method**: *addItem*<br/>`<ejs-dropdownlist/>`<br/> <br/>`var ddlObj = document.getElementById("dropdownlist").ej2_Instances[0];`<br/><br/>`ddlObj.addItem({Id: 'game4', Game: 'Golf'}, 2);` |
 | **Clearing the text** | **Method** : *clearText*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/> <br/>`$('#dropdown').ejDropDownList('clearText')` | **Property**:* showClearButton*<br/>`<ejs-dropdownlist showClearButton=true/>` |
-| **Destroy the component** | **Method** : *destroy*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/><br/>`$('#dropdown').ejDropDownList('destroy')` | **Method**: *destroy*<br/>`<ejs-dropdownlist/>`<br/> <br/>`var ddlObj = document.getElementById(dropdownlist).ej2_Instances[0];`<br/><br/>`ddlObj.destroy;` |
-| **Getting the data** | **Method** : *getListData*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/><br/>`$('#dropdown').ejDropDownList('getListData')` | **Method** : *getItems*<br/>`<ejs-dropdownlist/>`<br/><br/>`var ddlObj = document.getElementById(dropdownlist).ej2_Instances[0];`<br/><br/>`ddlObj.getItems;` |
+| **Destroy the component** | **Method** : *destroy*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/><br/>`$('#dropdown').ejDropDownList('destroy')` | **Method**: *destroy*<br/>`<ejs-dropdownlist/>`<br/> <br/>`var ddlObj = document.getElementById("dropdownlist").ej2_Instances[0];`<br/><br/>`ddlObj.destroy;` |
+| **Getting the data** | **Method** : *getListData*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/><br/>`$('#dropdown').ejDropDownList('getListData')` | **Method** : *getItems*<br/>`<ejs-dropdownlist/>`<br/><br/>`var ddlObj = document.getElementById("dropdownlist").ej2_Instances[0];`<br/><br/>`ddlObj.getItems;` |
 | **Create event** | **Event**: *create*<br/>`<ej-drop-down-list create="onCreate"></ej-drop-down-list>` | **Event**: *created*<br/>`<ejs-dropdownlist created ="created" />` |
 | **Destroy event** | **Event**: *destroy*<br/>`<ej-drop-down-list destroy="ondestroy"></ej-drop-down-list>` | **Event**: *destroyed*<br/>`<ejs-dropdownlist destroyed ="destroy" />` |
-| **Cascade  event** | **Event**: *cascade*<br/>`<ej-drop-down-list cascade="cascade"></ej-drop-down-list>` |<https://ej2.syncfusion.com/demos/#/material/drop-down-list/cascading.html> |
+| **Cascade  event** | **Event**: *cascade*<br/>`<ej-drop-down-list cascade="cascade"></ej-drop-down-list>` |<https://ej2.syncfusion.com/demos/#/tailwind3/drop-down-list/cascading.html> |
 | **Change event** | **Event**: *change*<br/>`<ej-drop-down-list create="change"></ej-drop-down-list>` | **Event**: *change*<br/>`<ejs-dropdownlist change ="change" />` |
 | **Focus out event** |	**Event**: *focusOut*<br/>`<ej-drop-down-list focus-out="focus"></ej-drop-down-list>` | **Event**: *blur*<br/>`<ejs-dropdownlist blur ="blur" />` |
 | **Focus in event**| **Event**: *focusIn*<br/><br/>`<ej-drop-down-list focus-in="focus"></ej-drop-down-list>` | **Event**: *focus*<br/>`<ejs-dropdownlist focus ="onfofus" />` |

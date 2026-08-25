@@ -11,9 +11,9 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## DropDownList
 
-The DropDownList control has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The DropDownList control is designed to follow the WAI-ARIA specifications, applying `WAI-ARIA` roles, states, and properties, with full `keyboard support`. The control provides full keyboard interaction and ARIA accessibility support, making it easy for users of assistive technologies (AT) or keyboard-only navigation.
 
-The DropDownList component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The DropDownList component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the DropDownList component is outlined below.
 
@@ -42,7 +42,7 @@ The accessibility compliance for the DropDownList component is outlined below.
 
 ## WAI-ARIA attributes
 
-The DropDownList control uses the `Listbox` role, and each list item has an `option` role. The following `ARIA attributes` denotes the DropDownList state.
+The DropDownList control uses the `Listbox` role, and each list item has an `option` role. The following `ARIA attributes` denote the DropDownList state.
 
 | **Properties** | **Functionalities** |
 | --- | --- |
@@ -51,7 +51,7 @@ The DropDownList control uses the `Listbox` role, and each list item has an `opt
 | aria-selected | Indicates the selected option. |
 | aria-readonly | Indicates the readonly state of the DropDownList element. |
 | aria-disabled | Indicates whether the DropDownList control is in a disabled state or not. |
-| aria-activedescendent | This attribute holds the ID of the active list item to focus its descendant child element. |
+| aria-activedescendant | Holds the ID of the active list item used to set focus on the corresponding descendant element. |
 | aria-owns | This attribute contains the ID of the popup list to indicate popup as a child element. |
 
 ## Keyboard interaction
@@ -65,15 +65,15 @@ You can use the following key shortcuts to access the DropDownList without inter
 | <kbd>Page Down</kbd> | Scrolls down to the next page and selects the first item when popup list opens. |
 | <kbd>Page Up</kbd> | Scrolls up to the previous page and selects the first item when popup list opens. |
 | <kbd>Enter</kbd> | Selects the focused item, and when it is in an open state the popup list closes. Otherwise, toggles the popup list. |
-| <kbd>Tab</kbd> | Focuses on the next TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the control. |
-| <kbd>Shift + tab </kbd> | Focuses on the previous TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the control. |
+| <kbd>Tab</kbd> | Focuses on the next TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and retains the focus of the control. |
+| <kbd>Shift + tab</kbd> | Focuses on the previous TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and retains the focus of the control. |
 | <kbd>Alt + Down</kbd> | Opens the popup list. |
 | <kbd>Alt + Up</kbd> | Closes the popup list. |
-| <kbd>Esc(Escape)</kbd> | Closes the popup list when it is in an open state and the currently selected item remains the same. |
+| <kbd>Esc(Escape)</kbd> | Closes the popup list when open; the current selection is preserved. |
 | <kbd>Home</kbd> | Selects the first item. |
 | <kbd>End</kbd> | Selects the last item. |
 
-N> In the below sample, focus the DropDownList control using <kbd>alt+t</kbd> keys.
+N> In the following sample, focus the DropDownList control using the <kbd>alt+t</kbd> key combination.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

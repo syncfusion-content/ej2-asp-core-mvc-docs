@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to remove items from ##Platform_Name## DropDownList | Syncfusion
-description: Remove a Syncfusion ##Platform_Name## DropDownList item at any index using the removeItem method with an optional success and failure callback handler.
+description: Removes the item at the given index from the DropDownList and supports optional success and failure callback handlers.
 platform: ej2-asp-core-mvc
 control: Remove Item
 publishingplatform: ##Platform_Name##
