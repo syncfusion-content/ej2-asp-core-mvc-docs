@@ -8,37 +8,36 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Animation in ##Platform_Name## Dialog
 
-The Dialog can be animated during the open and close actions. Also, user can customize animation's [`delay`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Delay), [`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Duration) and [`effect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Effect).
+The Dialog can be animated during the open and close actions. Users can also customize the animation's [`delay`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Delay), [`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Duration), and [`effect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Effect).
 
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td>
 delay</td><td>
-The Dialog animation will start with the mentioned delay</td></tr>
+The Dialog animation starts after the specified delay.</td></tr>
 <tr>
 <td>
 duration</td><td>
-Specifies the animation duration to complete with one animation cycle</td></tr>
+Specifies the animation duration to complete one animation cycle.</td></tr>
 <tr>
 <td>
 effect</td><td>
-Specifies the animation effects of Dialog open and close actions effect.
+Specifies the animation effect for the Dialog open and close actions.
 <br /><br />
 List of supported animation effects:
 <br />
 'Fade' | 'FadeZoom' | 'FlipLeftDown' | 'FlipLeftUp' | 'FlipRightDown' | 'FlipRightUp' | 'FlipXDown' |
 'FlipXUp' | 'FlipYLeft' | 'FlipYRight' | 'SlideBottom' | 'SlideLeft' | 'SlideRight' | 'SlideTop' |
-'Zoom'| 'None'
+'Zoom' | 'None'
 <br /><br />
-If the user sets `Fade` effect, then the Dialog will open with `FadeIn` effect and close with `FadeOut` effect
+If the `Fade` effect is set, the Dialog opens with the `FadeIn` effect and closes with the `FadeOut` effect.
 </td></tr>
 </table>
 
-In the below sample, `Zoom` effect is enabled. So, the Dialog will open with `ZoomIn` and close with `ZoomOut` effects.
+In the following example, the `Zoom` effect is enabled. As a result, the Dialog opens with the `ZoomIn` effect and closes with the `ZoomOut` effect.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -62,4 +61,3 @@ In the below sample, `Zoom` effect is enabled. So, the Dialog will open with `Zo
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
