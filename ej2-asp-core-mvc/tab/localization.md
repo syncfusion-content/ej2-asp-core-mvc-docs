@@ -3,12 +3,12 @@ layout: post
 title: Localization in ##Platform_Name## Tabs | Syncfusion
 description: Localize the close button tooltip text of the Syncfusion ##Platform_Name## Tabs component using the L10n `load` function for any culture.
 platform: ej2-asp-core-mvc
-control: Tab
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization in ##Platform_Name## Tab control
+# Localization in ##Platform_Name## Tabs control
 
 The localization library allows you to localize the default text content of the Tab. In Tab, the close button's tooltip text alone will be localize based on culture.
 
