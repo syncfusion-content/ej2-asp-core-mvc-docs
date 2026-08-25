@@ -3,7 +3,7 @@ layout: post
 title: Close Dialog on Outside Click in ##Platform_Name## Dialog | Syncfusion
 description: Close the Syncfusion ##Platform_Name## Dialog when the user clicks outside its region by calling the hide method on the outside click event.
 platform: ej2-asp-core-mvc
-control: Dialog
+control: Close Dialog While Click On Outside Of Dialog
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
