@@ -3,7 +3,7 @@ layout: post
 title: Style in ##Platform_Name## Tabs | Syncfusion
 description: Customize the Syncfusion ##Platform_Name## Tabs appearance using CSS to modify the tab root, header items, content items, and header background.
 platform: ej2-asp-core-mvc
-control: Style
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -51,7 +51,7 @@ Use the following CSS to customize the content items of Tab.
 
 ## Customizing Tab's header
 
-Use the following CSS to customize the header of Tab control.
+Use the following CSS to customize the header of Tabs control.
 
 ```CSS
 
@@ -63,7 +63,7 @@ Use the following CSS to customize the header of Tab control.
 
 ## Customizing Tab's header icon
 
-Use the following CSS to customize the header item icon of Tab control.
+Use the following CSS to customize the header item icon of Tabs control.
 
 ```CSS
 
@@ -75,7 +75,7 @@ Use the following CSS to customize the header item icon of Tab control.
 
 ## Customizing Tab's content
 
-Use the following CSS to customize the content of Tab control.
+Use the following CSS to customize the content of Tabs control.
 
 ```CSS
 
@@ -85,7 +85,7 @@ Use the following CSS to customize the content of Tab control.
 
 ```
 
-## Customizing the hover state of Tab control
+## Customizing the hover state of Tabs control
 
 Use the following CSS to customize the tab item when hovering.
 
@@ -108,7 +108,7 @@ Use the following CSS to customize the tab item popup icon when hovering.
 
 ```
 
-## Customizing selected item of Tab control
+## Customizing selected item of Tabs control
 
 Use the following CSS to customize the selected tab item.
 
