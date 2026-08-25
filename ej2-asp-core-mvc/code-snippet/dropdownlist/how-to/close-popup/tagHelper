@@ -6,7 +6,7 @@
 </div>
 
 <script>
-    document.onscroll = () => {
+    window.onscroll = () => {
         var dropObj = document.getElementById("games"); //to get dropdown list object
         dropObj.ej2_instances[0].hidePopup(); // hide the popup using hidePopup method
     };

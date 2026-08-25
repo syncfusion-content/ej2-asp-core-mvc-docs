@@ -1,4 +1,4 @@
-@Html.EJS().DropDownList("games").Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Render()
+@Html.EJS().DropDownList("games").Placeholder("Select a game").Index(2).PopupHeight("220px").DataSource((IEnumerable<object>)ViewBag.data).Render()
 
 <script>
     window.onscroll = () => {

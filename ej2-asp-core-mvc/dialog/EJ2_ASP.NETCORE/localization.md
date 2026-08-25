@@ -8,10 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Localization in ##Platform_Name## Dialog
 
-Localization library allows to localize the default text content of Dialog. In Dialog, the close button's tooltip text alone will be localized based on the culture.
+The Localization library allows you to localize the default text content of the Dialog. In the Dialog, the close button's tooltip text alone will be localized based on the culture.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -19,9 +18,9 @@ Localization library allows to localize the default text content of Dialog. In D
 
 ## Loading translations
 
-To load translation object in an application, use `load` function of `L10n` class.
+To load the translation object in an application, use the `load` function of the `L10n` class.
 
-In the below sample, `French` culture is set to Dialog and change the close button's tooltip text.
+In the below sample, `French` culture is set on the Dialog and the close button's tooltip text is changed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

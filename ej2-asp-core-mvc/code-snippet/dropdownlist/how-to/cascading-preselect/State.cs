@@ -15,9 +15,9 @@ namespace WebApplication1.Models
             List<State> state = new List<State>();
             state.Add(new State() { StateName = "New York", CountryId = "1", StateId = "101" });
             state.Add(new State() { StateName = "Queensland", CountryId = "2", StateId = "104" });
-            state.Add(new State() { StateName = "Tasmania ", CountryId = "2", StateId = "105" });
+            state.Add(new State() { StateName = "Tasmania", CountryId = "2", StateId = "105" });
             state.Add(new State() { StateName = "Victoria", CountryId = "2", StateId = "106" });
-            state.Add(new State() { StateName = "Virginia ", CountryId = "1", StateId = "102" });
+            state.Add(new State() { StateName = "Virginia", CountryId = "1", StateId = "102" });
             state.Add(new State() { StateName = "Washington", CountryId = "1", StateId = "103" });
             return state;
         }
