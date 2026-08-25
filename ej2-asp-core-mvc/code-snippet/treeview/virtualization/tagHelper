@@ -1,4 +1,4 @@
-<ejs-treeview id="tree" enableVirtualization="true" height="400px">
+<ejs-treeview id="tree" enableVirtualization="true" showCheckBox="true" height="400px">
     <e-treeview-fields dataSource="ViewBag.data"
                        id="Id"
                        parentId="PId"
