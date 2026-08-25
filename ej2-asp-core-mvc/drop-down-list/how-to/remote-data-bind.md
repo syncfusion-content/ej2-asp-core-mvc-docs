@@ -11,7 +11,7 @@ documentation: ug
 
 # How to count remote data bound to ##Platform_Name## DropDownList
 
-Before control rendering, you can get the total items count by using [actionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionComplete) event with its result arguments. After rendering this control, you can get the total items count by using `getItems` method.
+Before control rendering, you can get the total items count by using [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionComplete) event with its result arguments. After rendering this control, you can get the total items count by using the `getItems` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
