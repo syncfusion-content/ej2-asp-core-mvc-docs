@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ##Platform_Name## Dialog
 
 This section briefly explains how to include the [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).

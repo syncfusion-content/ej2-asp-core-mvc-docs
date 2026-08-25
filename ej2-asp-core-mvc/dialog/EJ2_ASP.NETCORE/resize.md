@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Resize in ##Platform_Name## Dialog
 
 The Dialog supports resizing. To resize the Dialog, select and resize it by using its handle (grip) or by hovering on any of the edges or borders of the Dialog within the sample container.
