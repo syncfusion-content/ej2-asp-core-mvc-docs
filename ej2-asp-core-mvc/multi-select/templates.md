@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Templates in ##Platform_Name## MultiSelect | Syncfusion
-description: Customize Syncfusion ##Platform_Name## MultiSelect list, value, group, header, and footer rendering with template, groupTemplate, and headerTemplate APIs.
+description: Customize ##Platform_Name## MultiSelect Dropdown list items, group headers, selected value, header, footer, and summary tag using template engine support.
 platform: ej2-asp-core-mvc
 control: Templates
 publishingplatform: ##Platform_Name##
