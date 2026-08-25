@@ -11,7 +11,7 @@ documentation: ug
 
 # How to detect programmatic value change in ##Platform_Name## DropDownList
 
-You can check whether the value change happened by manual or programmatic by using [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event argument, that argument name is `isInteracted`.
+You can determine whether a value change was caused by user interaction or programmatically by inspecting the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event argument. The `isInteracted` property returns `true` when the change originated from a user interaction in the UI, and `false` when it was set programmatically (for example, by assigning the `value` property). The following sample demonstrates both cases: the button triggers a programmatic change, while selecting an item in the dropdown triggers an interaction-driven change.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

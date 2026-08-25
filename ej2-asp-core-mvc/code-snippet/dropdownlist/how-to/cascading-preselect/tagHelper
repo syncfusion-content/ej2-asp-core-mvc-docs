@@ -4,7 +4,7 @@
             <e-dropdownlist-fields text="CountryName" value="CountryId"></e-dropdownlist-fields>
         </ejs-dropdownlist>
     </div>
-    <div id="default" style='padding-top:75px;'>
+    <div id="default_state" style='padding-top:75px;'>
         <ejs-dropdownlist id="StateId" ejs-for="StateId" dataSource="ViewBag.state" width="300" placeholder="Select a state" created="stateCreated">
             <e-dropdownlist-fields text="StateName" value="StateId"></e-dropdownlist-fields>
         </ejs-dropdownlist>
@@ -24,7 +24,7 @@
         state.dataSource = tempQuery.executeLocal(dataManager);
     }
     function countrychange() {
-        // disable the state DropDownList
+        // enable the state DropDownList
         var countryObj = document.getElementById('CountryId').ej2_instances[0];
         var state = document.getElementById('StateId').ej2_instances[0];
         state.enabled = true;
