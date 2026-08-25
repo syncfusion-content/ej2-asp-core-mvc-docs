@@ -11,18 +11,18 @@ documentation: ug
 
 # Data Binding in ##Platform_Name## DropDownList
 
-The DropDownList loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_DataSource) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
+The DropDownList loads data from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_DataSource) property. It supports data type of `array` or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 
 The DropDownList also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html) adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
 | text |  `string` | Specifies the display text of each list item. |
-| value |  `number or string` | Specifies the hidden data value mapped to each list item that should contain a unique value. |
+| value |  `number or string` | Specifies the hidden value mapped to each list item. Values must be unique. |
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-N> When binding complex data to the DropDownList, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+N> When binding complex data to the DropDownList, map the fields correctly. Otherwise, the selected item will remain undefined.
 
 ## Binding local data
 
@@ -30,7 +30,7 @@ Local data can be represented in two ways as described below.
 
 ### 1. Array of simple data
 
-The DropDownList has support to load array of primitive data such as strings and numbers. Here, both value and text field acts the same.
+The DropDownList supports loading an array of primitive data such as strings and numbers. Here, both value and text fields act the same.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -92,7 +92,7 @@ In the following example, `Vegetable` column from complex data have been mapped 
 
 The DropDownList can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Fields) property.
 
-In the following example, `Code.Id` column and `Country.CountrtyId` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, `Code.Id` column and `Country.CountryId` properties are mapped to the `value` field and `text` fields, respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -121,7 +121,7 @@ In the following example, `Code.Id` column and `Country.CountrtyId` column from 
 
 ## Binding remote data
 
-The DropDownList supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html) control. The [`Query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Query) property is used to fetch data from the database and bind it to the DropDownList.
+The DropDownList supports retrieval of data from remote data services using the [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html) class. The [`Query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Query) property is used to fetch data from the database and bind it to the DropDownList.
 
 The following sample displays the first 6 contacts from **Customers** table of the `Northwind` Data Service.
 
@@ -181,7 +181,7 @@ The DropDownList supports retrieval of data from URL adaptor.
 
 ### Web API Adaptor
 
-Use the `WebApiAdaptor` to bind DropDownList with Web API created using OData.
+Use the `WebApiAdaptor` to bind DropDownList with Web API created.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -272,7 +272,7 @@ To avoid post back for every action, set the DropDownList to load all data on in
 * [How to group the data using header](./grouping)
 * [How to filter the bound data](./filtering)
 * [How to get the count of the data when using remote data](./how-to/remote-data-bind)
-* [How to acheive cascading](./how-to/cascading)
+* [How to achieve cascading](./how-to/cascading)
 * [How to add item in between the options](./how-to/add-item)
 * [How to remove an item](./how-to/remove-item)
-* [How to preselect the items in dropdownlist](./how-to/multiple-cascading)
+* [How to preselect the items in DropDownList](./how-to/multiple-cascading)

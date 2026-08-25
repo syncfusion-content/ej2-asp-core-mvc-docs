@@ -16,7 +16,6 @@ namespace WebApplication1.Models
             game.Add(new GameList { Id = "Game1", Game = "American Football" });
             game.Add(new GameList { Id = "Game2", Game = "Badminton" });
             game.Add(new GameList { Id = "Game3", Game = "Basketball" });
-            game.Add(new GameList { Id = "Game3", Game = "Basketball" });
             game.Add(new GameList { Id = "Game4", Game = "Cricket" });
             game.Add(new GameList { Id = "Game5", Game = "Football" });
             game.Add(new GameList { Id = "Game6", Game = "Golf" });

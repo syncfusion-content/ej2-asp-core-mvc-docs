@@ -3,12 +3,12 @@ layout: post
 title: Header in ##Platform_Name## Tabs | Syncfusion
 description: Customize the Syncfusion ##Platform_Name## Tabs header style using predefined CSS classes like `e-fill` and `e-background` for selected and background fills.
 platform: ej2-asp-core-mvc
-control: Tab
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Header in ##Platform_Name## Tab control
+# Header in ##Platform_Name## Tabs control
 
 This section explains how to modify the Tab header style and configure icons and their positions.
 
