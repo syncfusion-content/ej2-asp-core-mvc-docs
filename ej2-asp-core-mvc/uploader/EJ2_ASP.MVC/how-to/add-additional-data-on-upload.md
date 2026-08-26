@@ -11,8 +11,7 @@ documentation: ug
 
 # How to add additional data on upload in ASP.NET MVC File Upload
 
-The uploader control allows to add additional data on file upload, which is used to get in the server-side. 
-By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event and its customFormData argument, this behavior can be achieved.
+The Uploader control allows you to add additional data when uploading files. Using the [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event and its **customFormData** argument, you can send this data to the server. Refer to the following example,
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,6 +36,4 @@ By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% endtabs %}
 {% endif %}
 
-
-
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.
