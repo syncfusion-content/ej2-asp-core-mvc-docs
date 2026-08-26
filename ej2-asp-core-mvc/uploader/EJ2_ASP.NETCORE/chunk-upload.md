@@ -12,13 +12,13 @@ domainurl: ##DomainURL##
 
 # Chunk Upload in ##Platform_Name## File Upload
 
-The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
+The Uploader sends the large file split into small chunks and transmits them to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
 
-N> * The chunk upload works in asynchronous upload only.
+N> * The chunk upload works only in asynchronous upload mode.
+N> * This feature is available from the Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release.
 
-* This feature is available from the Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release.
+To enable the chunk upload, set the value to [`ChunkSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_ChunkSize) property of the [`UploaderAsyncSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html). The value is provided in `bytes`.
 
-To enable the chunk upload, set the size to [chunkSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_ChunkSize) option of the upload and it receives the value in `bytes`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,21 +45,23 @@ To enable the chunk upload, set the size to [chunkSize](https://help.syncfusion.
 
 
 
-Output be like the below.
+The output is shown below.
 
 ![uploader](./images/uploader-chunk.png)
 
-The chunk upload functionality separates the selected files into blobs of the data or chunks. These chunks are transmitted to the server using an AJAX request. 
-The chunks are sent in **sequential** order, and the next chunk can be sent to the server according to the [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_ChunkSuccess) of the previous chunk. If any one of the chunk failed, then the remaining chunk cannot be sent to the server. 
+The chunk upload functionality separates the selected files into blobs of the data or chunks. These chunks are transmitted to the server using an AJAX request.
+
+The chunks are sent in **sequential** order, and the next chunk can be sent to the server according to the [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_ChunkSuccess) of the previous chunk. If any one of the chunk fails, the remaining chunks cannot be sent to the server.
+
 The [chunkSuccess](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_ChunkSuccess) or [chunkFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_ChunkFailure) event will be triggered when the chunk is sent to the server successfully or failed. If all the chunks are sent to the server successfully, the uploader success event is triggered.
 
-N> Chunk upload will work when the selected file size is greater than the specified chunk size. otherwise, it upload the files normally.
+N> Chunk upload will work when the selected file size is greater than the specified chunk size. Otherwise, it uploads the file normally.
 
 ## Additional configurations
 
 To modify the chunk upload, the following options can be used.
 
-* **RetryAfterDelay** - If error occurs while sending any chunk request from JavaScript, hold the operation for 500 milliseconds (by default), and retry the operation using chunk. This can be achieved by using the [asyncSettings.retryAfterDelay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_RetryAfterDelay) property. You can modify the holding time interval in milliseconds.
+* **RetryAfterDelay** - If an error occurs while sending any chunk request from JavaScript, the operation holds for 500 milliseconds (by default), and retries the chunk upload. This can be achieved by using the [asyncSettings.retryAfterDelay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_RetryAfterDelay) property. You can modify the holding time interval in milliseconds.
 
 * **RetryCount** - Specifies the number of retry actions performed when the file fails to upload. By default, retry action is performed 3 times. If the file fails to upload continuously, the request is aborted and the uploader [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) event will trigger.
 
@@ -92,9 +94,12 @@ The following sample specifies the chunk upload delay with 3000 milliseconds and
 
 ## Resumable upload
 
-Allows you to resume an upload operation after a network failure or manually interrupts (pause) the upload. You can perform pause and resume upload actions using public methods (pause and resume) and UI interaction. The pause icon is enabled after the upload begins.
+Resumable upload allows you to continue an upload operation after a network failure, or after the upload has been paused manually. You can pause and resume the upload in two ways:
 
-N> This pause and resume features available only when the chunk upload is enabled.
+* Programmatically, by calling the `pause` and `resume` public methods.
+* Through the UI, by clicking the **pause icon** shown in the upload interface after the upload begins.
+
+N> The pause and resume features are available only when the chunk upload is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -121,7 +126,7 @@ N> This pause and resume features available only when the chunk upload is enable
 
 
 
-Output be like the below.
+The output is shown below.
 
 ![uploader](./images/uploader-resume.png)
 
@@ -129,7 +134,7 @@ Output be like the below.
 
 The uploader control allows you to cancel the uploading file. This can be achieved by clicking the cancel icon or using the `cancel` method. The [canceling](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Canceling) event will be fired whenever the file upload request is canceled. While canceling the upload request, the partially uploaded file is removed from the server.
 
-When the request fails, the pause icon is changed to retry icon. By clicking the retry icon, sends the failed chunk request again to the server and upload started from where it is failed. You can retry the canceled upload request again using retry UI or `retry` methods. But, if you retry this, the file upload action again starts from initial.
+When the request fails, the pause icon is changed to retry icon. Clicking the retry icon resends the failed chunk request to the server, and the upload resumes from where it failed. You can retry the canceled upload request again using the retry UI or the `retry` method. But, if you retry this, the file upload starts from the beginning.
 
 The following example explains about chunk upload with cancel support.
 
@@ -158,7 +163,7 @@ The following example explains about chunk upload with cancel support.
 
 
 
-Output be like the below.
+The output is shown below.
 
 ![uploader](./images/uploader-cancel.png)
 
@@ -167,7 +172,7 @@ N> The retry action has different working behavior for chunk upload and default 
 * Chunk upload - Retries to upload the failed request where it is failed previously.
 * Default upload - Retries to upload the failed file again from initial.
 
-## Server-Side configurations
+## Server-side configurations
 
 The server-side implementation entirely depends on the application requirements and logic. The following code snippet provides the server-side logic to handle the chunk upload using the uploader controls.
 
