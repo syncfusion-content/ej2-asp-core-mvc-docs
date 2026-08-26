@@ -1,20 +1,22 @@
 ---
 layout: post
 title: Print in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table prints the current pivot report (table or chart) by invoking the print method on the underlying Grid or Chart component.
+description: Learn how the ASP.NET Core Pivot Table prints pivot table and pivot chart content directly from the browser with options to control the print layout.
 platform: ej2-asp-core-mvc
-control: Print 
+control: Pivot Table
 documentation: ug
 publishingplatform: ##Platform_Name##
 ---
 
 # Print in ASP.NET Core Pivot Table
 
-The React Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
+The ASP.NET Core Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
 
 ## Print pivot table
 
-The rendered pivot table can be printed by invoking the `print` method from the underlying [`Grid`](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) component instance. The [`Grid`](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) control manages the print functionality and captures the current state of the pivot table, including all applied filters, sorting, and formatting. The sample code below demonstrates how to trigger the print operation using an external button click.
+Call the `print` method on the underlying [`Grid`](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) instance to print the rendered pivot table. The [`Grid`](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) control captures the current state of the pivot table, including all applied filters, sorting, and formatting.
+
+> Pass options such as `{ pageSize: 'A4', orientation: 'landscape' }` to the `print()` method to control the page size and orientation of the printed output.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,13 +43,11 @@ The rendered pivot table can be printed by invoking the `print` method from the 
 
 ## Print pivot chart
 
-To print the pivot chart, use the `print` method from the underlying [`Chart`](https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started) component instance. The [`Chart`](https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started) control manages the print functionality and preserves all visual elements, including colors, legends, and data labels, in the printed output.
+Call the `print` method on the underlying [`Chart`](https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started) instance to print the pivot chart. The [`Chart`](https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started) control preserves colors, legends, and data labels in the printed output.
 
-> To use pivot chart functionality, inject the `PivotChart` module into the pivot table.
+> Set the [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) property to **Chart** or **Both** to display the pivot chart.
 
-> To display the pivot chart, set the [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) property to either **Chart** or **Both**.
-
-The sample code below illustrates how to print the pivot chart through an external button click.
+> To enable pivot chart functionality, inject the `PivotChart` module into the pivot table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,3 +71,9 @@ The sample code below illustrates how to print the pivot chart through an extern
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## See also
+
+* [Pivot Chart](./pivot-chart)
+* [Excel Export](./excel-export)
+* [PDF Export](./pdf-export)

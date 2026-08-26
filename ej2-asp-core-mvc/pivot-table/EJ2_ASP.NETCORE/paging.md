@@ -2,8 +2,8 @@
 layout: post
 title: Paging in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table paginates rows and columns using pageSettings to navigate large datasets efficiently.
+control: Pivot Table
 platform: ej2-asp-core-mvc
-control: Paging
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -281,3 +281,8 @@ The following example shows how to create a custom template for both row and col
 {% endif %}
 
 ![Pager UI customized by Template property](images/PagerTemplate.png)
+
+## See also
+
+* [Virtual Scrolling](./virtual-scrolling)
+* [Getting Started](./getting-started)
