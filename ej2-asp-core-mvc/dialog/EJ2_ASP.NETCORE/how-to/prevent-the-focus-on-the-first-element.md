@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to prevent focus on the first element in ##Platform_Name## Dialog
+# How to prevent focus on the first element in ASP.NET CORE Dialog
 
 By default, the Dialog focuses on the first focusable element in the content area. You can prevent this behavior by handling the [`open`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Open) event and setting its `preventFocus` argument to true.
 

@@ -8,10 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # How to read Dialog values on button click in ASP.NET MVC Dialog
 
-You can read the dialog element values by binding the action handler to the footer buttons. The [`Buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property provides the options to bind events to the action buttons. For detailed information about buttons , refer to the [`footer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) section. In the below sample, value of input elements within the dialog has been checked in the footer button click event and send the values as the content of confirmation dialog.
+You can read and validate dialog element values by binding an action handler to the footer buttons. When a user clicks a footer button, you can retrieve the input values from form fields within the dialog and display them in a confirmation dialog. The [`Buttons`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property provides options to bind click events to action buttons. For detailed information about button configuration, refer to the [`footer`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) documentation. The code sample below demonstrates how to validate input values in the footer button click event and send the collected values as the content of a confirmation dialog.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
