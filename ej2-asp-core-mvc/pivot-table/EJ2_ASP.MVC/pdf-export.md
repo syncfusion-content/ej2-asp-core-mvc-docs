@@ -39,13 +39,13 @@ In the following example, an external button is used to start the PDF export pro
 
 ## Exporting multiple Pivot Tables
 
-Multiple Pivot Tables can be exported to the same or different pages in a single PDF file for easy comparison. Each Pivot Table requires a unique HTML element ID, such as **PivotTable1** and **PivotTable2**. To export multiple Pivot Tables, provide their IDs in the `PivotTableIds` property of the [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html), then pass the configured [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) to the `PdfExport` method with `IsMultipleExport` set to **true** to enable multiple Pivot Table export mode.
+Multiple Pivot Tables can be exported to the same or different pages in a single PDF file for easy comparison. Each Pivot Table requires a unique HTML element ID, such as **PivotTable1** and **PivotTable2**. To export multiple Pivot Tables, provide their IDs in the `PivotTableIds` property of the [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html), then pass the configured [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) to the `PdfExport` method with `isMultipleExport` set to **true** to enable multiple Pivot Table export mode.
 
 > Note: PivotView PDF export uses Grid's PdfExportProperties model for configuration.
 
 ### Same page
 
-To export multiple Pivot Tables on the same page, set the `multipleExport.type` property to **AppendToPage** in [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html). Blank space between the Pivot Tables can be added by using the `multipleExport.blankSpace` property.
+To export multiple Pivot Tables on the same page, set the `multipleExport.type` property to **AppendToPage** in [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html). Blank space between the Pivot Tables can be added by using the `multipleExport.blankSpace` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -72,7 +72,7 @@ To export multiple Pivot Tables on the same page, set the `multipleExport.type` 
 
 ### New page
 
-To export each Pivot Table on a separate page, set the `multipleExport.type` property to **NewPage** in [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html).
+To export each Pivot Table on a separate page, set the `multipleExport.type` property to **NewPage** in [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -134,14 +134,13 @@ PDF export provides option to customize mapping of pivot table to the exported P
 
 When exporting data from the Pivot Table to a PDF document, you can include additional information in the header or footer. You can add text, lines, page numbers, or images to ensure your exported document includes important details, such as your organization's name or branding, and to improve readability.
 
-To do this, you can use the `header` or `footer` options in the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html). These options allow you to specify what content to display at the top or bottom of each PDF page when exporting.
+To do this, you can use the `header` or `footer` options in the [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html). These options allow you to specify what content to display at the top or bottom of each PDF page when exporting.
 
 #### To add a text in header/footer
 
 You can include custom text in the header or footer of the exported PDF document. Set the `type` property to **Text** in the contents array to add text. The following example shows how to add the text "Northwind Traders" to the header:
 
 ```javascript
-
 var pdfExportProperties = {
     header: {
         fromTop: 0,
@@ -152,12 +151,10 @@ var pdfExportProperties = {
                 value: "Northwind Traders",
                 position: { x: 0, y: 50 },
                 style: { textBrushColor: '#000000', fontSize: 13 }
-            },
-
+            }
         ]
     }
 }
-
 ```
 
 #### To draw a line in header/footer
@@ -174,7 +171,6 @@ You can draw lines in the header or footer to create visual separators or decora
 The following example demonstrates how to add a solid line in the header:
 
 ```javascript
-
 var pdfExportProperties = {
     header: {
         fromTop: 0,
@@ -188,7 +184,6 @@ var pdfExportProperties = {
         ]
     }
 }
-
 ```
 
 #### Add page number in header/footer
@@ -205,7 +200,6 @@ You can display page numbers in the header or footer using various numbering for
 The following example shows how to add page numbers with Arabic format in the header:
 
 ```javascript
-
  var pdfExportProperties = {
     header: {
         fromTop: 0,
@@ -214,14 +208,13 @@ The following example shows how to add page numbers with Arabic format in the he
             {
                 type: 'PageNumber',
                 pageNumberType: 'Arabic',
-                format: 'Page {$current} of {$total}', //optional
+                format: 'Page {$current} of {$total}', // optional
                 position: { x: 0, y: 25 },
                 style: { textBrushColor: '#ffff80', fontSize: 15, hAlign: 'Center' }
             }
         ]
     }
-}
-
+} 
 ```
 
 The below code illustrates the PDF export customization options.
@@ -299,7 +292,7 @@ The below code illustrates the PDF export customization options.
 
 ### Changing the file name while exporting
 
-The PDF export provides an option to change the file name of the document before exporting. To change the file name, define the `fileName` property in the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object and pass it as a parameter to the `pdfExport` method.
+The PDF export provides an option to change the file name of the exported document before exporting. To change the file name, define the `fileName` property in the [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object and pass it as a parameter to the `pdfExport` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -326,7 +319,7 @@ The PDF export provides an option to change the file name of the document before
 
 ### Changing page orientation while exporting
 
-When exporting the Pivot Table as a PDF, users can choose the page orientation of the document. By default, the PDF is exported in **Portrait** orientation. If you want to change the orientation to **Landscape**, set the `pageOrientation` property in the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object. Then, pass this object as a parameter to the `pdfExport` method. This lets you select either Portrait or Landscape orientation based on your needs before saving the exported PDF.
+When exporting the Pivot Table as a PDF, users can choose the page orientation of the document. By default, the PDF is exported in **Portrait** orientation. If you want to change the orientation to **Landscape**, set the `pageOrientation` property in the [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object. Then, pass this object as a parameter to the `pdfExport` method. This lets you select either Portrait or Landscape orientation based on your needs before saving the exported PDF.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -353,7 +346,7 @@ When exporting the Pivot Table as a PDF, users can choose the page orientation o
 
 ### Changing page size while exporting
 
-When exporting Pivot Table data to PDF, users can select a specific page size for the PDF document. To set the page size, define the `pageSize` property within the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object, and pass this object as a parameter to the `pdfExport` method.
+When exporting Pivot Table data to PDF, users can select a specific page size for the PDF document. To set the page size, define the `pageSize` property within the [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object, and pass this object as a parameter to the `pdfExport` method.
 
 You can choose from various page sizes, such as Letter, Note, Legal, A0, A1, A2, A3, A5, A6, A7, A8, A9, B0, B1, B2, B3, B4, B5, Archa, Archb, Archc, Archd, Arche, Flsa, HalfLetter, Letter11x17, and Ledger.
 
@@ -665,7 +658,7 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 ## Changing the pivot table style while exporting
 
-When you export the Pivot Table as a PDF document, you can change the colors used for headers, captions, and records. To do this, use the `theme` property inside the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object. Pass this object to the `pdfExport` method. This allows you to adjust how the Pivot Table looks in the exported PDF.
+When you export the Pivot Table as a PDF document, you can change the colors used for headers, captions, and records. To do this, use the `theme` property inside the [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object. Pass this object to the `pdfExport` method. This allows you to adjust how the Pivot Table looks in the exported PDF.
 
 > By default, the Material theme is applied to the exported PDF document.
 
@@ -692,9 +685,9 @@ When you export the Pivot Table as a PDF document, you can change the colors use
 {% endtabs %}
 {% endif %}
 
-### Changing default font while exporting 
+### Changing default font while exporting
 
-By default, the Pivot Table uses the "Helvetica" font in the exported PDF. You can change this font by setting the `theme` property in [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html). The available built-in font options are:
+By default, the Pivot Table uses the "Helvetica" font in the exported PDF. You can change this font by setting the `theme` property in [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html). The available built-in font options are:
 
 - Helvetica
 - TimesRoman
@@ -711,12 +704,13 @@ var pdfExportProperties = {
                 record: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 10) } 
             } 
 }
-
 ```
 
-### Adding custom font while exporting
+#### Adding custom font while exporting
 
-You can also use custom fonts when exporting if you need support for languages or styles that are not available in the built-in fonts. The custom font should be in **Base64** format and applied using the **PdfTrueTypeFont** class. In the example below, the **Advent Pro** font is used, which supports the Hungarian language.
+You can also use custom fonts when exporting if you need support for languages or styles that are not available in the built-in fonts. The custom font should be in **Base64** format and applied using the **PdfTrueTypeFont** class:
+
+In the example below, the **Advent Pro** font is used, which supports the Hungarian language.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -743,9 +737,9 @@ You can also use custom fonts when exporting if you need support for languages o
 
 > Non-English alphabets can also be exported correctly when you specify a suitable font.
 
-### Apply custom styles based on specific conditions
+### Apply conditional styles
 
-When exporting Pivot Table data to PDF, custom styles can be applied to cells based on their values or other criteria. To apply custom styles, use the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, the cell information can be accessed through the `args.data` property, and its style properties, such as `backgroundColor`, `fontFamily`, and `textPenColor`, can be customized. These changes apply only to the exported PDF and do not affect the on-screen Pivot Table display
+When exporting Pivot Table data to PDF, custom styles can be applied to cells based on their values or other criteria. To apply custom styles, use the [`PdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, the cell information can be accessed through the `args.data` property, and its style properties, such as `backgroundColor`, `fontFamily`, and `textPenColor`, can be customized. These changes apply only to the exported PDF and do not affect the on-screen Pivot Table display.
 
 The following example demonstrates how to apply conditional formatting to the **Sold** field values in the exported PDF document. Values below **700** units are highlighted in **red**, while values of **700** units or more are highlighted in **green**.
 
@@ -774,7 +768,9 @@ The following example demonstrates how to apply conditional formatting to the **
 
 ## Enabling horizontal overflow
 
-The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the maximum page limits. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [AllowHorizontalOverflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#Syncfusion_EJ2_GridExport_PdfExportProperties_AllowHorizontalOverflow) property in the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object to **true**.
+The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the configured page width. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [AllowHorizontalOverflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#Syncfusion_EJ2_GridExport_PdfExportProperties_AllowHorizontalOverflow) property in the [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html) object to **true**.
+
+> Note: Enabling horizontal overflow may cause columns to render at a reduced size to fit on a single page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -857,7 +853,7 @@ By default, row headers are repeated on each page when exporting the Pivot Table
 
 ## Repeat column headers on every page
 
-By default, column headers are repeated on each page when exporting the Pivot Table as a PDF. This ensures consistent column identification across multi-page documents. To prevent column headers from repeating on each page, use the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, access the `pdfGrid` object through `args.cell.row.pdfGrid`, which holds the current PDF grid and allows component over the repeat header behavior. Then set its `repeatHeader` property to **false** to disable the repetition.
+By default, column headers are repeated on each page when exporting the Pivot Table as a PDF. This ensures consistent column identification across multi-page documents. To prevent column headers from repeating on each page, use the [`PdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, access the `pdfGrid` object through `args.cell.row.pdfGrid`, which holds the current PDF grid and allows control over the repeat header behavior. Then set its `repeatHeader` property to **false** to disable the repetition.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -920,7 +916,7 @@ The `pdfQueryCellInfo` event occurs for each row and value cell while exporting 
 - `data`: The complete row data for the cell.
 - `style`: The style properties that control how the cell looks in the PDF.
 
-By using this event, users can easily update the cell text, apply different styles such as font or background color, or adjust other settings as needed during PDF export.
+By using this event, you can update the cell text, apply different styles such as font or background color, or adjust other settings as needed during PDF export.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -947,7 +943,7 @@ By using this event, users can easily update the cell text, apply different styl
 
 ### PdfHeaderQueryCellInfo
 
-The `pdfHeaderQueryCellInfo` event is triggered for each column header cell when exporting the Pivot Table to a PDF document. This event allows users to easily change values or apply styles to the column header cells in the exported PDF file.
+The `pdfHeaderQueryCellInfo` event is triggered for each column header cell when exporting the Pivot Table to a PDF document. This event allows you to change values or apply styles to the column header cells in the exported PDF file.
 
 The event provides the following parameters:
 
@@ -1010,6 +1006,7 @@ The event provides the following parameters:
 {% endif %}
 
 
-## See Also
+## See also
 
 * [Excel Exporting](./excel-export)
+* [Print](./print)
