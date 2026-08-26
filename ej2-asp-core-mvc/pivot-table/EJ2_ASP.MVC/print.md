@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Print in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table prints pivot table and pivot chart content directly from the browser with options to control the print layout.

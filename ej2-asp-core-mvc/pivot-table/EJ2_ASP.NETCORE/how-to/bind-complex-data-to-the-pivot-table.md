@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Flatten Complex JSON in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to flatten complex nested JSON and bind it to the ASP.NET Core Pivot Table, mapping parent and child object fields into individual columns.

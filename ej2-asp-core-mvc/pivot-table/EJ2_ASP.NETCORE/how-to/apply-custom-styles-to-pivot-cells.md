@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Apply Cell Styles in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to style cells in the ASP.NET Core Pivot Table via the queryCellInfo and headerCellInfo events in e-gridSettings, applying CSS to values and headers.

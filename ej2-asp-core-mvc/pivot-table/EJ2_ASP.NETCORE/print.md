@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Print in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table prints the current pivot report (table or chart) by invoking the print method on the underlying Grid or Chart component.

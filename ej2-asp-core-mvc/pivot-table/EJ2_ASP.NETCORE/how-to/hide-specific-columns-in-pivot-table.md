@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Hide Specific Columns in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to hide a specific column in the ASP.NET Core Pivot Table via the columnRender event in e-datasourcesettings, by setting visible to false.

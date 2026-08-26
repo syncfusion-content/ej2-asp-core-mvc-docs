@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Custom aggregation menu in ASP.NET MVC Pivot Table | Syncfusion
 description: Step-by-step example showing how to add a custom aggregation type to the menu in the ASP.NET MVC Pivot Table.

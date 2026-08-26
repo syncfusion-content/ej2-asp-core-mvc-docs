@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pivot Chart in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table visualizes aggregated values with a Pivot Chart that supports bar, line, pie, and other chart types, with drill and export.
+description: Learn how to visualize Pivot Table data in ASP.NET MVC using Pivot Charts with multiple chart types, drill-down, and export.
 platform: ej2-asp-core-mvc
 control: Pivot Chart
 publishingplatform: ##Platform_Name##

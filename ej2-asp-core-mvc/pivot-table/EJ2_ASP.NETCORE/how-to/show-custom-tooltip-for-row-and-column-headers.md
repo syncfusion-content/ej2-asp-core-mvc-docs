@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Add Custom Tooltip to Headers in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to show custom tooltips on ASP.NET Core Pivot Table row and column headers via an external Tooltip component in the dataBound event.

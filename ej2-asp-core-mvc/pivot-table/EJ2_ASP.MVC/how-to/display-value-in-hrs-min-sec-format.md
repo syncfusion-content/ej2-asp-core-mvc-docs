@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to display values in HH:MM:SS in Pivot Table | Syncfusion
 description: Step-by-step example showing how to display numeric values as a custom time string in value cells of the ASP.NET MVC Pivot Table.
