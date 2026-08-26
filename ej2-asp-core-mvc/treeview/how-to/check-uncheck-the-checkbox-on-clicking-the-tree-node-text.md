@@ -10,7 +10,7 @@ documentation: ug
 
 # Check/Uncheck on TreeView Node Click in ##Platform_Name##
 
-You can check and uncheck the checkboxes of TreeView by clicking the tree node using the `nodeClicked` event of TreeView.
+You can check and uncheck the checkboxes of TreeView by clicking the tree node using the [nodeClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_NodeClicked) event of TreeView.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
