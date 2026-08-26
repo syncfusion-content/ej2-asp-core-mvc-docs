@@ -3,7 +3,7 @@ layout: post
 title: Annotation in ##Platform_Name## ImageEditor | Syncfusion
 description: Add text, freehand drawings, rectangles, ellipses, arrows, paths, and lines to an ##Platform_Name## ImageEditor image using the toolbar or annotation APIs.
 platform: ej2-asp-core-mvc
-control: image-editor
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,8 +11,6 @@ documentation: ug
 # Annotation in ##Platform_Name## ImageEditor
 
 The Image Editor lets you add annotations to an image, including text, freehand drawings, and shapes such as rectangles, ellipses, arrows, paths, and lines. These tools help communicate and share ideas more clearly. Users can draw multiple annotations simultaneously, and every action—including customizations—is tracked in the undo/redo collection, so you can safely experiment with different designs.
-
-> **Important:** This page is shared by ASP.NET Core and ASP.NET MVC. The `##Platform_Name##` placeholder and the `page.publishingplatform` value are resolved at build time to select the right snippet flavor.
 
 ## Text annotation
 
@@ -115,8 +113,6 @@ The `shapeId` is a unique identifier assigned to each text annotation within the
 
 To retrieve inserted text annotations, call the `getShapeSetting` method, which returns a collection of `ShapeSettings` you can use to find the `shapeId` of the annotation you want to remove.
 
-> **Important:** The `shapeId` assigned to an annotation is also available in the `onShapeInserted` and `shapeSelecting` event payloads, so you don't need to traverse `getShapeSetting` if you capture the id at insertion time.
-
 The following example deletes a text annotation in a button click handler using `deleteShape`.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -187,7 +183,6 @@ The `FontFamily` property in the Image Editor control accepts an array of font e
 
 Use the `FontFamily` property to broaden the customization options for text annotations. Users then choose from a wider font list in the toolbar.
 
-> **Important:** A custom font must be registered with CSS `@font-face`, a web font service, or a system fallback before the editor initializes, or the toolbar label will list the family but the canvas will fall back to the system font.
 
 The following example adds an additional font family to the text annotation using the `FontFamily` property.
 
@@ -327,7 +322,6 @@ The `shapeId` is a unique identifier assigned to each freehand annotation within
 
 To retrieve inserted freehand annotations, call the `getShapeSetting` method, which returns a collection of `ShapeSettings` you can use to find the `shapeId` of the annotation you want to remove.
 
-> **Important:** The `shapeId` assigned to an annotation is also available in the `onShapeInserted` and `shapeSelecting` event payloads, so you don't need to traverse `getShapeSetting` if you capture the id at insertion time.
 
 The following example deletes a freehand annotation in a button click handler using `deleteShape`.
 
@@ -499,8 +493,6 @@ The `shapeId` is a unique identifier assigned to each shape annotation within th
 
 To retrieve inserted shape annotations, call the `getShapeSetting` method, which returns a collection of `ShapeSettings` you can use to find the `shapeId` of the annotation you want to remove.
 
-> **Important:** The `shapeId` assigned to an annotation is also available in the `onShapeInserted` and `shapeSelecting` event payloads, so you don't need to traverse `getShapeSetting` if you capture the id at insertion time.
-
 The following example deletes a shape annotation in a button click handler using `deleteShape`. 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -532,7 +524,7 @@ Output be like the below.
 
 ### Customize default stroke color for shapes
 
-Default settings for stroke color, stroke width, fill color, and other customizations are exposed on the editor. To modify only the defaults while preserving previously selected customizations, use the `shapeChanging` event. Inside the event handler, update the values in the `currentShapeSettings` object to apply your own preferences instead of the defaults. This lets you conditionally update `currentShapeSettings`, so only the desired defaults change while the other settings remain intact.
+Default settings for stroke color, stroke width, fill color, and other customizations are exposed on the editor. To modify only the defaults while preserving previously selected customizations, use the `shapeChanging` event. Inside the event handler, update the values in the `currentShapeSettings` object to apply your own preferences instead of the defaults. This allow you conditionally update `currentShapeSettings`, so only the desired defaults change while the other settings remain intact.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -617,7 +609,3 @@ In the following example, you can use the `drawImage` method in the button click
 Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-add-image.jpg)
-
-> **Important:** Verify the API names below against the Syncfusion Essential Studio release notes for your target version. Earlier releases used different method signatures for `drawArrow`, `drawPath`, and `drawEllipse`. See the [ImageEditor release notes](../../Release-notes) for version-specific changes.
-
-> **Important:** Verify the API names below against the Syncfusion Essential Studio release notes for your target version. Earlier releases used different method signatures for `drawArrow`, `drawPath`, and `drawEllipse`. See the [ImageEditor release notes](../../Release-notes) for version-specific changes.

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: End-User Capabilities in ##Platform_Name## ImageEditor | Syncfusion
-description: Explains the interactive editing features the Syncfusion ##Platform_Name## ImageEditor exposes for end users: open, zoom, pan, crop, rotate, flip, straighten, annotate, filter, fine-tune, undo, redo, reset, and export.
+description: Explains the core interactive editing features Syncfusion ##Platform_Name## ImageEditor exposes for end users: crop, rotate, flip, zoom, and annotations.
 platform: ej2-asp-core-mvc
-control: image-editor
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -22,9 +22,8 @@ To open an image in the Image Editor, follow these steps:
 
 * Select the image in the file explorer window to load it.
 
-![Open icon highlighted on the toolbar with the file explorer overlay](images/open.gif){:width="600"}
+![Open icon highlighted on the toolbar with the file explorer overlay](images/open.gif)
 
-> **Important:** You can also drag an image from your desktop directly onto the canvas, or paste one with <kbd>Ctrl + V</kbd>.
 
 ## Zooming
 
@@ -35,7 +34,7 @@ Use any of the following methods to zoom an image in or out:
 * Using the mouse wheel
 * Using a keyboard shortcut
 
-![Zoom toolbar with Zoom In and Zoom Out controls enabled](images/zoom.jpg){:width="600"}
+![Zoom toolbar with Zoom In and Zoom Out controls enabled](images/zoom.jpg)
 
 ### Using the toolbar
 
@@ -43,144 +42,135 @@ Click the Zoom In or Zoom Out button on the toolbar. The Zoom In / Zoom Out opti
 
 ### Using pinch
 
-Touch with two fingers and spread or pinch them to zoom in or out. Zoom is controlled by the touch gesture.
+To zoom in or out the image in the image editor, do the following steps. 
 
-### Using the mouse wheel
+* Touch with two fingers to perform zooming. 
 
-Press <kbd>Ctrl</kbd> and scroll the mouse wheel to zoom in or out.
+* Zoom in and out controlled by touch gestures. 
 
-### Using the keyboard
+### Using mouse wheel 
 
-* Press <kbd>Ctrl + +</kbd> to zoom in.
-* Press <kbd>Ctrl + -</kbd> to zoom out.
-* Press <kbd>Ctrl + 0</kbd> to reset to 100% (fit-to-screen on mobile).
+To zoom in or out the image in the image editor, do the following steps. 
 
-> **Important:** On macOS use <kbd>⌘</kbd> in place of <kbd>Ctrl</kbd>. On macOS trackpads, two-finger pinch also zooms when the canvas is focused.
+* Press the ctrl key and scroll the mouse wheel to perform zooming. 
 
-> **Important:** Double-click the canvas to reset the zoom to 100%; the toolbar's Fit button fills the editor area with the entire image.
+* The zoom in and out controlled by the mouse wheel. 
 
-## Panning
+### Using keyboard 
 
-Click and drag the image to pan the visible area. Panning is enabled in the following cases:
+To zoom in or out the image in the image editor, do the following steps. 
 
-* When you have an active crop selection.
-* When the image size exceeds the canvas size while zoomed in.
+* Press the ctrl key with ‘+’ button from the keyboard to zoom in an image. 
 
-![Pan gesture shifting a zoomed image within the canvas](images/pan.gif){:width="600"}
+* Press the ctrl key with ‘-’ button from the keyboard to zoom out an image.
 
-> **Important:** On touch devices, two-finger drag pans the canvas instead of drawing a freehand stroke.
+## Panning 
+
+To pan an image in the image editor, do the following steps.  
+
+* Click on the image and do dragging to move or pan the image. 
+
+* Panning option will be enabled in the following two cases. 
+
+    * If the selection is applied for cropping an image. 
+
+    * If the image size exceeds the canvas size while zooming an image.
+
+![Pan gesture shifting a zoomed image within the canvas](images/pan.gif)
 
 ## Cropping and image transformation
 
-Click the Crop button on the toolbar to open the contextual toolbar with crop, rotate, flip, and straightening options. To crop or transform the image, follow these steps:
+To crop an image in the image editor, do the following steps. 
 
-* Cropping is performed on an active selection in the Image Editor.
+* Cropping can be performed based on the selection in an image editor.
 
-* From the contextual toolbar, select a selection type—custom, circle, square, or a preset ratio (1:1, 4:3, 16:9, 3:4, 9:16, free)—to draw the crop region.
+* To perform selection, click the crop button in the toolbar which opens the contextual toolbar that shows crop selection options, rotate options, flip options, and straightening options.
 
-* Once the selection is drawn, drag the canvas to reposition the cropped region.
+* Click the crop selection button and select the type of selection such as custom, circle, square, and ratio selection from the popup.
 
-* Use the rotate and flip buttons, plus the Straighten slider, to apply transformations to the image and any inserted annotations.
-
-* When the region is correct, click the tick icon at the top-right of the toolbar to apply the crop.
+* Once selection is completed, do panning to move the image to get the cropped region.
 
 ![Crop selection drawn over a photo with the action toolbar above](images/crop.jpg){:width="600"}
 
-> **Important:** The Straighten slider range is ±45°. Rotate and flip are applied to inserted annotations as well. Cropping is destructive: pixels outside the region are discarded unless you cancel before clicking the tick icon.
 
 ## Annotations
 
 To add annotations to the image, follow these steps:
 
-* Click the annotation button on the toolbar and select the annotation type—Line, Rectangle, Ellipse, Path, Arrow, Text, Image, or Freehand drawing.
+* To add annotation, click the annotation button in the toolbar and select the type of annotations such as Line, Rectangle, Ellipse, Path, Arrow, Text, or Freehand drawing to be inserted to the image editor. 
 
-* Once an annotation is added, you can reposition it by clicking and dragging, and resize it by dragging the selection handle around it.
+* Once the annotation is added to the image, that can be repositioned by clicking and dragging the annotations using mouse as well as resized by clicking and resizing the selection circle to be placed around the annotations. 
 
-* To rotate an annotation, drag the rotation handle at the bottom of the annotation. Rotation through the handle is not available for text annotations; rotate them through the API instead (see [annotation.md](annotation.md)).
+* To rotate annotations, you can simply grab the circle located at the bottom of the annotation. The rotation can be applicable to all the annotations except text annotation. 
 
-* Customize the annotation's color, stroke width, fill, font family, and font size in the contextual toolbar that appears when the annotation is selected.
+* Customize the annotations by changing their color, stroke width, font family, and font size through the contextual toolbar. The contextual toolbar will be enabled whenever the annotations are selected. 
 
-* When an annotation is selected, the quick-access toolbar offers duplicate, delete, and (for text) edit-in-place actions.
+* When annotations are selected in the Image Editor, the quick access toolbar becomes active, providing convenient access to various actions such as duplicating, deleting, or editing text associated with the selected annotation. This toolbar enables users to perform these common operations quickly and efficiently, streamlining their workflow and enhancing the overall editing experience.
 
-![Annotations — text label, freehand stroke, rectangle, and arrow — layered on a sample photo](images/annotation.jpg){:width="600"}
+![Image annotation](images/annotation.jpg)
 
-> **Important:** Single-click an annotation to select it. Press <kbd>Shift</kbd> + click to add or remove an annotation from a multi-selection. Sizing handles and the rotation handle are keyboard-focusable.
+## Filtering and fine-tune 
 
-## Filtering and fine-tuning
+To perform fine-tuning on an image in the image editor, do the following steps. 
 
-### Fine-tune
+* Click the fine-tune button which displays the list of fine-tuning available in the image editor. 
 
-To fine-tune the image, follow these steps:
+* Click one of the fine-tune options from the list of options which shows a slider to adjust the corresponding filter.  
 
-* Click the Fine-Tune button to display the available fine-tune controls—Brightness, Contrast, Hue, Saturation, Blur, Sharpen, Exposure, and Noise.
+* Click on the canvas or tick icon at the right corner of the toolbar in the image editor to apply the modifications. 
 
-* Select a fine-tune option to display its adjustment slider.
+![Filter and Finetune](images/finetune.jpg)
 
-* Click the canvas or the tick icon at the top-right of the toolbar to apply the change. Press <kbd>Esc</kbd> while the slider is focused to discard the change.
+To apply filters on an image in the image editor, do the following steps. 
 
-![Fine-tune panel showing brightness and contrast sliders](images/finetune.jpg){:width="600"}
+* Click the filter button which displays the list of filters available in the image editor. 
 
-### Filters
+* Click the filter from list of options to apply the corresponding filter to an image.  
 
-To apply a filter to the image, follow these steps:
+* Click on the canvas or tick icon at the right corner of the toolbar in the image editor to apply the modifications. 
 
-* Click the Filter button to display the available filters.
+![Filter and Finetune](images/filter.jpg)
 
-* Click a filter from the list to apply it to the image.
+## Undo and redo the operations 
 
-* Click the canvas or the tick icon at the top-right of the toolbar to apply the change. Press <kbd>Esc</kbd> while the filter menu is open to discard.
+To undo and redo the actions performed in an image editor, do the following steps. 
 
-![Filters menu showing the available color-grading presets](images/filter.jpg){:width="600"}
+* The undo button will be enabled once the action is performed in an image editor. 
 
-> **Important:** Fine-tune sliders operate on a −100 to +100 range and are non-destructive until you click the canvas or the tick icon. Background processing may take a few seconds for very large images.
+* The redo button will be enabled once the undo action is performed in an image editor. 
 
-## Undo and redo
-
-To undo or redo an action, follow these steps:
-
-* The Undo button is enabled once you make an edit.
-
-* The Redo button is enabled once you click Undo.
-
-* Click the Undo or Redo button on the left side of the toolbar.
+* Click the undo or redo button at the left side of the toolbar to perform undo and redo operation.
 
 * Press <kbd>Ctrl + Z</kbd> to undo or <kbd>Ctrl + Y</kbd> to redo. On macOS use <kbd>⌘ + Z</kbd> and <kbd>⌘ + Shift + Z</kbd>.
 
-![Undo and Redo toolbar icons enabled after the first edit](images/undo-redo.gif){:width="600"}
+![Undo and Redo](images/undo-redo.gif)
 
-> **Important:** The maximum history depth depends on the Syncfusion Essential Studio build. See the [ImageEditor release notes](../../Release-notes) for version-specific limits.
+## Reset an image 
 
-## Resetting an image
+To revert all the changes done in an image editor, do the following steps. 
 
-Click the Reset button on the right side of the toolbar to discard all changes and return the image to its original state.
+* Click the reset button which is located on the right side of the toolbar. 
 
-> **Important:** The Reset action clears the undo and redo history; previous changes cannot be restored after a reset.
+* This will revert all the changes performed in the image editor.
 
 ## Exporting an image
 
 To save the modifications, follow these steps:
 
-### Save with the toolbar
+* Click the Save Button
+    * Locate the Save button on the right side of the toolbar and click it.
 
-* Click the Save button on the right side of the toolbar.
-* In the export popup, choose the file format—PNG, JPEG, SVG, or WEBP.
-* For JPEG, use the Image Quality slider to set the quality (0–100). Higher values retain more detail but increase file size.
-* Click *Download* to save the modified image.
+* Select the File Format
+    * In the export popup, choose your preferred file format (PNG, JPEG, SVG, or WEBP) to save the image with all 
+applied modifications.
 
-![Save dialog with JPEG selected and the quality slider visible](images/save.jpg){:width="600"}
+* Adjust Image Quality (JPEG Format Only)
+    * If saving in JPEG, use the Image Quality slider to set the desired quality level (0-100). A higher value retains more detail but increases file size.
 
-### Save with the keyboard shortcut
+* Download the Image
+    * Click Download to save the modified image to your device.
 
-Press <kbd>Ctrl + S</kbd> (or <kbd>⌘ + S</kbd> on macOS) to download the image in the same format and quality as the loaded source image without opening the Save dialog. For example, if the loaded image is PNG, the file is saved as PNG.
+* Use Keyboard Shortcut (Ctrl + S)
+    * Press Ctrl + S to download the image in the same format as the loaded image without opening the Save dialog. For example, if the loaded image is PNG, it will be saved as PNG.
 
-> **Important:** SVG export preserves rasterized shapes only; for vector fidelity, serialize annotations to JSON through the API. Cross-origin or unsupported sources fail silently—use same-origin or data: URLs.
-
-> **Important:** Verify the toolbar layout in this page against the Syncfusion Essential Studio release notes for your target version. The toolbar position and icon order changed across ImageEditor releases. See the [ImageEditor release notes](../../Release-notes) for version-specific changes.
-
-## See also
-
-* [Getting started with the ##Platform_Name## ImageEditor](getting-started.md)
-* [Annotations](annotation.md)
-* [Accessibility in the ##Platform_Name## ImageEditor](accessibility.md)
-* [Toolbar customization](toolbar.md)
-* [Syncfusion® Essential Studio release notes](../../Release-notes)
+![Export an image](images/save.jpg)

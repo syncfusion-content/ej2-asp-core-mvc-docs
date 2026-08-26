@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Localization in ##Platform_Name## ImageEditor
 
 The `Localization` library allows you to localize the default text content of the [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor). The Image Editor has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.

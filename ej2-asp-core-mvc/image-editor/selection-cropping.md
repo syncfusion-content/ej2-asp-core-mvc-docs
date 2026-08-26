@@ -16,7 +16,7 @@ To perform a selection, you can use the `select` method, which allows you to def
 
 ## Insert custom / square / circle region 
 
-The `select` method allows to perform selection based on the type of selection. Here, the `select` method is used to perform the selection as custom, circle, or square. The selection region can also be customized using the select method based on the parameters below. 
+The `select` method allows you to perform a selection based on the type of selection. Here, the `select` method is used to perform the selection as custom, circle, or square. The selection region can also be customized using the select method based on the parameters below. 
 
 * type - Specify the type of selection 
 

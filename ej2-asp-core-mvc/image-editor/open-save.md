@@ -22,7 +22,7 @@ When it comes to saving the edited image, the default file type is set as PNG. T
 
 ## Open an Image
 
-The `open` method in the Image Editor control offers the capability to open an image by providing it in different formats. This method accepts various types of arguments, such as a base64-encoded string, raw image data, or a hosted/online URL. You can pass either the file name or the actual image data as an argument to the `open` method, and it will load the specified image into the Image Editor control. This flexibility allows you to work with images from different sources and formats, making it easier to integrate and manipulate images within the Image Editor control. 
+The `open` method in the Image Editor control allows you to open an image by providing it in different formats. This method accepts various types of arguments, such as a base64-encoded string, raw image data, or a hosted/online URL. You can pass either the file name or the actual image data as an argument to the `open` method, and it will load the specified image into the Image Editor control. This flexibility allows you to work with images from different sources and formats, making it easier to integrate and manipulate images within the Image Editor control. 
 
 ### Opening local images in the Image Editor
 
@@ -59,7 +59,7 @@ Output be like the below.
 
 Users can easily open images in the Image Editor using a Base64-encoded string. This method allows you to load images directly from their Base64 representation, ensuring seamless integration and flexibility in your application. Simply pass the Base64 string to the `open` method, and the image will be loaded into the editor.
 
-**Note:**: You can obtain the Base64 representation of an image from the Image Editor using the `getImageData` method. This process will be explained in the upcoming section.
+N> You can obtain the Base64 representation of an image from the Image Editor using the `getImageData` method. This process will be explained in the upcoming section.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -90,7 +90,7 @@ Output be like the below.
 
 ### Open an image from Blob storage
 
-User can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the `open` method, and the image will be loaded into the editor.
+Users can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the `open` method, and the image will be loaded into the editor.
 
 **Note:**: You can obtain the Blob URL representation of an image from the Image Editor using the `getImageData` method. This process will be explained in the upcoming section.
 
@@ -123,7 +123,7 @@ Output be like the below.
 
 ### Open an image from File Uploader
 
-User can easily open images in the Image Editor using a file uploader. This method allows users to upload an image file from their device and load it directly into the editor. Once the image is selected through the file uploader, pass the file to the `open` method, and the image will be seamlessly loaded into the editor.
+Users can easily open images in the Image Editor using a file uploader. This method allows users to upload an image file from their device and load it directly into the editor. Once the image is selected through the file uploader, pass the file to the `open` method, and the image will be seamlessly loaded into the editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -154,7 +154,7 @@ Output be like the below.
 
 ### Open an image from File Manager
 
-User can easily open images in the Image Editor using the File Manager. This method allows you to browse and select an image file directly from the File Manager and load it into the editor. Once the image is selected, pass the file to the `open` method, and the image will be seamlessly loaded into the editor.
+Users can easily open images in the Image Editor using the File Manager. This method allows you to browse and select an image file directly from the File Manager and load it into the editor. Once the image is selected, pass the file to the `open` method, and the image will be seamlessly loaded into the editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
