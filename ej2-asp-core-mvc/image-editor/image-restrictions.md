@@ -3,7 +3,7 @@ layout: post
 title: Image Restrictions in ##Platform_Name## ImageEditor | Syncfusion
 description: Configure allowed image types and dimensions in Syncfusion ##Platform_Name## ImageEditor using allowedExtensions, minWidth, maxWidth, minHeight, and maxHeight.
 platform:  ej2-asp-core-mvc
-control: Image Restrictions 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Image Restrictions in the ##Platform_Name## Image Editor control
 
-The Image Editor allows users to specify image extensions, as well as the minimum and maximum image sizes for uploaded or loaded images using the [`UploadSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_UploadSettings) property. End users will receive a clear alert message if an uploaded image does not meet the defined criteria, ensuring a seamless and user-friendly upload experience.
+The [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) allows users to specify image extensions, as well as the minimum and maximum image sizes for uploaded or loaded images using the [`UploadSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_UploadSettings) property. End users will receive a clear alert message if an uploaded image does not meet the defined criteria, ensuring a seamless and user-friendly upload experience.
 
 `Note:` File restrictions apply when uploading images to the Image Editor, whether through the open method or the built-in uploader. If uploadSettings is not defined in the sample, the Image Editor, by default, allows files with .jpg, .png, .svg, .webp, and .bmp extensions, without any file size restrictions.
 

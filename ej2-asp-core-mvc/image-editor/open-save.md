@@ -3,14 +3,14 @@ layout: post
 title: Open and Save in ##Platform_Name## ImageEditor | Syncfusion
 description: Open images from local, URL, base64, or stream sources in Syncfusion ##Platform_Name## ImageEditor, then save them as PNG, JPEG, SVG, or PDF.
 platform: ej2-asp-core-mvc
-control: Open and Save
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Open and Save in ##Platform_Name## ImageEditor
 
-To import an image into the canvas, it must first be converted into a blob object. The Uploader component can be used to facilitate the process of uploading an image from the user interface. Once the image has been uploaded, it can then be converted into a blob and drawn onto the canvas. 
+To import an image into the canvas, it must first be converted into a blob object. The Uploader control can be used to facilitate the process of uploading an image from the user interface. Once the image has been uploaded, it can then be converted into a blob and drawn onto the canvas. 
 
 To save an edited image in the Image Editor control, use the toBlob method to convert it to a blob object. This will save the image with any annotations or filters that have been applied during the editing process. The saved image can be stored as raw image data or as an image file. 
 
@@ -191,7 +191,7 @@ Output be like the below.
 
 ### Open an image from Treeview
 
-Users can open images in the Syncfusion Image Editor by selecting a node from a tree view. When a user clicks on an image node, the corresponding image is loaded into the editor using the `open` method. This allows for a seamless image editing experience directly from the TreeView component.
+Users can open images in the Syncfusion Image Editor by selecting a node from a tree view. When a user clicks on an image node, the corresponding image is loaded into the editor using the `open` method. This allows for a seamless image editing experience directly from the TreeView control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -493,8 +493,8 @@ By accessing these arguments within the Saving event handler, you can retrieve i
 
 ### Created event 
 
-The [`created`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Created) event is triggered once the Image Editor control is created. This event serves as a notification that the component has been fully initialized and is ready to be used. It provides a convenient opportunity to render the Image Editor with a predefined set of initial settings, including the image, annotations, and transformations. 
+The [`created`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Created) event is triggered once the Image Editor control is created. This event serves as a notification that the control has been fully initialized and is ready to be used. It provides a convenient opportunity to render the Image Editor with a predefined set of initial settings, including the image, annotations, and transformations. 
 
 ### Destroyed event
 
-The [`destroyed`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Destroyed) event is triggered once the Image Editor control is destroyed or removed from the application. This event serves as a notification that the component and its associated resources have been successfully cleaned up and are no longer active.
+The [`destroyed`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Destroyed) event is triggered once the Image Editor control is destroyed or removed from the application. This event serves as a notification that the control and its associated resources have been successfully cleaned up and are no longer active.

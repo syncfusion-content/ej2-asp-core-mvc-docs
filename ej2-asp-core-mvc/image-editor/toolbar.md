@@ -3,14 +3,14 @@ layout: post
 title: Toolbar in ##Platform_Name## ImageEditor | Syncfusion
 description: Configure Syncfusion ##Platform_Name## ImageEditor toolbar items, create custom tools with createToolbarItem, and show or hide groups via toolbar property.
 platform: ej2-asp-core-mvc
-control: Toolbar
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Toolbar in the ##Platform_Name## Image Editor control
 
-The toolbars in the Image Editor are a key component for interacting with and editing images. They provide a range of tools and options that can be customized to suit the needs and preferences. Add or remove items from the toolbar to create a personalized set of tools, or they can even create their own custom toolbar from scratch. This flexibility and customization allow them to create a unique image editing experience that is tailored to their specific needs and workflow. 
+The toolbars in the [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) are a key control for interacting with and editing images. They provide a range of tools and options that can be customized to suit the needs and preferences. Add or remove items from the toolbar to create a personalized set of tools, or they can even create their own custom toolbar from scratch. This flexibility and customization allow them to create a unique image editing experience that is tailored to their specific needs and workflow. 
 
 In the Image Editor, the toolbar property provides the ability to customize the toolbar by adding or removing items, as well as defining a completely custom toolbar. This feature is valuable for creating a personalized image editing experience that aligns with specific requirements and workflows. 
 

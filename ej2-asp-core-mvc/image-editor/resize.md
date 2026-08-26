@@ -3,7 +3,7 @@ layout: post
 title: Resize in ##Platform_Name## ImageEditor | Syncfusion
 description: Resize Syncfusion ##Platform_Name## ImageEditor images with a ratio-based dimension transformation, or set explicit width and height to scale the canvas.
 platform:  ej2-asp-core-mvc
-control: Filter 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Resize in ##Platform_Name## ImageEditor
 
-The resize feature in an Image Editor is a valuable tool that empowers users to modify the size or dimensions of an image to meet their specific requirements. Whether it's for printing, web display, or any other purpose, this feature allows users to tailor images to their desired specifications.
+The resize feature in an [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) is a valuable tool that empowers users to modify the size or dimensions of an image to meet their specific requirements. Whether it's for printing, web display, or any other purpose, this feature allows users to tailor images to their desired specifications.
 
 ## Apply resize to the image 
 

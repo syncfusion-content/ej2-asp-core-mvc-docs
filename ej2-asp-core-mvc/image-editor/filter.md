@@ -3,7 +3,7 @@ layout: post
 title: Filters in ##Platform_Name## ImageEditor | Syncfusion
 description: Apply cold, warm, chrome, sepia, invert, and grayscale filters to images in Syncfusion ##Platform_Name## ImageEditor using the toolbar or applyImageFilter method.
 platform:  ej2-asp-core-mvc
-control: Filter 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

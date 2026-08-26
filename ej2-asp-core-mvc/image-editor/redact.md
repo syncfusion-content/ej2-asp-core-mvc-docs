@@ -3,7 +3,7 @@ layout: post
 title: Redact in ##Platform_Name## ImageEditor | Syncfusion
 description: Permanently blur sensitive text or face regions in Syncfusion ##Platform_Name## ImageEditor with pixelate and blur redact options using the redact method.
 platform:  ej2-asp-core-mvc
-control: Redact 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Redact in ##Platform_Name## ImageEditor
 
-The redact feature in an Image Editor is a valuable tool that empowers users to conceal sensitive information by applying blur or pixel effects to specific areas of an image. This feature is particularly valuable for protecting privacy and complying with data protection regulations, making it easier to securely share images without compromising sensitive information.
+The redact feature in an [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) is a valuable tool that empowers users to conceal sensitive information by applying blur or pixel effects to specific areas of an image. This feature is particularly valuable for protecting privacy and complying with data protection regulations, making it easier to securely share images without compromising sensitive information.
 
 ## Apply redact to the image
 
@@ -43,7 +43,7 @@ The Image Editor control includes a `deleteRedact` method, which allows you to d
 
 ## Updating a redact
 
-The Image Editor control includes a `updateRedact` method, which allows you to update the existing redacts by changing its height, width, blur, and pixel size in the component. Use `getRedacts` method to get the redacts which is then passed to change the options of a redacts. This method takes two parameters that define how the redact should be carried out:
+The Image Editor control includes a `updateRedact` method, which allows you to update the existing redacts by changing its height, width, blur, and pixel size in the control. Use `getRedacts` method to get the redacts which is then passed to change the options of a redacts. This method takes two parameters that define how the redact should be carried out:
 
 * setting: Specifies the redact settings to be updated for the shape on an image.
 

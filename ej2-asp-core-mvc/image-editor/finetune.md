@@ -3,7 +3,7 @@ layout: post
 title: Finetune in ##Platform_Name## ImageEditor | Syncfusion
 description: Adjust brightness, contrast, hue, saturation, exposure, blur, opacity, and sharpen on Syncfusion ##Platform_Name## ImageEditor using a slider UI.
 platform: ej2-asp-core-mvc
-control: Finetune 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

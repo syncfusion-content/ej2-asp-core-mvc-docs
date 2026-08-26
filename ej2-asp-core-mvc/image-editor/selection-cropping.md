@@ -3,14 +3,14 @@ layout: post
 title: Selection and Cropping in ##Platform_Name## ImageEditor | Syncfusion
 description: Select and crop a rectangular or arbitrary region in Syncfusion ##Platform_Name## ImageEditor using selection.crop, selection.cropAsImage, and selection.resize APIs.
 platform: ej2-asp-core-mvc
-control: Selection and Cropping
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Selection cropping in the ##Platform_Name## Image Editor control
 
-The cropping feature in the Image Editor allows you to select and crop specific regions of an image. It offers different selection options, including custom shapes, squares, circles, and various aspect ratios such as 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 5:7, 7:5, 9:16, and 16:9. 
+The cropping feature in the [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) allows you to select and crop specific regions of an image. It offers different selection options, including custom shapes, squares, circles, and various aspect ratios such as 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 5:7, 7:5, 9:16, and 16:9. 
 
 To perform a selection, you can use the `select` method, which allows you to define the desired selection area within the image. Once the selection is made, you can then use the `crop` method to crop the image based on the selected region. This enables you to extract and focus on specific parts of the image while discarding the rest.
 

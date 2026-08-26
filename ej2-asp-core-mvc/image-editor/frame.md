@@ -3,7 +3,7 @@ layout: post
 title: Frames in ##Platform_Name## ImageEditor | Syncfusion
 description: Add decorative borders or frames around an image in Syncfusion ##Platform_Name## ImageEditor using the toolbar or the selectFrame method.
 platform:  ej2-asp-core-mvc
-control: Filter 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Frames in ##Platform_Name## ImageEditor
 
-The frame feature in an Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
+The frame feature in an [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
 
 ## Apply frame to the image
 
