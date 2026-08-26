@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style and Appearance in ##Platform_Name## File Upload | Syncfusion
-description: Customize the Syncfusion ##Platform_Name## File Upload appearance with CSS that targets the wrapper, browse button, file list, and progress bar.
+description: Customize the Syncfusion ##Platform_Name## File Upload appearance with CSS that targets the wrapper, browse button, and file list.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -10,11 +10,11 @@ documentation: ug
 
 # Style and Appearance in ##Platform_Name## File Upload
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user's preference.
 
 ## Customizing the appearance of File Upload wrapper element
 
-Use the following CSS to customize the appearance of wrapper element.
+Use the following CSS to customize the appearance of the wrapper element.
 
 ```css
 /* To specify height */
@@ -26,7 +26,7 @@ Use the following CSS to customize the appearance of wrapper element.
 
 ## Customizing the File Upload browse button
 
-Use the following CSS to customize the File Upload browse button
+Use the following CSS to customize the File Upload browse button.
 
 ```css
 /* To specify font size and color */
@@ -40,7 +40,7 @@ Use the following CSS to customize the File Upload browse button
 
 ## Customizing the File Upload content
 
-Use the following CSS to customize the File Upload content
+Use the following CSS to customize the File Upload content.
 
 ```css
 /* To specify font size and color */
@@ -52,7 +52,7 @@ Use the following CSS to customize the File Upload content
 
 ## Customizing the uploaded file container in File Upload
 
-Use the following CSS to customize the uploaded file container in File Upload
+Use the following CSS to customize the uploaded file container in File Upload.
 
 ```css
 /* To specify background color */
@@ -61,6 +61,6 @@ Use the following CSS to customize the uploaded file container in File Upload
 }
 ```
 
-## See Also
+## See also
 
-* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/aspnetcore/documentation/uploader/template)
+* [Customize the appearance of the Uploader using a template](https://ej2.syncfusion.com/aspnetcore/documentation/uploader/template)

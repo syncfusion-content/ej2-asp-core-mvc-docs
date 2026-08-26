@@ -11,8 +11,7 @@ documentation: ug
 
 # How to wire save and remove actions in ASP.NET Core Razor Page
 
-The save action handler upload the files that needs to be specified in the [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) property. 
-The save handler receives the submitted files and manages the save process in server.
+The save action handler uploads the files that needs to be specified in the [`saveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) property. The save handler receives the submitted files and manages the save process on the server.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,7 +38,7 @@ The save handler receives the submitted files and manages the save process in se
 
 ## Server-side configuration for startup page
 
-This section explains how to add the anti forgery tokens header in `startup` page.
+This section explains how to add the anti-forgery token header in the `Startup` page.
 
 ```csharp
 
@@ -54,9 +53,13 @@ public void ConfigureServices(IServiceCollection services)
 
 ```
 
+* `AddAntiforgery` configures the anti-forgery token service with a custom header name (xsrf-token).
+* The `DefaultContractResolver` ensures JSON property names are serialized in PascalCase.
+* The client-side upload request must include this header to be validated by the server.
+
 ## Server-side configuration for save action
 
-This section explains how to handle the server-side action for saving the file from server.
+This section explains how to handle the server-side action for saving the uploaded file on the server.
 
 ```csharp
 private IHostingEnvironment hostingEnv;
@@ -107,9 +110,14 @@ public IActionResult OnPostSave(IList<IFormFile> UploadFiles)
 
 ```
 
+* The `OnPostSave` action receives the uploaded files through the UploadFiles parameter.
+* Files are saved to the `WebRootPath` directory using the `IHostingEnvironment` service.
+* If a file already exists, the server responds with a **204 status** and the reason phrase "File already exists."
+* If an error occurs during the upload process, the server responds with a **204 status** and the exception message.
+
 ## Server-side configuration for remove action
 
-This section explains how to handle the server-side action for removing the file from server.
+This section explains how to handle the server-side action for removing the file from the server.
 
 ```csharp
 
@@ -147,4 +155,8 @@ public IActionResult OnPostRemove(IList<IFormFile> UploadFiles)
 
 ```
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+* The `OnPostRemove` action receives the file details through the UploadFiles parameter.
+* The file is deleted from the `WebRootPath` directory if it exists.
+* If an error occurs during removal, the server responds with a **200 status** and the exception message.
+
+N> Explore the [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.
