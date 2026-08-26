@@ -8,12 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Data Binding in ##Platform_Name## TreeView
 
-The TreeView control provides the option to load data either from local data sources or from remote data services. This can be done through the `dataSource` property that is a member of the `fields` property. The `dataSource` property supports array of JavaScript objects and [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager). It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
+The [TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) control provides the option to load data either from local data sources or from remote data services. This can be done through the `dataSource` property that is a member of the `fields` property. The `dataSource` property supports an array of JavaScript objects and [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager). It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
-TreeView has `load on demand` (Lazy load) enabled by default. It reduces the bandwidth size when consuming huge data. It initially loads first-level nodes, and when a parent node is expanded, it loads the child nodes based on the `parentID/child` member.
+TreeView has `loadOnDemand` (Lazy load) enabled by default. It reduces the bandwidth size when consuming huge data. It initially loads the first-level nodes, and when a parent node is expanded, it loads the child nodes based on the `parentID/child` member.
 
 By default, the `loadOnDemand` is set to true. By disabling this property, all the tree nodes are rendered at the beginning.
 
@@ -21,7 +20,7 @@ You can use the `dataBound` event to perform actions. This event will be trigger
 
 ## Local data
 
-To bind local data to the TreeView, you can assign a JavaScript object array to the `dataSource` property. The TreeView control requires three fields (**ID**, **text**, and **parentID**) to render a local data source. When mapper fields are not specified, it takes the default values as the mapping fields. Local data source can also be provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
+To bind local data to the TreeView, you can assign a JavaScript object array to the `dataSource` property. The TreeView control requires three fields (**ID**, **text**, and **parentID**) to render a local data source. When mapper fields are not specified, it takes the default values as the mapping fields. A Local data source can also be provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
 
 * Hierarchical data
 
@@ -56,15 +55,13 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% endtabs %}
 {% endif %}
 
-
-
 ### Self-referential data
 
-TreeView can be populated from self-referential data structure that contains array of JSON objects with `parentID` mapping. 
+TreeView can be populated from self-referential data structure that contains an array of JSON objects with `parentID` mapping. 
 
 You can directly assign self-referential data to the `dataSource` property, and map all the field members with corresponding keys from self-referential data to `fields` property. 
 
-To render the root level nodes, specify the parentID as null or no need to specify the parentID in `dataSource`.
+To render the root level nodes, specify the parentID as null or you do not need to specify parentID in `dataSource`.
 
 In the following example, **id**, **pid**, **hasChild**, and **name** columns from self-referential data have been mapped to **id**, **parentID**, **hasChildren**, and **text** fields, respectively.
 
@@ -88,23 +85,21 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% endtabs %}
 {% endif %}
 
-
-
 ## Remote data
 
 TreeView can also be populated from a remote data service with the help of the `DataManager` control and `Query` property. 
 
 It supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors. 
 
-You can assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, you have to provide the endpoint `url`.
+You can assign service data as an instance of `DataManager` to the `dataSource` property. To interact with a remote data source, you have to provide the endpoint `url`.
 
-The `DataManager` that acts as an interface between the service endpoint and the TreeView requires the following information to interact with service endpoint properly.
+The `DataManager` that acts as an interface between the service endpoint and the TreeView requires the following information to interact with the service endpoint properly.
 
 * `DataManager->url`: Defines the service endpoint to fetch data.
 
 * `DataManager->adaptor`: Defines the adaptor option. By default, ODataAdaptor is used for remote binding.
 
-Adaptor is responsible for processing response and request from/to the service endpoint. The `@syncfusion/ej2-data` package provides some predefined adaptors  designed to interact with service endpoints. They are,
+Adaptor is responsible for processing response and request from/to the service endpoint. The `@syncfusion/ej2-data` package provides some predefined adaptors designed to interact with the service endpoints. They are,
 
 * `UrlAdaptor`: Used to interact with remote services. This is the base adaptor for all remote based adaptors.
 
@@ -142,5 +137,3 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-

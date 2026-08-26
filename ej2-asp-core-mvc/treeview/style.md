@@ -10,11 +10,11 @@ documentation: ug
 
 # Style in ##Platform_Name## TreeView
 
-The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the component's appearance based on user preference.
 
 ## Customizing the height of TreeView nodes
 
-Use the following CSS to customize the TreeView nodes.
+Use the following CSS to customize the height of TreeView nodes.
 
 ```css
 .e-treeview .e-list-item { 
@@ -86,7 +86,7 @@ Use the following CSS to customize the TreeView nodes based on levels.
 
 The [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeViewFieldsSettings.html#Syncfusion_EJ2_Navigations_TreeViewFieldsSettings_HtmlAttributes) property of the TreeView component allows you to define a mapping field for applying custom HTML attributes to individual TreeView nodes.
 
-By using attributes, you can customize specific nodes effectively. For instance, in the given example, a 'child-node' class is added to a specific node, allowing you to customize the corresponding node via CSS.
+By using HTML attributes, you can customize specific nodes effectively. For instance, in the given example, a 'child-node' class is added to a specific node, allowing you to customize the corresponding node via CSS.
 
 ```css
 .child-node {
