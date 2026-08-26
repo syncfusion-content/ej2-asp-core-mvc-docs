@@ -11,9 +11,9 @@ documentation: ug
 
 # How to validate dropped images in ASP.NET Core File Upload
 
-The uploader control allows you to select all types of images using the *image/ ** to [allowedExtensions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions) property. You can directly set it to accept the attribute of uploader element.
+The Uploader control allows you to select all types of images by assigning `image/*` to the [`allowedExtensions`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions) property. You can also set the `accept` attribute on the uploader element.
 
-By default, it is working fine when you select a file by clicking the browse button. But, this behavior is not supported to drag and drop the files for selection.
+By default, this works correctly when you select a file by clicking the browse button. However, this behavior is not supported for drag-and-drop file selection.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,6 +38,4 @@ By default, it is working fine when you select a file by clicking the browse but
 {% endtabs %}
 {% endif %}
 
-
-
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.
