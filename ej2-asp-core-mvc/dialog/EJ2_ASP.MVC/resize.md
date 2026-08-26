@@ -8,12 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Resize in ASP.NET MVC Dialog
 
-The Dialog supports resizing feature. To resize the dialog, we have to select and resize it by using its handle (grip) or hovering on any of the edges or borders of the dialog within the sample container.
+The Dialog supports resizing. To resize the Dialog, select and resize it using its handle (grip) or by hovering over any of the edges or borders of the Dialog within the sample container.
 
-The resizable dialog can be created by setting the `EnableResize` property to true, which is used to change the size of a dialog dynamically and view its content with expanded mode. The `ResizeHandles` property can also be configured for all the which directions in which the dialog should be resized. When you configure the target property along with the `EnableResize` property, the dialog can be resized within its specified target container.
+A resizable Dialog can be created by setting the `EnableResize` property to `true`, which changes the size of a Dialog dynamically so its content can be viewed in expanded form. The `ResizeHandles` property can be configured for the directions in which the Dialog should be resized. When you configure the `target` property along with the `EnableResize` property, the Dialog can be resized within its specified target container.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,8 +37,6 @@ The resizable dialog can be created by setting the `EnableResize` property to tr
 {% endtabs %}
 {% endif %}
 
+The output looks like the following.
 
-
-Output be like the below.
-
-![resize](./images/dialog_resize.gif)
+![Dialog being resized by dragging its grip handle](./images/dialog_resize.gif)

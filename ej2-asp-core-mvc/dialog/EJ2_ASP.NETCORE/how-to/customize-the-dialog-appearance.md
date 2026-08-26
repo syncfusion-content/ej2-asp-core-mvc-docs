@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to customize the Dialog appearance in ##Platform_Name## Dialog
+# How to customize the Dialog appearance in ASP.NET CORE Dialog
 
 You can customize the Dialog appearance by providing a Dialog template through the [`e-content-template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ContentTemplate) tag.
 

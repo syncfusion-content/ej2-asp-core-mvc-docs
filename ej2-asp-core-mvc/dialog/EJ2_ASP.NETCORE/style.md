@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style in ##Platform_Name## Dialog
+# Style in ASP.NET CORE Dialog
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
