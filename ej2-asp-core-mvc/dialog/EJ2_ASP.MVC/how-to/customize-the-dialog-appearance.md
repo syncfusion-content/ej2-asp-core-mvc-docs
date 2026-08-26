@@ -10,7 +10,7 @@ documentation: ug
 
 # How to customize the Dialog appearance in ##Platform_Name## Dialog
 
-You can customize the dialog appearance by providing dialog template through [`ContentTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ContentTemplate) property. In the following sample, dialog is customized as error window appearance.
+You can customize the Dialog appearance by providing a dialog template through the [`ContentTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ContentTemplate) property. In the following sample, dialog is customized as error window appearance.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -35,8 +35,6 @@ You can customize the dialog appearance by providing dialog template through [`C
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
+The output will look like the following.
 
 ![dialog](../images/dialog-custom-apperance.png)

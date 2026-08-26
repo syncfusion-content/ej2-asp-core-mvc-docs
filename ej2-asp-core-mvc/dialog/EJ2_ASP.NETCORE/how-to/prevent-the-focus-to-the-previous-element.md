@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to prevent focus to the previous element in ##Platform_Name## Dialog
+# How to prevent focus to the previous element in ASP.NET CORE Dialog
 
 By default, when the Dialog is closed, focus returns to the element that was previously focused before the Dialog opened. You can prevent this behavior using the [`beforeClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_BeforeClose) event and setting the `preventFocus` argument to `true`.
 

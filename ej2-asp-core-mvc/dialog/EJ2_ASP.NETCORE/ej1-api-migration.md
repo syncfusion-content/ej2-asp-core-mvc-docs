@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# EJ1 API Migration in ##Platform_Name## Dialog
+# EJ1 API Migration in ASP.NET CORE Dialog
 
 This article describes the API migration process of Dialog control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
