@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtual Scrolling in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table renders only the rows and columns visible in the viewport using EnableVirtualization, for efficient large-dataset rendering.
+description: Learn how the ASP.NET MVC Pivot Table renders only the rows and columns visible in the viewport using EnableVirtualization for large datasets.
 platform: ej2-asp-core-mvc
 control: Virtual Scrolling
 publishingplatform: ##Platform_Name##
@@ -75,7 +75,7 @@ To optimize performance, set the [AllowSinglePage](https://help.syncfusion.com/c
 {% endtabs %}
 {% endif %}
 
-### Static field list
+## Static field list
 
 Virtual scrolling works automatically with **Popup** field lists when you set the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property in the Pivot Table to **true**. However, when using a static field list (displayed as a separate component), you need to connect both components manually.
 

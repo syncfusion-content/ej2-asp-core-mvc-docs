@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
-title: How to add a custom aggregation in ASP.NET MVC Pivot Table | Syncfusion
-description: Step-by-step example showing how to add a custom aggregation type to the menu in the ASP.NET MVC Pivot Table through the aggregation menu.
+title: Custom aggregation menu in ASP.NET MVC Pivot Table | Syncfusion
+description: Step-by-step example showing how to add a custom aggregation type to the menu in the ASP.NET MVC Pivot Table.
 platform: ej2-asp-core-mvc
 control: Add custom aggregation type to the menu
-publishingplatform: ##Platform_Name## 
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

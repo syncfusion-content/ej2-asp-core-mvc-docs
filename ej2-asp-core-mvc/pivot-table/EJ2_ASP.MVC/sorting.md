@@ -376,5 +376,5 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 ## See also
 
-* [Filtering in React Pivot Table](./filtering)
+* [Filtering in ASP.NET MVC Pivot Table](./filtering)
 

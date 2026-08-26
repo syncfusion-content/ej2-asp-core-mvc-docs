@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number Formatting in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table pplies number formats such as currency, percentage, and decimal places to value cells through FormatSettings.
+description: Learn how the ASP.NET MVC Pivot Table applies number formats such as currency, percentage, and decimal places to value cells through FormatSettings.
 platform: ej2-asp-core-mvc
 control: Number Formatting
 publishingplatform: ##Platform_Name##

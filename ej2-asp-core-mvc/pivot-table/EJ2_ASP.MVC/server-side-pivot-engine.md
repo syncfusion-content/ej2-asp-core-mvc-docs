@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Server-Side Pivot Engine in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table coffloads aggregation, filtering, sorting, and grouping to a server-side engine for processing very large datasets.
+description: Learn how the ASP.NET MVC Pivot Table offloads aggregation, filtering, sorting, and grouping to a server-side engine for processing very large datasets.
 platform: ej2-asp-core-mvc
 control: Server Side Pivot Engine
 publishingplatform: ##Platform_Name##
@@ -674,7 +674,7 @@ The memory cache is configured to expire after 60 minutes to help free up RAM. I
 
 ## Excel Export
 
-The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport)as **true**. Once the API is set, the user needs to call the  `excelExport` method to export the pivot table to Excel by clicking an external button.
+The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) **property** to **true**. Once the API is set, the user needs to call the  `excelExport` method to export the pivot table to Excel by clicking an external button.
 
 > The pivot table component can be exported to Excel format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
@@ -810,7 +810,7 @@ The Excel export provides an option to include header and footer content for the
 
 ## CSV Export
 
-The Excel export allows pivot table data to be exported in **CSV** file format as well. To enable CSV export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property as **true**. Once the API is set, the user needs to call the `csvExport` method to export the pivot table to CSV by clicking an external button.
+The Excel export allows pivot table data to be exported in **CSV** file format as well. To enable CSV export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) **property** to **true**. Once the API is set, the user needs to call the `csvExport` method to export the pivot table to CSV by clicking an external button.
 
 > The pivot table component can be exported to CSV format using options available in the toolbar. For more details [refer](./tool-bar) here.
 

@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 title: How to export Pivot Table and Chart to a PDF document | Syncfusion
 description: Step-by-step example showing how to export the table and the chart into the same PDF document in the ASP.NET MVC Pivot Table using the PdfExport method.
 platform: ej2-asp-core-mvc
-control: Export table and chart into the same document using toolbar 
+control: Export table and chart into the same document using toolbar
 documentation: ug
 publishingplatform: ##Platform_Name##
 ---

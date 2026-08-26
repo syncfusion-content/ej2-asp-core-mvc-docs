@@ -17,7 +17,6 @@ Users can display the pivot chart component individually with pivot values and m
 * [`View`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_View): Determines whether the Pivot Table component displays only the grid, only the chart, or both components.
 * [`Primary`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_Primary): Specifies which component (grid or chart) appears as the primary view during initial loading. This option applies only when the [`View`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_View) property is set to **Both**.
 
-
 The following sample shows the pivot chart component based on the pivot report bound to it.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -253,7 +252,7 @@ In the following code sample, the data labels are placed inside the chart points
 
 ![Accumulation chart data labels](images/accumulation-label.png)
 
-The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the [`ConnectorStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartDataLabel.html#Syncfusion_EJ2_PivotView_PivotViewPivotChartDataLabel_ConnectorStyle) property in [`PivotViewPivotChartDataLabel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartDataLabel.html) . The most common sub-properties are:
+The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the [`ConnectorStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartDataLabel.html#Syncfusion_EJ2_PivotView_PivotViewPivotChartDataLabel_ConnectorStyle) property in [`PivotViewPivotChartDataLabel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartDataLabel.html). The most common sub-properties are:
 
 | Property | Type | Description |
 |----------|------|-------------|

@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 title: How to Load Report as Default in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to load a specific report from the ASP.NET Core Pivot Table's saved report list as default via the dataBound event.
 platform: ej2-asp-core-mvc
-control: Load desired report from the report list as default 
+control: Load desired report from the report list as default
 documentation: ug
 publishingplatform: ##Platform_Name##
 ---

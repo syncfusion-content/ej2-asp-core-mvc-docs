@@ -1,11 +1,11 @@
----
+﻿---
 layout: post
-title: How to configure the minimum width in ASP.NET MVC Pivot Table | Syncfusion
+title: Configure PivotView control minimum width | Syncfusion
 description: Step-by-step example showing how to configure the minimum width in the ASP.NET MVC Pivot Table using the minWidth property.
 platform: ej2-asp-core-mvc
-control: Configuring the minimum width in the Pivot Table control.
+control: Configure PivotView minimum width
 documentation: ug
-publishingplatform: ##Platform_Name## 
+publishingplatform: ##Platform_Name##
 ---
 
 # How to configure the minimum width of the  ASP.NET MVC Pivot Table

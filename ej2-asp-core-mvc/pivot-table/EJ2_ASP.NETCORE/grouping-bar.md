@@ -469,6 +469,7 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 ## Show values button
 
 > **Prerequisite:** The grouping bar must be enabled by setting [`ShowGroupingBar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowGroupingBar) to `true`.
+
 The **Values** button appears in the grouping bar when the [`showValuesButton`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowValuesButton) property is set to **true**. This button can be moved to a different position among the fields in either the column or row axis while working with the Pivot Table. To enable this option, set [`showValuesButton`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowValuesButton) to **true** in the `Pivot Table` settings.
 
 > This option is available only when using relational data sources.

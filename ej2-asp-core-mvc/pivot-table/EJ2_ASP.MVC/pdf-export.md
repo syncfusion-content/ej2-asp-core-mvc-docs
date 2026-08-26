@@ -685,7 +685,7 @@ When you export the Pivot Table as a PDF document, you can change the colors use
 {% endtabs %}
 {% endif %}
 
-#### Changing default font while exporting
+### Changing default font while exporting
 
 By default, the Pivot Table uses the "Helvetica" font in the exported PDF. You can change this font by setting the `theme` property in [`PdfExportProperties`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html). The available built-in font options are:
 

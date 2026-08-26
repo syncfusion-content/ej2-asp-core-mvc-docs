@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 title: Add Custom Tooltip to Headers in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to show custom tooltips on ASP.NET MVC Pivot Table row and column headers via an external Tooltip component in the DataBound event.
 platform: ej2-asp-core-mvc
-control: Show tooltip for row and column headers 
+control: Show tooltip for row and column headers
 documentation: ug
 publishingplatform: ##Platform_Name##
 ---

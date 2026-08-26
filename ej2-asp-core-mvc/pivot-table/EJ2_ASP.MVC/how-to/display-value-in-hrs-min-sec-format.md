@@ -1,11 +1,11 @@
----
+﻿---
 layout: post
 title: How to display values in HH:MM:SS in Pivot Table | Syncfusion
-description: Step-by-step example showing how to display numeric values as a custom time string in value cells of the ASP.NET MVC Pivot Table using the aggregateCellInfo event.
+description: Step-by-step example showing how to display numeric values as a custom time string in value cells of the ASP.NET MVC Pivot Table.
 platform: ej2-asp-core-mvc
 control: Display string value to pivot table values
 documentation: ug
-publishingplatform: ##Platform_Name## 
+publishingplatform: ##Platform_Name##
 ---
 
 # How to display values in HH:MM:SS in Pivot Table

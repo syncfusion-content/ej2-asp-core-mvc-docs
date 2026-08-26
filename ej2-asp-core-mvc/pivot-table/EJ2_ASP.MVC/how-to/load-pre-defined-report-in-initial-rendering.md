@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 title: How to load a saved report in Pivot Table on startup | Syncfusion
 description: Step-by-step example showing how to load a pre-defined report from a saved report collection on the initial render of the Pivot Table using the dataBound event.
 platform: ej2-asp-core-mvc
-control: Load desired report from the report list as default 
+control: Load desired report from the report list as default
 documentation: ug
 publishingplatform: ##Platform_Name##
 ---

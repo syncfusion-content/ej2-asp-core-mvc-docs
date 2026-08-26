@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize empty value cells in ASP.NET MVC Pivot Table | Syncfusion
+title: Customize empty value cells in Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize empty value cells in the ASP.NET MVC Pivot Table with custom text and styling.
 platform: ej2-asp-core-mvc
 control: Customize Empty Value Cells

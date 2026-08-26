@@ -59,7 +59,7 @@ For more information on implementing the data compression in the Pivot Table, yo
 
 ### Defer layout update
 
-The Defer Layout Update feature in the Pivot Table allows end-users to perform various operations—such as adding, removing, and rearranging fields, filtering, sorting, changing aggregation types, and more—without immediately updating the Pivot Table. End-users complete their modifications, and the final application of these changes occurs when they click the **Apply** button in the Field List UI. This action triggers the Pivot Table to update based on the last modified report. By deferring the layout update until explicitly requested, the React Pivot Table remains unchanged initially, ensuring minimal resource utilization and avoiding frequent re-rendering.
+The Defer Layout Update feature in the Pivot Table allows end-users to perform various operations—such as adding, removing, and rearranging fields, filtering, sorting, changing aggregation types, and more—without immediately updating the Pivot Table. End-users complete their modifications, and the final application of these changes occurs when they click the **Apply** button in the Field List UI. This action triggers the Pivot Table to update based on the last modified report. By deferring the layout update until explicitly requested, the ASP.NET MVC Pivot Table remains unchanged initially, ensuring minimal resource utilization and avoiding frequent re-rendering.
 
 For more information on defer layout updates, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/defer-update).
 
@@ -150,8 +150,8 @@ N> Normally, pixel units are preferred, ensuring more accurate page calculations
 
 ## See also
 
-* [Virtual Scrolling](./virtual-scrolling)
+* [Virtual scrolling](./virtual-scrolling)
 * [Paging](./paging)
-* [Data Compression](./data-compression)
-* [Defer Update](./defer-update)
+* [Data compression](./data-compression)
+* [Defer update](./defer-update)
 

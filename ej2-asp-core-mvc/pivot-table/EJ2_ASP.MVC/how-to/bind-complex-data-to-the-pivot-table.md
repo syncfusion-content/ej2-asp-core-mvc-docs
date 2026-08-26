@@ -1,11 +1,11 @@
----
+﻿---
 layout: post
 title: How to convert complex JSON to flat JSON for Pivot Table | Syncfusion
 description: Step-by-step example showing how to convert complex JSON to flat JSON in the ASP.NET MVC Pivot Table and assign it as the data source.
 platform: ej2-asp-core-mvc
-control: Pivot Table
+control: Bind complex JSON to Pivot Table
 documentation: ug
-publishingplatform: ##Platform_Name## 
+publishingplatform: ##Platform_Name##
 ---
 
 <!-- markdownlint-disable MD009 -->
