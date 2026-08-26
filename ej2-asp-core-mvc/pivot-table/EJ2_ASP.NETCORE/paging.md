@@ -16,7 +16,7 @@ Paging divides the Pivot Table data into manageable pages so the component can r
 
 To enable paging, set the [`EnablePaging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnablePaging) property to **true** (type `boolean`, default `false`).
 
- Paging can be configured at initial render using the [`e-pageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PageSettings) property, which accepts the following options:
+Paging can be configured at initial render using the [`e-pageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PageSettings) property, which accepts the following options:
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|

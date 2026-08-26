@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hyperlink in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table adds hyperlinks to row, column, and value cells through HyperlinkSettings for interactive navigation and drill-through.
+description: Learn how the ASP.NET MVC Pivot Table adds Hyperlinks to row, column, and value cells through HyperlinkSettings for interactive navigation and drill-through.
 platform: ej2-asp-core-mvc
 control: Hyper Link
 publishingplatform: ##Platform_Name##
