@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Add dialog min and max buttons to ##Platform_Name## Dialog header
+# Add dialog min and max buttons to ASP.NET MVC Dialog header
 
 The ##Platform_Name## Dialog supports adding custom minimize and maximize buttons to the Dialog header. You can add these buttons near the close icon in the Dialog header by using the `headerTemplate` property and handling the actions in the button click events, as shown in the following sample.
 

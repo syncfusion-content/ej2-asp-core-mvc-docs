@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Getting Started with ##Platform_Name## Dialog
+# Getting Started with ASP.NET MVC Dialog
 
 This section briefly explains how to include the [ASP.NET MVC Dialog](https://www.syncfusion.com/aspnet-mvc-ui-controls/modal-dialog) control in an ASP.NET MVC application using Visual Studio.
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization in ##Platform_Name## Dialog
+# Localization in ASP.NET MVC Dialog
 
 The localization library allows you to localize the default text content of the Dialog. In the Dialog, the close button's tooltip text alone will be localize based on culture.
 

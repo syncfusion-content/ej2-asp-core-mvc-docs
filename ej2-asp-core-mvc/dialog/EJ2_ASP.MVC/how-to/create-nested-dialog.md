@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to create nested Dialog in ##Platform_Name## Dialog
+# How to create nested Dialog in ASP.NET MVC Dialog
 
 A Dialog can be nested within another Dialog. The following sample demonstrates a nested Dialog, containing an outer (parent) Dialog and an inner (child) Dialog.
 

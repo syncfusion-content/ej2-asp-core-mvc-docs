@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Close Dialog on Outside Click in ##Platform_Name##
+# How to Close Dialog on Outside Click in ASP.NET MVC
 
 By default, Dialog can be closed by pressing Esc key and clicking the close icon on the right of Dialog header. It can also be closed by clicking outside of the Dialog using hide method. Set the [`CloseOnEscape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_CloseOnEscape) property value to false to prevent closing of the Dialog when pressing Esc key.
 
