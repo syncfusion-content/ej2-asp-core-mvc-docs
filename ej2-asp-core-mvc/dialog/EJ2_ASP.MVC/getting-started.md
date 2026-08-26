@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Getting Started with ##Platform_Name## Dialog
+# Getting Started with ASP.NET MVC Dialog
 
 This section briefly explains how to include the [ASP.NET MVC Dialog](https://www.syncfusion.com/aspnet-mvc-ui-controls/modal-dialog) control in an ASP.NET MVC application using Visual Studio.
 
@@ -192,7 +191,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 * [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/grid/dialogediting#/fluent2)
 * [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
-* [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
-* [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
-* [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
-* [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+* [How to position the Dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
+* [Prevent closing of modal Dialog](./how-to/prevent-closing-of-modal-dialog)
+* [Close dialog while click on outside of Dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
+* [How to make a reusable alert and confirm Dialog](./how-to/render-a-dialog-using-utility-functions)

@@ -7,12 +7,14 @@
 <script>
     function onfiltering(e) {
         var CBObj = document.getElementById("customers").ej2_instances[0];
-        // load overall data when search key empty.
-        if (e.text == '' && e.text.length < 3) {
+        // load all data when the search text is empty or below the 3-character minimum.
+        if (e.text.length < 3) {
             e.updateData(CBObj.dataSource);
+            return;
         }
-            let query = new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6);
-            query = (e.text !== '' && e.text.length >= 3) ? query.where('ContactName', 'startswith', e.text, true) : query;
-            e.updateData(CBObj.dataSource, query);
+        // filter the data when the search text is 3 characters or more.
+        let query = new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6);
+        query = query.where('ContactName', 'startswith', e.text, true);
+        e.updateData(CBObj.dataSource, query);
     }
 </script>

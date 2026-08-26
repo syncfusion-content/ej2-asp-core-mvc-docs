@@ -11,11 +11,11 @@ documentation: ug
 
 # How to clear selected items in ##Platform_Name## DropDownList
 
-You can clear the selected item in the below two different ways.
+You can clear the selected item in two ways.
 
-By clicking on the `clear icon` which is shown in DropDownList element, you can clear the selected item in DropDownList through **interaction**. By using [showClearButton](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ShowClearButton) property, you can enable the clear icon in DropDownList element.
+By clicking on the `clear icon` which is shown in DropDownList element, you can clear the selected item in DropDownList through **interaction**. By using [ShowClearButton](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ShowClearButton) property, you can enable the clear icon in DropDownList element.
 
-Through **programmatic** you can set `null` value to anyone of the index, text or value property to clear the selected item in DropDownList.
+**Programmatically** you can set `null` value to any one of the [Index](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Index), [Text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Text) or [Value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Value) properties to clear the selected item in DropDownList.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

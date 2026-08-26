@@ -11,11 +11,11 @@ documentation: ug
 
 # Validation in ##Platform_Name## File Upload
 
-The uploader control validate the selected files size and extension using the [allowedExtensions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions), [minFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MinFileSize) and [maxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MaxFileSize) properties. The files can be validated before uploading to the server and can be ignored on uploading. Also, you can validate the files by setting the HTML attributes to the original input element. The validation process occurs on drag-and-drop the files also.
+The Uploader control validates the selected file's size and extension using the [`allowedExtensions`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions), [`minFileSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MinFileSize) and [`maxFileSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MaxFileSize) properties. The files can be validated before uploading to the server and ignored during upload. Additionally, you can validate the files by setting the HTML attributes on the input element. The validation process also occurs when you drag and drop the files.
 
 ## File type
 
-You can allow the specific files alone to Upload using the [allowedExtensions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions) property. The extension can be represented as collection by comma separators. The uploader control filters the selected or dropped files to match against the specified file types and processes the upload operation. The validation happens when you specify value to inline attribute to accept the original input element.
+You can allow only specific files to be Uploaded using the [`allowedExtensions`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions) property. The extension can be specified as a comma-separated list. The uploader control filters the selected or dropped files to match the specified file types and processes the upload operation. The validation also occurs when you specify a value as an inline attribute on the original input element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ Output be like the below.
 
 ## File size
 
-The uploader control allows you to validate the files based on its size. The validation helps to restrict uploading large files or empty files to the server. The size can be represented in `bytes`. By default, the uploader control allows you to upload **minimum file size** as 0 byte and **maximum file size** as 28.4 MB using the [minFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MinFileSize) and [maxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MaxFileSize) properties.
+The Uploader control allows you to validate the files based on their size. The validation helps to restrict uploading large or empty files to the server. The file size is measured in `bytes`. By default, the Uploader control allows you to upload files with a **minimum file size** of 0 bytes and a **maximum file size** of 28.4 MB, using the [`minFileSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MinFileSize) and [`maxFileSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MaxFileSize) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,15 +73,13 @@ The uploader control allows you to validate the files based on its size. The val
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
+The output will be as shown below.
 
 ![uploader](./images/uploader-valid-size.png)
 
 ## Maximum files count
 
-You can restrict uploading the maximum number of files using the **selected** event. In the selected event arguments, you can get the currently selected files details using the `getFilesData()`. You can modify the files details and assign the modified file list to the `eventArgs.modifiedFilesData`.
+You can restrict uploading the maximum number of files using the `selected` event. In the selected event arguments, you can get the details of currently selected files using `getFilesData()`. You can modify the files' details and assign the modified file list to `eventArgs.modifiedFilesData`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -110,8 +108,7 @@ You can restrict uploading the maximum number of files using the **selected** ev
 
 ## Duplicate files
 
-You can validate the duplicate files before uploading to server using the selected event. 
-Compare the selected files with the existing files data and filter the file list by removing the duplicate files.
+You can check for duplicate files before uploading them to the server using the `selected` event. Compare the selected files with the existing files data and filter the file list to remove the duplicate files.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -138,7 +135,7 @@ Compare the selected files with the existing files data and filter the file list
 
 
 
-## See Also
+## See also
 
 * [Validate image/* on drop](./how-to/validate-image-on-drop)
 * [Determine whether uploader has file input (required validation)](./how-to/determine-whether-the-uploader-has-input-file)

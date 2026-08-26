@@ -6,7 +6,7 @@
 <script>
     function onFileSelected(args) {
         // Filter the 5 files only to showcase
-        var uploadObj = document.getElementById("UploadFiles")
+        var uploadObj = document.getElementById("UploadFiles");
         args.filesData.splice(5);
         var filesData = uploadObj.ej2_instances[0].getFilesData();
         var allFiles = filesData.concat(args.filesData);

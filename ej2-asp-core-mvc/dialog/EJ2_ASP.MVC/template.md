@@ -8,24 +8,26 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Template in ASP.NET MVC Dialog
 
-# Template in ##Platform_Name## Dialog
-
-In Dialog the template support is provided to the header and footer sections. So any text or HTML content can be appending in these sections.
+The Dialog component allows you to customize the header, footer, and content sections using templates. This enables you to add custom HTML, text, or dynamic content to these areas.
 
 ## Header
 
-The Dialog header content can be provided through the [`Header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property, and it will allow both text and any HTML content as a string. Also in header, close button is provided as built-in support, and this can be enabled through the [`ShowCloseIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ShowCloseIcon) property.
+The Dialog header content can be customized through the [`Header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property, which accepts both text and HTML content as a string. You can also enable the built-in close button using the [`ShowCloseIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ShowCloseIcon) property.
 
 ## Footer
 
-The Dialog footer can be enabled by adding built-in [`Buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) or providing any HTML string through the [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate).
+The Dialog footer can be configured in two ways:
+
+1. **Using built-in buttons** — Add predefined action buttons through the [`Buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property
+2. **Using footer template** — Provide custom HTML through the [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) property
 
 N> The [`Buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) and [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) properties can't be used at the same time.
 
 ## Content
 
-The Dialog content can be provided through the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property, and it accepts both text and HTML string as content.
+The Dialog content can be customized through the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property, and it accepts both text and HTML string as content.
 
 The below example demonstrates the usage of header, footer and content template in the Dialog
 
@@ -52,13 +54,11 @@ The below example demonstrates the usage of header, footer and content template 
 {% endtabs %}
 {% endif %}
 
-
-
 Output be like the below.
 
 ![dialog](./images/dialog-template.png)
 
 ## See Also
 
-* [How to add an icon to dialog buttons](./how-to/add-an-icons-to-dialog-buttons)
-* [How to customize the dialog appearance](./how-to/customize-the-dialog-appearance)
+* [How to add an icon to Dialog buttons](./how-to/add-an-icons-to-dialog-buttons)
+* [How to customize the Dialog appearance](./how-to/customize-the-dialog-appearance)

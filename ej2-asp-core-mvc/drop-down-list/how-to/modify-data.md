@@ -11,7 +11,7 @@ documentation: ug
 
 # How to modify remote data in ##Platform_Name## DropDownList
 
-When binding the remote data source, by using the [actionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionComplete) event, you can modify the result data before passing it to DropDownList.
+When binding the remote data source, use the [actionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionComplete) event to modify the result data before it is passed to the DropDownList.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

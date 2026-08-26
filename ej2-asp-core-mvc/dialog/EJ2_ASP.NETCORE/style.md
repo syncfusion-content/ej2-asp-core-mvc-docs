@@ -8,14 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Style in ##Platform_Name## Dialog
+# Style in ASP.NET CORE Dialog
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
-## Customizing the dialog header
+## Customizing the Dialog header
 
-Use the following CSS to customize the dialog header properties.
+Use the following CSS to customize the Dialog header properties.
 
 ```CSS
 .e-dialog .e-dlg-header {
@@ -25,9 +24,9 @@ Use the following CSS to customize the dialog header properties.
 }
 ```
 
-## Customizing the dialog content
+## Customizing the Dialog content
 
-Use the following CSS to customize the dialog content properties.
+Use the following CSS to customize the Dialog content properties.
 
 ```CSS
 .e-dialog .e-dlg-content {
@@ -38,9 +37,9 @@ Use the following CSS to customize the dialog content properties.
 }
 ```
 
-## Customizing modal dialog overlay
+## Customizing the modal dialog overlay
 
-Use the following CSS to customize the modal dialog overlay.
+Use the following CSS to customize the modal Dialog overlay.
 
 ```CSS
 .e-dlg-overlay {
@@ -49,9 +48,9 @@ Use the following CSS to customize the modal dialog overlay.
 }
 ```
 
-## Customizing the dialog resize icon
+## Customizing the Dialog resize icon
 
-Use the following CSS to customize the dialog resize icon.
+Use the following CSS to customize the Dialog resize icon.
 
 ```CSS
 /* To change the icon content */
@@ -65,11 +64,11 @@ Use the following CSS to customize the dialog resize icon.
 }
 ```
 
-The above CSS demonstration uses the font awesome icon.
+The CSS above uses the Font Awesome icon.
 
-## Customizing the dialog close button
+## Customizing the Dialog close button
 
-Use the following CSS to customize the dialog close button.
+Use the following CSS to customize the Dialog close button.
 
 ```CSS
 /* To specify font size and color */
@@ -79,9 +78,9 @@ Use the following CSS to customize the dialog close button.
 }
 ```
 
-## Customizing the dialog footer button
+## Customizing the Dialog footer button
 
-Use the following CSS to customize the dialog footer button.
+Use the following CSS to customize the Dialog footer button.
 
 ```CSS
 /* To specify font color, background color and border color */

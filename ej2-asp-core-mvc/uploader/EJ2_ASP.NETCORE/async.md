@@ -11,16 +11,16 @@ documentation: ug
 
 # Asynchronous Upload in ##Platform_Name## File Upload
 
-The uploader control allows you to upload the files asynchronously. The upload process requires save and remove action URL to manage the upload process in the server.
+The uploader control allows you to upload the files asynchronously. The upload process requires a save and remove action URL to manage the upload process in the server.
 
 * The save action is necessary to handle the upload operation.
-* The remove action is optional, one can handle the removed files from server.
+* The remove action is optional, you can handle the removed files from server.
 
 The File can be uploaded automatically or manually. For more information, you can refer to the [Auto Upload](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AutoUpload) section from the documentation.
 
 ## Multiple file upload
 
-By Default, the uploader control allows you to select and upload multiple files simultaneously. The selected files are organized in a list for every file selection until you clear it by clicking clear button that is shown in footer. You can add the multiple attributes to original input element of file by enabling the multiple file selection. The following example explains about [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file upload settings.
+By default, the uploader control allows you to select and upload multiple files simultaneously. The selected files are organized in a list for every file selection until you clear it by clicking clear button that is shown in footer. You can add the multiple attribute to the original file input element of file by enabling the multiple file selection. The following example explains about [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file upload settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -82,12 +82,10 @@ The following example explains about single file upload settings.
 
 ## Save action
 
-The save action handler upload the files that needs to be specified in the [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) property. 
-The save handler receives the submitted files and manages the save process in server. 
-After uploading the files to server location, the color of the selected file name changes to green and the remove icon is changed as bin icon.
+The save action handler uploads the files that needs to be specified in the [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) property. The save handler receives the submitted files and manages the save process in server. After uploading the files to server location, the color of the selected file name changes to green and the remove icon is changed as bin icon.
 
 * When the file is uploaded successfully, the event [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) triggers to handle the operation after upload.
-* When the file is failed to upload, the event [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) triggers with information, which cause this failure.
+* When the file is failed to upload, the event [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) triggers with information, which caused this failure.
 
 You can cancel the upload process by setting the upload event argument [eventargs.cancel](https://ej2.syncfusion.com/documentation/api/uploader/uploadingeventargs#cancel) to true.
 
@@ -257,8 +255,7 @@ The following example demonstrates the client-side action for saving files on th
 
 ## Remove action
 
-The remove action is optional. Specify the URL to handle remove process from server. 
-The remove handler receives the posted files and handle the remove operation in server.
+The remove action is optional. Specify the URL to handle remove process from server. The remove handler receives the posted files and handles the remove operation in server.
 
 * When the files are removed successfully from the server, the [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) event triggers to denote the process has completed.
 * When remove action fails, the event [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) triggers with information, which cause failure in remove process.
@@ -348,7 +345,7 @@ public void Remove(IFormFile UploadFiles)
 
 ## Auto upload
 
-By default, the uploader processes the files to upload once the files are selected and added in upload queue. To upload manually, disable the [autoUpload](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AutoUpload) property. When you disable this property, you can use the action buttons to call upload all or clear all actions manually. You can change those buttons text using the [buttons](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Buttons) property in Uploader control.
+By default, uploads files automatically once they are selected and added in upload queue. To upload manually, disable the [autoUpload](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AutoUpload) property. When you disable this property, you can use the action buttons to call upload all or clear all actions manually. You can change those buttons text using the [buttons](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Buttons) property in Uploader control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -385,7 +382,7 @@ Auto upload false output be like the below.
 
 ## Sequential upload
 
-By default, the uploader control process multiple files to upload simultaneously. When you enable the [sequentialUpload](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_SequentialUpload) property, the selected files will process sequentially (one after the other) to the server. If the file uploaded successfully or failed, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload.
+By default, the uploader control process multiple files to upload simultaneously. When you enable the [sequentialUpload](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_SequentialUpload) property, the selected files will be processed sequentially (one after the other) to the server. If a file uploads successfully or fails, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -413,12 +410,11 @@ By default, the uploader control process multiple files to upload simultaneously
 
 
 ## Preloaded files
+The uploader control supports a preloaded list of files that are uploaded in the server. The preloaded files are useful to view and remove the files from server that can be achieved by the [files](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Files) property. By default, the files are configured with uploaded successfully state on rendering file list. The following properties are mandatory to configure the preloaded files:
 
-The uploader control allows you to preloaded the list of files that are uploaded in the server. The preloaded files are useful to view and remove the files from server that can be achieved by the [files](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Files) property. By default, the files are configured with uploaded successfully state on rendering file list. The following properties are mandatory to configure the preloaded files:
-
-    *   Name
-    *   Size
-    *   Type
+* Name
+* Size
+* Type
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -443,10 +439,6 @@ The uploader control allows you to preloaded the list of files that are uploaded
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
 ![uploader](./images/uploader-preload.png)
 
 ## Adding additional HTTP headers with upload action
@@ -469,7 +461,7 @@ The following code block shows how to add the additional headers with save and r
 
 N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
 
-## See Also
+## See also
 
 * [How to add additional data on upload](./how-to/add-additional-data-on-upload)
 * [How to add confirm dialog to remove the files](./how-to/add-confirm-dialog-to-remove-the-files)

@@ -11,7 +11,7 @@ documentation: ug
 
 # How to customize the progress bar in ASP.NET Core File Upload
 
-You can customize the progress bar’s size, color, and background by overriding  the styles in uploader control. Refer to the following example.
+You can customize the progress bar's size, color, and background by overriding the styles in the Uploader control. Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,4 +38,4 @@ You can customize the progress bar’s size, color, and background by overriding
 
 
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.

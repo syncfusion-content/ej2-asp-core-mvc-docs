@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Position dialog on page scroll | Syncfusion
-description: Keep the Syncfusion ##Platform_Name## Dialog centered on the page while scrolling by adding the e-fixed class to the Dialog element to prevent page scroll.
+title: Position the Dialog on page scroll | Syncfusion
+description: Keep the Syncfusion ##Platform_Name## Dialog fixed on the page while scrolling by adding the e-fixed class to prevent it from scrolling with the page content.
 platform: ej2-asp-core-mvc
 control: Position The Dialog On Center Of The Page On Scrolling
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # How to position Dialog on page scroll in ##Platform_Name## Dialog
 
-By default, when scroll the page/container Dialog also scrolled along with the page/container. When a user expects to display the Dialog in the same position without scrolling achieving this in sample level as like below. Here added 'e-fixed' class to Dialog element and prevent the scrolling.
+By default, when the page or container is scrolled, the Dialog is also scrolled along with it. To keep the Dialog in a fixed position during scrolling, add the `e-fixed` class to the Dialog element. This prevents the Dialog from scrolling with the page content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -34,5 +33,6 @@ By default, when scroll the page/container Dialog also scrolled along with the p
 {% include code-snippet/dialog/how-to/scrolling/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
+
 {% endif %}
 
