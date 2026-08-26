@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to customize the browse button with an HTML element
+# How to customize the browse button with an HTML element in File Upload
 
 The Uploader control allows you to customize the action buttons by using the [`buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Buttons) property. Refer to the following example.
 
