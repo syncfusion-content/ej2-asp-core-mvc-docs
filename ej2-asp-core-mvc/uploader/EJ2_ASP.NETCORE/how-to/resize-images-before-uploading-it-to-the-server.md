@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# How to resize images before uploading to the server in ASP.NET Core
+# How to resize images before uploading in ASP.NET Core File Upload
 
-You can customize the dimension of the images before uploading it to the server. 
-By using selected event, you can get the selected file information as type of an object. From the obtained image file information, create a new canvas and render an image with the custom dimensions. Refer the corresponding code snippet as follows.
+You can customize the dimensions of an image before uploading it to the server. Using the `selected` event, you can get the selected file information as an object. From this information, create a new canvas and render the image with custom dimensions. Refer to the following code snippet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,6 +36,4 @@ By using selected event, you can get the selected file information as type of an
 {% endtabs %}
 {% endif %}
 
-
-
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.
