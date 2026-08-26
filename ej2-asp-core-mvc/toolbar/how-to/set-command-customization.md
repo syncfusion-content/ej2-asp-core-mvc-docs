@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to set command customization in ##Platform_Name## Toolbar
+# How To Set Command Customization In ##Platform_Name## Toolbar
 
-The `htmlAttributes` property of the Toolbar item is used to set the HTML attributes ('ID', 'class', 'style' ,'role') for the commands.
+The `htmlAttributes` property of the Toolbar item is used to set HTML attributes ('ID', 'class', 'style', 'role') for commands.
 
-When style attributes are added, if the same attributes were already present, they will be replaced. This is not so in the case of `class` attribute. Classes will be added to the element instead of replacing the existing ones.
+When style attributes are added and the same attributes already exist, they will be replaced. However, the `class` attribute behaves differently. Classes are appended rather than replaced.
 
 Single or multiple CSS classes can be added to the Toolbar commands using the Toolbar item `cssClass` property.
 
@@ -39,8 +39,6 @@ Single or multiple CSS classes can be added to the Toolbar commands using the To
 {% endtabs %}
 {% endif %}
 
+The output looks like the following.
 
-
-Output be like the below.
-
-![Alt text](../images/toolbar_command.PNG)
+![Toolbar displaying customized command buttons with applied HTML attributes and CSS classes](../images/toolbar_command.PNG)
