@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to render a Dialog without a header in ##Platform_Name## Dialog
+# How to render a Dialog without a header in ASP.NET CORE Dialog
 
 The Dialog can be rendered without a header by setting the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property value to an empty string or null. By default, the dialog is rendered without a header.
 
