@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure data grid on pivot editing mode | Syncfusion
-description: Step-by-step example showing how to configure data grid options on editing mode in the ASP.NET MVC Pivot Table using beginDrillThrough.
+description: Step-by-step example showing how to configure data grid options on editing mode in the ASP.NET MVC Pivot Table using BeginDrillThrough.
 platform: ej2-asp-core-mvc
 control: Configure Data Grid Options On Editing Mode
 publishingplatform: ##Platform_Name##
