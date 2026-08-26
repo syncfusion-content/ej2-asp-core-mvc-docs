@@ -11,9 +11,6 @@ documentation: ug
 # How to display a Dialog at a custom position in ASP.NET CORE Dialog
 
 By default, the Dialog is displayed in the center of the target container. The Dialog position can be set using the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property by providing custom X and Y coordinates. The Dialog can be positioned inside the target based on the given X and Y values.
-
-By default, the Dialog is displayed in the center of the target container. Set the Dialog position by providing custom X and Y coordinates to the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property. The `X` and `Y` values can be numeric (pixels) or one of the predefined alignment strings: `'center'`, `'left'`, `'right'`, `'top'`, or `'bottom'`.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
