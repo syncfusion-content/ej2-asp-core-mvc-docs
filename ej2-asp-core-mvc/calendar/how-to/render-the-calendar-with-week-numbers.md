@@ -8,10 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Render the Calendar with Week Numbers
 
-# Render the Calendar with week numbers
-
-You can enable `weekNumbers` in the Calendar by using the [weekNumber](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_WeekNumber) property.
+You can display week numbers alongside the calendar dates by enabling the [weekNumber](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_WeekNumber) property. When set to `true`, the Calendar shows the week number for each row of dates.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

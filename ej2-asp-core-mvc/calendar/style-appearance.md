@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style and appearance in Calendar Component
+# Style and appearance in the Calendar component
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference. Add these CSS styles to your application's stylesheet or to a `<style>` block in the page/view.
 
 ## Customizing the background color for the Calendar
 
@@ -24,9 +24,9 @@ Use the following CSS to customize the background color and border for the Calen
 }
 ```
 
-## Customizing the Calendar date elements on hovering
+## Customizing the date elements on hover in the Calendar
 
-Use the following CSS to customize the date elements on hovering in the Calendar.
+Use the following CSS to customize the date elements on hover in the Calendar.
 
 ```css
 /* To specify background color, color, and border */
@@ -53,7 +53,7 @@ Use the following CSS to add the border to the date cell grid.
 Use the following CSS to customize the Calendar title.
 
 ```css
-/* To specify color and font size  */
+/* To specify color and font size */
 .e-calendar .e-header .e-title, .e-bigger.e-small .e-calendar .e-header .e-title {
         color: black;
         font-size: 20px;
@@ -65,7 +65,7 @@ Use the following CSS to customize the Calendar title.
 Use the following CSS to customize the previous and next icon.
 
 ```css
-/* To specify color and border  */
+/* To specify color and border */
 .e-calendar .e-header span, .e-bigger.e-small .e-calendar .e-header span {
         border: 1px solid;
         color: chocolate;
@@ -97,9 +97,9 @@ Use the following CSS to customize the selected date cell grid in Calendar.
 }
 ```
 
-## Customizing the content header in Calendar
+## Customizing the content header in the Calendar
 
-Use the following CSS to customize the content header in Calendar.
+Use the following CSS to customize the content header in the Calendar.
 
 ```css
 /* To specify background */
