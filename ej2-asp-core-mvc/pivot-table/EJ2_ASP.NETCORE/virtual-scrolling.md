@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtual scrolling in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table renders only the rows and columns visible in the viewport using enableVirtualization, for efficient large-dataset rendering.
+description: Learn how the ASP.NET Core Pivot Table renders only visible rows and columns via enableVirtualization and the VirtualScroll module for smooth scrolling.
 platform: ej2-asp-core-mvc
 control: Pivot Table
 publishingplatform: ##Platform_Name##
