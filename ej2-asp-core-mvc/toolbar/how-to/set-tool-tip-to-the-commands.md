@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to set tooltip for commands in ##Platform_Name## Toolbar
+# How to Set Tooltip for Commands in ##Platform_Name## Toolbar
 
-The `tooltipText` property of the Toolbar item is used to set the HTML Tooltip to the commands that can be viewed as hint texts on mouse hover.
+The `tooltipText` property of the Toolbar item is used to set an HTML Tooltip to the commands that can be viewed as hint text on mouse hover.
 
 Initialize the Tooltip with the Toolbar target. Refer to the following code example:
 
@@ -37,8 +37,6 @@ Initialize the Tooltip with the Toolbar target. Refer to the following code exam
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
+The output looks like the following.
 
 ![Alt text](../images/toolbar_tooltip.PNG)
