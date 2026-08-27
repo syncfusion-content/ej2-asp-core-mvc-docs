@@ -393,8 +393,6 @@ This option lets users easily adjust the PDF layout to fit their specific needs 
 
 You can adjust the size of the exported PDF document by setting the `height` and `width` options in the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event. This allows you to specify the dimensions of the PDF before creating it.
 
-> Note: This option is available only when `enableVirtualization` is set to **true**. Also, make sure that both the `VirtualScroll` and `PDFExport` modules are added to the Pivot Table.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -421,8 +419,6 @@ You can adjust the size of the exported PDF document by setting the `height` and
 ### Customize the table column count while exporting
 
 Users can control how many Pivot Table columns appear on each page of the exported PDF by setting the `columnSize` option in the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event. This allows users to split Pivot Table columns across multiple pages when exporting large tables to PDF, making the output easier to read.
-
-> Note: This option works only when `enableVirtualization` is enabled in the Pivot Table settings. Also, make sure that both `VirtualScroll` and `PDFExport` modules are injected into the Pivot Table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
