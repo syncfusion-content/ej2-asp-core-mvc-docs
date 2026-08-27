@@ -8,10 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # How to prevent focus on the first element in ##Platform_Name## Dialog
 
-By default, the dialog focuses on the first elements of the content area which can be active and focusable. You can prevent this default focusing behavior using the [`Open`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Open) event and by enabling the `preventFocus` argument.
+By default, when a Dialog opens, focus automatically shifts to the first focusable element in the content area (such as an input field or button). The [`Open`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Open) event provides a `preventFocus` parameter that allows you to prevent this behavior, keeping focus on the triggering element or implementing custom focus logic.
 
 Bind the open event and enable the preventFocus argument within an event like the below example.
 

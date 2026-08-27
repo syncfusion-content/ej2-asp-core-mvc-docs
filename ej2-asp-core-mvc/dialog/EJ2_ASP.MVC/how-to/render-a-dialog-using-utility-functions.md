@@ -8,19 +8,18 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # How to render a Dialog with utility functions in ASP.NET MVC Dialog
 
-The Dialog control provides built-in utility functions to render the alert and confirm dialogs with the minimal code. The following options are used as an argument on calling the utility functions:
+The Dialog control provides built-in utility functions to render alert and confirm dialogs with minimal code. The following options are used as an argument on calling the utility functions:
 
 | Options   | Description |
 |-----------|-------------|
-| title | Specifies the title of dialog like the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property.|
-| content | Specifies the value that can be displayed in dialog's content area like the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property. |
-| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [`isModal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) property.|
-| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property { X: ‘center’, Y: ‘center’}|
-| okButton | Configures the `OK button` that contains button properties with the click events. `okButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for OK button click', text: 'Yes' // <-- Default value is 'OK' }`|
-| cancelButton | Configures the `Cancel button` that contains button properties with the click events. `cancelButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for ‘Cancel’ button click', text: 'No' // <-- Default value is 'Cancel'}`|
+| title | Specifies the title of dialog like the [`header`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property.|
+| content | Specifies the value that can be displayed in dialog's content area like the [`content`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property. |
+| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [`isModal`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) property.|
+| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [`position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property (e.g., `{ X: 'center', Y: 'center'}`)|
+| okButton | Configures the `OK button` that contains button properties with the click events. Format: `okButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for OK button click', text: 'Yes' }`. Default `text` is `'OK'`.|
+| cancelButton | Configures the `Cancel button` that contains button properties with the click events. Format: `cancelButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for Cancel button click', text: 'No' }`. Default `text` is `'Cancel'`.|
 |isDraggable|Specifies the value whether the alert or confirm dialog can be dragged by the user.|
 | showCloseIcon | When set to true, the close icon is shown in the Dialog control. |
 |closeOnEscape|When set to true, you can close the dialog by pressing ESC key.|
@@ -57,8 +56,6 @@ An alert dialog box is used to display warning like messages to the users. Use t
 {% endtabs %}
 {% endif %}
 
-
-
 ### Render an alert dialog with options
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -83,8 +80,6 @@ An alert dialog box is used to display warning like messages to the users. Use t
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Confirm dialog
 
@@ -113,8 +108,6 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 {% endtabs %}
 {% endif %}
 
-
-
 ### Render a confirmation dialog with options
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -139,8 +132,6 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Close utility dialog
 
