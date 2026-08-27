@@ -10,7 +10,7 @@ documentation: ug
 
 # How to prevent focus to the previous element in ASP.NET MVC Dialog
 
-By default, when the dialog is closed, focus returns to the element that was previously focused before the dialog opened. You can prevent this behavior using the `beforeClose` event and setting the `preventFocus` argument to `true`.
+By default, when the Dialog is closed, focus returns to the element that was previously focused before the dialog opened. You can prevent this behavior by handling the [`beforeClose`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_BeforeClose) event and setting the `preventFocus` argument to `true`.
 
 Bind the `beforeClose` event and enable the `preventFocus` argument as shown in the sample below.
 
@@ -36,4 +36,3 @@ Bind the `beforeClose` event and enable the `preventFocus` argument as shown in 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-

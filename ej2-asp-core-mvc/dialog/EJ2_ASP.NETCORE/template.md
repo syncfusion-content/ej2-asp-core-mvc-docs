@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template in ##Platform_Name## Dialog
+# Template in ASP.NET CORE Dialog
 
 The Dialog component allows you to customize the header, footer, and content sections using templates. This enables you to add custom HTML, text, or dynamic content to these areas.
 

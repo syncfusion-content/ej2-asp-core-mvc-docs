@@ -1,21 +1,20 @@
 ---
 layout: post
 title: Row and Column in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to set the ASP.NET MVC Pivot Table's width, height, row height, column width, and grid lines via the Height, Width, and GridSettings properties.
+description: Learn how the ASP.NET MVC Pivot Table configures row and column axes, including field placement, width, height, scrollbar behavior, and layout options.
 platform: ej2-asp-core-mvc
 control: Row And Column
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 <!-- markdownlint-disable MD012 -->
 
-# Row and Column in ASP.NET MVC Pivot Table
+# Row and column in ASP.NET MVC Pivot Table
 
 ## Width and Height
 
-Setting appropriate dimensions for the Pivot Table ensures optimal display and better user experience across different screen sizes and layouts. You can define the Pivot Table's dimensions using the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Height) and [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Width) properties in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class respectively.
+Setting appropriate dimensions for the Pivot Table ensures optimal display and better user experience across different screen sizes and layouts. You can define the Pivot Table's dimensions using the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Height) and [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Width) properties to meet your specific requirements.
 
 These dimension properties support multiple formats to accommodate various layout scenarios and provide flexibility in how you define the component's size:
 
@@ -126,7 +125,7 @@ In the following example, the [`ColumnWidth`](https://help.syncfusion.com/cr/asp
 
 ### Adjust width based on columns
 
-By default, when the component width exceeds the total width of all columns, the columns are automatically stretched to fill the available space. To prevent this stretching behavior, set the [`AllowAutoResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_AllowAutoResizing) property in the [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html). This ensures that the Pivot Table adjusts its overall width to match the combined width of all columns, maintaining their original proportions and improving data readability.
+By default, when the component width exceeds the total width of all columns, the columns are automatically stretched to fill the available space. To prevent this stretching behavior, set the [`AllowAutoResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_AllowAutoResizing) property to **false** within the [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html). This ensures that the Pivot Table adjusts its overall width to match the combined width of all columns, maintaining their original proportions and improving data readability.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -159,7 +158,7 @@ By default, when the component width exceeds the total width of all columns, the
 
 The reorder option provides users with the flexibility to reorganize column headers within the Pivot Table by dragging and dropping them to different positions. This allows users to customize the layout of their data for better analysis and presentation.
 
-To enable this option, set the [`AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_AllowReordering) property in [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) class to **true**. Once enabled, users can simply click and drag any column header to move it to their desired position within the table.
+To enable this option, set the [`AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_AllowReordering) property to **true** within the [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) class. Once enabled, users can simply click and drag any column header to move it to their desired position within the table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -225,7 +224,7 @@ This option is enabled by default. To control column resizing, set the [`AllowRe
 
 ## Text Wrap
 
-The Pivot Table allows users to wrap cell content to the next line when the content exceeds the boundary of the cell width. To enable text wrap, set the [`AllowTextWrap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_AllowTextWrap) property in [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) class to **true**.
+The Pivot Table allows users to wrap cell content to the next line when the content exceeds the boundary of the cell width. To enable text wrap, set the [`AllowTextWrap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_AllowTextWrap) property to **true** within the [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) class.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -679,7 +678,7 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 ## Cell Template
 
-You can change how each cell in the Pivot Table looks by using the [`CellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) option. With [`CellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate), you can use either an HTML string or the ID of an HTML element to add custom content to every cell. This helps you display cell values in any format you prefer, such as adding icons, colors, or other elements for better understanding.
+You can change how each cell in the Pivot Table looks by using the [`CellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) option. Set [`CellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) to the `ID` of an HTML element that contains the template markup. The element must be present in the DOM before the Pivot Table renders. This helps you display cell values in any format you prefer, such as adding icons, colors, or other elements for better understanding.
 
 For example, in the following sample, each year's revenue cost is shown along with trend icons. This gives users a clear and quick way to see changes in data at a glance.
 
@@ -754,7 +753,7 @@ By using these parameters in the event, users can highlight cells, format values
 
 ### HeaderCellInfo
 
-The `headerCellInfo` event is triggered when the Pivot Table renders a header cell. This event allows users to easily modify the appearance or content of each header cell as it is displayed. It includes the following parameters:
+The `HeaderCellInfo` event is triggered when the Pivot Table renders a header cell. This event allows users to easily modify the appearance or content of each header cell as it is displayed. It includes the following parameters:
 
 - `node`: Contains details about the current header cell’s content and structure.
 - `cell`: Represents the specific cell being rendered.
@@ -850,6 +849,6 @@ The [`CellClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Pi
 
 
 
-## See Also
+## See also
 
 * [Show/hide tooltip](./tool-tip)
