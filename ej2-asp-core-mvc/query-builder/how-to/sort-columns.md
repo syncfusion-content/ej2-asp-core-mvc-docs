@@ -11,7 +11,7 @@ documentation: ug
 
 # Sort Columns in ##Platform_Name## Query Builder
 
-SortDirection allows you to sort the columns bounded to the Query Builder to view the columns by ascending or descending order. You should set the `SortDirection` property to sort the fields.
+The [`SortDirection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_SortDirection) property allows you to sort the columns bound to the Query Builder to view the columns in ascending or descending order. You should set the `SortDirection` property to sort the fields.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
