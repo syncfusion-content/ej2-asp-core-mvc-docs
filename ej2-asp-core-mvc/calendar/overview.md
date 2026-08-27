@@ -10,9 +10,9 @@ documentation: ug
 
 # Overview
 
-The **Calendar** is a graphical user interface control that displays a Gregorian Calendar and allows a user to select a date.
+The **Calendar** is a graphical user interface control that displays a Gregorian Calendar, and allows a user to select a date.
 
-## Key features
+## Key Features
 
 The features of the Calendar are:
 

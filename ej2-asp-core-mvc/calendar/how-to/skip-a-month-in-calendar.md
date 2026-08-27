@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Skip A Month in Calendar in ##Platform_Name## Calendar Control | Syncfusion
+title: Skip A Month in Calendar in ##Platform_Name## Calendar | Syncfusion
 description: Learn here all about how to skip a month in Calendar in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Skip A Month in Calendar

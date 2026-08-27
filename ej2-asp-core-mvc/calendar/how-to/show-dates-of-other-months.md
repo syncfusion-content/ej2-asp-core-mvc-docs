@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Show Dates of Other Months in ##Platform_Name## Calendar Control | Syncfusion
+title: Show Dates of Other Months in ##Platform_Name## Calendar | Syncfusion
 description: Learn here all about show dates of other months in ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Show Dates of Other Months
