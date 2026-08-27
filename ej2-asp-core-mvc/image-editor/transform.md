@@ -3,20 +3,20 @@ layout: post
 title: Transform in ##Platform_Name## ImageEditor | Syncfusion
 description: Rotate and flip Syncfusion ##Platform_Name## ImageEditor images clockwise, counter-clockwise, vertically, or horizontally using the rotate and flip APIs.
 platform: ej2-asp-core-mvc
-control: Transform
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Transform in the ##Platform_Name## Image Editor control
 
-The Image Editor provides a range of transformation options for manipulating both the image and its annotations. These options include rotation, flipping, zooming, and panning. These transformations offer flexibility in adjusting the image and enhancing its visual appearance. 
+The [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) provides a range of transformation options for manipulating both the image and its annotations. These options include rotation, flipping, zooming, and panning. These transformations offer flexibility in adjusting the image and enhancing its visual appearance. 
 
 ## Rotate an image
 
 The Image Editor allows to rotate the image and its annotations by a specific number of degrees clockwise or anti-clockwise using `rotate` method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it anti-clockwise.
 
-`Note:` It is recommended to pass values in multiples of 90° (e.g., 90, 180, -90) for proper rotation alignment.
+N> It is recommended to pass values in multiples of 90° (e.g., 90, 180, -90) for proper rotation alignment.
 
 Here is an example of rotating an image in a button click event.
 

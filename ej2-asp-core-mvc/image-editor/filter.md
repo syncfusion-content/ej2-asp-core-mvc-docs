@@ -3,7 +3,7 @@ layout: post
 title: Filters in ##Platform_Name## ImageEditor | Syncfusion
 description: Apply cold, warm, chrome, sepia, invert, and grayscale filters to images in Syncfusion ##Platform_Name## ImageEditor using the toolbar or applyImageFilter method.
 platform:  ej2-asp-core-mvc
-control: Filter 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Filters in ##Platform_Name## ImageEditor
 
-Filters are pre-defined effects that can be applied to an image to alter its appearance or mood. Image filters can be used to add visual interest or to enhance certain features of the image. Some common types of image filters include cold, warm, chrome, sepia, and invert. This can be done by either using the toolbar or the `applyImageFilter` method which takes a single parameter: the filter applied to an image.
+Filters are pre-defined effects that can be applied to an image to alter its appearance or mood. Image filters can be used to add visual interest or to enhance certain features of the image. Some common types of image filters include cold, warm, chrome, sepia, and invert. You can apply filters using the toolbar or the `applyImageFilter` method which takes a single parameter: the filter applied to an image.
 
 ## Apply filter effect
 
 The `applyImageFilter` method is utilized to apply filters to an image. By passing the desired filter type as the first parameter of the method, specified as `ImageFilterOption` the method applies the corresponding filter to the image. This allows for easy and convenient application of various filters to enhance or modify the image based on the chosen filter type.
 
-The `applyImageFilter` method is used to perform filtering by specifying the type of filter as ImageFilterOption and send it a first parameter of the method. 
+The `applyImageFilter` method is used to perform filtering by specifying the type of filter as ImageFilterOption and pass it as the first parameter. 
 
 Here is an example of filtering using the `applyImageFilter` method.
 
@@ -50,7 +50,7 @@ Output be like the below.
 
 ## Image filtering event 
 
-The [`imageFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ImageFiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
+The [imageFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ImageFiltering) event is triggered when a filter is applied to the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
 
 The parameter available in the `ImageFilterEventArgs` event is, 
 
