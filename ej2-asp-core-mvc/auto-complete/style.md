@@ -11,9 +11,9 @@ documentation: ug
 
 # Style in ##Platform_Name## AutoComplete
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user's preference.
 
-## Customizing the appearance of wrapper element
+## Customizing the appearance of the wrapper element
 
 Use the following CSS to customize the appearance of wrapper element.
 
@@ -26,9 +26,9 @@ Use the following CSS to customize the appearance of wrapper element.
 }
 ```
 
-## Customizing the dropdown icon’s color
+## Customizing the dropdown icon's color
 
-Use the following CSS to customize the dropdown icon’s color.
+Use the following CSS to customize the dropdown icon's color.
 
 ```css
 .e-ddl.e-input-group .e-input-group-icon,.e-ddl.e-input-group.e-control-wrapper .e-input-group-icon:hover {
@@ -39,7 +39,7 @@ Use the following CSS to customize the dropdown icon’s color.
 
 ## Customizing the focus color
 
-Use the following CSS to customize the focusing color of input element.
+Use the following CSS to customize the focus color of the input element.
 
 ```css
 .e-ddl.e-input-group.e-control-wrapper.e-input-focus::before, .e-ddl.e-input-group.e-control-wrapper.e-input-focus::after {
@@ -49,7 +49,7 @@ Use the following CSS to customize the focusing color of input element.
 
 ## Customizing the outline theme's focus color
 
-Use the following CSS to customize the focusing color of outline theme.
+Use the following CSS to customize the focus color of the outline theme.
 
 ```css
 .e-outline.e-input-group.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left),.e-outline.e-input-group.e-input-focus.e-control-wrapper:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left),.e-outline.e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled),.e-outline.e-input-group.e-control-wrapper.e-input-focus:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) {
@@ -58,7 +58,7 @@ Use the following CSS to customize the focusing color of outline theme.
 }
 ```
 
-## Customizing the disabled component’s text color
+## Customizing the disabled component's text color
 
 Use the following CSS to customize the text color when the component is disabled.
 
@@ -68,9 +68,9 @@ Use the following CSS to customize the text color when the component is disabled
 }
 ```
 
-## Customizing the float label element's focusing color
+## Customizing the float label element's focus color
 
-Use the following CSS to customize the focusing color of float label element.
+Use the following CSS to customize the focus color of the float label element.
 
 ```css
 .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before,.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before,.e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after,.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after {
@@ -114,9 +114,9 @@ Use the following CSS to customize the selection color of text and background.
 }
 ```
 
-## Customizing the background color of focus, hover, and active item's
+## Customizing the background color of focus, hover, and active items
 
-Use the following CSS to customize the background color of focus, hover and active item's.
+Use the following CSS to customize the background color of focus, hover and active items.
 
 ```css
 .e-dropdownbase .e-list-item.e-item-focus, .e-dropdownbase .e-list-item.e-active, .e-dropdownbase .e-list-item.e-active.e-hover, .e-dropdownbase .e-list-item.e-hover {
@@ -125,9 +125,9 @@ Use the following CSS to customize the background color of focus, hover and acti
 }
 ```
 
-## Customizing the appearance of pop-up element
+## Customizing the appearance of the pop-up element
 
-Use the following CSS to customize the appearance of popup element.
+Use the following CSS to customize the appearance of the pop-up element.
 
 ```css
 .e-dropdownbase .e-list-item, .e-dropdownbase .e-list-item.e-item-focus {

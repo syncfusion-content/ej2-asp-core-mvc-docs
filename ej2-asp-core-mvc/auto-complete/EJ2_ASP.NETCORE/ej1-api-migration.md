@@ -11,9 +11,10 @@ documentation: ug
 # EJ1 API Migration in ##Platform_Name## AutoComplete
 
 This article describes the API migration process of AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
-N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use multiselection support in autocomplete, use MultiSelect component.
 
-## DataBinding
+N> MultiSelect concept is not present in EJ2 AutoComplete. If you want to use multi-selection support in AutoComplete, use MultiSelect component.
+
+## Data binding
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
@@ -30,29 +31,29 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Case sensitivity** | **Property**: *case-sensitive-search*<br/>`<ej-autocomplete id="autocomplete" case-sensitive-search="true"></ej-autocomplete>`|**Property:** *ignoreCase*<br/>`<ejs-autocomplete id="autocomplete" ignoreCase="true"></ejs-autocomplete>`|
-| **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`ejs-autocomplete id="autocomplete" ignoreAccent="true"></ejs-autocomplete>`|
+| **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`<ejs-autocomplete id="autocomplete" ignoreAccent="true"></ejs-autocomplete>`|
 | **Filtering Type** | **Property:** *filter-type*<br/>`<ej-autocomplete id="autocomplete" filter-type=(FilterType.Contains)></ej-autocomplete>`| **Property**: *filterType*<br/>`<ejs-autocomplete id="autocomplete" filterType="StartsWith"></ejs-autocomplete>` |
-| **Autofill** | **Property:** *enable-auto-fill*<br/>`<ej-autocomplete id="autocomplete" enable-auto-fill="true"></ej-autocomplete>` | **Property:**: *autoFill* <br/>`ejs-autocomplete id="autocomplete" autoFill="true"></ejs-autocomplete>`|
-| **Highlight the search word** | **Property**: *highlight-search* `<ej-autocomplete id="autocomplete" highlight-search="true"></ej-autocomplete>`|**Property:** *highlight* <br/>`ejs-autocomplete id="autocomplete" highlight="true"></ejs-autocomplete>` |
+| **Autofill** | **Property:** *enable-auto-fill*<br/>`<ej-autocomplete id="autocomplete" enable-auto-fill="true"></ej-autocomplete>` | **Property:**: *autoFill* <br/>`<ejs-autocomplete id="autocomplete" autoFill="true"></ejs-autocomplete>`|
+| **Highlight the search word** | **Property**: *highlight-search* `<ej-autocomplete id="autocomplete" highlight-search="true"></ej-autocomplete>`|**Property:** *highlight* <br/>`<ejs-autocomplete id="autocomplete" highlight="true"></ejs-autocomplete>` |
 | **No of items to be shown** | **Property:** *items-count*<br/>`<ej-autocomplete id="autocomplete" items-count=2></ej-autocomplete>` |**Property:** *suggestionCount*<br/>`<ejs-autocomplete id="autocomplete" suggestionCount="5"></ejs-autocomplete>` |
-| **Minimum characters to enter** | **Property:** *min-character*<br/> `<ej-autocomplete id="autocomplete" min-character=2></ej-autocomplete>` |**Property:** *minLength* <br/>`ejs-autocomplete id="autocomplete" minLength="3"></ejs-autocomplete>` |
+| **Minimum characters to enter** | **Property:** *min-character*<br/> `<ej-autocomplete id="autocomplete" min-character=2></ej-autocomplete>` |**Property:** *minLength* <br/>`<ejs-autocomplete id="autocomplete" minLength="3"></ejs-autocomplete>` |
 | **Search** | **Method:** *search* <br/>`<ej-autocomplete id="autocomplete"></ej-autocomplete>`<br/><br/>`$("#autocomplete").ejAutocomplete("search");` | **Not applicable** |
 
 ## Placeholder
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Watermark text** | **Property:** *watermark-text* <br/>`<ej-autocomplete id="autocomplete" watermark-text="select"></ej-autocomplete>`| **Property:** *placeholder* <br/>`ejs-autocomplete id="autocomplete" placeholder="select"></ejs-autocomplete>`|
-| **Floating  of waterMarkText** | **Not applicable**   | **Property:** *floatLabelType* <br/>`ejs-autocomplete id="autocomplete" floatLabelType="auto"></ejs-autocomplete>`|
+| **Watermark text** | **Property:** *watermark-text* <br/>`<ej-autocomplete id="autocomplete" watermark-text="select"></ej-autocomplete>`| **Property:** *placeholder* <br/>`<ejs-autocomplete id="autocomplete" placeholder="select"></ejs-autocomplete>`|
+| **Floating of waterMarkText** | **Not applicable**   | **Property:** *floatLabelType* <br/>`<ejs-autocomplete id="autocomplete" floatLabelType="auto"></ejs-autocomplete>`|
 
 ## Popup
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **No records text** | **Property:** *empty-result-text* <br/> `<ej-autocomplete id="autocomplete" empty-result-text="no records"></ej-autocomplete>`| **Property:** *noRecordsTemplate*<br/> `<ejs-autocomplete id="autocomplete" noRecordsTemplate="@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")"></ejs-autocomplete>`|
-| **No records showing** | **Property:** *show-empty-result-text<br/> `<ej-autocomplete id="autocomplete" show-empty-result-text="no records"></ej-autocomplete>` | **Not applicable** |
-| **Popupbutton** | **Property:** *show-popup-button*<br/> `<ej-autocomplete id="autocomplete" show-popup-button="true"></ej-autocomplete>` | **Property:** *showPopupButton*<br/> `<ej-autocomplete id="autocomplete" showPopupButton="true"></ej-autocomplete>`|
-| **Clear button** | **Property:** *show-reset-icon* <br/> `<ej-autocomplete id="autocomplete" show-reset-icon="true"></ej-autocomplete>` | **Property:** *showClearButton* <br/>`<ej-autocomplete id="autocomplete" show-clear-button="true"></ej-autocomplete>` |
+| **No records showing** | **Property:** *show-empty-result-text* <br/> `<ej-autocomplete id="autocomplete" show-empty-result-text="no records"></ej-autocomplete>` | **Not applicable** |
+| **Popupbutton** | **Property:** *show-popup-button*<br/> `<ej-autocomplete id="autocomplete" show-popup-button="true"></ej-autocomplete>` | **Property:** *showPopupButton*<br/> `<ejs-autocomplete id="autocomplete" showPopupButton="true"></ejs-autocomplete>`|
+| **Clear button** | **Property:** *show-reset-icon* <br/> `<ej-autocomplete id="autocomplete" show-reset-icon="true"></ej-autocomplete>` | **Property:** *showClearButton* <br/>`<ejs-autocomplete id="autocomplete" showClearButton="true"></ejs-autocomplete>` |
 | **Animation** | **Property:** *animate-type* <br/> `<ej-autocomplete id="autocomplete" animate-type=AnimateType.none></ej-autocomplete>` | **Not Applicable** |
 | **Focusing the list item** | **Property:** *auto-focus*<br/> `<ej-autocomplete id="autocomplete" auto-focus="true"></ej-autocomplete>` |**Not applicable** |
 | **Delaying the popup open time** | **Property:** *delay-suggestion-timeout*<br/> `<ej-autocomplete id="autocomplete" delay-suggestion-timeout=500></ej-autocomplete>` | **Not applicable** |
@@ -68,11 +69,11 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *css-class* <br/> `<ej-autocomplete id="autocomplete" css-class="customclass"></ej-autocomplete>` | **Property:** *cssClass* <br/> `<ej-autocomplete id="autocomplete" cssClass="customClass"></ej-autocomplete>`|
-| **Height** | **Property:** *height* <br/> `<ej-autocomplete id="autocomplete" height="300px"></ej-autocomplete>`| By using *css-class* property, you can acheive this. |
-| **showRoundedCorner**   | **Property:** *show-rounded-corner*<br/> `<ej-autocomplete id="autocomplete" show-rounded-corner="true"></ej-autocomplete>` | **By using *css-class* property, you can acheive this**.|
-| **Width** | **Property:** *width* <br/> `<ej-autocomplete id="autocomplete" width="300px"></ej-autocomplete>`| **Property:** *width* <br/> `<ej-autocomplete id="autocomplete" width="300px"></ej-autocomplete>`|
-| **Visibility** | **Property:** *visible* <br/> `<ej-autocomplete id="autocomplete" visisble="true"></ej-autocomplete>` | **By using *css-class* property, you can acheive this**. |
+| **Default** | **Property:** *css-class* <br/> `<ej-autocomplete id="autocomplete" css-class="customclass"></ej-autocomplete>` | **Property:** *cssClass* <br/> `<ejs-autocomplete id="autocomplete" cssClass="customClass"></ejs-autocomplete>`|
+| **Height** | **Property:** *height* <br/> `<ej-autocomplete id="autocomplete" height="300px"></ej-autocomplete>`| By using *css-class* property, you can achieve this. |
+| **showRoundedCorner**   | **Property:** *show-rounded-corner*<br/> `<ej-autocomplete id="autocomplete" show-rounded-corner="true"></ej-autocomplete>` | By using *css-class* property, you can achieve this.|
+| **Width** | **Property:** *width* <br/> `<ej-autocomplete id="autocomplete" width="300px"></ej-autocomplete>`| **Property:** *width* <br/> `<ejs-autocomplete id="autocomplete" width="300px"></ejs-autocomplete>`|
+| **Visibility** | **Property:** *visible* <br/> `<ej-autocomplete id="autocomplete" visisble="true"></ej-autocomplete>` | By using *css-class* property, you can achieve this. |
 
 ## Grouping
 
@@ -90,13 +91,13 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *template* `<ej-autocomplete id="autocomplete" template="@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")">></ej-autocomplete>`|**Property:** *itemTemplate*<br/> `<ejs-autocomplete id="employees" itemTemplate="@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")">></ejs-autocomplete>` |
+| **Default** | **Property:** *template* `<ej-autocomplete id="autocomplete" template="@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")"></ej-autocomplete>`|**Property:** *itemTemplate*<br/> `<ejs-autocomplete id="employees" itemTemplate="@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")"></ejs-autocomplete>` |
 | **Group Template** | **Not Applicable**  | **Property:** *groupTemplate* <br/>`<ejs-autocomplete id="employees" groupTemplate="@Html.Raw("<strong>${City}</strong>")"></ejs-autocomplete>`|
 | **ValueTemplate** | **Not applicable** | **Property:** *valueTemplate* <br/>`<ejs-autocomplete id="employees" valueTemplate="data"></ejs-autocomplete>`|
 | **Header Template** | **Not applicable** | **Property:** *headerTemplate* <br/> `<ejs-autocomplete id="employees" headerTemplate="@Html.Raw("<span class='head'><span class='name'>Name</span><span class='city'>City</span></span>")"></ejs-autocomplete>`|
-| **FooterTemplate** | **Not applicable** | **Property:** *footerTemplate* <br/>`<ejs-autocomplete id="employees" footerTemplate="@Html.Raw( "<span class='foot'> Total list items: " + 7 + "</span>")"></ejs-autocomplete>`|
+| **FooterTemplate** | **Not applicable** | **Property:** *footerTemplate* <br/>`<ejs-autocomplete id="employees" footerTemplate="@Html.Raw("<span class='foot'> Total list items: " + 7 + "</span>")"></ejs-autocomplete>`|
 | **No records Template** | **Not applicable** | **Property:** *noRecordsTemplate* <br/>`<ejs-autocomplete id="employees" noRecordsTemplate="@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")"></ejs-autocomplete>`|
-| **Action failure Template** | **Not applicable** | **Property:** *actionFailureTemplate* <br/>`<ejs-autocomplete id="employees" actionFailureTemplate="@Html.Raw("<div class=\"header\"> <span>Photo</span> <span class=\"info\">Employee Info</span></div>)")"></ejs-autocomplete>`|
+| **Action failure Template** | **Not applicable** | **Property:** *actionFailureTemplate* <br/>`<ejs-autocomplete id="employees" actionFailureTemplate="@Html.Raw("<div class=\"header\"> <span>Photo</span> <span class=\"info\">Employee Info</span></div>")"></ejs-autocomplete>`|
 
 ## Sorting
 
@@ -117,7 +118,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 | ------------ | ------------ | ----------- |
 |**Selecting particular value**| **Property**: *select-value-by-key* <br/>`<ej-autocomplete id="autocomplete" selectValueByKey="13"></ej-autocomplete>`|**Achievable through value property** |
 | **Selecting particular value** | **Property**: *value*<br/>`<ej-autocomplete id="autocomplete" value="data"></ej-autocomplete>` | **Property:** *value*<br/> `<ejs-autocomplete id="country" value="data"></ejs-autocomplete>`|
-| **Selecting particular text** | **Property:** *text*<br/> `<ej-autocomplete id="autocomplete" text="data"></ej-autocomplete>` | **By using text property, you can acheive this.** |
+| **Selecting particular text** | **Property:** *text*<br/> `<ej-autocomplete id="autocomplete" text="data"></ej-autocomplete>` | **By using text property, you can achieve this.** |
 | **Selecting particular value** |**Method:** *selectValueByKey*<br/>`<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/> `$("#autocomplete").selectValueByKey("key")`| **Achievable through value property**   |
 | **Selecting particular text** |**Method:** *selectValueByText* <br/> `<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/> `$("#autocomplete").selectValueByText("key")`|**Achievable through text property** |
 | **Select event** |**Event**: *select*<br/>`<ej-autocomplete id="autocomplete" select="onSelect"></ej-autocomplete>` | **Event:** *select* <br/> `<ejs-autocomplete id="country" sortOrder="auto"></ejs-autocomplete>`|
@@ -140,11 +141,11 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 | **Addition of new item** | **Property:**  *allow-add-new* <br/>`<ej-autocomplete id="autocomplete" allow-add-new="true"></ej-autocomplete>`  | **Property:** *allowCustom*<br/> `<ej-autocomplete id="autocomplete" allowCustom="true"></ej-autocomplete>`|
 | **Reset the autocomplete** | **Property:** *show-reset-icon* <br/>`<ej-autocomplete id="autocomplete" show-reset-icon="true"></ej-autocomplete>`|**Property:** *showClearIcon* `<ejs-autocomplete id="country" showClearIcon="true"></ejs-autocomplete>` |
 | **Destroy** | **Method:** *destroy*<br/> `<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/>`$("#autocomplete").ejAutoComplete("destroy");`| **Method:** *destroy* <br/>`<ejs-autocomplete id="country"></ejs-autocomplete>`<br/> <br/>`var autoObj = document.getElementById("country").ej2_Instances[0];`<br/><br/>`autoObj.destroy();`|
-| **Reset the autocomplete** | **Method:** *clearText*<br/>`<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/>`$("#autocomplete").ejAutoComplete("clearText");`  | **By passing empty value to the value property, you can acheive this**   |
+| **Reset the autocomplete** | **Method:** *clearText*<br/>`<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/>`$("#autocomplete").ejAutoComplete("clearText");`  | **By passing empty value to the value property, you can achieve this**   |
 | **Multicolumn** | **Property:** *multiColumnSettings*<br/> `<ej-autocomplete id="autocomplete" datasource="ViewBag.datasource"><e-multicolumnsettings enable="true" show-header="true" string-format="{0} ({1})" search-column-indices="@val.SearchColumnIndices"><e-multi-columns><e-multi-column field="UniqueKey" header-text="Unique Key"></e-multi-column><e-multi-column field="Text" header-text="Text"></e-multi-column></e-multi-columns></e-multicolumnsettings></ej-autocomplete>` |**Not applicable** |
-| **Hide the Autocomplete** | **Method:** *hide*<br/>`<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/>`$("#autocomplete").ejAutoComplete("hide");` | **By using *css-class* property, you can acheive this.**
+| **Hide the Autocomplete** | **Method:** *hide*<br/>`<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/>`$("#autocomplete").ejAutoComplete("hide");` | **By using *css-class* property, you can achieve this.**
 | **Getting particular text** | **Method:** *getActiveText* <br/>`<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/>`$("#autocomplete").ejAutoComplete("getActiveText");`|**By using text property, you can get it.** |
-| **Getting particular value** | **Method:** *getValue*<br/> `<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/>`$("#autocomplete").ejAutoComplete("getValue");` |** By using value property, you can get it.** |
+| **Getting particular value** | **Method:** *getValue*<br/> `<ej-autocomplete id="autocomplete" ></ej-autocomplete>`<br/><br/>`$("#autocomplete").ejAutoComplete("getValue");` |**By using value property, you can get it.** |
 | **Change event** | **Event:** *change*<br/>`<ej-autocomplete id="autocomplete" change="onChange"></ej-autocomplete>`|**Event:** *change* <br/>`<ejs-autocomplete id="country" change="onChange"></ejs-autocomplete>`|
 | **Create event** | **Event:** *create* <br/>`<ej-autocomplete id="autocomplete" change="onChange"></ej-autocomplete>`|**Event:** *created* <br/>`<ejs-autocomplete id="country" created="onCreated"></ejs-autocomplete>`|
 | **Destroy event** | **Event:** *destroy* <br/>`<ej-autocomplete id="autocomplete" destroy="onDestroy"></ej-autocomplete>` |**Event:** *destroyed* <br/>`<ejs-autocomplete id="country" destroyed="onDestroy"></ejs-autocomplete>`|

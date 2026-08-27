@@ -8,19 +8,18 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Localization in ##Platform_Name## AutoComplete
 
-The Localization library allows you to localize static text content of the `noRecordsTemplate` and `actionFailureTemplate` properties according to the culture currently assigned to the AutoComplete.
+The Localization library allows you to localize the default text of the `noRecordsTemplate` and `actionFailureTemplate` properties according to the culture currently assigned to the AutoComplete.
 
-| Locale key | en-US (default)
-|------|------
-| noRecordsTemplate |  No Records Found
-| actionFailureTemplate | The Request Failed
+| Locale key | en-US (default) |
+|------|------|
+| noRecordsTemplate | No Records Found |
+| actionFailureTemplate | The Request Failed |
 
 ## Loading translations
 
-To load translation object to your application, use load function of the **L10n** class.
+To load a translation object into your application, use the `load` function of the [L10n](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.L10n.html) class.
 
 In the following sample, French culture is set to the AutoComplete and no data is loaded. Hence, the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_NoRecordsTemplate) property displays its text in French culture initially and if the sample is run offline, the [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_ActionFailureTemplate) property displays its text appropriately.
 

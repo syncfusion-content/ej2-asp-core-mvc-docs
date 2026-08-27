@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Filter using text and value field in AutoComplete | Syncfusion
-description: Learn here all about Text Value Field in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
+title: Filter Using Text and Value Field in AutoComplete | Syncfusion
+description: Learn here all about Text Value Field in the Syncfusion ##Platform_Name## AutoComplete component of Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Value Field
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Filter Using Text and Value Field in ##Platform_Name## AutoComplete
 
-# Filter using text and value field in ##Platform_Name## AutoComplete
-
-The AutoComplete data can be filtered based on both text and value fields using `predicate` of dataManager through filtering event. The filtered data can be again updated through `updateData` method.
+The AutoComplete data can be filtered based on both the text and value fields using a [`Predicate`](https://ej2.syncfusion.com/documentation/api/query/) of the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data-manager/) through the [`Filtering`](https://ej2.syncfusion.com/documentation/api/auto-complete/#filtering) event. The filtered data can then be updated through the [`updateData`](https://ej2.syncfusion.com/documentation/api/auto-complete/#updatedata) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
