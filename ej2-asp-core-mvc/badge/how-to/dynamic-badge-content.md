@@ -10,7 +10,7 @@ documentation: ug
 
 # Dynamic Badge Content in ##Platform_Name## Badge
 
-Badges in real-time needs to be updated dynamically based on the requirements. The following sample demonstrates how to update the Badges content dynamically. Click the increment button to change the Badge value.
+Badges in real-time need to be updated dynamically based on the requirements. The following sample demonstrates how to update the Badge content dynamically. Click the increment button to change the Badge value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
