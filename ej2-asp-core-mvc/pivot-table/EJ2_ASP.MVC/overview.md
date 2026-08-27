@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion ASP.NET MVC Pivot Table | Syncfusion
-description: Explore the ASP.NET MVC Pivot Table overview and feature matrix for data analysis, data sources, layouts, performance, exporting, accessibility, and AI integration.
+description: Explore ASP.NET MVC Pivot Table features, data analysis, data sources, layouts, exporting, performance, accessibility, and AI capabilities.
 control: Pivot Table
 platform: ej2-asp-core-mvc
 documentation: ug
@@ -158,7 +158,7 @@ Editing changes the underlying raw records and is available only for relational 
 AI assistance is an application integration pattern rather than a built-in Pivot Table engine capability. The reference implementation combines Pivot Table with AI AssistView and a secured server-side large language model integration.
 
 | Feature | Availability | Applies to |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Natural-language report configuration | Integration pattern | Operations allowed by the application's validated action contract |
 | AI-assisted filtering, sorting, aggregation, layout, and chart changes | Integration pattern | Operations allowed by the application's validated action contract |
 
@@ -166,5 +166,5 @@ AI assistance is an application integration pattern rather than a built-in Pivot
 
 * [Getting started](./getting-started)
 * [Live Pivot Table demos](https://ej2.syncfusion.com/aspnetmvc/pivottable/overview#/fluent2)
-* [Pivot Table API reference](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.html/)
-* [Release notes](https://ej2.syncfusion.com/aspnetmvc/documentation/release-notes/)
+* [Pivot Table API reference](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.html)
+* [Release notes](https://ej2.syncfusion.com/aspnetmvc/documentation/release-notes)
