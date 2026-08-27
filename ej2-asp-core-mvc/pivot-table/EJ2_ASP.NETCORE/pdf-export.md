@@ -2,8 +2,8 @@
 layout: post
 title: PDF export in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table exports pivot data to PDF using the PdfExport module, with options to customize page size, orientation, and styling.
-control: Pivot Table
 platform: ej2-asp-core-mvc
+control: Pivot Table
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -680,6 +680,8 @@ When you export the Pivot Table as a PDF document, you can change the colors use
 
 The available built-in `theme` values are: `Material`, `Fabric`, `Bootstrap`, `Bootstrap4`, `Tailwind`, `Fluent`, `Fluent2`, `Material3`, `MaterialDark`, `FabricDark`, `BootstrapDark`, `TailwindDark`, `FluentDark`, and `HighContrast`.
 
+> Only these built-in themes are accepted. Other theme names (for example, `Bootstrap5`, `Tailwind3`, or `BDS`) are not recognized and are silently rendered using the default Material theme.
+
 > By default, the Material theme is applied to the exported PDF document.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -704,61 +706,6 @@ The available built-in `theme` values are: `Material`, `Fabric`, `Bootstrap`, `B
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-### Font customization
-
-The following options control the fonts used in the exported PDF document.
-
-#### Changing default font while exporting
-
-By default, the Pivot Table uses the "Helvetica" font in the exported PDF. You can change this font by setting the `theme` property in `pdfExportProperties`. The available built-in font options are:
-
-- Helvetica
-- TimesRoman
-- Courier
-- Symbol
-- ZapfDingbats
-
-```javascript
-
-var pdfExportProperties = {
-    theme: { 
-                header: {font:  new PdfStandardFont(PdfFontFamily.TimesRoman, 11, PdfFontStyle.Bold) }, 
-                caption: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 9) }, 
-                record: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 10) } 
-            } 
-}
-
-```
-
-#### Adding custom font while exporting
-
-You can also use custom fonts when exporting if you need support for languages or styles that are not available in the built-in fonts. The custom font should be in **Base64** format and applied using the **PdfTrueTypeFont** class. In the example below, the **Advent Pro** font is used, which supports the Hungarian language.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/pdf-export/non-english-export/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Non-english-export.cs" %}
-{% include code-snippet/pivot-table/pdf-export/non-english-export/non-english-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/pdf-export/non-english-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Non-english-export.cs" %}
-{% include code-snippet/pivot-table/pdf-export/non-english-export/non-english-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-> Non-English alphabets can also be exported correctly when you specify a suitable font.
 
 ### Apply conditional styles
 
@@ -788,6 +735,61 @@ The following example demonstrates how to apply conditional formatting to the **
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Font customization
+
+The following options control the fonts used in the exported PDF document.
+
+### Changing default font while exporting
+
+By default, the Pivot Table uses the "Helvetica" font in the exported PDF. You can change this font by setting the `theme` property in `pdfExportProperties`. The available built-in font options are:
+
+- Helvetica
+- TimesRoman
+- Courier
+- Symbol
+- ZapfDingbats
+
+```javascript
+
+var pdfExportProperties = {
+    theme: { 
+                header: {font:  new PdfStandardFont(PdfFontFamily.TimesRoman, 11, PdfFontStyle.Bold) }, 
+                caption: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 9) }, 
+                record: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 10) } 
+            } 
+}
+
+```
+
+### Adding custom font while exporting
+
+You can also use custom fonts when exporting if you need support for languages or styles that are not available in the built-in fonts. The custom font should be in **Base64** format and applied using the **PdfTrueTypeFont** class. In the example below, the **Advent Pro** font is used, which supports the Hungarian language.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/non-english-export/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Non-english-export.cs" %}
+{% include code-snippet/pivot-table/pdf-export/non-english-export/non-english-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/non-english-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Non-english-export.cs" %}
+{% include code-snippet/pivot-table/pdf-export/non-english-export/non-english-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+> Non-English alphabets can also be exported correctly when you specify a suitable font.
 
 ## Enabling horizontal overflow
 

@@ -81,8 +81,9 @@ Virtual scrolling works automatically with **Popup** field lists when you set th
 To make virtual scrolling work with a static field list:
 
 1. Enable virtual scrolling in the Pivot Table component by setting the [enableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property to **true**.
-2. Connect the PivotFieldList component to the Pivot Table component using the [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#OnLoad) event.
-3. Synchronize the Pivot Table and field list by updating the Pivot Table's report configuration with the field list's report configuration inside the [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#OnLoad) event.
+2. Connect the PivotFieldList component to the Pivot Table component using the [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_Load) event.
+3. Synchronize the Pivot Table and field list by updating the Pivot Table's report configuration with the field list's report configuration during the [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_Load) event.
+
 
 {% if page.publishingplatform == "aspnet-core" %}
 

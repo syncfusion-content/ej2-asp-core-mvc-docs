@@ -2,8 +2,8 @@
 layout: post
 title: Paging in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table paginates rows and columns using pageSettings to navigate large datasets efficiently.
-control: Pivot Table
 platform: ej2-asp-core-mvc
+control: Pivot Table
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

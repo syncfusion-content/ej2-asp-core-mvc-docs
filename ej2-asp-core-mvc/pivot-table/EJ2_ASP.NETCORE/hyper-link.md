@@ -33,10 +33,8 @@ The following properties are available in `HyperlinkSettings`. Each property is 
 | [`ShowValueCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowValueCellHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in value cells. |
 | [`ShowSummaryCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowSummaryCellHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in summary cells. |
 | [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText) | `string` | `''` | Shows hyperlinks for cells whose header text matches the specified value. |
-| [`ConditionalSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html) | `ConditionalSettings[]` | `[]` | Shows hyperlinks for cells whose values match the specified conditions. |
+| [`ConditionalSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html) | `Condition` | `Condition.NotEquals` | Shows hyperlinks for cells whose values match the specified conditions. |
 | [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_CssClass) | `string` | `''` | Applies a custom CSS class to hyperlink elements for user-defined styling. |
-
-> **Precedence:** When `ShowHyperlink` is `true`, individual `Show*Hyperlink` flags are ignored. `HeaderText` and `ConditionalSettings` are evaluated after the cell-type filters.
 
 > By default, the hyperlink options are disabled for all cells in the pivot table.
 
@@ -252,8 +250,6 @@ The pivot table supports displaying hyperlinks in specific cells based on define
   * `Condition.NotBetween` (uses both `Value1` and `Value2`)
 * [`Value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Value1): Sets the starting value for the condition.
 * [`Value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Value2):  Sets the ending value for range-based comparisons (`Condition.Between`, `Condition.NotBetween`). Ignored for other operators.
-
-> **URL source:** The hyperlink target for condition-based cells is taken from a column on the data source whose name matches the value field defined in `Measure`. If your data source does not contain such a column, the cell is rendered as plain text.
 
 In the example below, the pivot table is configured to display hyperlinks only in cells where the "Units Sold" field value is between **150** and **500**. This highlights specific aggregated values that meet the given condition.
 

@@ -2,8 +2,8 @@
 layout: post
 title: Number formatting in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table applies number formats such as currency, percentage, and decimal places to value cells through FormatSettings.
-control: Pivot Table
 platform: ej2-asp-core-mvc
+control: Pivot Table
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
