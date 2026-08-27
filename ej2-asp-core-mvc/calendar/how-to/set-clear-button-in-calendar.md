@@ -29,7 +29,8 @@ To configure a clear button in Calendar UI, do the following:
 {% include code-snippet/calendar/howto/settoday/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Settoday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -38,7 +39,8 @@ To configure a clear button in Calendar UI, do the following:
 {% include code-snippet/calendar/howto/settoday/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Settoday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

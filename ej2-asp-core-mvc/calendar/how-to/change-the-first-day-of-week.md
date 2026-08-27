@@ -23,7 +23,8 @@ The following example shows the Calendar with `Tuesday` as the first day of the 
 {% include code-snippet/calendar/howto/firstday/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -32,7 +33,8 @@ The following example shows the Calendar with `Tuesday` as the first day of the 
 {% include code-snippet/calendar/howto/firstday/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

@@ -19,7 +19,8 @@ You can display week numbers alongside the calendar dates by enabling the [weekN
 {% include code-snippet/calendar/howto/weeknumber/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Weeknumber.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -28,7 +29,8 @@ You can display week numbers alongside the calendar dates by enabling the [weekN
 {% include code-snippet/calendar/howto/weeknumber/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Weeknumber.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

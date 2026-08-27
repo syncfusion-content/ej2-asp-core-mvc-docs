@@ -32,7 +32,8 @@ The following example demonstrates how to show the hidden dates of other months 
 {% include code-snippet/calendar/howto/showdates/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Showdates.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -41,7 +42,8 @@ The following example demonstrates how to show the hidden dates of other months 
 {% include code-snippet/calendar/howto/showdates/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Showdates.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

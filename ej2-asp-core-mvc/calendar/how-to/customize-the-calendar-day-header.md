@@ -28,7 +28,8 @@ N> By default, the format is `Short`.
 {% include code-snippet/calendar/howto/headerformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -37,7 +38,8 @@ N> By default, the format is `Short`.
 {% include code-snippet/calendar/howto/headerformat/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ![Narrow day header format](../images/narrow.png)
