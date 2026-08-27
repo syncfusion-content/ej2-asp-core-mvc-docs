@@ -10,7 +10,7 @@ documentation: ug
 
 # EJ1 API Migration in ##Platform_Name## TreeView
 
-This article describes the API migration process of TreeView control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of [TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Add nodes
 

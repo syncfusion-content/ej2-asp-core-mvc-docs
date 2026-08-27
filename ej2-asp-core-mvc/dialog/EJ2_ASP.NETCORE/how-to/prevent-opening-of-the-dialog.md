@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to prevent opening of the Dialog in ##Platform_Name## Dialog
+# How to prevent opening of the Dialog in ASP.NET CORE Dialog
 
 You can prevent opening of the Dialog by setting the `cancel` argument of the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_BeforeOpen) event to `true`. In the following sample, the Dialog opens only when you enter a username with a minimum of 4 characters and a non-empty password. Otherwise, it will not be opened.
 

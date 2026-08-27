@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Add min and max buttons to ##Platform_Name## Dialog header
+# Add min and max buttons to ASP.NET CORE Dialog header
 
 ##Platform_Name## Dialog supports adding custom minimize and maximize buttons to the Dialog header. You can use the `headerTemplate` property to place the buttons next to the close icon and handle their click events.
 

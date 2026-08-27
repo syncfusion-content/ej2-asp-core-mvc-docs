@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to position the Dialog on page scroll in ##Platform_Name## Dialog
+# How to position the Dialog on page scroll in ASP.NET CORE Dialog
 
 By default, when the page or container is scrolled, the Dialog is also scrolled along with it. To keep the Dialog in a fixed position during scrolling, add the `e-fixed` class to the Dialog element. This prevents the Dialog from scrolling with the page content.
 
