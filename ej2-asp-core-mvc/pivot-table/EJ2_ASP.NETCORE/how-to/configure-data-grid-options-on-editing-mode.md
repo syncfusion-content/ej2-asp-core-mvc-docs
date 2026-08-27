@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Configure Grid in ASP.NET Core Pivot Table
+# How to configure data grid in Pivot Table editing mode
 
 The ASP.NET Core Pivot Table component provides the ability to configure various data grid options when working with drill-through functionality in editing mode. When users double-click on value cells (cells containing aggregated data), the component displays the underlying raw data in a drill-through grid popup. The [`beginDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event allows users to access and configure grid features such as sorting, grouping, and filtering before displaying the drill-through grid popup.
 

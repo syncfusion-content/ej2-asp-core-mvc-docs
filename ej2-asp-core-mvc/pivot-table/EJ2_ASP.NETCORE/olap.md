@@ -12,11 +12,13 @@ documentation: ug
 
 ## Getting Started with ASP.NET Core
 
-N> Starting with v16.2.0.x, if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET Core application to use our components. Register the license in `Program.cs` (typically before `app.Build()`) by calling `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("<your-license-key>")`.
 
 ### Prerequisites
 
 The official prerequisites to create and run an ASP.NET Core 2.x application on Windows environment are described in the [.NET Core documentation website](https://learn.microsoft.com/en-us/dotnet/core/install/windows?tabs=netcore2x#dependencies).
+
+N> .NET Core 2.x and ASP.NET Core 2.0 are out of mainstream support; for new projects use a current LTS release (**.NET 8** is recommended at the time of writing). Syncfusion.EJ2.AspNet.Core targets .NET 8 and later for newer releases. Use **Visual Studio 2022 (17.x)** or **Visual Studio 2019 (16.11+)** to follow the steps below; Visual Studio 2017 is also supported but is no longer the recommended choice.
 
 ### Create ASP.NET Core web application
 
@@ -31,6 +33,8 @@ The official prerequisites to create and run an ASP.NET Core 2.x application on 
 ![aspnetcore2.x project template](images/aspnetcore2x-template.png)
 
 **Step 4:** Choose **.NET Core** with **ASP.NET Core 2.0** and select **Web Application(Model-View-Controller)**, and then click **OK**. The web application project is now created with default ASP.NET Core template.
+
+N> The screenshot/text in this step uses ASP.NET Core 2.0 to retain visual parity with the original documentation. When you actually create the project, choose the current LTS runtime (e.g., **ASP.NET Core 8.0**) in the dialog. ASP.NET Core 2.0 is out of support and cannot be created in newer Visual Studio releases.
 
 ![aspnetcore2.x web application template](images/aspnetcore2x-netcore.png)
 
@@ -244,7 +248,7 @@ To display the Field List, set the [`showFieldList`](https://help.syncfusion.com
 {% endtabs %}
 {% endif %}
 
-### Exploring Filter Axis
+### Enable Filter Axis
 
 The filter axis in the Pivot Table allows users to control which data is displayed in the [`rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Rows), [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Columns), and [`values`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values) axes. It includes various [OLAP cube elements](#olap-cube-elements), such as hierarchies and calculated members. When elements are placed in the filter axis, they act as master filters that refine the data shown in the Pivot Table.
 
@@ -294,6 +298,8 @@ When adding calculated fields to an axis in your code, set the [`isCalculatedFie
 You can also add calculated fields at runtime through the built-in dialog. To enable this dialog, set the [`allowCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property to **true** and add the **CalculatedField** module. This will display a button in the Field List UI, letting users open the calculated field dialog and create or edit calculated fields as needed.
 
 > If the **CalculatedField** module is not added, the calculated field dialog will not be shown with the Pivot Table component. Also, calculated measures can be added only to the value axis.
+
+> The `isCalculatedField` field-level marker was added in Syncfusion EJ2 v20.1.x (Pivot Table). Project snapshots that target older release lines should upgrade to a release that includes this property before relying on the field-level flag programmatically; otherwise, fall back to programmatic construction through the `e-calculatedFieldSettings` collection shown in the snippet below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -355,7 +361,7 @@ For more information about supported [`operators`](https://learn.microsoft.com/e
 
 #### Format String
 
-When creating a calculated field in the `Pivot Table`, you can choose the format for displaying values by selecting a format string. The available options are:
+When creating a calculated field in the Pivot Table, you can choose the format for displaying values by selecting a format string. The available options are:
 
 * **Standard** – Displays values as standard numbers.
 * **Currency** – Displays values in currency format.
@@ -401,7 +407,7 @@ The Pivot Table will automatically update to show the changes in the calculated 
 
 #### Reusing an Existing Formula in a New Calculated Field
 
-This option allows you to easily create a new calculated field in the `Pivot Table` by reusing a formula from an existing calculated field. This saves time and helps keep your calculations consistent.
+This option allows you to easily create a new calculated field in the Pivot Table by reusing a formula from an existing calculated field. This saves time and helps keep your calculations consistent.
 
 To reuse an existing formula when working with the OLAP data source:
 
@@ -607,7 +613,7 @@ To connect to an OLAP data source that requires authentication, users can provid
 - `userName`: Enter the username required for access to the OLAP server.
 - `password`: Enter the password associated with the username.
 
-> If authentication details are not provided, the browser will display a default pop-up window prompting users to enter the required information.
+> If authentication details are not provided, the browser will prompt for credentials via the standard HTTP basic-auth mechanism. Always deploy the OLAP endpoint behind HTTPS and avoid hard-coding production credentials in client-reachable source files; for local development, anonymous or test credentials are acceptable.
 
 Below is an example of how to configure authentication settings in the Pivot Table:
 
@@ -745,11 +751,7 @@ In the field list, each node uses a specific icon to help users quickly identify
 
 ### BeforeServiceInvoke
 
-The [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered before initiating any service communication with the OLAP server in the Pivot Table and Field List components.
-
-* This event allows you to inject custom properties or additional parameters dynamically before a request is made to the OLAP server.
-
-* It is particularly useful for passing contextual data such as user tokens, custom filters, or localization information along with the original server request.
+The [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered before initiating any service communication with the OLAP server in the Pivot Table and Field List components. It allows you to inject custom properties or additional parameters dynamically before a request is made to the OLAP server, and is particularly useful for passing contextual data such as user tokens, custom filters, or localization information along with the original server request.
 
 When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered, the event argument provides access to the request details and includes a `customProperties` field.
 
@@ -778,11 +780,7 @@ When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 
 ### AfterServiceInvoke
 
-The [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered in the Pivot Table and Field List components during the onSuccess phase of every OLAP service request.
-
-* This event is useful for performing post-processing, logging actions, or updating the UI after receiving a successful response from the OLAP server.
-
-* You may use it to audit data, trigger notifications, or handle custom response-handling logic.
+The [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered in the Pivot Table and Field List components during the onSuccess phase of every OLAP service request. It is useful for performing post-processing, logging actions, or updating the UI after receiving a successful response from the OLAP server — for example, to audit data, trigger notifications, or handle custom response-handling logic.
 
 When the [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
 

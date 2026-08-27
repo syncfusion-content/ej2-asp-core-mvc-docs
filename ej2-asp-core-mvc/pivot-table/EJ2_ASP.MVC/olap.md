@@ -16,11 +16,12 @@ N> Starting with v16.2.0.x, if you reference Syncfusion<sup style="font-size:70%
 
 ### Prerequisites
 
-To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
+To get started with an ASP.NET MVC application, ensure the following software is installed on your machine.
 
 1. .NET Framework 4.6.2 and above.
 2. ASP.NET MVC 4 or ASP.NET MVC 5
-3. Visual Studio
+3. Visual Studio 2017 or later (Visual Studio 2019/2022 recommended)
+4. `Newtonsoft.Json` 13.0.x or later is pulled in transitively by `Syncfusion.EJ2.MVC5`; confirm any manually added reference is compatible if your project pins a different version.
 
 ### Preparing ASP.NET MVC application
 
@@ -56,7 +57,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 MVC5 NuGet package will
 
 N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-**Step 3:** Open `~/Views/Web.config` file and add the `Syncfusion.EJ2` namesapce reference to the `<system.web.webPages.razor>` element and `Syncfusion.EJ2` assembly reference to `<system.web>` element.
+**Step 3:** Open `~/Views/Web.config` file and add the `Syncfusion.EJ2` namespace reference to the `<system.web.webPages.razor>` element and `Syncfusion.EJ2` assembly reference to `<system.web>` element.
 
 ```html
 <configuration>
@@ -107,6 +108,8 @@ N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](h
         @Html.EJS().ScriptManager()
     </body>
 ```
+
+N> Several features covered later in this document — `GroupingBar`, `FieldList`, `CalculatedField`, and `VirtualScroll` — require their corresponding Syncfusion modules to be registered with the Pivot Table's helper-options before they will render. The code snippets shown below already include the required module-registration calls; if you customize those snippets, keep the module registration intact, otherwise the related UI elements will not appear.
 
 ## Adding component to the application
 
@@ -180,9 +183,9 @@ For example, in the sample below, the element "Product Categories" is assigned t
 
 ### Applying Formatting to a Value Field
 
-You can change how values in the Pivot Table are displayed by applying formatting. For example, you can display values as currency by using the **C** format string. To apply formatting, use the the values should be displayed in currency pattern without decimal points. To do so, define the [`PivotViewFormatSetting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property within [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html), and define both the [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name) (the value field to format) and the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) (the format to apply).
+You can change how values in the Pivot Table are displayed by applying formatting. For example, you can display values as currency by using the **C** format string. To apply formatting, use the [`PivotViewFormatSetting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property within [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html), and define both the [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name) (the value field to format) and the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) (the format to apply).
 
-In the following example, the [`PivotViewFormatSetting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property is used to apply the **C0** format to the **[Measures].[Internet Sales Amount]** field. This causes its values to be displayed as currency, showing the currency symbol without any decimal places. You can add formatting for other value fields in a similar way by including them in the the values should be displayed in currency pattern without decimal points. To do so, define the [`PivotViewFormatSetting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) array.
+In the following example, the [`PivotViewFormatSetting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property is used to apply the **C0** format to the **[Measures].[Internet Sales Amount]** field. This causes its values to be displayed as currency, showing the currency symbol without any decimal places. You can add formatting for other value fields in a similar way by including them in the [`PivotViewFormatSetting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) array.
 
 > Only fields from the value section containing numeric data can be formatted.
 
@@ -508,6 +511,8 @@ To connect an OLAP data source to the Pivot Table, use the [`DataSourceSettings`
 | [`Url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) | The URL of the OLAP service. Use this to establish an online connection to the cube. |
 |  [`Catalog`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Catalog) | The database or catalog name containing the cube data. |
 
+> **Tip:** The types for the Data Binding properties are: `Cube` (string), `ProviderType` (enum: `"SSAS"` or `"XMLA"`), `Url` (string — OLAP service endpoint), and `Catalog` (string — database/catalog name). Supply them as plain strings in the builder, except `ProviderType` which uses the named-string values shown in the table above.
+
 Below are sample code files showing how to bind an OLAP data source in ASP.NET MVC:
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -629,6 +634,8 @@ To connect to an OLAP data source that requires authentication, users can provid
 
 > If authentication details are not provided, the browser will display a default pop-up window prompting users to enter the required information.
 
+> **Security:** The credentials you supply here travel with every OLAP request issued by the browser. Always deploy the OLAP endpoint behind HTTPS and avoid hard-coding production credentials in client-reachable source files. For local development, anonymous or test credentials are acceptable.
+
 Below is an example of how to configure authentication settings in the Pivot Table:
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -659,6 +666,8 @@ Below is an example of how to configure authentication settings in the Pivot Tab
 SQL Server Analysis Services (SSAS) uses [roles](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/roles-and-permissions-analysis-services?view=asallproducts-allversions) to control user access to the data inside an OLAP cube. Each role is defined with a set of permissions that can be assigned to individual users or groups. By assigning roles, you can restrict access to sensitive data and also determine who can view or modify information in the cube.
 
 In the Syncfusion ASP.NET MVC Pivot Table, you can specify roles using the [`roles`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Roles) property within the [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) object. This allows you to provide one or more role names for connecting to an OLAP cube. If you want to use multiple roles, list them as a comma-separated string.
+
+> **Verify the role exists on the SSAS server:** Before specifying a role name, confirm that it has been created in the SQL Server Analysis Services cube (under SSAS Roles and Memberships). Invalid role names cause the connection to fail or the connection to fall back to a less-restricted role.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -773,6 +782,8 @@ The [`BeforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 When the [`BeforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered, the event argument provides access to the request details and includes a `customProperties` field.
 
+> **Event-argument fields exposed on `BeforeServiceInvoke`:** the argument typically includes the request URL, request body (as a JSON object describing the pivot action being performed), any headers applied to the call, and the writable `customProperties` collection, which you can extend with additional key/value pairs that will be forwarded to the OLAP service. The exact field list may vary by Syncfusion release; consult the `beforeServiceInvokeEventArgs` reference for the up-to-date field list.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -805,6 +816,8 @@ The [`AfterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 * You may use it to audit data, trigger notifications, or handle custom response-handling logic.
 
 When the [`AfterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
+
+> **Event-argument fields exposed on `AfterServiceInvoke`:** the argument typically includes the response payload, the resolved action name, status information (success or error), and additional server-supplied metadata. Use the resolved payload to drive downstream UI updates, audit logging, or notification triggers.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
