@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to add icons to Dialog buttons in ##Platform_Name## Dialog
+# How to add icons to Dialog buttons in ASP.NET CORE Dialog
 
-You can add icons to the dialog buttons using the [`buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property or [`footerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) property. For detailed information about dialog buttons, refer to the documentation section.
+You can add icons to the Dialog buttons using the [`buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property or [`footerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) property. For detailed information about Dialog buttons, refer to the [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/dialog/getting-started).
 
-In the following sample, dialog footer buttons are customized with icons using `buttons` property.
+In the following sample, Dialog footer buttons are customized with icons using the `buttons` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,7 +39,7 @@ In the following sample, dialog footer buttons are customized with icons using `
 
 ![dialog](../images/dialog-btn-icon.png)
 
-In the following sample, dialog footer buttons are customized with icons using `footerTemplate` property.
+In the following sample, Dialog footer buttons are customized with icons using the `footerTemplate` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

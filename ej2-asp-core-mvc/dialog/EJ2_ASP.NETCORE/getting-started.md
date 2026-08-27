@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Getting Started with ##Platform_Name## Dialog
+# Getting Started with ASP.NET CORE Dialog
 
 This section briefly explains how to include the [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
@@ -201,8 +200,8 @@ For Y: top, center, bottom (or) any offset value.
 
 * [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-* [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
-* [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
-* [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
-* [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
-* [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+* [Load Dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
+* [How to position the Dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
+* [Prevent closing of modal Dialog](./how-to/prevent-closing-of-modal-dialog)
+* [Close Dialog while click on outside of Dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
+* [How to make a reusable alert and confirm Dialog](./how-to/render-a-dialog-using-utility-functions)
