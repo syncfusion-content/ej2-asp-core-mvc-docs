@@ -8,17 +8,16 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Pivot Chart in ASP.NET Core Pivot Table
 
-The Pivot Chart in the Syncfusion ASP.NET Core Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
+The Pivot Chart in the Syncfusion ASP.NET Core Pivot Table component visualizes aggregated values in a graphical format. It provides essential options like drill down and drill up operations, 21 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
 Users can display the pivot chart component individually with pivot values and modify the report dynamically using the field list and grouping bar. The [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) property in the Pivot Table allows users to control the visibility of both the grid and chart components. This property includes the following options:
 
-*  [`view`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_View): Determines whether the Pivot Table component displays only the grid, only the chart, or both components.
-* [`primary`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_Primary): Specifies which component (grid or chart) appears as the primary view during initial loading. This option applies only when the  [`view`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_View) property is set to **Both**.
+* [`view`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_View): Determines whether the Pivot Table component displays only the grid, only the chart, or both components.
+* [`primary`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_Primary): Specifies which component (grid or chart) appears as the primary view during initial loading. This option applies only when the [`view`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_View) property is set to **Both**.
 
-> To use the Pivot Chart, be sure to inject the `PivotChartService` module into your application.
+> To use the Pivot Chart, inject the `PivotChartService` module into your application.
 
 The following sample shows the pivot chart component based on the pivot report bound to it.
 
@@ -51,7 +50,7 @@ The Pivot Table component supports both local and remote data binding options to
 
 ## Chart Types
 
-The Pivot Chart offers 21 different chart types, allowing users to visualize and analyze data in various ways. You can choose any of these chart types based on your needs:
+The Pivot Chart offers 21 different chart types. You can choose any of these chart types based on your needs:
 
 - Line
 - Column
@@ -77,7 +76,7 @@ The Pivot Chart offers 21 different chart types, allowing users to visualize and
 
 By default, the [**Line**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.ChartSeriesType.html) chart type is displayed in the Pivot Chart. Users can change the chart type at any time using the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html#Syncfusion_EJ2_PivotView_PivotViewPivotSeries_Type) property under [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html).
 
-For example, to display a [**Bar**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.ChartSeriesType.html) chart, set the chart type to 'Bar' within the Pivot Chart settings. Review the following code samples to see how to set this option:
+For example, to display a [**Bar**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.ChartSeriesType.html) chart, set the chart type to `Bar` within the Pivot Chart settings. Review the following code samples to see how to set this option:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -115,8 +114,7 @@ Pivot Chart supports four types of accumulation charts:
 - Funnel
 - Pyramid
 
-You can use any of these chart types to visualize your aggregated data clearly. To select a specific accumulation chart, set the 
-As like other chart types it can be changed using the property [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html#Syncfusion_EJ2_PivotView_PivotViewPivotSeries_Type) property in the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) option.
+You can use any of these chart types to visualize your aggregated data clearly. To select a specific accumulation chart, set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html#Syncfusion_EJ2_PivotView_PivotViewPivotSeries_Type) property in the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) option:
 
 In the code example below, the **Pie** chart is displayed by default. You can switch to other accumulation chart types, such as Doughnut, Funnel, or Pyramid, using the dropdown list.
 
@@ -151,9 +149,11 @@ In the code example below, the **Pie** chart is displayed by default. You can sw
 
 In accumulation charts, you can use the drill down and drill up options to explore data at different levels. When you click on a chart series, a built-in context menu appears with the following options:
 
-- **Expand**: Drill down to view more detailed data for the selected series, continuing until the lowest level is reached.
+- **Expand**: Drill down to view more detailed data for the selected series, until the lowest level is reached.
 - **Collapse**: Drill up to view higher-level, summarized information for that series, returning to the top level as needed.
 - **Exit**: Close the context menu without making any changes.
+
+The drill operation can also be triggered programmatically using the `drillDown` and `drillUp` methods on the Pivot Table instance.
 
 > You can use the drill operation for row headers only in accumulation charts.
 
@@ -257,7 +257,15 @@ In the following code sample, the data labels are placed inside the chart points
 
 ![Accumulation chart data labels](images/accumulation-label.png)
 
-The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the `connectorStyle` property in `dataLabel` to modify its color, length, width, and other properties. In the example below, the connector line appearance is changed to show a different style.
+The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the `connectorStyle` property in `dataLabel` to modify its color, length, width, and other properties. The most common sub-properties are:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `color` | `string` | The stroke color of the connector line. |
+| `width` | `number` | The stroke width in pixels. |
+| `length` | `string` | A CSS `dashArray`-style value to control the line pattern (e.g., `"4 4"`). |
+
+In the example below, the connector line appearance is changed to show a different style.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -350,7 +358,7 @@ You can convert a pie chart to a doughnut chart and vice-versa using the `innerR
 
 ### Exploding Series Points
 
-You can make an individual point in a pivot chart stand out by enabling the exploding option. To do this, set the `explode` property in the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) to **true**. When this option is turned on, a chart point will separate from the rest of the series when a user clicks it with a mouse or taps it on a touch device. This makes it easier for users to highlight and identify specific data points in accumulation charts like Pie, Doughnut, Funnel, or Pyramid.
+You can highlight an individual point in a pivot chart by enabling the exploding option. To do this, set the `explode` property in the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) to **true**. When this option is turned on, a chart point separates from the rest of the series when a user clicks it with a mouse or taps it on a touch device. This makes it easier to highlight specific data points in accumulation charts like Pie, Doughnut, Funnel, or Pyramid.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -381,7 +389,7 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 
 ## Field List
 
-The field list makes it easy to add, remove, or rearrange fields in the pivot chart, so you can display exactly the data you need. To show the field list in the Pivot Chart, set the [`showFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property of the Pivot Table to **true**. When you make changes with the field list, the pivot chart updates right away to show the new results. To learn more about the field list and how it works, see the [field list](./field-list) topic in the documentation.
+The field list allows you to add, remove, or rearrange fields in the pivot chart, so you can display exactly the data you need. To show the field list in the Pivot Chart, set the [`showFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property of the Pivot Table to **true**. When you make changes with the field list, the pivot chart updates right away to show the new results. To learn more about the field list and how it works, see the [field list](./field-list) topic in the documentation.
 
 The sample below demonstrates the field list shown in `Popup` mode within the pivot chart.
 
@@ -476,7 +484,7 @@ When using accumulation charts, the drop-down list appears on the column axis. T
 
 ## Single Axis
 
-By default, the pivot chart uses the first value field (measure) from your report as the value axis. If you want to display data using a different value field, you can do this easily. Use the [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_Value) property inside [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This option lets you show a specific value field in the pivot chart, allowing you to focus on the data you need.
+By default, the pivot chart uses the first value field (measure) from your report as the value axis. To display data using a different value field, use the [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_Value) property inside [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This option lets you show a specific value field in the pivot chart, allowing you to focus on the data you need.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -538,7 +546,7 @@ The pivot chart can be drawn with multiple value fields by setting the [`enableM
 
 ![Pivot chart multiple axes](images/multi-axis.png)
 
-When binding more value fields, the result displays multiple pivot charts, with each chart shrinking within the parent container height. To prevent this behavior, set the [`enableScrollOnMultiAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableScrollOnMultiAxis) property to **true** in the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This ensures each pivot chart maintains a minimum height of "160px" to "180px" and displays a vertical scroll bar for better visibility.
+When binding more value fields, the result displays multiple pivot charts, with each chart shrinking within the parent container height. To prevent this behavior, set the [`enableScrollOnMultiAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableScrollOnMultiAxis) property to **true** in the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This ensures each pivot chart maintains a minimum height of "160px" to "180px" (approximate) and displays a vertical scroll bar for better visibility.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -562,7 +570,6 @@ When binding more value fields, the result displays multiple pivot charts, with 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 
 ![Pivot chart with scroll bar](images/chart-scrollbar.png)
@@ -629,7 +636,7 @@ The pivot chart in the following code sample can be seen as a single chart with 
 
 ### Show point color based on members
 
-When you enable multiple axes in the pivot chart, you can use the [`showPointColorByMembers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowPointColorByMembers) property in the [`chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) to display the same color for each member on the column axis across all measures. Setting this property to **true** makes it easy for users to spot and compare each member throughout the entire chart.
+When you enable multiple axes in the pivot chart, you can use the [`showPointColorByMembers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowPointColorByMembers) property in the [`chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) to display the same color for each member on the column axis across all measures. Setting this property to **true** makes it easier to spot and compare each member throughout the entire chart.
 
 In addition, users can show or hide specific members from all measures in the chart by clicking the corresponding legend item. This interaction allows users to focus on the members they want to analyze without distraction.
 
@@ -692,7 +699,7 @@ You can customize the series in the pivot chart by using the [`e-chartSeries`](h
 
 ![Pivot chart series customization](images/chart-series.png)
 
-If you want to change each series separately, use the `chartSeriesCreated` event. This event happens after the pivot chart series are created, making it possible to work with each series one at a time.
+If you want to change each series separately, use the `chartSeriesCreated` event. This event happens after the pivot chart series are created, making it possible to work with each series one at a time. The event handler receives the `series` collection as a parameter, so you can update properties per series.
 
 The sample below shows how you can hide every even-numbered series in the pivot chart.
 
@@ -758,7 +765,7 @@ For example, in the sample below, the titles for the y-axis and x-axis are set t
 
 ![Pivot chart axis customization](images/axis-customization.png)
 
-Users can also modify multi-level labels on the primary x-axis by using the `multiLevelLabelRender` event in [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This event is triggered whenever a multi-level label is rendered on the chart. The event provides the following options:
+Users can also modify multi-level labels on the primary x-axis by using the `multiLevelLabelRender` event in [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This event is triggered whenever a multi-level label is rendered on the chart. The event provides the following options on its argument:
 
 - `axis`: Information about the current axis.
 - `text`: Option to change the content of the multi-level label.
@@ -796,7 +803,7 @@ The example below shows how to update the text and style for multi-level labels 
 
 ## Legend customization
 
-Users can easily change the legend in the pivot chart by using the [`legendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSettingsLegendSettings.html) option inside the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) property. By default, the legend is shown. If you want to hide it, set the `visible` property in [`legendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSettingsLegendSettings.html) to **false**.
+Users can change the legend in the pivot chart by using the [`legendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSettingsLegendSettings.html) option inside the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) property. By default, the legend is shown. If you want to hide it, set the `visible` property in [`legendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSettingsLegendSettings.html) to **false**.
 
 The pivot chart allows users to select from various legend shapes, including:
 
@@ -820,7 +827,7 @@ Users can also choose where the legend appears in the pivot chart by setting the
 - **Left**: Displays the legend to the left of the chart.
 - **Bottom**: Places the legend below the chart.
 - **Right**: Shows the legend on the right side.
-- **Custom**: Positions the legend using specific x and y values you provide.
+- **Custom**: Positions the legend using the `x` and `y` sub-properties you provide.
 
 > Note: Legends are not shown by default for accumulation charts such as pie, doughnut, pyramid, and funnel.
 
@@ -857,9 +864,9 @@ In the following code example, you can see how to set a different legend shape a
 
 ### Marker and crossHair
 
-You can show and customize markers and crosshair's on the pivot chart. To do this, use the [`marker`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSeriesMarkerSettings.html) and [`crosshair`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSettingsCrosshairSettings.html) options within the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) property.
+You can show and customize markers and crosshairs on the pivot chart. To do this, use the [`marker`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSeriesMarkerSettings.html) and [`crosshair`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSettingsCrosshairSettings.html) options within the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) property.
 
-If you want to display a tooltip when hovering over an axis crosshair, use the `crosshairTooltip` option.
+If you want to display a tooltip when hovering over an axis crosshair, use the `crosshairTooltip` option. Common sub-properties include `enable` and `fill`.
 
 > Please note, marker and crosshair options do not work with accumulation chart types, such as pie, doughnut, pyramid, or funnel.
 
@@ -942,7 +949,12 @@ In the code sample below, all four zooming types are enabled, along with the too
 
 ### Tooltip
 
-The tooltip in the Pivot Chart is enabled by default, showing detailed information about each data point when users move the pointer over the chart. Users can change how the tooltip looks and functions by using the [`e-tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotTooltipSettings.html) option inside the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) property.
+The tooltip in the Pivot Chart is enabled by default, showing detailed information about each data point when users move the pointer over the chart. Users can change how the tooltip looks and functions by using the [`e-tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotTooltipSettings.html) option inside the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) property. Common sub-properties include:
+
+- `enable`: Set to `false` to hide the tooltip.
+- `template`: A custom HTML template id for the tooltip content.
+- `fill`: The background color of the tooltip.
+- `textStyle`: Font styling for the tooltip text.
 
 If users do not want to show the tooltip, they can disable it by setting the `enable` property in [`e-tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotTooltipSettings.html) to **false**.
 
@@ -979,10 +991,10 @@ The code below shows how to change the default tooltip appearance and settings i
 
 You can export the pivot chart to various file formats by using the `chartExport` method. This method requires the `type` parameter, which specifies the file format. The supported export formats are:
 
-- PNG
-- JPEG
-- SVG
-- PDF
+- `'PNG'`
+- `'JPEG'`
+- `'SVG'`
+- `'PDF'`
 
 Other optional parameters for the `chartExport` method include:
 
