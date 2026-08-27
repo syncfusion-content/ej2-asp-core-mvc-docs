@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Format Number, Date, Time in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to apply number, date, and time formats to ASP.NET MVC Pivot Table fields via FormatSettings, including Intl numberFormatOptions.
+title: How to customize number and date values in Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize number and date values in the ASP.NET MVC Pivot Table using FormatSettings and culture.
+
 platform: ej2-asp-core-mvc
 control: Customize Number Date And Time Values
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Format Number, Date, Time in ASP.NET MVC Pivot Table
+# How to customize number and date values in ASP.NET MVC Pivot Table
 
 You can format the number, date, and time values for each field using the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) option under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
 
@@ -46,7 +47,7 @@ For numeric fields, the formatting settings include the following properties:
 
 
 
-## Date and time formatting
+## Date and Time formatting
 
 For date and time fields, the formatting settings include these properties:
 
@@ -83,4 +84,4 @@ For date and time fields, the formatting settings include these properties:
 
 ## Limitations of date formatting
 
-As per Firefox and Edge browsers standards, most of the date and time formats used in data source aren’t supported. For example: Apr-2000, Apr-01-2000, 01-03-2000, 2000-Apr-01 etc... are not supported. Meanwhile [`ISO formats`](https://262.ecma-international.org/5.1/#sec-15.9.1.15) will be supported across all browsers.
+According to Firefox and Edge browser standards, most date and time formats used in data sources are not supported. For example: Apr-2000, Apr-01-2000, 01-03-2000, 2000-Apr-01 and similar formats are not recognized. However, [`ISO formats`](https://262.ecma-international.org/5.1/#sec-15.9.1.15) are supported across all browsers for consistent date handling.
