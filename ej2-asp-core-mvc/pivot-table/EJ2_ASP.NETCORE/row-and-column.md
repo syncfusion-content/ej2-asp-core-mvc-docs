@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Row and Column in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how to set the ASP.NET Core Pivot Table's width, height, row height, column width, and grid lines via the height, width, and e-gridSettings properties.
+title: Row and column in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table configures row and column axes, including field placement, width, height, scrollbar behavior, and layout options.
 platform: ej2-asp-core-mvc
-control: Row And Column
+control: Pivot Table
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and Column in ASP.NET Core Pivot Table
+# Row and column in ASP.NET Core Pivot Table
 
 ## Width and Height
 
@@ -541,7 +541,7 @@ To set the cell selection mode, use the [`cellSelectionMode`](https://help.syncf
 
 Highlighting selected cells in the Pivot Table with a different background color helps users quickly identify and focus on important data. To achieve this effect seamlessly, you can apply built-in CSS classes that customize the appearance of selected cells.
 
-In the example below, selected cells appear with a **green-yellow** background. Simply add the custom styles to your stylesheet, and they will be applied when you select a cell using the mouse or arrow keys.
+In the example below, selected cells appear with a **green-yellow** background. Simply add the custom styles to your stylesheet, and they will be applied when you select a cell using the mouse or arrow keys. The styles are defined as an inline CSS string in the CSHTML page; include the same snippet in your application's stylesheet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -679,7 +679,7 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 ## Cell Template
 
-You can change how each cell in the Pivot Table looks by using the [`cellTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) option. With [`cellTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate), you can use either an HTML string or the ID of an HTML element to add custom content to every cell. This helps you display cell values in any format you prefer, such as adding icons, colors, or other elements for better understanding.
+You can change how each cell in the Pivot Table looks by using the [`cellTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) option. Set [`cellTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) to the `id` of an HTML element that contains the template markup. The element must be present in the DOM before the Pivot Table renders. This helps you display cell values in any format you prefer, such as adding icons, colors, or other elements for better understanding.
 
 For example, in the following sample, each year's revenue cost is shown along with trend icons. This gives users a clear and quick way to see changes in data at a glance.
 
@@ -847,6 +847,6 @@ The `cellClick` event occurs when a user clicks a cell in the Pivot Table. With 
 {% endtabs %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Show/hide tooltip](./tool-tip)
