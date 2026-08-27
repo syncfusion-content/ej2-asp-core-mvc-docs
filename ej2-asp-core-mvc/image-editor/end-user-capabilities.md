@@ -3,48 +3,44 @@ layout: post
 title: End-User Capabilities in ##Platform_Name## ImageEditor | Syncfusion
 description: Explains the core interactive editing features Syncfusion ##Platform_Name## ImageEditor exposes for end users: crop, rotate, flip, zoom, and annotations.
 platform: ej2-asp-core-mvc
-control: End user Capabilities 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # End-user capabilities in ##Platform_Name## ImageEditor
 
-The following operations are available for end-users and the same is explained briefly in these sections.
+The following operations are available to end users and are explained briefly in the sections below.
 
-## Open an image
+## Opening an image
 
-To open an image in the image editor, do the following steps.
+To open an image in the Image Editor, follow these steps:
 
-* Click the Open icon from the left side of the toolbar.
+* Click the Open icon on the left side of the toolbar.
 
-* The file explorer lists only JPEG, PNG, JPG, WEBP, and BMP format files.
+* The file explorer lists only JPEG, PNG, WEBP, and BMP formats.
 
-* Select the image from the list of the images from the file explorer window.
+* Select the image in the file explorer window to load it.
 
-![Open an image](images/open.gif)
+![Open icon highlighted on the toolbar with the file explorer overlay](images/open.gif)
 
-## Zooming 
 
-Image zooming can be performed in the following ways. 
+## Zooming
 
-* Using toolbar
+Use any of the following methods to zoom an image in or out:
 
-* Using pinch zoom in touch enabled devices
+* Using the toolbar
+* Using pinch zoom on touch-enabled devices
+* Using the mouse wheel
+* Using a keyboard shortcut
 
-* Using mouse wheel
+![Zoom toolbar with Zoom In and Zoom Out controls enabled](images/zoom.jpg)
 
-* Using keyboard
+### Using the toolbar
 
-![Zoom an image](images/zoom.jpg)
+Click the Zoom In or Zoom Out button on the toolbar. The Zoom In / Zoom Out options are enabled only after an image is opened.
 
-### Using toolbar 
-
-To zoom in or out the image in the image editor, do the following steps. 
-
-* The Zoom In/ Out option only enabled after opening the image. 
-
-### Using pinch 
+### Using pinch
 
 To zoom in or out the image in the image editor, do the following steps. 
 
@@ -80,9 +76,9 @@ To pan an image in the image editor, do the following steps.
 
     * If the image size exceeds the canvas size while zooming an image.
 
-![Pan an image](images/pan.gif)
+![Pan gesture shifting a zoomed image within the canvas](images/pan.gif)
 
-## Cropping and image transformation 
+## Cropping and image transformation
 
 To crop an image in the image editor, do the following steps. 
 
@@ -94,15 +90,12 @@ To crop an image in the image editor, do the following steps.
 
 * Once selection is completed, do panning to move the image to get the cropped region.
 
-* Utilize the rotate and flip buttons along with the straighten slider to perform image transformations, including any inserted annotations.
+![Crop selection drawn over a photo with the action toolbar above](images/crop.jpg){:width="600"}
 
-* Once the cropping region is finalized in the image click the tick icon at the top right of the toolbar to crop the image.
-
-![Crop transform an image](images/crop.jpg)
 
 ## Annotations
 
-To add annotations to an image in the image editor, do the following steps. 
+To add annotations to the image, follow these steps:
 
 * To add annotation, click the annotation button in the toolbar and select the type of annotations such as Line, Rectangle, Ellipse, Path, Arrow, Text, or Freehand drawing to be inserted to the image editor. 
 
@@ -148,7 +141,7 @@ To undo and redo the actions performed in an image editor, do the following step
 
 * Click the undo or redo button at the left side of the toolbar to perform undo and redo operation.
 
-* Ctrl + Z and Ctrl + Y facilitates this process by allowing users to undo and redo actions, respectively.
+* Press <kbd>Ctrl + Z</kbd> to undo or <kbd>Ctrl + Y</kbd> to redo. On macOS use <kbd>⌘ + Z</kbd> and <kbd>⌘ + Shift + Z</kbd>.
 
 ![Undo and Redo](images/undo-redo.gif)
 
@@ -160,9 +153,9 @@ To revert all the changes done in an image editor, do the following steps.
 
 * This will revert all the changes performed in the image editor.
 
-## Export an image 
+## Exporting an image
 
-To save the modified image in the Image Editor, follow these steps:
+To save the modifications, follow these steps:
 
 * Click the Save Button
     * Locate the Save button on the right side of the toolbar and click it.

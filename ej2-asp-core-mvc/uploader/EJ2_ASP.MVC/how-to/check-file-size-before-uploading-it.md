@@ -11,9 +11,7 @@ documentation: ug
 
 # How to check file size before upload in ASP.NET MVC File Upload
 
-By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event, you can get the file size before upload it to server. 
-File object contains the file size in bytes only. 
-You can convert the size to standard formats (`KB` or `MB`) using **bytesToSize** method.
+By using the [`uploading`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event, you can get the file size before uploading to the server. The file object contains the file size in bytes only. You can convert the size to standard formats (`KB` or `MB`) using the [**bytesToSize**](https://ej2.syncfusion.com/documentation/api/uploader/index-default#bytestosize) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,6 +36,4 @@ You can convert the size to standard formats (`KB` or `MB`) using **bytesToSize*
 {% endtabs %}
 {% endif %}
 
-
-
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.

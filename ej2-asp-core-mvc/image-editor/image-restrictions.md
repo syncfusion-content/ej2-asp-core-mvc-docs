@@ -3,7 +3,7 @@ layout: post
 title: Image Restrictions in ##Platform_Name## ImageEditor | Syncfusion
 description: Configure allowed image types and dimensions in Syncfusion ##Platform_Name## ImageEditor using allowedExtensions, minWidth, maxWidth, minHeight, and maxHeight.
 platform:  ej2-asp-core-mvc
-control: Image Restrictions 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,15 +11,15 @@ domainurl: ##DomainURL##
 
 # Image Restrictions in the ##Platform_Name## Image Editor control
 
-The Image Editor allows users to specify image extensions, as well as the minimum and maximum image sizes for uploaded or loaded images using the [`UploadSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_UploadSettings) property. End users will receive a clear alert message if an uploaded image does not meet the defined criteria, ensuring a seamless and user-friendly upload experience.
+The [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) allows users to specify image extensions, as well as the minimum and maximum image sizes for uploaded or loaded images using the [UploadSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_UploadSettings) property. End users will receive a clear alert message if an uploaded image does not meet the defined criteria, ensuring a seamless and user-friendly upload experience.
 
-`Note:` File restrictions apply when uploading images to the Image Editor, whether through the open method or the built-in uploader. If uploadSettings is not defined in the sample, the Image Editor, by default, allows files with .jpg, .png, .svg, .webp, and .bmp extensions, without any file size restrictions.
+N> File restrictions apply when uploading images to the Image Editor, whether through the open method or the built-in uploader. If uploadSettings is not defined in the sample, the Image Editor, by default, allows files with .jpg, .png, .svg, .webp, and .bmp extensions, without any file size restrictions.
 
 ## Allowed image extensions
 
 The Image Editor allows users to specify acceptable file extensions for uploaded images using the `UploadSettings.AllowedExtensions` property, ensuring that only supported formats, such as `.jpg`, `.png`, `.svg`, `.webp` and `.bmp` are allowed. This helps maintain compatibility and prevents errors caused by unsupported file types. By default, the Image Editor allows files with .jpg, .png, .svg, .webp, and .bmp extensions.
 
-`Note:` To specify allowed extensions in the upload settings, use the format '.png, .svg', listing the permitted file types as a comma-separated string.
+N> To specify allowed extensions in the upload settings, use the format '.png, .svg', listing the permitted file types as a comma-separated string.
 
 Here is an example of configuring image restrictions using the `UploadSettings` property.
 
@@ -54,7 +54,7 @@ Output be like the below.
 
 The Image Editor allows users to specify the minimum and maximum size limits for uploaded image files by using the `UploadSettings.MinFileSize` and `UploadSettings.MaxFileSize` properties. This ensures that images meet specific requirements, maintaining consistency and preventing oversized or undersized files from being processed.
 
-`Note:` Users can also upload images as base64 strings, in which case file extension validation is bypassed, but file size restrictions still apply.
+N> Users can also upload images as base64 strings, in which case file extension validation is bypassed, but file size restrictions still apply.
 
 Here is an example of configuring image restrictions using the `UploadSettings` property.
 

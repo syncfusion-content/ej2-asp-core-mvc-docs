@@ -8,12 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ##Platform_Name## Calendar
 
 This section briefly explains how to include the [ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
-## Create ASP.NET Core web application with Razor pages
+## Create ASP.NET Core web application with Razor Pages
 
 Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
 
@@ -79,7 +78,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 ## Add ASP.NET Core Calendar control
 
-Add the [ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control in the **~/Pages/Index.cshtml** file.
+Add the [ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control to the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -95,7 +94,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Setting the value within min and max dates
 
-After rendering a simple Calendar control by following the above steps, configure the Calendar to set a value within a specific range using its value, min, and max properties.
+After rendering a simple Calendar control by following the above steps, configure the Calendar to set a value within a specific range using its [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Value), [`min`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Min), and [`max`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Max) properties.
 
 Here, the Calendar allows selecting a date within the range from the 5th to the 27th of this month.
 

@@ -3,7 +3,7 @@ layout: post
 title: Z-Order in ##Platform_Name## ImageEditor | Syncfusion
 description: Change Syncfusion ##Platform_Name## ImageEditor annotation stacking order by bringing shapes or pen annotations to front, back, forward, or backward.
 platform: ej2-asp-core-mvc
-control: Z-order
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Z-order in the ##Platform_Name## Image Editor control
 
-We are excited to introduce `z-order` support in the Image Editor. It's a powerful tool that allows users to adjust the positioning of annotations. This feature is particularly useful for designing personalized templates like greeting cards or posters, where managing the layering of multiple annotations is crucial for a polished final product.
+We are excited to introduce `z-order` support in the [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor). It's a powerful tool that allows users to adjust the positioning of annotations. This feature is particularly useful for designing personalized templates like greeting cards or posters, where managing the layering of multiple annotations is crucial for a polished final product.
 
 Types of adjustment in the Image Editor `z-order` support.
 
