@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Prevent closing of modal dialog in ##Platform_Name## | Syncfusion
-description: Prevent closing of the modal Syncfusion ##Platform_Name## Dialog by setting the BeforeClose event argument cancel value to true, e.g. for validation.
+title: Prevent closing of modal Dialog in ##Platform_Name## | Syncfusion
+description: Prevent closing of the modal Syncfusion ##Platform_Name## Dialog by setting the cancel argument of the beforeClose event to true, e.g. for validation.
 platform: ej2-asp-core-mvc
-control: Prevent Closing Of Modal Dialog
+control: Prevent Closing of Modal Dialog
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# How to prevent closing of a modal Dialog in ASP.NET CORE Dialog
 
-# How to prevent closing of modal Dialog in ##Platform_Name## Dialog
-
-You can prevent closing of modal dialog by setting the [`beforeClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_BeforeClose) event argument cancel value to true. In the following sample, the dialog is closed when you enter the username value with minimum 4 characters. Otherwise, it will not be closed.
+You can prevent closing of a modal dialog by setting the `cancel` argument of the [`beforeClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_BeforeClose) event to `true`. In the following sample, the Dialog is closed when you enter the username value with minimum 4 characters. Otherwise, it will not be closed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

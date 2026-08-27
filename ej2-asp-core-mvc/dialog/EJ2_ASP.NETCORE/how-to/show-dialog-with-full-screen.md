@@ -8,10 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# How to show the Dialog in fullscreen in ASP.NET CORE Dialog
 
-# How to show Dialog in fullscreen in ##Platform_Name## Dialog
-
-You can show the dialog in fullscreen by passing `true` as argument to the dialog `show` method.
+You can show the Dialog in fullscreen by passing `true` as an argument to the Dialog `show` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
