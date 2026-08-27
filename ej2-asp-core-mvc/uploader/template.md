@@ -87,12 +87,12 @@ Refer to the following code sample.
 
 **Key points**:
 
-The `showFileList` property is set to false to hide the default file list and use a custom template instead.
-The `selected` event creates a custom list item (`<li>`) for each selected file, including the file name, size, progress bar, and remove icon.
-The `progress` event updates the progress bar value during upload.
-The `success` event marks the file as uploaded successfully and updates the remove icon to a delete icon.
-The `failure` event marks the file as failed to upload.
-The `removeFiles` function handles the remove action when the close icon is clicked.
+* The `showFileList` property is set to false to hide the default file list and use a custom template instead.
+* The `selected` event creates a custom list item (`<li>`) for each selected file, including the file name, size, progress bar, and remove icon.
+* The `progress` event updates the progress bar value during upload.
+* The `success` event marks the file as uploaded successfully and updates the remove icon to a delete icon.
+* The `failure` event marks the file as failed to upload.
+* The `removeFiles` function handles the remove action when the close icon is clicked.
 
 The output will be as shown below.
 
