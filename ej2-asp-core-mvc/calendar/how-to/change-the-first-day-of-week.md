@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Change The First Day Of Week in ##Platform_Name## Calendar Control | Syncfusion
-description: Learn here all about how to change the first day of week in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: Change The First Day Of Week in ##Platform_Name## Calendar | Syncfusion
+description: Learn here how to change the first day of the week in the Syncfusion ##Platform_Name## Calendar control and more.
 platform: ej2-asp-core-mvc
 control: Change The First Day Of Week
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 # Change the first day of the week
 
@@ -24,7 +23,8 @@ The following example shows the Calendar with `Tuesday` as the first day of the 
 {% include code-snippet/calendar/howto/firstday/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -33,7 +33,8 @@ The following example shows the Calendar with `Tuesday` as the first day of the 
 {% include code-snippet/calendar/howto/firstday/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

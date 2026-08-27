@@ -1,17 +1,17 @@
 ---
 layout: post
-title: PDF Export in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table exports the rendered pivot report to a PDF document via allowPdfExport and the pdfExport method.
+title: PDF export in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table exports pivot data to PDF using the PdfExport module, with options to customize page size, orientation, and styling.
 platform: ej2-asp-core-mvc
-control: Pdf Export
+control: Pivot Table
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# PDF Export in ASP.NET Core Pivot Table
+# PDF export in ASP.NET Core Pivot Table
 
-The ASP.NET Core Pivot Table lets users easily export their pivot table data as a PDF document. By setting the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowPdfExport) property to **true** in the Pivot Table configuration, users can enable PDF export. Once enabled, you can use the `pdfExport` method to generate and download the PDF file.
+The ASP.NET Core Pivot Table allows you to export Pivot Table data as a PDF document. To enable PDF export, inject the `PDFExport` module into the Pivot Table and set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowPdfExport) property to **true**. Once enabled, use the `pdfExport` method to generate and download the file.
 
 In the following example, an external button is used to start the PDF export process. When the user clicks the button, the `pdfExport` method is called so that the Pivot Table data can be saved as a PDF file.
 
@@ -38,11 +38,17 @@ In the following example, an external button is used to start the PDF export pro
 {% endtabs %}
 {% endif %}
 
-## Multiple Pivot Table exporting
+## Exporting multiple Pivot Tables
 
 Multiple Pivot Tables can be exported to the same or different pages in a single PDF file for easy comparison. Each Pivot Table requires a unique HTML element ID, such as **PivotTable1** and **PivotTable2**. To export multiple Pivot Tables, provide their IDs in the `pivotTableIds` property of the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#properties), then pass the configured [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#properties) to the `pdfExport` method with `isMultipleExport` set to **true** to enable multiple Pivot Table export mode.
 
 > Note: PivotView PDF export uses Grid's PdfExportProperties model for configuration.
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `pivotTableIds` | `string[]` | `[]` | The list of HTML element IDs of the Pivot Table instances to export. |
+| `multipleExport.type` | `string` | `'NewPage'` | `'AppendToPage'` exports all Pivot Tables on a single page; `'NewPage'` starts each Pivot Table on a new page. |
+| `multipleExport.blankSpace` | `number` | `0` | The amount of blank space (in points) to leave between Pivot Tables when `type` is `'AppendToPage'`. |
 
 ### Same page
 
@@ -668,6 +674,10 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 When you export the Pivot Table as a PDF document, you can change the colors used for headers, captions, and records. To do this, use the `theme` property inside the `pdfExportProperties` object. Pass this object to the `pdfExport` method. This allows you to adjust how the Pivot Table looks in the exported PDF.
 
+The available built-in `theme` values are: `Material`, `Fabric`, `Bootstrap`, `Bootstrap4`, `Tailwind`, `Fluent`, `Fluent2`, `Material3`, `MaterialDark`, `FabricDark`, `BootstrapDark`, `TailwindDark`, `FluentDark`, and `HighContrast`.
+
+> Only these built-in themes are accepted. Other theme names (for example, `Bootstrap5`, `Tailwind3`, or `BDS`) are not recognized and are silently rendered using the default Material theme.
+
 > By default, the Material theme is applied to the exported PDF document.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -693,7 +703,40 @@ When you export the Pivot Table as a PDF document, you can change the colors use
 {% endtabs %}
 {% endif %}
 
-### Changing default font while exporting 
+### Apply conditional styles
+
+When exporting Pivot Table data to PDF, custom styles can be applied to cells based on their values or other criteria. To apply custom styles, use the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, the cell information can be accessed through the `args.data` property, and its style properties, such as `backgroundColor`, `fontFamily`, and `textPenColor`, can be customized. These changes apply only to the exported PDF and do not affect the on-screen Pivot Table display.
+
+The following example demonstrates how to apply conditional formatting to the **Sold** field values in the exported PDF document. Values below **700** units are highlighted in **red**, while values of **700** units or more are highlighted in **green**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ApplyCustomStyles.cs" %}
+{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/ApplyCustomStyles.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ApplyCustomStyles.cs" %}
+{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/ApplyCustomStyles.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Font customization
+
+The following options control the fonts used in the exported PDF document.
+
+### Changing default font while exporting
 
 By default, the Pivot Table uses the "Helvetica" font in the exported PDF. You can change this font by setting the `theme` property in `pdfExportProperties`. The available built-in font options are:
 
@@ -744,38 +787,11 @@ You can also use custom fonts when exporting if you need support for languages o
 
 > Non-English alphabets can also be exported correctly when you specify a suitable font.
 
-### Apply custom styles based on specific conditions
-
-When exporting Pivot Table data to PDF, custom styles can be applied to cells based on their values or other criteria. To apply custom styles, use the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, the cell information can be accessed through the `args.data` property, and its style properties, such as `backgroundColor`, `fontFamily`, and `textPenColor`, can be customized. These changes apply only to the exported PDF and do not affect the on-screen Pivot Table display
-
-The following example demonstrates how to apply conditional formatting to the **Sold** field values in the exported PDF document. Values below **700** units are highlighted in **red**, while values of **700** units or more are highlighted in **green**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ApplyCustomStyles.cs" %}
-{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/ApplyCustomStyles.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ApplyCustomStyles.cs" %}
-{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/ApplyCustomStyles.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Enabling horizontal overflow
 
-The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the maximum page limits. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [allowHorizontalOverflow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#Syncfusion_EJ2_GridExport_PdfExportProperties_AllowHorizontalOverflow) property in the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#properties) object to **true**.
+The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the configured page width. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [allowHorizontalOverflow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#Syncfusion_EJ2_GridExport_PdfExportProperties_AllowHorizontalOverflow) property in the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#properties) object to **true**.
+
+> Note: Enabling horizontal overflow may cause columns to render at a reduced size to fit on a single page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -858,7 +874,7 @@ By default, row headers are repeated on each page when exporting the Pivot Table
 
 ## Repeat column headers on every page
 
-By default, column headers are repeated on each page when exporting the Pivot Table as a PDF. This ensures consistent column identification across multi-page documents. To prevent column headers from repeating on each page, use the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, access the `pdfGrid` object through `args.cell.row.pdfGrid`, which holds the current PDF grid and allows component over the repeat header behavior. Then set its `repeatHeader` property to **false** to disable the repetition.
+By default, column headers are repeated on each page when exporting the Pivot Table as a PDF. This ensures consistent column identification across multi-page documents. To prevent column headers from repeating on each page, use the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, access the `pdfGrid` object through `args.cell.row.pdfGrid`, which holds the current PDF grid and allows control over the repeat header behavior. Then set its `repeatHeader` property to **false** to disable the repetition.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -885,7 +901,7 @@ By default, column headers are repeated on each page when exporting the Pivot Ta
 
 ## Show spinner during export
 
-When exporting data, displaying a spinner provides visual feedback to users that the export process is in progress. To show a spinner, invoke the `showWaitingPopup` method in the button's click event before calling the `pdfExport` method. After the export is complete, use the [`ExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) event to trigger the `hideWaitingPopup` method, which hides the spinner and indicates that the export has finished.
+When exporting data, displaying a spinner provides visual feedback to users that the export process is in progress. To show a spinner, invoke the `showWaitingPopup` method in the button's click event before calling the `pdfExport` method. After the export is complete, use the [`exportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) event to trigger the `hideWaitingPopup` method, which hides the spinner and indicates that the export has finished.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -921,7 +937,7 @@ The `pdfQueryCellInfo` event occurs for each row and value cell while exporting 
 - `data`: The complete row data for the cell.
 - `style`: The style properties that control how the cell looks in the PDF.
 
-By using this event, users can easily update the cell text, apply different styles such as font or background color, or adjust other settings as needed during PDF export.
+By using this event, you can update the cell text, apply different styles such as font or background color, or adjust other settings as needed during PDF export.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -948,7 +964,7 @@ By using this event, users can easily update the cell text, apply different styl
 
 ### PdfHeaderQueryCellInfo
 
-The `pdfHeaderQueryCellInfo` event is triggered for each column header cell when exporting the Pivot Table to a PDF document. This event allows users to easily change values or apply styles to the column header cells in the exported PDF file.
+The `pdfHeaderQueryCellInfo` event is triggered for each column header cell when exporting the Pivot Table to a PDF document. This event allows you to change values or apply styles to the column header cells in the exported PDF file.
 
 The event provides the following parameters:
 
@@ -980,7 +996,7 @@ The event provides the following parameters:
 
 ### ExportComplete
 
-The [`ExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) event is triggered after the Pivot Table data has been successfully exported to a PDF document. This event allows you to access blob stream data for further processing by setting the `isBlob` parameter to **true** when calling the `pdfExport` method.
+The [`exportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) event is triggered after the Pivot Table data has been successfully exported to a PDF document. This event allows you to access blob stream data for further processing by setting the `isBlob` parameter to **true** when calling the `pdfExport` method.
 
 The event provides the following parameters:
 
@@ -1011,6 +1027,7 @@ The event provides the following parameters:
 {% endif %}
 
 
-## See Also
+## See also
 
 * [Excel Exporting](./excel-export)
+* [Print](./print)

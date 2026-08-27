@@ -11,7 +11,7 @@ documentation: ug
 
 # How to add additional data on upload in ASP.NET Core File Upload
 
-The Uploader control allows you to add custom data when uploading files. Using the [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event and its **customFormData** argument, you can send this data to the server. Refer to the following example.
+The Uploader control allows you to add additional data when uploading files. Using the [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event and its **customFormData** argument, you can send this data to the server. Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

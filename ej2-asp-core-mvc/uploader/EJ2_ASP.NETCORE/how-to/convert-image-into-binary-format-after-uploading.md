@@ -15,7 +15,7 @@ By default, the File Upload control saves the uploaded image files in physical d
 
 To retrieve the binary format of image files, convert the posted file’s input stream into a `BinaryReader` and read it as bytes using the `ReadBytes` method.
 
-Refer to the following server-side code snippet
+Refer to the following server-side code snippet.
 
 ``` csharp
 

@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Customization in Calendar Control
 
 Each day cell of the Calendar can be customized by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
@@ -17,7 +16,7 @@ The following section demonstrates how to disable or highlight specific dates in
 
 ## Disable weekends
 
-You can disable weekends of every month in a Calendar by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event. The `renderDayCell` event offers the following arguments on each day cell creation to help you disable the dates.
+You can disable weekends of every month in a Calendar by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event. This event offers the following arguments on each day cell creation to help you disable the dates.
 
 | **View** | **Description** |
 | --- | --- |
@@ -45,29 +44,27 @@ You can disable weekends of every month in a Calendar by using the [renderDayCel
 {% endtabs %}
 {% endif %}
 
-
-
 ## Day cell format
 
-You can also highlight specific dates by adding custom CSS or element to the day cell by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
+You can also highlight specific dates by adding custom CSS or an element to the day cell by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
 
 You can customize the appearance of the Calendar by overriding the existing styles. The following list of CSS class names are used to customize the Calendar control.
 
 | **Class Name** | **Description** |
 | --- | --- |
 | e-calendar | Applied to the Calendar. |
-| e-header | Applied to the header.|
-| e-title |Applied to the title. |
-| e-icon-container | Applied to the previous and next icon container.|
-| e-prev |  Applied  to the previous icon.|
-| e-next | Applied to the next icon.|
-| e-weekend | Applied to weekends.|
-| e-other-month |  Applied to days of other months.|
-| e-day | Applied to each day cell.|
-| e-selected | Applied to the selected dates.|
-| e-disabled | Applied to the disabled dates.|
+| e-header | Applied to the header. |
+| e-title | Applied to the title. |
+| e-icon-container | Applied to the previous and next icon container. |
+| e-prev | Applied to the previous icon. |
+| e-next | Applied to the next icon. |
+| e-weekend | Applied to weekends. |
+| e-other-month | Applied to days of other months. |
+| e-day | Applied to each day cell. |
+| e-selected | Applied to the selected dates. |
+| e-disabled | Applied to the disabled dates. |
 
-The following example highlights the World Health Day (every 7th April) and World Forest Day (every 21st March) by using the custom icon and ToolTip.
+The following example highlights a Birthday on the 10th and a Farewell on the 15th of every month by using a custom icon and tooltip.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -89,9 +86,7 @@ The following example highlights the World Health Day (every 7th April) and Worl
 {% endtabs %}
 {% endif %}
 
-
-
-## Highlight Weekends
+## Highlight weekends
 
 You can highlight the weekends of every month in a Calendar by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
 

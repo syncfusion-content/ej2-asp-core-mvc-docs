@@ -21,7 +21,7 @@ Hyperlinks can be selectively enabled for various cell types, including:
 
 You can control hyperlink behavior using the [`e-hyperlinkSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html) property, which can be defined during the initial rendering through the code-behind.
 
-## Available Hyperlink Settings
+## Available hyperlink settings
 
 The following properties are available in `HyperlinkSettings`. Each property is optional; combine them to control which cells display hyperlinks.
 
@@ -32,8 +32,9 @@ The following properties are available in `HyperlinkSettings`. Each property is 
 | [`ShowColumnHeaderHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowColumnHeaderHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in column headers. |
 | [`ShowValueCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowValueCellHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in value cells. |
 | [`ShowSummaryCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowSummaryCellHyperlink) | `boolean` | `false` | Shows or hides hyperlinks in summary cells. |
-| [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText) | `string` | `null` | Shows hyperlinks for cells whose header text matches the specified value. |
+| [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText) | `string` | `''` | Shows hyperlinks for cells whose header text matches the specified value. |
 | [`ConditionalSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html) | `Condition` | `Condition.NotEquals` | Shows hyperlinks for cells whose values match the specified conditions. |
+| [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_CssClass) | `string` | `''` | Applies a custom CSS class to hyperlink elements for user-defined styling. |
 
 > By default, the hyperlink options are disabled for all cells in the pivot table.
 
@@ -204,7 +205,7 @@ The pivot table supports displaying hyperlinks in cells that match specific row 
 
 In the example below, the value **FY 2015.Q1.Units Sold** is assigned to [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText), which means the pivot table will show hyperlinks only in cells that match this specific header combination.
 
-N> The **dot (`.`)** character in `FY 2015.Q1.Units Sold` is the default delimiter used to identify the header levels in the row and column axes. To use a different delimiter, configure the `HeaderDelimiter` in the `ValueSortSettings` before the Pivot Table renders.
+N> The **dot (`.`)** character in `FY 2015.Q1.Units Sold` is the default delimiter used to identify the header levels in the row and column axes. To use a different delimiter, configure the `HeaderDelimiter` property in `ValueSortSettings` before the Pivot Table renders.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
