@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to add icons to Dialog buttons in ##Platform_Name## Dialog
+# How to add icons to Dialog buttons in ASP.NET MVC Dialog
 
-You can add icons to the dialog buttons using the [`Buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property or [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) property . For detailed information about dialog buttons, refer to the documentation section.
+You can add icons to the Dialog buttons using the [`Buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property or [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) property . For detailed information about Dialog buttons, refer to the [Getting Started with ASP.NET MVC Dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/getting-started) documentation.
 
-In the following sample, dialog footer buttons are customized with icons using `Buttons` property.
+In the following sample, Dialog footer buttons are customized with icons using `Buttons` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,13 +37,11 @@ In the following sample, dialog footer buttons are customized with icons using `
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
+The output will look like the following.
 
 ![dialog](../images/dialog-btn-icon.png)
 
-In the following sample, dialog footer buttons are customized with icons using `FooterTemplate` property.
+In the following sample, Dialog footer buttons are customized with icons using the `FooterTemplate` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -68,8 +66,6 @@ In the following sample, dialog footer buttons are customized with icons using `
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
+The output will look like the following.
 
 ![dialog](../images/dialog-btn-icon.png)

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: How to Set Minimum Width in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to set a custom minimum width on the ASP.NET MVC Pivot Table via the MinWidth property, with 400px default when Grouping Bar is enabled.
+title: Configure PivotView control minimum width | Syncfusion
+description: Step-by-step example showing how to configure the minimum width in the ASP.NET MVC Pivot Table using the minWidth property.
 platform: ej2-asp-core-mvc
-control: Configuring the minimum width in the Pivot Table control.
+control: Configure PivotView minimum width
 documentation: ug
-publishingplatform: ##Platform_Name## 
+publishingplatform: ##Platform_Name##
 ---
-# How to Configure the Minimum Width in ASP.NET MVC Pivot Table
+
+# How to configure the minimum width of the  ASP.NET MVC Pivot Table
 
 The ASP.NET MVC Pivot Table component provides the `minWidth` property to define the minimum width threshold for the component. This configuration ensures the pivot table maintains optimal usability and prevents layout issues when the container size decreases below the specified minimum width value.
 

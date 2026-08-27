@@ -256,6 +256,6 @@ The accessibility compliance of the pivot table component is shown in the follow
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/pivot-view.html" %}
 
-## See Also
+## See also
 
 * [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot control](../common/accessibility)

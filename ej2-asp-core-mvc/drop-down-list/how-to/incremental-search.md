@@ -11,6 +11,6 @@ documentation: ug
 
 # How to do incremental search in ##Platform_Name## DropDownList
 
-DropDownList supports incremental search, by default. You can search the list item by focusing the DropDownList and typing the characters in it. The closely matched items are selected sequentially.
+DropDownList supports incremental search by default. You can search the list item by focusing the DropDownList and typing the characters. The closely matched items whose text starts with the typed characters are selected sequentially.
 
-N> If the same key is searched once again, the next matched item is selected.
+N> If the same characters are typed again, the next matched item is selected.

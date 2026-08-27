@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# How to resize images before uploading to the server in ASP.NET MVC
+# How to resize images before uploading in ASP.NET MVC File Upload
 
-You can customize the dimension of the images before uploading it to the server. 
-By using [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event, you can get the selected file information as type of an object. From the obtained image file information, create a new canvas and render an image with the custom dimensions. Refer the corresponding code snippet as follows.
+You can customize the dimensions of an image before uploading it to the server. Using the [`selected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event, you can get the selected file information as an object. From this information, create a new canvas and render the image with custom dimensions. Refer to the following code snippet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,6 +36,4 @@ By using [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% endtabs %}
 {% endif %}
 
-
-
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.

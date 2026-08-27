@@ -11,11 +11,11 @@ documentation: ug
 
 # Value Binding in ##Platform_Name## DropDownList
 
-Value binding in the DropDown List control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The DropDown List component provides flexibility in binding both primitive data types and complex objects.
+Value binding in the DropDownList control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The DropDownList component provides flexibility in binding both primitive data types and complex objects.
 
-## Primitive Data Types
+## Primitive data types
 
-The DropDown List control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Value) property of the DropDown List.
+The DropDownList control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even perform custom data binding to suit specific requirements. Bind the value of primitive data to the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Value) property of the DropDownList.
 
 Primitive data types include:
 
@@ -24,7 +24,7 @@ Primitive data types include:
 * Boolean
 * Null
 
-The following sample shows the example for preselect values for primitive data type
+The following sample shows an example of preselecting values for primitive data type
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -50,11 +50,11 @@ The following sample shows the example for preselect values for primitive data t
 {% endif %}
 
 
-## Object Data Types
+## Object data types
 
-In the DropDown List control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_AllowObjectBinding) is enabled, the value of the control will be an object of the same type as the selected item in the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
+In the DropDownList control, object binding allows you to bind to a dataset of objects. When [`AllowObjectBinding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_AllowObjectBinding) is enabled, the value of the control will be an object of the same type as the selected item in the [Value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Value) property. This feature seamlessly binds arrays of objects, whether sourced locally or retrieved from remote endpoints.
 
-The following sample shows the example for preselect values for object data type
+The following sample shows an example of preselecting values for object data type
 
 {% if page.publishingplatform == "aspnet-core" %}
 

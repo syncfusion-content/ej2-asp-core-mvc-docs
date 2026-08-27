@@ -11,13 +11,13 @@ documentation: ug
 
 # Node Editing in ##Platform_Name## TreeView
 
-The TreeView allows you to edit nodes by setting the `allowEditing` property to **true**. To directly edit the nodes in place, **double-click** the TreeView node or **select** the node and press the **F2** key.
+The [TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) allows you to edit nodes by setting the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_AllowEditing) property to **true**. To directly edit the nodes in place, **double-click** the TreeView node or **select** the node and press the **F2** key.
 
-When editing is completed by focus out or by pressing the **Enter** key, the modified node’s text saves automatically. If you do not want to save the modified node's text in the TreeView node, press the **Escape** key. It does not save the edited text to the TreeView node.
+When editing is completed by moving focus away from the node or by pressing the **Enter** key, the modified node text is saved automatically. If you do not want to save the modified node's text in the TreeView node, press the **Escape** key. It does not save the edited text to the TreeView node.
 
 * Node editing can also be performed programmatically by using the `beginEdit` method. When passing the **node ID** or **element** through this method, an edit textbox will be created for the particular node, allowing it to be edited.
 
-* If you need to validate or prevent editing, the `nodeEditing` event can be used which is triggered before the TreeView node is renamed. On successfully renaming a node the `nodeEdited` event will be triggered.
+* If you need to validate or prevent editing, the [nodeEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_NodeEditing) event can be used which is triggered before the TreeView node is renamed. After a node is successfully renamed the [nodeEdited](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_NodeEdited) event will be triggered.
 
 In the following example, the first level node’s text cannot be changed, but all other level nodes' text can be changed.
 
@@ -43,8 +43,6 @@ In the following example, the first level node’s text cannot be changed, but a
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The output will look like the image below:
 

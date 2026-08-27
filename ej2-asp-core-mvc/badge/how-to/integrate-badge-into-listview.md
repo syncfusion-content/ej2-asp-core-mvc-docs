@@ -10,7 +10,7 @@ documentation: ug
 
 # Integrate Badge into ListView in ##Platform_Name## Badge
 
-The Badges can be integrated with the `ListView` control to indicate new notification with color based on priority.
+Badges can be integrated with the `ListView` control to indicate new notifications with color based on priority.
 
 In the following sample, `default` Badges are used and there is no need to customize the Badge size. The control will automatically adjust the size based on the container element.
 

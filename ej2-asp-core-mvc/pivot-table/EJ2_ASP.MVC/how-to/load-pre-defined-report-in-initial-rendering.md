@@ -1,15 +1,16 @@
 ---
 layout: post
-title: How to Load Report as Default in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to load a specific report from the ASP.NET MVC Pivot Table's saved report list as default via the DataBound event.
+title: How to load a saved report in Pivot Table on startup | Syncfusion
+description: Step-by-step example showing how to load a pre-defined report from a saved report collection on the initial render of the Pivot Table using the dataBound event.
 platform: ej2-asp-core-mvc
-control: Load desired report from the report list as default 
+control: Load desired report from the report list as default
 documentation: ug
 publishingplatform: ##Platform_Name##
 ---
 
 <!-- markdownlint-disable MD009 -->
-# How to Load Report as Default in ASP.NET MVC Pivot Table
+
+# How to load a saved report in Pivot Table on startup
 
 By default, the Pivot Table displays with the report configuration defined in the component initialization. To load a specific report from a previously saved report collection during the initial rendering process, configure the desired report name within the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event. This approach allows the Pivot Table to automatically apply the selected report's configuration, including field arrangements, filters, and formatting settings, as soon as the component completes its data binding process.
 

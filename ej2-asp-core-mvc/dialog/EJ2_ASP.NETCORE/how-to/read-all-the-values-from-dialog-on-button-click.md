@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to read Dialog values on button click in ##Platform_Name## Dialog
+# How to read Dialog values on button click in ASP.NET CORE Dialog
 
 You can read the Dialog element values by binding the action handler to the footer buttons. The [`buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property provides the options to bind events to the action buttons. For detailed information about buttons, refer to the [`footer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) section. In the below sample, the values of input elements within the Dialog are checked in the footer button click event and sent as the content of a confirmation Dialog.
 
