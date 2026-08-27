@@ -158,7 +158,7 @@ Editing changes the underlying raw records and is available only for relational 
 AI assistance is an application integration pattern rather than a built-in Pivot Table engine capability. The reference implementation combines Pivot Table with AI AssistView and a secured server-side large language model integration.
 
 | Feature | Availability | Applies to |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Natural-language report configuration | Integration pattern | Operations allowed by the application's validated action contract |
 | AI-assisted filtering, sorting, aggregation, layout, and chart changes | Integration pattern | Operations allowed by the application's validated action contract |
 
