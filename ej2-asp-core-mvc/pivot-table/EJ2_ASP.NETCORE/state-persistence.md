@@ -1,17 +1,16 @@
 ---
 layout: post
-title: State Persistence in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table retains the full report state in browser storage via the enablePersistence property.
+title: State persistence in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table retains the current report, filters, and expanded state across browser refreshes using enablePersistence.
 platform: ej2-asp-core-mvc
-control: State Persistence
+control: Pivot Table
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# State persistence in ASP.NET Core Pivot Table
 
-# State Persistence in ASP.NET Core Pivot Table
-
-State persistence enables users to automatically retain the entire configuration of the Pivot Table component in the browser's local storage (cookies). This includes the current layout, field arrangements, sorting, applied filters, and the expanded or collapsed states of fields. By enabling the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnablePersistence) property in the Pivot Table component, all these interactive states and settings are saved automatically. As a result, users can refresh the browser or navigate to different pages and return at any time, knowing that all modified report settings will be retained—ensuring a seamless and uninterrupted data analysis experience.
+State persistence enables users to automatically retain the entire configuration of the Pivot Table component in the browser's local storage. This includes the current layout, field arrangements, sorting, applied filters, and the expanded or collapsed states of fields. By enabling the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnablePersistence) property in the Pivot Table component, all these interactive states and settings are saved automatically. As a result, users can refresh the browser or navigate to different pages and return at any time, knowing that all modified report settings will be retained—ensuring a seamless and uninterrupted data analysis experience.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -35,8 +34,6 @@ State persistence enables users to automatically retain the entire configuration
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Save and Load Pivot Layout
 

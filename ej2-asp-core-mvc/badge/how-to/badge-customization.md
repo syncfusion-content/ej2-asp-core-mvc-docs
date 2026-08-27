@@ -12,7 +12,7 @@ documentation: ug
 
 ## Color customization
 
-Even though Badges come with `8 predefined colors`, you can also customize the color of the Badge as desired.
+Even though Badges come with `8 predefined colors`, you can also customize the color of the Badge as desired by overriding the background color using the `css` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,7 +39,7 @@ Even though Badges come with `8 predefined colors`, you can also customize the c
 
 ## Customize Badge size
 
-Badges are designed to change its size based on the content. To change the size of a Badge, adjust the `font size` of the Badge.
+Badges are designed to change their size based on the content. To change the size of a Badge, adjust the `font-size` of the Badge.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -66,7 +66,7 @@ Badges are designed to change its size based on the content. To change the size 
 
 ## Custom position
 
-Even though the Badges support the conventional `top` and `bottom` positions, the position of the Badges can be changed as desired. This can be done by adding a custom class to the Badge element to override the default position applied from the source.
+Even though Badges support the conventional `top` and `bottom` positions, the position of the Badges can be changed as desired. This can be done by adding a custom class to the Badge element to override the default position applied from the source.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
