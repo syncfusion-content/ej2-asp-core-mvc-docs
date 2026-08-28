@@ -625,6 +625,6 @@ The [`ExportComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.E
 
 Understanding this limitation helps you choose the appropriate export format based on your data size requirements and ensures optimal performance for large datasets. By default, Microsoft Excel supports only 1,048,576 records in an Excel sheet. Therefore, it is not possible to export millions of records to Excel format. You can refer to the [documentation link](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits) for more details on Microsoft Excel specifications and limits. For large datasets, it is recommended to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.
 
-## See Also
+## See also
 
 * [PDF Exporting](./pdf-export)

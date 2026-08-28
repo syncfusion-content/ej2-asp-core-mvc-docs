@@ -3,13 +3,14 @@ layout: post
 title: How to Flatten Complex JSON in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to flatten complex nested JSON and bind it to the ASP.NET Core Pivot Table, mapping parent and child object fields into individual columns.
 platform: ej2-asp-core-mvc
-control: Convert complex JSON to flat JSON and assign it to the pivot table 
+control: Convert complex JSON to flat JSON and assign it to the pivot table
 documentation: ug
-publishingplatform: ##Platform_Name## 
+publishingplatform: ##Platform_Name##
 ---
 
 <!-- markdownlint-disable MD009 -->
-# How to Flatten Complex JSON in ASP.NET Core Pivot Table
+
+# How to convert complex JSON to flat JSON for ASP.NET Core Pivot Table
 
 ## Overview
 
@@ -42,7 +43,7 @@ Complex JSON contains nested objects and arrays, making it difficult to directly
 }
 ```
 
-Flat JSON has a simple key-value structure without nesting, which is suitable for pivot table binding:
+Flat JSON has a simple key-value structure without nesting, which is suitable for pivot table binding. The `complexToFlatJson` helper iterates the nested arrays (such as `OrderDetails` and `ShipDetails`) and flattens each combination into a single record, then the converted data is assigned to the Pivot Table's `dataSource`.
 
 ```json
 {
@@ -63,7 +64,7 @@ Flat JSON has a simple key-value structure without nesting, which is suitable fo
 
 You can convert complex JSON to flat JSON programmatically and bind it to the pivot table using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property in the [`load`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Load) event.
 
-In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property, then modifying the field names in the [`rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Rows) and [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Columns) based on the converted flat JSON under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) in the [`load`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Load) event.
+In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property. The field names in the [`rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Rows) and [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Columns) are then updated under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) inside the [`load`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Load) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

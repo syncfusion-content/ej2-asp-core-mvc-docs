@@ -15,7 +15,7 @@ This section describes how to retrieve data from a Snowflake database using [Sno
 Follow these steps to create a Web API service that retrieves data from a Snowflake database and prepares it for the Pivot Table.
 
 ### Step 1: Create an ASP.NET Core Web Application
-1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**.
+1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**. Select the **Web API** project template (for example, **ASP.NET Core Web API** in Visual Studio 2022) so the project is configured with controllers and Swagger by default.
 2. Follow the official [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) for detailed instructions on creating an ASP.NET Core Web application.
 
 ![Creating an ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
@@ -23,7 +23,7 @@ Follow these steps to create a Web API service that retrieves data from a Snowfl
 ### Step 2: Install the Snowflake NuGet Package
 To enable Snowflake database connectivity:
 1. Open the **NuGet Package Manager** in your project solution and search for [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/).
-2. Install the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/) package to add Snowflake support.
+2. Install the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/) package to add Snowflake support. Use `Snowflake.Data` version 2.x (or later) to match this walkthrough; pin the version if you want reproducible builds.
 
 ![Installing the Snowflake.Data NuGet package](../images/snowflake-data-nuget-package-install.png)
 
@@ -78,7 +78,7 @@ In the **PivotController.cs** file, use the [Snowflake.Data](https://www.nuget.o
 ### Step 5: Serialize Data to JSON
 In the **PivotController.cs** file, define a **Get** method that calls **FetchSnowflakeResult** to retrieve data from the Snowflake database as a **DataTable**. Then, use **JsonConvert.SerializeObject** from the **Newtonsoft.Json** library to convert the **DataTable** into JSON format. This JSON data will be used by the Pivot Table component.
 
-> Ensure the **Newtonsoft.Json** NuGet package is installed in your project to use **JsonConvert**.
+> Ensure the `Newtonsoft.Json` NuGet package (version 13.x or later) is installed in your project before using `JsonConvert`. The `Get` method serializes the `DataTable` into a JSON string before ASP.NET Core's pipeline returns it as the response body. Note: returning a `JsonConvert.SerializeObject` of a `DataTable` produces a JSON array of row objects whose column values are mapped from the underlying Snowflake column types (for example, `NUMBER` → `number`, `VARCHAR` → `string`, `TIMESTAMP_NTZ` → ISO-8601 string, `VARIANT` → object).
 
 ```csharp
     using Microsoft.AspNetCore.Mvc;
@@ -118,20 +118,20 @@ In the **PivotController.cs** file, define a **Get** method that calls **FetchSn
 ```
 
 ### Step 6: Run the Web API Service
-1. Build and run the application.
-2. The application will be hosted at `https://localhost:44378/` (the port number may vary based on your configuration).
+1. In Visual Studio, set **MyWebService** as the startup project and press <kbd>F5</kbd> (or run `dotnet run` from the project folder). The actual listening ports are read from `launchSettings.json`; both HTTP and HTTPS endpoints are printed in the console.
+2. The application will be hosted at `https://localhost:44378/` (the port number may vary based on your configuration). Note the exact URL printed by the runtime so you can reference it from the ASP.NET MVC project.
 
 ### Step 7: Access the JSON Data
 1. Access the Web API endpoint at `https://localhost:44378/Pivot` to view the JSON data retrieved from the Snowflake database.
-2. The browser will display the JSON data, as shown below.
+2. The browser displays the JSON data, as shown in the image below, ready for use by the Pivot Table.
 
 ![JSON data from the Web API endpoint](../images/snowflake-code-web-app.png)
 
 ## Connecting the Pivot Table to a Snowflake Database Using the Web API Service
 
-This section explains how to connect the Pivot Table component to a Snowflake database by retrieving data from the Web API service created in the previous section.
+This section explains how to connect the Pivot Table component to a Snowflake database by retrieving data from the Web API service created in the previous section. Ensure that the Web API service from the previous section is still running before proceeding.
 
-### Step 1: Create a Pivot Table in ASP.NET MVC
+### Step 1: Set up the ASP.NET MVC project
 1. Set up a basic ASP.NET MVC Pivot Table by following the [Getting Started](../getting-started) documentation.
 2. Ensure your ASP.NET MVC project is configured with the necessary EJ2 Pivot Table dependencies.
 
@@ -151,9 +151,9 @@ This section explains how to connect the Pivot Table component to a Snowflake da
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the ~/Views/Home/Index.cshtml file to structure the data retrieved from the Snowflake database.
 2. Add fields to the  `rows`, `columns`, `values`, and `filters` properties of [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to define the report structure, specifying how data fields are organized and aggregated in the Pivot Table.
-3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
+3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** on the `PivotView` component (not on the data source settings) and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface. Note: `EnableSorting` is a property of the `PivotView` component; the sample above demonstrates the equivalent MVC builder usage for the data source settings.
 
-Here’s the updated sample code the report configuration and field list support:
+Here is the updated sample code with the report configuration and field list support:
 
 ```csharp
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(
@@ -180,5 +180,5 @@ Here’s the updated sample code the report configuration and field list support
 
 ![Pivot Table bound with Snowflake database](../images/snowflake-data-binding.png)
 
-### Additional Resources
+## Additional Resources
 Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a Snowflake database in this [GitHub](https://github.com/SyncfusionExamples/web-bind-Snowflake-database-to-pivot-table) repository.

@@ -3,7 +3,7 @@ layout: post
 title: Number formatting in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table applies number formats such as currency, percentage, and decimal places to value cells through FormatSettings.
 platform: ej2-asp-core-mvc
-control: Number Formatting
+control: Pivot Table
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -29,15 +29,17 @@ The following properties are available inside each `formatSettings` entry:
 
 ### Essential formatting properties
 
-* [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name): Specifies the field name to which the formatting should be applied.
-* [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format): Defines the format pattern for the respective field.
+| Property | Type | Description |
+|----------|------|-------------|
+| [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name) | `string` | The field name to which the formatting should be applied. |
+| [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) | `string` | The format pattern for the field. |
 
 ### Format type codes
 
-Use these standard format codes as the value of the `Format` property. You can also append a digit to set the number of decimal places (e.g., `N2` for two decimal places).
+Use these standard format codes as the value of the `format` property. You can also append a digit to set the number of decimal places (e.g., `N2` for two decimal places).
 
 1. **N** - Numeric formatting (e.g., `N` produces `1,234.56`; `N2` produces `1,234.56`).
-2. **C** - Currency formatting (e.g., `C0` produces `$1,234`; the symbol is taken from the `Currency` property).
+2. **C** - Currency formatting (e.g., `C0` produces `$1,234`; the symbol is taken from the `currency` property).
 3. **P** - Percentage formatting (e.g., `P1` produces `12.3%` for the value `0.1234`).
 
 > **Note:** When no format is specified, the component applies numeric formatting by default.
@@ -88,7 +90,7 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 | # | Replaces the `#` symbol with the corresponding digit if one is present. Otherwise, no digit appears in the result string. | `{ format: '####' }` | `'1234'` |
 | . | Denotes the number of digits permitted after the decimal point. | `{ format: '###0.##0#' }` | `'546321.000'` (value `546321`) |
 | % | Percent specifier; multiplies the value by 100 and appends the `%` symbol. | `{ format: '0000 %' }` | `'0100 %'` (value `1`) |
-| $ | Denotes currency formatting based on the global currency code specified in `Currency`. | `{ format: '$ ###.00' }` | `'$ 13.00'` (value `13`) |
+| $ | Denotes currency formatting based on the global currency code specified in `currency`. | `{ format: '$ ###.00' }` | `'$ 13.00'` (value `13`) |
 | ; | Denotes separate formats for positive, negative, and zero values. | `{ format: '###.##;(###.00);-0' }` | `'(120.00)'` (value `-120`) |
 | `,` | Grouping separator (thousands). | `{ format: '###,###' }` | `'1,234,567'` (value `1234567`) |
 | `'String'` | Characters enclosed in single quotes are included literally in the result string. | `{ format: "####.00 '@'" }` | `'123.00 @'` (value `123`) |
@@ -124,7 +126,7 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 
 ## Toolbar
 
-Number formatting can be applied at runtime through the built-in dialog, accessible from the toolbar. To enable this, set both the [`AllowNumberFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowNumberFormatting) and [`ShowToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) properties to **true**, include the `NumberFormatting` option to the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property. The toolbar then displays the **Number Formatting** icon. Clicking this icon opens the dialog, where you can specify number formats for value fields directly within the Pivot Table.
+Number formatting can be applied at runtime through the built-in dialog, accessible from the toolbar. To enable this, set both the [`AllowNumberFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowNumberFormatting) and [`ShowToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) properties to **true**, include the `NumberFormatting` module, and add the `NumberFormatting` option to the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property. The toolbar then displays the **Number Formatting** icon. Clicking this icon opens the dialog, where you can specify number formats for value fields directly within the Pivot Table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -223,7 +225,7 @@ The following sample demonstrates how to prevent number formatting changes for t
 
 
 
-## See Also
+## See also
 
 * [Customize number, date, and time values](./how-to/customize-number-date-and-time-values)
 * [NumberFormatOptions](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#manipulating-numbers)

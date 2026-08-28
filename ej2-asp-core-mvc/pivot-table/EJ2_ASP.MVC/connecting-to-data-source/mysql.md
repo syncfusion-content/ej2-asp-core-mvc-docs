@@ -21,13 +21,13 @@ Follow these steps to create a Web API service that retrieves data from a MySQL 
 ### Step 2: Install the MySql.Data NuGet Package
 To enable MySQL database connectivity in your application:
 1. Open the **NuGet Package Manager** in your project solution and search for **MySql.Data**.
-2. Install the **MySql.Data** package to add MySQL database support.
+2. Install the **MySql.Data** package to add MySQL database support. Use `MySql.Data` version 8.x (or later) to match this walkthrough; pin the version if you want reproducible builds. If you prefer an async-first, MIT-licensed alternative, `MySqlConnector` is a drop-in replacement with the same connection-string format.
 
 ![Add the NuGet package MySql.Data to the project](../images/mysql-data-nuget-package-install.png)
 
 ### Step 3: Create a Web API Controller
 1. In the **Controllers** folder, create a new file named **PivotController.cs**.
-2. This controller will handle data communication between the MySQL database and the Pivot Table.
+2. This controller handles data communication between the MySQL database and the Pivot Table.
 
 ### Step 4: Connect to MySQL and Retrieve Data
 In the **PivotController.cs** file, use the [MySqlClient](https://mysqlclient.readthedocs.io/) from the **MySql.Data** library to connect to a MySQL database and retrieve data for the Pivot Table.
@@ -70,7 +70,7 @@ In the **PivotController.cs** file, use the [MySqlClient](https://mysqlclient.re
 ### Step 5: Serialize Data to JSON
 In the **PivotController.cs** file, define a **Get** method that calls **GetMySQLResult** to retrieve data from the MySQL database as a **DataTable**. Then, use **JsonConvert.SerializeObject** from the **Newtonsoft.Json** library to convert the **DataTable** into a JSON format. This JSON data will be used by the Pivot Table component.
 
-> Ensure the **Newtonsoft.Json** NuGet package is installed in your project to use **JsonConvert**.
+> Ensure the `Newtonsoft.Json` NuGet package (version 13.x or later) is installed in your project before using `JsonConvert`. The `Get` method serializes the `DataTable` into a JSON string before ASP.NET Core's pipeline returns it as the response body. Note: returning a `JsonConvert.SerializeObject` of a `DataTable` produces a JSON array of row objects whose column values are mapped from the underlying SQL types.
 
 ```csharp
     using Microsoft.AspNetCore.Mvc;
@@ -107,21 +107,21 @@ In the **PivotController.cs** file, define a **Get** method that calls **GetMySQ
 
 
 ### Step 6: Run the Web API Service
-1. Build and run the application in Visual Studio.
-2. The application will be hosted at a URL such as `https://localhost:7146` (the port number may vary based on your configuration).
+1. In Visual Studio, set **MyWebService** as the startup project and press <kbd>F5</kbd> (or run `dotnet run` from the project folder). The actual listening ports are read from `launchSettings.json`; both HTTP and HTTPS endpoints are printed in the console.
+2. The application is hosted at a URL such as `https://localhost:7146` (the port number may vary based on your configuration). Note the exact URL printed by the runtime so you can reference it from the ASP.NET MVC project.
 
 ### Step 7: Verify the JSON Data
 1. Access the Web API endpoint at `https://localhost:7146/Pivot` to view the JSON data retrieved from the MySQL database.
-2. The browser will display the JSON data, as shown below.
+2. The browser displays the JSON data, as shown in the image below, ready for use by the Pivot Table.
 
 ![Hosted Web API URL](../images/mysql-data.png)
 
 ## Connecting the Pivot Table to a MySQL Database Using the Web API Service
 
-This section explains how to connect the Pivot Table to a MySQL database by fetching data from the Web API service created above.
+This section explains how to connect the Pivot Table to a MySQL database by fetching data from the Web API service created above. Ensure that the Web API service from the previous section is still running before proceeding.
 
-### Step 1: Create a Pivot Table in ASP.NET MVC
-1. Set up a ASP.NET MVC project with the Pivot Table by following the [Getting Started](../getting-started) documentation.
+### Step 1: Set up the ASP.NET MVC project
+1. Set up an ASP.NET MVC project with the Pivot Table by following the [Getting Started](../getting-started) documentation.
 2. Ensure all necessary Syncfusion EJ2 Pivot Table dependencies are installed in your ASP.NET MVC project.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
@@ -140,7 +140,7 @@ This section explains how to connect the Pivot Table to a MySQL database by fetc
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the ~/Views/Home/Index.cshtml file to structure the data retrieved from the MySQL database.
 2. Use the `rows`, `columns`, `values`, and `filters` properties of [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to define how data fields are organized and aggregated.
-3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** and including the `FieldList` module in the services. This allows users to interactively modify the Pivot Table’s structure by adding or rearranging fields.
+3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** on the `PivotView` component (not on the data source settings) and including the `FieldList` module in the services. This allows users to interactively modify the Pivot Table's structure by adding or rearranging fields. Note: `EnableSorting` is a property of the `PivotView` component; the sample above demonstrates the equivalent MVC builder usage for the data source settings.
 
 ```csharp
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(
@@ -166,5 +166,5 @@ This section explains how to connect the Pivot Table to a MySQL database by fetc
 
 ![Pivot Table bound with MySQL database](../images/pivottable-with-mysql-data.png)
 
-### Additional Resources
+## Additional Resources
 Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MySQL database in this [GitHub](https://github.com/SyncfusionExamples/web-bind-MySQL-database-to-pivot-table) repository.
