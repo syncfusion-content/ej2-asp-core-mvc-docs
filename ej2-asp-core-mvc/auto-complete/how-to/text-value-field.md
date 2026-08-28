@@ -10,7 +10,7 @@ documentation: ug
 
 # Filter Using Text and Value Field in ##Platform_Name## AutoComplete
 
-The AutoComplete data can be filtered based on both the text and value fields using a [`Predicate`](https://ej2.syncfusion.com/documentation/api/query/) of the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data-manager/) through the [`Filtering`](https://ej2.syncfusion.com/documentation/api/auto-complete/#filtering) event. The filtered data can then be updated through the [`updateData`](https://ej2.syncfusion.com/documentation/api/auto-complete/#updatedata) method.
+The AutoComplete data can be filtered based on both the text and value fields using a `Predicate` of the `DataManager` through the [`Filtering`](https://ej2.syncfusion.com/documentation/api/auto-complete/#filtering) event. The filtered data can then be updated through the [`updateData`](https://ej2.syncfusion.com/documentation/api/auto-complete/#updatedata) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

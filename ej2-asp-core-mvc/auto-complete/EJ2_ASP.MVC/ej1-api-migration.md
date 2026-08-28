@@ -12,7 +12,7 @@ documentation: ug
 
 This article describes the API migration process of AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
-N> MultiSelect concept is not present in EJ2 AutoComplete. If you want to use multiselection support in autocomplete, we suggest you to use the [MultiSelect](https://ej2.syncfusion.com/aspnetcore-mvc/multi-select/overview) component instead.
+N> MultiSelect concept is not present in EJ2 AutoComplete. If you want to use multiselection support in autocomplete, we suggest you to use the [MultiSelect](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/getting-started) component instead.
 
 ## DataBinding
 
