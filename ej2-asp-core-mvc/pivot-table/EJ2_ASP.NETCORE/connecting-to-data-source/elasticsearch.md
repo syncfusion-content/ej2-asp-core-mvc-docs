@@ -7,7 +7,9 @@ description: Learn how to bind Elasticsearch data to the ASP.NET Core Pivot Tabl
 
 # Elasticsearch Data Binding in ASP.NET Core Pivot Table
 
-This section describes how to retrieve data from Elasticsearch database using [Nest](https://www.nuget.org/packages/Nest) library and bind it to the Pivot Table via a Web API controller.
+This section describes how to retrieve data from an Elasticsearch database using the [NEST](https://www.nuget.org/packages/Nest) client (Elasticsearch 7.x) and a Web API controller, and how to bind that data to the ASP.NET Core Pivot Table.
+
+> **Note:** NEST is the official .NET client for Elasticsearch 7.x. For Elasticsearch 8.x and later, use the new [Elastic.Clients.Elasticsearch](https://www.nuget.org/packages/Elastic.Clients.Elasticsearch/) package. The code below targets NEST 7.x.
 
 ## Create a Web API service to fetch Elasticsearch data
 
@@ -80,20 +82,20 @@ Here’s the sample code for the **PivotController.cs** file:
 
 ### Step 7: Verify the Data
 1. Access the Web API endpoint at `https://localhost:44323/Pivot` to view the JSON data retrieved from the Elasticsearch database.
-2. The browser will display the JSON data, as shown below.
+2. The browser displays the JSON data, as shown in the image below, ready for use by the Pivot Table.
 
 ![Hosted Web API URL](../images/elasticsearch-data.png)
 
 ## Connecting the Pivot Table to an Elasticsearch Database Using the Web API Service
 
-This section explains how to connect the Pivot Table component to an Elasticsearch database by retrieving data from the Web API service created in the previous section.
+This section explains how to connect the Pivot Table component to an Elasticsearch database by retrieving data from the Web API service created in the previous section. Ensure that the Web API service from the previous section is still running before proceeding.
 
 ### Step 1: Create a Pivot Table in ASP.NET Core
 1. Set up a basic ASP.NET Core Pivot Table by following the [Getting Started](../getting-started) documentation.
 2. Ensure your ASP.NET Core project is configured with the necessary EJ2 Pivot Table dependencies.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
-1. In the **~/Views/Home/Index.cshtml** file, map the Web API URL (`https://localhost:44323/Pivot`) to the Pivot Table using the https://localhost:44323/Pivot` to the Pivot Table component in **~/Views/Home/Index.cshtml** by using the [url](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property within the [e-datasourcesettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html).
+1. In the **~/Views/Home/Index.cshtml** file, map the Web API URL (`https://localhost:44323/Pivot`) to the Pivot Table using the [url](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property within the [e-datasourcesettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html).
 2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```csharp
@@ -140,5 +142,5 @@ Here’s the updated sample code with the report configuration and field list su
 
 ![Pivot Table bound with Elasticsearch database](../images/elasticsearch-data-binding.png)
 
-### Additional Resources
+## Additional Resources
 Explore a complete example of the ASP.NET Core Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Elasticsearch database in this [GitHub](https://github.com/SyncfusionExamples/web-how-to-bind-Elasticsearch-database-to-pivot-table) repository.

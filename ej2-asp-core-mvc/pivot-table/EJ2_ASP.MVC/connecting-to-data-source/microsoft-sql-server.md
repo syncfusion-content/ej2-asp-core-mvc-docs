@@ -12,19 +12,19 @@ documentation: ug
 
 This section describes how to retrieve data from SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 
-## Steps to Connect the SQL Server Database via Web API Application
+## Steps to Connect the SQL Server Database via a Web API Application
 
 ### Step 1: Download the Sample Application
 Download the ASP.NET Core Web Application from this [GitHub](https://github.com/SyncfusionExamples/aspnetcore-bind-SQL-database-to-pivot-table) repository.
 
 ### Step 2: Understand the Application Structure
-The application named **PivotController** (server-side) that is downloaded from the above GitHub repository includes the following files:
+The **PivotController** sample application downloaded from the GitHub repository above ships with the following files. The `Database1.mdf` file is included in the sample and is automatically attached to LocalDB by Visual Studio when the project is opened.
 
 - **PivotController.cs** file under **Controllers** folder – This helps to do data communication with Pivot Table.
 - **Database1.mdf** file under **App_Data** folder – This MDF (Master Database File) file contains example data.
 
 ### Step 3: Connect to SQL Server and Retrieve Data
-In the **PivotController.cs** file, the [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) library is used to connect to a Microsoft SQL Server database and retrieve data for the Pivot Table.
+Before proceeding, ensure the SqlClient data provider is available in the project. The [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) library is used to connect to a SQL Server database and retrieve data for the Pivot Table. If your project does not already reference it, install the `System.Data.SqlClient` package (or the recommended `Microsoft.Data.SqlClient` provider) from NuGet before adding the code below.
 
 1. **Establish Connection**: Use **SqlConnection** with a valid connection string to connect to the SQL Server database (e.g., **Database1.mdf**).
 2. **Query and Fetch Data**: Execute a SQL query (e.g., `SELECT * FROM table1`) using **SqlCommand** to retrieve data for the Pivot Table.
@@ -58,12 +58,12 @@ namespace PivotController.Controllers
 
 ```
 
-> Replace `<Enter your valid connection string here>` with the actual connection string for your SQL Server database.
+> Replace `<Enter your valid connection string here>` with the actual connection string for your SQL Server database. For the bundled `Database1.mdf` under `App_Data`, use a LocalDB connection string such as `Server=(localdb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True;Connect Timeout=30;`, which attaches the file from the project's `App_Data` folder. For a remote SQL Server instance, supply the corresponding `Server`, `Database`, and authentication values.
 
 ### Step 4: Serialize Data to JSON
 In the **PivotController.cs** file, define a **Get** method that calls **FetchSQLResult** to retrieve data from the SQL Server database as a **DataTable**. Then, use **JsonConvert.SerializeObject** from the **Newtonsoft.Json** library to convert the **DataTable** into JSON format. This JSON data will be consumed by the Pivot Table component.
 
-> Ensure the **Newtonsoft.Json** NuGet package is installed in your project to use **JsonConvert**.
+> Ensure the `Newtonsoft.Json` NuGet package (version 13.x or later) is installed in your project before using `JsonConvert`. The `Get` method serializes the `DataTable` into a JSON string before ASP.NET Core's pipeline returns it as the response body.
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
@@ -101,22 +101,33 @@ namespace PivotController.Controllers
 ```
 
 ### Step 5: Run the Web API Application
-1. Build and run the **PivotController** application.
-2. The application will be hosted at `https://localhost:7139/` (the port number may vary depending on your configuration).
+1. In Visual Studio, set **PivotController** as the startup project and press <kbd>F5</kbd> (or run `dotnet run` from the project folder). The actual listening port is read from `launchSettings.json`; both HTTP and HTTPS endpoints are printed in the console.
+2. The application is typically hosted at `https://localhost:7139/` (the port number may vary depending on your configuration). Note the exact URL printed by the runtime so you can reference it from the ASP.NET MVC project.
 
 ### Step 6: Access the JSON Data
 1. Access the Web API endpoint at `https://localhost:7139/pivot` to view the JSON data retrieved from the SQL Server database.
-2. The browser will display the JSON data, as shown below, ready to be used by the Pivot Table.
+2. The browser displays the JSON data, as shown in the image below, ready for use by the Pivot Table. A sample response has the following shape:
+
+```json
+[
+  { "Country": "USA", "State": "California", "Product": "Laptop", "Quantity": 2, "Amount": 2400.00 },
+  { "Country": "USA", "State": "Texas", "Product": "Chair", "Quantity": 5, "Amount": 750.00 }
+]
+```
+
+> Because the API and the ASP.NET MVC app run on different origins (for example, `https://localhost:7139` and `https://localhost:44300`), the Web API project must allow cross-origin requests from the MVC origin. Add CORS services in the API's `Program.cs` (for example, `builder.Services.AddCors(...)` with `WithOrigins("https://localhost:44300")`) and call `app.UseCors(...)` before `MapControllers()`.
 
 ![Hosted Web API URL](../images/code-web-app.png)
 
 ## Connecting the Pivot Table to the Hosted Web API URL
 
-This section explains how to connect the Pivot Table component to a Microsoft SQL Server database by retrieving data from the Web API service created in the previous section.
+This section explains how to connect the Pivot Table component to a SQL Server database by retrieving data from the Web API service created in the previous section. Ensure that the Web API application from the previous section is still running before proceeding.
 
-### Step 1: Set Up the ASP.NET MVC Pivot Table
+### Step 1: Set up the ASP.NET MVC Pivot Table
 1. Download the ASP.NET MVC Pivot Table sample from the [GitHub](https://github.com/SyncfusionExamples/aspnetcore-bind-SQL-database-to-pivot-table) repository.
-2. Ensure your ASP.NET MVC project is configured with the necessary EJ2 Pivot Table dependencies by following the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started) documentation.
+2. Install the Syncfusion ASP.NET MVC helper package by running `Install-Package Syncfusion.EJ2.AspNet.MVC` (or the equivalent `dotnet add package Syncfusion.EJ2.AspNet.MVC` command).
+3. Register the Syncfusion namespace and tag helpers in **~/Views/Web.config** (`<add namespace="Syncfusion.EJ2" />` under `<namespaces>`) so the `EJS()` Razor helper is available in views.
+4. Add the required EJ2 client-side references (for example, `ej2.min.js`, `ej2-pivotview.min.js`, and the matching theme CSS) in **~/Views/Shared/_Layout.cshtml** as described in the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started) documentation.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
 1. In the ~/Views/Home/Index.cshtml file, configure the Pivot Table to use the hosted Web API URL (`https://localhost:7139/pivot`) by setting the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property within the [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) object.
@@ -134,7 +145,7 @@ This section explains how to connect the Pivot Table component to a Microsoft SQ
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the ~/Views/Home/Index.cshtml file to structure the data retrieved from the SQL Server database.
 2. Add fields to the `rows`, `columns`, `values`, and `filters` properties of [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to define how data fields are organized and aggregated in the Pivot Table.
-3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
+3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** on the `PivotView` component (not on the data source settings) and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface. Note: `EnableSorting` is a property of the `PivotView` component; the sample above demonstrates the equivalent MVC builder usage for the data source settings.
 
 Here’s the updated sample code with the report configuration and field list support:
 
@@ -162,5 +173,5 @@ Here’s the updated sample code with the report configuration and field list su
 
 ![Pivot Table bound with SQL database](../images/sql-data-binding.png)
 
-### Additional Resources
+## Additional Resources
 Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a SQL Server database in the [GitHub](https://github.com/SyncfusionExamples/aspnetcore-bind-SQL-database-to-pivot-table) repository.

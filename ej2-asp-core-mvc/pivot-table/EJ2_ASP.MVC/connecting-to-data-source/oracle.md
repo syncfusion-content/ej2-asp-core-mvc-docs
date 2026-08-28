@@ -15,15 +15,16 @@ This section describes how to retrieve data from Oracle database using [Oracle M
 Follow these steps to create a Web API service that retrieves data from an Oracle database and prepares it for the Pivot Table.
 
 ### Step 1: Create an ASP.NET Core Web Application
-1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**.
+1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**. Select the **Web API** project template (for example, **ASP.NET Core Web API** in Visual Studio 2022) so the project is configured with controllers and Swagger by default.
 2. Follow the official [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) for detailed instructions on creating an ASP.NET Core Web application.
+3. Before proceeding, ensure that an Oracle Database instance is running locally (or reachable on the network) and that the `EMPLOYEES` table exists with sample data. The connection string and table name used later in this walkthrough assume the example dataset from the walkthrough's GitHub sample.
 
 ![Creating an ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
 ### Step 2: Install the Oracle NuGet Package
 To enable Oracle database connectivity:
 1. Open the **NuGet Package Manager** in your project solution and search for [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core/).
-2. Install the [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core/) package to add Oracle support.
+2. Install the [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core/) package to add Oracle support. Use `Oracle.ManagedDataAccess.Core` version 21.x (or later) to match this walkthrough; pin the version if you want reproducible builds. Note: the legacy `Oracle.ManagedDataAccess` package targets .NET Framework only; for ASP.NET Core, always use `Oracle.ManagedDataAccess.Core`.
 
 ![Installing the Oracle.ManagedDataAccess.Core NuGet package](../images/oracle-data-nuget-package-install.png)
 
@@ -34,7 +35,7 @@ To enable Oracle database connectivity:
 ### Step 4: Connect to Oracle and Retrieve Data
 In the **PivotController.cs** file, use the [Oracle Managed Data Access](https://www.nuget.org/packages/Oracle.ManagedDataAccess) library to connect to an Oracle database and retrieve data for the Pivot Table.
 
-1. **Establish Connection**: Use **OracleConnection** with a valid connection string (e.g., `Data Source=localhost;User Id=myuser;Password=mypassword;`) to connect to the Oracle database.
+1. **Establish Connection**: Use **OracleConnection** with a valid connection string (e.g., `Data Source=localhost;User Id=myuser;Password=mypassword;`) to connect to the Oracle database. The example uses the EZConnect syntax (`host:port/service_name`) which does not require a `tnsnames.ora` file. If you prefer a TNS connection, define the entry in `tnsnames.ora` and use `Data Source=<tns_alias>` instead. For production, register the `OracleConnection` factory or use a connection pool rather than opening a new connection per request.
 2. **Query and Fetch Data**: Execute a SQL query (e.g., `SELECT * FROM EMPLOYEES`) using **OracleCommand** to retrieve data for the Pivot Table.
 3. **Structure the Data**: Use **OracleDataAdapter**'s **Fill** method to populate query results into a **DataTable** for JSON serialization.
 
@@ -71,7 +72,7 @@ In the **PivotController.cs** file, use the [Oracle Managed Data Access](https:/
 ### Step 5: Serialize Data to JSON
 In the **PivotController.cs** file, define a **Get** method that calls **FetchOracleResult** to retrieve data from the Oracle database as a **DataTable**. Then, use **JsonConvert.SerializeObject** from the **Newtonsoft.Json** library to convert the **DataTable** into JSON format. This JSON data will be used by the Pivot Table component.
 
-> Ensure the **Newtonsoft.Json** NuGet package is installed in your project to use **JsonConvert**.
+> Ensure the `Newtonsoft.Json` NuGet package (version 13.x or later) is installed in your project before using `JsonConvert`. The `Get` method serializes the `DataTable` into a JSON string before ASP.NET Core's pipeline returns it as the response body. Note: returning a `JsonConvert.SerializeObject` of a `DataTable` produces a JSON array of row objects whose column values are mapped from the underlying Oracle column types.
 
 ```csharp
      using Microsoft.AspNetCore.Mvc;
@@ -110,20 +111,20 @@ In the **PivotController.cs** file, define a **Get** method that calls **FetchOr
 ```
 
 ### Step 6: Run the Web API Service
-1. Build and run the application.
-2. The application will be hosted at `https://localhost:44346/` (the port number may vary based on your configuration).
+1. In Visual Studio, set **MyWebService** as the startup project and press <kbd>F5</kbd> (or run `dotnet run` from the project folder). The actual listening ports are read from `launchSettings.json`; both HTTP and HTTPS endpoints are printed in the console.
+2. The application will be hosted at `https://localhost:44346/` (the port number may vary based on your configuration). Note the exact URL printed by the runtime so you can reference it from the ASP.NET MVC project.
 
 ### Step 7: Access the JSON Data
 1. Access the Web API endpoint at `https://localhost:44346/Pivot` to view the JSON data retrieved from the Oracle database.
-2. The browser will display the JSON data, as shown below.
+2. The browser displays the JSON data, as shown in the image below, ready for use by the Pivot Table.
 
 ![JSON data from the Web API endpoint](../images/oracle-code-web-app.png)
 
 ## Connecting the Pivot Table to an Oracle Database Using the Web API Service
 
-This section explains how to connect the Pivot Table component to an Oracle database by retrieving data from the Web API service created in the previous section.
+This section explains how to connect the Pivot Table component to an Oracle database by retrieving data from the Web API service created in the previous section. Ensure that the Web API service from the previous section is still running before proceeding.
 
-### Step 1: Create a Pivot Table in ASP.NET MVC
+### Step 1: Set up the ASP.NET MVC project
 1. Set up a basic ASP.NET MVC Pivot Table by following the [Getting Started](../getting-started) documentation.
 2. Ensure your ASP.NET MVC project is configured with the necessary EJ2 Pivot Table dependencies.
 
@@ -143,7 +144,7 @@ This section explains how to connect the Pivot Table component to an Oracle data
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the ~/Views/Home/Index.cshtml file to structure the data retrieved from the Oracle database.
 2. Add fields to the `rows`, `columns`, `values`, and `filters` properties of [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to define the report structure, specifying how data fields are organized and aggregated in the Pivot Table.
-3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
+3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** on the `PivotView` component (not on the data source settings) and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface. Note: `EnableSorting` is a property of the `PivotView` component; the sample above demonstrates the equivalent MVC builder usage for the data source settings.
 
 Here’s the updated sample code with the report configuration and field list support:
 
@@ -172,5 +173,5 @@ Here’s the updated sample code with the report configuration and field list su
 
 ![Pivot Table bound with Oracle database](../images/oracle-data-binding.png)
 
-### Additional Resources
+## Additional Resources
 Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Oracle database in this [GitHub](https://github.com/SyncfusionExamples/web-bind-Oracle-database-to-pivot-table) repository.
