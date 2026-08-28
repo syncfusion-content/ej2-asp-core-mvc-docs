@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Filtering in ##Platform_Name## AutoComplete | Syncfusion
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Filtering in Syncfusion ##Platform_Name## AutoComplete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 # Filtering in ##Platform_Name## AutoComplete
 
@@ -15,7 +14,7 @@ The AutoComplete has built-in support to filter data items. The filter operation
 
 ## Change the filter type
 
-Determines on which filter type, the control needs to be considered on search action. The available [filterType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_FilterType) and its supported data types are as follows.
+Determines the filter type the control uses when performing a search. The available [filterType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_FilterType) and its supported data types are as follows.
 
 | **Filter Type** | **Description** | **Supported Types** |
 | --- | --- |
@@ -23,7 +22,7 @@ Determines on which filter type, the control needs to be considered on search ac
 | EndsWith | Checks whether a value ends with the specified value. | String |
 | Contains | Checks whether a value contains the specified value. | String |
 
-The following examples shows the data filtering is done with `StartsWith` type.
+The following example shows data filtering done with the `StartsWith` type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,13 +44,11 @@ The following examples shows the data filtering is done with `StartsWith` type
 {% endtabs %}
 {% endif %}
 
-
-
 ## Filter item count
 
-You can specify the filter suggestion item count through [suggestionCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_SuggestionCount) property of AutoComplete.
+You can specify the filter suggestion item count through the [suggestionCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_SuggestionCount) property of the AutoComplete.
 
-The following example, to restrict the suggestion list item counts as 5.
+The following example restricts the suggestion list item count to 5.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,13 +70,11 @@ The following example, to restrict the suggestion list item counts as 5.
 {% endtabs %}
 {% endif %}
 
-
-
 ## Limit the minimum filter character
 
-You can set the limit for the character count to filter the data on the AutoComplete. This can be done by setting the [minLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_MinLength) property to AutoComplete.
+You can set the limit for the character count to filter the data on the AutoComplete. This can be done by setting the [minLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_MinLength) property of the AutoComplete.
 
-In the following example, the remote request doesn't fetch the search data, until the search key contains three characters.
+In the following example, the remote request does not fetch the search data until the search key contains at least three characters.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,8 +95,6 @@ In the following example, the remote request doesn't fetch the search data, unti
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Case sensitive filtering
 
@@ -131,7 +124,7 @@ Data items can be filtered either with or without case sensitivity using the Dat
 
 ## Diacritics filtering
 
-An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_IgnoreAccent) is enabled.
+The AutoComplete supports diacritics filtering, which ignores [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international character lists when the [ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_IgnoreAccent) is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -178,6 +171,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG
 
 ## See also
 
-* [How to acheive autofill while filtering](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/how-to/autofill)
+* [How to enable autofill in AutoComplete](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/how-to/autofill)
 * [How to group the data using header](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/grouping)
 * [How to highlight the search data](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/how-to/custom-search)

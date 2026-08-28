@@ -8,12 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Disabled Items in ##Platform_Name## AutoComplete
 
-The AutoComplete provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings.html#Syncfusion_EJ2_DropDowns_AutoCompleteFieldSettings_Disabled) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
+The AutoComplete provides options to disable individual list items for specific scenarios. The category of each list item can be mapped through the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings.html#Syncfusion_EJ2_DropDowns_AutoCompleteFieldSettings_Disabled) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
 
-In the following sample, State are grouped according on its category using `disabled` field.
+In the following sample, items are marked as enabled or disabled based on the `State` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,18 +41,18 @@ public class DisableStatusData
 {% endtabs %}
 {% endif %}
 
-## Disable Item Method
+## Disable item method
 
-The disableItem method can be used to handle dynamic changing in disable state of a specific item. Only one item can be disabled in this method. To disable multiple items, this method can be iterated with the items list or array. The disabled field state will to be updated in the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource), when the item is disabled using this method. If the selected item is disabled dynamically, then the selection will be cleared.
+The [disableItem](https://ej2.syncfusion.com/documentation/api/auto-complete/index-default#disableitem) method can be used to dynamically change the disabled state of a specific item. Only one item can be disabled in a single call. To disable multiple items, iterate this method over the items list or array. The disabled field state will be updated in the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) when the item is disabled using this method. If the selected item is disabled dynamically, the selection will be cleared.
 
 | Parameter | Type | Description |
 |------|------|------|
-| itemHTMLLIElement |  <code>HTMLLIElement</code> |  It accepts the HTML Li element of the item to be removed.  |
-| itemValue | <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>object</code> | It accepts the string, number, boolean and object type value of the item to be removed. |
-| itemIndex | <code>number</code> | It accepts the index of the item to be removed. |
+| itemHTMLLIElement | `HTMLLIElement` | It accepts the HTML LI element of the item to be disabled. |
+| itemValue | `string` \| `number` \| `boolean` \| `object` | It accepts the string, number, boolean, or object value of the item to be disabled. |
+| itemIndex | `number` | It accepts the index of the item to be disabled. |
 
-## Enabled
+## Disable the entire component
 
-If you want to disabled the overall component to set the [enabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Enabled) property to false.
+To disable the entire component, set the [enabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Enabled) property to `false`.
 
 ![Disabled AutoComplete Component](./images/autocomplete-disable.png)
