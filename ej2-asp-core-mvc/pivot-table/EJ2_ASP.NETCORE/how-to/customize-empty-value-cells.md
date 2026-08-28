@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Customize Empty Value Cells in ASP.NET Core Pivot Table
+# How to customize empty value cells in ASP.NET Core Pivot Table
 
-When working with pivot table, certain combinations of row and column headers may not have corresponding data values, resulting in empty cells. The ASP.NET Core Pivot Table component allows you to display custom text in these empty cells instead of leaving them blank, thereby improving the visual presentation and enhancing the user experience of your pivot table.
+When working with the pivot table, certain combinations of row and column headers may not have corresponding data values, resulting in empty cells. The ASP.NET Core Pivot Table component allows you to display custom text in these empty cells instead of leaving them blank, thereby improving the visual presentation and enhancing the user experience of your pivot table.
 
 ## Configuration
 
