@@ -11,23 +11,25 @@ documentation: ug
 
 # Localization in ##Platform_Name## File Upload
 
-The Localization library allows you to localize static text content of the uploader. The static text contains default text content of action buttons, file status, clear icon title, tooltips, and text content of drag area. Define the locale object for a culture and assign it to L10n load method.
+The Localization library allows you to localize static text content of the [Uploader](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload). The static text includes the default text of action buttons, file status, clear icon title, tooltips, and the drag area text. Define the locale object for a culture and assign it to the `L10n.load` method.
 
-The following are the list of keys and its values used in the uploader control:
+## Localization keys
 
-| Key | Description |
+The following is a list of the keys and their values used in the Uploader control:
+
+| Keys | Description |
 |------------------------|---------|
 | Browse | To customize the browse button text.|
 | Clear | To customize the clear button text.|
 | Upload | To customize the upload button text. |
 | dropFilesHint | To customize the drop area text. |
-| uploadFailedMessage | To customize the status text when  the file is failed to upload.|
-| uploadSuccessMessage | To customize the status text when  the file is uploaded successfully.|
-| removedSuccessMessage | To customize the status text when  the file is removed the successfully from the serve.|
-| removedFailedMessage | To customize the status text while the file is failed to remove.|
+| uploadFailedMessage | To customize the status text when the file is failed to upload.|
+| uploadSuccessMessage | To customize the status text when the file is uploaded successfully.|
+| removedSuccessMessage | To customize the status text when the file is removed the successfully from the server.|
+| removedFailedMessage | To customize the status text when the file fails to be removed.|
 | inProgress | To customize the status text while the upload is in progress.|
 | pauseUpload | To customize the status text while the uploading is paused.|
-| fileUploadCancel | To customize the status text when uploading is cancelled.|
+| fileUploadCancel | To customize the status text when uploading is canceled.|
 | readyToUploadMessage | To customize the status text when the file is selected and ready to upload.|
 | invalidMaxFileSize | To customize the status text when the file size is greater than the maximum file size.|
 | invalidFileType | To customize the status text when the file type is invalid.|
@@ -37,6 +39,8 @@ The following are the list of keys and its values used in the uploader control:
 | delete | To customize tooltip text for delete icon. |
 | totalFiles | To customize tooltip text for total files. |
 | size | To customize tooltip text for size. |
+
+The following example demonstrates how to localize the static text content of the Uploader control into French (`fr-CH`):
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -63,6 +67,6 @@ The following are the list of keys and its values used in the uploader control:
 
 
 
-Output be like the below.
+The output will be as shown below.
 
 ![uploader](./images/uploader-locale.png)

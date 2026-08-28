@@ -13,9 +13,9 @@ documentation: ug
 
 ## Paste to upload
 
-The uploader component allows you to upload the files using the select or drop files option from the file explorer. It also supports pasting to upload the image files. You can upload any currently copied images in the clipboard.
+The Uploader control allows you to upload files using the select or drop option from the file explorer. It also supports pasting to upload the image files. You can upload any currently copied images in the clipboard.
 
-N> When you paste the image, it will be saved in the server with the filename as `image.png`. The file name can be renamed in the server end. You can generate a random name for the file name using `getUniqueID` method.
+N> When you paste the image, it will be saved in the server with the filename as `image.png`. The file name can be renamed in the server end. You can generate a random name for the file name using the `getUniqueID` method.
 
 Refer to the following example.
 
@@ -89,11 +89,9 @@ public void Save(IList<IFormFile> UploadFiles)
 
 ## Directory upload
 
-The uploader component allows you to upload all files in the folders to server by using the [directoryUpload](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DirectoryUpload) property.
+The Uploader control allows you to upload all files in the folders to server using the [directoryUpload](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DirectoryUpload) property. When this property is enabled, the Uploader control processes the files by iterating through the files and sub-directories in a directory. It allows you to select only folders instead of files to upload.
 
-When this property is enabled, the uploader component processes the files by iterating through the files and sub-directories in a directory. It allows you to select only folders instead of files to upload.
-
-N> The directory upload is available only in browsers that supports **HTML5 directory**. The uploader will process directory upload by dragging and dropping in the Edge browser.
+N> The directory upload is available only in browsers that support **HTML5 directory**. The uploader will process directory upload via drag-and-drop in the Edge browser.
 
 Refer to the following example to upload files to the server.
 
@@ -181,13 +179,11 @@ public DefaultController(IHostingEnvironment env)
 
 ## Drag and drop
 
-The uploader component allows you to drag and drop the files to upload. You can drag the files from file explorer and drop into the drop area.
-
-By default, the uploader component act as drop area element. The drop area gets highlighted when you drag the files over drop area.
+The Uploader control allows you to drag and drop the files to upload. You can drag the files from file explorer and drop into the drop area. By default, the Uploader control acts as the drop area element. The drop area gets highlighted when you drag the files over drop area.
 
 ### Custom drop area
 
-The uploader component allows you to set external target element as drop area using the [dropArea](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DropArea) property. The element can be represented as HTML element or element’s id.
+The Uploader control allows you to set an external target element as the drop area using the [dropArea](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DropArea) property. The element can be represented as an HTML element or its id.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -214,7 +210,7 @@ The uploader component allows you to set external target element as drop area us
 
 
 
-Output be like the below.
+The output is shown below.
 
 ![uploader](./images/uploader-custom-drop.png)
 
@@ -247,13 +243,13 @@ You can customize the appearance of drop area by overriding the default drop are
 
 
 
-Output be like the below.
+The output is shown below.
 
 ![uploader](./images/uploader-customize-drop.png)
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.
 
-## See Also
+## See also
 
 * [Achieve file upload programmatically](./how-to/achieve-file-upload-programmatically)
 * [Validate image/* on drop](./how-to/validate-image-on-drop)
