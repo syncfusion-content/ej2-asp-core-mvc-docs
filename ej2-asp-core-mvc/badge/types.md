@@ -22,10 +22,10 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge has the following
 | e-badge-secondary | Represents a secondary notification. |
 | e-badge-success   | Represents a positive notification. |
 | e-badge-danger    | Represents a negative notification. |
-| e-badge-warning   | Represents notification with caution. |
+| e-badge-warning   | Represents a notification with caution. |
 | e-badge-info      | Represents an informative notification. |
-| e-badge-light     | Represents notification in light variant. |
-| e-badge-dark      | Represents notification in dark variant. |
+| e-badge-light     | Represents a notification in light variant. |
+| e-badge-dark      | Represents a notification in dark variant. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge has the following
 {% endif %}
 
 
-![Badge Styles](images/badgestyles.png)
+![Badge Styles](images/badgestyles.PNG)
 
 ## Badge types
 
@@ -87,7 +87,7 @@ The circle Badge style can be applied by adding the modifier class `.e-badge-cir
 {% endif %}
 
 
-![Badge Circle Type](images/circle.png)
+![Badge Circle Type](images/circle.PNG)
 
 ### Pill
 
@@ -114,7 +114,7 @@ The pill Badge style can be applied by adding the modifier class `.e-badge-pill`
 {% endif %}
 
 
-![Badge Pill Type](images/pill.png)
+![Badge Pill Type](images/pill.PNG)
 
 ### Link
 
@@ -141,7 +141,7 @@ When Badge modifier classes are applied to the anchor tag, the Badge’s appeara
 {% endif %}
 
 
-![Badge Link Type](images/link.png)
+![Badge Link Type](images/link.PNG)
 
 ### Notification
 
@@ -168,7 +168,7 @@ The notification Badge style can be applied by adding the modifier class `.e-bad
 {% endif %}
 
 
-![Badge Notification Type](images/notification.png)
+![Badge Notification Type](images/notification.PNG)
 
 ### Dot
 
@@ -195,11 +195,11 @@ Dot can be applied by adding the modifier class `.e-badge-dot` to the target ele
 {% endif %}
 
 
-![Badge Dot Type](images/dot.png)
+![Badge Dot Type](images/dot.PNG)
 
 ### Overlap
 
-The overlap Badge can be used with `notification` or `dot` Badge, which overlaps with the target element by adding the modifier class`.e-badge-overlap`. While using the overlap Badge, set the parent element to `position: relative`.
+The overlap Badge can be used with `notification` or `dot` Badge, which overlaps with the target element by adding the modifier class `.e-badge-overlap`. While using the overlap Badge, set the parent element to `position: relative`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -222,11 +222,11 @@ The overlap Badge can be used with `notification` or `dot` Badge, which overlaps
 {% endif %}
 
 
-![Badge Overlap Type](images/overlap.png)
+![Badge Overlap Type](images/overlap.PNG)
 
 ### Position
 
-The default position of the `notification` or `dot` Badge is top. But, the position can be changed to `bottom` using the modifier class `.e-badge-bottom`. For example, the bottom class modifier is used with dot Badge to display the status in the avatar as shown in the following sample.
+The default position of the `notification` or `dot` Badge is top. However, the position can be changed to `bottom` using the modifier class `.e-badge-bottom`. For example, the bottom class modifier is used with the dot Badge to display the status in the avatar as shown in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -248,6 +248,6 @@ The default position of the `notification` or `dot` Badge is top. But, the posit
 {% endtabs %}
 {% endif %}
 
-![Badge Position Type](images/position.png)
+![Badge Position Type](images/position.PNG)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Badge/BadgeTypesSample).
