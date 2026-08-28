@@ -22,7 +22,7 @@ The Toolbar can be rendered by defining an array of items. Items can be construc
 | id | The ID of the button to be rendered. If the ID is not given, auto ID is generated. |
 | prefixIcon | Defines the class used to specify an icon for the button. The icon is `positioned before` the text if text is available or the icon alone button is rendered. |
 | suffixIcon | Defines the class used to specify an icon for the button. The icon is `positioned after` the text if text is available. If both `prefixIcon` and `suffixIcon` are specified, only `prefixIcon` is considered. |
-| width | Used to set the width of the button. |
+| width | Used to set the width of the button. The value can be specified in px, %, em, or rem units. |
 
 ## Separator
 
@@ -51,13 +51,11 @@ The `Separator` type adds a vertical separation between the Toolbar's single/mul
 {% endtabs %}
 {% endif %}
 
-
-
 N> If `Separator` is added as the first or the last item, it will not be visible.
 
 ## Input
 
-The `Input` type is only applicable for adding `template` elements when the  `template` property is defined as an `object`. Input type creates an `input element` internally that acts as the container for `Syncfusion` input based components.
+The `Input` type is only applicable for adding `template` elements when the `template` property is defined as an `object`. The Input type creates an `<input>` element internally that acts as the container for Syncfusion input-based components.
 
 >Note: Set toolbar item **type** property value as `Input` only for Input components.
 
@@ -65,9 +63,9 @@ The `Input` type is only applicable for adding `template` elements when the  `te
 
 * The `NumericTextBox` component can be included by importing the `NumericTextBox` module from `ej2-inputs`.
 
-* Initialize the `NumericTextBox` in template property, where the Toolbar item type is set as `Input`.
+* Initialize the `NumericTextBox` in the template property, where the Toolbar item type is set as `Input`.
 
-* Related `NumericTextBox` component properties can also be configured as given below.
+* Related `NumericTextBox` component properties can also be configured as shown below.
 
 ```javascript
 
@@ -79,9 +77,9 @@ The `Input` type is only applicable for adding `template` elements when the  `te
 
 * The `DropDownList` component can be included by importing the `DropDownList` module from `ej2-dropdowns`.
 
-* Initialize the `DropDownList` in template property, where the Toolbar item type is set as `Input`.
+* Initialize the `DropDownList` in the template property, where the Toolbar item type is set as `Input`.
 
-* Related `DropDownList` component properties can also be configured as given below.
+* Related `DropDownList` component properties can also be configured as shown below.
 
 ```javascript
 
@@ -93,9 +91,9 @@ The `Input` type is only applicable for adding `template` elements when the  `te
 
 * The `RadioButton` component can be included by importing the `RadioButton` module from `ej2-buttons`.
 
-* Initialize the `RadioButton` in template property, where the Toolbar item type is set as `Input`.
+* Initialize the `RadioButton` in the template property, where the Toolbar item type is set as `Input`.
 
-* Related `RadioButton` component properties can also be configured as given below.
+* Related `RadioButton` component properties can also be configured as shown below.
 
 ```javascript
 
@@ -103,40 +101,40 @@ The `Input` type is only applicable for adding `template` elements when the  `te
 
 ```
 
-Output be like the below.
+The output will look like the following:
 
 ![Toolbar Control with item configuration](./images/toolbar_tempalte.PNG)
 
-### Enabling tab key navigation in Toolbar
+### Enabling Tab key navigation in Toolbar
 
-The `tabIndex` property of a Toolbar item is used to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the `tabIndex` property allows you to switch between items using the Tab and Shift+Tab keys as well.
+The `tabIndex` property of a Toolbar item is used to enable Tab key navigation for the item. By default, the user can switch between items using the arrow keys. The `tabIndex` property allows you to also switch between items using the Tab and Shift+Tab keys.
 
 To use the `tabIndex` property, you need to set it for each Toolbar item that you want to enable tab key navigation. The `tabIndex` property should be set to a positive integer value. A value of 0 or a negative value will disable tab key navigation for the item.
 
-For example, to enable tab key navigation for two Toolbar items, you can use the following code:
+Here is an example of how to enable Tab key navigation for Toolbar items using positive `tabIndex` values:
 
 ```javascript
 @using Syncfusion.EJ2.Navigations;
 
 <ejs-toolbar id="defaultToolbar">
     <e-toolbar-items>
-        <e-toolbar-item text="Item 1" tabIndex = "1"></e-toolbar-item>
-        <e-toolbar-item text="Item 2" tabIndex = "2"></e-toolbar-item>       
+        <e-toolbar-item text="Item 1" tabIndex="1"></e-toolbar-item>
+        <e-toolbar-item text="Item 2" tabIndex="2"></e-toolbar-item>       
     </e-toolbar-items>
 </ejs-toolbar>
 ```
 
 With the above code, the user can switch between the two Toolbar items using the Tab and Shift+Tab keys, in addition to using the arrow keys. The items will be navigated in the order specified by the `tabIndex` values.
 
-If you set the `tabIndex` value to 0 for all Toolbar items, tab key navigation will be based on the element order rather than the `tabIndex` values. For example:
+Alternatively, if you set the `tabIndex` value to 0 for all Toolbar items, tab key navigation will be based on the element order in the DOM:
 
 ```javascript
 @using Syncfusion.EJ2.Navigations;
 
 <ejs-toolbar id="defaultToolbar">
     <e-toolbar-items>
-        <e-toolbar-item text="Item 1" tabIndex = "0"></e-toolbar-item>
-        <e-toolbar-item text="Item 2" tabIndex = "0"></e-toolbar-item>       
+        <e-toolbar-item text="Item 1" tabIndex="0"></e-toolbar-item>
+        <e-toolbar-item text="Item 2" tabIndex="0"></e-toolbar-item>       
     </e-toolbar-items>
 </ejs-toolbar>
 ```

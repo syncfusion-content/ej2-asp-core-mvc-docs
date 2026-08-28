@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Custom highlight search in ##Platform_Name## AutoComplete | Syncfusion
-description: Learn here all about Custom Search in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
+title: Custom Highlight Search in ##Platform_Name## AutoComplete | Syncfusion
+description: Learn here all about Custom Highlight Search in Syncfusion ##Platform_Name## AutoComplete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Custom Search
+control: Custom Highlight Search
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Custom Highlight Search in ##Platform_Name## AutoComplete
 
-# Custom highlight search in ##Platform_Name## AutoComplete
+The AutoComplete has built-in support to highlight the searched characters on suggested list items when the [highlight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Highlight) property is enabled. The `highlight` property is a boolean value that defaults to `false`. When enabled, the AutoComplete wraps the matched characters in the suggestion list with the `e-highlight` class, which you can then customize through CSS.
 
-The AutoComplete has built-in support to highlight the searched characters on suggested list items when the [highlight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Highlight) property is enabled.
-
-The below sample customizes the matched character in suggestion list by `e-highlight` class.
+The following sample enables the `highlight` property to highlight the matched characters in the suggestion list.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -33,6 +32,7 @@ The below sample customizes the matched character in suggestion list by `e-highl
 {% include code-snippet/autocomplete/how-to/highlight/highlight.cs %}
 {% endhighlight %}
 {% endtabs %}
+
 {% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/AutoComplete/AutoCompleteCustomSample).

@@ -8,14 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Displaying Islamic Calendar
 
-In addition to the Gregorian calendar, the Calendar control supports displaying the Islamic calendar (Hijri calendar). **Islamic calendar** or **Hijri calendar** is a `lunar calendar` consisting of 12 months in a year of 354 or 355 days. To know more about Islamic calendar, refer this [wikipedia](https://en.wikipedia.org/wiki/Islamic_calendar).
+In addition to the Gregorian calendar, the Calendar control supports displaying the Islamic calendar (Hijri calendar). The **Islamic calendar** or **Hijri calendar** is a `lunar calendar` consisting of 12 months in a year of 354 or 355 days. To learn more about the Islamic calendar, refer to this [Wikipedia](https://en.wikipedia.org/wiki/Islamic_calendar) article.
 
 Also, it consists of all Gregorian calendar functionalities as like min and max date, week number, start day of the week, multi selection, enable RTL, start and depth view, localization, highlight and customize the specific dates.
 
-By default, calendar mode is in **Gregorian**. You can enable the Islamic mode by setting the **calendarMode** as **Islamic**.
+By default, the calendar mode is **Gregorian**. You can enable the Islamic mode by setting the [calendarMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_CalendarMode) property to **Islamic**. The following example also uses the `renderDayCell` event to disable and customize specific dates while the calendar is in Islamic mode. For more details on customizing day cells, see [Customization](./customization.md).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

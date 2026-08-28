@@ -10,8 +10,9 @@ documentation: ug
 
 # EJ1 API Migration in ##Platform_Name## AutoComplete
 
-This article describes the API migration process of  AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
-N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use multiselection support in autocomplete, we suggest you to use MultiSelect component.
+This article describes the API migration process of AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+
+N> MultiSelect concept is not present in EJ2 AutoComplete. If you want to use multiselection support in autocomplete, we suggest you to use the [MultiSelect](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/getting-started) component instead.
 
 ## DataBinding
 
@@ -21,58 +22,57 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 | **Fields for mapping** | **Property:** *AutocompleteFields*<br/>`@Html.EJ().Autocomplete("autocomplete").AutocompleteFields(field => field.Key("UniqueKey").Text("Text"))`| **Property:** *e-autocomplete-fields*<br/>`@Html.EJS().AutoComplete("games").Fields(new AutoCompleteFieldSettings { Text = "Game" }).Render()` |
 | **Query** | **Property**: *Query*<br/>`@Html.EJ().Autocomplete("selectCar").Query("ej.Query().from('Customers').take(10)")`| **Property**: *Query*<br/>`@Html.EJS().AutoComplete("customers").Query((string)ViewBag.query).Render()`|
 | **Begin event** | **Event**: *ActionBegin*<br/>`@Html.EJ().Autocomplete("selectCar").ActionBegin("onBegin")`|**Event**: *ActionBegin*<br/> `@Html.EJS().AutoComplete("customers").ActionBegin("onBegin").Render()`|
-| **Complete event** | **Event**: *ActionComplete*<br/>`@Html.EJ().Autocomplete("selectCar").ActionComplete("onComplete")`|**Event**: *ActionComplete* <br/> `@Html.EJS().Autocomplete("selectCar").ActionComplete("onComplete").Render()`|
-| **Failure event** | **Event**: *ActionFailure*<br/>`@Html.EJ().Autocomplete("selectCar").ActionFailure("onFailure")` |**Event**: *ActionFailure* <br/> `@Html.EJS().Autocomplete("selectCar").ActionFailure("onFailure").Render()`|
+| **Complete event** | **Event**: *ActionComplete*<br/>`@Html.EJ().Autocomplete("selectCar").ActionComplete("onComplete")`|**Event**: *ActionComplete* <br/> `@Html.EJS().AutoComplete("selectCar").ActionComplete("onComplete").Render()`|
+| **Failure event** | **Event**: *ActionFailure*<br/>`@Html.EJ().Autocomplete("selectCar").ActionFailure("onFailure")` |**Event**: *ActionFailure* <br/> `@Html.EJS().AutoComplete("selectCar").ActionFailure("onFailure").Render()`|
 | **Success event** | **Event**: *ActionSuccess* <br/>`@Html.EJ().Autocomplete("selectCar").ActionSuccess("onSuccess")` |**NotApplicable** |
 
 ## Filtering
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Case sensitivity** | **Property**: *CaseSensitiveSearch*<br/>`@Html.EJ().Autocomplete("selectCar").CaseSensitiveSearch(true)`|**Property:** *ignoreCase*<br/>`@Html.EJS().Autocomplete("selectCar").IgnoreCase(true).Render()`|
-| **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`@Html.EJS().Autocomplete("selectCar").IgnoreAccent(true).Render()`|
-| **Filtering Type** | **Property:** *FilterType*<br/>`@Html.EJ().Autocomplete("selectCar").FilterType(SortOrder.None)`| **Property**: *FilterType*<br/>`@Html.EJS().Autocomplete("selectCar").FilterType(FilterType.Contains).Render()` |
-| **Autofill** | **Property:** *EnableAutoFill*<br/>`@Html.EJ().Autocomplete("selectCar").EnableAutoFill(true)` | **Property:**: *AutoFill* <br/>`@Html.EJS().Autocomplete("selectCar").AutoFill(true).Render()`|
-| **Highlight the search word** | **Property**: *HighlightSearch* `@Html.EJ().Autocomplete("selectCar").HighlightSearch(true)`|**Property:** *Highlight* <br/>`@Html.EJS().Autocomplete("selectCar").Highlight(true).Render()`|
-| **No of items to be shown** | **Property:** *ItemsCount*<br/>`@Html.EJ().Autocomplete("selectCar").ItemsCount(3)` |**Property:** *SuggestionCount*<br/>`@Html.EJS().Autocomplete("selectCar").SuggestionCount(3).Render()` |
-| **Minimum characters to enter** | **Property:** *MinCharacter*<br/> `@Html.EJ().Autocomplete("selectCar").MinCharacter(3)` |**Property:** *MinLength* <br/>`@Html.EJ()S.Autocomplete("selectCar").MinLength(3).Render()` |
-| **Search** | **Method:** *search* <br/>`@Html.EJ().Autocomplete("selectCar")`<br/><br/>`$("#selectCar").ejAutocomplete("search");` | **Not applicable** |
+| **Case sensitivity** | **Property**: *CaseSensitiveSearch*<br/>`@Html.EJ().Autocomplete("selectCar").CaseSensitiveSearch(true)`|**Property:** *ignoreCase*<br/>`@Html.EJS().AutoComplete("selectCar").IgnoreCase(true).Render()`|
+| **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`@Html.EJS().AutoComplete("selectCar").IgnoreAccent(true).Render()`|
+| **Filtering Type** | **Property:** *FilterType*<br/>`@Html.EJ().Autocomplete("selectCar").FilterType(SortOrder.None)`| **Property**: *FilterType*<br/>`@Html.EJS().AutoComplete("selectCar").FilterType(FilterType.Contains).Render()` |
+| **Autofill** | **Property:** *EnableAutoFill*<br/>`@Html.EJ().Autocomplete("selectCar").EnableAutoFill(true)` | **Property:**: *AutoFill* <br/>`@Html.EJS().AutoComplete("selectCar").AutoFill(true).Render()`|
+| **Highlight the search word** | **Property**: *HighlightSearch* `@Html.EJ().Autocomplete("selectCar").HighlightSearch(true)`|**Property:** *Highlight* <br/>`@Html.EJS().AutoComplete("selectCar").Highlight(true).Render()`|
+| **No of items to be shown** | **Property:** *ItemsCount*<br/>`@Html.EJ().Autocomplete("selectCar").ItemsCount(3)` |**Property:** *SuggestionCount*<br/>`@Html.EJS().AutoComplete("selectCar").SuggestionCount(3).Render()` |
+| **Minimum characters to enter** | **Property:** *MinCharacter*<br/> `@Html.EJ().Autocomplete("selectCar").MinCharacter(3)` |**Property:** *MinLength* <br/>`@Html.EJS().AutoComplete("selectCar").MinLength(3).Render()` |
 
 ## Placeholder
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Watermark text** | **Property:** *WatermarkText* <br/>`@Html.EJ().Autocomplete("selectCar").WatermarkText("Select")`| **Property:** *Placeholder* <br/>`@Html.EJS().Autocomplete("selectCar").Placeholder("select").Render()`|
-| **Floating  of waterMarkText** | **Not applicable**   | **Property:** *FloatLabelType* <br/>`@Html.EJS().Autocomplete("selectCar").FloatLabelType("Auto").Render()`|
+| **Watermark text** | **Property:** *WatermarkText* <br/>`@Html.EJ().Autocomplete("selectCar").WatermarkText("Select")`| **Property:** *Placeholder* <br/>`@Html.EJS().AutoComplete("selectCar").Placeholder("select").Render()`|
+| **Floating  of waterMarkText** | **Not applicable**   | **Property:** *FloatLabelType* <br/>`@Html.EJS().AutoComplete("selectCar").FloatLabelType("Auto").Render()`|
 
 ## Popup
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **No records text** | **Property:** *EmptyResultText* <br/> `@Html.EJ().Autocomplete("selectCar").EmptyResultText("no records")`| **Property:** *NoRecordsTemplate*<br/> `@Html.EJS().Autocomplete("selectCar").NoRecordsTemplate("@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")").Render()`|
-| **No records showing** | **Property:** *show-empty-result-text<br/> `@Html.EJ().Autocomplete("selectCar").ShowEmptyResultText("no records")` | **Not applicable** |
-| **Popupbutton** | **Property:** *ShowPopupButton*<br/> `@Html.EJ().Autocomplete("selectCar").ShowPopupButton(true)` | **Property:** *ShowPopupButton*<br/>  `@Html.EJS().Autocomplete("selectCar").ShowPopupButton(true).Render()`|
-| **Clear button** | **Property:** *ShowResetIcon* <br/> `@Html.EJ().Autocomplete("selectCar").ShowResetIcon(true)` | **Property:** *ShowClearButton* <br/>`@Html.EJS().Autocomplete("selectCar").ShowClearButton(true).Render()` |
+| **No records text** | **Property:** *EmptyResultText* <br/> `@Html.EJ().Autocomplete("selectCar").EmptyResultText("no records")`| **Property:** *NoRecordsTemplate*<br/> `@Html.EJS().AutoComplete("selectCar").NoRecordsTemplate("@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")").Render()`|
+| **No records showing** | **Property:** *show-empty-result-text*<br/> `@Html.EJ().Autocomplete("selectCar").ShowEmptyResultText("no records")` | **Not applicable** |
+| **Popupbutton** | **Property:** *ShowPopupButton*<br/> `@Html.EJ().Autocomplete("selectCar").ShowPopupButton(true)` | **Property:** *ShowPopupButton*<br/>  `@Html.EJS().AutoComplete("selectCar").ShowPopupButton(true).Render()`|
+| **Clear button** | **Property:** *ShowResetIcon* <br/> `@Html.EJ().Autocomplete("selectCar").ShowResetIcon(true)` | **Property:** *ShowClearButton* <br/>`@Html.EJS().AutoComplete("selectCar").ShowClearButton(true).Render()` |
 | **Animation** | **Property:** *animate-type* <br/> `@Html.EJ().Autocomplete("selectCar").AnimateType("None")` | **Not Applicable** |
 | **Focusing the list item** | **Property:** *AutoFocus*<br/> `@Html.EJ().Autocomplete("selectCar").AutoFocus("true")` |**Not applicable** |
 | **Delaying the popup open time** | **Property:** *delay-suggestion-timeout*<br/> `@Html.EJ().Autocomplete("selectCar").DelaySuggestionTimeout(500)` | **Not applicable** |
 | **Popup text when there is no popup items** | **Property:** *empty-result-text*<br/> `@Html.EJ().Autocomplete("selectCar").EmptyResultText("no records")`  |<https://ej2.syncfusion.com/aspnetmvc/autocomplete/template#/fluent2> |
 | **Enable/disable the duplicate option** | **Property:** *enable-distinct*<br/> `@Html.EJ().Autocomplete("selectCar").EnableDistinct(true)`|**Not applicable**  |
-| **Popup height** | **Property:** *PopupHeight*<br/> `@Html.EJ().Autocomplete("selectCar").PopupHeight("300px")` |**Property:** *PopupHeight* <br/> `@Html.EJ().Autocomplete("selectCar").PopupHeight("300px").Render()` |
-| **Popup Width** | **Property:** *PopupWidth*<br/> `@Html.EJ().Autocomplete("selectCar").PopupWidth("300px")` |**Property:** *PopupWidth* <br/> `@Html.EJ().Autocomplete("selectCar").PopupWidth("300px").Render()`|
-| **Open popup** | **Method:** *open*<br/> `@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutocomplete("open");` | **Method:** *showPopup*<br/>`@Html.EJS().Autocomplete("autocomplete").Render()`<br/><br/>`$("#autocomplete").ejAutocomplete("showPopup");` |
-| **Close event** | **Event:** *Close*<br/>`@Html.EJ().Autocomplete("autocomplete").close("onClose")` | **Event**: *Close* <br/> `@Html.EJS().Autocomplete("autocomplete").Close("close").Render()`|
-| **Open event** | **Event:** *Open*<br/> `@Html.EJ().Autocomplete("autocomplete").open("onOpen')`| **Event:** *Open* <br/> `@Html.EJS().Autocomplete("autocomplete").Open(open).Render()`|
+| **Popup height** | **Property:** *PopupHeight*<br/> `@Html.EJ().Autocomplete("selectCar").PopupHeight("300px")` |**Property:** *PopupHeight* <br/> `@Html.EJS().AutoComplete("selectCar").PopupHeight("300px").Render()` |
+| **Popup Width** | **Property:** *PopupWidth*<br/> `@Html.EJ().Autocomplete("selectCar").PopupWidth("300px")` |**Property:** *PopupWidth* <br/> `@Html.EJS().AutoComplete("selectCar").PopupWidth("300px").Render()`|
+| **Open popup** | **Method:** *open*<br/> `@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutocomplete("open");` | **Method:** *showPopup*<br/>`@Html.EJS().AutoComplete("autocomplete").Render()`<br/><br/>`$("#autocomplete").ejAutocomplete("showPopup");` |
+| **Close event** | **Event:** *Close*<br/>`@Html.EJ().Autocomplete("autocomplete").close("onClose")` | **Event**: *Close* <br/> `@Html.EJS().AutoComplete("autocomplete").Close("close").Render()`|
+| **Open event** | **Event:** *Open*<br/> `@Html.EJ().Autocomplete("autocomplete").open("onOpen")`| **Event:** *Open* <br/> `@Html.EJS().AutoComplete("autocomplete").Open("open").Render()`|
 
 ## CSS
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *Cssclass* <br/> `@Html.EJ().Autocomplete("autocomplete").CssClass("CSSClass")` | **Property:** *cssClass* <br/> `@Html.EJS().Autocomplete("autocomplete").CssClass("class").Render()`|
-| **Height** | **Property:** *Height* <br/> `@Html.EJ().Autocomplete("autocomplete").Height("300px")`| By using *css-class* property, you can acheive this. |
-| **showRoundedCorner**   | **Property:** *ShowRoundedCorner*<br/> `@Html.EJ().Autocomplete("autocomplete").ShowRoundedCorner(true)` | **By using *css-class* property, you can acheive this**. |
-| **Width** | **Property:** *width* <br/> `@Html.EJ().Autocomplete("autocomplete").Width("200px")`| **Property:** *width* <br/> `@Html.EJS().Autocomplete("autocomplete").Width("300px").Render()`|
-| **Visibility** | **Property:** *visible* <br/>`@Html.EJ().Autocomplete("autocomplete").Visible(true)` | **By using *css-class* property, you can acheive this**. |
+| **Default** | **Property:** *CssClass* <br/> `@Html.EJ().Autocomplete("autocomplete").CssClass("CSSClass")` | **Property:** *cssClass* <br/> `@Html.EJS().AutoComplete("autocomplete").CssClass("class").Render()`|
+| **Height** | **Property:** *Height* <br/> `@Html.EJ().Autocomplete("autocomplete").Height("300px")`| Apply custom CSS class with height styles instead. |
+| **showRoundedCorner**   | **Property:** *ShowRoundedCorner*<br/> `@Html.EJ().Autocomplete("autocomplete").ShowRoundedCorner(true)` | Apply custom CSS class with border-radius instead. |
+| **Width** | **Property:** *Width* <br/> `@Html.EJ().Autocomplete("autocomplete").Width("200px")`| **Property:** *Width* <br/> `@Html.EJS().AutoComplete("autocomplete").Width("300px").Render()`|
+| **Visibility** | **Property:** *visible* <br/>`@Html.EJ().Autocomplete("autocomplete").Visible(true)` | Apply custom CSS class or use display styles instead. |
 
 ## Grouping
 
@@ -102,8 +102,8 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *AllowSorting* <br/> `@Html.EJ().Autocomplete("autocomplete").AllowSorting(true)` | **It is applicable when the sortOrder is defined.** |
-| **Order of sorting** | **Property:** *SortOrder* <br/>`@Html.EJS().Autocomplete("autocomplete").SortOrder("Ascending")`|**Property:** *SortOrder*<br/> `@Html.EJS().AutoComplete("games").SortOrder("Ascending").Render()` |
+| **Default** | **Property:** *AllowSorting* <br/> `@Html.EJ().Autocomplete("autocomplete").AllowSorting(true)` | Sorting is applied automatically when SortOrder is defined. |
+| **Order of sorting** | **Property:** *SortOrder* <br/>`@Html.EJS().AutoComplete("autocomplete").SortOrder("Ascending")`|**Property:** *SortOrder*<br/> `@Html.EJS().AutoComplete("games").SortOrder("Ascending").Render()` |
 
 ## Accessibility
 
@@ -115,38 +115,38 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------ | ----------- |
-|**Selecting particular value**| **Property**: *SelectValueByKey* <br/>`@Html.EJ().Autocomplete("autocomplete").SelectValueByKey(12)`|**Achievable through value property** |
-| **Selecting particular value** | **Property**: *value*<br/>`@Html.EJ().Autocomplete("autocomplete").Vallue("data")` | **Property:** *value*<br/> `@Html.EJS().AutoComplete("games").Value("data").Render()`|
-| **Selecting particular text** | **Property:** *text*<br/> `@Html.EJ().Autocomplete("autocomplete").Text("data")` | **By using text property, you can acheive this.** |
-| **Selecting particular value** |**Method:** *SelectValueByKey*<br/>`@Html.EJ().Autocomplete("autocomplete")`<br/><br/> `$("#autocomplete").selectValueByKey("key")`| **Achievable through value property**   |
-| **Selecting particular text** |**Method:** *SelectValueByText* <br/> `@Html.EJ().Autocomplete("autocomplete")`<br/><br/> `$("#autocomplete").selectValueByText("key")`|**Achievable through text property** |
+|**Selecting particular value**| **Property**: *SelectValueByKey* <br/>`@Html.EJ().Autocomplete("autocomplete").SelectValueByKey(12)`|**Achievable through the value property** |
+| **Selecting particular value** | **Property**: *value*<br/>`@Html.EJ().Autocomplete("autocomplete").Value("data")` | **Property:** *value*<br/> `@Html.EJS().AutoComplete("games").Value("data").Render()`|
+| **Selecting particular text** | **Property:** *text*<br/> `@Html.EJ().Autocomplete("autocomplete").Text("data")` | Achievable through the text property |
+| **Selecting particular value** |**Method:** *SelectValueByKey*<br/>`@Html.EJ().Autocomplete("autocomplete")`<br/><br/> `$("#autocomplete").selectValueByKey("key")`| **Achievable through the value property**   |
+| **Selecting particular text** |**Method:** *SelectValueByText* <br/> `@Html.EJ().Autocomplete("autocomplete")`<br/><br/> `$("#autocomplete").selectValueByText("key")`|**Achievable through the text property** |
 | **Select event** |**Event**: *Select*<br/>`@Html.EJ().Autocomplete("autocomplete").Select("onSelect")` | **Event:** *Select* <br/> `@Html.EJS().AutoComplete("games").Select("onSelect").Render()`|
 
 ## Miscellaneous
 
-| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%>&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%>&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Enable/disable** | **Property:** *Enabled*<br/>`@Html.EJ().AutoComplete("autocomplete").Enabled(true)` | **Property:** *Enabled* <br/>`@Html.EJS().AutoComplete("games").Enabled(true).Render()`|
-| **Enable persistence** | **Property:** *EnablePersistence*<br/> `@Html.EJ().AutoComplete("autocomplete").EnablePersistence(true)` | **Property:** *EnablePersistence* <br/> `@Html.EJS().AutoComplete("games").EnablePersistence(true).Render()`|
-| **Loading icon** | **Property:** *ShowLoadingIcon* <br/>`@Html.EJ().AutoComplete("autocomplete").ShowLoadingIcon(true)` | **By default,it is showing** |
-| **Read only** | **Property:** *ReadOnly* <br/> `@Html.EJ().AutoComplete("autocomplete").ReadOnly(true)` | **Property:** *ReadOnly*  `@Html.EJS().AutoComplete("games").ReadOnly(true).Render()`  |
-| **Disable** | **Method:** *disable*<br/> `@Html.EJ().AutoComplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutoComplete("disable");` | **Enabled property can be used here**  |
+| **Enable/disable** | **Property:** *Enabled*<br/>`@Html.EJ().Autocomplete("autocomplete").Enabled(true)` | **Property:** *Enabled* <br/>`@Html.EJS().AutoComplete("games").Enabled(true).Render()`|
+| **Enable persistence** | **Property:** *EnablePersistence*<br/> `@Html.EJ().Autocomplete("autocomplete").EnablePersistence(true)` | **Property:** *EnablePersistence* <br/>`@Html.EJS().AutoComplete("games").EnablePersistence(true).Render()`|
+| **Loading icon** | **Property:** *ShowLoadingIcon* <br/>`@Html.EJ().Autocomplete("autocomplete").ShowLoadingIcon(true)` | **By default,it is showing** |
+| **Read only** | **Property:** *ReadOnly* <br/> `@Html.EJ().Autocomplete("autocomplete").ReadOnly(true)` | **Property:** *ReadOnly*  `@Html.EJS().AutoComplete("games").ReadOnly(true).Render()`  |
+| **Disable** | **Method:** *disable*<br/> `@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutocomplete("disable");` | **Enabled property can be used here**  |
 
 ## Common
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Addition of new option watermarktext** | **Property:** *AddNewText*<br/> `@Html.EJ().Autocomplete("autocomplete").AddNewText("data")`|**Not applicable** |
-| **Addition of new item** | **Property:**  *AllowAddNew* <br/>`@Html.EJ().Autocomplete("autocomplete").AllowAddNew(true)`|**Property:** *AllowCustom*<br/> `@Html.EJS().Autocomplete("autocomplete").AllowCustom(true).Render()`|
-| **Reset the autocomplete** | **Property:** *ShowResetIcon* <br/>`@Html.EJ().Autocomplete("autocomplete").ShowResetIcon(true)`|**Property:** *ShowClearIcon* <br/> `@Html.EJS().Autocomplete("autocomplete").ShowClearIcon(true).Render()`|
-| **Destroy** | **Method:** *destroy*<br/> `@Html.EJ().Autocomplete("autocomplete").AllowSorting(true)`<br/><br/>`$("#autocomplete").ejAutoComplete("destroy");`| **Method:** *destroy* <br/>`@Html.EJS().Autocomplete("autocomplete").Render()`<br/> <br/>`var autoObj = document.getElementById("autocomplete").ej2_Instances[0];`<br/><br/>`autoObj.destroy();`|
-| **Reset the autocomplete** | **Method:** *clearText*<br/>`@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutoComplete("clearText");`  | **By passing empty value to the value property, you can acheive this**   |
-| **Multicolumn** | **Property:** *MultiColumnSettings*<br/> `@Html.EJ().Autocomplete("autocomplete").Datasource((IEnumerable<CarsList>ViewBag.datasource).`<br/>`MultiColumnSettings(obj => obj.Enable(true).Columns(obj1 =>{obj1.Field("EmployeeID").HeaderText("EmployeeID").Add();obj1.Field("FirstName").HeaderText("FirstName").Add();obj1.Field("City").HeaderText("City").Add();}).ShowHeader(true).SearchColumnIndices(new List<int> { 0,1,2 }).StringFormat("{0}"))` |**Not applicable** |
-| **Hide the Autocomplete** | **Method:** *hide*<br/><br/>`@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutoComplete("hide");` | **By using *css-class* property, you can acheive this.**
-| **Getting particular text** | **Method:** *GetActiveText* <br/>`@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutoComplete("getActiveText");`|**By using text property, you can get it.** |
-| **Getting particular value** | **Method:** *getValue*<br/> `@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutoComplete("getValue");` |**By using value property, you can get it.** |
-| **Change event** | **Event:** *Change*<br/>`@Html.EJ().Autocomplete("autocomplete").Change("onChange")`|**Event:** *Change* <br/>`@Html.EJS().Autocomplete("autocomplete").Change("onChange").Render()`|
-| **Create event** | **Event:** *Create* <br/>`@Html.EJ().Autocomplete("autocomplete").Created("onCreate")`|**Event:** *Created* <br/>`@Html.EJS().Autocomplete("autocomplete").Created("onCreate").Render()`|
-| **Destroy event** | **Event:** *Destroy* <br/>`@Html.EJ().Autocomplete("autocomplete").Destroy("onDestroy")` |**Event:** *Destroyed* <br/>`@Html.EJS().Autocomplete("autocomplete").Destroyed("ondestroy").Render()`|
-| **Focus out event** | **Event**: *FocusOut*<br/>`@Html.EJ().Autocomplete("autocomplete").FocusOut("onFocusOut")`| **Event:** *Blur* <br/>`@Html.EJS().Autocomplete("autocomplete").Blur("onBlur").Render()` |
-| **Focus in event** | **Event** : *FocusIn*<br/>`@Html.EJ().Autocomplete("autocomplete").FocusIn("onFocus")` | **Event:** *Focus* <br/>`@Html.EJS().Autocomplete("autocomplete").FocusIn("onFocus").Render()` |
+| **Addition of new item** | **Property:**  *AllowAddNew* <br/>`@Html.EJ().Autocomplete("autocomplete").AllowAddNew(true)`|**Property:** *AllowCustom*<br/> `@Html.EJS().AutoComplete("autocomplete").AllowCustom(true).Render()`|
+| **Reset the autocomplete** | **Property:** *ShowResetIcon* <br/>`@Html.EJ().Autocomplete("autocomplete").ShowResetIcon(true)`|**Property:** *ShowClearButton* <br/> `@Html.EJS().AutoComplete("autocomplete").ShowClearButton(true).Render()`|
+| **Destroy** | **Method:** *destroy*<br/> `@Html.EJ().Autocomplete("autocomplete").AllowSorting(true)`<br/><br/>`$("#autocomplete").ejAutocomplete("destroy");`| **Method:** *destroy* <br/>`@Html.EJS().AutoComplete("autocomplete").Render()`<br/> <br/>`var autoObj = document.getElementById("autocomplete").ej2_Instances[0];`<br/><br/>`autoObj.destroy();`|
+| **Clear text via method** | **Method:** *clearText*<br/>`@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutocomplete("clearText");`  | **By passing an empty value to the value property, you can achieve this**   |
+| **Multicolumn** | **Property:** *MultiColumnSettings*<br/> `@Html.EJ().Autocomplete("autocomplete").Datasource((IEnumerable<CarsList>)ViewBag.datasource).`<br/>`MultiColumnSettings(obj => obj.Enable(true).Columns(obj1 =>{obj1.Field("EmployeeID").HeaderText("EmployeeID").Add();obj1.Field("FirstName").HeaderText("FirstName").Add();obj1.Field("City").HeaderText("City").Add();}).ShowHeader(true).SearchColumnIndices(new List<int> { 0,1,2 }).StringFormat("{0}"))` |**Not applicable** |
+| **Hide the Autocomplete** | **Method:** *hide*<br/><br/>`@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutocomplete("hide");` | **By using the *css-class* property, you can achieve this.**
+| **Getting particular text** | **Method:** *GetActiveText* <br/>`@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutocomplete("getActiveText");`|**By using the text property, you can retrieve it.** |
+| **Getting particular value** | **Method:** *getValue*<br/> `@Html.EJ().Autocomplete("autocomplete")`<br/><br/>`$("#autocomplete").ejAutocomplete("getValue");` |**By using the value property, you can retrieve it.** |
+| **Change event** | **Event:** *Change*<br/>`@Html.EJ().Autocomplete("autocomplete").Change("onChange")`|**Event:** *Change* <br/>`@Html.EJS().AutoComplete("autocomplete").Change("onChange").Render()`|
+| **Create event** | **Event:** *Create* <br/>`@Html.EJ().Autocomplete("autocomplete").Created("onCreate")`|**Event:** *Created* <br/>`@Html.EJS().AutoComplete("autocomplete").Created("onCreate").Render()`|
+| **Destroy event** | **Event:** *Destroy* <br/>`@Html.EJ().Autocomplete("autocomplete").Destroy("onDestroy")` |**Event:** *Destroyed* <br/>`@Html.EJS().AutoComplete("autocomplete").Destroyed("ondestroy").Render()`|
+| **Focus out event** | **Event**: *FocusOut*<br/>`@Html.EJ().Autocomplete("autocomplete").FocusOut("onFocusOut")`| **Event:** *Blur* <br/>`@Html.EJS().AutoComplete("autocomplete").Blur("onBlur").Render()` |
+| **Focus in event** | **Event** : *FocusIn*<br/>`@Html.EJ().Autocomplete("autocomplete").FocusIn("onFocus")` | **Event:** *Focus* <br/>`@Html.EJS().AutoComplete("autocomplete").FocusIn("onFocus").Render()` |
