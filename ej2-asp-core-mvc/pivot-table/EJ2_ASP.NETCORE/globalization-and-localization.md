@@ -632,7 +632,7 @@ The following example demonstrates the Pivot Table in `Deutsch` culture.
 
 ## Right-to-left (RTL)
 
-Right-to-left (RTL) support makes the Pivot Table more accessible and user-friendly for people who read and write in right-to-left languages such as Arabic, Farsi, and Urdu. This feature adjusts the text direction and layout of the entire Pivot Table from a left-to-right to a right-to-left orientation. To enable RTL in the Pivot Table, set the [`enableRtl`](https://ej2.syncfusion.com/aspnetcore/documentation/api/pivotview/index-default#enablertl) property to **true**.
+Right-to-left (RTL) support makes the Pivot Table more accessible and user-friendly for people who read and write in right-to-left languages such as Arabic, Farsi, and Urdu. This feature adjusts the text direction and layout of the entire Pivot Table from a left-to-right to a right-to-left orientation. To enable RTL in the Pivot Table, set the `enableRtl` property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
