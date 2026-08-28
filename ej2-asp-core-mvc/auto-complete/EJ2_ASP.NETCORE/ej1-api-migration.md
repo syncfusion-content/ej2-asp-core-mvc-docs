@@ -151,4 +151,3 @@ N> MultiSelect concept is not present in EJ2 AutoComplete. If you want to use mu
 | **Destroy event** | **Event:** *destroy*<br/>`<ej-autocomplete id="autocomplete" destroy="onDestroy"></ej-autocomplete>` | **Event:** *destroyed*<br/>`<ejs-autocomplete id="country" destroyed="onDestroy"></ejs-autocomplete>`|
 | **Focus out event** | **Event:** *focus-out*<br/>`<ej-autocomplete id="autocomplete" focus-out="onfocusout"></ej-autocomplete>`| **Event:** *blur*<br/>`<ejs-autocomplete id="country" blur="onBlur"></ejs-autocomplete>` |
 | **Focus in event** | **Event:** *focus-in*<br/>`<ej-autocomplete id="autocomplete" focus-in="onfocus"></ej-autocomplete>` | **Event:** *focus*<br/>`<ejs-autocomplete id="country" focus="onFocus"></ejs-autocomplete>` |
-
