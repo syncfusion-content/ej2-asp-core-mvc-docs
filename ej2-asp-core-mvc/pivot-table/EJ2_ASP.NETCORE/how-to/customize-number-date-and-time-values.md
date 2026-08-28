@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Format Number, Date, Time in ASP.NET Core Pivot Table
+# How to customize number and date values in Pivot Table
 
 You can format the number, date, and time values for each field using the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) option under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
 
@@ -46,7 +46,7 @@ For numeric fields, the formatting settings include the following properties:
 
 
 
-## Date and time formatting
+## Date and Time formatting
 
 For date and time fields, the formatting settings include these properties:
 
@@ -83,4 +83,4 @@ For date and time fields, the formatting settings include these properties:
 
 ## Limitations of date formatting
 
-As per Firefox and Edge browsers standards, most of the date and time formats used in data source aren’t supported. For example: Apr-2000, Apr-01-2000, 01-03-2000, 2000-Apr-01 etc... are not supported. Meanwhile [`ISO formats`](https://262.ecma-international.org/5.1/#sec-15.9.1.15) will be supported across all browsers.
+According to Firefox and Edge browser standards, most date and time formats used in data sources are not supported. For example: Apr-2000, Apr-01-2000, 01-03-2000, 2000-Apr-01 and similar formats are not recognized. However, [`ISO formats`](https://262.ecma-international.org/5.1/#sec-15.9.1.15) are supported across all browsers for consistent date handling.
