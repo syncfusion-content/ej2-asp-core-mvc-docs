@@ -11,7 +11,7 @@ documentation: ug
 
 # Clone Groups and Rules in ##Platform_Name## Query Builder
 
-The Query Builder functionality extends to cloning both individual rules and entire groups. Utilizing the Clone options will generate an exact duplicate of a rule or group adjacent to the original one. This feature enables users to replicate complex query structures effortlessly. The [`ShowButtons`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ShowButtons) function offers users the ability to toggle the visibility of these cloning buttons, providing convenient control over the cloning process within the Query Builder interface.
+The Query Builder functionality extends to cloning both individual rules and entire groups. Using the Clone options will generate an exact duplicate of a rule or group adjacent to the original one. This feature enables users to replicate complex query structures effortlessly. The [`ShowButtons`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ShowButtons) function offers users the ability to toggle the visibility of these cloning buttons, providing convenient control over the cloning process within the Query Builder interface.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,5 +40,5 @@ The Query Builder functionality extends to cloning both individual rules and ent
 
 You can clone groups and rules by interacting through the user interface and methods.
 
-* Use the `cloneGroup` method to clone group.
-* Use the `cloneRule` method to clone rule.
+* Use the `cloneGroup` method to clone a group.
+* Use the `cloneRule` method to clone a rule.

@@ -11,7 +11,7 @@ documentation: ug
 
 # Right-to-Left (RTL) in ##Platform_Name## Query Builder
 
-RTL provides an option to switch the text direction and layout of the Query Builder component from right-to-left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL, set the `EnableRtl` to true.
+RTL provides an option to switch the text direction and layout of the Query Builder component from right-to-left. It improves user experience and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL, set the `EnableRtl` property to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Model Binding in ##Platform_Name## Query Builder
 
-Model binding allows to bind properties for the components used in field, operator, and value columns. To implement model binding, assign [`FieldModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_FieldModel), [`OperatorModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_OperatorModel), and [`ValueModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ValueModel) properties in QueryBuilder.
+Model binding allows you to bind properties for the components used in field, operator, and value columns. To implement model binding, assign the [`FieldModel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_FieldModel), [`OperatorModel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_OperatorModel), and [`ValueModel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ValueModel) properties in the QueryBuilder.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
