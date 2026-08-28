@@ -1,21 +1,20 @@
 ---
 layout: post
 title: Value Binding in ##Platform_Name## AutoComplete | Syncfusion
-description: Learn here all about Value Binding in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Value Binding in Syncfusion ##Platform_Name## AutoComplete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Value Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Value Binding in ##Platform_Name## AutoComplete
 
-Value binding in the AutoComplete control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The AutoComplete component provides flexibility in binding both primitive data types and complex objects.
+Value binding in the AutoComplete control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The AutoComplete control provides flexibility in binding both primitive data types and object data types.
 
-## Primitive Data Types
+## Primitive data types
 
-The AutoComplete control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Value) property of the AutoComplete.
+The AutoComplete control provides flexible binding capabilities for primitive data types such as strings, numbers, and booleans. You can bind local primitive data arrays, fetch and bind data from remote sources, and customize data binding to suit specific requirements. Bind the primitive value to the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Value) property of the AutoComplete.
 
 Primitive data types include:
 
@@ -24,7 +23,7 @@ Primitive data types include:
 * Boolean
 * Null
 
-The following sample shows the example for preselect values for primitive data type
+The following sample shows how to preselect a value for a primitive data type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,11 +46,13 @@ The following sample shows the example for preselect values for primitive data t
 {% endif %}
 
 
-## Object Data Types
+## Object data types
 
-In the AutoComplete control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_AllowObjectBinding) is enabled, the value of the control will be an object of the same type as the selected item in the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
+In the AutoComplete control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_AllowObjectBinding) is enabled, the value of the control will be an object of the same type as the selected item. Map the object's fields using the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Fields) property so the control can resolve the value member.
 
-The following sample shows the example for preselect values for object data type
+This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
+
+The following sample shows how to preselect a value for an object data type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
