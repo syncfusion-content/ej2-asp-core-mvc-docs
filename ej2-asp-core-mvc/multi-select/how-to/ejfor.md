@@ -40,13 +40,13 @@ In the following sample, MultiSelectFor control is rendered.
 
 
 
-## Data Annotation
+## Data annotations
 
-Data Annotations help us to define the rules to the model classes or properties for data validation and displaying suitable messages to end users.
+Data annotations help you define rules for the model classes or properties for data validation and display suitable messages to end users.
 
-Data Annotations includes built-in validation attributes for different validation rules, which can be applied to the properties of model class. ASP.NET Framework will automatically enforce these validation rules and display validation messages in the view.
+Data annotations include built-in validation attributes for different validation rules, which can be applied to the properties of a model class. The ASP.NET framework automatically enforces these validation rules and displays validation messages in the view.
 
-Using `value` property gets or sets the value of the selected item in the control.
+The `value` property gets or sets the value of the selected item in the control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

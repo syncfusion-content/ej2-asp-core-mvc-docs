@@ -8,7 +8,7 @@ documentation: ug
 publishingplatform: ##Platform_Name##
 ---
 
-# How to Apply Cell Styles in ASP.NET Core Pivot Table
+# How to apply custom styles to ASP.NET Core Pivot Table cells
 
 The ASP.NET Core Pivot Table component allows you to alter the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 

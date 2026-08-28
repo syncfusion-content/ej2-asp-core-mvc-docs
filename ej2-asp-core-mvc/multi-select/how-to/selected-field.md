@@ -11,9 +11,9 @@ documentation: ug
 
 # How to preselect ##Platform_Name## MultiSelect items via fields
 
-You can use a boolean field(for ex:"isSelected") of MultiSelect dataSource to set preselected items through fields during initial rendering. You can use `itemCreated` event of fields to push items with **isSelected** field set to true and these values will be selected through [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DataBound) event of MultiSelect. Pass empty string of array initially to load the control with preselected values.
+You can use a boolean field (for example, `isSelected`) on the MultiSelect `dataSource` to set preselected items through fields during initial rendering. Use the `itemCreated` event of fields to push items with the `isSelected` field set to `true`; these values are then selected through the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DataBound) event of the MultiSelect. Pass an empty string or array initially to load the control with preselected values.
 
-In the following sample, selected values are mapped through **isSelected** field.
+In the following sample, selected values are mapped through the `isSelected` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

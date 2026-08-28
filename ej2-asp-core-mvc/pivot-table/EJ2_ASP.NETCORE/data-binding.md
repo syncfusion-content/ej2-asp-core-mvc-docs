@@ -717,7 +717,7 @@ The [`enginePopulating`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% endtabs %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Aggregation](./aggregation)
 * [Show/Hide Totals](./summary-customization)

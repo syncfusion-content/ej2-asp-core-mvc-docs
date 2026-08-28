@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Plot Chart from Cells in ASP.NET Core Pivot Table
+# How to render a chart on cell selection in Pivot Table
 
 The ASP.NET Core Pivot Table component supports creating charts based on cell selections within the pivot table. This customization allows charts to be plotted dynamically using data from selected cells, providing visual representation of specific data segments.
 

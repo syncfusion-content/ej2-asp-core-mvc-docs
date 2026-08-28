@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD009 -->
 
-# How to Add Custom Aggregation in ASP.NET Core Pivot Table
+# How to add a custom aggregation in ASP.NET Core Pivot Table
 
 The ASP.NET Core Pivot Table component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 

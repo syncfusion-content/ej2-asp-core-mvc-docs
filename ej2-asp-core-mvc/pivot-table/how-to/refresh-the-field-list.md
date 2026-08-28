@@ -8,9 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Refresh Field List on Data Change in ##Platform_Name## Pivot Table
+# How to refresh the field list in ##Platform_Name## Pivot Table
 
-You can refresh pivot table and field list with new data source dynamically.
+The ##Platform_Name## Pivot Table component allows dynamic data source updates, enabling you to refresh both the pivot table and field list with new data at runtime. This approach is especially useful in scenarios where data changes frequently or when switching between different datasets without reinitializing the entire component.
+
+## Implementation
+
+The following code example demonstrates how to refresh the Pivot Table and field list with new data using an external button click. The implementation involves clearing the existing field list cache by resetting the `fieldList` object and updating the data source with a new dataset. This approach ensures that the component recognizes structural changes in the data and rebuilds the field list accordingly.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
