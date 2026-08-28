@@ -3,12 +3,12 @@ layout: post
 title: Export Both Table and Chart in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to export the ASP.NET Core Pivot Table's grid and chart to the same PDF via the actionBegin event and pdfExport.
 platform: ej2-asp-core-mvc
-control: Export table and chart into the same document using toolbar 
+control: Export table and chart into the same document using toolbar
 documentation: ug
 publishingplatform: ##Platform_Name##
 ---
 
-# How to Export Both Table and Chart in ASP.NET Core Pivot Table
+# Export Pivot Table and Chart to PDF in ASP.NET Core
 
 By default, when the [`e-displayOption.view`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_View) property is set to **Both** in the Pivot Table, the export functionality exports either the table or the chart to the PDF document based on the current value of the [`e-displayOption.primary`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_Primary) property. However, to export both the table and the chart into the same PDF document simultaneously, use the `pdfExport` method during the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
 
