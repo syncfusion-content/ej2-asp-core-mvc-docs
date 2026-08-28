@@ -34,7 +34,7 @@ To enable Snowflake database connectivity:
 ### Step 4: Connect to Snowflake and Retrieve Data
 In the **PivotController.cs** file, use the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/) library to connect to a Snowflake database and retrieve data for the Pivot Table.
 
-1. **Establish Connection**: Use **SnowflakeDbConnection** with a valid connection string (e.g., `account=myaccount;user=myuser;password=mypassword;db=mydb;schema=myschema;`) to connect to the Snowflake database. For production, prefer key-pair authentication or external OAuth over password authentication. If the target database requires a specific warehouse or role, append `warehouse=mywarehouse;role=myrole;` to the connection string.
+1. **Establish Connection**: Use **SnowflakeDbConnection** with a valid connection string (e.g., `account=myaccount;user=myuser;password=mypassword;db=mydb;schema=myschema;`) to connect to the Snowflake database.
 2. **Query and Fetch Data**: Execute a SQL query (e.g., `SELECT * FROM CALL_CENTER`) using **SnowflakeDbDataAdapter** to retrieve data for the Pivot Table.
 3. **Structure the Data**: Use **SnowflakeDbDataAdapter**'s **Fill** method to populate query results into a **DataTable** for JSON serialization.
 

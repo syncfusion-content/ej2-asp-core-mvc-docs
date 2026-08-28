@@ -71,7 +71,7 @@ In the **PivotController.cs** file, use the [Npgsql](https://www.npgsql.org/doc/
 ### Step 5: Serialize Data to JSON
 In the **PivotController.cs** file, define a **Get** method that calls **GetPostgreSQLResult** to retrieve data from the PostgreSQL database as a **DataTable**. Then, use **JsonConvert.SerializeObject** from the **Newtonsoft.Json** library to convert the **DataTable** into JSON format. This JSON data will be used by the Pivot Table component.
 
-> Ensure the `Newtonsoft.Json` NuGet package (version 13.x or later) is installed in your project before using `JsonConvert`. The `Get` method serializes the `DataTable` into a JSON string before ASP.NET Core's pipeline returns it as the response body. Note: returning a `JsonConvert.SerializeObject` of a `DataTable` produces a JSON array of row objects whose column values are mapped from the underlying PostgreSQL column types (for example, `numeric` → `number`, `timestamp with time zone` → ISO-8601 string, `jsonb` → object).
+> Ensure the `Newtonsoft.Json` NuGet package (version 13.x or later) is installed in your project before using `JsonConvert`.
 
 ```csharp
     using Microsoft.AspNetCore.Mvc;

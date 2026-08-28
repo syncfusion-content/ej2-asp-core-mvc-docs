@@ -35,7 +35,7 @@ To enable Oracle database connectivity:
 ### Step 4: Connect to Oracle and Retrieve Data
 In the **PivotController.cs** file, use the [Oracle Managed Data Access](https://www.nuget.org/packages/Oracle.ManagedDataAccess) library to connect to an Oracle database and retrieve data for the Pivot Table.
 
-1. **Establish Connection**: Use **OracleConnection** with a valid connection string (e.g., `Data Source=localhost;User Id=myuser;Password=mypassword;`) to connect to the Oracle database. The example uses the EZConnect syntax (`host:port/service_name`) which does not require a `tnsnames.ora` file. If you prefer a TNS connection, define the entry in `tnsnames.ora` and use `Data Source=<tns_alias>` instead. For production, register the `OracleConnection` factory or use a connection pool rather than opening a new connection per request.
+1. **Establish Connection**: Use **OracleConnection** with a valid connection string (e.g., `Data Source=localhost;User Id=myuser;Password=mypassword;`) to connect to the Oracle database.
 2. **Query and Fetch Data**: Execute a SQL query (e.g., `SELECT * FROM EMPLOYEES`) using **OracleCommand** to retrieve data for the Pivot Table.
 3. **Structure the Data**: Use **OracleDataAdapter**'s **Fill** method to populate query results into a **DataTable** for JSON serialization.
 

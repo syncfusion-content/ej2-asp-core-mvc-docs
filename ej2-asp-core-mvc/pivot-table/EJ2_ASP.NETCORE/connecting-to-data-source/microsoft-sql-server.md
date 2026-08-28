@@ -58,7 +58,7 @@ namespace PivotController.Controllers
 
 ```
 
-> Replace `<Enter your valid connection string here>` with the actual connection string for your SQL Server database. For the bundled `Database1.mdf` under `App_Data`, use a LocalDB connection string such as `Server=(localdb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True;Connect Timeout=30;`, which attaches the file from the project's `App_Data` folder. For a remote SQL Server instance, supply the corresponding `Server`, `Database`, and authentication values.
+> Replace `<Enter your valid connection string here>` with the actual connection string for your SQL Server database.
 
 ### Step 4: Serialize Data to JSON
 In the **PivotController.cs** file, define a **Get** method that calls **FetchSQLResult** to retrieve data from the SQL Server database as a **DataTable**. Then, use **JsonConvert.SerializeObject** from the **Newtonsoft.Json** library to convert the **DataTable** into JSON format. This JSON data will be consumed by the Pivot Table component.
