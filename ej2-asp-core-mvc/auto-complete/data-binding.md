@@ -1,35 +1,34 @@
 ---
 layout: post
 title: Data Binding in ##Platform_Name## AutoComplete | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Data Binding in Syncfusion ##Platform_Name## AutoComplete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Data Binding in ##Platform_Name## AutoComplete
 
-The AutoComplete loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property. It supports the data type of array or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
+The AutoComplete loads data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property. It supports data types of an array or a [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 
-The AutoComplete also supports different kind of data services such as OData, OData V4, Web API and data formats such as XML, JSON, JSONP with the help of DataManager Adaptors.
+The AutoComplete also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP, with the help of DataManager adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
-| value |  `number or string` | Specifies the hidden data value mapped to each list item that should contain a unique value. |
-| groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
-| iconCss |  `string` | Specifies the icon class of each list item. |
+| value | `number or string` | Specifies the hidden value mapped to each list item that should contain a unique value. |
+| groupBy | `string` | Specifies the category under which the list item is grouped. |
+| iconCss | `string` | Specifies the icon class of each list item. |
 
-N>While binding complex data to AutoComplete, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+N> While binding complex data to AutoComplete, `fields` should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Bind to local data
 
-Local data can be represented in two ways as described below.
+Local data can be represented in the following ways.
 
-### Array of string
+### Array of strings
 
-The AutoComplete has support to load array of primitive data such as strings and numbers.
+The AutoComplete supports loading an array of primitive data such as strings and numbers.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -51,13 +50,11 @@ The AutoComplete has support to load array of primitive data such as strings and
 {% endtabs %}
 {% endif %}
 
+### Array of objects
 
+The AutoComplete can generate its list items from an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Fields) property.
 
-### Array of object
-
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Fields) property.
-
-In the following example, `Name` column from complex data have been mapped to the `value` field.
+In the following example, the `Name` column from complex data has been mapped to the `value` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -86,13 +83,11 @@ public class Countries
 {% endtabs %}
 {% endif %}
 
+### Array of complex objects
 
+The AutoComplete can also bind to nested complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Fields) property.
 
-### Array of complex object
-
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Fields) property.
-
-In the following example, `Country.CountryId` column from complex data have been mapped to the `value` field.
+In the following example, the `Country.CountryId` column from nested complex data has been mapped to the `value` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -129,13 +124,11 @@ public class Complex
 {% endtabs %}
 {% endif %}
 
-
-
 ## Bind to remote data
 
-The AutoComplete supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html) control. The [Query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Query) property is used to fetch data from the database and bind it to the AutoComplete.
+The AutoComplete supports retrieval of data from remote data services with the help of the [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html). The [Query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Query) property is used to fetch data from the database and bind it to the AutoComplete. For example, the `Query` property can be used with the `take` method to limit the number of records returned.
 
-The following sample displays the first 6 contacts from the `Customers` table of the `Northwind` data service.
+The following sample displays the first 6 contacts from the `Customers` table of the `Northwind` data service.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -157,11 +150,9 @@ The following sample displays the first 6 contacts from the `Customers` table of
 {% endtabs %}
 {% endif %}
 
+### Bind to URL adaptor
 
-
-### Bind to URL Adaptor
-
-The AutoComplete supports retrieval of data from URL adaptor.
+The AutoComplete supports retrieval of data from a URL adaptor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -186,11 +177,9 @@ The AutoComplete supports retrieval of data from URL adaptor.
 {% endtabs %}
 {% endif %}
 
+### Web API adaptor
 
-
-### Web API Adaptor
-
-Use the `WebApiAdaptor` to bind autocomplete with Web API created using OData.
+Use the `WebApiAdaptor` to bind the AutoComplete to a Web API created using OData.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -215,13 +204,11 @@ Use the `WebApiAdaptor` to bind autocomplete with Web API created using OData.
 {% endtabs %}
 {% endif %}
 
-
-
 ### Binding with OData services
 
-`OData` is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager.
+`OData` is a standardized protocol for creating and consuming data. You can retrieve data from an OData service using the DataManager.
 
-The following example for remote data binding using OData service.
+The following example demonstrates remote data binding using an OData service.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -246,11 +233,9 @@ The following example for remote data binding using OData service.
 {% endtabs %}
 {% endif %}
 
-
-
 ### Offline mode
 
-To avoid post back for every action, set the autocomplete to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `DataManager`.
+To avoid a postback for every action, set the AutoComplete to load all data on initialization from a remote source and process the actions on the client side. To enable this behavior, use the `Offline` property of `DataManager`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -275,9 +260,7 @@ To avoid post back for every action, set the autocomplete to load all data on in
 {% endtabs %}
 {% endif %}
 
-
-
-## See Also
+## See also
 
 * [How to load data using template](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/templates#item-template)
 * [How to group the data using header](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/grouping)
