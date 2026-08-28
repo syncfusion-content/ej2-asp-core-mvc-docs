@@ -13,9 +13,9 @@ documentation: ug
 
 The MultiSelect has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowFiltering) is enabled. The filter operation starts as soon as you start typing characters in the MultiSelect input.
 
-To display filtered items in the popup, filter the required data and return it to the MultiSelect via `updateData` method by using the [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Filtering) event.
+To display filtered items in the popup, filter the required data and return it to the MultiSelect via the `updateData` method by using the [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Filtering) event.
 
-The following sample illustrates how to query the data source and pass the data to the MultiSelect through the `updateData` method in [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Filtering) event.
+The following sample illustrates how to query the data source and pass the data to the MultiSelect through the `updateData` method in the [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Filtering) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ The following sample illustrates how to query the data source and pass the data 
 
 ## Limit the minimum filter character
 
-When filtering the list items, you can set the limit for character count to raise remote request and fetch filtered data on the MultiSelect. This can be done by manual validation within the filter event handler.
+When filtering list items, you can set a minimum character count before a remote request is raised to fetch filtered data on the MultiSelect. Do this with manual validation in the filter event handler.
 
 In the following example, the remote request does not fetch the search data until the search key contains three characters.
 
@@ -75,9 +75,9 @@ In the following example, the remote request does not fetch the search data unti
 
 ## Change the filter type
 
-While filtering, you can change the filter type to `contains`, `startsWith`, or `endsWith` for string type within the filter event handler.
+While filtering, you can change the filter type to `contains`, `startsWith`, or `endsWith` for string-typed fields within the filter event handler.
 
-In the following examples, data filtering is done with `endsWith` type.
+In the following examples, data filtering is done with the `endsWith` type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -104,11 +104,11 @@ In the following examples, data filtering is done with `endsWith` type.
 
 
 
-## Case sensitive filtering
+## Case-sensitive filtering
 
-Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by passing the fourth optional parameter of the `where` clause.
+Data items can be filtered either with or without case sensitivity using the `DataManager`. Do this by passing the fourth optional parameter of the `where` clause.
 
-The following example shows how to perform case-sensitive filter.
+The following example shows how to perform a case-sensitive filter.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -135,11 +135,11 @@ The following example shows how to perform case-sensitive filter.
 
 
 
-## Diacritics Filtering
+## Diacritics filtering
 
-MultiSelect supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_IgnoreAccent) is enabled.
+The MultiSelect supports diacritics filtering, which ignores [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results in lists that contain international characters when [ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_IgnoreAccent) is enabled.
 
-In the following sample,data with diacritics are bound as dataSource for MultiSelect.
+In the following sample, data with diacritics are bound as the data source for the MultiSelect.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,7 +166,7 @@ In the following sample,data with diacritics are bound as dataSource for MultiSe
 
 ## Debounce delay
 
-You can use the [debounceDelay](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DebounceDelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+Use the [debounceDelay](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DebounceDelay) property to set a delay, in milliseconds, for filtering. This reduces the frequency of filtering as you type and improves performance and responsiveness. The default `DebounceDelay` is `300` ms. Set it to `0` to disable the delay entirely.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -191,8 +191,8 @@ You can use the [debounceDelay](https://help.syncfusion.com/cr/aspnetcore-js2/sy
 {% endtabs %}
 {% endif %}
 
-## See Also
+## See also
 
 * [How to bind the data](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/data-binding)
-* [How to group the data using header](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/grouping)
-* [How to add custom value to the MultiSelect](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/custom-value)
+* [How to group the data using a header](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/grouping)
+* [How to add a custom value to the MultiSelect](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/custom-value)

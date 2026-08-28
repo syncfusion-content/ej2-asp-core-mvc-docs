@@ -11,9 +11,9 @@ documentation: ug
 
 # How to show ##Platform_Name## MultiSelect items with icons
 
-You can render **icons** to the list items by mapping the `iconCss` field. This `iconCss` field create a span in the list item with mapped class name to allow styling as per your need.
+You can render **icons** to the list items by mapping the `iconCss` field. This `iconCss` field creates a span in the list item with the mapped class name to allow styling as needed.
 
-In the following sample, icon classes are mapped with `iconCss` field.
+In the following sample, icon classes are mapped to the `iconCss` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
