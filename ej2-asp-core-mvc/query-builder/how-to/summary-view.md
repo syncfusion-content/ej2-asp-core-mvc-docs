@@ -10,7 +10,7 @@ documentation: ug
 
 # Summary View in ##Platform_Name## Query Builder
 
-Summary view allows you to show or hide the filtered query. By default, the value is false. You can enable by setting the `summaryView` property to true.
+Summary View allows you to show or hide the filtered query. By default, the value is `false`. You can enable it by setting the [`SummaryView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_SummaryView) property to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

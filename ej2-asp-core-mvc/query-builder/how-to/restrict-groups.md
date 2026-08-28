@@ -11,7 +11,7 @@ documentation: ug
 
 # Restrict Groups in ##Platform_Name## Query Builder
 
-You can restrict the groups by defining the `MaxGroupCount` property. By default, the value is 5. In the below demo, the `MaxGroupCount` is set to 2 .
+You can restrict the groups by defining the `MaxGroupCount` property. By default, the value is 5. To limit the number of nested groups, set `MaxGroupCount` to the desired value, for example, 2.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
