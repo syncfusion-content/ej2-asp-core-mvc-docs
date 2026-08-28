@@ -10,13 +10,13 @@ documentation: ug
 
 # Templates in ##Platform_Name## DropdownTree
 
-The Dropdown Tree provides support to customize each list item, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
+The DropdownTree provides support to customize each list item, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
 
 ## Item template
 
-The content of each list item within the Dropdown Tree can be customized with the help of `itemTemplate` property.
+The content of each list item within the DropdownTree can be customized with the help of `itemTemplate` property.
 
-In the following sample, the Dropdown Tree list items are customized with employee information such as **name** and **job** using the **itemTemplate** property.
+In the following sample, the DropdownTree list items are customized with employee information such as **name** and **job** using the **itemTemplate** property.
 
 The template expression should be provided inside the ${...} interpolation syntax.
 
@@ -49,13 +49,13 @@ The template expression should be provided inside the ${...} interpolation synta
 {% endtabs %}
 {% endif %}
 
-![DropDown Tree with ItemTemplate](./images/item-template.PNG)
+![DropdownTree with ItemTemplate](./images/item-template.PNG)
 
 ## Value template
 
-The currently selected value that is displayed by default on the Dropdown Tree input element can be customized using the `valueTemplate` property.
+The currently selected value that is displayed by default on the DropdownTree input element can be customized using the `valueTemplate` property.
 
-In the following sample, the selected value is displayed as a combined text of both `Name` and `Job` in the Dropdown Tree input, which is separated by a hyphen.
+In the following sample, the selected value is displayed as a combined text of both `Name` and `Job` in the DropdownTree input, which is separated by a hyphen.
 
 The template expression should be provided inside the ${...} interpolation syntax.
 
@@ -87,11 +87,11 @@ The template expression should be provided inside the ${...} interpolation synta
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-![DropDown Tree with ValueTemplate](./images/value-template.PNG)
+![DropdownTree with ValueTemplate](./images/value-template.PNG)
 
 ## Header template
 
-The header element is shown statically at the top of the popup list items within the Dropdown Tree. A custom element can be placed as a header element using the `headerTemplate` property.
+The header element is shown statically at the top of the popup list items within the DropdownTree. A custom element can be placed as the header element using the `headerTemplate` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -122,11 +122,11 @@ The header element is shown statically at the top of the popup list items within
 {% endtabs %}
 {% endif %}
 
-![DropDown Tree itemTemplate Sample](./images/header-template.PNG)
+![DropdownTree header template sample](./images/header-template.PNG)
 
 ## Footer template
 
-The Dropdown Tree has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the `footerTemplate` property.
+The DropdownTree has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the `footerTemplate` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -157,11 +157,11 @@ The Dropdown Tree has options to show a footer element at the bottom of the list
 {% endtabs %}
 {% endif %}
 
-![DropDown Tree itemTemplate Sample](./images/footer-template.PNG)
+![DropdownTree footer template sample](./images/footer-template.PNG)
 
 ## No records template
 
-The Dropdown Tree is supports to display custom design in the popup list content using the `noRecordsTemplate` property when no matches found on search.
+The DropdownTree supports displaying custom design in the popup list content using the `noRecordsTemplate` property when no matches are found during search.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -192,11 +192,11 @@ The Dropdown Tree is supports to display custom design in the popup list content
 {% endtabs %}
 {% endif %}
 
-![DropDown Tree itemTemplate Sample](./images/noRecords-template.PNG)
+![DropdownTree no records template sample](./images/noRecords-template.PNG)
 
 ## Action failure template
 
-The Dropdown Tree provides an option to custom design the popup list content using `actionFailureTemplate` property, when the data fetch request fails at the remote server.
+The DropdownTree provides an option to custom design the popup list content using `actionFailureTemplate` property, when the data fetch request fails at the remote server.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -227,15 +227,15 @@ The Dropdown Tree provides an option to custom design the popup list content usi
 {% endtabs %}
 {% endif %}
 
-![DropDown Tree itemTemplate Sample](./images/actionFailure-template.PNG)
+![DropdownTree iaction failure template sample](./images/actionFailure-template.PNG)
 
 ## Custom template to show selected items in input
 
-In Dropdown Tree, while selecting more than one item via checkbox or multi selection support, all the selected items will be displayed in the input. Instead of displaying all the selected item text, the custom template can be displayed by setting the `mode` property as ***Custom*** and `customTemplate` property.
+In DropdownTree, while selecting more than one item via checkbox or multi selection support, all the selected items will be displayed in the input. Instead of displaying all the selected item text, the custom template can be displayed by setting the `mode` property as ***Custom*** and `customTemplate` property.
 
-When the **mode** property is set as **Custom**, the Dropdown Tree displays the default template value **(${value.length} item(s) selected)** like **1 item(s) selected or 2 item(s) selected**. The default template can be customized by setting **customTemplate**  property.
+When the **mode** property is set to **Custom**, the DropdownTree displays the default template value **(${value.length} item(s) selected)** like **1 item(s) selected or 2 item(s) selected**. The default template can be customized by setting **customTemplate**  property.
 
-In the following sample, the Dropdown Tree is rendered with default value of the **customTemplate** property like “**1 item(s) selected or 2 item(s) selected**”.
+In the following sample, the DropdownTree is rendered with default value of the **customTemplate** property like “**1 item(s) selected or 2 item(s) selected**”.
 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -267,9 +267,9 @@ In the following sample, the Dropdown Tree is rendered with default value of the
 {% endtabs %}
 {% endif %}
 
-![DropDown Tree itemTemplate Sample](./images/custom-template-mode.PNG)
+![DropdownTree custom template sample](./images/custom-template-mode.PNG)
 
-In the following sample, the Dropdown Tree is rendered with custom value of the **customTemplate** property like **Selected items count: 2**.
+In the following sample, the DropdownTree is rendered with custom value of the **customTemplate** property like **Selected items count: 2**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -300,4 +300,4 @@ In the following sample, the Dropdown Tree is rendered with custom value of the 
 {% endtabs %}
 {% endif %}
 
-![DropDown Tree itemTemplate Sample](./images/custom-template.PNG)
+![DropdownTree custom template sample](./images/custom-template.PNG)

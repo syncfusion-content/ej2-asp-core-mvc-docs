@@ -11,11 +11,11 @@ documentation: ug
 
 # Filtering in ##Platform_Name## DropDownList
 
-The DropDownList has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_AllowFiltering) is enabled. The filter operation starts as soon as you start typing characters in the search box.
+The DropDownList has built-in support for filtering data items when [AllowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_AllowFiltering) is enabled. The filter operation starts as soon as you start typing characters in the search box.
 
-To display the filtered items in the popup, filter the required data and return it to the DropDownList via `updateData` method by using the [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Filtering) event.
+To display the filtered items in the popup, filter the required data and return it to the DropDownList via `updateData` method by using the [Filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Filtering) event.
 
-The following sample illustrates how to query the data source and pass the data to the DropDownList through the `updateData` method in `filtering` event.
+The following sample illustrates how to query the data source and pass the data to the DropDownList through the `updateData` method in `Filtering` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ The following sample illustrates how to query the data source and pass the data 
 
 
 
-## Limit the minimum filter character
+## Limit the minimum number of filter characters
 
 When filtering the list items, you can set the limit for character count to raise remote request and fetch filtered data on the DropDownList. This can be done by manual validation within the filter event handler.
 
@@ -133,9 +133,9 @@ Data items can be filtered either with or without case sensitivity using the Dat
 
 
 
-## Diacritics Filtering
+## Diacritics filtering
 
-DropDownList supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_IgnoreAccent) is enabled.
+DropDownList supports diacritics filtering which ignores [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results in international characters lists when the [IgnoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_IgnoreAccent) is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -162,7 +162,7 @@ DropDownList supports diacritics filtering which will ignore the [diacritics](ht
 
 ## Debounce delay
 
-You can use the [debounceDelay](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.dropdownlist.html#Syncfusion_EJ2_DropDowns_DropDownList_DebounceDelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+You can use the [debounceDelay](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.dropdownlist.html#Syncfusion_EJ2_DropDowns_DropDownList_DebounceDelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience. By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -187,7 +187,7 @@ You can use the [debounceDelay](https://help.syncfusion.com/cr/aspnetcore-js2/sy
 {% endtabs %}
 {% endif %}
 
-## See Also
+## See also
 
 * [How to limit the search result while filtering](./how-to/search-on-filtering)
 * [How to highlight the matched characters in filtering](./how-to/highlight-filtering)
