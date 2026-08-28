@@ -174,7 +174,7 @@ dotnet run
 
 ![ASP.NET Core Pivot Table Control](images/pivottable-fields.webp)
 
-## See Also
+## See also
 
 1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
