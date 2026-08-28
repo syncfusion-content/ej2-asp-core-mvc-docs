@@ -13,7 +13,7 @@ documentation: ug
 
 The `Localization` library allows you to localize the default text content of the Query Builder. The Query Builder has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `Locale` value and translation object.
 
-The following list of properties and its values are used in the Query Builder.
+The following list of properties and their values are used in the Query Builder.
 
 | Locale key words | Text |
 | ------------ | ----------------------- |
@@ -25,7 +25,7 @@ The following list of properties and its values are used in the Query Builder.
 | Edit | EDIT |
 | SelectField | Select a field |
 | SelectOperator | Select operator |
-| StartsWith | Starts With|
+| StartsWith | Starts With |
 | EndsWith | Ends With |
 | DoesNotStartWith | Does Not Start With |
 | DoesNotEndWith | Does Not End With |
@@ -38,7 +38,7 @@ The following list of properties and its values are used in the Query Builder.
 | GreaterThan | Greater Than |
 | GreaterThanOrEqual | Greater Than Or Equal |
 | Between | Between |
-| NotBetween | Not Between|
+| NotBetween | Not Between |
 | In | In |
 | NotIn | Not In |
 | Remove | REMOVE |
