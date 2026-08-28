@@ -10,9 +10,9 @@ documentation: ug
 
 # How to open dialog on item click in ##Platform_Name## Context Menu
 
-This section explains about how to open a dialog on ContextMenu item click. This can be achieved by handling dialog open in [`select`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_Select) event of the ContextMenu.
+This section explains how to open a dialog on ContextMenu item click. This can be achieved by opening the dialog in the [`select`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_Select) event of the ContextMenu.
 
-In the following sample, Dialog will open while clicking `Save As...` item:
+In the following sample, a Dialog opens when the user clicks the `Save As...` item:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
