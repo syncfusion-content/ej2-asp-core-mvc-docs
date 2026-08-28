@@ -730,7 +730,7 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 
 
-## See Also
+## See also
 
 * [Change load limited data in member editor](./filtering#loading-members-on-demand)
 * [Customize the icons for pivot table](./how-to/customize-the-icons-for-pivot-table)

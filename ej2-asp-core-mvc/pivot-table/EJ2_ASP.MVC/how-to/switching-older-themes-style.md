@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD009 -->
 
-# How to switch to the older Pivot Table theme
+# How to switch to the older ASP.NET MVC Pivot Table theme
 
 Since Volume 1, 2020, Syncfusion<sup style="font-size:70%">&reg;</sup> revised the theming and layout of the Pivot Table. If you prefer the appearance of the earlier theme, you can revert to it by making specific changes. This guide explains how to restore the older theme's style by modifying the CSS to adjust cell background colors and set the row height to match the previous layout.
 

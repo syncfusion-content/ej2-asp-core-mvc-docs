@@ -8,7 +8,7 @@ documentation: ug
 publishingplatform: ##Platform_Name##
 ---
 
-# How to add custom tooltips to Pivot Table headers
+# How to add custom tooltips to ASP.NET MVC Pivot Table headers
 
 You can display custom tooltips for row and column headers to provide additional context and information. This approach enhances the user experience by showing detailed field information when hovering over header cells in the pivot table.
 

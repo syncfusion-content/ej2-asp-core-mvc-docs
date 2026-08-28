@@ -8,16 +8,23 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Globalization and localization in ASP.NET Core Pivot Table
 
-# Globalization and Localization in ASP.NET Core Pivot Table
+The Pivot Table helps users view and interact with data in their own language and regional format. This means users from different countries can easily read and understand the data because dates, numbers, and words are shown in a way that feels familiar to them.
 
-Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)).
+Globalization combines two important aspects:
 
-## Internationalization
+**Internationalization**: This enables the Pivot Table to display dates and numbers based on local standards. For example, the date can appear as MM/dd/yyyy in the United States or dd/MM/yyyy in the United Kingdom.
 
-Internationalization library provides support for formatting and parsing the number, date, and time by using the official [`Unicode CLDR`](http://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data.
+**Localization**: This allows you to provide translations for text in the Pivot Table, such as button labels, menu items, and messages. You can display all these text elements in the language preferred by your users.
 
-By default, all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component are specific to English culture ('en-US'). If you want to go with the different culture other than English, follow the below steps.
+With both internationalization and localization, you can make sure the Pivot Table is friendly and easy to use for people who speak different languages and come from various regions.
+
+For more details:
+- Learn about [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) for formatting dates and numbers.
+- Read about [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) for translating text content.
+
+## Load CLDR-Data to the application
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
@@ -101,15 +108,19 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 
 
 
-N> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
+N> * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#manipulating-datetime).
+* By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change the `locale` accordingly.
+* You can find more details about supported format strings for number formats and date formats [`here`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#supported-format-string).
 
 <!-- markdownlint-disable MD009 -->
 
 ### Decimal separators
 
-The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization/?no-cache=1#setting-global-culture) with appropriate culture string as its parameter. 
+The Pivot Table automatically adjusts decimal separators in numeric values to match your selected culture, making data easier to read for users from different regions. As part of internationalization, you can set the culture by calling the [`setCulture`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#changing-global-culture-and-currency-code) method with the appropriate culture string as its parameter. Once applied, all numeric values in the Pivot Table will display using the decimal separator convention of that culture.
 
-The following example demonstrates the decimal separators in `Deutsch` culture.
+For example, while English cultures typically use a dot (.) as the decimal separator, German culture uses a comma (,) instead.
+
+The following example shows how decimal separators appear when using the `Deutsch` culture.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -140,9 +151,11 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 ## Localization
 
-TheThe [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows you to localize default text content of the Pivot Table. The pivot table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
+The [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) option allows you to translate the default text content of the Pivot Table into different languages. This makes the component more accessible to users from various regions by displaying text in their preferred language.
 
-The following list of properties and its values are used in the pivot table.
+The Pivot Table contains static text elements such as drop area messages, field list titles, and other interface labels that can be translated to different cultures (Arabic, German, French, etc.). You can achieve this by setting the `locale` property and providing the appropriate translation object.
+
+The following table shows the locale keywords and their corresponding default text values used in the Pivot Table:
 
 Locale keywords |Text
 -----|-----
@@ -590,11 +603,11 @@ qtr | Qtr
 grandTotal | Grand Total
 None | None
 
-N> To find the latest localization keywords of pivotview and pivotfieldlist for different languages, visit this [GitHub](https://github.com/syncfusion/ej2-locale) repository.
+N> To access the most recent localization keywords for the Pivot Table and Pivot Field List components in different languages, visit the [GitHub repository](https://github.com/syncfusion/ej2-locale).
 
 ### Loading Translations
 
-To load translation object in an application, use [`load`](https://ej2.syncfusion.com/documentation/common/api-l10n.html#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/common/api-l10n.html) class.
+To load translation content in your application, use the `load` method of the [`L10n`](https://ej2.syncfusion.com/documentation/common/api-l10n.html) class. This method accepts translation objects that contain text content in different languages.
 
 The following example demonstrates the Pivot Table in `Deutsch` culture.
 
@@ -625,7 +638,7 @@ The following example demonstrates the Pivot Table in `Deutsch` culture.
 
 ## Right-to-left (RTL)
 
-RTL provides an option to switch the text direction and layout of the Pivot Table component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Pivot Table, set the `enableRtl` property to **true**.
+Right-to-left (RTL) support makes the Pivot Table more accessible and user-friendly for people who read and write in right-to-left languages such as Arabic, Farsi, and Urdu. This feature adjusts the text direction and layout of the entire Pivot Table from a left-to-right to a right-to-left orientation. To enable RTL in the Pivot Table, set the `enableRtl` property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -828,7 +828,7 @@ When this event is triggered, users can refer to the information in these parame
 
 
 
-## See Also
+## See also
 
 * [Change load limited data in member editor](./filtering#loading-members-on-demand)
 * [Customize the icons for pivot table](./how-to/customize-the-icons-for-pivot-table)
