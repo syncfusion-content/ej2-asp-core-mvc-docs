@@ -1,19 +1,18 @@
 ---
 layout: post
 title: Grouping in ##Platform_Name## AutoComplete | Syncfusion
-description: Learn here all about Grouping in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Grouping in Syncfusion ##Platform_Name## AutoComplete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Grouping in ##Platform_Name## AutoComplete
 
-The AutoComplete supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings.html#Syncfusion_EJ2_DropDowns_AutoCompleteFieldSettings_GroupBy) field in the data table. The group header is displayed as both inline and fixed headers. The fixed group header content is updated dynamically on scrolling the suggestion list with its category value.
+The AutoComplete supports grouping nested elements into categories. The category of each list item can be mapped through the [groupBy](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings.html#Syncfusion_EJ2_DropDowns_AutoCompleteFieldSettings_GroupBy) field in the data table. The group header is displayed as both inline and fixed headers. The fixed group header content is updated dynamically on scrolling the suggestion list with its category value.
 
-In the following sample, vegetables are grouped according on its category using `groupBy` field.
+In the following sample, vegetables are grouped according to their category using the `groupBy` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,12 +42,10 @@ public class Vegetables
 {% endtabs %}
 {% endif %}
 
-
-
 ## Customization
 
-The grouping header is also provided with customization option. This allows custom designing using the [groupTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_GroupTemplate) property for both inline and fixed headers as referred here:
+The grouping header also provides customization options. This allows custom designing using the [groupTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_GroupTemplate) property for both inline and fixed headers as shown here:
 
-[Group Template support to AutoComplete](./templates).
+[Group template support in AutoComplete](./templates#group-template).
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/AutoComplete/GroupingandFilreringSample).
