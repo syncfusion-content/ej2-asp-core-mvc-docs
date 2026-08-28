@@ -137,7 +137,7 @@ The following sample shows the example for grouping with virtualization.
 
 ## Filtering with virtualization
 
-The MultiSelect control supports filtering with virtualization. The MultiSelect includes a built-in feature that enables data filtering when the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowFiltering) option is enabled. In the context of virtual scrolling, the filtering process operates in response to the typed characters: the MultiSelect sends a request to the server, using the full data source, to apply the filter. Before initiating the request, an `actionBegin` event is triggered. Upon successful retrieval of data from the server, an `actionComplete` event is triggered. The initial data is loaded when the popup is opened. Whether the filter list has a selection or not, the popup closes.
+The MultiSelect control supports filtering with virtualization. The MultiSelect includes a built-in feature that enables data filtering when the [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowFiltering) option is enabled. In the context of virtual scrolling, the filtering process operates in response to the typed characters: the MultiSelect sends a request to the server, using the full data source, to apply the filter. Before initiating the request, an [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ActionBegin) event is triggered. Upon successful retrieval of data from the server, an [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ActionComplete) event is triggered. The initial data is loaded when the popup is opened. Whether the filter list has a selection or not, the popup closes.
 
 The following sample shows the example for filtering with virtualization.
 
@@ -166,7 +166,7 @@ The following sample shows the example for filtering with virtualization.
 
 ## Checkbox with virtualization
 
-The MultiSelect control supports checkbox selection with virtualization. The MultiSelect comes with integrated functionality that allows for the selection of multiple values using checkboxes when the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Mode) property is configured to `CheckBox`. In the context of virtual scrolling, the checkbox is rendered with each list element. Based on the checkbox selection and unselection, the control `value` property is updated with the respective values.
+The MultiSelect control supports checkbox selection with virtualization. The MultiSelect comes with integrated functionality that allows for the selection of multiple values using checkboxes when the [mode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Mode) property is configured to `CheckBox`. In the context of virtual scrolling, the checkbox is rendered with each list element. Based on the checkbox selection and unselection, the control `value` property is updated with the respective values.
 
 The following sample shows the example for checkbox with virtualization.
 
@@ -195,7 +195,7 @@ The following sample shows the example for checkbox with virtualization.
 
 ## Custom value with virtualization
 
-The MultiSelect control supports custom value with virtualization. When the [`allowCustomValue`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowCustomValue) property is enabled, the MultiSelect enables users to include a new option that is not currently available in the control value. Upon selecting this newly added custom value, the MultiSelect triggers the [`customValueSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_CustomValueSelection) event and the custom value is added to the end of the complete list.
+The MultiSelect control supports custom value with virtualization. When the [allowCustomValue](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowCustomValue) property is enabled, the MultiSelect enables users to include a new option that is not currently available in the control value. Upon selecting this newly added custom value, the MultiSelect triggers the [customValueSelection](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_CustomValueSelection) event and the custom value is added to the end of the complete list.
 
 The following sample shows the example for custom value with virtualization.
 

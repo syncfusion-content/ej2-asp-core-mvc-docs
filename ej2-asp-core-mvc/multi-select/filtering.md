@@ -75,7 +75,7 @@ In the following example, the remote request does not fetch the search data unti
 
 ## Change the filter type
 
-While filtering, you can change the filter type to `contains`, `startsWith`, or `endsWith` for string-typed fields within the filter event handler.
+While filtering, you can change the filter type to [contains](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.FilterType.html#Syncfusion_EJ2_DropDowns_FilterType_Contains), [startsWith](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.FilterType.html#Syncfusion_EJ2_DropDowns_FilterType_StartsWith), or [endsWith](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.FilterType.html#Syncfusion_EJ2_DropDowns_FilterType_EndsWith) for string-typed fields within the filter event handler.
 
 In the following examples, data filtering is done with the `endsWith` type.
 

@@ -121,7 +121,7 @@ In the following example, the `Code.Id` and `Country.CountryId` columns from the
 
 ## Binding remote data
 
-The MultiSelect supports retrieval of data from remote data services with the help of the `DataManager` control. The `Query` property is used to fetch data from the data source and bind it to the MultiSelect.
+The MultiSelect supports retrieval of data from remote data services with the help of the `DataManager` control. The [Query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Query) property is used to fetch data from the data source and bind it to the MultiSelect.
 
 The following sample displays the first 6 contacts from the **Customers** table of the `Northwind` data service.
 
