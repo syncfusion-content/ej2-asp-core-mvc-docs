@@ -37,7 +37,4 @@ The [`spinnerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 {% endtabs %}
 {% endif %}
 
-## Disabling the loading indicator
-
-The loading indicator can be completely disabled by setting the [`spinnerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SpinnerTemplate) property to an empty string.
 

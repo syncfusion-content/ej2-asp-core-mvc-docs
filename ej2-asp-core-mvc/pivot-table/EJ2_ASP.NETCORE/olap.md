@@ -12,7 +12,7 @@ documentation: ug
 
 ## Getting Started with ASP.NET Core
 
-N> Starting with v16.2.0.x, if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET Core application to use our components. Register the license in `Program.cs` (typically before `app.Build()`) by calling `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("<your-license-key>")`.
+N> Starting with v16.2.0.x, if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering a Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET Core application. Register the license in `Program.cs`, **before** `builder.Build()` is invoked, by calling `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("<your-license-key>")`.
 
 ### Prerequisites
 
@@ -299,7 +299,7 @@ You can also add calculated fields at runtime through the built-in dialog. To en
 
 > If the **CalculatedField** module is not added, the calculated field dialog will not be shown with the Pivot Table component. Also, calculated measures can be added only to the value axis.
 
-> The `isCalculatedField` field-level marker was added in Syncfusion EJ2 v20.1.x (Pivot Table). Project snapshots that target older release lines should upgrade to a release that includes this property before relying on the field-level flag programmatically; otherwise, fall back to programmatic construction through the `e-calculatedFieldSettings` collection shown in the snippet below.
+> When using the `isCalculatedField` field-level marker programmatically, project snapshots that target older release lines may need to upgrade to a release that includes this property, or fall back to programmatic construction through the `e-calculatedFieldSettings` collection shown in the snippet below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

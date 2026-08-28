@@ -109,7 +109,7 @@ N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](h
     </body>
 ```
 
-N> Several features covered later in this document — `GroupingBar`, `FieldList`, `CalculatedField`, and `VirtualScroll` — require their corresponding Syncfusion modules to be registered with the Pivot Table's helper-options before they will render. The code snippets shown below already include the required module-registration calls; if you customize those snippets, keep the module registration intact, otherwise the related UI elements will not appear.
+N> Several features covered later in this document — `GroupingBar`, `FieldList`, and `CalculatedField` — require their corresponding Syncfusion modules to be registered with the Pivot Table's helper-options before they will render. `VirtualScroll` is enabled separately by setting the `EnableVirtualization` property on the component, and the relevant snippet below shows that configuration. The code snippets shown below already include the required module-registration and property configuration; if you customize those snippets, keep them intact, otherwise the related UI elements will not appear.
 
 ## Adding component to the application
 
@@ -511,7 +511,7 @@ To connect an OLAP data source to the Pivot Table, use the [`DataSourceSettings`
 | [`Url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) | The URL of the OLAP service. Use this to establish an online connection to the cube. |
 |  [`Catalog`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Catalog) | The database or catalog name containing the cube data. |
 
-> **Tip:** The types for the Data Binding properties are: `Cube` (string), `ProviderType` (enum: `"SSAS"` or `"XMLA"`), `Url` (string — OLAP service endpoint), and `Catalog` (string — database/catalog name). Supply them as plain strings in the builder, except `ProviderType` which uses the named-string values shown in the table above.
+> **Tip:** The Data Binding property types are: `Cube` (string), `ProviderType` (enum: `"SSAS"` or `"XMLA"`), `Url` (string — OLAP service endpoint), and `Catalog` (string — database/catalog name). Supply `Cube`, `Url`, and `Catalog` as plain strings; use the `ProviderType` enum for the provider value.
 
 Below are sample code files showing how to bind an OLAP data source in ASP.NET MVC:
 

@@ -23,9 +23,9 @@ Follow these steps to create a Web API service that retrieves data from a Postgr
 
 ![Creating an ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
-### Step 2: Install the PostgreSQL NuGet Packages
-To enable PostgreSQL database connectivity, install both the raw ADO.NET provider and (optionally) the EF Core provider:
-1. Open the **NuGet Package Manager** in your project solution and search for **Npgsql** (the raw ADO.NET provider used by the controller code in this walkthrough) and **Npgsql.EntityFrameworkCore.PostgreSQL** (the EF Core provider, required only if you also use Entity Framework Core).
+### Step 2: Install the PostgreSQL NuGet Package
+To enable PostgreSQL database connectivity, install the raw ADO.NET provider used by the controller code in this walkthrough:
+1. Open the **NuGet Package Manager** in your project solution and search for **Npgsql** (the raw ADO.NET provider for PostgreSQL).
 2. Install the **Npgsql** package to add PostgreSQL support. Use `Npgsql` version 8.x (or later) to match this walkthrough; pin the version if you want reproducible builds.
 
 ![Installing the Npgsql.EntityFrameworkCore.PostgreSQL NuGet package](../images/postgresql-data-nuget-package-install.png)

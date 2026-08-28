@@ -7,9 +7,9 @@ description: Learn how to bind Elasticsearch data to the ASP.NET Core Pivot Tabl
 
 # Elasticsearch Data Binding in ASP.NET Core Pivot Table
 
-This section describes how to retrieve data from an Elasticsearch database using the [NEST](https://www.nuget.org/packages/Nest) client (Elasticsearch 7.x) and a Web API controller, and how to bind that data to the ASP.NET Core Pivot Table.
+This section describes how to retrieve data from an Elasticsearch database and bind it to the ASP.NET Core Pivot Table through a Web API controller. The sample below uses the [NEST](https://www.nuget.org/packages/Nest) client, which targets Elasticsearch 7.x, only as a reference implementation for users on that legacy stack.
 
-> **Note:** NEST is the official .NET client for Elasticsearch 7.x. For Elasticsearch 8.x and later, use the new [Elastic.Clients.Elasticsearch](https://www.nuget.org/packages/Elastic.Clients.Elasticsearch/) package. The code below targets NEST 7.x.
+> **Deprecation:** NEST is the legacy high-level .NET client for Elasticsearch 7.x, which reached end-of-life in August 2023. **For new development, use the official [Elastic.Clients.Elasticsearch](https://www.nuget.org/packages/Elastic.Clients.Elasticsearch/) package (8.x and later).** The code below is kept only to support existing NEST 7.x integrations.
 
 ## Create a Web API service to fetch Elasticsearch data
 

@@ -116,7 +116,7 @@ N> * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`]
 
 ### Decimal separators
 
-The Pivot Table automatically adjusts decimal separators in numeric values to match your selected culture, making data easier to read for users from different regions. You can set the culture by calling the [`setCulture`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#changing-current-locale) method with the appropriate culture string as its parameter. Once applied, all numeric values in the Pivot Table will display using the decimal separator convention of that culture.
+The Pivot Table automatically adjusts decimal separators in numeric values to match your selected culture, making data easier to read for users from different regions. As part of internationalization, you can set the culture by calling the [`setCulture`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#changing-global-culture-and-currency-code) method with the appropriate culture string as its parameter. Once applied, all numeric values in the Pivot Table will display using the decimal separator convention of that culture.
 
 For example, while English cultures typically use a dot (.) as the decimal separator, German culture uses a comma (,) instead.
 
@@ -265,7 +265,7 @@ PercentageOfColumnTotal | % of Column Total
 NotEquals | Not Equals
 AllValues | All Values
 conditionalFormatting | Conditional Formatting
-apply | APPLY
+apply | Apply
 condition | Add Condition
 formatLabel | Format
 valueFieldSettings | Value field settings
@@ -550,7 +550,7 @@ Days | Days
 Hours | Hours
 Minutes | Minutes
 Seconds | Seconds
-apply | APPLY
+apply | Apply
 valueFieldSettings | Value field settings
 sourceName | Field name :
 sourceCaption | Field caption :
@@ -601,7 +601,7 @@ N> To access the most recent localization keywords for the Pivot Table and Pivot
 
 ### Loading Translations
 
-To load translation content in your application, use the [`load`](https://ej2.syncfusion.com/documentation/common/api-l10n.html#load) method of the [`L10n`](https://ej2.syncfusion.com/documentation/common/api-l10n.html) class. This method accepts translation objects that contain text content in different languages.
+To load translation content in your application, use the `load` method of the [`L10n`](https://ej2.syncfusion.com/documentation/common/api-l10n.html) class. This method accepts translation objects that contain text content in different languages.
 
 The following example demonstrates the Pivot Table in `Deutsch` culture.
 

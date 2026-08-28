@@ -24,7 +24,7 @@ The **PivotController** sample application downloaded from the GitHub repository
 - **Database1.mdf** file under **App_Data** folder – This MDF (Master Database File) file contains example data.
 
 ### Step 3: Connect to SQL Server and Retrieve Data
-Before proceeding, ensure the SqlClient data provider is available in the project. The [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) library is used to connect to a SQL Server database and retrieve data for the Pivot Table. If your project does not already reference it, install the `System.Data.SqlClient` package (or the recommended `Microsoft.Data.SqlClient` provider) from NuGet before adding the code below.
+Before proceeding, ensure the SqlClient data provider is available in the project. The [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) library is used to connect to a SQL Server database and retrieve data for the Pivot Table. If your project does not already reference it, install the `System.Data.SqlClient` package from NuGet before adding the code below.
 
 1. **Establish Connection**: Use **SqlConnection** with a valid connection string to connect to the SQL Server database (e.g., **Database1.mdf**).
 2. **Query and Fetch Data**: Execute a SQL query (e.g., `SELECT * FROM table1`) using **SqlCommand** to retrieve data for the Pivot Table.
