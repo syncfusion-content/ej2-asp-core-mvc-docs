@@ -1,0 +1,47 @@
+<div id="container">
+    <div>
+        @Html.EJS().Button("filterBtn").Content("Filter Customer ID = HANAR").CssClass("e-outline").Render()
+        @Html.EJS().Button("clearAllBtn").Content("Clear All Filters").CssClass("e-outline").Render()
+        <span id="status"></span>
+    </div>
+    <div class="control-section">
+        @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("180").AllowFiltering(true).Columns(col =>
+        {
+            col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+            col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+            col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+            col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+            col.Field("Freight").HeaderText("Freight").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+        }).Render()
+    </div>
+</div>
+
+<script>
+    document.getElementById('filterBtn').onclick = handleFilterClick;
+    document.getElementById('clearAllBtn').onclick = handleClearFilterClick;
+
+    function handleFilterClick(){
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.filterByColumn('CustomerID','equal','HANAR');
+        document.getElementById('status').innerText = 'Filter applied on Customer ID = HANAR';
+    }
+
+    function handleClearFilterClick(){
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.clearFiltering();
+        document.getElementById('status').innerText = 'All filters cleared!';
+    }
+</script>
+
+<style>
+    .control-section{
+        padding-top:20px;
+    }
+    #clearAllBtn{
+        margin-left:8px;
+    }
+    #status{
+        margin-left:10px;
+        color:green;
+    }
+</style>

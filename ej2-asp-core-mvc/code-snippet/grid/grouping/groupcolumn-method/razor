@@ -1,0 +1,57 @@
+<div id="container">
+    <div>
+        @Html.EJS().Button("groupBtn").Content("Group by Ship Country").CssClass("e-outline").Render()
+        @Html.EJS().Button("ungroupBtn").Content("Ungroup Ship Country").CssClass("e-outline").Render()
+        @Html.EJS().Button("clearGroupBtn").Content("Clear All Grouping").CssClass("e-outline").Render()
+        <span id="status"></span>
+    </div>
+    <div class="control-section">
+        @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("200").AllowGrouping(true).Columns(col =>
+        {
+            col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+            col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+            col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+            col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+            col.Field("Freight").HeaderText("Freight").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+        }).Render()
+    </div>
+</div>
+
+<script>
+    document.getElementById('groupBtn').onclick = groupColumn;
+    document.getElementById('ungroupBtn').onclick = ungroupColumn;
+    document.getElementById('clearGroupBtn').onclick = clearGrouping;
+
+    function groupColumn() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.groupColumn('ShipCountry');
+        document.getElementById('status').innerText = 'Grouped by Ship Country!';
+    }
+
+    function ungroupColumn() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.ungroupColumn('ShipCountry');
+        document.getElementById('status').innerText = 'Ungrouped Ship Country column!';
+    }
+
+    function clearGrouping() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.clearGrouping();
+        document.getElementById('status').innerText = 'All grouping cleared!';
+    }
+</script>
+
+<style>
+    .control-section {
+        padding-top: 20px;
+    }
+
+    #ungroupBtn, #clearGroupBtn {
+        margin-left: 8px;
+    }
+
+    #status {
+        margin-left: 10px;
+        color: green;
+    }
+</style>
