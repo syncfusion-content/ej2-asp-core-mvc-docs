@@ -1,4 +1,4 @@
-<ejs-circularchart3d id="container" tilt="-45" enableExport="true">
+<ejs-circularchart3d id="container" enableExport="true" tilt="-45" enableExport="true">
     <e-circularchart3d-legendsettings visible="false">
     </e-circularchart3d-legendsettings>
     <e-circularchart3d-series-collection>
