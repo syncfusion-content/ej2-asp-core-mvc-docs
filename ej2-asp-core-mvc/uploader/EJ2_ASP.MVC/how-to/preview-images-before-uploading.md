@@ -9,10 +9,10 @@ documentation: ug
 ---
 
 
-# How to preview images before uploading in ASP.NET MVC File Upload
+# How to create preview images before upload in ASP.NET MVC File Upload
 
-The uploader control allows to create preview images before uploading. The preview images can be created by reading the file using [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event. Also, the user can create preview images after uploading to server using [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) event. Refer to the following link to learn about how to create image preview.
+The Uploader control allows you to create preview images before uploading. The preview images can be created by reading the file using the [`selected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event. Also, you can create preview images after uploading to the server using the [`success`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) event.
 
-[Image Preview in MVC](https://ej2.syncfusion.com/aspnetmvc/uploader/imagepreview#/fluent2)
+Refer to the [ASP.NET MVC Image Preview](https://ej2.syncfusion.com/aspnetmvc/uploader/imagepreview#/fluent2) example to learn how to implement it.
 
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.

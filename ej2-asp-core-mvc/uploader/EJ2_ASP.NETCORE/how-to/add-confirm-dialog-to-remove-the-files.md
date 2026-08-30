@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# How to add a confirmation dialog when removing files in ASP.NET Core
+# How to add a confirmation dialog in ASP.NET Core File Upload
 
-You can customize the uploader control using confirm dialog before removing the files.
-Here, ej2 dialog is used as confirm dialog. Refer to the following example.
+You can customize the Uploader control to show a confirmation dialog before removing a file. This example uses the ej2 Dialog control as the confirmation dialog. Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,5 +37,4 @@ Here, ej2 dialog is used as confirm dialog. Refer to the following example.
 {% endif %}
 
 
-
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.

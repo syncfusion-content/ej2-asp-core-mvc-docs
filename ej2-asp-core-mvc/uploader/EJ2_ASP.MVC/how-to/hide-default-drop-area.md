@@ -11,11 +11,11 @@ documentation: ug
 
 # How to hide the default drop area in ASP.NET MVC File Upload
 
-You can achieve this behavior by overriding the corresponding uploader styles. Override the following styles to hide the default drop area behavior.
+You can achieve this behavior by overriding the corresponding Uploader styles to hide the default drop area.
 
-    * .e-upload.e-control
-    * .e-upload .e-file-select
-    * .e-upload .e-file-drop
+* .e-upload.e-control
+* .e-upload .e-file-select
+* .e-upload .e-file-drop
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,6 +40,4 @@ You can achieve this behavior by overriding the corresponding uploader styles. O
 {% endtabs %}
 {% endif %}
 
-
-
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.
