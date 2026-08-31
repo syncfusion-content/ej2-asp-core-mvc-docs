@@ -11,9 +11,9 @@ documentation: ug
 
 # Disabled Items in ##Platform_Name## MultiSelect
 
-The MultiSelect provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings.html#Syncfusion_EJ2_DropDowns_MultiSelectFieldSettings_Disabled) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
+The MultiSelect supports putting individual items in an enabled or disabled state for specific scenarios. The disabled category of each list item can be mapped through the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings.html#Syncfusion_EJ2_DropDowns_MultiSelectFieldSettings_Disabled) field in the data table. Once an item is disabled, it cannot be selected as a value for the control. To configure the disabled item columns, use the `fields.disabled` property.
 
-In the following sample, State are grouped according on its category using `disabled` field.
+In the following sample, states are grouped by their disabled category using the `disabled` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,9 +42,9 @@ public class DisableStatusData
 {% endtabs %}
 {% endif %}
 
-## Disable Item Method
+## Disable item method
 
-The disableItem method can be used to handle dynamic changing in disable state of a specific item. Only one item can be disabled in this method. To disable multiple items, this method can be iterated with the items list or array. The disabled field state will to be updated in the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DataSource), when the item is disabled using this method. If the selected item is disabled dynamically, then the selection will be cleared.
+Use the `disableItem` method to dynamically change the disabled state of a specific item. Only one item can be disabled per call. To disable multiple items, iterate this method over the items list or array. The disabled state in the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DataSource) is updated when an item is disabled through this method. If a selected item is disabled dynamically, its selection is cleared.
 
 | Parameter | Type | Description |
 |------|------|------|
@@ -54,6 +54,6 @@ The disableItem method can be used to handle dynamic changing in disable state o
 
 ## Enabled
 
-If you want to disabled the overall component to set the [enabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Enabled) property to false.
+To disable the entire control, set the [enabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Enabled) property to `false`.
 
-![Disabled MultiSelect Component](./images/multiselect-disable.png)
+![Disabled MultiSelect control](./images/multiselect-disable.png)

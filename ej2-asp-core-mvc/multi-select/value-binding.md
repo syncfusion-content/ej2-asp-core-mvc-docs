@@ -11,20 +11,20 @@ documentation: ug
 
 # Value Binding in ##Platform_Name## MultiSelect
 
-Value binding in the MultiSelect control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The MultiSelect component provides flexibility in binding both primitive data types and complex objects.
+Value binding in the MultiSelect control allows you to associate data values with each list item, which makes it easier to manage and retrieve selected values. The MultiSelect control provides flexibility for binding both primitive data types and complex objects.
 
-## Primitive Data Types
+## Primitive data types
 
-The MultiSelect Dropdown control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Value) property of the MultiSelect.
+The MultiSelect Dropdown control provides flexible binding capabilities for primitive data types like strings and numbers. You can bind local primitive data arrays, fetch and bind data from remote sources, and apply custom data binding to suit specific requirements. Bind the value of primitive data to the [value](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Value) property of the MultiSelect.
 
 Primitive data types include:
 
-* String
-* Number
-* Boolean
-* Null
+* `string`
+* `number`
+* `boolean`
+* `null`
 
-The following sample shows the example for preselect values for primitive data type.
+The following sample shows the example for preselecting values for primitive data types.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -50,11 +50,11 @@ The following sample shows the example for preselect values for primitive data t
 {% endif %}
 
 
-## Object Data Types
+## Object data types
 
-In the MultiSelect Dropdown control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowObjectBinding) is enabled, the value of the control will be an object of the same type as the selected item in the [value](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
+In the MultiSelect Dropdown control, object binding allows you to bind to a dataset of objects. When [allowObjectBinding](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowObjectBinding) is enabled, the value of the control is an object of the same type as the selected item in the [value](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
 
-The following sample shows the example for preselect values for object data type
+The following sample shows the example for preselecting values for object data types.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

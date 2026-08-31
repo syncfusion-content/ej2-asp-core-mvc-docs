@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Importing and Exporting in ##Platform_Name## Query builder
+# Importing and Exporting in ##Platform_Name## Query Builder
 
 Importing facilitates the viewing or editing of predefined conditions available in JSON, SQL, and MongoDB query formats, while exporting enables obtaining the created rules in the query builder as JSON, SQL, and MongoDB queries.
 
@@ -49,7 +49,7 @@ To initially apply conditions, you can establish the `Rule` by importing a struc
 
 #### Post Rendering
 
-You can set the conditions from structured JSON object through the `setRules` method.
+You can set the conditions from a structured JSON object through the `setRules` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -161,7 +161,7 @@ Importing from Named Parameter SQL involves integrating SQL queries with named p
 
 ### Importing from MongoDB Query
 
-Importing from MongoDB Query involves integrating MongoDB queries directly into the Query Builder. This enables users to input MongoDB query statements directly into the application, allowing for seamless integration and manipulation of MongoDB data within the Query Builder environment. It streamlines the process by facilitating direct access to MongoDB data for analysis, filtering, and further processing within the application. Conditions can be set from Named Parameter SQL queries using the `setMongoQuery` method.
+Importing from MongoDB Query involves integrating MongoDB queries directly into the Query Builder. This enables users to input MongoDB query statements directly into the application, allowing for seamless integration and manipulation of MongoDB data within the Query Builder environment. It streamlines the process by facilitating direct access to MongoDB data for analysis, filtering, and further processing within the application. Conditions can be set from MongoDB queries using the `setMongoQuery` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -201,7 +201,7 @@ Exporting to SQL involves converting the defined conditions within the Query Bui
 
 #### Exporting to Inline SQL Query
 
-Exporting to Inline SQL Query entails embedding the defined conditions from the Query Builder directly into SQL statements within the exported code. This method ensures that the conditions are seamlessly integrated into the SQL query syntax, enabling straightforward execution or further processing within SQL database systems. This can be achieved using the `getRulesFromSQL` method.
+Exporting to Inline SQL Query entails embedding the defined conditions from the Query Builder directly into SQL statements within the exported code. This method ensures that the conditions are seamlessly integrated into the SQL query syntax, enabling straightforward execution or further processing within SQL database systems. This can be achieved using the `getSqlFromRules` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -228,7 +228,7 @@ Exporting to Inline SQL Query entails embedding the defined conditions from the 
 
 #### Exporting to Parameter SQL Query
 
-Exporting to Parameter SQL involves incorporating the defined conditions from the Query Builder into SQL queries with parameters. This method allows for dynamic value assignment during execution, enhancing flexibility and adaptability in query processing within SQL database. This can be accomplished using the `getParameterizedSql` method for exporting to Parameter SQL query.
+Exporting to Parameter SQL involves incorporating the defined conditions from the Query Builder into SQL queries with parameters. This method allows for dynamic value assignment during execution, enhancing flexibility and adaptability in query processing within a SQL database. This can be accomplished using the `getParameterizedSql` method for exporting to Parameter SQL query.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -255,7 +255,7 @@ Exporting to Parameter SQL involves incorporating the defined conditions from th
 
 #### Exporting to Named Parameter SQL Query
 
-Exporting to Named Parameter SQL entails integrating the defined conditions from the Query Builder into SQL queries with named parameters. This method offers enhanced readability and flexibility during execution by using named placeholders for parameter values. Named Parameter SQL facilitates easier maintenance and modification of queries, making it convenient for dynamic parameter assignment within SQL database. This can be accomplished using the method `getParameterizedNamedSql` for exporting to Named Parameter SQL query.
+Exporting to Named Parameter SQL entails integrating the defined conditions from the Query Builder into SQL queries with named parameters. This method offers enhanced readability and flexibility during execution by using named placeholders for parameter values. Named Parameter SQL facilitates easier maintenance and modification of queries, making it convenient for dynamic parameter assignment within a SQL database. This can be accomplished using the `getParameterizedNamedSql` method for exporting to Named Parameter SQL query.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

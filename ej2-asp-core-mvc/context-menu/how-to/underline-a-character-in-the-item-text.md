@@ -10,7 +10,7 @@ documentation: ug
 
 # How to underline item text in ##Platform_Name## Context Menu
 
-To underline a particular character in a text, it can be handled in [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event by adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
+To underline a particular character in the item text, handle the [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event by wrapping the target character in a `<u>` tag and setting the resulting string as the `innerHTML` of the `li` element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

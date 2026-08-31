@@ -1,26 +1,24 @@
 ---
 layout: post
-title: How to Switch to Older Theme in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to switch the ASP.NET MVC Pivot Table to the pre-2020 theme style by overriding background colors via CSS and setting a custom pivot table height.
+title: How to switch to the older Pivot Table theme | Syncfusion
+description: Step-by-step example showing how to switch to the older theme style in the ASP.NET MVC Pivot Table, with CSS overrides and row-height changes.
 platform: ej2-asp-core-mvc
 control: Switching Older Themes Style
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 <!-- markdownlint-disable MD009 -->
 
-# Switching to older themes style
+# How to switch to the older ASP.NET MVC Pivot Table theme
 
-Since Volume 1, 2020, Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. If you prefer the appearance of the earlier theme, you can revert to it by making specific changes. This guide explains how to restore the older theme's style by modifying the CSS to adjust cell background colors and set the row height to match the previous layout.
+Since Volume 1, 2020, Syncfusion<sup style="font-size:70%">&reg;</sup> revised the theming and layout of the Pivot Table. If you prefer the appearance of the earlier theme, you can revert to it by making specific changes. This guide explains how to restore the older theme's style by modifying the CSS to adjust cell background colors and set the row height to match the previous layout.
 
 ## CSS Selectors
 
 In the current theme, cells are differentiated by their background colors. To avoid this, you need to override these background colors via simple CSS adjustments within your application. The following CSS selectors allow achieving the same for Material, Fabric, Bootstrap, and Bootstrap v4 themes:
 
-
-```html      
+```html
     <!-- Codes here... -->
     <style>
         .e-pivotview .e-rowsheader, 
@@ -35,9 +33,9 @@ In the current theme, cells are differentiated by their background colors. To av
 
 ```
 
-Meanwhile for high contrast theme, we need to set the following CSS.
+For the High Contrast theme, the following CSS is required:
 
-```html      
+```html
     <!-- Codes here... -->
     <style>
         .e-pivotview .e-rowsheader, 
@@ -54,7 +52,7 @@ Meanwhile for high contrast theme, we need to set the following CSS.
 
 ## Adjusting Row Height
 
-In the current theme, the height of each Pivot Table row has been reduced to make the component more compact. Users can reset the height of the Pivot Table rows using the [`RowHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_RowHeight) property in [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html). In the older theme, this property was typically set to 36 pixels for desktop layouts and 48 pixels for mobile layouts. To replicate the older theme style, reset the [`RowHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_RowHeight) accordingly.
+In the current theme, the height of each Pivot Table row has been reduced to make the component more compact. Users can reset the height of the Pivot Table rows using the [`RowHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_RowHeight) property within [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html). In the older theme, this property was typically set to 36 pixels for desktop layouts and 48 pixels for mobile layouts. To replicate the older theme style, reset the [`RowHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_RowHeight) accordingly.
 
 The following code sample demonstrates how to replicate the older theme style:
 

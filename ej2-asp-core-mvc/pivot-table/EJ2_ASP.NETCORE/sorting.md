@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Sorting in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table sorts field members and aggregated values via enableSorting, the e-sortsettings property, or sort icons in the UI.
+description: Learn how the ASP.NET Core Pivot Table sorts row and column members in ascending, descending, or custom order using the sortSettings property.
 platform: ej2-asp-core-mvc
-control: Sorting
+control: Pivot Table
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 # Sorting in ASP.NET Core Pivot Table
 
@@ -19,7 +18,7 @@ The Member Sorting functionality enables you to arrange field members in the row
 
 To enable member sorting, set the [`enableSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_EnableSorting) property in [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) to **true**. Once enabled, you can click the sort icon next to each field in the row or column axis within the **Field List** or **Grouping Bar** UI to reorder members in ascending or descending order.
 
-> By default the [`enableSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_EnableSorting) property in [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) set as **true**. If we set it as **false**, then the field members arrange in pivot table as its data source order. And, the sort icons in grouping bar and field list buttons will be removed.
+> By default, the [`enableSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_EnableSorting) property in [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) is set to **true**. If you set it to **false**, the field members are arranged in the pivot table in their data-source order, and the sort icons in the grouping bar and field list buttons are removed.
 
 #### Visual Reference
 
@@ -39,7 +38,7 @@ You can also configure member sorting during initial rendering using the [`e-sor
 * [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_Name): Specifies the name of the field to sort.
 * [`order`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_Order): Defines the sort direction, either [**Ascending**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Sorting.html#Syncfusion_EJ2_PivotView_Sorting_Ascending) or [**Descending**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Sorting.html#Syncfusion_EJ2_PivotView_Sorting_Descending).
 
-> By default the [`order`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_Order) property in the [`e-sortsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html) set as [**Ascending**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Sorting.html#Syncfusion_EJ2_PivotView_Sorting_Ascending). Meanwhile, we can arrange the field members as its order in data source by setting it as [**None**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Sorting.html#Syncfusion_EJ2_PivotView_Sorting_None) where the sort icons in grouping bar and field list buttons for the corresponding field will be removed.
+> By default, the [`order`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_Order) property in the [`e-sortsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html) is set to [**Ascending**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Sorting.html#Syncfusion_EJ2_PivotView_Sorting_Ascending). You can arrange the field members in their data-source order by setting `order` to [**None**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Sorting.html#Syncfusion_EJ2_PivotView_Sorting_None); in that case, the sort icons in the grouping bar and field list buttons for the corresponding field are removed.
 
 The following example demonstrates how to configure the Pivot Table to enable member sorting and set the "Year" field to sort in descending order:
 
@@ -101,12 +100,12 @@ When [`dataType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.P
 
 ### Custom Sorting
 
-Custom sorting allows you to sort field members (also referred to as headers) in rows and columns based on a user-defined order rather than an alphabetical or numerical sequence. This functionality is configured using the eld headers (aka, members) in rows and columns based on user-defined order. This can be configured mainly using the [`membersOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_MembersOrder) property within the [`e-sortsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html) during component initialization.
+Custom sorting allows you to sort field members (also referred to as headers) in rows and columns based on a user-defined order rather than an alphabetical or numerical sequence. This functionality is configured using the [`membersOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_MembersOrder) property within the [`e-sortsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html) during component initialization.
 
 To set up custom sorting, use the following properties:
 
 - [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_Name): Specifies the field name to apply custom sorting.
-- eld headers (aka, members) in rows and columns based on user-defined order. This can be configured mainly using the [`membersOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_MembersOrder): An array of member values arranged in the user-defined sequence.
+- [`membersOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_MembersOrder): An array of member values arranged in the user-defined sequence.
 - [`order`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_Order): Determines whether the specified member array should be arranged in ascending or descending order.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -374,3 +373,8 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## See also
+
+* [Filtering](./filtering)
+* [Value sorting](./value-sorting)

@@ -3,14 +3,14 @@ layout: post
 title: Accessibility in ##Platform_Name## Tabs | Syncfusion
 description: Learn how the Syncfusion ##Platform_Name## Tabs component meets WCAG 2.2, Section 508, and keyboard navigation accessibility standards.
 platform: ej2-asp-core-mvc
-control: Tab
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ##Platform_Name## Tab control
+# Accessibility in ##Platform_Name## Tabs control
 
-The accessibility compliance for the Tab control is outlined below.
+The accessibility compliance for the Tabs control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -38,7 +38,7 @@ The accessibility compliance for the Tab control is outlined below.
 
 ## ARIA attributes
 
-Tab control is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) standard. Tab is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices.
+Tabs control is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) standard. Tab is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices.
 The following list of attributes are added in the Tab.
 
 | **Roles and Attributes** | **Functionalities** |
@@ -73,9 +73,9 @@ By default, keyboard navigation is enabled. This control implements keyboard nav
 
 ## Ensuring accessibility
 
-The Tab control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Tabs control accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Tab control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/tab.html) in a new window to evaluate the accessibility of the Tab control with accessibility tools.
+The accessibility compliance of the Tabs control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/tab.html) in a new window to evaluate the accessibility of the Tabs control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/tab.html" %}
 

@@ -3,7 +3,7 @@ layout: post
 title: Resize in ##Platform_Name## ImageEditor | Syncfusion
 description: Resize Syncfusion ##Platform_Name## ImageEditor images with a ratio-based dimension transformation, or set explicit width and height to scale the canvas.
 platform:  ej2-asp-core-mvc
-control: Filter 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Resize in ##Platform_Name## ImageEditor
 
-The resize feature in an Image Editor is a valuable tool that empowers users to modify the size or dimensions of an image to meet their specific requirements. Whether it's for printing, web display, or any other purpose, this feature allows users to tailor images to their desired specifications.
+The resize feature in an [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) is a valuable tool that empowers users to modify the size or dimensions of an image to meet their specific requirements. Whether it's for printing, web display, or any other purpose, this feature allows users to tailor images to their desired specifications.
 
 ## Apply resize to the image 
 
-The Image Editor control includes a `resize` method, which allows you to adjust the size of an image. This method takes three parameters that define how the resizing should be carried out:
+The Image Editor control includes a `resize` method, which allows you to adjust the size of an image. This method takes three parameters that control the resize operation:
 
 * width: Specifies the resizing width of the image.
 
@@ -57,18 +57,18 @@ Output be like the below.
 
 ## Resizing event 
 
-The [`resizing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Resizing) event is triggered when resizing the image. This event provides information encapsulated within an object, which includes details about the previous and current height and width of an image.
+The [resizing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Resizing) event is triggered during an image resize operation. This event provides information encapsulated within an object, which includes details about the previous and current height and width of an image.
 
 The parameter available in `ResizeEventArgs` is,
 
-* ResizeEventArgs.previousWidth - The width of the image before resizing is performed.
+* `ResizeEventArgs.previousWidth` - The width of the image before resizing is performed.
 
-* ResizeEventArgs.previousHeight - The height of the image before resizing is performed.
+* `ResizeEventArgs.previousHeight` - The height of the image before resizing is performed.
 
-* ResizeEventArgs.width - The width of the image after resizing is performed.
+* `ResizeEventArgs.width` - The width of the image after resizing is performed.
 
-* ResizeEventArgs.height - The width of the image after resizing is performed.
+* `ResizeEventArgs.height` - The width of the image after resizing is performed.
 
-* ResizeEventArgs.isAspectRatio - The type of resizing performed such as aspect ratio or non-aspect ratio.
+* `ResizeEventArgs.isAspectRatio` - The type of resizing performed such as aspect ratio or non-aspect ratio.
 
-* ResizeEventArgs.cancel - Specifies a boolean value to cancel the resizing action.  
+* `ResizeEventArgs.cancel` - Specifies a boolean value to cancel the resizing action.  

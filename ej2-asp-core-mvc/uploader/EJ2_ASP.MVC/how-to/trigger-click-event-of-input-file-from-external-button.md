@@ -11,7 +11,7 @@ documentation: ug
 
 # How to trigger the input-file click event from an external button
 
-You can trigger the click event of input file from external button using `click` event of button. In the below sample, triggered click event of input file from `Essential JavaScript 2 Button`.
+You can trigger the click event of the input file from an external button using the `click` event of the button. In the following sample, the click event of the input file is triggered from the `Essential JavaScript 2 Button`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,5 +36,4 @@ You can trigger the click event of input file from external button using `click`
 {% endtabs %}
 {% endif %}
 
-
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> Explore the [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page to discover its groundbreaking features. You can also check out our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to see how to browse and select files for upload to the server.

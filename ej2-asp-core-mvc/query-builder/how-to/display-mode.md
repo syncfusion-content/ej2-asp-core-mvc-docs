@@ -11,7 +11,7 @@ documentation: ug
 
 # Display Mode in ##Platform_Name## Query Builder
 
-Display options allow you to view the Query Builder Vertically or Horizontally. For this, you should use the `DisplayMode` property.
+Display options allow you to view the Query Builder vertically or horizontally. For this, you should use the `DisplayMode` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,5 +38,5 @@ Display options allow you to view the Query Builder Vertically or Horizontally. 
 
 
 
-N> The default view in the desktop mode is Horizontal.
-<br/> The default view in the mobile mode is Vertical.
+N> The default view in the desktop mode is `Horizontal`.
+<br/> The default view in the mobile mode is `Vertical`.

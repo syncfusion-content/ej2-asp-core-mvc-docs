@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Loading Spinner in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to customize the ASP.NET MVC Pivot Table's loading spinner via the SpinnerTemplate property, accepting an HTML string for custom styling.
+title: How to customize the Pivot Table loading indicator | Syncfusion
+description: Step-by-step example showing how to customize the loading indicator in the ASP.NET MVC Pivot Table using the SpinnerTemplate property.
 platform: ej2-asp-core-mvc
 control: Customizing Loading Indicator
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Customize the Loading Indicator in ASP.NET MVC Pivot Table
+# Customize the Pivot Table loading indicator in ASP.NET MVC
 
 The Pivot Table displays a loading indicator during data processing operations such as filtering, sorting, and aggregation calculations. The default loading spinner can be customized to match application design requirements using the [`SpinnerTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SpinnerTemplate) property.
 
