@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure Provider Docker Support in ##Platform_Name## File Manager | Syncfusion
+title: Azure Docker Support for ##Platform_Name## File Manager | Syncfusion
 description: Learn how to deploy the ##Platform_Name## File Manager Azure file provider using the pre-built Docker image and required Azure Blob Storage settings.
 control: File Manager
 platform: ej2-asp-core-mvc

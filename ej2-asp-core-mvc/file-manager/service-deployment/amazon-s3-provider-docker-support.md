@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Amazon S3 Provider Docker Support in ##Platform_Name## File Manager | Syncfusion
+title: Amazon S3 Docker Support for ##Platform_Name## File Manager | Syncfusion
 description: Learn how to deploy the ##Platform_Name## File Manager Amazon S3 file provider using the pre-built Docker image and required Amazon S3 settings.
 control: File Manager
 platform: ej2-asp-core-mvc
