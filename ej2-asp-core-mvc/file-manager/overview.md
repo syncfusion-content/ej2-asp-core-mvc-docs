@@ -34,7 +34,7 @@ The File Manager provides the following two view options to change the layout of
 
 * `Large Icon view` - In the Large view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content.  For example, the **preview** of the image will be displayed for image and video type files and extension thumbnails will be displayed for other type files.
 
-### Navigation in File Managers
+### Navigation in File Manager
 
 File Manager has the easy file navigation options for navigating through the file system for accessing any user designed file to perform any file operation.
 

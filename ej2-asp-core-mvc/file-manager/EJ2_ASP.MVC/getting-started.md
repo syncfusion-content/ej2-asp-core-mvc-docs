@@ -83,7 +83,7 @@ Open the **~/Views/Shared/_Layout.cshtml** file and register the script manager 
 
 Add the [ASP.NET MVC File Manager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) control in the **~/Views/Home/Index.cshtml** file.
 
-Update a `~/Controllers/HomeController.cs` file with the following code. Create a `Content/Files` folder to store the files for the File Manager access. Make sure `Microsoft.AspNet.Mvc` is updated to the latest version.
+Update a `~/Controllers/HomeController.cs` file with the following code. Create a `Content/Files` folder to store the files for the ASP.NET MVC File Manager access. Make sure `Microsoft.AspNet.Mvc` is updated to the latest version.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.cshtml" %}
@@ -100,13 +100,13 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC File Manager Control](images/getting-started.webp)
 
-N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
+N> The ASP.NET MVC File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for ASP.NET MVC File Manager service.
 
 ## See also
 
 * [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-operations#ajax-settings-configuration)
 * [Overview](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/user-interface#file-manager-overview)
-* [File Manager Views](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/views)
-* [File Manager File Operations](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-operations)
-* [File Manager Upload](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/upload)
-* [File Manager Customization](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/customization)
+* [ASP.NET MVC File Manager Views](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/views)
+* [ASP.NET MVC File Manager File Operations](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-operations)
+* [ASP.NET MVC File Manager Upload](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/upload)
+* [ASP.NET MVC File Manager Customization](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/customization)
