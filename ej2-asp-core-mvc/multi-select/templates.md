@@ -228,6 +228,56 @@ In the following sample, when the data fetch request fails, the MultiSelect disp
 {% endtabs %}
 {% endif %}
 
+## Summary Tag Template
+
+The Summary Tag Template feature displays selected items as a formatted summary text in the input field instead of listing all selections individually. This is especially useful in CheckBox mode when working with large datasets and using the SelectAll option, as it significantly improves performance.
+
+The [summaryTagCount](../api/multi-select#summarytagcount) property sets a threshold—when the number of selected items exceeds this threshold, the [summaryTagTemplate](../api/multi-select#summarytagtemplate) displays a custom formatted text instead of individual items.
+
+### Template Placeholder Properties
+
+The following properties are available for use in the summary template placeholders:
+
+| Placeholder | Description |
+|-------------|-------------|
+| `${selectedCount}` | Total count of currently selected items |
+| `${totalCount}` | Total number of items in the data source |
+
+In the following sample, the Summary Tag Template displays the count of selected items when the threshold is exceeded.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/multiselect/templates/summary-tag-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Summarytagtemplate.cs" %}
+{% include code-snippet/multiselect/templates/summary-tag-template/summarytagtemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Records.cs" %}
+{% include code-snippet/multiselect/templates/summary-tag-template/records.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multiselect/templates/summary-tag-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Summarytagtemplate.cs" %}
+{% include code-snippet/multiselect/templates/summary-tag-template/summarytagtemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Records.cs" %}
+{% include code-snippet/multiselect/templates/summary-tag-template/records.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+> **Limitation:** The Summary Tag Template feature only works in CheckBox mode because it has a built-in SelectAll option for bulk selection, which triggers the need for performance optimization. Other modes (Default, Box, Delimiter) don't support SelectAll and use different display formats, making template-based formatting unnecessary.
+
+> **Note:** When you set a threshold value and preselected items exceed it, the summary template displays formatted text instead of individual items. If `summaryTagTemplate` and `summaryTagCount` are not provided, the Summary Tag Template feature is automatically enabled when records or preselected items exceed 1000, displaying a default summary format for better performance.
+
 ## See also
 
 * [How to bind the data](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/data-binding)
