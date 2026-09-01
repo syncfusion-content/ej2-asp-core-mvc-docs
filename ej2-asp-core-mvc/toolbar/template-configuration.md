@@ -8,9 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to configure templates in ##Platform_Name## Toolbar
+# How to Configure Templates in ##Platform_Name## Toolbar
 
-The Toolbar can be rendered by item based collection and by HTML elements.  To render it based on the given HTML element, use `id` as the `target` property. To render the Toolbar, follow the below structure of the HTML elements:
+The Toolbar can be rendered by item-based collection or by HTML elements. To render it based on a given HTML element, set the `target` property (string) to the element's `id`. Template rendering requires only the HTML element structure.
+
+To render the Toolbar, follow the below structure of the HTML elements:
 
 ```html
   <div id='template_toolbar'>   --> Root Toolbar Element
@@ -45,8 +47,6 @@ Here, the template ID, `#template_toolbar` is directly appended to the Toolbar.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Popup customization
 
@@ -93,9 +93,9 @@ Class              | Description
 {% endtabs %}
 {% endif %}
 
-## Integrate menu component
+## Integrate Menu component
 
-You can integrate menu component as toolbar item in Toolbar using content template property. Menu can be populated with items as needed.
+You can integrate the Menu component as a Toolbar item using the content template property. The content template property allows you to wrap any component (such as Menu) inside a Toolbar item div. Menu can be populated with items as needed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

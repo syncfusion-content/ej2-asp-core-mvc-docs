@@ -10,7 +10,7 @@ documentation: ug
 
 # Customize TreeView Nodes by Level in ##Platform_Name##
 
-You can customize the tree nodes based on their levels by adding a custom `cssClass` to the control and enabling specific styles.
+You can customize the tree nodes based on their levels by adding a custom [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_CssClass) to the control and enabling specific styles.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

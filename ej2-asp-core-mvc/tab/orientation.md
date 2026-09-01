@@ -3,16 +3,16 @@ layout: post
 title: Orientation in ##Platform_Name## Tabs | Syncfusion
 description: Place the Syncfusion ##Platform_Name## Tabs header at top, bottom, left, or right positions using the `headerPlacement` property.
 platform: ej2-asp-core-mvc
-control: Tab
+control: Tabs
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Orientation in ##Platform_Name## Tab control
+# Orientation in ##Platform_Name## Tabs control
 
 This section explains how to modify the position and overflow mode of the Tab header.
 
-It allows placing the header section inside the Tab control at different positions by using the `headerPlacement` property. The available positions are as follows:
+It allows placing the header section inside the Tabs control at different positions by using the `headerPlacement` property. The available positions are as follows:
 
 * **Top**: Tab header items can be arranged horizontally, and their content can be placed after the header.
 * **Bottom**: Tab header items can be arranged horizontally, and their content can be placed before the header.

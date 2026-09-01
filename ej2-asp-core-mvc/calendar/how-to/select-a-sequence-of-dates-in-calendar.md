@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Sequence Of Dates in ##Platform_Name## Calendar | Syncfusion
-description: Learn here all about how to select a sequence of Dates In Calendar in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
+title: Sequence of Dates in ##Platform_Name## Calendar | Syncfusion
+description: Learn here all about how to select a sequence of dates in the Calendar in Syncfusion ##Platform_Name## Calendar control of Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Select A Sequence Of Dates In Calendar
+control: Select a Sequence of Dates in Calendar
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Select a Sequence of Dates in Calendar
 
-# Select a sequence of dates in Calendar
-
-The following example demonstrates how to select the week dates of chosen date in the Calendar using [values](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Values) property, when [isMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_IsMultiSelection) property is enabled. Methods of Moment.js is used in this sample for calculating the start and end of week from the selected date.
+The following example demonstrates how to select the week dates of the chosen date in the Calendar using the [values](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Values) property, when the [isMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_IsMultiSelection) property is enabled. Methods of Moment.js are used in this sample for calculating the start and end of the week from the selected date.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

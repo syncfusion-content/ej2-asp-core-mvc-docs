@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restrict Drag and Drop for TreeView Nodes - ##Platform_Name## | Syncfusion
+title: Restrict Drag and Drop for TreeView Nodes in ##Platform_Name## | Syncfusion
 description: Restrict drag and drop in the Syncfusion ##Platform_Name## TreeView for specific targets by handling nodeDragStop and nodeDragging events.
 platform: ej2-asp-core-mvc
 control: TreeView
@@ -10,7 +10,7 @@ documentation: ug
 
 # Restrict Drag and Drop for TreeView Nodes in ##Platform_Name##
 
-You can restrict drag and drop operations to allow files to be dropped only under folders. This can be achieved by using `nodeDragStop` and `nodeDragging` events of TreeView.
+You can restrict drag and drop operations to allow files to be dropped only into folders nodes. This can be achieved by using [nodeDragStop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_NodeDragStop) and [nodeDragging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_NodeDragging) events of TreeView.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

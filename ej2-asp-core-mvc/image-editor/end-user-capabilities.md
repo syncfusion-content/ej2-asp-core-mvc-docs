@@ -90,12 +90,7 @@ To crop an image in the image editor, do the following steps.
 
 * Once selection is completed, do panning to move the image to get the cropped region.
 
-* Utilize the rotate and flip buttons along with the straighten slider to perform image transformations, including any inserted annotations.
-
-* Once the cropping region is finalized in the image click the tick icon at the top right of the toolbar to crop the image.
-
 ![Crop selection drawn over a photo with the action toolbar above](images/crop.jpg){:width="600"}
-
 
 ## Annotations
 

@@ -7,11 +7,12 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    public class DropDownListController : Controller
+    public class MultiSelectController : Controller
     {
-        public ActionResult disbalegroupheader()
+        public ActionResult summarytagtemplate()
         {
-            ViewBag.data = new Vegetables().VegetablesList();
+            ViewBag.data = new Record().RecordModelList();
+            ViewBag.value = new Record().RecordModelList().Select(e => e.Text).ToArray();
             return View();
         }
     }
