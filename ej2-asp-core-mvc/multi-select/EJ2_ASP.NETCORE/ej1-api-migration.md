@@ -11,9 +11,9 @@ documentation: ug
 
 # EJ1 API Migration in ##Platform_Name## MultiSelect
 
-This article describes the API migration process of multiselect component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of the MultiSelect control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
-## Accessibility and Localization
+## Accessibility and localization
 
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
@@ -113,13 +113,13 @@ This article describes the API migration process of multiselect component from E
 
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
-| Virtual Scrolling| **Property** : allow-virtual-scrolling<br/> <br/>`<ej-drop-down-list allow-virtual-scrolling ="true "></ej-drop-down-list>` | It will be acheived in sample level using `actionComplete` event |
+| Virtual Scrolling| **Property** : allow-virtual-scrolling<br/> <br/>`<ej-drop-down-list allow-virtual-scrolling ="true "></ej-drop-down-list>` | It is achieved at the sample level through the `actionComplete` event. |
 | Virtual Scroll Mode | **Property** : virtual-scroll-mode<br/> <br/>`<ej-drop-down-list allow-virtual-scrolling ="true" virtual-scroll-mode=@VirtualScrollMode.Normal></ej-drop-down-list>` | Not Applicable |
 | Custom class | **Property** : css-class<br/> <br/>`<ej-drop-down-list cssClass ="custom-style"></ej-drop-down-list>` | **Property** : cssClass<br/> <br/>`<ejs-multiselect cssClass=" custom-style" />` |
 | Delimiter Char | **Property** : delimiter-char<br/> <br/>`<ej-drop-down-list delimiter-char = "." ></ej-drop-down-list>` |  **Property** : delimiterChar<br/> <br/>`<ejs-multiselect delimiterChar ="." />` |
 | Enable | **Property** : enable<br/> <br/>`<ej-drop-down-list enable = "true" ></ej-drop-down-list>` |  **Property** : enabled <br/> <br/>`<ejs-multiselect enabled ="true" />` |
 | Persistence | **Property** : enable-persistence<br/> <br/>`<ej-drop-down-list enable-persistence = "true" ></ej-drop-down-list>` |  **Property** : enablePersistence <br/> <br/>`<ejs-multiselect enablePersistence ="true" /> ` |
-| Load On Demand | **Property** : load-on-demand<br/> <br/>`<ej-drop-down-list load-on-demand = "true" ></ej-drop-down-list>` | By default, provided load on demand support |
+| Load on demand | **Property** : load-on-demand<br/> <br/>`<ej-drop-down-list load-on-demand = "true" ></ej-drop-down-list>` | Provided by default. |
 | Height | **Property** : height<br/> <br/>`<ej-drop-down-list height= "100" ></ej-drop-down-list>` | Not Applicable |
 | Html Attributes | **Property** : html-attributes <br/> <br/>`<ej-drop-down-list html-attributes="@ViewBag.attributes" />` |  **Property** : htmlAttributes <br/> <br/>`<ejs-multiselect htmlAttributes =" ="@ViewBag.attributes" /> ` |
 | Width | **Property** : width <br/> <br/>`<ej-drop-down-list width="500px" />` |  **Property** : width <br/> <br/>`<ejs-multiselect width="500px" />` |
@@ -130,7 +130,7 @@ This article describes the API migration process of multiselect component from E
 | Target ID | **Property** : target-id <br/> <br/>`<ej-drop-down-list id="customerList" target-id="mailtoolslist"></ej-drop-down-list><div id="mailtoolslist"><ul><li><div class="mailtools categorize"></div>Categorize and Move</li></ul></div>` | Not Applicable |
 | Text | **Property** : text <br/> <br/>`<ej-drop-down-list text ="Employee Name" />` |  **Property** : text <br/><br/> `<ejs-multiselect text="Employee Name" />` |
 | Validation Message | **Property** : validation-message <br/> <br/>`<ej-drop-down-list validation-message="@viewBag.validation" />` |  The default error message for a rule can be customizable by defining it along with concern rule. |
-| Validation Rules | **Property** : validation-rules <br/> <br/>`<ej-drop-down-list validation-rules="@viewBag.validation" />` |  Use Form validator to validate the multiselect component and set validation rules. |
+| Validation Rules | **Property** : validation-rules <br/> <br/>`<ej-drop-down-list validation-rules="@viewBag.validation" />` |  Use Form validator to validate the multiselect control and set validation rules. |
 | Value | **Property** : value <br/> <br/>`<ej-drop-down-list value ="Employee Value" />` |  **Property** : value <br/><br/> `<ejs-multiselect value="@ViewBag.value"/>` |
 | Watermark Text | **Property** : watermark-text <br/> <br/>`<ej-drop-down-list watermark-text="Select employee"/>` |  **Property** : placeholder <br/><br/> `<ejs-multiselect placeholder =" Select employee"/>` |
 | Custom Value | Not Applicable |  **Property** : allowCustomValue <br/><br/> `<ejs-multiselect mode=”Default”  allowCustomValue=" true"/> ` |
@@ -153,7 +153,7 @@ This article describes the API migration process of multiselect component from E
 | Change | **Event** : change<br/> <br/>`<ej-drop-down-list change="onChange" />` |  **Event** : change<br/> <br/>`<ejs-multiselect change=" onChange"/>`  |
 | Check Change | **Event** : check-change<br/> <br/>`<ej-drop-down-list check-change ="onCheckChange" />` |  Not Applicable  |
 | Create | **Event** : create <br/> <br/>`<ej-drop-down-list create="onCreate" />` |  **Event** : created <br/> <br/>`<ejs-multiselect created="onCreate" />`  |
-| Destroy | **Event** : destroy <br/> <br/>`<ej-drop-down-list destroy="onDestroy" />` |  **Event** : created <br/> <br/>`<ejs-multiselect destroy="onDestroy" />`  |
+| Destroy | **Event** : destroy <br/> <br/>`<ej-drop-down-list destroy="onDestroy" />` |  **Event** : destroyed <br/> <br/>`<ejs-multiselect destroyed="onDestroyed" />`  |
 | Focus In | **Event** : focus-in <br/> <br/>`<ej-drop-down-list focus-in="onFocusIn" />` |  **Event** : focus <br/> <br/>`<ejs-multiselect focus="onFocus" />`  |
 | Focus Out | **Event** : focus-out <br/> <br/>`<ej-drop-down-list focus-out="onFocusOut" />` |  **Event** : blur <br/> <br/>`<ej-multiselect blur="onBlur" />`  |
 | Chip Selection | Not Applicable |  **Event** : chipSelection <br/> <br/>`<ej-multiselect mode="Box" chipSelection ="onChipSelection " />`  |

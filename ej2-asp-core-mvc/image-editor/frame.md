@@ -3,7 +3,7 @@ layout: post
 title: Frames in ##Platform_Name## ImageEditor | Syncfusion
 description: Add decorative borders or frames around an image in Syncfusion ##Platform_Name## ImageEditor using the toolbar or the selectFrame method.
 platform:  ej2-asp-core-mvc
-control: Filter 
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Frames in ##Platform_Name## ImageEditor
 
-The frame feature in an Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
+The frame feature in an [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) allows users to add decorative borders or frames around images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
 
 ## Apply frame to the image
 
@@ -19,7 +19,7 @@ The `drawFrame` method is a function designed to enable the application of vario
 
 Depending on the frame type selected, users may have additional customization options, such as adjusting the frame's thickness, color, texture, or other attributes. This allows for fine-tuning the appearance of the frame to match the image's theme or the user's preferences
 
-The `drawFrame` method in the Image Editor control takes nine parameters to define the properties of the frame to the image:
+The `drawFrame` method in the Image Editor control takes nine parameters to define the frame properties applied to the image:
 
 * frameType - Specified the image data or url of the image to be inserted.
 
@@ -71,16 +71,16 @@ Output be like the below.
 
 ## Frame changing event
 
-The [`frameChanging](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FrameChange) event is triggered when applying frame on the image. This event provides information encapsulated within an object, which includes details about the frame applied in an image. This information encompasses:
+The [`frameChanging](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FrameChange) event is triggered when a frame is applied to the image. This event provides information encapsulated within an object, which includes details about the frame applied in an image. This information encompasses:
 
 Frame Type: This indicates the specific type of frame being applied, whether it's a mat, bevel, line, or hook.
 
 Customization Values: These values contain information about any adjustments or modifications made to the frame. For instance, if the frame can be customized with attributes like color, size, or style, these details are conveyed within the event object.
 
-The parameter available in the [`FrameChangeEventArgs`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FrameChange) is
+The parameter available in the [FrameChangeEventArgs](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FrameChange) is
 
 * `FrameChangeEventArgs.previousFrameSetting` - The frame settings including size, color, inset, offset, gradient color which is applied before changing the frame.
 
-* `FrameChangeEventArgs.currentFrameSetting` - The frame settings including size, color, inset, offset, gradient color which is going to apply after changing the frame.
+* `FrameChangeEventArgs.currentFrameSetting` - The frame settings including size, color, inset, offset, gradient color that will be applied after the frame change.
 
 * `FrameChangeEventArgs.cancel` - Specifies a boolean value to cancel the frame changing action.  

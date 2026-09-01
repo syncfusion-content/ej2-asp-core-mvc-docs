@@ -11,7 +11,7 @@ documentation: ug
 
 # How to close popup on scroll in ##Platform_Name## DropDownList
 
-By using the `hidePopup` method in DropDownList, you can close the popup on scroll when triggered the windows scroll event.
+You can close the DropDownList popup on scroll by handling the window scroll event. Within the scroll event handler, call the [hidePopup](https://ej2.syncfusion.com/documentation/api/drop-down-list/index-default#hidepopup33) method to close the popup.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

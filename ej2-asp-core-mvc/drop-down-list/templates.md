@@ -11,7 +11,7 @@ documentation: ug
 
 # Templates in ##Platform_Name## DropDownList
 
-The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 `Template engine` to compile and render the elements properly.
+The DropDownList provides several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 `Template engine` to compile and render the elements properly.
 
 ## Item template
 
@@ -75,7 +75,7 @@ In the following sample, the selected value is displayed as a combined text of b
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customized with the help of [groupTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_GroupTemplate) property. This template is common for both inline and floating group header template.
+The group header title under which appropriate sub-items are categorized can also be customized with the help of [groupTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_GroupTemplate) property. This template is common for both inline and floating group header templates.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,7 +106,7 @@ The group header title under which appropriate sub-items are categorized can als
 
 The header element is shown statically at the top of the popup list items within the DropDownList, and any custom element can be placed as a header element using the [headerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_HeaderTemplate) property.
 
-In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
+In the following sample, the list items and their headers are designed and displayed as two columns similar to multiple columns of the grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -137,7 +137,7 @@ In the following sample, the list items and its headers are designed and display
 
 The DropDownList has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the [footerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_FooterTemplate) property.
 
-In the following sample, footer element displays the total number of list items present in the DropDownList.
+In the following sample, the footer element displays the total number of list items present in the DropDownList.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,7 +166,7 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The DropDownList is provided with support to custom design the popup list content when no data is found and no matches are found on search with the help of [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_NoRecordsTemplate) property.
+The DropDownList supports custom design the popup list content when no data is found and no matches are found on search with the help of [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_NoRecordsTemplate) property.
 
 In the following sample, popup list content displays the notification of no data available.
 
@@ -197,7 +197,7 @@ In the following sample, popup list content displays the notification of no data
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionFailureTemplatex) property.
+There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionFailureTemplate) property.
 
 In the following sample, when the data fetch request fails, the DropDownList displays the notification.
 
@@ -226,9 +226,9 @@ In the following sample, when the data fetch request fails, the DropDownList dis
 
 
 
-## See Also
+## See also
 
-* [How to acheive filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/filtering)
+* [How to achieve filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/filtering)
 * [How to group the data using header](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/grouping)
 * [How to show the list items with icon](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/how-to/icons-support)
 * [How to render tooltip for the options](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/how-to/tooltip)

@@ -11,11 +11,11 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## MultiSelect
 
-The MultiSelect control has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The MultiSelect control follows the` WAI-ARIA` specifications and applies the WAI-ARIA roles, states, and properties together with keyboard support. It provides full keyboard interaction and ARIA support for users of assistive technologies (AT) or those who completely rely on keyboard navigation.
 
-The MultiSelect component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The MultiSelect control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the MultiSelect component is outlined below.
+The accessibility compliance of the MultiSelect control is summarized below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -34,11 +34,11 @@ The accessibility compliance for the MultiSelect component is outlined below.
         margin: 0.5em 0;
     }
 </style>
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the control meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the control do not meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The control does not meet the requirement.</div>
 
 ## WAI-ARIA attributes
 
@@ -72,6 +72,8 @@ You can use the following key shortcuts to access the MultiSelect without interr
 | <kbd>Esc(Escape)</kbd> | Closes the popup list when it is in an open state and the currently selected item remains the same. |
 | <kbd>Home</kbd> | set focus to the first item. |
 | <kbd>End</kbd> | set focus to the last item. |
+| <kbd>Ctrl + A</kbd> | Selects all visible items in the popup. |
+| <kbd>Backspace</kbd> | Removes the last selected tag/chip when the input is empty. |
 
 N> In the below sample, focus the MultiSelect control using <kbd>alt+t</kbd> keys.
 
@@ -100,12 +102,12 @@ N> In the below sample, focus the MultiSelect control using <kbd>alt+t</kbd> key
 
 ## Ensuring accessibility
 
-The MultiSelect component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The MultiSelect control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the MultiSelect component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/multi-select.html) in a new window to evaluate the accessibility of the MultiSelect component with accessibility tools.
+The accessibility compliance of the MultiSelect control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/multi-select.html) in a new window to evaluate the accessibility of the MultiSelect control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/multi-select.html" %}
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls](../common/accessibility)

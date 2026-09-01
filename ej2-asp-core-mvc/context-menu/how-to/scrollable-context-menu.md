@@ -10,9 +10,9 @@ documentation: ug
 
 # How to render scrollable ##Platform_Name## Context Menu
 
-To enable scrolling for the Context Menu, use the [enableScrolling](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_EnableScrolling) property to manage the overflow behavior of menu items by enabling or disabling scroll functionality. This is especially useful when dealing with a large number of menu items that exceed the viewport height, ensuring the context menu remains accessible without affecting the page layout.
+To enable scrolling for the Context Menu, set the [enableScrolling](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_EnableScrolling) property to `true` to manage the overflow behavior of menu items by enabling or disabling scroll functionality. This is especially useful when dealing with a large number of menu items that exceed the viewport height, ensuring the context menu remains accessible without affecting the page layout.
 
-To achieve this functionality, set the `EnableScrolling` property to `true`. Additionally, use the [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeOpen) event to adjust the height of the menu's parent element, ensuring the scrollable area is applied correctly.
+Additionally, use the [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeOpen) event to adjust the height of the menu's parent element, ensuring the scrollable area is applied correctly.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,6 +37,6 @@ To achieve this functionality, set the `EnableScrolling` property to `true`. Add
 {% endtabs %}
 {% endif %}
 
-![Drop Down Button Scroller Support](images/context-menu-scroller.png)
+![Context Menu Scroller Support](images/context-menu-scroller.png)
 
 

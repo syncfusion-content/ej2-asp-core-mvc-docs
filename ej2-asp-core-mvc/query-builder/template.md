@@ -13,7 +13,7 @@ documentation: ug
 
 ## Header Template
 
-Header Template allows to define your own user interface for Header, which includes creating or deleting rules and groups and to customize the AND/OR condition and NOT condition options. To implement header template in querybuilder, you can create the user interface using `x-template` and assign the values when requestType is header-template-create in  `actionBegin` event.
+The Header Template allows you to define your own user interface for the header, which includes creating or deleting rules and groups and customizing the AND/OR condition and NOT condition options. To implement a header template in the Query Builder, you can create the user interface using the `headerTemplate` property and assign the values when `requestType` is `header-template-create` in the `actionBegin` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

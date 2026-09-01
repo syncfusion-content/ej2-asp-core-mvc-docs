@@ -8,17 +8,19 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to add toggle button in ##Platform_Name## Toolbar
+# How to Add Toggle Button in ##Platform_Name## Toolbar
 
-Toolbar supports to add a toggle Button by using the template property. Refer below steps
+You can add a toggle button to the Toolbar by using the template property. Follow these steps below.
 
-* By using Toolbar template property, pass required HTML String to render toggle button.
+* By using Toolbar template property, pass the required HTML string to render the toggle button.
 
 ```typescript
     template='<button class="e-btn" id="media_btn"></button>'
 ```
 
-* Now render the toggle Button into the targeted element in Toolbar created event handler and bind click event for it. On clicking the toggle Button, change the required icon and content based on current active state.
+* Render the toggle button into the targeted element in the Toolbar created event handler and bind a click event to it. When the toggle button is clicked, change the required icon and content based on the current active state.
+
+For accessibility, ensure your toggle button includes the appropriate ARIA attributes (such as `aria-pressed`) to properly indicate its state to assistive technologies.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

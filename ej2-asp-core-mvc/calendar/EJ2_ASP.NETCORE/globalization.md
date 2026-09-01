@@ -8,26 +8,25 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Globalization in ##Platform_Name## Calendar
 
 Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) and also by adding cultural specific customizations and translating the text [localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization).
 
-By default, Calendar date format, week and month names are specific to American English culture. It utilizes the [Essential JavaScript 2 Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) package to parse and format the date object based on the culture by uses the official [UNICODE CLDR](https://cldr.unicode.org/) JSON data.
+By default, Calendar date format, week and month names are specific to American English culture. The Calendar utilizes the [Essential JavaScript 2 Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) package to parse and format the date object based on the culture. It uses the official [UNICODE CLDR](https://cldr.unicode.org/) JSON data.
+
+To use a culture other than `English`, follow the below steps.
 
 * Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) property.
 
-To go with the different culture other than `English`, follow the below steps.
-
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [CLDR-Data](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
+* Install the `cldr-data` package by using the below command (it installs the CLDR JSON data). To know more about cldr-data, refer to the [CLDR-Data](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
 ```
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data/`.
+Once the package is installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data/`.
 
-In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `/wwwroot/scripts/cldr-data` location like the following code examples.
+In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `cldr-data` from the `node_modules` folder and place it inside the `wwwroot` folder and refer from the `wwwroot/scripts/cldr-data` location like the following code example.
 
 ```typescript
 
@@ -50,13 +49,13 @@ function loadCultureFiles(name) {
 
 ```
 
-N> The `Localization` library allows you to localize default text content of the Calendar. The Calendar component has static text for **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) value and translation object.
+N> The `Localization` library allows you to localize default text content of the Calendar. The Calendar component has static text for the **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) value and translation object.
 
 | Locale keywords | Text |
 | ----- | ----- |
 | today | Name of the button to choose Today date. |
 
-* Before changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of `L10n` class.
+* Before changing to a culture other than `English`, ensure that locale text for the desired culture is loaded through the `load` method of the [L10n](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) class.
 
 ```typescript
       var L10n = ej.base.L10n;
@@ -92,13 +91,11 @@ The following example demonstrates the Calendar in `German` culture.
 {% endtabs %}
 {% endif %}
 
-
-
-## Right-To-Left
+## Right-to-left
 
 The Calendar supports right-to-left functionality for languages like Arabic, Hebrew, etc. To display the text in the right-to-left direction, use [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_EnableRtl) property.
 
-The following example demonstrates the Calendar in `Arabic` culture with Right-To-Left direction.
+The following example demonstrates the Calendar in `Arabic` culture with right-to-left direction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -120,4 +117,3 @@ The following example demonstrates the Calendar in `Arabic` culture with Right-T
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-

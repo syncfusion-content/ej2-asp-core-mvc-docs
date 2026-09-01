@@ -11,7 +11,7 @@ documentation: ug
 
 # Separate Connector in ##Platform_Name## Query Builder
 
-The Query Builder provides the functionality to integrate standalone connectors between rules or groups within the same group. This allows for greater flexibility, as users can connect rules or groups using different connectors, enhancing the complexity and precision of query construction. You can use [`EnableSeparateConnector`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_EnableSeparateConnector) to perform separate connector functionality.
+The Query Builder provides the functionality to integrate standalone connectors between rules or groups within the same group. This allows for greater flexibility, as users can connect rules or groups using different connectors, enhancing the complexity and precision of query construction. You can use [`EnableSeparateConnector`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_EnableSeparateConnector) to enable the separate connector functionality.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,6 +36,6 @@ The Query Builder provides the functionality to integrate standalone connectors 
 {% endtabs %}
 {% endif %}
 
-Output be like the below.
+The output will look like the image below.
 
 ![Query builder Sample](images/separate-connector.png)

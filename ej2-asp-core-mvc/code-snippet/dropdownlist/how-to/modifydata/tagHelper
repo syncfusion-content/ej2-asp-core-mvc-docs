@@ -9,10 +9,10 @@
 <script>
     function actionComplete(e) {
         // initially result contains 6 items
-        console.log("Before modified the result: " + e.result.length);
-        // remove first 2 items from result.
+        console.log("Before modifying the result: " + e.result.length);
+        // removes the first 2 items from the result.
         e.result.splice(0, 2);
-        // now displays the result count is 4.
-        console.log("After modified the result: " + e.result.length);
+        // the result count is now 4.
+        console.log("After modifying, the result contains: " + e.result.length + items);
     }
 </script>

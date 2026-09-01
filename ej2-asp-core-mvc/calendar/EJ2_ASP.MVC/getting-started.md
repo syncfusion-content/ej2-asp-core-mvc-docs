@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ##Platform_Name## Calendar
 
 This section briefly explains how to include the [ASP.NET MVC Calendar](https://www.syncfusion.com/aspnet-mvc-ui-controls/calendar) control in an ASP.NET MVC application using Visual Studio.
@@ -69,13 +68,13 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
-...
+    ...
     <!-- Syncfusion ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
@@ -85,7 +84,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Add ASP.NET MVC Calendar control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Calendar control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC Calendar](https://www.syncfusion.com/aspnet-mvc-ui-controls/calendar) control in `~/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -100,6 +99,8 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ## Setting the value within min and max dates
 
 After rendering a simple Calendar control by following the above steps, configure the Calendar to set a value within a specific range using its value, min, and max properties.
+
+After rendering a simple Calendar control by following the above steps, configure the Calendar to set a value within a specific range using its [`value`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Value), [`min`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Min), and [`max`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Max) properties.
 
 Here, the Calendar allows selecting a date within the range from the 5th to the 27th of this month.
 
