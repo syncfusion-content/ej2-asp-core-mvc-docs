@@ -11,26 +11,26 @@ documentation: ug
 
 # Data Binding in ##Platform_Name## MultiSelect
 
-The MultiSelect loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DataSource) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
+The MultiSelect loads data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DataSource) property. It accepts data of type `array` or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 
 The MultiSelect also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html) adaptors.
 
-| Fields | Type | Description |
-|------|------|-------------|
-| text |  `string` | Specifies the display text of each list item. |
-| value |  `number or string` | Specifies the hidden data value mapped to each list item that should contain a unique value. |
-| groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
-| iconCss |  `string` | Specifies the icon class of each list item. |
+| Field | Type | Description |
+| --- | --- | --- |
+| text | `string` | Specifies the display text of each list item. |
+| value | `number or string` | Specifies the hidden data value mapped to each list item; it should contain a unique value. |
+| groupBy | `string` | Specifies the category under which the list item is grouped. |
+| iconCss | `string` | Specifies the icon class of each list item. |
 
-N> When binding complex data to the MultiSelect, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+N> When binding complex data to the MultiSelect, fields must be mapped correctly. Otherwise, the selected item is undefined.
 
 ## Binding local data
 
-Local data can be represented in two ways as described below.
+Local data can be represented in one of the following ways.
 
-### 1. Array of string
+### 1. Array of strings
 
-The MultiSelect has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
+The MultiSelect supports loading an array of primitive data such as strings and numbers. Here, both the value and text fields act the same.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -57,11 +57,11 @@ The MultiSelect has support to load array of primitive data such as strings and 
 
 
 
-### 2. Array of object
+### 2. Array of objects
 
-The MultiSelect can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Fields) property.
+The MultiSelect can generate its list items from an array of complex data. For this, the appropriate columns must be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Fields) property.
 
-In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, the `Id` and `Game` columns from the complex data are mapped to the `value` and `text` fields, respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -88,11 +88,11 @@ In the following example, `Id` column and `Game` column from complex data have b
 
 
 
-### 3. Array of complex object
+### 3. Array of complex objects
 
-The MultiSelect can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Fields) property.
+The MultiSelect can generate its list items from an array of complex data with nested objects. For this, the appropriate columns must be mapped to the [`fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Fields) property using dot notation.
 
-In the following example, `Code.Id` column and `Country.CountryId` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, the `Code.Id` and `Country.CountryId` columns from the complex data are mapped to the `value` and `text` fields, respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -121,9 +121,9 @@ In the following example, `Code.Id` column and `Country.CountryId` column from c
 
 ## Binding remote data
 
-The MultiSelect supports retrieval of data from remote data services with the help of `DataManager` control. The `Query` property is used to fetch data from the database and bind it to the MultiSelect.
+The MultiSelect supports retrieval of data from remote data services with the help of the `DataManager` control. The [Query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Query) property is used to fetch data from the data source and bind it to the MultiSelect.
 
-The following sample displays the first 6 contacts from “Customers” table of the `Northwind` Data Service.
+The following sample displays the first 6 contacts from the **Customers** table of the `Northwind` data service.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -150,9 +150,9 @@ The following sample displays the first 6 contacts from “Customers” table of
 
 
 
-### Bind to URL Adaptor
+### Bind to URL adaptor
 
-The MultiSelect supports retrieval of data from URL adaptor.
+The MultiSelect supports retrieval of data through the `UrlAdaptor`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -179,9 +179,9 @@ The MultiSelect supports retrieval of data from URL adaptor.
 
 
 
-### Web API Adaptor
+### Web API adaptor
 
-Use the `WebApiAdaptor` to bind MultiSelect with Web API created using OData.
+Use the `WebApiAdaptor` to bind the MultiSelect to a Web API created using OData.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -210,9 +210,9 @@ Use the `WebApiAdaptor` to bind MultiSelect with Web API created using OData.
 
 ### Binding with OData services
 
-`OData` is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager.
+`OData` is a standardized protocol for creating and consuming data. You can retrieve data from an OData service using the `DataManager`.
 
-The following example for remote data binding using OData service.
+The following example shows remote data binding using an OData service.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -241,9 +241,9 @@ The following example for remote data binding using OData service.
 
 ### Offline mode
 
-To avoid post back for every action, set the MultiSelect to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `DataManager`.
+To avoid a postback for every action, set the MultiSelect to load all data on initialization and process actions on the client. To enable this behavior, use the `Offline` property of `DataManager`.
 
-The following example for remote data binding and enabled offline mode.
+The following example shows remote data binding with offline mode enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -270,8 +270,8 @@ The following example for remote data binding and enabled offline mode.
 
 
 
-## See Also
+## See also
 
-* [How to load data using template](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/templates#item-template)
-* [How to group the data using header](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/grouping)
+* [How to load data using a template](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/templates#item-template)
+* [How to group the data using a header](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/grouping)
 * [How to filter the bound data](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/templates)

@@ -10,9 +10,9 @@ documentation: ug
 
 # How to customize scroll step in ##Platform_Name## Toolbar
 
-Toolbar supports to customize the scrolling distance when you click the left and right side navigation icons. we can customize `ScrollStep` property for scrolling distance. Refer to the following code example.
+You can customize the scrolling distance of the Toolbar when you click the left and right navigation icons. The `ScrollStep` property determines the distance, in pixels, that the Toolbar scrolls each time a navigation icon is clicked. Set the `ScrollStep` property to the required numeric value to customize the scrolling distance.
 
-By using Toolbar scrollStep property, pass a required value to customize toolbar scrollStep.
+Refer to the following code example. In this example, the `ScrollStep` property is set to `50`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,4 +36,3 @@ By using Toolbar scrollStep property, pass a required value to customize toolbar
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-

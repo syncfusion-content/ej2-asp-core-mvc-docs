@@ -11,9 +11,9 @@ documentation: ug
 
 # Checkbox in ##Platform_Name## MultiSelect
 
-The MultiSelect has built-in support to select multiple values through checkbox, when [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Mode) property set as `CheckBox`.
+The MultiSelect has built-in support to select multiple values through a checkbox when the [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Mode) property is set to `CheckBox`.
 
-To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
+To use the checkbox selection, inject the `CheckBoxSelection` module into the MultiSelect.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,13 +40,13 @@ To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
 
 
 
-## Select All
+## Select all
 
-The MultiSelect control has in-built support to select the all list items using `Select All` options in the header.
+The MultiSelect control has built-in support to select all list items using a **Select All** option in the header.
 
-When the [showSelectAll](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ShowSelectAll) property is set to true, by default Select All text will show. You can customize the name attribute of the Select All option by using [selectAllText](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_SelectAllText).
+When the [showSelectAll](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ShowSelectAll) property is set to true, the **Select All** text is shown by default. You can customize the text of the **Select All** option by using [selectAllText](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_SelectAllText).
 
-For the unSelect All option, by default unSelect All text will show. You can customize the name attribute of the unSelect All option by using `unSelectAllText`.
+For the **Unselect All** option, the default text is **Unselect All**. You can customize the text of the **Unselect All** option by using `unSelectAllText`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,9 +73,9 @@ For the unSelect All option, by default unSelect All text will show. You can cus
 
 
 
-## Selection Limit
+## Selection limit
 
-Defines the limit of the selected items using [maximumSelectionLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_MaximumSelectionLength).
+Defines the upper limit of the selected items using [maximumSelectionLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_MaximumSelectionLength).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -102,9 +102,9 @@ Defines the limit of the selected items using [maximumSelectionLength](https://h
 
 
 
-## Selection Reordering
+## Selection reordering
 
-Using [enableSelectionOrder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_EnableSelectionOrder) to Reorder the selected items in popup visibility state.
+Use [enableSelectionOrder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_EnableSelectionOrder) to reorder the selected items in popup visibility state.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -131,9 +131,9 @@ Using [enableSelectionOrder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 
 
-## See Also
+## See also
 
 * [How to bind the data](./data-binding)
 * [How to filter the bound data](./filtering)
-* [How to add custom value to the MultiSelect](./custom-value)
-* [How to render checkbox in grouping to the MultiSelect](./grouping#grouping-with-checkbox).
+* [How to add a custom value to the MultiSelect](./custom-value)
+* [How to render checkbox grouping in the MultiSelect](./grouping#grouping-with-checkbox)

@@ -8,16 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Accessibility in Calendar Control
 
-The web accessibility makes web content and web applications more accessible for disabled people. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies.
+Web accessibility makes web content and web applications more accessible to people with disabilities. It is especially important for dynamic content changes and the development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies.
 
-The Calendar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Calendar control follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Calendar component is outlined below.
+The accessibility compliance for the Calendar control is outlined below.
 
-| Accessibility Criteria | Compatibility |
+| Accessibility criteria | Compatibility |
 | -- | -- |
 | [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | AA |
 | [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> |
@@ -27,7 +26,6 @@ The accessibility compliance for the Calendar component is outlined below.
 | [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-
 
 <style>
     .post .post-content img {
@@ -41,19 +39,19 @@ The accessibility compliance for the Calendar component is outlined below.
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
-## WAI-ARIA attributes 
+## WAI-ARIA attributes
 
-Calendar provides built-in compliance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA support is achieved through attributes like `aria-label`, `aria-selected`, `aria-disabled`, and `aria-activedescendant` applied for navigation buttons, and disable and active day cells.
+The Calendar control provides built-in compliance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA support is achieved through attributes such as **aria-label**, **aria-selected**, **aria-disabled**, and **aria-activedescendant** applied to navigation buttons and disabled or active day cells.
 
 It helps disabled persons by providing information about the widget for assistive technology in the screen readers. Calendar control contains grid role and grid cell for each day cell.
 
-* **Aria-label**: This attribute provides text labels for an object for the previous and next month's elements. It helps the screen reader object to read.
+* **aria-label**: This attribute provides text labels for an object for the previous and next month's elements. It helps the screen reader object to read.
 
-* **Aria-selected**: Indicates the currently selected date of the Calendar control.
+* **aria-selected**: Indicates the currently selected date of the Calendar control.
 
-* **Aria-disabled**: Indicates the disabled state of the Calendar control.
+* **aria-disabled**: Indicates the disabled state of the Calendar control.
 
-* **Aria-activedescendent**: Helps in managing the current active child of the Calendar control.
+* **aria-activedescendant**: Helps in managing the current active child of the Calendar control.
 
 * **Role**: Gives information to assistive technologies about how to handle each element in a widget.
 
@@ -67,7 +65,7 @@ It supports the following list of shortcut keys:
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Upper Arrow</kbd>  | Focuses the same day of the previous week. |
+| <kbd>Up Arrow</kbd>  | Focuses the same day of the previous week. |
 | <kbd>Down Arrow</kbd>  | Focuses the same day of the next week. |
 | <kbd>Left Arrow</kbd>  | Focuses the day before. |
 | <kbd>Right Arrow</kbd>  | Focuses the next day. |
@@ -78,7 +76,7 @@ It supports the following list of shortcut keys:
 | <kbd>Enter</kbd>  | Selects the currently focused date. |
 | <kbd>Shift + Page Up</kbd>  | Focuses the same date for the previous year. |
 | <kbd>Shift + Page Down</kbd>  | Focuses the same date for the next year. |
-| <kbd>Control + Upper Arrow</kbd>  | Moves to the inner level of view like month to year and year to decade. |
+| <kbd>Control + Up Arrow</kbd>  | Moves to the inner level of view like month to year and year to decade. |
 | <kbd>Control + Down Arrow</kbd>  | Moves out from the depth level view like decade to year and year to month. |
 | <kbd>Control + Home</kbd>  | Focuses the first date of the current year. |
 | <kbd>Control + End</kbd>  | Focuses the last date of the current year. |
@@ -109,9 +107,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG
 
 ## Ensuring accessibility
 
-The Calendar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Calendar control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Calendar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/calendar.html) in a new window to evaluate the accessibility of the Calendar component with accessibility tools.
+The accessibility compliance of the Calendar control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/calendar.html) in a new window to evaluate the accessibility of the Calendar control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/calendar.html" %}
 
