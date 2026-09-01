@@ -97,7 +97,7 @@ This is achieved by setting the [AllowSorting](https://help.syncfusion.com/cr/as
 
 ## Custom sorting
 
-The Data Grid supports custom sorting through the [Column.SortComparer](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_SortComparer)property, providing complete control over how values are ordered within a column.
+The Data Grid supports custom sorting through the [Column.SortComparer](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_SortComparer) property, providing complete control over how values are ordered within a column.
 
 Custom sorting can be used when the required sort order differs from standard alphabetical or numerical sorting. This is useful for scenarios that require custom rankings, status-based ordering, priority sequencing, locale-aware comparisons, display-value sorting, or specialized handling of null values.
 
