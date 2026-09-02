@@ -158,7 +158,7 @@ The following example demonstrates sorting with a foreign key column enabled, wh
 
 ### Sort foreign key column based on text for remote data
 
-In the case of remote data in the grid, the sorting operation will be performed based on the `ForeignKeyField` property of the column. The `ForeignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The Grid will send a request to the server-side with the `ForeignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
+In the case of remote data in the grid, the sorting operation will be performed based on the `ForeignKeyField` property of the column. The `ForeignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The grid will send a request to the server-side with the `ForeignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
 
 The following example demonstrates sorting a foreign key column where the "Employee ID column is a foreign key, and the corresponding "First Name column is displayed from the employee data source:
 
@@ -243,7 +243,7 @@ The following example demonstrates removing sort columns. The `DropDownList` com
 
 ### Clear sorting 
 
-Sorting is cleared on an external button click using the `clearSorting` method provided by the Grid component. This method clears the sorting applied to all columns in the grid. 
+Sorting is cleared on an external button click using the `clearSorting` method provided by the grid component. This method clears the sorting applied to all columns in the grid. 
 
 The following example demonstrates clearing sorting using the `clearSorting` method in an external button click.
 
@@ -266,7 +266,7 @@ The Data Grid component provides two events that are triggered during the sortin
 
 2. **ActionComplete**: [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event is triggered after the sorting action is completed. It provides a way to perform any necessary operations after the sorting action has taken place. This event provides a parameter that contains the current grid state, including the sorted data and column information.
 
-This example demonstrates that the `ActionBegin` event is used to cancel sorting for the "OrderID" column, while the `ActionComplete` event displays a message after the sorting action finishes.
+This example demonstrates that the `ActionBegin` event is used to cancel sorting for the "Order ID" column, while the `ActionComplete` event displays a message after the sorting action finishes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
