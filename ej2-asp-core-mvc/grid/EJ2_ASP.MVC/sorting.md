@@ -118,7 +118,7 @@ The following example demonstrates defining a custom `SortComparer` function for
 
 ### Display null values always at bottom 
 
-By default, "null" values in a Syncfusion Grid are displayed at the top when sorting in descending order and at the bottom when sorting in ascending order. However, "null" values can be configured to always display at the bottom of the grid regardless of sort direction. This is achieved by utilizing the [Column.SortComparer](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_SortComparer)  method. This feature is particularly useful when working with data sets where "null" values might need to be clearly separated from actual data entries.
+By default, "null" values in a ASP.NET MVC Data Grid are displayed at the top when sorting in descending order and at the bottom when sorting in ascending order. However, "null" values can be configured to always display at the bottom of the grid regardless of sort direction. This is achieved by utilizing the [Column.SortComparer](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_SortComparer)  method. This feature is particularly useful when working with data sets where "null" values might need to be clearly separated from actual data entries.
 
 The example below demonstrates displaying "null" values at the bottom of the grid while sorting the "Order Date" column in both ascending and descending order.
 
