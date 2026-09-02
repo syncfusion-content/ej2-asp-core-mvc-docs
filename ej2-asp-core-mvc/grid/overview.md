@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Overview | Syncfusion
+title: ##Platform_Name## Data Grid Overview | Syncfusion
 description: Learn how to use ##Platform_Name## Data Grid to display and manage tabular data with data binding, paging, sorting, filtering, editing, and templates.
 platform: ej2-asp-core-mvc
 control: Index
@@ -69,7 +69,7 @@ The ##Platform_Name## Data Grid includes key features that make it easier to wor
 - **[Sorting](./sorting)** - Arrange records in ascending or descending order to quickly identify trends and patterns.
 - **[Filter bar](./filtering/filter-bar)** - Apply inline text filters in column headers for immediate results without dialogs.  
 - **[Filter menu](./filtering/filter-menu)** - Use advanced filtering with complex conditions and multiple criteria for powerful expression-based queries. 
-- **[Excel-like filter](./excel-like-filter)** - Filter with a familiar checkbox interface, allowing multi-select from available values.  
+- **[Excel-like filter](./filtering/excel-like-filter)** - Filter with a familiar checkbox interface, allowing multi-select from available values.  
 - **[Searching](./searching)** - Perform rapid text-based searches across one or multiple columns for global or column-specific results. 
 - **[Grouping](./grouping/grouping)** - Organize records into categories with multi-level hierarchical grouping for better comprehension. 
 - **[Aggregates](./aggregates/aggregates)** - Calculate and display summary values (sum, average, min, max, custom metrics) to gain real-time insights.
@@ -93,8 +93,9 @@ Multiple editing modes support different workflow scenarios:
 | **[Batch editing](./editing/batch-editing)** | Make multiple changes before saving them together | High-volume editing | Efficient commits with fewer server requests |
 | **[Cell editing](./editing/cell-editing)** | Edit individual cells within the grid | Frequent data entry, precision-focused editing | Precise cell-level editing and rapid data updates |
 
-**[Data validation](./editing/validation)**:
-Built-in validation rules such as required fields, minimum and maximum values, and numeric-only checks ensure consistent data accuracy. In addition, custom validation rules provide flexibility to define tailored logic for specific business requirements, validating input before changes are saved.
+**Data validation**
+
+Built-in [validation](./editing/validation) rules such as required fields, minimum and maximum values, and numeric-only checks ensure consistent data accuracy. In addition, custom validation rules provide flexibility to define tailored logic for specific business requirements, validating input before changes are saved.
 
 ## Columns
 
@@ -125,17 +126,17 @@ The ##Platform_Name## Data Grid delivers accessible, customizable data experienc
 
 **Selection**
 
-- **[Row selection](./selection/row-selection)** - Select single or multiple rows for flexible workflows  
-- **[Checkbox selection](./selection/check-box-selection)** - Use checkboxes with select-all for bulk operations  
-- **[Cell selection](./selection/cell-selection)** - Choose individual cells or ranges with spreadsheet-like interaction  
+- **[Row selection](./selection/row-selection)** - Select single or multiple rows for flexible workflows.  
+- **[Checkbox selection](./selection/check-box-selection)** - Use checkboxes with select-all for bulk operations.  
+- **[Cell selection](./selection/cell-selection)** - Choose individual cells or ranges with spreadsheet-like interaction.  
 - **[Persist selection](./selection/selection#persist-selection)** - Retain selections across sorting, filtering, and paging.
 
 **Accessibility and keyboard navigation**
 
 The Data Grid is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
 
-- **[WCAG compliance](./accessibility)** - Level AA accessibility standards
-- **[Keyboard shortcuts](./accessibility#keyboard-interaction)** - Complete grid operation via keyboard
+- **[WCAG compliance](./accessibility)** - Level AA accessibility standards.
+- **[Keyboard shortcuts](./accessibility#keyboard-interaction)** - Complete grid operation via keyboard.
   - Tab/Shift+Tab - Navigate between cells.
   - Arrow Keys - Move between rows and columns.
   - Enter - Update cells, confirm changes.
@@ -176,7 +177,7 @@ For specific implementation patterns, refer to feature documentation:
 
 ## Themes and styling
 
-Match the ##Platform_Name## Data Grid to the application's visual design using built-in themes and customization options. Supported themes are:
+Match the ##Platform_Name## Data Grid to the application's visual design using [built-in themes](../appearance-and-styling/appearance-styling) and customization options. Supported themes are:
 
 - Fluent 2
 - Material 3
@@ -194,8 +195,6 @@ Match the ##Platform_Name## Data Grid to the application's visual design using b
 
 {% endif %}
 
-[Explore themes and styling](../appearance-and-styling/appearance-styling)
-
 ## Quick links
 
 **Getting started:**
@@ -208,7 +207,7 @@ Match the ##Platform_Name## Data Grid to the application's visual design using b
 - [Export and reporting](./excel-export/excel-exporting)
 - [Data validation](./editing/validation)
 
-**Advanced features**
+**Advanced features:**
 - [DOM Virtualization](./scrolling/dom-virtualization)
 - [State management](./state-management)
 - [Hierarchical Grid](./hierarchy-grid)
