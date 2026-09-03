@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons and Navigation in ##Platform_Name## Context Menu
-
+# Icons and Navigation in ASP.NET MVC Context Menu Control
+ 
 ## Icons
 
-The ContextMenu item has an icon or image in it to provide visual representation of the action. To place the icon on a menu item, set the [`IconCss`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_IconCss) property to e-icons with the required icon CSS. By default, the icon is positioned to the left side of the menu item. In the following sample, the icons for Cut, Copy and Paste menu items are added using the `IconCss`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_IconCss) property.
+A Context Menu item can display an icon or image to visually represent its action. To place the icon on a menu item, set the [`iconCss`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_IconCss) property to the icon class (For example, `e-icons`) with the required icon CSS. By default, the icon is positioned to the left side of the menu item. In the following sample, the icons for Cut, Copy and Paste menu items are added using the [iconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_IconCss) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,11 +39,11 @@ The ContextMenu item has an icon or image in it to provide visual representation
 
 
 
-N> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the contextmenu menuItems using the [`IconCss`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_IconCss) property.
+N> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides a set of icons that can be loaded by applying the `e-icons` class name to the element. You can also use third-party icons on the context menu items using the [`IconCss`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_IconCss) property.
 
 ## Navigation
 
-Navigation in ContextMenu is used to navigate to the other web page when menu item is clicked. This can be achieved by providing link to the menu item using the [`url`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_Url) property. In the following sample, Navigation URL for Flipkart, Amazon, and Snapdeal menu items are added using the `url` property.
+Navigation in ContextMenu is used to navigate to another web page when a menu item is clicked. This can be achieved by providing a link to the menu item using the [`url`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_Url) property. In the following sample, Navigation URLs for the Flipkart, Amazon, and Snapdeal menu items are added using the `url` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
