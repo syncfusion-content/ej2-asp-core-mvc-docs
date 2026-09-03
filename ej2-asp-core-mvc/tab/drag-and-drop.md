@@ -56,7 +56,7 @@ Output be like the below.
 
 It is possible to drag and drop the Tab items between two tabs, by manually saving those dropped items as new Tab item data through the `addTab` method of Tab and removing the dragged item through the `removeTab` method of Tab.
 
-In this example, we have used the Tabs control as an external source, and the item from the Tabs control is dragged and dropped onto another Tab. Therefore, it is necessary to use the `onDragStart` and `dragged` event of the Tabs control, where we can form an event object and save it using the `addTab` method of the Tab and remove the dragged item through `removeTab` method of Tab using the dragged item index.
+In this example, we have used the Tabs control as an external source, and the item from the Tabs control is dragged and dropped onto another Tab. Therefore, it is necessary to use the [onDragStart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_OnDragStart) and [dragged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_Dragged) event of the Tabs control, where we can form an event object and save it using the `addTab` method of the Tab and remove the dragged item through `removeTab` method of Tab using the dragged item index.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -89,7 +89,7 @@ Output be like the below.
 
 It is possible to drag and drop the items to any of the external sources from the Tab, by manually saving those dropped items as new node data through the `addNodes` method of Treeview and removing the dragged item through the `removeTab` method of Tab.
 
-In this example, we have used the Treeview control as an external source, and the item from the Tabs control is dragged and dropped onto the child nodes of the Treeview control. Therefore, it is necessary to use  the `dragged` event of the Tabs control, where we can form an event object and save it using the `addNodes` method of the Treeview and remove the dragged item through the `removeTab` method of Tab using the dragged item index.
+In this example, we have used the Treeview control as an external source, and the item from the Tabs control is dragged and dropped onto the child nodes of the Treeview control. Therefore, it is necessary to use  the [dragged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_Dragged) event of the Tabs control, where we can form an event object and save it using the `addNodes` method of the Treeview and remove the dragged item through the `removeTab` method of Tab using the dragged item index.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

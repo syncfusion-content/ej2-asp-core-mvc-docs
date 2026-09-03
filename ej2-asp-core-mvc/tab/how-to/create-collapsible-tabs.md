@@ -15,7 +15,7 @@ You can implement collapse and expand functionality in the Tab by adding/removin
 
 * Define a CSS class to set the style property display as none. Here `collapse` class is added to the content element for hiding it.
 * Bind the [selected](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.navigations.tab.html#Syncfusion_EJ2_Navigations_Tab_Selected) event for Tab to collapse the initially selected Tab item and bind custom click handler for the Tab headers.
-* n the event handler, add or remove the `collapse` class to show or hide the corresponding Tab content.
+* In the event handler, add or remove the `collapse` class to show or hide the corresponding Tab content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
