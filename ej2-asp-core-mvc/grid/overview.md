@@ -137,11 +137,12 @@ The Data Grid is fully accessible and compliant with Web Content Accessibility G
 
 - **[WCAG compliance](./accessibility)** - Level AA accessibility standards.
 - **[Keyboard shortcuts](./accessibility#keyboard-interaction)** - Complete grid operation via keyboard.
-  - Tab/Shift+Tab - Navigate between cells.
-  - Arrow Keys - Move between rows and columns.
-  - Enter - Update cells, confirm changes.
-  - Escape - Cancel editing.
-  - Ctrl+A - Select all rows.
+  - <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> - Navigate between cells.
+  - <kbd>→</kbd> | <kbd>←</kbd>  -  Navigate header and content cells across columns or rows using the left or right arrow keys.
+  - <kbd>↑</kbd> | <kbd>↓</kbd>  -  Navigate header and content cells across columns or rows using the up or down arrow keys.
+  - <kbd>Enter</kbd> - Update cells, confirm changes.
+  - <kbd>Escape</kbd> - Cancel editing.
+  - <kbd>Ctrl</kbd> + <kbd>A</kbd> - Select all rows.
 - **[Screen reader support](./accessibility)** - Full compatibility with assistive technologies.
 - **[Semantic HTML](./accessibility)** - Proper ARIA labels and semantic markup.
 
