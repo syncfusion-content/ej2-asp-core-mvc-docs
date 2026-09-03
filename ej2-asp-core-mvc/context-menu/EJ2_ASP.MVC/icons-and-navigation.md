@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons and Navigation in ##Platform_Name## Context Menu
+# Icons and Navigation in ASP.NET MVC Context Menu
  
 ## Icons
 
