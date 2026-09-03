@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in ##Platform_Name## Query Builder | Syncfusion
-description: Learn how to bind local and remote data sources to ##Platform_Name## Query Builder using DataManager, OData, Web API, UrlAdaptor, and Grid integration.
+description: Learn how to bind local and remote data sources to ##Platform_Name## Query Builder using DataManager, OData services, Web API, UrlAdaptor, and Grid integration.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Data Binding in ##Platform_Name## Query Builder
 
-The Query Builder uses `DataManager` to bind the data source, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_DataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kinds of data binding method.
+The Query Builder uses `DataManager` to bind the data source, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_DataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kinds of data binding methods.
 
 * Local data
 * Remote data
@@ -49,7 +49,7 @@ N> By default, DataManager uses JsonAdaptor for local data-binding.
 
 ## Remote data
 
-To bind remote  data to the query builder, assign service data as an instance of  `DataManager` to the [`DataSource`](https://ej2.syncfusion.com/documentation/api/query-builder#datasource) property. To interact with remote data source, provide the endpoint `url`.
+To bind remote data to the query builder, assign service data as an instance of `DataManager` to the [`dataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_DataSource) property. To interact with remote data source, provide the endpoint `url`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,7 +80,7 @@ N> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
 
 ### Binding with OData services
 
-[`OData`](https://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
+[`OData`](https://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote data binding using OData service.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -167,7 +167,7 @@ You can use `WebApiAdaptor` to bind query builder with Web API created using ODa
 
 ### Url adaptor
 
-You can use the UrlAdaptor of DataManager when binding data source from remote data. In the initial load of querybuilder, data are fetched from remote data and bound to the querybuilder using url property of DataManager.
+You can use the UrlAdaptor of DataManager when binding data source from remote data. On the initial load of the query builder, data is fetched from a remote data source and bound to the query builder using the `url` property of DataManager.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -196,7 +196,7 @@ You can use the UrlAdaptor of DataManager when binding data source from remote d
 
 ## Support with Data Manager
 
-You can use the created conditions in DataManager through the `GetPredicate` method, which results the filtered records.
+You can use the created conditions in DataManager through the `getPredicate` method, which returns the filtered records.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
