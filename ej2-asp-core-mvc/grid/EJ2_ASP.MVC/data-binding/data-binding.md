@@ -196,11 +196,11 @@ The following steps describe binding a `DataTable` to the Grid:
 {% endhighlight %}
 {% endtabs %}
 
-N> `DataTable` will be supported from .Net Core 2.0. 
+> `DataTable` will be supported from .NET Core 2.0. 
 
 ### DataTable with on-demand Grid actions
 
-The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Syncfusion ASP.NET MVC Grid enables server-side processing of Grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
+The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Data Grid enables server-side processing of Grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
 
 To implement on-demand server-side actions with a DataTable:
 

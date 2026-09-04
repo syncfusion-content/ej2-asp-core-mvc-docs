@@ -20,11 +20,11 @@ For proper functionality, the server response must include two key properties:
 
 ## Bind remote data using DataManager
 
-The Data Grid uses the DataManager library to connect with external data services or databases such as REST APIs, Web APIs, OData services, and GraphQL endpoints. The DataManager provides a unified interface for communication between the grid and different backends.
+The Data Grid uses the DataManager library to connect with external data services or databases such as REST APIs, Web APIs, OData services, and GraphQL endpoints. The DataManager provides a unified interface for communication between the grid and different backend services.
 
 The DataManager relies on adaptors to establish the connection between the data service and the grid. Adaptors define the manner in which requests are generated and responses are processed, ensuring that operations such as paging, sorting, filtering, grouping, and searching follow a consistent pattern.
 
-Adaptors also provide native query support, automatically formatting requests in the expected structure. For example, the `ODataAdaptor` generates queries in OData format, while the `GraphQLAdaptor` builds queries according to GraphQL schema definitions. Server responses are then mapped into the grid’s required format (result and count), ensuring predictable integration across different backends.
+Adaptors also provide native query support, automatically formatting requests in the expected structure. For example, the `ODataAdaptor` generates queries in OData format, while the `GraphQLAdaptor` builds queries according to GraphQL schema definitions. Server responses are then mapped into the grid’s required format (result and count), ensuring predictable integration across different backend services.
 
 | Integration type | Description | Learn more |
 |------------------|-------------|------------|

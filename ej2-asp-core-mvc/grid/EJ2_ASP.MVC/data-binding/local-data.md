@@ -68,7 +68,7 @@ To achieve data binding and perform CRUD actions using Fetch requests in the Gri
 
 A. To bind data from an external Fetch request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Grid. Fetch data from the server and provide it to the `DataSource` property using the `onSuccess` event of the Fetch request.
 
-B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. The default CRUD operations can be cancelled by utilizing the **cancel** argument provided by this event. This allows dynamic calling of the server-side method using Fetch, along with the relevant data received from the `ActionBegin` event, to update the server data accordingly.
+B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. The default CRUD operations can be canceled by utilizing the **cancel** argument provided by this event. This allows dynamic calling of the server-side method using Fetch, along with the relevant data received from the `ActionBegin` event, to update the server data accordingly.
 
 C. In the Fetch success event, there is flexibility to utilize the Grid `endEdit` and `deleteRecord` methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `ActionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, a flag variable can be employed and managed within the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) and Fetch failure events: The following code snippet demonstrates this approach:
 
@@ -315,7 +315,7 @@ To achieve data binding and perform CRUD actions using AJAX requests in the Grid
 
 A. To bind data from an external AJAX request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Grid. Fetch AJAX data from the server and provide it to the `DataSource` property using the `onSuccess` event of the AJAX request.
 
-B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. The default CRUD operations can be cancelled by utilizing the **cancel** argument provided by this event. This allows dynamic calling of the server-side method using AJAX, along with the relevant data received from the `ActionBegin` event, to update the server data accordingly.
+B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. The default CRUD operations can be canceled by utilizing the **cancel** argument provided by this event. This allows dynamic calling of the server-side method using AJAX, along with the relevant data received from the `ActionBegin` event, to update the server data accordingly.
 
 C. In the AJAX success event, there is flexibility to utilize the Grid `endEdit` and `deleteRecord` methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `ActionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, a flag variable can be employed and managed within the `ActionComplete` and AJAX failure events: The following code snippet demonstrates this approach:
 
@@ -335,7 +335,7 @@ C. In the AJAX success event, there is flexibility to utilize the Grid `endEdit`
    let flag = false;
    document.getElementById('sample').onclick = function () {
        var grid = document.getElementById("grid").ej2_instances[0];
-       const ajax = new ej.base.Ajax("/Home/Getdata", 'POST');
+       var ajax = new ej.base.Ajax("/Home/Getdata", 'POST');
        ajax.send();
         ajax.onSuccess = (data) => {
             grid.dataSource = JSON.parse(data);
@@ -438,15 +438,15 @@ namespace AJAXRequest.Controllers
 
         public ActionResult Update(OrdersDetails value)
         {
-            var ord = value;
+            var order = value;
             OrdersDetails val = OrdersDetails.GetAllRecords().Where(or => or.OrderID == ord.OrderID).FirstOrDefault();
-            val.OrderID = ord.OrderID;
-            val.EmployeeID = ord.EmployeeID;
-            val.CustomerID = ord.CustomerID;
-            val.Freight = ord.Freight;
-            val.OrderDate = ord.OrderDate;
-            val.ShipCity = ord.ShipCity;
-            val.ShipCountry = ord.ShipCountry;
+            val.OrderID = order.OrderID;
+            val.EmployeeID = order.EmployeeID;
+            val.CustomerID = order.CustomerID;
+            val.Freight = order.Freight;
+            val.OrderDate = order.OrderDate;
+            val.ShipCity = order.ShipCity;
+            val.ShipCountry = order.ShipCountry;
             return Json(value);
         }
 
@@ -503,11 +503,15 @@ namespace AJAXRequest.Models
             int code = 10000;
             for (int i = 1; i < 10; i++)
             {
-                order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
-                order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
-                order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
-                order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
-                order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+                order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Hanar Bistro", "Denmark", new DateTime(1996, 7, 16), "Central Street 6"));
+
+                order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Kitchen", "Brazil", new DateTime(1996, 9, 11), "Central Avenue 123"));
+
+                order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Colchester", "Franklin Traders", "Germany", new DateTime(1996, 10, 7), "52 Central Avenue"));
+
+                order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Trading", "Austria", new DateTime(1996, 12, 30), "Market Street 7"));
+
+                order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Meats", "Switzerland", new DateTime(1997, 12, 3), "1029 12th Avenue South"));
                 code += 5;
             }
             return order;

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Custom Binding | Syncfusion
-description: Learn how to perform custom data binding in ##Platform_Name## Data Grid with remote data sources, delegate operations such as paging, sorting, filtering, and CRUD to external services, and manage data flow efficiently.
+description: Learn how to perform custom binding in ##Platform_Name## Data Grid with remote data sources, delegate operations, and manage data flow efficiently.
 platform: ej2-asp-core-mvc
 control: Custom Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## Custom binding
+# Custom Data Binding in ##Platform_Name## Data Grid
 
 The custom binding feature in the Data Grid enables managing a custom API for handling data processing externally and then binding the resulting data to the Grid. When using custom binding, the Data Grid expects the result to be an object with `result` (array of records to display) and `count` (total number of records) properties. 
 
@@ -283,7 +283,7 @@ export function getOrders(state, action) {
 
 **Lazy load grouping**
 
-In ASP.Net MVC, lazy loading refers to the technique of loading data dynamically when it is needed, instead of loading everything upfront. Lazy load grouping allows loading and displaying grouped data efficiently by fetching only the required data on demand. 
+Lazy loading refers to the technique of loading data dynamically when it is needed, instead of loading everything upfront. Lazy load grouping allows loading and displaying grouped data efficiently by fetching only the required data on demand. 
 
 To enable this feature, set the [GroupSettings.EnableLazyLoading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_EnableLazyLoading) property to `true`. Also, manage the state based on the initial grid action as follows.
 
@@ -464,7 +464,7 @@ The following screenshot represents the grid action with custom binding
 
 ## Creating an API service
 
-To configure a server with Syncfusion ASP.Net MVC Grid, follow the below steps:
+To configure a server with Data Grid, follow the below steps:
 
 **Step 1:** To create a new ASP.NET Web Application (.NET Framework) project named FetchRequest, follow these steps:
 
