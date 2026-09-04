@@ -181,7 +181,7 @@ export function getOrders(state, action) {
 }
 ```
 
-## Handling paging operation
+## Handling paging
 
 When paging operation is performed in the grid, the [dataStateChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event is triggered, and within this event, the following referenced arguments can be accessed.
 
@@ -227,7 +227,7 @@ export function getOrders(state, action) {
 }
 ```
 
-## Handling grouping operation
+## Handling grouping
 
 When grouping operation is performed in the grid, the [dataStateChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event is triggered, providing access to the following referenced arguments within the event.
 
@@ -359,7 +359,7 @@ export function getOrders(state, action) {
 
 > Further information can be accessed in the respective documentation for [lazy load grouping](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/lazy-load-grouping).
 
-## Handling CRUD operations
+## Handling CRUD
 
 The Data Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling data modification directly within the grid. This feature is useful for performing CRUD (**Create**, **Read**, **Update**, **Delete**) operations seamlessly.
 
