@@ -37,8 +37,8 @@ The ##Platform_Name## Data Grid integrates with modern application architectures
 - **[Custom API binding](./data-binding/remote-data#binding-observable-data-using-async-pipe)** - Connect the Data Grid to external APIs and data services with full control over request handling, response parsing, and data operations.
 
 - **ORM integration** - Seamless integration with popular Object-Relational Mapping frameworks eliminates custom data mapping code and enables LINQ-based queries.
-    - **[Entity Framework](./connecting-to-orm/entityframework)** - Integrate with Entity Framework and EF Core-based applications.
-    - **[Dapper](./connecting-to-orm/dapper)** - Connect to applications that use lightweight SQL-based data access.
+    - **[Entity Framework](./connecting-to-database/entityframework)** - Integrate with Entity Framework and EF Core-based applications.
+    - **[Dapper](./connecting-to-database/dapper)** - Connect to applications that use lightweight SQL-based data access.
 
 **Database compatibility**
 
