@@ -48,6 +48,18 @@ You can use the [responseItemTemplate](https://help.syncfusion.com/cr/aspnetcore
 
 ![ResponseTemplate](images/response-template.png)
 
+## Response animation template
+
+You can use the [responseAnimationTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_ResponseAnimationTemplate) property to display a custom loading indicator while the AI AssistView is generating the response. This template is shown in place of the response item until the response is ready, providing visual feedback to the user during streaming or delayed responses.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/templates/response-animation-template/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ResponseAnimationTemplate](images/response-animation-template.png)
+
 ## Prompt suggestion item template
 
 You can use the [promptSuggestionItemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptSuggestionItemTemplate) property to customize the prompt suggestion items in the AI AssistView. The template context includes the `index` and `promptSuggestion`.
