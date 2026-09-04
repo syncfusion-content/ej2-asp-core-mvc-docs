@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## Custom binding
+# Custom Data Binding in ASP.NET MVC Data Grid
 
 The custom binding feature in the Data Grid enables managing a custom API for handling data processing externally and then binding the resulting data to the Grid. When using custom binding, the Data Grid expects the result to be an object with `result` (array of records to display) and `count` (total number of records) properties. 
 
