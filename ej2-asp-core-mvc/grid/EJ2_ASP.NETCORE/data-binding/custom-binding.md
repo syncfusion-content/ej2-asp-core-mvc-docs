@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Custom Binding | Syncfusion
-description: Learn how to perform custom data binding in ##Platform_Name## Data Grid with remote data sources, delegate operations such as paging, sorting, filtering, and CRUD to external services, and manage data flow efficiently.
+description: Learn how to perform custom binding in ##Platform_Name## Data Grid with remote data sources, delegate operations, and manage data flow efficiently.
 platform: ej2-asp-core-mvc
 control: Custom Binding
 publishingplatform: ##Platform_Name##
@@ -181,7 +181,7 @@ export function getOrders(state, action) {
 }
 ```
 
-## Handling paging operation
+## Handling paging
 
 When paging operation is performed in the grid, the [dataStateChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event is triggered, and within this event, the following referenced arguments can be accessed.
 
@@ -227,7 +227,7 @@ export function getOrders(state, action) {
 }
 ```
 
-## Handling grouping operation
+## Handling grouping
 
 When grouping operation is performed in the grid, the [dataStateChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event is triggered, providing access to the following referenced arguments within the event.
 
@@ -283,7 +283,7 @@ export function getOrders(state, action) {
 
 In ASP.NET Core, lazy loading refers to the technique of loading data dynamically when it is needed, instead of loading everything upfront. Lazy load grouping allows loading and displaying grouped data efficiently by fetching only the required data on demand. 
 
-To enable this feature, set the [groupSettings.enableLazyLoading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_EnableLazyLoading) property to **true**. Also, manage the state based on the initial grid action as follows.
+To enable this feature, set the [groupSettings.enableLazyLoading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_EnableLazyLoading) property to `true`. Also, manage the state based on the initial grid action as follows.
 
 ```typescript
 const state = { skip:0, take: 12, group: { enableLazyLoading: true, columns: ['ProductName'], showGroupedColumn: true }};
@@ -359,7 +359,7 @@ export function getOrders(state, action) {
 
 > Further information can be accessed in the respective documentation for [lazy load grouping](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/lazy-load-grouping).
 
-## Handling CRUD operations
+## Handling CRUD
 
 The Data Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling data modification directly within the grid. This feature is useful for performing CRUD (**Create**, **Read**, **Update**, **Delete**) operations seamlessly.
 

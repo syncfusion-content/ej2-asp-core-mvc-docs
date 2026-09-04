@@ -14,7 +14,7 @@ Data binding is a fundamental technique that empowers the Data Grid component to
 
 The Data Grid utilizes the `DataManager`, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
 
-It supports following data binding methods:
+The Data Grid enables data binding through the following approaches:
 
 * [Local data](./local-data)
 * [Remote data](./remote-data)
@@ -196,11 +196,11 @@ The following steps describe binding a `DataTable` to the Grid:
 {% endhighlight %}
 {% endtabs %}
 
-N> `DataTable` will be supported from .Net Core 2.0. 
+> `DataTable` will be supported from .NET Core 2.0. 
 
 ### DataTable with on-demand Grid actions
 
-The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Syncfusion ASP.NET MVC Grid enables server-side processing of Grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
+The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Data Grid enables server-side processing of Grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
 
 To implement on-demand server-side actions with a DataTable:
 
