@@ -14,7 +14,7 @@ Data binding is a fundamental technique that empowers the Data Grid component to
 
 The [Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) utilizes the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started), which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
 
-The Data Grid supports three primary data binding methods:
+The Data Grid enables data binding through the following approaches:
 
 * [Local data](./local-data)
 * [Remote data](./remote-data)
