@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Azure Provider Docker Support in ##Platform_Name## File Manager
 
-The ##Platform_Name## File Manager is a component for managing files and folders in a web application. It provides a Windows Explorer-like interface for file operations such as viewing, selecting, uploading, downloading, sorting, filtering, creating, renaming, copying, moving, and deleting files and folders.
+The ##Platform_Name## File Manager is a control for managing files and folders in a web application. It provides a Windows Explorer-like interface for file operations such as viewing, selecting, uploading, downloading, sorting, filtering, creating, renaming, copying, moving, and deleting files and folders.
 
 This Docker image provides a preconfigured Docker container for the Syncfusion File Manager Azure file provider backend. The server-side Web API targets ASP.NET Core 10.0 and connects to Azure Blob Storage
 
@@ -89,9 +89,9 @@ docker compose down
 {% endhighlight %}
 {% endtabs %}
 
-### Step 4: Configure the client-side File Manager component
+### Step 4: Configure the client-side File Manager control
 
-Set the `url`, `uploadUrl`, `downloadUrl`, and `getImageUrl` properties in the client-side File Manager component:
+Set the `url`, `uploadUrl`, `downloadUrl`, and `getImageUrl` properties in the client-side File Manager control:
 
 | Property | Value |
 |----------|-------|
@@ -142,11 +142,11 @@ The following example shows the File Manager configured with the same AJAX endpo
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-For more information on how to get started with the File Manager component, refer to [Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started).
+For more information on how to get started with the File Manager control, refer to [Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started).
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-For more information on how to get started with the File Manager component, refer to [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/getting-started).
+For more information on how to get started with the File Manager control, refer to [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/getting-started).
 
 {% endif %}
 
