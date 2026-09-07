@@ -309,4 +309,4 @@ The following sample demonstrates a grid rendered with a customized sort icon.
 
 ## See Also
 
-* [How to perform own sorting logic in ASP.NET MVC Data Grid](https://www.syncfusion.com/forums/143523/how-to-perform-own-sorting-logic-in-asp-net-mvc-grid)
+* [How to perform own sorting logic in ASP.NET MVC Grid](https://www.syncfusion.com/forums/143523/how-to-perform-own-sorting-logic-in-asp-net-mvc-grid)
