@@ -439,7 +439,7 @@ namespace AJAXRequest.Controllers
         public ActionResult Update(OrdersDetails value)
         {
             var order = value;
-            OrdersDetails val = OrdersDetails.GetAllRecords().Where(or => or.OrderID == ord.OrderID).FirstOrDefault();
+            OrdersDetails val = OrdersDetails.GetAllRecords().Where(or => or.OrderID == order.OrderID).FirstOrDefault();
             val.OrderID = order.OrderID;
             val.EmployeeID = order.EmployeeID;
             val.CustomerID = order.CustomerID;

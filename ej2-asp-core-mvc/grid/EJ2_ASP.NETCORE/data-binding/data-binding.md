@@ -196,7 +196,7 @@ The following steps describe binding a `DataTable` to the Grid:
 {% endhighlight %}
 {% endtabs %}
 
-N> `DataTable` will be supported from .Net Core 2.0. 
+> `DataTable` will be supported from .NET Core 2.0. 
 
 ### DataTable with on-demand Grid actions
 
