@@ -1,0 +1,45 @@
+<button id="toggleGrouping" class="e-btn">Switch to Single Grouping</button>
+
+@Html.EJS().Grid("grid")
+    .DataSource((IEnumerable<object>)ViewBag.dataSource)
+    .Height("330px")
+    .AllowGrouping()
+    .GroupSettings(group =>
+    {
+        group.Columns(new string[] { "CustomerID", "Freight" });
+    })
+    .Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").Width("120")
+            .TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+        col.Field("OrderDate").HeaderText("Order Date").Width("130")
+            .TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+        col.Field("Freight").HeaderText("Freight").Width("120")
+            .Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+    })
+    .Render()
+
+<script>
+    var isMultipleGrouping = true;
+    var button = document.getElementById('toggleGrouping');
+
+   var isMultipleGrouping = true;
+var button = document.getElementById('toggleGrouping');
+
+button.addEventListener('click', function () {
+    var grid = document.getElementById('grid').ej2_instances[0];
+
+    grid.groupSettings.columns = [];
+
+    grid.groupSettings.columns = isMultipleGrouping
+        ? ['CustomerID']
+        : ['CustomerID', 'Freight'];
+
+    button.textContent = isMultipleGrouping
+        ? 'Switch to Multiple Grouping'
+        : 'Switch to Single Grouping';
+
+    isMultipleGrouping = !isMultipleGrouping;
+});
