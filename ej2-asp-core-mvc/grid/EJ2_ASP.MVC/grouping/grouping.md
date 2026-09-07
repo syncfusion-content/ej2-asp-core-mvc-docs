@@ -72,7 +72,7 @@ The following example demonstrates switching between single-column and multiple-
 
 ## Prevent grouping for particular column
 
-Some columns, such as those containing unique identifiers, may not require grouping. In such cases, grouping can be disabled by setting the [AllowGrouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping)property to `false` in the column configuration, preventing the column header from being placed in the group drop area.
+Some columns, such as those containing unique identifiers, may not require grouping. In such cases, grouping can be disabled by setting the [AllowGrouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to `false` in the column configuration, preventing the column header from being placed in the group drop area.
 
 The following example prevents grouping on the "Customer ID" column. While other columns can be grouped, "Customer ID" cannot be dragged to the group drop area.
 
@@ -233,7 +233,7 @@ The Data Grid supports external control of grouped row visibility through progra
 
 The Data Grid enables programmatic expand and collapse of all grouped rows using the `groupExpandAll` and `groupCollapseAll`methods.
 
-In the example below, the [Switch](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) component is used to control the visibility of grouped rows. When toggled, the [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change)event triggers the appropriate method to expand or collapse all groups accordingly.
+In the example below, the [Switch](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) component is used to control the visibility of grouped rows. When toggled, the [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event triggers the appropriate method to expand or collapse all groups accordingly.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
