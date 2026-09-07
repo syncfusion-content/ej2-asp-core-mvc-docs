@@ -68,6 +68,8 @@ The following example demonstrates switching between single-column and multiple-
 {% endhighlight %}
 {% endtabs %}
 
+![Single and multiple grouped columns](../images/grouping/grouping-single-multiple.gif)
+
 ## Prevent grouping for particular column
 
 Some columns, such as those containing unique identifiers, may not require grouping. In such cases, grouping can be disabled by setting the [allowGrouping](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to `false` in the column configuration, preventing the column header from being placed in the group drop area.
