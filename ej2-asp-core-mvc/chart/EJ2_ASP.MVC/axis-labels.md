@@ -96,6 +96,60 @@ When setting `LabelIntersectAction` as `Rotate90`
 
 
 
+When setting `labelIntersectAction` as `Rotate45WithTrim`, the labels trimmed when the available space is insufficient and rotated by 45 degrees.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/multiple/rotate45withtrim/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="rotate45withtrim.cs" %}
+{% include code-snippet/chart/axis/multiple/rotate45withtrim/rotate45withtrim.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/multiple/rotate45withtrim/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="rotate45withtrim.cs" %}
+{% include code-snippet/chart/axis/multiple/rotate45withtrim/rotate45withtrim.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+When setting `labelIntersectAction` as `Rotate90WithTrim`, the labels trimmed when the available space is insufficient and rotated vertically.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/multiple/rotate90withtrim/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="rotate90withtrim.cs" %}
+{% include code-snippet/chart/axis/multiple/rotate90withtrim/rotate90withtrim.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/multiple/rotate90withtrim/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="rotate90withtrim.cs" %}
+{% include code-snippet/chart/axis/multiple/rotate90withtrim/rotate90withtrim.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Axis Labels Positioning
 
 By default, the axis labels can be placed at `Outside` the axis line and this also can be placed at `Inside` the axis line using the `LabelPosition` property.
