@@ -20,8 +20,6 @@ This document provides information about the changes and new features included i
 
 - Updated the MCP server to support the latest 2026-07-28 Model Context Protocol (MCP) specification, ensuring compatibility with the newest protocol standards and capabilities.
 
-- Migrated the MCP Server implementation from the [@modelcontextprotocol/sdk](https://www.npmjs.com/package/@modelcontextprotocol/sdk) package to latest [@modelcontextprotocol/server](https://www.npmjs.com/package/@modelcontextprotocol/server).
-
 **(v1.0.0) - August 3, 2026**
 
 **Breaking Changes**
