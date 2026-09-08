@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+@Html.EJS().InlineAIAssist("inlinePrompt")
+    .SpeechToTextSettings(new InlineAIAssistSpeechToTextSettings
+    {
+        Enable = true,
+        TooltipSettings = new InlineAIAssistSpeechToTextTooltipSettings
+        {
+            TooltipText = "Start voice input",
+            StopTooltipText = "Stop voice input"
+        }
+    })
+    .Render()

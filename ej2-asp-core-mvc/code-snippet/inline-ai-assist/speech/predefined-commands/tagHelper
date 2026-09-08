@@ -1,0 +1,29 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+@{
+    var commandsData = new object[]
+    {
+        new { label = "Summarize", prompt = "Summarize the selected content.", iconCss = "e-icons e-collapse-2" },
+        new { label = "Shorten", prompt = "Shorten the selected content.", iconCss = "e-icons e-shorten" },
+        new { label = "Elaborate", prompt = "Elaborate on the selected content.", iconCss = "e-icons e-elaborate" },
+        new { label = "Improve Content", prompt = "Improve the selected content.", iconCss = "e-icons e-edit" }
+    };
+}
+
+<div id="targetContent" contenteditable="true">
+    <p>Select this content, choose a command, and use the microphone to add voice instructions.</p>
+</div>
+
+<ejs-inlineaiassist id="inlinePrompt" relateTo="#targetContent" promptRequest="onPromptRequest">
+    <e-inlineaiassist-speechToTextSettings enable="true"></e-inlineaiassist-speechToTextSettings>
+    <e-inlineaiassist-commandsettings popupWidth="250px" popupHeight="200px" commands="commandsData"></e-inlineaiassist-commandsettings>
+</ejs-inlineaiassist>
+
+<script>
+    function onPromptRequest(args) {
+        var inlineAssist = this;
+        setTimeout(function () {
+            inlineAssist.addResponse('The response uses the selected content, command, and spoken instructions.');
+        }, 500);
+    }
+</script>

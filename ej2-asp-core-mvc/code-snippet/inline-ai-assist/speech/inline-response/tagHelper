@@ -1,0 +1,23 @@
+<div id="targetContent" contenteditable="true">
+    <p>Select this content and use the microphone to provide instructions for an inline response.</p>
+</div>
+
+<ejs-inlineaiassist id="inlinePrompt" relateTo="#targetContent" responseMode="Inline" promptRequest="onPromptRequest">
+    <e-inlineaiassist-speechToTextSettings enable="true"></e-inlineaiassist-speechToTextSettings>
+    <e-inlineaiassist-responsesettings itemSelect="onResponseItemSelect"></e-inlineaiassist-responsesettings>
+</ejs-inlineaiassist>
+
+<script>
+    function onPromptRequest(args) {
+        var inlineAssist = this;
+        setTimeout(function () {
+            inlineAssist.addResponse('This response was generated from the selected content and spoken prompt.');
+        }, 500);
+    }
+
+    function onResponseItemSelect(args) {
+        if (args.command.label === 'Accept' || args.command.label === 'Discard') {
+            this.hidePopup();
+        }
+    }
+</script>

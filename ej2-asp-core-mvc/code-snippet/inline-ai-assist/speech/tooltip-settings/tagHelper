@@ -1,0 +1,7 @@
+<ejs-inlineaiassist id="inlinePrompt">
+    <e-inlineaiassist-speechToTextSettings enable="true">
+        <e-inlineaiassist-speechToTextTooltipSettings tooltipText="Start voice input"
+                                                       stopTooltipText="Stop voice input">
+        </e-inlineaiassist-speechToTextTooltipSettings>
+    </e-inlineaiassist-speechToTextSettings>
+</ejs-inlineaiassist>
