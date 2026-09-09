@@ -10,11 +10,13 @@ documentation: ug
 
 # Dialog Editing in ASP.NET Core Data Grid
 
-Dialog editing is a feature in the Grid component that allows you to edit the data of the currently selected row using a dialog window. With dialog editing, you can easily modify cell values and save the changes back to the data source.This feature is particularly beneficial in scenarios where you need to quickly modify data without navigating to a separate page or view, and it streamlines the process of editing multiple cells.
+Dialog editing in the Data Grid component provides an efficient way to edit row data through a dedicated modal dialog window that focuses attention on the editing form. Instead of editing cells directly in the grid, multiple field values can be entered and modified at once in a clean, organized form. The grid automatically saves all changes to the data source without navigating away from the current page making data entry faster, more intuitive, and less error-prone, especially when dealing with complex records that span multiple columns.
 
-To enable dialog editing in grid component, you need to set the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property to **Dialog**. This property determines the editing mode for the grid, and when set to **Dialog**, it enables the dialog editing feature.
+## Enable dialog editing
 
-Here's an example how to enable dialog editing in the ASP.NET Core grid component:
+To enable dialog editing in the grid component, set the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property to `Dialog`. This property determines the editing mode for the grid.
+
+The following example demonstrates enabling dialog editing in the Data Grid component:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -27,55 +29,16 @@ Here's an example how to enable dialog editing in the ASP.NET Core grid componen
 
 ![Dialog editing](../images/editing/dialog-edit.png)
 
-## Customize edit dialog
+## Wizard-like dialog editing
 
-The edit dialog in the Grid component allows you to customize its appearance and behavior based on the type of action being performed, such as editing or adding a record. You can modify properties like header text, showCloseIcon, and height to tailor the edit dialog to your specific requirements. Additionally, you can override default localization strings to provide custom text for buttons or other elements within the dialog.
+Wizard-like dialog editing divides complex forms into manageable step-by-step sections with efficient navigation. The [editSettings.template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template) property enables custom form templates with multiple steps:
 
-To customize the edit dialog, you need to handle the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the Grid component and perform the necessary modifications based on the **requestType** parameter. The **requestType** parameter identifies the type of action being performed, such as **beginEdit** for editing a record or **add** for adding a new record.
+1. Set  [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) to `Dialog`.
+2. Define template sections for each form step.
+3. Add navigation buttons (Previous, Next, Save) between steps.
+4. Implement validation for each step.
 
->You can refer the Grid [Default text](../global-local) list for more localization.
-
-The following example that demonstrates how to customize the edit dialog using the `actionComplete` event:
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/customizedialog/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dialog.cs" %}
-{% include code-snippet/grid/edit/customizedialog/dialog.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Customize edit dialog](../images/editing/dialog-customize.png)
-
-> The Grid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog's height up to 658px.
-
-## Show or hide columns in dialog editing
-
-The show or hide columns in dialog editing feature in the grid allows you to dynamically control the visibility of columns while editing in the dialog edit mode. This feature is useful when you want to display specific columns based on the type of action being performed, such as editing an existing record or adding a new record. To achieve this, you can utilize the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the Grid. 
-
-The `actionBegin` event is triggered whenever an action is initiated in the grid, such as editing, adding, or deleting a record. Within the event handler, you can check the **requestType** parameter to determine the type of action being performed. If the **requestType** is `beginEdit` or `add`, you can modify the visibility of columns using the `column.visible` property. This property is used to determine whether a column should be displayed or hidden. Then, when the **requestType** is `save`, you can reset the column visibility to its initial state using the `column.visible` property.
-
-In the following example, the **CustomerID** column is rendered as a hidden column, and the **ShipCountry** column is rendered as a visible column. In the edit mode, the **CustomerID** column will be changed to a visible state and the **ShipCountry** column will be changed to a hidden state.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/show-hide-edit-dialog/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dialog.cs" %}
-{% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Show or hide columns in dialog editing](../images/editing/dialog-show-hide.png)
-
-## Use wizard like dialog editing
-
-Wizard-like dialog editing is a powerful feature in the Grid component that enables the creation of intuitive step-by-step forms. This feature provides a structured approach to form completion or data entry by breaking down the process into manageable steps.This feature is particularly useful when you have complex forms that need to be broken down into smaller sections to guide you through the data entry process.
-
-To achieve wizard-like dialog editing in the grid component, you can use the dialog template feature. This feature allows you to define your own custom editing template using the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property set to  **Dialog** and the [editSettings.template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template) property to specify the template variable that defines the editors for each step of the wizard.
-
-The following example demonstrate the wizard like editing in the grid with the unobtrusive validation.
+The example below demonstrates wizard-like dialog editing in the grid using unobtrusive validation:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -88,11 +51,70 @@ The following example demonstrate the wizard like editing in the grid with the u
 
 ![Use wizard like dialog editing](../images/editing/dialog-tabs-multiple.gif)
 
-## Customize add/edit dialog footer
+## Customize edit dialog
 
-The Customize add/edit dialog footer feature in the grid allows you to modify the footer section of the dialog that appears when editing the currently selected row or adding a new row. By default, the dialog displays two buttons in the footer section: Save and Cancel, which allow you to save or discard the changes made in the dialog. This feature is particularly helpful when you want to add custom buttons to the dialog's footer, implement specific actions, or customize the appearance of the buttons, such as changing their color or size in the dialog's footer. This can be achieved using the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the Grid component.
+The edit dialog is a modal window that isolates the editing form and prevents grid interaction until the dialog closes. Customize this dialog to match application needs by handling the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event.
 
-In the following sample, using the `dialog` argument of the `actionComplete` event, the action for the custom button can be customized.
+**Customizable options**:
+- Header text, close button visibility, and height.
+- Button text and localization strings.
+- Dialog behavior based on the editing action.
+
+Use the `requestType` parameter to identify which action triggered the event and apply appropriate customizations:
+
+| Request Type | Description |
+|--------------|-------------|
+| `beginEdit` | Editing an existing record |
+| `add` | Creating a new record |
+| `save` | Updating a new or existing record |
+| `delete` | Deleting an existing record |
+
+> Refer to the Grid [Default text](../global-local) list for localization options.
+
+The following example demonstrates how to customize the edit dialog using the `actionComplete` event:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/customizedialog/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dialog.cs" %}
+{% include code-snippet/grid/edit/customizedialog/dialog.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customize edit dialog](../images/editing/dialog-customize.png)
+
+> The Data Grid's add or edit dialog element applies a max-height property that is calculated based on the available window height. For typical screens (1920 x 1080), the dialog's maximum height can be set up to 658px.
+
+## Show or hide columns in dialog editing
+
+Column visibility can be dynamically controlled in dialog editing mode. The [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event enables showing or hiding specific columns based on whether an existing record is being edited or a new record is being added.
+
+The `actionBegin` event is triggered whenever an action is initiated in the grid (editing, adding, or deleting a record). Within the event handler, the `requestType` parameter determines to manage column visibility in the event handler:
+
+| Request Type | Action | Column Visibility Control |
+|---|---|---|
+| `beginEdit` or `add` | Editing or creating a record | Modify visibility using the `visible` property |
+| `save` | Saving the record | Reset columns to initial visibility state using `visible` property |
+
+In the following example, the "Customer ID" column is rendered as a hidden column, and the "Ship Country" column is rendered as a visible column. In the edit mode, the "Customer ID" column will be changed to a visible state and the "Ship Country" column will be changed to a hidden state.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/show-hide-edit-dialog/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dialog.cs" %}
+{% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Show or hide columns in dialog editing](../images/editing/dialog-show-hide.png)
+
+## Customize dialog footer
+
+The dialog footer can be customized to add custom buttons or modify button appearance. The default footer displays Save and Cancel buttons. The [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event enables adding custom buttons, changing button text, or implementing custom button actions in the dialog footer.
+
+The following example customizes the action of a custom footer button using the `dialog` argument of the `actionComplete` event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

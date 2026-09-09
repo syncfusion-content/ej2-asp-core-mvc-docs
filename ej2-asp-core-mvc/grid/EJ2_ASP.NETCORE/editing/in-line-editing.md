@@ -10,9 +10,11 @@ documentation: ug
 
 # Inline Editing in ASP.NET Core Data Grid
 
-The ASP.NET Core Grid component provides a powerful in-line editing feature that allows you to edit cell values of row directly within the grid. This feature is especially useful when you want to quickly modify data without the need for a separate edit form. In normal edit mode, the selected record is changed to an edit state, and you can modify the cell values and save the edited data to the data source.
+The Data Grid component provides an efficient inline editing feature, enabling direct modification of row or cell values within the grid. Inline editing is ideal for streamlining data entry and updates without invoking a separate form. In normal edit mode, the selected record enters an editable state, allowing updates to cell values which are then saved back to the data source.
 
-To enable in-line editing in the grid component, you need to set the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of the Grid's configuration to **Normal**. This property determines the editing mode of the Grid.
+## Enable inline editing
+
+To enable inline editing in the grid component, set the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property to `Normal`. This property determines the editing mode of the grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -25,14 +27,19 @@ To enable in-line editing in the grid component, you need to set the [editSettin
 
 ![Inline Editing](../images/editing/inline-editing.gif)
 
-> * Normal edit mode is default mode of editing.
-> * When enabling editing, it is necessary to set the `isPrimaryKey` property value to **true** for the unique column.
+> * The `Normal` edit mode is the default mode of editing.
+> * When enabling editing, it is necessary to set the `isPrimaryKey` property value to `true` for the unique column.
+> * For basic editing setup and configuration, refer to the [Edit Feature Setup](./edit#set-up-editing).
 
-## Automatically update a specific column based on another column edited value
+## Update column values automatically
 
-You can automatically update the value of a column based on the edited value of another column using cell edit template feature. This feature is useful when you want to dynamically calculate and update a column's value in real-time based on the changes made in another related column. To enable this functionality, define the `editType` of the column to specify the type of editor used for editing the column, and provide an object for the `edit` property to customize the editing behavior. 
+The Cell Edit Template feature enables automatic updating of a column’s value whenever a value in another column is edited. This feature enables dynamic calculations and real-time updates to column values based on changes in related columns, streamlining data entry workflows. 
 
-In the following example, the **TotalCost** column value is updated based on changes to the **UnitPrice** and **UnitInStock** columns during batch editing.
+To enable this functionality:
+- Define the `editType` property to specify the editor type for editing.
+- Provide an object for the `edit` property to customize editing behavior.
+
+In the following example, the "Total Cost" column value is updated based on changes to the "Unit Price" and "Unit In Stock" columns during editing.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -45,76 +52,9 @@ In the following example, the **TotalCost** column value is updated based on cha
 
 ![Automatically update](../images/editing/inline-automatically.gif)
 
-## Cancel edit based on condition
+## Set default values for new records
 
-The grid provides the ability to cancel the edit operations for particular row or cell based on specific conditions. This feature allows you to control over whether editing should be allowed or prevented for certain rows or cells in the grid. You can achieve this functionality by leveraging the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the Grid component. This event is triggered when a CRUD (Create, Read, Update, Delete) operation is initiated in the grid.  
-
-To cancel the edit operation based on a specific condition, you can handle the `actionBegin` event of the grid component and check the **requestType** parameter. This parameter indicates the type of action being performed, such as **beginEdit** for editing, **add** for adding, and **delete** for deleting. By applying your desired condition, you can cancel the edit, delete, or add operation by setting the `args.cancel` property to **true**.
-
-In the below demo, prevent the CRUD operation based on the **Role** column value. If the Role Column is **Admin**, then edit/delete action is prevented for that row.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-cancel-edit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="canceleditinline.cs" %}
-{% include code-snippet/grid/edit/inline-cancel-edit/canceleditinline.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Cancel edit based on condition](../images/editing/inline-cancel.gif)
-
-## Perform CRUD action programmatically
-
-Performing CRUD actions programmatically refers to the ability to create, read, update, and delete data in a system or application using code instead of manual user interaction.
-
-* To add a new record to the Grid, use the `addRecord` method. In this method, you can pass the **data** parameter to add a new record to the Grid, and the **index** parameter to add a record at a specific index. If you call this method without any parameters, it will create an empty row in the Grid. If an index is not specified, the newly added record will be displayed at the zeroth index.
-
-* To change the selected row to the edit state, use the `startEdit` method. Before invoking this method, it is necessary to select a row in the grid.
-
-* If you need to update the row data in the Grid’s data source, you can use the `updateRow` method. In this method, you need to pass the **index** value of the row to be updated along with the updated **data**.
-
-* If you need to update the particular cell in the row, you can use the `setCellValue` method. In this method, you need to pass the primary key value of the data source, field name, and new value for the particular cell. When using this method, any changes made to a cell will only be reflected visually in the UI of Grid alone, not persisted or saved in the underlying data source. This method is commonly employed for unbound columns, such as auto-calculated columns or formula columns, where the values are derived or computed based on other data within the Grid or external calculations. By using this method, you can update the visual representation of these unbound columns without modifying the actual data source.
-
-* To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
-
->* In both normal and dialog editing modes, these methods can be used.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-programmatic/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="programmatic.cs" %}
-{% include code-snippet/grid/edit/inline-programmatic/programmatic.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Perform CRUD action programmatically](../images/editing/inline-curd.png)
-
-## Show confirmation dialog while deleting
-
-Displaying a confirmation dialog adds an extra layer of confirmation when deleting a record from the grid. This dialog prompts for confirmation before proceeding with the deletion, ensuring that accidental or undesired deletions are avoided. The deletion can proceed only if the decision is certain. The grid component provides a built-in confirmation dialog that can be used to confirm a deleting action.
-
-To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) configuration to **true**. By default, this property is set to **false**.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-show-confirmation/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="showconfirmationdialog.cs" %}
-{% include code-snippet/grid/edit/inline-show-confirmation/showconfirmationdialog.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Show confirmation dialog while deleting](../images/editing/inline-show-confirmation.png)
-
-> * The [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) supports all type of edit modes.
-
-## Display default value for columns while adding
-
-This feature is useful when you want to pre-fill certain column values with default values to streamline the data entry process. The grid component allows you to set default values for columns when adding a new record. 
-
-To set a default value for a specific column in the Grid, you can use the `defaultValue` property of the [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) configuration. By providing a default value, the grid will automatically populate that value in the corresponding column when a new row is added.
+Preset column values streamline data entry for new records. Set `defaultValue` for columns in the grid configuration to ensure these fields are pre-filled in new rows.
 
 Here's an example of how to set a default value for a column:
 
@@ -129,15 +69,28 @@ Here's an example of how to set a default value for a column:
 
 ![Display default value for columns while adding](../images/editing/inline-default-value.png)
 
+## Show confirmation dialog while deleting
+
+The built-in confirmation dialog enhances data safety by requesting confirmation before deleting records. Enable this dialog by setting [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) in [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) to `true` (default is `false`).
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-show-confirmation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="showconfirmationdialog.cs" %}
+{% include code-snippet/grid/edit/inline-show-confirmation/showconfirmationdialog.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Show confirmation dialog while deleting](../images/editing/inline-show-confirmation.png)
+
+> The [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) supports all type of edit modes.
+
 ## Delete multiple rows
 
-The delete multiple rows feature in the grid component allows you to easily remove multiple rows from the grid at once. This feature is useful when you want to delete multiple records simultaneously. There are two approaches to implement this feature: using the inbuilt toolbar delete option or using a method.
+Multiple row deletion is supported via the in-built toolbar or through methods.
 
-**Using the inbuilt toolbar delete option**
-
-The grid component provides a user-friendly interface for performing various actions, including deleting rows using the inbuilt toolbar. To enable the delete multiple rows using the toolbar, you need to configure the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property of the grid and set the [selectionSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property as **multiple** to enable multiple row selection.
-
-To delete multiple selected records in the grid, first you need to select multiple rows in the grid by highlighting or checking the corresponding checkboxes. Once the desired rows are selected, you can click on the delete icon located in the toolbar. This action will initiate the deletion process and remove the selected records from the grid.
+**Using the toolbar:** Set the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property of the grid and set the [selectionSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) to `Multiple`. Select rows and use the toolbar delete icon to remove them.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -150,20 +103,20 @@ To delete multiple selected records in the grid, first you need to select multip
 
 ![Using the inbuilt toolbar delete option](../images/editing/inline-multiple-rows.gif)
 
->* Also delete the selected records using keyboard shortcut key **delete**.
+> Selected records can also be deleted using the `Delete` key.
 
 **Using method**
 
-You can delete multiple rows programmatically by using following method.
+Multiple rows can be deleted programmatically using the following methods.
 
-1. `deleteRecord` -This method allows you to delete a record with the given options. If the **fieldname** (field name of the primary key column) and **data** parameters are not provided, the grid will delete the selected records.
+1. `deleteRecord` - This method deletes a record with the given options. If the `fieldname` (primary key field) and `data` parameters are not provided, the grid deletes the selected records.
 
     ```ts
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.deleteRecord();
     ```
 
-2. `deleteRow` - Using this method, you have the ability to delete any visible row by providing the corresponding <tr> element. To achieve this, you can utilize the `getSelectedRows` method to retrieve the selected rows and then iterate over the rows. For each row, you can pass the <tr> element to the deleteRow method to initiate the deletion process. This approach allows you to selectively delete rows based on the <tr> elements obtained from the `getSelectedRows` method.
+2. `deleteRow` - This method deletes a visible row by providing the corresponding `<tr>` element. Use `getSelectedRows` to retrieve the selected rows and iterate over them. For each row, pass the `<tr>` element to `deleteRow` to initiate deletion. This approach enables selective deletion based on the `<tr>` elements obtained from `getSelectedRows`.
 
     ```ts
         var grid = document.getElementById("grid").ej2_instances[0];
@@ -173,8 +126,7 @@ You can delete multiple rows programmatically by using following method.
         });
     ```
 
->* The [selectionSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property is set to **Multiple** to enable multiple row selection.
->* To prevent accidental or undesired deletions, it is recommended to enable the [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) configuration
+> Use [selectionSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) = `Multiple` and consider enabling `showDeleteConfirmDialog` property of the `editSettings` to prevent accidental deletions
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -189,11 +141,11 @@ You can delete multiple rows programmatically by using following method.
 
 ## Adding a new row at the bottom of the grid
 
-The grid component allows you to add a new row at the bottom of the grid, allowing you to insert a new record at the end of the existing data set. This feature is particularly useful when you want to conveniently add new records without the need of scroll up or manually reposition the newly added row.
+The Data Grid enables seamless addition of new rows at the bottom of the grid, inserting records at the end of the existing data set. This convenient feature proves particularly useful for intuitive record addition without requiring scroll repositioning, improving workflow efficiency.
 
-By default, when adding a new row in the grid component, the row is inserted at the top of the grid. However, you can change this behavior by setting the [newRowPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) property of the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) configuration to **Bottom**. This property determines the position where the new row will be inserted.
+By default, the new row form is inserted at the top of the grid for data entry. To change this behavior, set the  [newRowPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) property in the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) configuration to `Bottom`. This property controls the position where the new row form is inserted.
 
-Here's an example of how to enable adding new rows at the bottom of the grid:
+The following example displays the add form at the bottom of the grid using `newRowPosition`:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -206,12 +158,13 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
 
 ![Adding a new row at the bottom of the grid](../images/editing/inline-poistion.png)
 
->* Add [newRowPostion](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) is supported for **Normal** and **Batch** editing modes.
->* If you set [newRowPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) as **Bottom**, the grid will display a blank row form at the bottom by default, allowing you to enter data for the new record. However, when the data is saved or updated, it will be inserted at the top of the grid. 
 
-## Show add new row always in grid
+> * The [newRowPostion](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) property is supported for `Normal` and `Batch` editing modes.
+> * When `newRowPostion` is set to `Bottom`, the grid displays a blank row form at the bottom by default for data entry. However, when the data is saved or updated, it is inserted at the top of the grid.
 
-The Syncfusion Grid simplifies the addition of new records by consistently presenting a blank, "add new row" form within the grid. To enable this feature, you can set the [showAddNewRow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowAddNewRow) property within the `editSettings` configuration to **true**. This allows for continuous addition of new records. You can display the add a new row at either the **top** or **bottom** of the grid content, depending on the [newRowPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) property of [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings). By default, the add new row is displayed at the top row of the grid content.
+## Always display an add new row in the grid
+
+The Data Grid simplifies the addition of new records by consistently presenting a blank "add new row" form within the grid. To enable this feature, set the [showAddNewRow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowAddNewRow) property within the `editSettings` configuration to `true`. This enables continuous record addition. The add new row displays at either the `top` or `bottom` of the grid content, depending on the [newRowPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) property of `editSettings`. By default, the add new row displays at the top of the grid content.
 
 The following sample demonstrates how to add a new record continuously using `showAddNewRow` property.
 
@@ -226,19 +179,89 @@ The following sample demonstrates how to add a new record continuously using `sh
 
 ![Show add new row always in grid](../images/editing/inline-top-position.png)
 
-> * To save the newly added records, you can either hit the **Enter** key or click on the **Update** button located on the toolbar after filling in the new add form.
+> To save newly added records, press the <kbd>Enter</kbd> key or click the "Update" button on the toolbar after filling the add form.
 
-### Limitations
+### Constraints
 
-* This feature is supported only for Inline/Normal editing mode and is not compatible with other edit modes.
-* The new blank add row form will always be displayed at the top, even if you have set the new row position as the bottom for Virtual Scrolling and Infinite Scrolling enabled grid.
-* This feature is not compatible with the column virtualization feature.
+The always‑visible add new row feature is compatible with `Inline`/`Normal` editing mode only. In grids with virtual or infinite scrolling, the blank row is consistently displayed at the top for stable behavior.
 
-## Move the focus to a particular cell instead of first cell while editing a row
+## Cancel edit based on condition
 
-The grid component allows you to move the focus to a specific cell when editing a row, rather than the default behavior of focusing on the first cell in the row. This feature can be useful when you want to improve the editing experience by automatically focusing on a particular cell that requires immediate attention.
+The Data Grid provides the ability to cancel the edit operations for particular row or cell based on specific conditions. This feature allows controlling whether editing should be allowed or prevented for certain rows or cells in the grid. This functionality is achieved by leveraging the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the grid component. This event is triggered when a CRUD (Create, Read, Update, Delete) operation is initiated in the grid.
 
-To achieve this functionality, you can leverage the [recordDoubleClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RecordDoubleClick) event of the Grid component. The `recordDoubleClick` event is triggered when a row in the grid is double-clicked, indicating the intention to edit that row. By handling this event and programmatically moving the focus to the desired cell within the row.
+This customization is useful when restricting editing for certain rows, such as read-only data, calculated values, or protected information. It helps maintain data integrity and ensures that only authorized changes can be made in the grid.
+
+To cancel the edit operation based on a specific condition, handle the `actionBegin` event of the grid component and check the `requestType` parameter. This parameter indicates the type of action being performed:
+
+| Request Type | Description |
+|--------------|-------------|
+| `beginEdit` | Editing an existing record |
+| `add` | Creating a new record |
+| `save` | Updating a new or existing record |
+| `delete` | Deleting an existing record |
+
+Apply the desired condition and cancel the operation by setting the `args.cancel` property to `true`.
+
+The following example prevents CRUD actions for rows where the "Role" column equals "Admin".
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-cancel-edit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="canceleditinline.cs" %}
+{% include code-snippet/grid/edit/inline-cancel-edit/canceleditinline.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Cancel edit based on condition](../images/editing/inline-cancel.gif)
+
+## Disable editing for specific rows
+
+Editing can be restricted for designated rows using the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. Set `args.cancel = true` based on custom condition checks in the event handler.
+
+In the below demo, the rows which are having the value for "ShipCountry" column as "France" is prevented from editing.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-particular/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Inline-particular.cs" %}
+{% include code-snippet/grid/edit/inline-particular/inline-particular.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Disable editing for a particular row](../images/editing/inline-particular-row.gif)
+
+## Perform CRUD action programmatically
+
+Programmatic CRUD operations enable creating, reading, updating, and deleting data through code instead of manual interaction. This approach provides flexibility for advanced data manipulation workflows. The following table outlines key methods for programmatic CRUD operations:
+
+| Method | Description | Usage |
+|--------|-------------|-------|
+| `addRecord` | Add a new record to the grid | Pass the `data` parameter to add a record. Use the `index` parameter for a specific position. Without parameters, creates an empty row at index zero. |
+| `startEdit` | Change the selected row to edit state | First select the row, then invoke this method. The selected row enters edit mode immediately. Without row selection along with default `showConfirmDialog` enabled state, "No records selected for edit operation" dialog appears. |
+| `updateRow` | Update row data in the data source | Provide the row `index` and the updated `data` as parameters. The data source updates accordingly. |
+| `setCellValue` | Update a particular cell in a row | Provide the primary key value, field name, and new value. Changes appear visually in the UI only (not persisted). Useful for unbound columns, auto-calculated columns, and formula columns. |
+| `deleteRecord` | Remove a selected row from the grid | First select the row, then invoke this method. The selected row is immediately removed. Without row selection along with default `showConfirmDialog` enabled state, "No records selected for delete operation" dialog appears. |
+
+> In both `Normal` and `Dialog` editing modes, these methods can be used.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-programmatic/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="programmatic.cs" %}
+{% include code-snippet/grid/edit/inline-programmatic/programmatic.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Perform CRUD action programmatically](../images/editing/inline-curd.png)
+
+## Set focus to a specific cell during row editing
+
+The Data Grid enables moving focus to a specific cell when editing a row, rather than the default behavior of focusing on the first cell. This feature improves the editing experience by automatically focusing on the cell requiring immediate attention.
+
+To achieve this functionality, leverage the [recordDoubleClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RecordDoubleClick) event of the grid component. The `recordDoubleClick` event is triggered when a row is double-clicked, indicating intent to edit. Handle this event and programmatically move focus to the desired cell within the row.
 
 Here's an example of how to use the `recordDoubleClick` event to move the focus to a particular cell:
 
@@ -253,13 +276,13 @@ Here's an example of how to use the `recordDoubleClick` event to move the focus 
 
 ![Move the focus to a particular cell](../images/editing/inline-move-focus.gif)
 
-## Enable editing in single click
+## Enable single-click editing
 
-Enabling single-click editing in the Syncfusion Grid's **Normal** editing mode is a valuable feature that allows you to make a row editable with just one click.This can be achieved by using the `startEdit` and `endEdit` methods.
+Enabling single-click editing in the Data Grid's `Normal` editing mode is a valuable and intuitive feature that makes a row editable with just one click. This seamless experience is achieved by using the `startEdit` and `endEdit` methods for rapid, efficient data modification.
 
-To implement this feature, you need to bind the `mouseup` event for the Grid and, within the event handler, call the `startEdit` and `endEdit` methods based on the clicked target element. This ensures that the editing mode is triggered when clicking on a specific element within the Grid.
+To implement this feature, bind the `mouseup` event for the grid and, within the event handler, call the `startEdit` and `endEdit` methods based on the clicked target element. This ensures editing mode is triggered when clicking on a specific element within the grid.
 
-The following sample demonstrates how to enable editing in a single click using the `mouseup` event along with the [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) event:
+The following sample demonstrates enabling editing with a single click using the `mouseup` event along with the [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) event
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -271,22 +294,3 @@ The following sample demonstrates how to enable editing in a single click using 
 {% endtabs %}
 
 ![Enable editing in single click](../images/editing/inline-single-click.gif)
-
-## Disable editing for a particular row
-
-In the Syncfusion Grid component, you can prevent editing of specific rows based on certain conditions. This feature is useful when you want to restrict editing for certain rows , such as read-only data, calculated values, or protected information. It helps maintain data integrity and ensures that only authorized changes can be made in the grid.
-
-To disable editing for a particular row, use the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the grid based on **requestType** as **beginEdit**. You can then set the **args.cancel** property to **true** to prevent editing for that row.
-
-In the below demo, the rows which are having the value for **ShipCountry** column as **France** is prevented from editing.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-particular/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Inline-particular.cs" %}
-{% include code-snippet/grid/edit/inline-particular/inline-particular.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Disable editing for a particular row](../images/editing/inline-particular-row.gif)

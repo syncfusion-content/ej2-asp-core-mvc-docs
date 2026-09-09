@@ -10,13 +10,17 @@ documentation: ug
 
 # Validation in ASP.NET Core Data Grid
 
-Validation is a crucial aspect of data integrity in any application. The ASP.NET Core  Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
+Data validation ensures that information entered or modified in the grid follows specific validation rules, preventing errors and maintaining accuracy. The Data Grid component provides built-in validation support to make this process effective.
+
+Validation rules support a wide range of validation scenarios, including mandatory fields, value validation, text validation, and custom validation logic.
+
+> For basic grid editing setup and configuration, refer to the [Editing Feature Setup](../editing/edit.md#set-up-editing) section.
 
 ## Column validation
 
-Column validation allows you to validate the edited or added row data before saving it. This feature is particularly useful when you need to enforce specific rules or constraints on individual columns to ensure data integrity. By applying validation rules to columns, you can display error messages for invalid fields and prevent the saving of erroneous data. This feature leverages the **Form Validator** component to perform the validation. You can define validation rules using the `columns.validationRules` property to specify the criteria for validating column values.
+Column validation applies validation rules to individual columns during edit operations, ensuring data accuracy before saving. Invalid data displays error messages and prevents saving. The `FormValidator` component validates data using rules defined in the `validationRules` property for each column.
 
-The following code example demonstrates how to define a validation rule for grid column:
+The following example demonstrates validation rules applied to a grid column:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -29,11 +33,11 @@ The following code example demonstrates how to define a validation rule for grid
 
 ![Column validation](../images/editing/validation.png)
 
-## Custom validation
+### Custom validation
 
-The Custom validation feature is used to define and enforce your own validation rules for specific columns in the Grid. This is achieved by leveraging the utilizing the **Form Validator custom rules**, you can enforce your desired validation logic and display error messages for invalid fields.
+The custom validation feature is used to define and enforce specific validation rules for individual columns in the Data Grid. This is achieved by leveraging **Form Validator custom rules**, which allow enforcement of tailored validation logic and display of error messages for invalid fields.
 
-In the below demo, custom validation applied for **CustomerID** column.
+In the following example, custom validation is applied to the **CustomerID** column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -46,11 +50,11 @@ In the below demo, custom validation applied for **CustomerID** column.
 
 ![Custom validation](../images/editing/validation-custom.png)
 
-### Custom validation based on dropdown change
+### Validation based on dropdown values
 
-The Custom validation feature in the Grid allows you to apply validation rules and messages to a column based on the value of another column in edit mode. This feature is particularly useful when you need to enforce specific validation criteria that depend on the selection made in a dropdown column.
+Dependent validation rules adjust based on selections in other columns, enabling linked column validation. The "Salary" column validation adjusts based on the "Role" column selection, ensuring both columns validate correctly together.
 
-In the following sample, dropdownlist edit type is used for the **Role** and **Salary** columns. Here, you can apply the custom validation in the **Salary** column based on the value selected in the **Role** column.
+The following example demonstrates dependent validation between the "Role" and "Salary" columns:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -63,11 +67,9 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 
 ![Custom validation based on dropdown change](../images/editing/validation-dropdown.gif)
 
-### Custom validation for numeric column
+### Validation for numeric columns
 
-Custom validation for a numeric column Grid is useful when you want to enforce specific validation rules on numeric values in a column. This allows you to define your own validation logic and display custom error messages when the you enters invalid data.
-
-In the following example, custom validation functions, namely **customFunction** and **customFunctionOne**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Change) event of the numeric column is bound to the `validate` method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the [NumericTextBox](https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started).
+Numeric column validation applies rules for numeric data such as positive values, minimum/maximum ranges, or decimal limits. This example uses "customFn" and "customFn1" functions configured through the "freightRules" object to validate numeric values. The numeric columns are bound to the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Change) event, which calls the `validate` method to check the value and display error messages whenever the data changes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -80,13 +82,11 @@ In the following example, custom validation functions, namely **customFunction**
 
 ![Custom validation for numeric column](../images/editing/validation-numeric.png)
 
-## Dynamically add or remove validation rules from the form
+## Dynamic validation rules
 
-You can dynamically add or remove validation rules from input elements within a form. This feature is particularly useful when you need to adjust the validation rules based on different scenarios or dynamically changing data.
+Validation rules can be added or removed from input elements based on application scenarios or data conditions. The `addRules` method adds validation rules dynamically to input elements using the name attribute.
 
-To add validation rules dynamically to an input element, you can use the `addRules` method. This method enables you to add validation rules to the corresponding input element based on the name attribute.
-
-The following example to demonstrates how to dynamically add or remove a required validation rule for an input field based on a **CheckBox** selection:
+The following example demonstrates dynamic addition or removal of validation rules for an input field based on a checkbox selection.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -99,15 +99,13 @@ The following example to demonstrates how to dynamically add or remove a require
 
 ![Dynamically add or remove validation rules from the form](../images/editing/validation-add-remove.png)
 
-> * To remove an existing validation rule from an input element, you can use the `removeRules` method. 
+> To remove an existing validation rule from an input element, use the `removeRules` method. 
 
-## Change the position of validation error message
+## Customize validation message position
 
-By default, the validation error message in Grid is displayed below the input field. However, you have an option to customize its position and display it in a different location. This feature is particularly useful when you want to align the error message according to your application's design and layout.
+Error message positioning customizes where validation messages appear in the grid. By default, messages display below the input field. The `customPlacement` event repositions messages to custom locations based on application needs.
 
-To change the position of the validation error message in Grid, you can utilize the `customPlacement` event. This event allows you to define a custom logic to position the error message at the desired location.
-
-Here's an example that demonstrates how to change the position of the validation error message to the top of the input field:
+The following example demonstrates moving validation messages to the top of the input field.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -120,13 +118,9 @@ Here's an example that demonstrates how to change the position of the validation
 
 ![Change the position of validation error message](../images/editing/validation-position.png)
 
-## Show custom error message while performing CRUD actions
+## Handle server-side validation errors
 
-While performing CRUD actions in the Syncfusion ASP.NET Core Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is essential for providing meaningful error messages when an operation fails.
-
-To achieve this, you can use the [ActionFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event, which is triggered when an action (such as update, delete, or insert) fails. This event allows you to retrieve the error message from the server response and display it in the UI.
-
-The following sample demonstrates how to retrieve and display error messages in the Syncfusion ASP.NET Core Grid:
+Error handling for CRUD operations in the grid can display helpful error messages when operations fail. The [ActionFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event triggers on operation failures, providing access to error messages from server responses for display.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -341,15 +335,15 @@ namespace UrlAdaptor.Controllers
 
 ## Prevent adding duplicate rows with custom validation
 
-The Syncfusion ASP.NET Core Grid allows you to enforce constraints to prevent duplicate rows by customizing the validation logic within the Grid setup. This ensures data integrity by restricting duplicate entries in the **OrderID** column.
+The Data Grid component supports enforcing constraints to prevent duplicate rows by customizing the validation logic within the grid configuration. This ensures data integrity by restricting duplicate entries in the "OrderID" column.
 
 To prevent adding duplicate rows in the Grid, follow these steps:
 
-1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered **OrderID** already exists in the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource). This allows editing an existing row without triggering a duplicate error.
+1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered "OrderID" already exists in the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource). This allows editing an existing row without triggering a duplicate error.
 
-2. Add Dynamic Validation Rules: Create the `orderIDRules` object to enforce unique **OrderID** values. Dynamically add this rule to the form during the **save** action.
+2. Add Dynamic Validation Rules: Create the `orderIDRules` object to enforce unique "OrderID" values. Dynamically add this rule to the form during the `save` action.
 
-3. Handle Validation in the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event: In the `actionBegin` event, check if the **requestType** is **save**. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
+3. Handle Validation in the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event: In the `actionBegin` event, check if the `requestType` is `save`. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
 
 For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-aspnet-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
 
@@ -363,3 +357,11 @@ For server-side validation to prevent adding duplicate rows, you can refer to th
 {% endtabs %}
 
 ![Prevent Duplicate row](../images/editing/prevent-duplicate-row.png)
+
+## See also
+
+* [Normal editing](./in-line-editing)
+* [Template editing](./template-editing)
+* [Cell editing](./cell-editing)
+* [Batch editing](./batch-editing)
+* [Dialog editing](./dialog-editing)
