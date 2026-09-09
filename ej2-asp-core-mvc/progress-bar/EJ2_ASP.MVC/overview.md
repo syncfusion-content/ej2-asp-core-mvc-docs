@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Progress Bar Component
 
 The Essential EJ2 ProgressBar is a control that indicates the progress of a task with customizable visuals. It includes features to visualize progress in rectangular and circular shapes, determinate and indeterminate states, segments, and customized ranges in different colors. It also supports animation.
 

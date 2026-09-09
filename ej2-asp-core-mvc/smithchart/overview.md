@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in ##Platform_Name## Smithchart Component
 
 The Smith chart control is one of the most useful data visualization tools for high frequency circuit applications. It contains two sets of circles to plot the parameters of transmission lines.
 

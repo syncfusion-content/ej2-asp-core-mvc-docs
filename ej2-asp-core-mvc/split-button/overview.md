@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Split Button Component
 
 Split button triggers default action when primary button is clicked and toggle contextual overlays for displaying list of action items when dropdown button is clicked. It can contain both text and images.
 

@@ -74,7 +74,7 @@ public class EmployeeModel
 ```html
 <script id="index" type="text/x-template">
     <div id='templateWrap' style="background-color: ${point.text}; border-radius: 3px;">
-        <img src="http://icons.iconarchive.com/icons/icons8/ios7/256/Astrology-Air-Element-icon.png" style="height: 25px;width: 25px" title="Air">
+        <img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Astrology-Air-Element-icon.png" style="height: 25px;width: 25px" title="Air">
         <div class='des' style="color:black; font-family:Roboto; font-style: normal; font-size:16px;padding-right:6px">
             <span style="color:white;">${point.y}</span>
         </div>

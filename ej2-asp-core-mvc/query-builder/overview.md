@@ -8,6 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Query Builder Component
 
 The Query Builder component is used to create or edit filters. You can edit filters by changing the fields. In mobile mode, the component is shown vertically.

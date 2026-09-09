@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Button Group Component
 
 The ButtonGroup is a pure CSS component that groups the series of buttons together in a vertical or horizontal manner. It supports checkbox and radio type ButtonGroup.
 

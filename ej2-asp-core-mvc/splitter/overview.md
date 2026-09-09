@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Splitter Component
 
 The Splitter control is used to create different complex layouts in the web application by using multiple and nested panes.
 

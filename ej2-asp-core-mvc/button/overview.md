@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Button Component
 
 The Button is a graphical user interface element that triggers an event on its click action. It can contain a text, an image, or both.
 

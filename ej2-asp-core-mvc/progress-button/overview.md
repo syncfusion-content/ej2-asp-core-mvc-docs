@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Progress Button Component
 
 The ProgressButton visualizes the progression of an operation to indicate the user that a process is happening in the background with visual representation.
 

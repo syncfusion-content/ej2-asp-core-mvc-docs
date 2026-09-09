@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in ##Platform_Name## Sparkline Component
 
 The Sparkline is a very small chart; it is drawn without axes or coordinates. This presents a common shape of data in a simple and highly condensed way. The sparklines are easy to interpret, and convey more information to users by visualizing data in a small amount of space.
 

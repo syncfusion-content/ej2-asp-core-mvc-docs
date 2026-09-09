@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in ##Platform_Name## Heatmap Chart Component
 
 The HeatMap control is used to visualize a two-dimensional data in which the values are represented in gradient or fixed colors.
 

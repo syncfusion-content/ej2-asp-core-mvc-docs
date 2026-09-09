@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in ##Platform_Name## Circular Gauge Component
 
 The Circular Gauge control is ideal to visualize numeric values over a circular scale. All circular gauge elements are rendered using Scalable Vector Graphics (SVG).
 

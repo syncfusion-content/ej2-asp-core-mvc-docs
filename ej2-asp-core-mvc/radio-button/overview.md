@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Radio Button Component
 
 The RadioButton is a graphical user interface element that allows you to select only one option from the choices.
 It contains checked and unchecked states.

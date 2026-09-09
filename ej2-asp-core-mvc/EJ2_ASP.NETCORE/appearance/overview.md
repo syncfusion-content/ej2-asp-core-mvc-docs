@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview of ##Platform_Name## Component
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 styles are developed under the SCSS environment with `base64` embed font icons. The list of key features are described in the below topics.
 

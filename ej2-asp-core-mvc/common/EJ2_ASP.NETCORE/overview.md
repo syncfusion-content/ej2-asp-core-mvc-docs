@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Common
 
 The purpose of this document is to build and run a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 application in ASP.NET Core and, ASP.NET MVC.
 

@@ -24,6 +24,6 @@ The **NumericTextBox** is used to get the number inputs from the user. The input
 
 * **[Accessibility](./accessibility)**: - provides built-in accessibility support which helps to access all the NumericTextBox component features through keyboard, on-screen readers or other assistive technology devices.
 
-* **[Globalization](./globalization)**: - library provides support for formatting and parsing number using the official [Unicode CLDR](http://cldr.unicode.org) JSON data.
+* **[Globalization](./globalization)**: - library provides support for formatting and parsing number using the official [Unicode CLDR](https://cldr.unicode.org/) JSON data.
 
-* **[Localization](./globalization#localization)**: - Supports to localize spin up and down buttons title for the tooltip to different cultures.
+* **./g[Localization](lobalization#localization)**: - Supports to localize spin up and down buttons title for the tooltip to different cultures.

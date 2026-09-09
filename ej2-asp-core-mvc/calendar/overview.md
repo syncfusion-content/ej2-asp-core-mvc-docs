@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Calendar Component
 
 The **Calendar** is a graphical user interface control that displays a Gregorian Calendar, and allows a user to select a date.
 

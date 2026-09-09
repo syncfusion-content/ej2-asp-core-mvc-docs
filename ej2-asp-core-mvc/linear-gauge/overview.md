@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Linear Gauge Component
 
 The Linear Gauge control is used to visualize the numerical values of an axis in linear manner. All linear gauge elements are rendered using Scalable Vector Graphics (SVG).
 

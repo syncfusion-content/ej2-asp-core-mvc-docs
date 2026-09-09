@@ -8,6 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Spinner Component
 
 Spinner is a load indicator which is occur whenever the application processing/waiting for an operation. While the Spinner is loading, you can’t interact with target, until the process is completed.

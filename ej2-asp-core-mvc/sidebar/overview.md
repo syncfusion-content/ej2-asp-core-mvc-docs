@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Sidebar Component
 
 The **Sidebar** is an expandable and collapsible component that typically acts as a side container to place primary or secondary content alongside the main content.
 

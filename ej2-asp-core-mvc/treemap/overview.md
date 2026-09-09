@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in ##Platform_Name## Treemap Component
 
 The tree map control is used to visualize hierarchical data in the form of nested rectangles. Area of each item is calculated based on its corresponding numeric value. All the tree map elements are rendered using Scalable Vector Graphics(SVG).
 
