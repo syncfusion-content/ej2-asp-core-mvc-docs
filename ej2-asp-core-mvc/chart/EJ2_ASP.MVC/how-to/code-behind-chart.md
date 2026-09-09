@@ -161,4 +161,4 @@ var firstChartLoad = function (args) {
 
 **Sample reference**
 
-Sample for how to render the charts from code behind and update using partial view [`chart sample`](https://www.syncfusion.com/downloads/support/directtrac/219809/ze/ajaxcall-611246099)
+Sample for how to render the charts from code behind and update using partial view [`chart sample`](http://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F219809%2Fze%2Fajaxcall-611246099.zip)

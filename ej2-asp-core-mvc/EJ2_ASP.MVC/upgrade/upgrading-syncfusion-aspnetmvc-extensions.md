@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extensions
+# Upgrading Syncfusion ASP.NET MVC Extensions
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCExtensions) for every Syncfusion<sup style="font-size:70%">&reg;</sup> Volume releases, with exciting new features and Service Pack release with major bug fixes in the volume releases.
 

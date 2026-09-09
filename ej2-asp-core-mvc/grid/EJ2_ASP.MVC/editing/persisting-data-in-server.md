@@ -20,28 +20,28 @@ Syncfusion provides multiple adaptors to handle different server protocols and A
 
 The `UrlAdaptor` is the base adaptor that facilitates communication between remote data services and the UI component. It allows seamless data binding and interaction with custom API services or any remote service through URLs. The `UrlAdaptor` is particularly useful when a custom API service has unique logic for handling data and CRUD operations. 
 
-For further details on configuration, refer to the [URL adaptor Documentation](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/url-adaptor).
+For further details on configuration, refer to the [URL adaptor Documentation]( https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor).
 
 **Using OData v4 adaptor**
 
 The `ODataV4Adaptor` in the Syncfusion ASP.NET MVC Grid facilitates seamless integration with OData V4 services, allowing for efficient data fetching and manipulation. You can perform CRUD operations using the `ODataV4Adaptor` in your Grid.
 
-For further details on configuration, refer to the [OData v4 adaptor Documentation](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/odatav4-adaptor).
+For further details on configuration, refer to the [OData v4 adaptor Documentation]( https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor).
 
 **Using Web API adaptor**
 
 The `WebApiAdaptor` extends the capabilities of the `ODataAdaptor` and is designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between the Syncfusion Grid and OData-based Web APIs, enabling efficient data retrieval and manipulation. 
 
-For further details on configuration, refer to the [Web API Adaptor documentation](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/web-api-adaptor).
+For further details on configuration, refer to the [Web API Adaptor documentation]( https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor).
 
 **Using Remote Save adaptor**
 
 The `RemoteSaveAdaptor` in the Syncfusion ASP.NET MVC Grid allows you to perform Grid actions such as sorting, filtering, searching, and paging primarily on the client side, while handling CRUD operations (updating, inserting, and removing data) on the server side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
-For further details on configuration, refer to the[Remote Save Adaptor Documentation](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/remote-save-adaptor).
+For further details on configuration, refer to the[Remote Save Adaptor Documentation]( https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/remote-save-adaptor).
 
 **WebMethodAdaptor**
 
 The `WebMethodAdaptor` facilitates data binding from remote services using web methods. This adaptor sends query parameters encapsulated within an object named value, allowing efficient communication between the client-side application and the server.
 
-For further details on configuration, refer to the [Web API Adaptor documentation](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/web-method-adaptor).
+For further details on configuration, refer to the [Web API Adaptor documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor).

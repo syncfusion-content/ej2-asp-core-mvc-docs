@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Spinner and Progress in ASP.NET MVC Progress Button
+# Spinner and Progress in ##Platform_Name## Progress Button
 
 <!-- markdownlint-disable MD002 MD022 -->
 ## Spinner

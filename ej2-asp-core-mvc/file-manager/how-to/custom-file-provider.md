@@ -164,7 +164,7 @@ The following table represents the response parameters of **read** operations.
 |files|FileManagerDirectoryContent[]|-|Details of files and folders present in given path or directory.|
 |error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
-<a id="file-manager-directory-content"></a>
+<a id="file-manager-directory-content" aria-label="File Manager Directory Content"></a>
 The following table represents the contents of **FileManagerDirectoryContent** in the File Manager request and response.
 
 |Parameter|Type|Default|Explanation|Is required|
@@ -190,7 +190,7 @@ The following table represents the contents of **FileManagerDirectoryContent** i
 |renameFiles|String[]|-|Details of the renamed item.|Optional|
 
 
-<a id="access-rules"></a>
+<a id="access-rules" aria-label="File Manager Access Rules"></a>
 The following table represents the **AccessRules** properties available for file and folder:
 
 | **Properties** | **Applicable for file** | **Applicable for folder** | **Description** |

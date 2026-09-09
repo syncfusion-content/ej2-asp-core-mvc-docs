@@ -302,3 +302,7 @@ The following example demonstrates how the `ActionBegin` and `ActionComplete` ev
 ## See Also
 
 * [Exporting grouped records](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/excel-export/excel-export-options#exporting-grouped-records)
+* [Lazy load grouping](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/lazy-load-grouping)
+* [Group and caption aggregates](.https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/aggregates/group-and-caption-aggregate)
+* [Caption template](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/caption-template)
+* [Aggregates overview](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/aggregates/aggregates)

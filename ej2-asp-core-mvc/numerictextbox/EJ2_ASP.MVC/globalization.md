@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Numeric Textbox | Syncfusion
-description: Support multiple languages and cultures in the Syncfusion ##Platform_Name## Numeric Textbox with internationalization, localization, and RTL options.
+title: Globalization in ASP.NET MVC Numeric Textbox | Syncfusion
+description: Support multiple languages and cultures in the Syncfusion ASP.NET MVC Numeric Textbox with internationalization, localization, and RTL options.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##

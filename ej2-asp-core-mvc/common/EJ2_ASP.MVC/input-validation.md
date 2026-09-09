@@ -10,7 +10,7 @@ documentation: ug
 
 # Input Form Validation
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI input and editor controls can be validated by using [FormValidator](https://ej2.syncfusion.com/javascript/documentation/api/form-validator) in client side.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI input and editor controls can be validated by using [FormValidator](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/index-default) in client side.
 
 ## How to Validate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI Controls
 

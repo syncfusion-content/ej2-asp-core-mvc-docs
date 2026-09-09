@@ -31,7 +31,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 1. Choose **File > New > Project...** in the Visual Studio menu bar.
 
-    ![new project in asp.net mvc5](images/new-mvc-project.png)
+    ![new project in aspnetmvc5](images/new-mvc-project.png)
 
 2. Select **Installed > Visual C# > Web** and choose the required **.NET Framework** in the drop-down.
 
@@ -93,7 +93,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
 1. Choose **File > New > Project...** in the Visual Studio menu bar.
 
-    ![new project in asp.net mvc4](images/new-mvc-project.png)
+    ![new project in aspnetmvc4](images/new-mvc-project.png)
 
 2. Select **Installed > Visual C# > Web** and choose the required **.NET Framework** in the drop-down and select **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application**. Change the application name and click **OK**.
 

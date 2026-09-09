@@ -182,7 +182,7 @@ Refer below topics to learn about responsiveness controls based on the available
 * [Sidebar Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/sidebar/auto-close)
 * [DataGrid Responsiveness](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/columns/columns#responsive-columns)
 * [TreeGrid Responsiveness](https://help.syncfusion.com/grid-sdk/asp-net-mvc/tree-grid/columns/responsive-columns)
-* [Dashboard Layout Responsiveness](https://help.syncfusion.com/chart-sdk/asp-net-mvc/dashboard-layout/adaptive-layoutt)
+* [Dashboard Layout Responsiveness](https://help.syncfusion.com/chart-sdk/asp-net-mvc/dashboard-layout/adaptive-layout)
 * [Kanban Responsiveness](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/responsive-mode)
 * [Toolbar Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/toolbar/responsive-mode)
 * [Tab Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/tab/responsive-modes)
