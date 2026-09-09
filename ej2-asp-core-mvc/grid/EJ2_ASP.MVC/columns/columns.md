@@ -48,7 +48,7 @@ Here is an example of how to specify column types in a grid using the types ment
 3. When the grid column `Type` is a **checkbox**, the selection type of the grid `SelectionSettings` will be multiple. This is the default behavior.
 4. If you have more than one column with the column type as a **checkbox**, the grid will automatically enable the other column's checkbox when selecting one column checkbox.
 
-> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/columns/columns#render-boolean-value-as-checkbox) section.
+> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GridColumn, please refer to the [Render Boolean Values as Checkbox](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/columns/columns#render-boolean-value-as-checkbox) section.
 
 ## Column width
 
@@ -480,7 +480,7 @@ Here is an example code that demonstrates how to component grid actions for spec
 
 Customizing the grid column styles allows you to modify the appearance of columns in the Grid component to meet your design requirements. You can customize the font, background color, and other styles of the columns. To customize the columns styles in the grid, you can use grid event, css, property or method support.
 
-For more information check on this [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/cell#customize-cell-styles).
+For more information check on this [Documentation](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/cell#customize-cell-styles).
 
 ## Manipulating columns
 
@@ -584,7 +584,7 @@ grid.RefreshColumns();
 
 ## Responsive columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid MVC provides a built-in feature to toggle the visibility of columns based on media queries using the `HideAtMedia` property of the column object. The `HideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid MVC provides a built-in feature to toggle the visibility of columns based on media queries using the `HideAtMedia` property of the column object. The `HideAtMedia` accepts valid [Media Queries](https://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `HideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

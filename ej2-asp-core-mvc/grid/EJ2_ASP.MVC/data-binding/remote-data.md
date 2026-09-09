@@ -44,7 +44,7 @@ To configure a server with Syncfusion ASP.Net MVC Grid, you need to follow the b
 * Name the project **CustomBinding**.
 * Click “Create”
 
-**Step 2:**  Create a simple ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple ASP.NET MVC Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc).
 
 **Step 3:**  Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code.
 
@@ -506,7 +506,7 @@ export function getOrders(state, action) {
 }
 ```
 
-> Further information can be accessed in the respective documentation for [lazy load grouping](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/grouping/lazy-load-grouping).
+> Further information can be accessed in the respective documentation for [lazy load grouping](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/grouping/lazy-load-grouping).
 
 ## Handling CRUD operations
 
@@ -645,7 +645,7 @@ To export the complete Grid data to PDF document, utilize the `PdfExportProperti
   });
 ```
 
-> For further customization on Grid export, refer to the respective documentation for [PDF exporting](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/pdf-export/pdf-export-options) and [Excel exporting](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/excel-export/excel-export-options)
+> For further customization on Grid export, refer to the respective documentation for [PDF exporting](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/pdf-export/pdf-export-options) and [Excel exporting](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/excel-export/excel-export-options)
 
 The following code example demonstrates how to export all records on the client side:
 

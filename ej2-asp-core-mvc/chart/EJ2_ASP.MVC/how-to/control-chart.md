@@ -236,4 +236,4 @@ To create a control charts, follow the given steps.
 
 ![Alt text](./images/control-charts.png)
 
-**Sample link**: A sample for creating control chart is available in the following link, [`chartSample`](http://www.syncfusion.com/downloads/support/directtrac/207077/ze/coreEJ2Sample-1067535862).
+**Sample link**: A sample for creating control chart is available in the following link, [`chartSample`](https://www.syncfusion.com/downloads/support/directtrac/207077/ze/coreEJ2Sample-1067535862).

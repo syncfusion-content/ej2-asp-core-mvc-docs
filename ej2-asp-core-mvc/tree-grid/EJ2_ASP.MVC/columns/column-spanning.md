@@ -51,4 +51,4 @@ The following list outlines the features that are not compatible with column spa
 * Export
 
 ## See Also
-* [Row Spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.MVC TreeGrid](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/row/row-spanning)
+* [Row Spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.MVC TreeGrid](https://help.syncfusion.com/grid-sdk/asp-net-mvc/tree-grid/row/row-spanning)

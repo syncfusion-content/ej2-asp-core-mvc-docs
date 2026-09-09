@@ -32,7 +32,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 1. Choose **File > New > Project...** in the Visual Studio menu bar.
 
-    ![new project in aspnetmvc 2019](images/new-mvc-project-vs2019.png)
+    ![new project in ASP.NET MVC 2019](images/new-mvc-project-vs2019.png)
 
 2. Select **ASP.NET Web Application (.NET Framework)** in Visual Studio 2019.
 
@@ -147,7 +147,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 1. Choose **File > New > Project...** in the Visual Studio menu bar.
 
-    ![new project in aspnetmvc5](images/new-mvc-project.png)
+    ![new project in asp.net mvc5](images/new-mvc-project.png)
 
 2. Select **Installed > Visual C# > Web** and choose the required **.NET Framework** in the drop-down.
 
@@ -258,7 +258,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
 1. Choose **File > New > Project...** in the Visual Studio menu bar.
 
-    ![new project in aspnetmvc4](images/new-mvc-project.png)
+    ![new project in asp.net mvc4](images/new-mvc-project.png)
 
 2. Select **Installed > Templates > Visual C# > Web > Visual Studio 2012** and choose the required **.NET Framework** in the drop-down.
 

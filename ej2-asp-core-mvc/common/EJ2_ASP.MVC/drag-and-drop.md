@@ -19,15 +19,15 @@ documentation: ug
 The following list demonstrates the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC control documents that are supported with Drag and Drop.
 
 * [Tabs](../tab/drag-and-drop)
-* [Dashboard Layout](../dashboard-layout/interaction-with-panels/dragging-of-panels)
-* [Schedule](../schedule/appointments#drag-and-drop-appointments)
-* [File Manager](../file-manager/drag-and-drop)
-* [Gantt](../gantt/how-to/maintainrecordindex)
-* [Grid](../grid/row/row-drag-and-drop)
-* [Kanban](../kanban/drag-and-drop)
+* [Dashboard Layout](https://help.syncfusion.com/chart-sdk/asp-net-mvc/dashboard-layout/interaction-with-panels/dragging-of-panels)
+* [Schedule](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/schedule/appointments#drag-and-drop-appointments)
+* [File Manager](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/drag-and-drop)
+* [Gantt](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/how-to/drag-and-drop)
+* [Grid](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/row/row-drag-and-drop)
+* [Kanban](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/drag-and-drop)
 * [ListBox](../list-box/drag-and-drop)
 * [ListView](../listview/how-to/drag-and-drop-list-items)
-* [TreeGrid](../tree-grid/row#drag-and-drop)
+* [TreeGrid](https://help.syncfusion.com/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-and-drop)
 * [TreeView](../treeview/drag-and-drop)
 
 ## Initializing custom Draggable element

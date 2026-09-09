@@ -194,7 +194,7 @@ using Syncfusion.Telemetry;
 
 ### Step 2: Disable telemetry at application startup
 
-Call the `Telemetry.Disable()` in `Global.asax.cs` file before initializing or rendering any Syncfusion<sup>&reg;</sup> ASP.NET MVC component. 
+Call the `Telemetry.Disable()` in `Global.asax.cs` file before initializing or rendering any Syncfusion<sup>&reg;</sup> ASP.NET MVC Components. 
 
 {% tabs %} 
 

@@ -1,29 +1,29 @@
 ---
 layout: post
-title: Spinner and Progress in ##Platform_Name## Progress Button | Syncfusion
-description: Learn to customize spinner and progress behavior in ##Platform_Name## Progress Button with spinner position, templates, animations, and control methods.
+title: Spinner and Progress in ASP.NET MVC Progress Button | Syncfusion
+description: Learn to customize spinner and progress behavior in ASP.NET MVC Progress Button with spinner position, templates, animations, and control methods.
 platform: ej2-asp-core-mvc
 control: Spinner And Progress
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Spinner and Progress in ##Platform_Name## Progress Button
+# Spinner and Progress in ASP.NET MVC Progress Button
 
 <!-- markdownlint-disable MD002 MD022 -->
 ## Spinner
 
 ### Change spinner position
 
-Spinner position can be changed by modifying the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButtonSpinSettings.html#Syncfusion_EJ2_SplitButtons_ProgressButtonSpinSettings_Position) property of [`SpinSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_SpinSettings). By default, the spinner is positioned at the left of the ProgressButton. You can position it at the `left`, `right`, `top`, `bottom`, or `center` of the text content.
+Spinner position can be changed by modifying the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButtonSpinSettings.html#Syncfusion_EJ2_SplitButtons_ProgressButtonSpinSettings_Position) property of [`SpinSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_SpinSettings). By default, the spinner is positioned at the left of the ProgressButton. You can position it at the `left`, `right`, `top`, `bottom`, or `center` of the text content.
 
 ### Change spinner size
 
-Spinner size can be changed by modifying the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButtonSpinSettings.html#Syncfusion_EJ2_SplitButtons_ProgressButtonSpinSettings_Width) property of [`SpinSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_SpinSettings). In this demo, the `Width` is set to `20` to change the spinner size.
+Spinner size can be changed by modifying the [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButtonSpinSettings.html#Syncfusion_EJ2_SplitButtons_ProgressButtonSpinSettings_Width) property of [`SpinSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_SpinSettings). In this demo, the `Width` is set to `20` to change the spinner size.
 
 ### Spinner template
 
-You can use custom spinner by specifying the [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButtonSpinSettings.html#Syncfusion_EJ2_SplitButtons_ProgressButtonSpinSettings_Template) property of [`SpinSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_SpinSettings) with custom styles.
+You can use custom spinner by specifying the [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButtonSpinSettings.html#Syncfusion_EJ2_SplitButtons_ProgressButtonSpinSettings_Template) property of [`SpinSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_SpinSettings) with custom styles.
 
 The following sample demonstrates the above functionalities of the spinner.
 
@@ -57,7 +57,7 @@ The following sample demonstrates the above functionalities of the spinner.
 
 ### Content animation
 
-The [`Content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_Content) of the ProgressButton can be animated during progress using the [`Effect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButtonAnimationSettings.html#Syncfusion_EJ2_SplitButtons_ProgressButtonAnimationSettings_Effect) property of [`AnimationSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_AnimationSettings). You can also set custom duration and timing function using the `duration` and `easing` properties. The possible `effect` values are `None`, `SlideLeft`, `SlideRight`, `SlideUp`, `SlideDown`, `ZoomIn`, and `ZoomOut`.
+The [`Content`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_Content) of the ProgressButton can be animated during progress using the [`Effect`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButtonAnimationSettings.html#Syncfusion_EJ2_SplitButtons_ProgressButtonAnimationSettings_Effect) property of [`AnimationSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_AnimationSettings). You can also set custom duration and timing function using the `duration` and `easing` properties. The possible `effect` values are `None`, `SlideLeft`, `SlideRight`, `SlideUp`, `SlideDown`, `ZoomIn`, and `ZoomOut`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -86,7 +86,7 @@ The [`Content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spl
 
 ### Change step of the ProgressButton
 
-The progress state can be visualized to the specified interval by changing the `Step` property in the [`begin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_Begin) event of the ProgressButton. In this demo, the `Step` property is set to `20` to show progress at every 20% increment.
+The progress state can be visualized to the specified interval by changing the `Step` property in the [`begin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_Begin) event of the ProgressButton. In this demo, the `Step` property is set to `20` to show progress at every 20% increment.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

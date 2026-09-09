@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Release Notes - Syncfusion AspNetMvc AI Coding Assistants | Syncfusion
-description: Explore the release notes for Syncfusion AspNetMvc AI Coding Assistants, covering MCP Server updates across all versions.
-control: Syncfusion AspNetMvc AI Coding Assistants Release Notes
+title: Release Notes - Syncfusion ASP.NET MVC AI Coding Assistants | Syncfusion
+description: Explore the release notes for Syncfusion ASP.NET MVC AI Coding Assistants, covering MCP Server updates across all versions.
+control: Syncfusion ASP.NET MVC AI Coding Assistants Release Notes
 platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion AspNetMvc AI Coding Assistants Release Notes
+# Syncfusion ASP.NET MVC AI Coding Assistants Release Notes
 
-This document provides information about the changes and new features included in each version of the Syncfusion AspNetMvc AI Coding Assistants, including the [Syncfusion.AspNetMvc.MCP](https://www.nuget.org/packages/Syncfusion.AspNetMvc.MCP) MCP Server.
+This document provides information about the changes and new features included in each version of the Syncfusion ASP.NET MVC AI Coding Assistants, including the [Syncfusion.AspNetMvc.MCP](https://www.nuget.org/packages/Syncfusion.AspNetMvc.MCP) MCP Server.
 
 ## MCP Server
 

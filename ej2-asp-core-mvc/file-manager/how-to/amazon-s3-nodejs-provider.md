@@ -17,7 +17,7 @@ Node.js acts as the bridge between the File Manager component and Amazon S3 Stor
 
 ## Prerequisites
 
-* Valid Amazon S3 account. ( accessKeyId, secretAccessKey, region, bucketName)
+* Valid Amazon S3 account. (accessKeyId, secretAccessKey, region, bucketName)
 * Node version 14 above.
 
 ## Introduction to Amazon S3 Storage

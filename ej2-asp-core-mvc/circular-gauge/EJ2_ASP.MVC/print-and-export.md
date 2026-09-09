@@ -12,8 +12,8 @@ documentation: ug
 
 ## Print
 
-To use the print functionality, we should set the [`AllowPrint`](https://ej2.syncfusion.com/documentation/api/circular-gauge#allowprint) property to **true**. The rendered circular gauge can be printed directly from the browser by calling the method [`print`](https://ej2.syncfusion.com/documentation/api/circular-gauge#print).
-
+To use the print functionality, we should set the [`AllowPrint`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.circulargauge.circulargauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_AllowPrint) property to **true**. The rendered circular gauge can be printed directly from the browser by calling the method [`print`](https://ej2.syncfusion.com/documentation/api/circular-gauge#print).
+https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.circulargauge.circulargauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_AllowPrint
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -43,7 +43,7 @@ To use the print functionality, we should set the [`AllowPrint`](https://ej2.syn
 
 ### Image Export
 
-To use the image export functionality, we should set the [`AllowImageExport`](https://ej2.syncfusion.com/documentation/api/circular-gauge#allowimageexport) property to **true**. The rendered circular gauge can be exported as an image using the [`export`](https://ej2.syncfusion.com/documentation/api/circular-gauge#export) method. The method requires two parameters: image type and file name. The circular gauge can be exported as an image in the following formats.
+To use the image export functionality, we should set the [`AllowImageExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.circulargauge.circulargauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_AllowImageExport) property to **true**. The rendered circular gauge can be exported as an image using the [`export`](https://ej2.syncfusion.com/documentation/api/circular-gauge#export) method. The method requires two parameters: image type and file name. The circular gauge can be exported as an image in the following formats.
 
 * JPEG
 * PNG
@@ -103,7 +103,7 @@ We can get the image file as base64 string for the JPEG and PNG formats. The cir
 
 ### PDF Export
 
-To use the PDF export functionality, we should set the [`AllowPdfExport`](https://ej2.syncfusion.com/documentation/api/circular-gauge#allowpdfexport) property to **true**. The rendered circular gauge can be exported as PDF using the [`export`](https://ej2.syncfusion.com/documentation/api/circular-gauge#export) method. The [`export`](https://ej2.syncfusion.com/documentation/api/circular-gauge#export) method requires three parameters: file type, file name and orientation of the PDF document. The orientation setting is optional and "0" indicates portrait and "1" indicates landscape.
+To use the PDF export functionality, we should set the [`AllowPdfExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.circulargauge.circulargauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_AllowPdfExport) property to **true**. The rendered circular gauge can be exported as PDF using the [`export`](https://ej2.syncfusion.com/documentation/api/circular-gauge#export) method. The `export` method requires three parameters: file type, file name and orientation of the PDF document. The orientation setting is optional and "0" indicates portrait and "1" indicates landscape.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

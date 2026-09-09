@@ -589,7 +589,7 @@ The Pivot Table supports exporting data with custom calculations beyond the defa
 
 To export with custom aggregates, follow these steps:
 
-1. Define custom aggregate names using the [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/globalization-and-localization#localization) option. These names appear in the Pivot Table's aggregation menu.
+1. Define custom aggregate names using the [localization](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/globalization-and-localization#localization) option. These names appear in the Pivot Table's aggregation menu.
 2. Add custom aggregation types to the aggregate menu during Pivot Table initialization using the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event.
 3. Use the [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event to define the calculation logic for each custom type. This event triggers for every aggregate cell, allowing custom calculations to be applied.
 4. Once the calculations are defined, call the `pdfExport` method to export the Pivot Table with all custom aggregations applied.

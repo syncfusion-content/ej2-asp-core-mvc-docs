@@ -18,7 +18,7 @@ NodeJS acts as the bridge between the File Manager control and Azure Blob Storag
 
 ## Prerequisites
 
-* Valid Azure blob storage account. ( accountName, accountKey, endpointSuffix)
+* Valid Azure blob storage account. (accountName, accountKey, endpointSuffix)
 * Node version 14 above.
 
 ## Introduction to Azure Blob Storage

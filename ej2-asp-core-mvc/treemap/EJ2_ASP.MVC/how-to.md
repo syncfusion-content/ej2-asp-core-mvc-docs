@@ -80,7 +80,7 @@ Customize the population for drilled countries or states in the header element w
 
 **Sample reference**
 
-[`treemap sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/header-422842907).
+[`treemap sample`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/header-422842907).
 
 **Screenshot**
 
@@ -135,7 +135,7 @@ Add the label template in the `leafItemSettings` options, and then set the `show
 
 **Sample reference**
 
-[`treemap sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/labels430533743).
+[`treemap sample`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/labels430533743).
 
 **Screenshot**
 

@@ -21,11 +21,11 @@ Entity Framework is an open-source [ORM framework](https://en.wikipedia.org/wiki
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/url-adaptor), [Web Method](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
-The [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET MVC Grid locally using the `DataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
+The [CustomAdaptor](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET MVC Grid locally using the `DataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
 ## Binding data using Entity Framework from Microsoft SQL Server via an API service.
 
@@ -595,7 +595,7 @@ CRUD operations within the Grid can be mapped to server-side controller actions 
 3. **UpdateUrl**: Specifies the URL for updating existing data.
 4. **BatchUrl**: Specifies the URL for batch editing.
 
-To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -902,7 +902,7 @@ When you run the application, the resultant Grid will look like this
 
 ## Binding data from Microsoft SQL Server using Entity Framework with CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET MVC Grid.
+This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET MVC Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
@@ -1403,7 +1403,7 @@ public class OrderDbContext : DbContext
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion ASP.NET MVC Grid, utilize the [GridEditSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit) documentation.
+To enable editing in the Syncfusion ASP.NET MVC Grid, utilize the [GridEditSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/editing/edit) documentation.
 
 In this scenario, the inline edit `Mode` and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property configured to display toolbar items for editing purpose.
 

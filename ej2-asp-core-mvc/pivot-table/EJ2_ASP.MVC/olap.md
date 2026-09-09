@@ -29,7 +29,7 @@ Follow below steps to create ASP.NET MVC Application.
 
 **Step 1:** Choose **File > New > Project...** in the Visual Studio menu bar.
 
-![new project in aspnetmvc5](images/new-mvc-project.png)
+![new project in asp.net mvc5](images/new-mvc-project.png)
 
 **Step 2:** Select **Installed > Visual C# > Web** and choose the required **.NET Framework** in the drop-down.
 

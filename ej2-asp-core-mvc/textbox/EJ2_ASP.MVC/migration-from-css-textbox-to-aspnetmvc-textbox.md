@@ -3,7 +3,7 @@ layout: post
 title: Migration from CSS TextBox to ##Platform_Name## TextBox | Syncfusion
 description: Migrate from CSS-based ##Platform_Name## TextBox to the TagHelper control for floating labels, clear buttons, and validation states in a unified API.
 platform: ej2-asp-core-mvc
-control: Migration From Css Textbox To Aspnetmvc Textbox
+control: Migration From Css Textbox To ASP.NET MVC Textbox
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

@@ -185,7 +185,7 @@ The following example demonstrates how to collapse all grouped rows at the initi
         }
     }
 ```
-> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/grouping/lazy-load-grouping). This approach is also applicable for the `groupExpandAll` method.
+> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/grouping/lazy-load-grouping). This approach is also applicable for the `groupExpandAll` method.
 
 ## Group or ungroup column externally
 
@@ -301,4 +301,4 @@ The following example demonstrates how the `ActionBegin` and `ActionComplete` ev
 
 ## See Also
 
-* [Exporting grouped records](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/excel-export/excel-export-options#exporting-grouped-records)
+* [Exporting grouped records](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/excel-export/excel-export-options#exporting-grouped-records)

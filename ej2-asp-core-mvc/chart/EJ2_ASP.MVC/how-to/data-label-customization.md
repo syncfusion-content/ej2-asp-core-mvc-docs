@@ -126,4 +126,4 @@ public class EmployeeModel
 
 
 
-**Sample:** Customize the background color of data label is available in [`chart sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/chartsample1860216677).
+**Sample:** Customize the background color of data label is available in [`chart sample`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/chartsample1860216677).
