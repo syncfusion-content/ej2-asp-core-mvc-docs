@@ -10,13 +10,21 @@ documentation: ug
 
 # Editing in ASP.NET Core Data Grid
 
-The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to enable you to perform CRUD (Create, Read, Update, Delete) operations seamlessly.
+The Data Grid component includes built-in editing features for creating, reading, updating, and deleting data directly in the grid. This eliminates the need for separate forms and allows data modification within a single interface. The grid editing provides powerful options through multiple edit modes such as inline editing, dialog editing, batch editing, custom editors, validation, CRUD operations, and template-based editing.
 
-To enable editing functionality directly within the grid, you need to configure the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing), [allowAdding](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowAdding), and [allowDeleting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowDeleting) properties within the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html)  to **true**.
+## Enable editing
 
-Editing feature requires a primary key column for CRUD operations. To define the primary key, set `columns.isPrimaryKey` to **true** in particular column.
+To enable editing functionality directly within the grid, configure the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing), [allowAdding](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowAdding), and [allowDeleting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowDeleting) properties within the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) to `true`.
 
-You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the `addRecord` method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid. Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
+| Property | Purpose |
+|----------|---------|
+| `allowEditing` | Enable editing of existing records |
+| `allowAdding` | Enable adding new records |
+| `allowDeleting` | Enable deleting records |
+
+Editing requires a primary key column to support full CRUD functionality. Define the primary key by setting `columns.isPrimaryKey` to `true` on the relevant column.
+
+Edit actions can be initiated by double-clicking a row or by selecting a row and clicking the `Edit` button in the toolbar. Records can be added by clicking the `Add` button in the toolbar or via an external trigger that invokes the `addRecord` method. Use `Save` and `Cancel` to commit or discard changes from the toolbar during edit mode. Deletion is performed by selecting the target row and clicking the `Delete` button.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -29,17 +37,28 @@ You can start the edit action either by double clicking the particular row or by
 
 ![Inline Editing](../images/editing/inline-edit.gif)
 
-> * If `columns.isIdentity` is enabled, then it will be considered as a read-only column when editing and adding a record.
-> * You can disable editing for a particular column, by specifying `columns.allowEditing` to **false**.
-> * You can use the **Insert** key to add a new row to the grid and use the **Delete** key to delete the selected row from the grid.
+> * If `columns.isIdentity` is enabled, the column will be treated as read-only when editing or adding records.
+> * Use `columns.allowEditing` set to `false` to disable editing for specific columns.
+> * The `Insert` key adds a new row, and the `Delete` key deletes the selected row in the grid.
 
-## Toolbar with edit option
+## Edit modes
 
-The toolbar with edit option feature in the Grid component provides a [built-in toolbar](https://ej2.syncfusion.com/aspnetcore/documentation/grid/tool-bar/tool-bar-items#built-in-toolbar-items) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
+The Data Grid supports multiple editing options to meet different data-editing requirements:
 
-To enable this feature, you need to configure the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property of the Grid component. This property allows you to define the items that will be displayed in the grid toolbar. By including the relevant items like **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `toolbar` property, you can enable the edit options in the toolbar.
+- **[Inline edit](./in-line-editing)**: Allows direct modification of row or cell values within the grid.
+- **[Batch edit](./batch-editing)**: Enables editing and saving of multiple cells in a single action.
+- **[Cell edit](./cell-editing)**: Allows to edit individual cell values directly within the grid.
+- **[Dialog edit](./dialog-editing)**: Opens a dedicated modal dialog window to edit row data.
 
-Here's an example of how to enable the toolbar with edit option in the Grid:
+Use the `editSettings.mode` property to specify the desired edit mode.
+
+## Edit records using the toolbar
+
+The toolbar with edit option feature provides a [built-in toolbar](https://ej2.syncfusion.com/aspnetcore/documentation/grid/tool-bar/tool-bar-items#built-in-toolbar-items) that includes items for editing actions. Using the toolbar, grid records can be modified, updated, or canceled during edit operations.
+
+Configure the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property of the Grid component to enable this feature. The toolbar property defines the items displayed in the grid toolbar. Include relevant items like `Edit`, `Add`, `Delete`, `Update`, and `Cancel` within the `toolbar` property to enable edit options in the toolbar.
+
+The following example demonstrates enabling the toolbar with editing options in the Data Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -52,13 +71,44 @@ Here's an example of how to enable the toolbar with edit option in the Grid:
 
 ![Edit with toolbar](../images/editing/edit-with-toolbar.gif)
 
-## Disable editing for particular column
+## Column validation
 
-In Grid component, you have an option to disable editing for a specific column. This feature is useful when you want to prevent editing certain columns, such as columns that contain calculated values or read-only data.
+Column validation applies validation rules to individual columns during edit operations, ensuring data accuracy before saving. Invalid data displays error messages and prevents saving. The `FormValidator` component validates data using rules defined in the `validationRules` property for each column.
 
-To disable editing for a particular column, you can use the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing) property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
+The following example demonstrates validation rules applied to a grid column:
 
-Here's an example that demonstrates how to disable editing for the column in the Grid:
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/validation-columnvalid/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="columnvalid.cs" %}
+{% include code-snippet/grid/edit/validation-columnvalid/columnvalid.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Column validation](../images/editing/validation.png)
+
+## Disable editing for specific columns
+
+The Data Grid provides the option to disable editing for specific columns. This is useful when certain columns should remain read-only, such as columns containing calculated values, IDs, or system-generated data.
+
+### Static column disabling
+
+To permanently disable editing for a column, set the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing) property to `false` on the column. This prevents editing for that column across all rows:
+
+```html
+<ejs-grid id="Grid" dataSource="@ViewBag.data">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" allowEditing="false"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+```
+
+### Dynamic column disabling
+
+To disable editing for a column based on application interaction or conditions, use the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing) property of the `columns` object. Set this property to `false` to prevent editing for that specific column. 
+
+The following example demonstrates how to disable editing for selected columns dynamically in the grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -71,17 +121,15 @@ Here's an example that demonstrates how to disable editing for the column in the
 
 ![Disable Edit for particular column](../images/editing/disable-column-editing.png)
 
-> * If you have set the `isPrimaryKey` property to **true** for a column, editing will be automatically disabled for that column.
-> * You can disable the particular row using [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. Please refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/in-line-editing#cancel-edit-based-on-condition).
-> * You can disable the particular cell using [cellEdit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellEdit) event. Please refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/batch-editing#cancel-edit-based-on-condition-in-batch-mode).
+> * If [isPrimaryKey](../../api/grid/column#isprimarykey) is enabled, editing is automatically disabled for that column.
+> * To disable editing for a specific row using the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. Please refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/in-line-editing#cancel-edit-based-on-condition).
+> * To disable editing for a particular cell using the [cellEdit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellEdit) event. Please refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/batch-editing#cancel-edit-based-on-condition-in-batch-mode).
 
-## Editing template column
+## Customize column editors using templates
 
-The editing template column feature in the Grid allows you to create custom editing templates for specific columns in the grid. This feature is particularly useful when you need to customize the editing experience for certain columns, such as using custom input controls or displaying additional information during editing.
+Customizing the editing experience for specific columns is possible by defining an editing template. Use the `field` property to connect the column with its corresponding data field.
 
-To enable the editing template column feature, you need to define the `field` property for the specific column in the grid's configuration. The `field` property maps the column to the corresponding field name in the data source, allowing you to edit the value of that field.
-
-In the below demo, the **ShipCountry** column is rendered with the template.
+In this example, the "Ship Country" column is rendered with a template:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -96,50 +144,11 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 | -------------- | ------------- |
 | ![Before template column edit](../images/editing/before-template-column-editing.png) | ![After template column edit](../images/editing/after-template-column-editing.png) |
 
-## Customize delete confirmation dialog
-
-Customizing the delete confirmation dialog in Grid allows you to personalize the appearance, content, and behavior of the dialog that appears when you attempts to delete an item. You can modify properties like header, showCloseIcon, and height to tailor the edit dialog to your specific requirements. Additionally, you can override default localization strings to provide custom text for buttons or other elements within the dialog.
-
-To customize the delete confirmation dialog, you can utilize the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. This event is triggered when a toolbar item, such as the delete button, is clicked.
-
-> * To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the `editSettings` configuration to **true**.
-> * You can refer the Grid [Default text](../global-local) list for more localization.
-
-The following example that demonstrates how to customize the delete confirmation dialog using the `toolbarClick` event:
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/delete-dialog/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Delete-dialog.cs" %}
-{% include code-snippet/grid/edit/delete-dialog/dialog.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Customize delete confirmation dialog](../images/editing/delete-confirm-dialog.png)
-
-## Update boolean column value with a single click   
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to update a boolean column value with a single click in the normal mode of editing. This feature streamlines the process of toggling boolean values within the grid, enhancing interaction and efficiency. This can be achieved through the use of the column template feature.
-
-In the following sample, the `CheckBox` component is rendered as a template in the **Verified** column to make it editable with a single click.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/update-boolean-value/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Update-boolean.cs" %}
-{% include code-snippet/grid/edit/update-boolean-value/boolean.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Update boolean value in single click](../images/editing/update-boolean.gif)
-
 ## Edit enum column 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a feature that allows you to edit enum type data in a grid column. This is particularly useful when you need to edit enumerated list data efficiently.
+Enum columns contain predefined list values (enumerated data). Instead of allowing free-form text input, using a dropdown editor ensures data consistency and prevents invalid entries. The `edit` property enables custom editors for enum data.
 
-In the following example, the `DropDownList` component is rendered within the cell edit template for the Employee Feedback column using edit property.
+The following example demonstrates how to render a `DropDownList` component as an edit template for the "Employee Feedback" column, binding it to a predefined list of enum values: 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -154,11 +163,12 @@ In the following example, the `DropDownList` component is rendered within the ce
 | -------------- | ------------- |
 | ![Enum column edit](../images/editing/on-enum-column-editing.png) | ![After enum column edit](../images/editing/after-enum-column-editing.png) |
 
+
 ## Edit complex column 
 
-The edit template for complex column in Grid is used to customize the editing experience when dealing with complex data structures. This capability is particularly useful for handling nested data objects within grid columns. By default, the grid binds complex data to column fields using the dot (.) operator. However, when you render custom elements, such as input fields, in the edit template for a complex column, you must use the (___) underscore operator instead of the dot (.) operator to bind the complex object.
+Complex columns contain nested data objects (such as "Name.FirstName"). When editing complex data with custom input elements, the binding syntax differs from simple columns. Use the underscore operator (`___`) instead of the dot operator (`.`) to correctly bind nested properties in edit templates.
 
-In the following sample, the input element is rendered in the edit template of the FirstName and LastName column. The edited changes can be saved using the `name` property of the input element. Since the complex data is bound to the FirstName  and LastName column, The `name` property should be defined as **Name___FirstName** and **Name___LastName**, respectively, instead of using the dot notation (**Name.FirstName** and **Name.LastName**).
+The following example demonstrates how to edit complex nested data. The "FirstName" and "LastName" properties (nested under "Name") are edited using input elements with names defined as "Name___FirstName" and "Name___LastName":
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -175,9 +185,9 @@ In the following sample, the input element is rendered in the edit template of t
 
 ## Edit foreign key column 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid offers a powerful editing feature for foreign key columns, enhancing the default rendering of the DropDownList component during editing. This flexibility is particularly useful when you need to customize the editor for foreign key columns. By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid renders the DropDownList component as the editor for foreign key columns during editing. However, you can enhance and customize this behavior by leveraging the cell edit template for the column using edit property. The edit property allows you to specify a cell edit template that serves as an editor for a particular column.
+The Data Grid provides a powerful editing feature for foreign key columns by rendering a `DropDownList` component as the default editor during editing. This default editor can be replaced by defining the `edit` property. The `edit` property accepts either a template string or an HTML element ID and serves as the editor for a particular column.
 
-In the following code example, the Employee Name is a foreign key column. When editing, the ComboBox component is rendered instead of DropDownList.
+In the following code example, the "Employee Name" is a foreign key column. When editing, the `ComboBox` component is rendered instead of `DropDownList`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -192,23 +202,62 @@ In the following code example, the Employee Name is a foreign key column. When e
 | -------------- | ------------- |
 | ![Foreign key column edit](../images/editing/on-foreign-key-column-editing.png) | ![After foreign key column edit](../images/editing/after-foreign-key-column-editing.png) |
 
-## How to perform CRUD action externally 
+## Customize delete confirmation dialog
 
-Performing CRUD (Create, Read, Update, Delete) actions externally in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to manipulate grid data outside the grid itself. This can be useful in scenarios where you want to manage data operations programmatically.
+By default, the Data Grid shows a confirmation dialog when attempting to delete a row. The appearance and content of this dialog can be customized to match application requirements. Customization can include changing the dialog header, icons, or button text.
+
+To customize the delete confirmation dialog, utilize the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. This event is triggered when a toolbar action is performed and allows modification of dialog properties.
+
+> * Enable the confirmation dialog for deletions by setting [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) to `true` in `editSettings`.
+> * Refer to the grid [Default text](../global-local) documentation for localization options.
+
+The following example demonstrates customizing the delete confirmation dialog in the grid by handling the `toolbarClick` event.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/delete-dialog/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Delete-dialog.cs" %}
+{% include code-snippet/grid/edit/delete-dialog/dialog.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customize delete confirmation dialog](../images/editing/delete-confirm-dialog.png)
+
+## Update boolean column value with a single click   
+
+The grid allows boolean column values to be toggled with a single click in normal editing mode. Use the column template feature to render a CheckBox for direct interaction.
+
+The following example demonstrates how to render a `CheckBox` component as a template in the "Verified" column to enable single-click editing:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/update-boolean-value/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Update-boolean.cs" %}
+{% include code-snippet/grid/edit/update-boolean-value/boolean.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Update boolean value in single click](../images/editing/update-boolean.gif)
+
+## Performing CRUD actions externally 
+
+By default, the grid provides built-in editing through toolbars and inline editing. However, CRUD operations can also be triggered programmatically from external controls (custom buttons, forms, or panels outside the grid). This allows full control over when and how data operations occur.
 
 ### Using separate toolbar 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid enables external CRUD operations, allowing you to efficiently manage data manipulation within the grid. This capability is particularly useful when you need to manage data operations using a separate toolbar.
+To perform CRUD operations externally, use the following methods:
 
-To perform CRUD operations externally, the following methods are available:
+| Method | Purpose |
+|--------|---------|
+| `addRecord` | Add a new record (shows edit form if no data provided) |
+| `startEdit` | Begin editing the selected row |
+| `deleteRecord` | Delete the selected row |
+| `endEdit` | Save changes when grid is in edit state |
+| `closeEdit` | Cancel editing without saving |
 
-`addRecord` - To add a new record. If no data is passed then add form will be shown.
-`startEdit` - To edit the selected row.
-`deleteRecord` - To delete a selected row.
-`endEdit` - If the grid is in editable state, then you can save a record by invoking this method.
-`closeEdit` - To cancel the edited state.
-
-The following example demonstrates the integration of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with a separate toolbar for external CRUD operations. The toolbar contains buttons for Add, Edit, Delete, Update, and Cancel.
+The following example demonstrates external CRUD operations with a custom toolbar.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -223,11 +272,11 @@ The following example demonstrates the integration of the Syncfusion<sup style="
 
 ### Using external form 
 
-Performing the edit operation in a custom external form in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is a valuable feature when you need to customize the edit operation within a separate form rather than the default in-grid editing. 
+Performing the edit operation in a custom external form in the Data Grid is a valuable feature when customization of the edit operation is required within a separate form rather than the default in‑grid editing.
 
-To enable the use of an external form for editing in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can make use of the [rowSelected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelected) event. This property specifies whether the edit operation should be triggered when a row is selected.
+To enable the use of an external form for editing in the grid, the [rowSelected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelected) event can be used. This event specifies whether the edit operation should be triggered when a row is selected.
 
-In the following example, it demonstrates how to edit the form using an external form by utilizing the `rowSelected` event:
+In the following example, the edit operation is demonstrated using an external form by utilizing the `rowSelected` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -242,15 +291,9 @@ In the following example, it demonstrates how to edit the form using an external
 | -------------- | ------------- |
 | ![External form edit](../images/editing/on-external-form-editing.png) | ![After form edit](../images/editing/after-external-form-editing.png) |
 
-## Troubleshoot editing works only for first row
+## Make a grid column always editable
 
-The Editing functionalities can be performed based upon the primary key value of the selected row. If `isPrimaryKey` property is not defined in the grid, then edit or delete action take places the first row. To overcome this, ensure that you establish the `isPrimaryKey` property as **true** for the relevant column responsible for holding the unique identifier for each row.
-
-## How to make a grid column always editable
-
-To make a Grid column always editable, you can utilize the column template feature of the Grid. This feature is useful when you want to edit a particular column's values directly within the grid.
-
-In the following example, the textbox is rendered in the **Freight** column using a column template. The keyup event for the Grid is bound using the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event of the Grid, and the edited changes are saved in the data source using the `updateRow` method of the Grid.
+To keep a column editable at all times, use a column template and handle input through the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) method.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -263,6 +306,26 @@ In the following example, the textbox is rendered in the **Freight** column usin
 
 ![Editable column](../images/editing/editable-column.gif)
 
+## Troubleshooting: Editing works only for the first row
+
+If editing or deleting only works for the first row in the grid, the `isPrimaryKey` property is likely not configured. The primary key is essential for identifying which row to edit or delete. Without it, the grid cannot distinguish between rows.
+
+**Solution**: Set `isPrimaryKey` to `true` on the column that contains unique identifiers:
+
+```html
+<ejs-grid id="Grid" dataSource="@ViewBag.data">
+    <e-grid-columns>
+        <e-grid-column 
+            field="OrderID" 
+            headerText="Order ID" 
+            width="100" 
+            isPrimaryKey="true">
+        </e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+```
+
 ## See Also
 
-* [How to set custom format in edit state of Grid](https://support.syncfusion.com/kb/article/11763/how-to-set-custom-format-in-edit-state-of-grid)
+[How to set custom format in edit state of Grid](https://support.syncfusion.com/kb/article/11763/how-to-set-custom-format-in-edit-state-of-grid)

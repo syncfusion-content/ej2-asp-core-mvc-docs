@@ -10,13 +10,13 @@ documentation: ug
 
 # Custom Template Editing in ASP.NET Core Data Grid
 
-The Syncfusion ASP.NET Core Grid component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. This feature allows you to use ASP.NET Core templates to define the structure and content of the cells within the grid.
+The Data Grid supports template editing for creating fully customized inline and dialog-based edit forms. Template editing enables the use of Reactive Forms, Template-driven Forms, custom editors, validation logic, additional form fields, and advanced editing layouts tailored to application requirements.
 
-## Inline or dialog template editing 
+> For grid basic editing setup and configuration, refer to the [Edit Feature Setup](./edit#set-up-editing).
 
-The Syncfusion Grid provides support for inline and dialog template editing, allowing you to customize the editing using `Forms`. These forms can be utilized to add and update grid records.
+## Inline or dialog template editing
 
-To enable this feature, you need to set the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of the Grid to either **Normal** or **Dialog** and define the grid editors using [editSetting.template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template).
+Dialog and inline template editing provide options to customize the default behavior of the edit dialog. By setting the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property to `Dialog` or `Inline`, and defining the [editSetting.template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template) property as a script element ID or an HTML string, custom editors can be rendered within the dialog.
 
 **Using Forms**
 
@@ -56,17 +56,17 @@ You can enhance the customization of your grid's edit forms by utilizing templat
 
 The following template context topics are demonstrated through a practical example in the [Render tab component inside the dialog template](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/template-editing#render-tab-component-inside-the-dialog-template) topic.
 
-### Access row details inside template using template context
+### Access row details inside template
 
-When utilizing edit templates in the Grid , you can access crucial row information within an template when utilizing edit templates. This enables dynamic binding of attributes, values, or elements based on the specific row being edited. This is particularly useful for conditionally rendering or modifying elements in the edit template based on the row's state.
+Edit templates provide access to crucial row information within an `template`. This enables dynamic binding of attributes, values, or elements based on the specific row being edited, and supports conditional rendering or modification of elements in the edit template based on the row's state.
 
 The following properties will be available at the time of template execution:
 
 | Property Name | Usage |
 |---------------|-------|
-| <kbd>isAdd</kbd> | A Boolean property that defines whether the current row is a new record or not. |
+| `isAdd` | A Boolean property that defines whether the current row is a new record or not. |
 
-The following code example demonstrates the usage of the `isAdd` property in an edit template to disable the **OrderID** textbox when it's not a new record:
+The following code example demonstrates the usage of the `isAdd` property in an edit template to disable the OrderID textbox when it's not a new record:
 
 ```ts
     <input id="OrderID" name="OrderID" type="text" value=${if(isAdd)} '' ${else} ${OrderID} ${/if}  ${if(isAdd)}'' ${else} disabled ${/if}/>
@@ -74,7 +74,7 @@ The following code example demonstrates the usage of the `isAdd` property in an 
 
 ### Render editors as components 
 
-The Syncfusion Grid provides a powerful feature that allows you to dynamically render Syncfusion EJ2 controls as form editors during the editing process. This functionality is particularly useful when you want to provide feature-rich controls for data entry within the edit form.
+The Data Grid provides a powerful feature enabling dynamic rendering of Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 controls as form editors during the editing process. This functionality delivers feature-rich controls for data entry within the edit form.
 
 To achieve this by utilizing the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the Grid and specifying `requestType` as **beginEdit** or **add**.
 
@@ -94,9 +94,9 @@ The following code example illustrates rendering the [DropDownList](https://ej2.
 
 ### Get value from editor
 
-The get value from editor feature in the Syncfusion Grid allows you to read, format, and update the current editor value before it is saved. This feature is particularly valuable when you need to perform specific actions on the data, such as formatting or validation, before it is committed to the underlying data source. 
+The get value from editor feature in the Data Grid enables reading, formatting, and updating the current editor value before saving. This feature provides significant value when specific actions must be performed on data, such as formatting or validation, before committing to the underlying data source. 
 
-To achieve this feature, you can utilize the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event with the **requestType** set to **save**.
+To implement this feature, utilize the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event with the `requestType` set to `save`.
 
 In the following code example, the freight value has been formatted and updated.
  
@@ -112,7 +112,7 @@ In the following code example, the freight value has been formatted and updated.
 
 ### Set focus to particular column editor 
 
-The Syncfusion Grid allows you to control the focus behavior of input elements in edit forms. By default, the first input element in the dialog receives focus when the dialog is opened. However, in scenarios where the first input element is disabled or hidden, you can specify which valid input element should receive focus. This can be achieved using the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the Grid,  where the **requestType** is set to **beginEdit**.
+The Data Grid enables control of focus behavior for input elements in edit forms. By default, the first input element in the dialog receives focus when the dialog is opened. However, when the first input element is disabled or hidden, a different valid input element can receive focus. This can be achieved using the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the grid, where the `requestType` is set to `beginEdit`.
 
 In the following code example, the CustomerID column focused.
  
@@ -129,9 +129,7 @@ In the following code example, the CustomerID column focused.
 
 ### Disable default form validation
 
-The Syncfusion Grid provides built-in support for ASP.NET Core form validation to ensure data integrity and accuracy during editing. However, there might be scenarios where you want to disable the default form validation rules. This can be achieved using the `removeRules` method within the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the Grid.
-
-To disable default form validation rules in the Grid, follow these steps:
+Default validation rules can be disabled by handling the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event in the Data Grid component. This event provides access to the editing lifecycle, allowing customization of validation behavior when records are added or updated.
 
 ```typescript
 
@@ -143,15 +141,13 @@ To disable default form validation rules in the Grid, follow these steps:
     }
 
 ```
-> * You can use this method to disable validation rules: **args.form.ej2_instances[0].rules = {}**.
+> Disabling validation rules in the Data Grid can be achieved by setting : `args.form.ej2_instances[0].rules = {}`.
 
-### Adding validation rules for custom editors
+### Add validation rules for custom editors
 
-The Syncfusion Grid provides the ability to add validation rules for fields that are not present in the column model. This feature is particularly useful to prevent erroneous or inconsistent data from being submitted, ultimately enhancing the reliability of your application's data.
+The Data Grid provides the ability to add validation rules for fields not present in the column model. This feature prevents erroneous or inconsistent data from being submitted, enhancing the reliability of application data.
 
-To accomplish this, you can utilize the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event along with the `addRules` method.
-
-Here's how you can use the `addRules` method to add validation rules for custom editors in the `actionComplete` event: 
+To add validation rules, utilize the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event along with the [addRules](../../api/form-validator#addrules) method. The following approach uses the `addRules` method to add validation rules for custom editors in the `actionComplete` event:
  
 ```ts
 
@@ -164,13 +160,13 @@ Here's how you can use the `addRules` method to add validation rules for custom 
 
 ```
 
-## Render tab control inside the dialog template
+## Render tab component inside the dialog template
 
-You can enhance the editing experience in the Grid by rendering a [Tab](https://ej2.syncfusion.com/aspnetcore/documentation/tab/getting-started) component inside the dialog template. This feature is especially useful when you want to present multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
+Rendering a [Tab](https://ej2.syncfusion.com/aspnetcore/documentation/tab/getting-started) component inside the dialog template enhances the grid editing experience. This feature is especially useful for presenting multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
 
-To enable this functionality, you need to set the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of the Grid to **Dialog**. This configures the Grid to use the dialog editing mode. Additionally, you can use the [editSettings.template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template) property to define a template variable that contains the `Tab` component and its corresponding content.
+Enable dialog mode with  [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) set to `Dialog`. Place the `Tab` component inside [editSettings.template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template).
 
-The following example renders a tab component inside the edit dialog. The tab component has two tabs, and once you fill in the first tab and navigate to the second one, the validation for the first tab is performed before navigating to the second.
+In the following example, a tab component is rendered inside the edit dialog. The tab component contains two tabs. Once the first tab is filled and navigation occurs to the second tab, validation for the first tab is performed before moving to the second.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
