@@ -10,9 +10,9 @@ documentation: ug
 
 # Globalization in ##Platform_Name## TimePicker
 
-Globalization is the combination of internalization and localization. You can adapt the control to various languages by parsing and formatting the date or number [internationalization](../common/internationalization), and also add culture specific customization and translation to the text [localization](../common/localization).
+Globalization is the combination of internalization and localization. You can adapt the control to various languages by parsing and formatting the date or number [internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization), and also add culture specific customization and translation to the text [localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization).
 
-By default, TimePicker time format and meridian names are specific to the `American English` culture. It utilizes the [Essential JavaScript 2 Internationalization](../common/internationalization) package to parse and format the date object based on the culture by using the official [UNICODE CLDR](http://cldr.unicode.org) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data.
+By default, TimePicker time format and meridian names are specific to the `American English` culture. It utilizes the [Essential JavaScript 2 Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) package to parse and format the date object based on the culture by using the official [UNICODE CLDR](https://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data.
 
 * Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Locale) property.
 
