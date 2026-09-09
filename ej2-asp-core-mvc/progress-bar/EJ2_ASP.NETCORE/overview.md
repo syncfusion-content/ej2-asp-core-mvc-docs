@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Progress Bar Component
+title: Overview in ##Platform_Name## Progress Bar Component | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -14,12 +14,12 @@ The Essential EJ2 ProgressBar is a control that indicates the progress of a task
 
 ## Key features
 
-1. **[Types](./types/)**: Visualize progress in different shapes (rectangle, circle, and semi-circle) to give a unique appearance to your app design.
+1. **[Types](https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/types)**: Visualize progress in different shapes (rectangle, circle, and semi-circle) to give a unique appearance to your app design.
 
-2. **[Modes](./modes/)**: Visualize progress in different modes.
+2. **[States](https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/states)**: Visualize progress in different states.
 
-3. **[Customization](./customization/)**: Supports to customize the ProgressBar appearance.
+3. **[Customization](https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/customization)**: Supports to customize the ProgressBar appearance.
 
-4. **[Annotation and label](./annotation/)**: Supports to visually indicate time lapse when the toast expires.
+4. **[Annotation and label](https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/annotation)**: Supports to visually indicate time lapse when the toast expires.
 
-5. **[Animation](./animation/)**: Supports to animate the ProgressBar track.
+5. **[Animation](https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/animation)**: Supports to animate the ProgressBar track.

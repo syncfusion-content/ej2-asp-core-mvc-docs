@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of ##Platform_Name## Component
+title: Overview of ##Platform_Name## Component | Syncfusion
 description: Learn here all about overview in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index

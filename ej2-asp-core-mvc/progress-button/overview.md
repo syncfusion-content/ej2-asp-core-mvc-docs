@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Progress Button Component
+title: Overview in ##Platform_Name## Progress Button | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Progress Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index

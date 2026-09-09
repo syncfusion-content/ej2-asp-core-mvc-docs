@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Sidebar Component
+title: Overview in ##Platform_Name## Sidebar Component | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -16,10 +16,10 @@ There is a flexible option to show and hide Sidebar as per user interactions. An
 
 ## Key features
 
-1. **[Context](/sidebar/custom-context/)**: The Sidebar can be initialized in any HTML element other than the body element.
+1. **[Context](custom-context.md)**: The Sidebar can be initialized in any HTML element other than the body element.
 
-2. **[Types and positions](/sidebar/variations/)**: Supports `Push`, `Over`, `Slide`, and `Auto` to expand or collapse the sidebar, and also allows to position it in the `Left` or `Right` direction.
+2. **[Types and positions](variations.md)**: Supports `Push`, `Over`, `Slide`, and `Auto` to expand or collapse the sidebar, and also allows to position it in the `Left` or `Right` direction.
 
-3. **[Auto close](/sidebar/auto-close/)**: Allows to set the Sidebar in an expanded or collapsed state only in certain resolutions.
+3. **[Auto close](auto-close.md)**: Allows to set the Sidebar in an expanded or collapsed state only in certain resolutions.
 
-4. **[Dock](/sidebar/docking-sidebar/)**: By default, supports display of short notifications about the content on docked mode.
+4. **[Dock](docking-sidebar.md)**: By default, supports display of short notifications about the content on docked mode.

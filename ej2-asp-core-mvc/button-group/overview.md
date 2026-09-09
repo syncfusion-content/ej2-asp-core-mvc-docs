@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Button Group Component
+title: Overview in ##Platform_Name## Button Group | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
