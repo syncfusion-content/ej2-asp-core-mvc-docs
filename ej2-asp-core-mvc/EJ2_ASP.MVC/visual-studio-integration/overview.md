@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Visual Studio Integration for ASP.NET MVC
+# Visual Studio Integration in ASP.NET MVC
 
 ## Overview
 
