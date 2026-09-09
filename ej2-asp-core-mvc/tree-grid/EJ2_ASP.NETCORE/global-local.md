@@ -139,7 +139,7 @@ The following example demonstrates the TreeGrid in **Deutsch** culture.
 
 ## Internationalization
 
-The [`Internationalization`](../../common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Format) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
+The [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Format) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -200,7 +200,7 @@ RTL provides an option to switch the text direction and layout of the TreeGrid c
 
 ## See Also
 
-* [Internationalization](../../common/internationalization)
-* [Localization](../../common/localization)
+* [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization)
+* [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)
 
 N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.
