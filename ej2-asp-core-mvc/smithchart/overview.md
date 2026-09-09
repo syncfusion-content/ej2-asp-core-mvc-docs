@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Smithchart Component | Syncfusion
+title: Overview in ##Platform_Name## Smithchart Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## Smithchart Component
+# Overview
 
 The Smith chart control is one of the most useful data visualization tools for high frequency circuit applications. It contains two sets of circles to plot the parameters of transmission lines.
 

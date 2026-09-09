@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Sparkline Component | Syncfusion
+title: Overview in ##Platform_Name## Sparkline Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## Sparkline Component
+# Overview
 
 The Sparkline is a very small chart; it is drawn without axes or coordinates. This presents a common shape of data in a simple and highly condensed way. The sparklines are easy to interpret, and convey more information to users by visualizing data in a small amount of space.
 

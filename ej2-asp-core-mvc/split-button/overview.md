@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Split Button Component | Syncfusion
+title: Overview in ##Platform_Name## Split Button Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ##Platform_Name## Split Button Component
+# Overview
 
 Split button triggers default action when primary button is clicked and toggle contextual overlays for displaying list of action items when dropdown button is clicked. It can contain both text and images.
 

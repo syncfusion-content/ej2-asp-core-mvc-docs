@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Progress Button | Syncfusion
+title: Overview in ##Platform_Name## Progress Button Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Progress Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ##Platform_Name## Progress Button Component
+# Overview
 
 The ProgressButton visualizes the progression of an operation to indicate the user that a process is happening in the background with visual representation.
 
