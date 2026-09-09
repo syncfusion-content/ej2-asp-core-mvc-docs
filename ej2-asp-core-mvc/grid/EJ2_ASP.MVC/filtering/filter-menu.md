@@ -7,13 +7,16 @@ control: Filter Menu
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
+
 # Filter Menu in ASP.NET MVC Data Grid
 
-The filter menu in the  ASP.NET MVC Grid component allows you to enable filtering and provides a user-friendly interface for filtering data based on column types and operators.
+The filter menu in the Data Grid component provides a dialog-based filtering interface that appears when clicking the filter icon in column headers. This menu displays dropdown operators (such as equals, contains, startswith) and an input field for entering filter values, which provides precise control over data filtering.
 
-To enable the filter menu, you need to set the [FilterSettings.Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) property to **Menu**. This property determines the type of filter UI that will be rendered. The filter menu UI allows you to apply filters using different operators.
+## Enable filter menu
 
-Here is an example that demonstrates the usage of the filter menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid:
+To enable the filter menu, set the [FilterSettings.Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) property to `Menu`. This property determines the type of filter UI that is rendered, enabling filters to be applied using different operators tailored to each column's data type.
+
+The following example demonstrates basic filter menu usage in the Data Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -26,22 +29,27 @@ Here is an example that demonstrates the usage of the filter menu in the Syncfus
 
 ![Filter menu](../images/filtering/filter-menu.png)
 
-> * [AllowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) must be set as true to enable filter menu.
-> * By setting `Columns.AllowFiltering` as false will prevent filter menu rendering for a particular column.
+> * [AllowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) must be set as `true` to enable filter menu.
+> * Setting `Columns.AllowFiltering` as `false` prevents the filter menu from being rendered for a particular column.
 
 ## Custom component in filter menu
 
-You can enhance the filtering experience in the Syncfusion<sup style="font-size:70%">&reg;</sup>  ASP.NET MVC Grid component by customizing the filter menu with custom components. This allows you to replace the default search box with custom components like dropdowns or textboxes. By default, the filter menu provides an autocomplete component for string type columns, a numeric textbox for number type columns, and a dropdown component for boolean type columns, making it easy to search for values.
+The filter menu provides enhanced customization capabilities by allowing replacement of default filter components with custom ones. This enables the creation of filtering experiences tailored to specific data and application requirements.
 
-To customize the filter menu, you can make use of the `Column.Filter.Ui` property. This property allows you to integrate your desired custom filter component into a specific column of the Grid. To implement a custom filter UI, you need to define the following functions:
+By default, the filter menu provides:
+- **`AutoComplete`** component for string type columns.
+- **`NumericTextBox`** for number type columns.
+- **`DropDownList`** component for boolean type columns.
+- **`DatePicker`** for date type columns.
+- **`DateTimePicker`** for datetime type columns.
 
-* **create**: This function is responsible for creating the custom component for the filter.
-* **write**: The write function is used to wire events for the custom component. This allows you to handle changes in the custom filter UI.
-* **read**: The read function is responsible for reading the filter value from the custom component. This is used to retrieve the selected filter value.
+To implement custom filter components, use the `Column.Filter.Ui` property and define the following functions:
 
-For example, you can replace the standard search box in the filter menu with a dropdown component. This enables you to perform filtering operations by selecting values from the dropdown list, rather than manually typing in search queries.
+* `create`: Creates the custom component for the filter.
+* `write`: Applies the component model dynamically and connects event handlers for the custom component. This function handles changes in the custom filter UI and updates filter behavior accordingly.
+* `read`: Reads the filter value from the custom component. This retrieves the selected filter value when the filter is applied.
 
-Here is a sample code demonstrating how to render a dropdownlist component for the **CustomerID** column:
+The following example demonstrates rendering a `DropDownList` component for the "Customer ID" column instead of the default AutoComplete:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -57,11 +65,13 @@ Here is a sample code demonstrating how to render a dropdownlist component for t
 **Custom dropdown filter for CustomerID column**
 ![Custom dropdown filter for CustomerID column](../images/filtering/filter-menu-component.gif)
 
-## Show 24 hours time format in filter dialog
+## Show 24-hour time format in filter dialog
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup>  ASP.NET MVC Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event with `requestType` as `filterafteropen` and set the `timeFormat` of the `DateTimePicker` to **HH:mm**.
+The Data Grid provides a feature to display time in a "24-hour" format in date or datetime column filter dialogs.
 
-Here is an example that demonstrates how to show 24 hours time format in filter dialog:
+By default, filter dialogs display time in "12-hour" format (AM/PM) for date or datetime columns. To customize this behavior, set the column type as `datetime` and format as "M/d/y HH:mm". The [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event with `requestType` as `filterafteropen` can be used to set the `timeFormat` of the `DateTimePicker` to "HH:mm".
+
+Here is an example that demonstrates the "24-hour" time format in the filter dialog:
  
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -74,18 +84,25 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 
 ![Filter menu](../images/filtering/filterbar-format.png)
 
-## Customizing filter menu operators list
+## Customizing filter menu operators
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup>  ASP.NET MVC Grid enables you to customize the default filter operator list by utilizing the [FilterSettings.Operators](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Operators) property. This feature allows you to define your own set of operators that will be available in the filter menu. You can customize operators for string, number, date, and boolean data types.
+Filter operators are comparison methods that determine the match between the filter value and data. Examples include:
 
-The available options for customization are:
+- `equals`: Exact match
+- `contains`: Partial match (substring search)
+- `startswith`: Matches beginning of value
+- `greaterthan`: Numeric/date comparison
 
-* **stringOperator**- defines customized string operator list.
-* **numberOperator** - defines customized number operator list.
-* **dateOperator** - defines customized date operator list.
-* **booleanOperator** - defines customized boolean operator list.
+The Data Grid enables customizing the default filter operator list using the [FilterSettings.Operators](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Operators) property. This feature defines custom sets of operators available in the filter menu, allowing restriction or simplification of filtering methods for specific columns.
+
+Customize operators for string, number, date, and boolean data types using these options:
+
+* `stringOperator` - defines customized string operator list.
+* `numberOperator` - defines customized number operator list.
+* `dateOperator` - defines customized date operator list.
+* `booleanOperator` - defines customized boolean operator list.
   
-Here is an example of how to customize the filter operators list in Syncfusion<sup style="font-size:70%">&reg;</sup>  ASP.NET MVC Grid:
+Here is an example that customizes the filter operators list in the Data Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -100,9 +117,11 @@ Here is an example of how to customize the filter operators list in Syncfusion<s
 
 ## Filter by multiple keywords using filter menu
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup>  ASP.NET MVC Grid allows you to perform filtering actions based on multiple keywords, rather than a single keyword, using the filter menu dialog. To enable this feature, you can set [FilterSettings.Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type)  as **Menu** and render the `MultiSelect` component as a custom component in the filter menu dialog.
+The Data Grid allows filtering based on multiple keywords simultaneously, rather than a single keyword. This is useful when a filter requires selecting multiple values from a list.
 
-Here is an example that demonstrates how to perform filtering by multiple keywords using the filter menu in the Syncfusion<sup style="font-size:70%">&reg;</sup>  ASP.NET MVC Grid:
+To enable this feature, set [FilterSettings.Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type)  as `Menu` and render the `MultiSelect` component as a custom component in the filter menu dialog using the `Filter.Ui` property.
+
+The following example demonstrates multiple keyword filtering implementation:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -117,7 +136,9 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 
 ## Customize the default input component of filter menu dialog
 
-You have the flexibility to customize the default settings of input components within the menu filter by utilizing the `Params` property within the column definition of `Filter`. This allows you to modify the behavior of specific filter components to better suit your needs.
+The default settings of input components within the filter menu can be customized by utilizing the `Params` property within the column definition of `Filter`. This allows modification of specific filter component behavior to better suit application requirements.
+
+Each column type uses a default component in the filter menu, which can be customized with specific parameters:
 
 | Column Type | Default component                                                                                 | Customization                            | API Reference                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -127,9 +148,9 @@ You have the flexibility to customize the default settings of input components w
 | Date        | [DatePicker](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#properties)                         |
 | DateTime    | [DateTimePicker](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#properties)                 |
 
-> To know more about the feature, refer to the Getting Started documentation and API Reference
+> Refer to the Getting Started documentation and API Reference for complete feature details.
 
-In the example provided below, the **OrderID** and **Freight** columns are numeric columns. When you open the filter dialog for these columns, you will notice that a `NumericTextBox` with a spin button is displayed to change or set the filter value. However, using the `Params` property, you can hide the spin button specifically for the **OrderID** column.
+In the following example, the "Order ID" and "Freight" columns are numeric columns. When the filter dialog opens for these columns, a `NumericTextBox` with a spin button displays by default. The `Params` property can be used to hide the spin button specifically for the "Order ID" column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -142,11 +163,11 @@ In the example provided below, the **OrderID** and **Freight** columns are numer
 
 ![Filter menu](../images/filtering/filter-menu-input-hide.png)
 
-## Hide default filter icons while perform filtering through method
+## Hide filter icons during programmatic filtering
 
-When performing filtering programmatically using methods in the Syncfusion<sup style="font-size:70%">&reg;</sup>  ASP.NET MVC Grid component, you may want to hide the default filter icons to provide a simpler interface.
+When filtering is performed programmatically using grid methods, the default filter icons can be hidden to provide a simpler interface.
 
-To customize the filter icon in the Grid, use the **display** property of the **filtermenu** as mentioned below
+To hide the filter icon in the grid, apply the following CSS rule to the filter menu class:
 
 ```css
 .e-filtermenudiv.e-icons.e-icon-filter {
@@ -154,7 +175,7 @@ To customize the filter icon in the Grid, use the **display** property of the **
 }
 ```
 
-The following example demonstrate how to hide the default filter icons while filtering the **CustomerID** column programmatically using a method.
+The following example demonstrates hiding the default filter icons while filtering the "Customer ID" column programmatically using a method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -169,13 +190,17 @@ The following example demonstrate how to hide the default filter icons while fil
 
 ## Filter menu events
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid offers the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) and [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) events, which provide information about the actions being performed. Within the event handlers, you receive an argument named `requestType`. This argument specifies the `action` that is being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, you can implement custom logic or showcase messages.
+The Data Grid provides the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) and [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) events, which provide information about the actions being performed. Within the event handlers, an argument named `requestType` specifies the `action` being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, custom logic can be implemented or messages displayed.
 
-**filtering** - Defines current action as filtering.
-**filterbeforeopen** - Defines current action as filter dialog before open.
-**filterafteropen** - Defines current action as filter dialog after open.
+**Request types and their purposes**:
 
-Here's an example of how to use these events to handle filter menu action in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid:
+* `filterbeforeopen` - Triggered before the filter menu dialog opens. Use this to modify menu settings, pre-populate values, or prevent the dialog from opening based on conditions.
+* `filterafteropen` - Triggered after the filter menu dialog opens. Use this to customize the dialog appearance, focus specific input fields, or add additional UI elements.
+* `filtering` - Triggered when a filter is applied. Use this to log filter actions, display custom notifications, or perform additional data processing.
+
+These events enable implementation of custom logic, display of messages, or modification of filter behavior based on specific requirements.
+
+The following example demonstrates filter menu event handling in the Data Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -190,9 +215,9 @@ Here's an example of how to use these events to handle filter menu action in the
 
 ## Troubleshoot filter menu operator issue
 
-When using the filter menu, the UI displays operators for all columns based on the data type of the first data it encounters. If the first data is empty or null, it may not work correctly. To overcome this issue, follow these steps to troubleshoot and resolve it:
+When using the filter menu, the UI displays operators for all columns based on the data type of the first data it encounters. If the first data is empty or null, the operators may not display correctly. To resolve this issue:
 
-**Explicitly Define Data Type:** When defining columns in your  ASP.NET MVC Grid component, make sure to explicitly specify the data type for each column. You can do this using the type property within the columns configuration. For example:
+**Explicitly define data type:** When defining columns in an Data Grid component, explicitly specify the data type for each column using the `Type` property within the columns configuration:
 
 ```ts
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Columns(col =>
@@ -203,10 +228,10 @@ When using the filter menu, the UI displays operators for all columns based on t
 }).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Menu); }).Render()
 ```
 
-**Handle Null or Empty Data:** If your data source contains null or empty values, make sure that these values are appropriately handled within your data source or by preprocessing your data to ensure consistency.
+**Handle null or empty data:** If the data source contains null or empty values, these values should be appropriately handled within the data source or by preprocessing the data to maintain consistency.
 
-**Check Data Types in Data Source:** Ensure that the data types specified in the column definitions match the actual data types in your data source. Mismatched data types can lead to unexpected behavior.
+**Check data types in data Source:** The data types specified in the column definitions must match the actual data types in the data source. Mismatched data types can lead to unexpected behavior.
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-filters)

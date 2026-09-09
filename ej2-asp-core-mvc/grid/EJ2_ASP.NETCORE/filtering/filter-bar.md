@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Filter Bar | Syncfusion
-description: Learn how to use Filter Bar in ##Platform_Name## Data Grid to apply column filters, configure filter operators and templates, and manage data efficiently.
+description: Learn how to use Filter Bar in ##Platform_Name## Data Grid with expression operators, configurable modes, column settings, templates, and status display.
 platform: ej2-asp-core-mvc
 control: Filter Bar
 publishingplatform: ##Platform_Name##
@@ -10,27 +10,30 @@ documentation: ug
  
 # Filter Bar in ASP.NET Core Data Grid
 
-The filter bar feature provides a user-friendly way to filter data in the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid). It displays an input field for each column, allowing you to enter filter criteria and instantly see the filtered results.
+The filter bar feature provides a row of input fields directly below the grid headers, enabling column-based data filtering. Each column displays an input field where filter criteria can be entered, and filtering can be applied depending on the configured filter mode to show matching results.
 
-By defining the [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) to true, then filter bar row will be rendered next to header which allows you to filter data. You can filter the records with different expressions depending upon the column type.
+## Enable filter bar
+
+To activate the filter bar, set the [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) to `true`.
  
 **Filter bar expressions:**
-You can enter the following filter expressions(operators) manually in the filter bar.
 
-Expression |Example |Description |Column Type
------|-----|-----|-----
-= |=value |equal |Number
-!= |!=value |notequal |Number
-> |>value |greaterthan |Number
-< |<value |lessthan |Number
->= |>=value |greaterthanorequal |Number
-<=|<=value|lessthanorequal |Number
-* |*value |startswith |String
-% |%value |endswith |String
-N/A |N/A |Always **equal** operator will be used for Date filter |Date
-N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
- 
-The following example demonstrates how to activate default filtering in the grid.
+Filter expressions are operators that define the comparison between entered values and data in the Data Grid. The available operators depend on the column data type.
+
+| Expression | Example | Description | Column Type |
+|------------|---------|-------------|-------------|
+| = | =value | Matches values exactly equal to the entered value | Number |
+| != | !=value | Matches values not equal to the entered value | Number |
+| > | >value | Matches values greater than the entered value | Number |
+| < | <value | Matches values less than the entered value | Number |
+| >= | >=value | Matches values greater than or equal to the entered value | Number |
+| <= | <=value | Matches values less than or equal to the entered value | Number |
+| * | *value | Matches values that start with the entered text | String |
+| % | %value | Matches values that end with the entered text | String |
+| N/A | N/A | Always uses equal operator for Date columns | Date |
+| N/A | N/A | Always uses equal operator for Boolean columns | Boolean |
+
+The following example demonstrates basic filter bar activation in the grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -43,17 +46,27 @@ The following example demonstrates how to activate default filtering in the grid
 
 ![Filter bar](../images/filtering/filterbar.png)
 
-> If the [filterSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) is not explicitly specified, it defaults to **FilterBar**.
+> To enable or dynamically switch the filter type, you must set the [filterSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) as `FilterBar`.
 
 ## Filter bar modes
 
-The ASP.NET Core Grid component refers to two different ways in which the grid's filter bar can operate when filtering criteria are applied. These modes, "OnEnter Mode" and "Immediate Mode," offer users different experiences and behaviors when interacting with the filter bar.
+The Data Grid filter bar operates in two distinct modes that determine when filtering actions are triggered. These modes support different interaction patterns based on application requirements and performance considerations.
 
-**OnEnter Mode:**
-By settings [filterSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Mode) as **OnEnter**, the filter bar captures the filter criteria entered but doesn't initiate filtering until the **Enter** key is pressed. This allows multiple criteria modifications without triggering immediate filtering actions.
+**onEnter Mode:**
+
+When [filterSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Mode) is set to `onEnter`, the filter bar captures filter criteria but delays filtering execution until the <kbd>Enter</kbd> key is pressed. This mode is beneficial when:
+
+- Complex filter criteria need to be entered without triggering multiple filtering operations.
+- Large datasets are involved where immediate filtering may cause performance issues.
+- Filter criteria need to be reviewed and confirmed before applying changes.
 
 **Immediate Mode:**
-By settings [filterSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Mode) as **Immediate**, the filter bar instantly applies filtering as filter criteria are entered. Filtering actions take place as soon as criteria are input or modified, providing real-time previews of filtering results.
+
+When [filterSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Mode) is set to `Immediate`, the filter bar applies filtering as filter criteria are typed or modified. This mode provides:
+
+- Real-time filtering feedback and immediate result previews.
+- A responsive search experience for quick data lookups.
+- Instant visual confirmation of filter effects.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -66,11 +79,13 @@ By settings [filterSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 ![Filter bar](../images/filtering/filterbarmode.gif)
 
-## Display filter text in pager
+## Display filter status in pager
 
-The ASP.NET Core Grid component provides an option to display filter text within the pager, indicating the current filtering status. Enabling this feature provides you with a clear understanding of the applied filters and the criteria used for filtering.
+The [showFilterBarStatus](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ShowFilterBarStatus) property displays the current filter criteria in the grid pager area. This provides a clear summary of active filters without examining each column's filter bar input.
 
-To enable the display of filter text within the pager, you should set the [showFilterBarStatus](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ShowFilterBarStatus) property within the [filterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) configuration.
+**When to use**: Enable this option for complex multi-column filters to maintain awareness of all active filtering criteria. This is particularly useful when filters are applied across columns that are scrolled out of view.
+
+The following example shows filter status display in the pager:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -83,11 +98,11 @@ To enable the display of filter text within the pager, you should set the [showF
 
 ![Filter bar](../images/filtering/filterbar-status.png)
 
-## Show or hide filter bar operator in filter bar cell
+## Show or hide filter operators in the filter bar
 
-In the ASP.NET Core Grid component, you have the ability to modify the filter operator for a column directly within the user interface during the filtering process through the filter bar cell. For instance, the default operator for filtering string-type columns in the filter bar is "startswith". Now, you can customize the default operator for a specific column using the filter operator feature.
+The [showFilterBarOperator](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ShowFilterBarOperator) property displays a dropdown in each filter bar cell, allowing the filter operator to be changed directly in the UI. By default, string columns use the `startswith` operator, but this can be changed to `contains`, `endswith`, `equal`, etc.
 
-To achieve this functionality, you can enable the  [showFilterBarOperator](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ShowFilterBarOperator) property within the [filterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings).
+To display the operator dropdown in filter bar cells, set the [showFilterBarOperator](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ShowFilterBarOperator) property of the `filterSettings` configuration to `true`. By default, this property is set to `false`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -102,9 +117,9 @@ To achieve this functionality, you can enable the  [showFilterBarOperator](https
 
 ## Prevent filtering for particular column
 
-In the ASP.NET Core Grid, you can prevent filtering for a specific column by utilizing the [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) property of the [column](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumns.html) object and setting it to **false**. This feature is useful when you want to disable filtering options for a particular column.
+The Data Grid can prevent filtering for a specific column by using the [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) property of the [column](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumns.html) object and setting it to `false`.
 
-Here's an example that demonstrates how to remove the filter bar for the **CustomerID** column in ASP.NET Core Grid:
+Here's an example that demonstrates how to remove the filter bar for the "Customer ID" column in Data Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -117,11 +132,9 @@ Here's an example that demonstrates how to remove the filter bar for the **Custo
 
 ## Hide filter bar for template column
 
-By default, the filter bar is set to a disabled mode for template columns in the grid. However, in certain cases, you may want to hide the filter bar for a template column to provide a customized filtering experience.
+Template columns can be used to render images, action buttons, or other custom components that are inherently non-filterable. To completely hide the filter bar input for a template column, use the `filterTemplate` property with an empty element.
 
-To hide the filter bar for a template column, you can use the `filterTemplate` property of the [column](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumns.html). This property allows you to define a custom template for the filter bar of a column.
-
-Here's an example that demonstrates how to hide the filter bar for a template column in the ASP.NET Core Grid:
+The following example demonstrates hiding the filter bar for a template column:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -134,11 +147,17 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 
 ![Filter bar](../images/filtering/filterbar-hide-template.png)
 
-## Filter bar template with custom component 
+## Filter bar template with custom component
 
-The `filterBarTemplate` feature in the ASP.NET Core Grid allows you to customize the components displayed in the filter bar. Normally, a text box is the default element rendered in the filter bar cell. This flexibility allows you to use various components, such as datepicker, numerictextbox, combobox, and multiselect, within the filter bar based on your specific requirements.
+The [filterBarTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_FilterBarTemplate) property replaces the default text input with a custom component in the filter bar. This allows using specialized input controls like date pickers, dropdowns, or numeric inputs that provide a better filtering experience for specific data types.
 
-To utilize this feature, you can define a custom template for the filter bar by setting the `filterBarTemplate` property of a column in your ASP.NET Core application:
+Custom filter bar templates are particularly useful when:
+- The default text input does not provide optimal interaction for specific data types.
+- Specialized filtering controls are required for complex data structures.
+- Application design requires consistent component usage across the interface.
+- Guided input through dropdown selections or date pickers is required.
+
+To implement a custom filter bar template, define the `filterBarTemplate` property within the column configuration:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
