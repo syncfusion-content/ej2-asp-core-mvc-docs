@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Global Localization | Syncfusion
-description: Learn how to implement global localization in ##Platform_Name## TreeGrid, including internationalization, localization, and RTL language support.
+title: ASP.NET MVC TreeGrid Global Localization | Syncfusion
+description: Learn how to implement global localization in ASP.NET MVC TreeGrid, including internationalization, localization, and RTL language support.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Global Localization in ##Platform_Name## TreeGrid
+# Global Localization in ASP.NET MVC TreeGrid
 
 ## Localization
 
@@ -269,7 +269,7 @@ RTL provides an option to switch the text direction and layout of the TreeGrid c
 
 ## See Also
 
-* [Internationalization](../../common/internationalization)
-* [Localization](../../common/localization)
+* [Internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization)
+* [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization)
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

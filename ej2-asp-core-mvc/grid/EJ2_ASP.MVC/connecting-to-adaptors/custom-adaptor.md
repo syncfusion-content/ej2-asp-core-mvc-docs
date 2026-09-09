@@ -624,7 +624,7 @@ config.Count().MaxTop(recordCount); // Handles paging  operation.
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your MVC application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your MVC application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
 
 To enable CRUD operations in the Syncfusion Grid within an ASP.NET MVC application, follow the below steps:
 

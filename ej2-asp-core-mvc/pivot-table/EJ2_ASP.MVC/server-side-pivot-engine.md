@@ -80,7 +80,7 @@ Launch your ASP.NET MVC application to view the Pivot Table. The Pivot Table wil
 
 ## Available configurations in Server-side application
 
-This section explains how to set up and use different data sources with the server-side Pivot Engine in the ASP.NET MVC [Pivot Table](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started).
+This section explains how to set up and use different data sources with the server-side Pivot Engine in the ASP.NET MVC [Pivot Table](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/getting-started).
 
 ### Supportive Data Sources
 
