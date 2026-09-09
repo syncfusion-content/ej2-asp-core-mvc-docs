@@ -135,4 +135,4 @@ In the following sample, first 6 products from the Product table of NorthWind da
 
 Output be like the below.
 
-![ASP .NET Core ListView - Remote Data](./images/remotedata.png)
+![ASP.NET Core ListView - Remote Data](./images/remotedata.png)

@@ -42,7 +42,7 @@ The `format` feature used to customize the units of Slider values to desired for
 
 
 
-![ASP .NET Core - Slider - Format](./images/slider-format.png)
+![ASP.NET Core - Slider - Format](./images/slider-format.png)
 
 ## Using format API
 
@@ -73,7 +73,7 @@ In this method, we have different predefined formatting styles like Numeric (N),
 
 
 
-![ASP .NET Core - Slider - Format API](./images/slider-format-api.png)
+![ASP.NET Core - Slider - Format API](./images/slider-format-api.png)
 
 ## Using Events
 
@@ -104,4 +104,4 @@ In this method, we will be retrieving the values from the slider events then pro
 
 
 
-![ASP .NET Core - Slider - Events](./images/slider-events.png)
+![ASP.NET Core - Slider - Events](./images/slider-events.png)
