@@ -47,4 +47,4 @@ You can override the class with our own color values as given in the following c
 
 
 
-![ASP .NET Core - Slider - Limit Customization](../images/limit-customization.png)
+![ASP.NET Core - Slider - Limit Customization](../images/limit-customization.png)

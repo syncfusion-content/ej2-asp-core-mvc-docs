@@ -37,4 +37,4 @@ The Date formatting can be achieved in [`ticks`](https://help.syncfusion.com/cr/
 
 
 
-![ASP .NET Core - Slider - Date - Format](../images/slider-date-format.png)
+![ASP.NET Core - Slider - Date - Format](../images/slider-date-format.png)

@@ -52,7 +52,7 @@ There is only one handle in the Default and MinRange Slider, so ``minStart``, ``
 
 
 
-![ASP .NET Core - Slider - Limits](./images/slider-limits.png)
+![ASP.NET Core - Slider - Limits](./images/slider-limits.png)
 
 ## Range Slider limits
 
@@ -83,7 +83,7 @@ In the Range Slider, both handles can be restricted and locked from the limit's 
 
 
 
-![ASP .NET Core - Slider - Range Slider Limits](./images/range-slider-limits.png)
+![ASP.NET Core - Slider - Range Slider Limits](./images/range-slider-limits.png)
 
 ## Handle lock
 
@@ -116,4 +116,4 @@ In this sample, the movement of both slider handles has been locked.
 
 
 
-![ASP .NET Core - Slider - Handle Lock](./images/handle-lock.png)
+![ASP.NET Core - Slider - Handle Lock](./images/handle-lock.png)

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Positioning in Predefined Dialogs in Blazor
+# Positioning in ##Platform_Name## Predefined Dialogs
 
 Customize the dialog position by using the `position` property. The position can be represented with specific `X` and `Y` values.
 

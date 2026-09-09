@@ -68,4 +68,4 @@ In the following preview sample, focusing the input element through `tab` key op
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Accessibility](./images/tooltip-container.webp)
+![ASP.NET Core - Tooltip - Accessibility](./images/tooltip-container.webp)
