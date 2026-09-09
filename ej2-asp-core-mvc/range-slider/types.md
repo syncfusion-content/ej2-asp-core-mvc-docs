@@ -46,4 +46,4 @@ N> Both the Default Slider and Min-Range Slider have same behavior that is used 
 
 
 
-![ASP .NET Core - Slider - Types](./images/slider-types.png)
+![ASP.NET Core - Slider - Types](./images/slider-types.png)

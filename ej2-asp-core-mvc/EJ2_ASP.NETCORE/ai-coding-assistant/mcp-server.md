@@ -83,13 +83,13 @@ There are two options:
 
 Below are setup instructions for popular MCP clients:
 
-### Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio
+### Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio
 
-* In [Code Studio](https://www.syncfusion.com/code-studio/), open MCP Marketplace and navigate to the `Custom Servers` tab.
+* In [CodeStudio](https://www.syncfusion.com/code-studio/), open MCP Marketplace and navigate to the `Custom Servers` tab.
 * Enter the Server Name as `aspnetcore-mcp`, choose Server Type as npm package, and set the NPM Package name to `@syncfusion/aspnetcore-assistant`.
 * Add an environment variable as `Syncfusion_API_Key` and value as your [Syncfusion API key](https://syncfusion.com/account/api-key), then click **Install Server**.
 * Once installed, the server will appear in the User Installed Server list, and will be added to the **config.yaml** file.
-* The server is now ready for use in Code Studio. For more details, refer to the [Code Studio documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/customservers#npm-server).
+* The server is now ready for use in CodeStudio. For more details, refer to the [CodeStudio documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/customservers#npm-server).
 
 ### Visual Studio Code (GitHub Copilot MCP)
 

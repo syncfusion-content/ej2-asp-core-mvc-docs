@@ -37,4 +37,4 @@ The time formatting can be achieved same as the date formatting using [`renderin
 
 
 
-![ASP .NET Core - Slider - Time - Format](../images/slider-time-format.png)
+![ASP.NET Core - Slider - Time - Format](../images/slider-time-format.png)

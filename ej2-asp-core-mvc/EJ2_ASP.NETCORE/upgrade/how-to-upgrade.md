@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET Core EJ2 installer to a latest version
+# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 installer to a latest version
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 

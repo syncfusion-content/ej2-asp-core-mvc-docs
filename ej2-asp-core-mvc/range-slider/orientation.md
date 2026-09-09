@@ -38,4 +38,4 @@ The Slider can be displayed, either in horizontal or vertical by using [`orienta
 
 
 
-![ASP .NET Core - Slider - Orientation](./images/slider-orientation.png)
+![ASP.NET Core - Slider - Orientation](./images/slider-orientation.png)

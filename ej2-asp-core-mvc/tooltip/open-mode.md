@@ -60,7 +60,7 @@ The following code example shows how to set the open mode for Tooltips.
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Open Mode](./images/open-property.png)
+![ASP.NET Core - Tooltip - Open Mode](./images/open-property.png)
 
 ## Custom open mode
 
@@ -95,7 +95,7 @@ The following code example shows how to define custom open mode for the Tooltip.
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Custom Open Mode](./images/tooltip-double-click.png)
+![ASP.NET Core - Tooltip - Custom Open Mode](./images/tooltip-double-click.png)
 
 ## Sticky mode
 
@@ -128,7 +128,7 @@ With this mode set to `true`, Tooltips can be made to show up on the screen as l
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Sticky Mode](./images/tooltip-sticky.png)
+![ASP.NET Core - Tooltip - Sticky Mode](./images/tooltip-sticky.png)
 
 ## Open/Close Tooltip with delay
 
@@ -161,4 +161,4 @@ The Tooltips can be opened or closed after some delay by using the `openDelay` a
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Delay](./images/tooltip-delay.png)
+![ASP.NET Core - Tooltip - Delay](./images/tooltip-delay.png)

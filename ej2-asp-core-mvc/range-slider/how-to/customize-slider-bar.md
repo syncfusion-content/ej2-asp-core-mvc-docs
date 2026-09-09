@@ -67,4 +67,4 @@ function change(args) {
 
 
 
-![ASP .NET Core - Slider - Bar Customization](../images/bar-customization.png)
+![ASP.NET Core - Slider - Bar Customization](../images/bar-customization.png)
