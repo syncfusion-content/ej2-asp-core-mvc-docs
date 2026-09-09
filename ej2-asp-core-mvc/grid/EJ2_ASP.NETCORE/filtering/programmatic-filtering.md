@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Programmatic Filtering | Syncfusion
-description: Learn ##Platform_Name## Data Grid programmatically with single and multiple values.
+description: Learn ##Platform_Name## Grid programmatic filtering using filter APIs, retrieve filtered records, inspect filter details, and clear filters programmatically.
 platform: ej2-asp-core-mvc
 control: Programmatic Filtering
 publishingplatform: ##Platform_Name##

@@ -107,7 +107,7 @@ The Data Grid component provides flexibility to customize the items displayed in
 
 This customization enables modification of default text to provide more meaningful and contextual labels for filtering values.
 
-In the following example, the text displayed in the filter checkbox list for the "Delivered" column is customized. This is accomplished by defining a `FilterItemTemplate` within the column definition for that specific column. Within the template, ASP.Net MVC's template syntax conditionally displays "Delivered" if the data value is `true` and "Not delivered" if the value is `false`.
+In the following example, the text displayed in the filter checkbox list for the "Delivered" column is customized. This is accomplished by defining a `FilterItemTemplate` within the column definition for that specific column. Within the template, ASP.NET MVC's template syntax conditionally displays "Delivered" if the data value is `true` and "Not delivered" if the value is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
