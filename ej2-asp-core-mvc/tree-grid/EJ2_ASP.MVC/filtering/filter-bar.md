@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Filter Bar | Syncfusion
-description: Learn how to use the filter bar in ##Platform_Name## TreeGrid, including column filtering, filter operators, and custom filter behavior.
+title: ASP.NET MVC TreeGrid Filter Bar | Syncfusion
+description: Learn how to use the filter bar in ASP.NET MVC TreeGrid, including column filtering, filter operators, and custom filter behavior.
 platform: ej2-asp-core-mvc
 control: Filter Bar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filter Bar in ##Platform_Name## TreeGrid
+# Filter Bar in ASP.NET MVC TreeGrid
 
 By setting the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowFiltering) to true, the filter bar row will render next to the header, which allows you to filter data. You can filter the records with different expressions depending upon the column type.
 

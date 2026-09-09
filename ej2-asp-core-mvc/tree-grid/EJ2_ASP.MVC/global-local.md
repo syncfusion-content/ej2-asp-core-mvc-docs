@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Global Localization | Syncfusion
-description: Learn how to implement global localization in ##Platform_Name## TreeGrid, including internationalization, localization, and RTL language support.
+title: ASP.NET MVC TreeGrid Global Localization | Syncfusion
+description: Learn how to implement global localization in ASP.NET MVC TreeGrid, including internationalization, localization, and RTL language support.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Global Localization in ##Platform_Name## TreeGrid
+# Global Localization in ASP.NET MVC TreeGrid
 
 ## Localization
 

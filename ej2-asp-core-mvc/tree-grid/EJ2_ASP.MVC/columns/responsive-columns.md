@@ -12,7 +12,7 @@ documentation: ug
 
 You can toggle column visibility based on media queries which are defined at the [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_HideAtMedia).
 The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_HideAtMedia) accepts valid
-[Media Queries](https://cssmediaqueries.com/what-are-css-media-queries.html).
+[Media Queries]( http://cssmediaqueries.com/what-are-css-media-queries.html ).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

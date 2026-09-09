@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## Combo Box Component
+# Overview
 
 The ComboBox control allows the user to type a value or choose an option from the list of predefined options. When an arrow icon accompanied with this control is pressed, the dropdown displays a list of values, from which the user can select one.
 
@@ -21,7 +21,7 @@ The ComboBox control allows the user to type a value or choose an option from th
 
 * **[Grouping](./grouping/)** - Supports grouping of logically related items under a single or specific category.
 
-* **[Sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_SortOrder)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
+* **[Sorting](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~SortOrder.html)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
 
 * **[Filtering](./filtering/)** - Allows filtering of list items based on a character typed in the control.
 

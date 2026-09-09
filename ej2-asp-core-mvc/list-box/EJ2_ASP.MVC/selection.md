@@ -16,11 +16,11 @@ The ListBox provides support to select an item or a group of item by mouse or ke
 * Single -  To select single item in the list box.
 * Multiple -  To select multiple items in the list box.
 
-On selection of each list box item, [`change`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_Change) event is triggered.
+On selection of each list box item, [`change`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_Change) event is triggered.
 
 ## Single selection
 
-To enable single selection in the list box, [`mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings~Mode.html) should be set as `Single` in [`SelectionSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~SelectionSettings.html) property.
+To enable single selection in the list box, [`mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings.html#Syncfusion_EJ2_DropDowns_ListBoxSelectionSettings_Mode) should be set as `Single` in [`SelectionSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings.html#Syncfusion_EJ2_DropDowns_ListBoxSelectionSettings_ShowSelectAll) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

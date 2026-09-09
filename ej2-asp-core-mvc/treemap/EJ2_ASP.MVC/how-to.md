@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the Drilldown Header in ##Platform_Name## TreeMap | Syncfusion
-description: Learn here all about how to customize the header for treemap drilldown in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
+title: Customize the Drilldown Header in ASP.NET MVC TreeMap | Syncfusion
+description: Learn here all about how to customize the header for treemap drilldown in Syncfusion ASP.NET MVC TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: How To
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Customize the Drilldown Header in ##Platform_Name## TreeMap
+# How to Customize the Drilldown Header in ASP.NET MVC TreeMap
 
 <!-- markdownlint-disable MD036 -->
 

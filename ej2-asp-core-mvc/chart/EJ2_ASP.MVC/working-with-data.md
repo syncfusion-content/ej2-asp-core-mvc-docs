@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Data in ##Platform_Name## Chart | Syncfusion
-description: Learn here all about Working with data in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Working with Data in ASP.NET MVC Chart | Syncfusion
+description: Learn here all about Working with data in Syncfusion ASP.NET MVC Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working with data
 publishingplatform: ##Platform_Name##

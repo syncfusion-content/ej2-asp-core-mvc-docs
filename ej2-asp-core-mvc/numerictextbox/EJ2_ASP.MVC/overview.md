@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ##Platform_Name## Numerictextbox Control
+# Overview in ASP.NET MVC Numerictextbox Control
 
 The **NumericTextBox** is used to get the number inputs from the user. The input values can be incremented or decremented by a predefined step value.
 

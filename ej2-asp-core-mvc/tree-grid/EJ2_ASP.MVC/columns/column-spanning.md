@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Column Spanning | Syncfusion
-description: Learn how to configure column spanning in ##Platform_Name## TreeGrid, including merging cells and customizing column layouts.
+title: ASP.NET MVC TreeGrid Column Spanning | Syncfusion
+description: Learn how to configure column spanning in ASP.NET MVC TreeGrid, including merging cells and customizing column layouts.
 platform: ej2-asp-core-mvc
 control: Column Spanning
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Spanning in ##Platform_Name## TreeGrid
+# Column Spanning in ASP.NET MVC TreeGrid
 
 Column spanning in the TreeGrid allows merging adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [queryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_QueryCellInfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 
