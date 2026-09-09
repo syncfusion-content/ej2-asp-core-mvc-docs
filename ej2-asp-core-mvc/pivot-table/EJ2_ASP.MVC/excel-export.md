@@ -178,12 +178,12 @@ The Pivot Table supports exporting data with custom calculations beyond the defa
 
 To add custom aggregates, follow these steps:
 
-1.  Define custom aggregate names using the [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/globalization-and-localization#localization) option. These names will appear in the Pivot Table's aggregation menu.
+1.  Define custom aggregate names using the [localization](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/globalization-and-localization#localization) option. These names will appear in the Pivot Table's aggregation menu.
 2.  Add the custom aggregation types to the aggregate menu during Pivot Table initialization using the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event.
 3.  Use the [`AggregateCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event to specify the calculation logic for each custom type. This event is triggered for every aggregate cell, allowing you to apply your custom formulas.
 4.  Finally, call the `excelExport` method to export the Pivot Table with all custom aggregations applied.
 
-For detailed information about adding custom aggregation types, refer to the [custom aggregation documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/how-to/add-custom-aggregation-type-in-menu).
+For detailed information about adding custom aggregation types, refer to the [custom aggregation documentation](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/how-to/add-custom-aggregation-type-in-menu).
 
 The following example demonstrates how to add two custom aggregate types to the aggregate menu: **CustomAggregateType 1**, which calculates a weighted average, and **CustomAggregateType 2**, which calculates the percentage of the total.
 
@@ -282,7 +282,7 @@ Row headers can be excluded from the exported Excel file when only values and co
 
 By default, all columns in the Pivot Table, including hidden ones, are exported. To exclude hidden columns, set the `includeHiddenColumn` property to **false** in `excelExportProperties`.
 
-To hide a column, use the [`ColumnRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnRender) event in [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) to set the `visible` property of the target column to **false**. For more information, see the [Hide Specific Columns in Pivot Table](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/how-to/hide-specific-columns-in-pivot-table) documentation.
+To hide a column, use the [`ColumnRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnRender) event in [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) to set the `visible` property of the target column to **false**. For more information, see the [Hide Specific Columns in Pivot Table](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/how-to/hide-specific-columns-in-pivot-table) documentation.
 
 After hiding the columns, set `includeHiddenColumn` to **false** in `excelExportProperties` to exclude them from the exported file. The exported file will then match the column structure shown in the Pivot Table UI.
 

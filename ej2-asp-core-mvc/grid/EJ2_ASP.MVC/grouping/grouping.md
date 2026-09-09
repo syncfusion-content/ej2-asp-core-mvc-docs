@@ -327,8 +327,8 @@ The following example demonstrates canceling grouping for the "Order ID" column 
 
 ## See Also
 
-* [Exporting grouped records](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/excel-export/excel-export-options#exporting-grouped-records)
-* [Lazy load grouping](./lazy-load-grouping)
-* [Group and caption aggregates](../aggregates/group-and-caption-aggregate)
-* [Caption template](./caption-template)
-* [Aggregates overview](../aggregates/aggregates)
+* [Exporting grouped records](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/excel-export/excel-export-options#exporting-grouped-records)
+* [Lazy load grouping](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/grouping/lazy-load-grouping)
+* [Group and caption aggregates](.https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/aggregates/group-and-caption-aggregate)
+* [Caption template](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/grouping/caption-template)
+* [Aggregates overview](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/aggregates/aggregates)
