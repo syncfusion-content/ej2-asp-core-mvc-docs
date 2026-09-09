@@ -37,6 +37,6 @@ You can create a Range Slider rendered with values in reverse order by setting t
 
 
 
-![ASP .NET Core - Slider - Reverse](../images/reversible-slider.gif)
+![ASP.NET Core - Slider - Reverse](../images/reversible-slider.gif)
 
 > Reversible order can be achieved with `Horizontal` orientation Range Slider by setting `enableRtl` as true.

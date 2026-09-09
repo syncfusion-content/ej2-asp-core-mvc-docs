@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# System Requirements for ASP .NET Core EJ2 Components
+# System Requirements for ASP.NET Core EJ2 Components
 
 To get started with ASP.NET Core application, ensure the following software to be installed in the machine.
 

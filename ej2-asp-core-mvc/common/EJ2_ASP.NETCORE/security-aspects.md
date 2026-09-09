@@ -46,4 +46,4 @@ The following list demonstrates the Syncfusion<sup style="font-size:70%">&reg;</
 * [Develop an ASP.NET Core web application securely](https://www.syncfusion.com/blogs/post/10-practices-secure-asp-net-core-mvc-app)
 * [Perform CRUD operation in Grid control using anti-forgery token](../grid/how-to/perform-crud-operation-using-anti-forgery-token)
 * [Prevent cross-site scripting in RichTextEditor control](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/prevent-cross-site-scripting)
-* [Shield Your ASP.NET MVC Web Applications with Content Security Policy (CSP)](https://www.syncfusion.com/blogs/post/asp-dotnet-mvc-content-security-policy.aspx)
+* [Shield Your ASP.NET MVC Web Applications with Content Security Policy (CSP)](https://www.syncfusion.com/blogs/post/asp-dotnet-mvc-content-security-policy)

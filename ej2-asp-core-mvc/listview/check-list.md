@@ -42,7 +42,7 @@ The Checkbox will be useful in the scenario where we need to select multiple opt
 
 Output be like the below.
 
-![ASP .NET Core ListView - CheckList Sample](./images/checklist.png)
+![ASP.NET Core ListView - CheckList Sample](./images/checklist.png)
 
 ## Checkbox Position
 
@@ -75,4 +75,4 @@ In ListView the checkbox can be positioned into either `Left` or `Right` side of
 
 Output be like the below.
 
-![ASP .NET Core ListView - CheckBox Position](./images/checkbox-position.png)
+![ASP.NET Core ListView - CheckBox Position](./images/checkbox-position.png)

@@ -44,7 +44,7 @@ The following sample explains how to set dimensions for the Tooltip.
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Dimension](./images/tooltip-dimension.png)
+![ASP.NET Core - Tooltip - Dimension](./images/tooltip-dimension.png)
 
 ### Scroll mode
 
@@ -77,6 +77,6 @@ When `height` is specified with a certain pixel value and the Tooltip content ov
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Scroll Mode](./images/tooltip-scroll.png)
+![ASP.NET Core - Tooltip - Scroll Mode](./images/tooltip-scroll.png)
 
 N> The scrolling mode can best be seen when the sticky mode of the Tooltip is enabled. To enable sticky mode, set the `isSticky` property to true.
