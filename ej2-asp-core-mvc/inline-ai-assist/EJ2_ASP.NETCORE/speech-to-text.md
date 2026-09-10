@@ -84,34 +84,6 @@ The speech-to-text functionality provides events like `OnStart` (when recognitio
 
 ![SpeechToText Events](images/speech-events.webp)
 
-## Combine speech input with predefined commands
-
-Speech input can be used with the predefined commands configured through the [CommandSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_CommandSettings) property. Users can select commands such as **Improve Content**, **Shorten**, **Elaborate**, or **Summarize**, and use the microphone to provide additional instructions for the selected content.
-
-The predefined command supplies the intended action, while the speech input allows the user to add specific requirements. The selected content is included as context when the prompt is submitted to the AI service.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/inline-ai-assist/speech/predefined-commands/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![PredefinedCommands](images/predefined-commands.webp)
-
-## Review the generated response inline
-
-When the [ResponseMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_ResponseMode) property is set to `Inline`, the response generated from the speech prompt is displayed within the selected content area. This allows users to review the generated content in its original context before applying it.
-
-The [ResponseSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_ResponseSettings) property can be used to handle the response actions. Selecting **Accept** retains the generated content, while selecting **Discard** removes the suggestion and restores the original selected content.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/inline-ai-assist/speech/inline-response/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![InlineResponse](images/inline-response.webp)
-
 ## Browser compatibility
 
 The speech-to-text functionality in Inline AI Assist relies on the browser's [Speech Recognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition), which has limited browser support. Refer to the [Browser Compatibility](https://ej2.syncfusion.com/aspnetcore/documentation/speech-to-text/speech-recognition#browser-support) section for detailed information.
