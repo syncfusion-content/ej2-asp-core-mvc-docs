@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Working with Data in ##Platform_Name## Chart
+# Working with Data in ASP.NET Core Chart
 
 Chart can visualize data bound from local or remote data.
 

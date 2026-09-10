@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ##Platform_Name## ListView
+# Getting Started with ASP.NET MVC ListView Control
 
 This section briefly explains about how to include [ASP.NET MVC ListView](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview) control in your ASP.NET MVC application using Visual Studio.
 
