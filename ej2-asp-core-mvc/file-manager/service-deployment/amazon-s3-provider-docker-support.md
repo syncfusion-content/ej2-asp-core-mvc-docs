@@ -140,7 +140,7 @@ For more information on how to get started with the File Manager control, refer 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-For more information on how to get started with the File Manager control, refer to [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/getting-started).
+For more information on how to get started with the File Manager control, refer to [Getting Started](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/getting-started).
 
 {% endif %}
 

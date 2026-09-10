@@ -31,7 +31,7 @@ Here's an example how to enable batch editing in the ASP.NET MVC grid component:
 
 ## Automatically update the column based on another column edited value
 
-You can automatically update the value of a column based on the edited value of another column in batch mode. This feature is useful when you want to dynamically calculate and update a column's value in real-time based on the changes made in another related column. This can be achieved using the [Cell Edit Template](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit-types#custom-editors-using-template) feature in the Grid component.
+You can automatically update the value of a column based on the edited value of another column in batch mode. This feature is useful when you want to dynamically calculate and update a column's value in real-time based on the changes made in another related column. This can be achieved using the [Cell Edit Template](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/editing/edit-types#custom-editors-using-template) feature in the Grid component.
 
 In the following example, the **TotalCost** column value is updated based on changes to the **UnitPrice** and **UnitInStock** columns during batch editing.
 

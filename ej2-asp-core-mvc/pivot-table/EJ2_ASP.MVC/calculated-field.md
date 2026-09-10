@@ -173,7 +173,7 @@ To reuse an existing formula:
 
 Formatting calculated field values enhances the readability and insight of your data in the pivot table. You can apply different formats using the calculated field dialog in the UI or programmatically through code.
 
-To format calculated field values in your code, use the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property. For more information about supported number formats, refer to the documentation [`here`](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/number-formatting).
+To format calculated field values in your code, use the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property. For more information about supported number formats, refer to the documentation [`here`](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/number-formatting).
 
 ### Formatting through the user interface
 

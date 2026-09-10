@@ -3,7 +3,7 @@ layout: post
 title: Upgrade Syncfusion ##Platform_Name## NuGet packages to a latest version
 description: Learn here about the how to upgrading Syncfusion ##Platform_Name## NuGet packages to a latest version using NuGet manager and package manager UI.
 platform: ej2-asp-core-mvc
-control: Upgrade Syncfusion Aspnetmvc Nuget Packages
+control: Upgrade Syncfusion ASP.NET MVC Nuget Packages
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

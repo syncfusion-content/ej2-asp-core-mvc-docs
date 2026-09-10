@@ -24,7 +24,7 @@ N> Before using the Syncfusion® ASP.NET MVC Scaffolding, check whether the **AS
 
 2. In the **Add Scaffold** dialog, select **Syncfusion® ASP.NET MVC UI Scaffolder**, and then click **‘Add’**.
 
-    ![syncfusion aspnetmvc ui scaffolder](images/mvc-ui-scaffolder.png)
+    ![syncfusion ASP.NET MVC ui scaffolder](images/mvc-ui-scaffolder.png)
 
 3. In the Syncfusion® UI Scaffolding dialog, select the desired control to perform scaffolding, and then click **Next**.
 
