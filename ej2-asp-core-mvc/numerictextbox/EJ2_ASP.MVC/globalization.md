@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization in ASP.NET MVC NumericTextbox
+# Globalization in ASP.NET MVC NumericTextbox Control
 
 ## Internationalization
 
