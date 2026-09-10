@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Customize the Drilldown Header in ASP.NET MVC TreeMap
+# How to Customize the Drilldown Header in ASP.NET MVC TreeMap Control
 
 <!-- markdownlint-disable MD036 -->
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Global Localization in ASP.NET MVC TreeGrid
+# Global Localization in ASP.NET MVC TreeGrid Control
 
 ## Localization
 

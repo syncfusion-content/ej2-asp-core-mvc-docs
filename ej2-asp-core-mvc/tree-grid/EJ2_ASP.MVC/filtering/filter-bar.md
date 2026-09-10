@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filter Bar in ASP.NET MVC TreeGrid
+# Filter Bar in ASP.NET MVC TreeGrid Control
 
 By setting the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowFiltering) to true, the filter bar row will render next to the header, which allows you to filter data. You can filter the records with different expressions depending upon the column type.
 

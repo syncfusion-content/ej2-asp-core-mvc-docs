@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from CSS TextBox to ASP.NET MVC TextBox
+# Migration from CSS TextBox to ASP.NET MVC TextBox Control
 
 N> From v16.3.21 version, the textbox is provided as ASP.NET MVC control to achieve the floating label textbox with minimal code. You can find the available textbox properties, methods, and events in the [API reference](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.TextBox.html).
 

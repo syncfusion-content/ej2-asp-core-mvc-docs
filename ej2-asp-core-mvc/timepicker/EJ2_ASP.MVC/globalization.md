@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Globalization in ASP.NET MVC TimePicker
+# Globalization in ASP.NET MVC TimePicker Control
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) and also add culture specific customization and translation to the text [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization).
 
