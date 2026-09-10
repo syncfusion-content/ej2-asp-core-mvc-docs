@@ -38,7 +38,7 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 
 
 
-![ASP .NET Core - Slider - Tooltip](./images/slider-tooltip.png)
+![ASP.NET Core - Slider - Tooltip](./images/slider-tooltip.png)
 
 ## Buttons
 
@@ -71,4 +71,4 @@ N> After enabling the slider buttons if the 'Tab' key is pressed, the focus goes
 
 
 
-![ASP .NET Core - Slider - Buttons](./images/slider-buttons.png)
+![ASP.NET Core - Slider - Buttons](./images/slider-buttons.png)

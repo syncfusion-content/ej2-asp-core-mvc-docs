@@ -63,4 +63,4 @@ Slider appearance can be customized through CSS. By overriding the slider CSS cl
 
 
 
-![ASP .NET Core - Slider - Thumb Customization](../images/thumb-customization.png)
+![ASP.NET Core - Slider - Thumb Customization](../images/thumb-customization.png)

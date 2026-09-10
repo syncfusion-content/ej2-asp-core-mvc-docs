@@ -46,7 +46,7 @@ Refer to the following code example to add formatted HTML content to the Tooltip
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Content](./images/tooltip-content.png)
+![ASP.NET Core - Tooltip - Content](./images/tooltip-content.png)
 
 ## Load dynamic Tooltip content
 
@@ -87,4 +87,4 @@ N> The Tooltip **target** property includes a unique identifier used to associat
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Dynamic Content via Ajax](./images/dynamic-content.png)
+![ASP.NET Core - Tooltip - Dynamic Content via Ajax](./images/dynamic-content.png)

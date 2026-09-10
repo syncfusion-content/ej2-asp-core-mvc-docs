@@ -54,7 +54,7 @@ In the following sample, grid enabled with dialog template editing.
 
 You can enhance the customization of your grid's edit forms by utilizing template contexts, such as accessing row details inside template, rendering editors as components, getting values from editors, setting focus to editors, and disabling default form validation, and adding custom validation. These features are applicable in both **inline** and **dialog** editing modes.
 
-The following template context topics are demonstrated through a practical example in the [Render tab component inside the dialog template](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/template-editing#render-tab-component-inside-the-dialog-template) topic.
+The following template context topics are demonstrated through a practical example in the [Render tab component inside the dialog template](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/editing/template-editing#render-tab-component-inside-the-dialog-template) topic.
 
 ### Access row details inside template using template context
 

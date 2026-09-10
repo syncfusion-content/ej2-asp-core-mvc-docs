@@ -15,7 +15,7 @@ The TreeMap control supports internationalization for the following elements:
 * Data label
 * Tooltip
 
-For more information about number and date formatter, refer to [`internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization).
+For more information about number and date formatter, refer to [`internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization).
 
 <!-- markdownlint-disable MD036 -->
 

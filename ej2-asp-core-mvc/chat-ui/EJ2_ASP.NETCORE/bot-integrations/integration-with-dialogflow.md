@@ -18,7 +18,7 @@ Before starting, ensure you have the following:
 
 * **Node.js**: Version 16 or higher with npm.
 
-* **Google Account**: To access [Google Dialogflow](https://docs.cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com).
+* **Google Account**: To access [Google Dialogflow](https://docs.cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://accounts.google.com/v3/signin/identifier?continue=https://console.cloud.google.com/&followup=https://console.cloud.google.com/&osid=1&passive=1209600&service=cloudconsole&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1780063874:1788947583609489).
 
 * **Syncfusion Chat UI**: Package [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) installed.
 

@@ -63,4 +63,4 @@ The Keyboard interaction of the Slider control is designed based on the [WAI-ARI
 
 
 
-![ASP .NET Core - Slider - Accessibility](./images/slider-accessibility.png)
+![ASP.NET Core - Slider - Accessibility](./images/slider-accessibility.png)

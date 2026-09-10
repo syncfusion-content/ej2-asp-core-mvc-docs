@@ -50,7 +50,7 @@ It has two types of scrollers as follows:
 
 Output be like the below.
 
-![ASP .NET Core ListView - Virtualization](./images/virtualization.png)
+![ASP.NET Core ListView - Virtualization](./images/virtualization.png)
 
 We can use `template` property to customize list items in UI virtualization.
 
@@ -81,7 +81,7 @@ We can use `template` property to customize list items in UI virtualization.
 
 Output be like the below.
 
-![ASP .NET Core ListView - Virtualization Template](./images/virtualization-template.png)
+![ASP.NET Core ListView - Virtualization Template](./images/virtualization-template.png)
 
 ## Conditional rendering
 
@@ -122,4 +122,4 @@ In the following sample, the light blue is applied for the even list and light c
 
 Output be like the below.
 
-![ASP .NET Core ListView - Virtualization Conditional](./images/virtualization-conditional.png)
+![ASP.NET Core ListView - Virtualization Conditional](./images/virtualization-conditional.png)

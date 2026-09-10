@@ -55,7 +55,7 @@ The following example demonstrate, the custom element is rendered for both **Cus
 ![Header template](../images/columns/Column-headertext-headerTemplate.png)
 
 >* The `HeaderTemplate` property is only applicable to Grid columns that have a header element.
->* You can use any HTML or ASP.NET MVC component in the header template to add additional functionality to the header element.
+>* You can use any HTML or ASP.NET MVC components in the header template to add additional functionality to the header element.
 
 ## Stacked header 
 

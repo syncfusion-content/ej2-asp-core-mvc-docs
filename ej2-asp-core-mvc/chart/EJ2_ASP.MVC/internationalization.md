@@ -17,7 +17,7 @@ Chart provide supports for internationalization for below chart elements.
 * Axis label.
 * Tooltip.
 
-For more information about number and date formatter you can refer [`internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization).
+For more information about number and date formatter you can refer [`internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization).
 
 <!-- markdownlint-disable MD036 -->
 **Globalization**

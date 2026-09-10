@@ -17,7 +17,7 @@ Follow these steps to create a Web API service that retrieves data from a MongoD
 ### Step 1: Create an ASP.NET Core Web Application
 1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**. Select the **Web API** project template (for example, **ASP.NET Core Web API** in Visual Studio 2022) so the project is configured with controllers and Swagger by default.
 2. Follow the official [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) for detailed instructions on creating an ASP.NET Core Web application.
-3. Before proceeding, ensure that a MongoDB Server instance is running locally (or reachable on the network) and that the `sample_training` database and `ProductDetails` collection exist with sample documents. The connection string and database/collection names used later in this walkthrough assume the example dataset from the [MongoDB sample databases](https://www.mongodb.com/docs/atlas/sample-data/).
+3. Before proceeding, ensure that a MongoDB Server instance is running locally (or reachable on the network) and that the `sample_training` database and `ProductDetails` collection exist with sample documents. The connection string and database/collection names used later in this walkthrough assume the example dataset from the [MongoDB sample databases](https://www.mongodb.com/docs/manual/sample-data/).
 
 ![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
