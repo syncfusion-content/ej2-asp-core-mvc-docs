@@ -23,10 +23,10 @@ In-place Editor has following validation rules, which are used to perform valida
 |------|------|------|
 | `required` | The input element must have any input values | a or 1 or - |
 | `email` | The input element must have valid `email` format values | <inplace@syncfusion.com> |
-| `url` | The  input element must have valid `url` format values| <http://syncfusion.com/> |
-| `date` | The  input element must have valid `date` format values | 12/25/2019 |
-| `dateIso` | The  input element must have valid `dateIso` format values | 2019-12-25 |
-| `number` | The  input element must have valid `number` format values | 1.0 or 1 |
+| `url` | The input element must have valid `url` format values| <https://syncfusion.com/> |
+| `date` | The input element must have valid `date` format values | 12/25/2019 |
+| `dateIso` | The input element must have valid `dateIso` format values | 2019-12-25 |
+| `number` | The input element must have valid `number` format values | 1.0 or 1 |
 | `maxLength` | Input value must have less than or equal to `maxLength` character length | if `maxLength: 5`, [check] is valid and [checking] is invalid |
 | `minLength` | Input value must have less than or equal to `minLength` character length | if `minLength: 5`, [testing] is valid and [test] is invalid |
 | `rangeLength` | Input value must have value between `rangeLength` character length | if `rangeLength: [4,5]`, [test] is valid and [key] is invalid

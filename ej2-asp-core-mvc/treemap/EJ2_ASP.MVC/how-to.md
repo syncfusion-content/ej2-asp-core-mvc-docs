@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the Drilldown Header in ##Platform_Name## TreeMap | Syncfusion
-description: Learn here all about how to customize the header for treemap drilldown in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
+title: Customize the Drilldown Header in ASP.NET MVC TreeMap | Syncfusion
+description: Learn here all about how to customize the header for treemap drilldown in Syncfusion ASP.NET MVC TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: How To
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Customize the Drilldown Header in ##Platform_Name## TreeMap
+# How to Customize the Drilldown Header in ASP.NET MVC TreeMap Control
 
 <!-- markdownlint-disable MD036 -->
 
@@ -80,7 +80,7 @@ Customize the population for drilled countries or states in the header element w
 
 **Sample reference**
 
-[`treemap sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/header-422842907).
+[`treemap sample`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/header-422842907).
 
 **Screenshot**
 
@@ -135,7 +135,7 @@ Add the label template in the `leafItemSettings` options, and then set the `show
 
 **Sample reference**
 
-[`treemap sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/labels430533743).
+[`treemap sample`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/labels430533743).
 
 **Screenshot**
 

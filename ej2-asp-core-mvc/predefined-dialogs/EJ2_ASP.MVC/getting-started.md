@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Predefined Dialogs | Syncfusion
-description: Learn how to get started with ##Platform_Name## Predefined Dialogs, including setup, configuration, and displaying Alert, Confirm, and Prompt dialogs.
+title: Getting Started with ASP.NET MVC Predefined Dialogs | Syncfusion
+description: Learn how to get started with ASP.NET MVC Predefined Dialogs, including setup, configuration, and displaying Alert, Confirm, and Prompt dialogs.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ##Platform_Name## Predefined Dialogs
+# Getting Started with ASP.NET MVC Predefined Dialogs Control
 
 This section briefly explains how to include ASP.NET MVC Predefined Dialogs in an ASP.NET MVC application using Visual Studio.
 

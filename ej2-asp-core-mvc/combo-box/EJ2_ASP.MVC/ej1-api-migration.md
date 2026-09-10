@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API Migration in ##Platform_Name## ComboBox | Syncfusion
-description: Migrate ComboBox code from Essential JS 1 to Essential JS 2 with property-by-property API mapping for ##Platform_Name## ComboBox.
+title: EJ1 API Migration in ASP.NET MVC ComboBox | Syncfusion
+description: Migrate ComboBox code from Essential JS 1 to Essential JS 2 with property-by-property API mapping for ASP.NET MVC ComboBox.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# EJ1 API Migration in ##Platform_Name## ComboBox
+# EJ1 API Migration in ASP.NET MVC ComboBox Control
 
 This article describes the API migration process of ComboBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
@@ -30,7 +30,7 @@ This article describes the API migration process of ComboBox component from Esse
 | **Default**| **Property**: *AllowFiltering*<br/>`Html.EJ().ComboBox("select").AllowFiltering(true).Render()`| **Property**: *AllowFiltering*<br/>`Html.EJS().ComboBox("select").AllowFiltering(true).Render()`|
 | **No records template** | **Property**: *NoRecordsTemplate*<br/>`Html.EJ().ComboBox("select").NoRecordsTemplate("<span class='norecord'> NO DATA AVAILABLE</span>").Render()` |**Property**: *NoRecordsTemplate*<br/>`Html.EJS().ComboBox("select").NoRecordsTemplate("<span class='norecord'> NO DATA AVAILABLE</span>").Render()` |
 | **Ignore casing and diacritics**| **Not Applicable** | **Property**: *IgnoreAccent*<br/>`Html.EJS().ComboBox("select").AllowFiltering(true).Render()` |
-| **Custom value addition** | **Property**: *AllowCustom*<br/>`Html.EJ().ComboBox("select").AllowCustom(true).Render()` | <https://ej2.syncfusion.com/aspnetmvc/ComboBox/CustomValue#/material> |
+| **Custom value addition** | **Property**: *AllowCustom*<br/>`Html.EJ().ComboBox("select").AllowCustom(true).Render()` | <https://ej2.syncfusion.com/aspnetmvc/combobox/customvalue#/material3> |
 | **Search event** | **Event**: *Filtering*<br/>`Html.EJ().ComboBox("select").Filtering("Filtering").Render()` | **Event**: *Filtering*<br/>`Html.EJS().ComboBox("select").Filtering("Filtering").Render()` |
 
 ## Template

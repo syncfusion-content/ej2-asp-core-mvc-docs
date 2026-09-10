@@ -86,7 +86,7 @@ Syncfusion ASP.NET MVC Grid supports version-based persistence for easy restorat
 
 In the below example, the `clickHandler` method is responsible for handling button clicks corresponding to different versions. Inside this method, the targeted version is assigned to the grid's `Ej2state-persistenceVersion` dynamically. The code checks if there is already a persisted state for the selected version in the local storage. If found, the grid is updated with the settings retrieved from the local storage, including columns, filter settings, group settings, sort settings, page settings, and selected row index. If no persisted state is found, the current grid state is persisted to the local storage using the `getPersistData` method.
 
-Here is an example of how to integrate version-based persistence into your ASP.NET MVC component and restore to specific state version:
+Here is an example of how to integrate version-based persistence into your ASP.NET MVC Components and restore to specific state version:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

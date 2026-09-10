@@ -19,13 +19,13 @@ When working with large datasets, you can use the following options to improve t
 
 ### Virtual scrolling
 
-Virtual scrolling improves the performance of the Pivot Table when working with large datasets by only displaying the rows and columns that are currently visible in the viewport. This approach reduces initial load time and memory usage, as the control processes only the data currently in view. As you scroll vertically or horizontally, additional data loads automatically in the background. For detailed guidance on implementing virtual scrolling in the Pivot Table, see the [virtual scrolling](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/virtual-scrolling) topic.
+Virtual scrolling improves the performance of the Pivot Table when working with large datasets by only displaying the rows and columns that are currently visible in the viewport. This approach reduces initial load time and memory usage, as the control processes only the data currently in view. As you scroll vertically or horizontally, additional data loads automatically in the background. For detailed guidance on implementing virtual scrolling in the Pivot Table, see the [virtual scrolling](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling) topic.
 
 ### Paging
 
 Paging helps you display large datasets efficiently by breaking them into smaller, manageable pages instead of loading all data at once. When the browser's maximum pixel height prevents you from using the Pivot Table with virtual scrolling, the paging option provides a reliable alternative. This approach significantly improves loading performance and ensures smooth navigation through your data.
 
-To enable paging in your Pivot Table, set the [`EnablePaging`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnablePaging) property to **true** and configure the [`PivotViewPageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPageSettings.html) to control the number of records displayed per page. For implementation details, refer to the [paging](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/paging) topic.
+To enable paging in your Pivot Table, set the [`EnablePaging`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnablePaging) property to **true** and configure the [`PivotViewPageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPageSettings.html) to control the number of records displayed per page. For implementation details, refer to the [paging](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/paging) topic.
 
 ### Server-side engine
 
@@ -39,7 +39,7 @@ In case a large amount of aggregated data is sent to the client-side from the we
 
 Additionally, the cache concept is implemented in the server-side engine to hold the pivot engine's instance based on the end-user GUID. This allows for quick retrieval, calculation, and re-sending of modified pivot data to the Pivot Table viewport, based on the UI action performed.
 
-For more information on implementing the server-side engine in the Pivot Table, please refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/server-side-pivot-engine).
+For more information on implementing the server-side engine in the Pivot Table, please refer to the documentation [here](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/server-side-pivot-engine).
 
 ## How can I enhance the performance of the Pivot Table through data operations?
 
@@ -55,13 +55,13 @@ Additionally, it works with the virtual scrolling or paging option enabled as we
 
 N> If your input raw data has very few repeated records, we would not suggest this option.
 
-For more information on implementing the data compression in the Pivot Table, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/data-compression).
+For more information on implementing the data compression in the Pivot Table, you can refer to the documentation [here](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/data-compression).
 
 ### Defer layout update
 
 The Defer Layout Update feature in the Pivot Table allows end-users to perform various operations—such as adding, removing, and rearranging fields, filtering, sorting, changing aggregation types, and more—without immediately updating the Pivot Table. End-users complete their modifications, and the final application of these changes occurs when they click the **Apply** button in the Field List UI. This action triggers the Pivot Table to update based on the last modified report. By deferring the layout update until explicitly requested, the ASP.NET MVC Pivot Table remains unchanged initially, ensuring minimal resource utilization and avoiding frequent re-rendering.
 
-For more information on defer layout updates, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/defer-update).
+For more information on defer layout updates, you can refer to the documentation [here](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/defer-update).
 
 ### Sorting
 
@@ -71,7 +71,7 @@ Once the input raw data is arranged as needed and the Pivot Table is rendered, i
 
 ### Member filtering
 
-When working with large datasets, set a display limit for members in the filter dialog UI. This allows the filter dialog to quickly show members up to the specified limit without facing performance issues. If there are more members beyond this limit, a message displaying the count of remaining members appears at the bottom of the filter dialog UI. End users can then access the remaining members using the search option provided in the filter dialog at runtime. For detailed instructions on implementing the node limit in the filter dialog UI, refer to the [filtering performance tips](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/filtering#performance-tips) section.
+When working with large datasets, set a display limit for members in the filter dialog UI. This allows the filter dialog to quickly show members up to the specified limit without facing performance issues. If there are more members beyond this limit, a message displaying the count of remaining members appears at the bottom of the filter dialog UI. End users can then access the remaining members using the search option provided in the filter dialog at runtime. For detailed instructions on implementing the node limit in the filter dialog UI, refer to the [filtering performance tips](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/filtering#performance-tips) section.
 
 ### Grouping
 
@@ -134,13 +134,13 @@ Here's an example below of configuring grouping in your input raw data and assig
 
 ### Value filtering
 
-The [value filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/filtering#value-filtering) primarily operates on grand totals, meaning the filtering process considers entire rows and columns to match applied value conditions. For similar results with more flexibility and better performance, consider exploring the label filtering or member filtering options. These alternatives can yield comparable outcomes, particularly when dealing with large datasets. You can find more information on utilizing the [label filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/filtering#label-filtering) or [member filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/filtering#member-filtering) options in the dedicated filtering section.
+The [value filtering](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/filtering#value-filtering) primarily operates on grand totals, meaning the filtering process considers entire rows and columns to match applied value conditions. For similar results with more flexibility and better performance, consider exploring the label filtering or member filtering options. These alternatives can yield comparable outcomes, particularly when dealing with large datasets. You can find more information on utilizing the [label filtering](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/filtering#label-filtering) or [member filtering](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/filtering#member-filtering) options in the dedicated filtering section.
 
 ## How do I improve the scrolling performance of the Pivot Table?
 
 ### Virtual scrolling with single page mode
 
-By default, the Pivot Table with virtual scrolling renders not only the current view page but also the previous and next pages. However, by using single-page mode along with virtual scrolling, only the rows and columns relevant to the current view page are rendered. This optimization significantly enhances the scrolling performance of the Pivot Table. For more information on implementing this feature, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/virtual-scrolling#virtual-scrolling-with-single-page-mode).
+By default, the Pivot Table with virtual scrolling renders not only the current view page but also the previous and next pages. However, by using single-page mode along with virtual scrolling, only the rows and columns relevant to the current view page are rendered. This optimization significantly enhances the scrolling performance of the Pivot Table. For more information on implementing this feature, you can refer to the documentation [here](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling#virtual-scrolling-with-single-page-mode).
 
 ### Limiting the component size
 

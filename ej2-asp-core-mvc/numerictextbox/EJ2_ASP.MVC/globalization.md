@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Numeric Textbox | Syncfusion
-description: Support multiple languages and cultures in the Syncfusion ##Platform_Name## Numeric Textbox with internationalization, localization, and RTL options.
+title: Globalization in ASP.NET MVC Numeric Textbox | Syncfusion
+description: Support multiple languages and cultures in the Syncfusion ASP.NET MVC Numeric Textbox with internationalization, localization, and RTL options.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Globalization in ##Platform_Name## NumericTextbox
+# Globalization in ASP.NET MVC NumericTextbox Control
 
 ## Internationalization
 
-Internationalization library provides support for formatting and parsing the number by using the official [Unicode CLDR](http://cldr.unicode.org) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in internationalization support to adapt based on culture. For more information about internationalization, refer to this [link](../common/internationalization).
+Internationalization library provides support for formatting and parsing the number by using the official [Unicode CLDR](https://cldr.unicode.org) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in internationalization support to adapt based on culture. For more information about internationalization, refer to this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization).
 
 By default, all the Essential<sup style="font-size:70%">&reg;</sup> JS 2  control are specific to English culture (en-US).
 If you want to go with the different culture other than `English`, follow the below steps.
@@ -59,7 +59,7 @@ loadCultureFiles('de');
 
 ## Localization
 
-[Localization](../common/localization) library allows users to localize the default text contents of the NumericTextBox to different cultures using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Locale) property.
+[Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization) library allows users to localize the default text contents of the NumericTextBox to different cultures using the [locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Locale) property.
 In NumericTextBox, spin buttons title for the tooltip will be localized based on the culture.
 
 | Locale key | en-US (default)  |
@@ -116,7 +116,7 @@ Output be like the below.
 
 ## Right to Left
 
-RTL provides an option to switch the text direction and layout of the NumericTextBox control from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL NumericTextBox, set the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_EnableRtl) to true.
+RTL provides an option to switch the text direction and layout of the NumericTextBox control from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL NumericTextBox, set the [enableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_EnableRtl) to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
