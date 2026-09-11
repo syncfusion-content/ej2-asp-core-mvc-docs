@@ -1,3 +1,4 @@
+@using Syncfusion.EJ2
 @using Syncfusion.EJ2.InteractiveChat
 
 <style>
@@ -55,7 +56,7 @@
         <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
     </div>
 
-    @Html.EJS().InlineAIAssist("speechEvents").RelateTo("#summarizeBtn").ResponseMode("Inline").Created("onCreated").PromptRequest("onPromptRequest").SpeechToTextOnStart("onSpeechStart").SpeechToTextOnStop("onSpeechStop").SpeechToTextTranscriptChanged("onTranscriptChanged").SpeechToTextOnError("onSpeechError").SpeechToTextSettings(new Syncfusion.EJ2.InteractiveChat.InlineAIAssistSpeechToTextSettings { Enable = true }).ResponseSettings(new Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings { ItemSelect = "onItemSelect" }).Render()
+    @Html.EJS().InlineAIAssist("speechEvents").RelateTo("#summarizeBtn").ResponseMode("Inline").Created("onCreated").PromptRequest("onPromptRequest").SpeechToTextOnStart("onSpeechStart").SpeechToTextOnStop("onSpeechStop").SpeechToTextTranscriptChanged("onTranscriptChanged").SpeechToTextOnError("onSpeechError").SpeechToTextSettings(new InlineAIAssistSpeechToTextSettings { Enable = true }).ResponseSettings(new InlineAIAssistResponseSettings { ItemSelect = "onItemSelect" }).Render()
 </div>
 
 <script>

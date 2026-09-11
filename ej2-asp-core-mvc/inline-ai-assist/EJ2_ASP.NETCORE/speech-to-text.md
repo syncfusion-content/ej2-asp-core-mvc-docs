@@ -34,6 +34,9 @@ Once enabled, a microphone button appears in the Inline AI Assist prompt area. T
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/inline-ai-assist/speech/stt/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="SpeechToText.cs" %}
+{% include code-snippet/inline-ai-assist/speech/stt/stt.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![SpeechToText](images/speech-to-text.webp)
@@ -56,6 +59,9 @@ This example demonstrates how to set up the Inline AI Assist with all these spee
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/inline-ai-assist/speech/speech-configuration/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="SpeechToText.cs" %}
+{% include code-snippet/inline-ai-assist/speech/speech-configuration/speechconfiguration.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![SpeechToTextConfig](images/speech-config.webp)
@@ -68,6 +74,9 @@ You can customize the tooltips for the microphone button using the [TooltipSetti
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/inline-ai-assist/speech/tooltip-settings/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="SpeechToText.cs" %}
+{% include code-snippet/inline-ai-assist/speech/tooltip-settings/tooltipsettings.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![SpeechToTextTooltip](images/tooltip-settings.webp)
@@ -79,6 +88,9 @@ The speech-to-text functionality provides events like `OnStart` (when recognitio
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/inline-ai-assist/speech/speech-events/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SpeechToText.cs" %}
+{% include code-snippet/inline-ai-assist/speech/speech-events/speechevents.cs %}
 {% endhighlight %}
 {% endtabs %}
 
