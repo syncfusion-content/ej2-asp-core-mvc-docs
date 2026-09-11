@@ -1,0 +1,11 @@
+<ejs-inlineaiassist id="inlinePrompt" relateTo="#targetContent">
+    <e-inlineaiassist-speechToTextSettings enable="true"
+                                           lang="en-US"
+                                           allowInterimResults="true">
+        <e-inlineaiassist-speechToTextButtonSettings content="Speak"
+                                                      stopContent="Stop"
+                                                      iconCss="e-icons e-mic"
+                                                      stopIconCss="e-icons e-stop">
+        </e-inlineaiassist-speechToTextButtonSettings>
+    </e-inlineaiassist-speechToTextSettings>
+</ejs-inlineaiassist>

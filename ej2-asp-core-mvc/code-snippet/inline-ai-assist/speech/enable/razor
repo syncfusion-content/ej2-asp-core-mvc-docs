@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+@Html.EJS().InlineAIAssist("inlinePrompt")
+    .RelateTo("#targetContent")
+    .SpeechToTextSettings(new InlineAIAssistSpeechToTextSettings
+    {
+        Enable = true
+    })
+    .Render()
