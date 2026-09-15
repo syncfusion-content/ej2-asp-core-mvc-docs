@@ -110,4 +110,4 @@ The accessibility compliance of the MultiSelect control is shown in the followin
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls](../common/accessibility)
+* [Accessibility in ##Platform_Name## controls](../common/accessibility)

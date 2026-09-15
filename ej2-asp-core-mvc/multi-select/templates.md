@@ -278,7 +278,6 @@ In the following sample, the Summary Tag Template displays the count of selected
 
 > **Note:** When you set a threshold value and preselected items exceed it, the summary template displays formatted text instead of individual items. If `summaryTagTemplate` and `summaryTagCount` are not provided, the Summary Tag Template feature is automatically enabled when records or preselected items exceed 1000, displaying a default summary format for better performance.
 
-
 ## See also
 
 * [How to bind the data](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/data-binding)

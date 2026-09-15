@@ -59,7 +59,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefautocomplete" aria-label="HTML autocomplete attribute">autocomplete</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefautocomplete" aria-label="HTML autocomplete attribute">autocomplete</a></td>
 <td>Autocomplete</td>
 <td>
 <ul>

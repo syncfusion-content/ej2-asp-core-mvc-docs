@@ -127,7 +127,7 @@ This section explains how to connect the Pivot Table component to a SQL Server d
 1. Download the ASP.NET MVC Pivot Table sample from the [GitHub](https://github.com/SyncfusionExamples/aspnetcore-bind-SQL-database-to-pivot-table) repository.
 2. Install the Syncfusion ASP.NET MVC helper package by running `Install-Package Syncfusion.EJ2.AspNet.MVC` (or the equivalent `dotnet add package Syncfusion.EJ2.AspNet.MVC` command).
 3. Register the Syncfusion namespace and tag helpers in **~/Views/Web.config** (`<add namespace="Syncfusion.EJ2" />` under `<namespaces>`) so the `EJS()` Razor helper is available in views.
-4. Add the required EJ2 client-side references (for example, `ej2.min.js`, `ej2-pivotview.min.js`, and the matching theme CSS) in **~/Views/Shared/_Layout.cshtml** as described in the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started) documentation.
+4. Add the required EJ2 client-side references (for example, `ej2.min.js`, `ej2-pivotview.min.js`, and the matching theme CSS) in **~/Views/Shared/_Layout.cshtml** as described in the [Getting Started](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/getting-started) documentation.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
 1. In the ~/Views/Home/Index.cshtml file, configure the Pivot Table to use the hosted Web API URL (`https://localhost:7139/pivot`) by setting the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property within the [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) object.

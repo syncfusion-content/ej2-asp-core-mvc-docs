@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Upgrading Syncfusion Aspnetmvc Extensions in ##Platform_Name## Component
-description: Learn here all about Upgrading Syncfusion Aspnetmvc Extensions in Syncfusion ##Platform_Name## component of syncfusion and more.
+title: Upgrading Syncfusion ASP.NET MVC Extensions in ##Platform_Name## Component
+description: Learn here all about Upgrading Syncfusion ASP.NET MVC Extensions in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
-control: Upgrading Syncfusion Aspnetmvc Extensions
+control: Upgrading Syncfusion ASP.NET MVC Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extensions
+# Upgrading Syncfusion ASP.NET MVC Extensions
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCExtensions) for every Syncfusion<sup style="font-size:70%">&reg;</sup> Volume releases, with exciting new features and Service Pack release with major bug fixes in the volume releases.
 

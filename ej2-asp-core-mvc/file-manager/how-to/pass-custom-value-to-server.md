@@ -22,9 +22,9 @@ For connecting the File Manager to a physical file system, check out the [`Physi
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-To create a basic File Manager control, start by following the easy steps in the [`Getting Started`](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/getting-started) guide. This will allow you to manage files and folders on your system, whether they are stored physically or in the cloud.
+To create a basic File Manager control, start by following the easy steps in the [`Getting Started`](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/getting-started) guide. This will allow you to manage files and folders on your system, whether they are stored physically or in the cloud.
 
-For connecting the File Manager to a physical file system, check out the [`Physical file provider`](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-system-provider#physical-file-system-provider) section. This part of the documentation will help you configure it correctly.
+For connecting the File Manager to a physical file system, check out the [`Physical file provider`](https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/file-system-provider#physical-file-system-provider) section. This part of the documentation will help you configure it correctly.
 
 {% endif %}
 

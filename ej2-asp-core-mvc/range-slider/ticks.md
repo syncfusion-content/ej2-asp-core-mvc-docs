@@ -38,7 +38,7 @@ The Ticks in Slider supports you to easily identify the current value/values of 
 
 
 
-![ASP .NET Core - Slider - Ticks](./images/slider-ticks.png)
+![ASP.NET Core - Slider - Ticks](./images/slider-ticks.png)
 
 ## Step
 
@@ -69,7 +69,7 @@ When the Slider is moved, it increases/decreases the value based on the step val
 
 
 
-![ASP .NET Core - Slider - Step](./images/slider-ticks.png)
+![ASP.NET Core - Slider - Step](./images/slider-ticks.png)
 
 ## Min and Max
 
@@ -100,4 +100,4 @@ Enables the minimum/starting and maximum/ending value of the Slider, by using th
 
 
 
-![ASP .NET Core - Slider - Min and Max](./images/slider-min-max.png)
+![ASP.NET Core - Slider - Min and Max](./images/slider-min-max.png)

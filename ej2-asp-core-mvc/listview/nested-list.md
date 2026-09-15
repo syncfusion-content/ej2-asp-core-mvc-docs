@@ -40,4 +40,4 @@ The ListView control supports Nested list. For that, the [`child`](https://help.
 
 Output be like the below.
 
-![ASP .NET Core ListView - Nested List](./images/nestedlist.png)
+![ASP.NET Core ListView - Nested List](./images/nestedlist.png)

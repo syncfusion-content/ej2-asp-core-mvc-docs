@@ -366,7 +366,7 @@ When you bind a report to the Pivot Table, all fields from the data source are a
 
 To exclude specific fields, add the field names to the [`ExcludeFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExcludeFields) property (a `string[]`) within the [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) configuration. This prevents the selected fields from being displayed in the Grouping Bar while keeping them available in the underlying data source. Fields already placed in an axis (row, column, value, or filter) are not affected.
 
-> **Note:** When you exclude fields using the `ExcludeFields` property, these fields will also be hidden in the field list UI. For more information about field list behavior, refer to this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/field-list#remove-specific-fields-from-displaying).
+> **Note:** When you exclude fields using the `ExcludeFields` property, these fields will also be hidden in the field list UI. For more information about field list behavior, refer to this [link](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/field-list#remove-specific-fields-from-displaying).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

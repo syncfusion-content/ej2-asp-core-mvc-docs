@@ -92,7 +92,6 @@ To crop an image in the image editor, do the following steps.
 
 ![Crop selection drawn over a photo with the action toolbar above](images/crop.jpg){:width="600"}
 
-
 ## Annotations
 
 To add annotations to the image, follow these steps:

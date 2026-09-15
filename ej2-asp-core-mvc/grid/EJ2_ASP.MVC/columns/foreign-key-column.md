@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Foreign Key Column in ASP.NET Core Data Grid
+# Foreign Key Column in ASP.NET MVC Data Grid
 
 The Foreign key column in the Syncfusion Grid component allows you to display related data from a foreign key data source in a column within the grid. This feature is particularly useful when you have a column in the grid that represents a foreign key relationship with another data source.
 
@@ -52,7 +52,7 @@ In this example, **data** is the local data source for the Grid, and **employeeD
 
 The Foreign key column in Syncfusion Grid allows you to bind remote data for a foreign key column. You can assign the service data as an instance of `DataManager` to the `DataSource` property, and provide the endpoint `URL` as the data source URL.
 
-This example demonstrates how to use the foreign key column with remote data binding using the [ODataV4Adaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/data-binding/remote-data#odata-v4-adaptor---binding-odata-v4-service) in the grid:
+This example demonstrates how to use the foreign key column with remote data binding using the [ODataV4Adaptor](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/data-binding/remote-data#odata-v4-adaptor---binding-odata-v4-service) in the grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -191,7 +191,7 @@ This example demonstrates how to use an edit template in a foreign key column wi
 
 **Step 1:** Open Visual Studio and create an ASP.NET MVC project named **UrlAdaptor**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
 
-**Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc) documentation link.
+**Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc) documentation link.
 
 **Step 3:** In your ASP.NET MVC file (e.g., **Index.cshtml**), define the Syncfusion ASP.NET MVC Grid with the necessary configurations, including a foreign key column for **EmployeeID**, and implement the required logic to manage its behavior.
 

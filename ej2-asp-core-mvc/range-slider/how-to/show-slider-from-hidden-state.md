@@ -39,4 +39,4 @@ In the sample, by clicking on the button, we can make the Slider visible from hi
 
 
 
-![ASP .NET Core - Slider - Hidden - Slider](../images/hidden-slider.png)
+![ASP.NET Core - Slider - Hidden - Slider](../images/hidden-slider.png)

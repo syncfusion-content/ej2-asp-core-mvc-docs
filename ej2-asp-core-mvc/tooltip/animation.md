@@ -44,7 +44,7 @@ By default, Tooltip entrance occurs over 150 ms using the `ease-out` timing func
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Animation](./images/tooltip-animation.png)
+![ASP.NET Core - Tooltip - Animation](./images/tooltip-animation.png)
 
 The default animation effect for the Tooltip is set to `FadeIn` for its open action, and `FadeOut` for its close action. The default `duration` is set to 150 ms and `delay` is set to 0.
 
@@ -106,7 +106,7 @@ Refer to the code snippet below to apply animations using public methods.
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Animation Open Close Method](./images/tooltip-animation.png)
+![ASP.NET Core - Tooltip - Animation Open Close Method](./images/tooltip-animation.png)
 
 ## Apply transition
 
@@ -139,4 +139,4 @@ The transition effect can be applied on Tooltips by using the `beforeRender` eve
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Animation Transition](./images/tooltip-transition.png)
+![ASP.NET Core - Tooltip - Animation Transition](./images/tooltip-transition.png)

@@ -68,4 +68,4 @@ The `FormValidator` has following default validation rules, which are used to va
 
 
 
-![ASP .NET Core - Slider - Form Validator](../images/slider-validation.png)
+![ASP.NET Core - Slider - Form Validator](../images/slider-validation.png)

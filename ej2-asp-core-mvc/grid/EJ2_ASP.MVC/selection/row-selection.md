@@ -300,7 +300,7 @@ To achieve passing selected records to the server using AJAX requests in the Syn
 
 **Step 1:** Open Visual Studio and create an ASP.NET MVC project named **SelectRecord**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
 
-**Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc) documentation link.
+**Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc) documentation link.
 
 **Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the AJAX call and include the Syncfusion ASP.NET MVC Grid with necessary configurations:
 
@@ -501,7 +501,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 
 **Step 1:** Open Visual Studio and create an ASP.NET MVC project named **SelectRecord**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
 
-**Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc) documentation link.
+**Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc) documentation link.
 
 **Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the Fetch call and include the Syncfusion ASP.NET MVC Grid with necessary configurations:
 

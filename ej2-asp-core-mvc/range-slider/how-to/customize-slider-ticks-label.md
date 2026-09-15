@@ -52,4 +52,4 @@ Here, the color for rendered ticks has been applied through nth-child(`child_num
 
 
 
-![ASP .NET Core - Slider - Ticks Customization](../images/ticks-customization.png)
+![ASP.NET Core - Slider - Ticks Customization](../images/ticks-customization.png)

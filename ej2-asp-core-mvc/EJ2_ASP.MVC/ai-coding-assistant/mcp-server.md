@@ -25,7 +25,7 @@ The [SyncfusionAspNetMvcAssistant](https://www.npmjs.com/package/@syncfusion/asp
 Before using [SyncfusionAspNetMvcAssistant](https://www.npmjs.com/package/@syncfusion/aspnetmvc-assistant), ensure you have:
 
 * Required [node](https://nodejs.org/en/) version >= 18
-* A [compatible MCP client](https://modelcontextprotocol.io/docs/2026-07-28/develop/build-client) (Visual Studio Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio](https://www.syncfusion.com/code-studio/), etc.)
+* A [compatible MCP client](https://modelcontextprotocol.io/docs/2026-07-28/develop/build-client) (Visual Studio Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio](https://www.syncfusion.com/code-studio/), etc.)
 * An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
   - [Commercial License](https://www.syncfusion.com/sales/pricing)
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)

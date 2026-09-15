@@ -44,7 +44,7 @@ Styling the tip pointer's size, background, and border color's can be done using
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Tip Pointer Customization](./images/tip-pointer-customization.png)
+![ASP.NET Core - Tooltip - Tip Pointer Customization](./images/tip-pointer-customization.png)
 
 ## Tooltip customization
 
@@ -77,4 +77,4 @@ The complete look and feel of the Tooltip can be customized by changing it's bac
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Customization](./images/tooltip-customization.png)
+![ASP.NET Core - Tooltip - Customization](./images/tooltip-customization.png)
