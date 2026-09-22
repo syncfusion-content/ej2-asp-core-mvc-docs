@@ -1,0 +1,207 @@
+@{
+    var border = new
+    {
+        color = "black",
+        dashArray = "2",
+        width = 2
+    };
+
+    var connectorLineStyle = new
+    {
+        color = "black",
+        width = 2
+    };
+
+    var smartLabelSettings = new
+    {
+        background = "#4f4f4f",
+        border = border,
+        connectorLineStyle = connectorLineStyle,
+        pointerShape = "Arrow",
+        offset = 0.5
+    };
+}
+
+@(
+    Html.EJS().Chart("container")
+        .Title("Chart Title")
+        .Tooltip(tooltip => tooltip.Enable(true))
+        .LegendSettings(legend => legend.Visible(true))
+        .PrimaryXAxis(axis => axis
+            .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+        )
+        .PrimaryYAxis(axis => axis
+            .Visible(false)
+        )
+        .Series(series =>
+        {
+            series
+                .Name("Category A")
+                .DataSource(ViewBag.dataA)
+                .XName("x")
+                .YName("y")
+                .Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+                .Fill("#254061")
+                .ColumnWidth(0.6)
+                .Marker(marker => marker
+                    .DataLabel(dataLabel => dataLabel
+                        .Visible(true)
+                        .Name("text")
+                        .Fill("Transparent")
+                        .LabelIntersectAction(
+                            Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically
+                        )
+                        .SmartLabelSettings(smartLabelSettings)
+                    )
+                )
+                .Add();
+
+            series
+                .Name("Category B")
+                .DataSource(ViewBag.dataB)
+                .XName("x")
+                .YName("y")
+                .Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+                .Fill("#376092")
+                .ColumnWidth(0.6)
+                .Marker(marker => marker
+                    .DataLabel(dataLabel => dataLabel
+                        .Visible(true)
+                        .Name("text")
+                        .Fill("Transparent")
+                        .LabelIntersectAction(
+                            Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically
+                        )
+                        .SmartLabelSettings(smartLabelSettings)
+                    )
+                )
+                .Add();
+
+            series
+                .Name("Category C")
+                .DataSource(ViewBag.dataC)
+                .XName("x")
+                .YName("y")
+                .Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+                .Fill("#4f81bd")
+                .ColumnWidth(0.6)
+                .Marker(marker => marker
+                    .DataLabel(dataLabel => dataLabel
+                        .Visible(true)
+                        .Name("text")
+                        .Fill("Transparent")
+                        .LabelIntersectAction(
+                            Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically
+                        )
+                        .SmartLabelSettings(smartLabelSettings)
+                    )
+                )
+                .Add();
+
+            series
+                .Name("Category D")
+                .DataSource(ViewBag.dataD)
+                .XName("x")
+                .YName("y")
+                .Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+                .Fill("CornflowerBlue")
+                .ColumnWidth(0.6)
+                .Marker(marker => marker
+                    .DataLabel(dataLabel => dataLabel
+                        .Visible(true)
+                        .Name("text")
+                        .Fill("Transparent")
+                        .LabelIntersectAction(
+                            Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically
+                        )
+                        .SmartLabelSettings(smartLabelSettings)
+                    )
+                )
+                .Add();
+
+            series
+                .Name("Category E")
+                .DataSource(ViewBag.dataE)
+                .XName("x")
+                .YName("y")
+                .Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+                .Fill("LightBlue")
+                .ColumnWidth(0.6)
+                .Marker(marker => marker
+                    .DataLabel(dataLabel => dataLabel
+                        .Visible(true)
+                        .Name("text")
+                        .Fill("Transparent")
+                        .LabelIntersectAction(
+                            Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically
+                        )
+                        .SmartLabelSettings(smartLabelSettings)
+                    )
+                )
+                .Add();
+
+            series
+                .Name("Category F")
+                .DataSource(ViewBag.dataF)
+                .XName("x")
+                .YName("y")
+                .Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+                .Fill("LightSteelBlue")
+                .ColumnWidth(0.6)
+                .Marker(marker => marker
+                    .DataLabel(dataLabel => dataLabel
+                        .Visible(true)
+                        .Name("text")
+                        .Fill("Transparent")
+                        .LabelIntersectAction(
+                            Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically
+                        )
+                        .SmartLabelSettings(smartLabelSettings)
+                    )
+                )
+                .Add();
+
+            series
+                .Name("Category G")
+                .DataSource(ViewBag.dataG)
+                .XName("x")
+                .YName("y")
+                .Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+                .Fill("Moccasin")
+                .ColumnWidth(0.6)
+                .Marker(marker => marker
+                    .DataLabel(dataLabel => dataLabel
+                        .Visible(true)
+                        .Name("text")
+                        .Fill("Transparent")
+                        .LabelIntersectAction(
+                            Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically
+                        )
+                        .SmartLabelSettings(smartLabelSettings)
+                    )
+                )
+                .Add();
+
+            series
+                .Name("Category H")
+                .DataSource(ViewBag.dataH)
+                .XName("x")
+                .YName("y")
+                .Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+                .Fill("LightGrey")
+                .ColumnWidth(0.6)
+                .Marker(marker => marker
+                    .DataLabel(dataLabel => dataLabel
+                        .Visible(true)
+                        .Name("text")
+                        .Fill("Transparent")
+                        .LabelIntersectAction(
+                            Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically
+                        )
+                        .SmartLabelSettings(smartLabelSettings)
+                    )
+                )
+                .Add();
+        })
+        .Render()
+)

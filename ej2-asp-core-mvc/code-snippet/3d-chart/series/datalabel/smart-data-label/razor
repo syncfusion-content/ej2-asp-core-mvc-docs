@@ -1,0 +1,128 @@
+@(
+    Html.EJS().Chart3D("container")
+        .Title("Mobile Game Market by Country")
+        .PrimaryXAxis(axis => axis
+            .Title("Years")
+            .Interval(1)
+            .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+        )
+        .PrimaryYAxis(axis => axis
+            .Title("Sales in Billions")
+            .LabelFormat("{value}B")
+        )
+        .LegendSettings(legend => legend
+            .Visible(true)
+        )
+        .WallColor("transparent")
+        .EnableRotation(true)
+        .Rotation(7)
+        .Tilt(10)
+        .Depth(100)
+        .Series(series =>
+        {
+            series
+                .DataSource(ViewBag.dataSource)
+                .XName("x")
+                .YName("y")
+                .Name("UK")
+                .Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingColumn)
+                .ColumnWidth(0.5)
+                .Animation(animation => animation
+                    .Enable(false)
+                )
+                .DataLabel(dataLabel => dataLabel
+                    .Visible(true)
+                    .LabelIntersectAction(
+                        Syncfusion.EJ2.Charts.Chart3DDataLabelIntersectAction.RelocateVertically
+                    )
+                )
+                .Add();
+
+            series
+                .DataSource(ViewBag.dataSource)
+                .XName("x")
+                .YName("y1")
+                .Name("Germany")
+                .Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingColumn)
+                .ColumnWidth(0.5)
+                .Animation(animation => animation
+                    .Enable(false)
+                )
+                .DataLabel(dataLabel => dataLabel
+                    .Visible(true)
+                    .LabelIntersectAction(
+                        Syncfusion.EJ2.Charts.Chart3DDataLabelIntersectAction.RelocateVertically
+                    )
+                )
+                .Add();
+
+            series
+                .DataSource(ViewBag.dataSource)
+                .XName("x")
+                .YName("y2")
+                .Name("France")
+                .Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingColumn)
+                .ColumnWidth(0.5)
+                .Animation(animation => animation
+                    .Enable(false)
+                )
+                .DataLabel(dataLabel => dataLabel
+                    .Visible(true)
+                    .LabelIntersectAction(
+                        Syncfusion.EJ2.Charts.Chart3DDataLabelIntersectAction.RelocateVertically
+                    )
+                    .SmartLabelSettings(settings => settings
+                        .Background("green")
+                        .PointerShape(
+                            Syncfusion.EJ2.Charts.RelocatePointerShape.Arrow
+                        )
+                        .Offset(0.2)
+                        .Border(border => border
+                            .Color("yellow")
+                            .DashArray("2")
+                            .Width(2)
+                        )
+                        .ConnectorLineStyle(line => line
+                            .Color("RED")
+                            .Width(2)
+                        )
+                    )
+                )
+                .Add();
+
+            series
+                .DataSource(ViewBag.dataSource)
+                .XName("x")
+                .YName("y3")
+                .Name("Italy")
+                .Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingColumn)
+                .ColumnWidth(0.5)
+                .Animation(animation => animation
+                    .Enable(false)
+                )
+                .DataLabel(dataLabel => dataLabel
+                    .Visible(true)
+                    .LabelIntersectAction(
+                        Syncfusion.EJ2.Charts.Chart3DDataLabelIntersectAction.RelocateVertically
+                    )
+                    .SmartLabelSettings(settings => settings
+                        .Background("green")
+                        .PointerShape(
+                            Syncfusion.EJ2.Charts.RelocatePointerShape.Arrow
+                        )
+                        .Offset(0.8)
+                        .Border(border => border
+                            .Color("yellow")
+                            .DashArray("2")
+                            .Width(2)
+                        )
+                        .ConnectorLineStyle(line => line
+                            .Color("RED")
+                            .Width(2)
+                        )
+                    )
+                )
+                .Add();
+        })
+        .Render()
+)
