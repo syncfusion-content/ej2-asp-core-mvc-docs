@@ -326,7 +326,7 @@ The `RelocateVertically` and `RelocateHorizontally` options enable the Smart Dat
 {% include code-snippet/3d-chart/series/datalabel/smart-data-label/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Smart-data-label.cs" %}
-{% include code-snippet/3d-chart/series/datalabel/series-percentage/smart-data-label.cs %}
+{% include code-snippet/3d-chart/series/datalabel/smart-data-label/smart-data-label.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
