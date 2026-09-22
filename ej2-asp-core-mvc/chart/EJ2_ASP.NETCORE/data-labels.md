@@ -269,6 +269,50 @@ The `stroke` and `border` of data label can be customized using `fill` and `bord
 
 N> `rx` and `ry` properties requires `border` values not to be null.
 
+### Handling Overlapping Data Labels
+
+Use the `labelIntersectAction` property to specify how overlapping data labels are handled.
+
+The available options are:
+
+- `None` - Displays all data labels even when they overlap.
+- `Hide` - Hides overlapping data labels.
+- `Rotate90` - Rotates overlapping data labels by 90 degrees.
+- `RelocateVertically` - Relocates overlapping data labels vertically.
+- `RelocateHorizontally` - Relocates overlapping data labels horizontally.
+
+The `RelocateVertically` and `RelocateHorizontally` options are supported only for the following series types:
+
+- `StackingColumn`
+- `StackingColumn100`
+- `StackingBar`
+- `StackingBar100`
+
+These relocation modes enable the Smart Data Label feature, which improves readability by relocating overlapping data labels and connecting them to their corresponding data points using connector lines. Use the `smartLabelSettings` property to customize relocated labels through the `background`, `pointerShape`, `border`, `connectorLineStyle`, and `offset` settings. The `offset` property is applicable only when `labelIntersectAction` is set to `RelocateVertically`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/datalabels/smart-data-label/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Smart-data-label.cs" %}
+{% include code-snippet/chart/datalabels/smart-data-label/smart-data-label.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/datalabels/smart-data-label/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Smart-data-label.cs" %}
+{% include code-snippet/chart/datalabels/smart-data-label/smart-data-label.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Customizing Specific Point
 
 You can also customize the specific marker and label using [`pointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) and [`textRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TextRender) event. The `pointRender` event allows to change the shape, color and border for a point, whereas the `textRender` event allows to change the text for the point.
