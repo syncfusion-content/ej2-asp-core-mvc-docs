@@ -101,8 +101,3 @@ The speech-to-text functionality provides events like `OnStart` (when recognitio
 The speech-to-text functionality in Inline AI Assist relies on the browser's [Speech Recognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition), which has limited browser support. Refer to the [Browser Compatibility](https://ej2.syncfusion.com/aspnetcore/documentation/speech-to-text/speech-recognition#browser-support) section for detailed information.
 
 The browser may request permission to access the device's microphone when speech recognition starts. Speech-to-text functionality is available only when microphone permission is granted and the browser supports the Speech Recognition API.
-
-## See Also
-
-* [Getting Started with ASP.NET Core Inline AI Assist](../getting-started)
-* [Azure OpenAI Integration with ASP.NET Core Inline AI Assist](../ai-integrations/openai-integration)

@@ -87,8 +87,3 @@ The recognized transcript is updated in the Inline AI Assist prompt area. When t
 The `SpeechToText` feature relies on the [Speech Recognition API](https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/speech-recognition#browser-support), which has limited browser support. See the [browser support](https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/speech-recognition#browser-support) section for details.
 
 The browser may request permission to access the device microphone when speech recognition starts. Speech-to-text is available only when microphone permission is granted and the browser supports the Speech Recognition API.
-
-## See Also
-
-* [Getting Started](../getting-started)
-* [Inline Toolbar Configuration](../inline-toolbar)
