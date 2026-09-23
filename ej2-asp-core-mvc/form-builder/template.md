@@ -16,9 +16,9 @@ This section explains how to use templates in the Form Builder component.
 
 ## Adding Templates
 
-Templates can be added to the Form Builder by configuring the third-party control in the `template` property of `toolboxItems`. Map the template to a specific form field by using the `type` property in `toolboxItems`.
+Templates can be added to the Form Builder by configuring the `ToolboxItemSetting` instance and passing it to the `ToolboxItems` method. Each `ToolboxItemSetting` is mapped to a form field by setting its Type property (using the `FormWidgetType` enum) and supplies the markup for the third-party control through its `Template` property.
 
-`toolboxItems` is an array property, and any number of templates can be rendered in the Form Builder toolbox.
+Pass any number of `ToolboxItemSetting` instances to the `ToolboxItems` collection to render that many templates in the Form Builder toolbox.
 
 After you drag and drop the form field onto the central design canvas, the third-party component is rendered automatically.
 
