@@ -8,12 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET MVC Form Builder Control
 
-The Form Builder is a powerful component that enables you to build and render complex forms with ease. It streamlines form creation and customization by providing a ready-to-use UI for form design and editing.
+The Form Builder is an intuitive, visual form designer that lets you create and customize forms interactively by dragging and dropping fields—no code required. You can visually design forms, configure field properties, and preview the generated form in real time. The Form Builder also allows you to export the form schema for use with the [Form Renderer](https://ej2.syncfusion.com/aspnetmvc/documentation/form-renderer/getting-started) control.
 
-This section briefly explains about how to include ASP.NET MVC Form Builder control in your ASP.NET MVC application using Visual Studio.
+This section explains the steps required to create a simple ASP.NET MVC Form Builder and demonstrate the basic usage of the Form Builder control in a ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -104,11 +103,8 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Form Builder control in `~/Views/Home/Index.cshtml` page.
 
-The Form Builder component can be added directly to your view without assigning any schema or model. Simply use the component name as shown below—no additional data or configuration is required.
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-
 
 @using Syncfusion.EJ2.FormBuilder
 
@@ -133,4 +129,27 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 The output looks like below.
 
-![ASP.NET MVC Form Builder](images/form-builder.png)
+![ASP.NET MVC Form Builder](./images/form-builder.png)
+
+## Registering Syncfusion license
+
+The Syncfusion® Form Builder requires a valid license key to be registered in the application. To prevent license validation warnings, refer to the [Syncfusion licensing](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview) documentation.
+
+## Basic components of Form Builder
+
+The Form Builder control consists of the following sections:
+
+1. Left Pane / Toolbox — Displays all the supported form fields, which can be dragged and dropped.
+2. Central design canvas — Holds the dropped form fields to construct the form.
+3. Right Pane — Provides options to customize the form settings as well as the selected form fields.
+4. Code view — Displays the form schema during the form design process.
+5. Form Preview — Allows you to preview and interact with the generated form in real time once it is created.
+
+## Adding form fields to the design canvas
+
+Form fields can be added to the central design canvas in the following ways:
+
+* **Form Components Panel** — A toolbox of form fields is available in the left-side pane to drag and drop them onto the design canvas.
+* **Context Menu in the Design Canvas** — After the first form field is dropped, a button at the end of the central canvas can be used to add additional form fields using a context menu that appears when the button is clicked.
+
+![Form Builder with context menu](./images/form-builder-drag-drop.gif)

@@ -8,12 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET Core Form Builder
 
-The Form Builder is a powerful component that enables you to build and render complex forms with ease. It streamlines form creation and customization by providing a ready-to-use UI for form design and editing.
+The Form Builder is an intuitive, visual form designer that lets you create and customize forms interactively by dragging and dropping fields—no code required. You can visually design forms, configure field properties, and preview the generated form in real time. The Form Builder also allows you to export the form schema for use with the [Form Renderer](https://ej2.syncfusion.com/aspnetcore/documentation/form-renderer/getting-started) control.
 
-This section briefly explains how to include the ASP.NET Core Form Builder in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section explains the steps required to create a simple ASP.NET Core Form Builder and demonstrate the basic usage of the Form Builder control in a ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -171,4 +170,27 @@ public class DefaultModel : PageModel
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The ASP.NET Core Form Builder will render in your default web browser.
 
-![ASP.NET Core Form Builder](images/form-builder.png)
+![ASP.NET Core Form Builder](./images/form-builder.png)
+
+## Registering Syncfusion license
+
+The Syncfusion® Form Builder requires a valid license key to be registered in the application. To prevent license validation warnings, refer to the [Syncfusion licensing](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview) documentation.
+
+## Basic components of Form Builder
+
+The Form Builder control consists of the following sections:
+
+1. Left Pane / Toolbox — Displays all the supported form fields, which can be dragged and dropped.
+2. Central design canvas — Holds the dropped form fields to construct the form.
+3. Right Pane — Provides options to customize the form settings as well as the selected form fields.
+4. Code view — Displays the form schema during the form design process.
+5. Form Preview — Allows you to preview and interact with the generated form in real time once it is created.
+
+## Adding form fields to the design canvas
+
+Form fields can be added to the central design canvas in the following ways:
+
+* **Form Components Panel** — A toolbox of form fields is available in the left-side pane to drag and drop them onto the design canvas.
+* **Context Menu in the Design Canvas** — After the first form field is dropped, a button at the end of the central canvas can be used to add additional form fields using a context menu that appears when the button is clicked.
+
+![Form Builder with context menu](./images/form-builder-drag-drop.gif)
