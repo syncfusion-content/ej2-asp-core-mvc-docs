@@ -92,10 +92,10 @@ In the following example, simulated one-minute OHLC data is generated locally an
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include ode-snippet/stock-chart/stockchart-feature/stock-live-update/tagHelper %}
+{% include code-snippet/stock-chart/stockchart-feature/stock-live-update/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stock-live-update.cs" %}
-{% include ode-snippet/stock-chart/stockchart-feature/stock-live-update/stock-live-update.cs %}
+{% include code-snippet/stock-chart/stockchart-feature/stock-live-update/stock-live-update.cs %}
 {% endhighlight %}
 {% endtabs %}
 
