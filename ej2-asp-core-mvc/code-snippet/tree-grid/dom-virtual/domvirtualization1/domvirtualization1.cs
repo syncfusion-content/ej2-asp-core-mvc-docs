@@ -1,5 +1,5 @@
-public IActionResult VirtualScrolling()
+public IActionResult domVirtualization()
         {
-            ViewBag.datasource = VirtualDataFormat.GetVirtualData();
+            ViewBag.datasource = VirtualDataFormat.GetDomVirtualData();
             return View();
         }
