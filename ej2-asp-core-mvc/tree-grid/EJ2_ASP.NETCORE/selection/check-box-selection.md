@@ -128,7 +128,7 @@ The available modes are displayed in the following table.
 {% include code-snippet/tree-grid/selection/hierarchy-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Hierarchy.cs" %}
-{% include code-snippet/tree-grid/selection/hierarchy-selection/partial.cs %}
+{% include code-snippet/tree-grid/selection/hierarchy-selection/hierarchy-selection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -139,7 +139,7 @@ The available modes are displayed in the following table.
 {% include code-snippet/tree-grid/selection/hierarchy-selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Hierarchy.cs" %}
-{% include code-snippet/tree-grid/selection/hierarchy-selection/hierarchy.cs %}
+{% include code-snippet/tree-grid/selection/hierarchy-selection/hierarchy-selection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
