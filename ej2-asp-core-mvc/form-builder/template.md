@@ -237,10 +237,10 @@ When the form schema is exported, the template itself is not included in the sch
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-In Form Renderer, additional configuration is required as described in the [documentation](http://ej2.syncfusion.com/documentation/form-renderer/templates) to render templates in the form.
+In Form Renderer, additional configuration is required as described in the [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/form-renderer/template) to render templates in the form.
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-In Form Renderer, additional configuration is required as described in the [documentation](http://ej2.syncfusion.com/javascript/documentation/form-renderer/templates) to render templates in the form.
+In Form Renderer, additional configuration is required as described in the [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/form-renderer/template) to render templates in the form.
 
 {% endif %}
