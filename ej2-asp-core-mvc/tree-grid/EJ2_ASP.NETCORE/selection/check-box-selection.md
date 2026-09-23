@@ -109,6 +109,41 @@ In the following sample, selection is disabled for rows where the "Progress" col
 {% endtabs %}
 {% endif %}
 
+## Hierarchy checkbox selection
+
+The hierarchy checkbox enables cascading selection of parent and child rows in Tree Grid. When a parent row checkbox is selected, all its child records are automatically selected, and the parent state updates based on children selection. To enable hierarchy checkbox selection, set the `showCheckbox` property to `true` in a column and configure the `hierarchyCheckboxMode` property. By default, hierarchy checkbox mode is set to `self`.
+
+The available modes are displayed in the following table.
+
+| Item | Description |
+|-----|-----|
+| `self` | Only the targeted row is selected; children and parent are not affected. |
+| `hierarchy` | Selection cascades to all descendants and adjusts the parent state accordingly. |
+| `filteredHierarchy` | Behaves like hierarchy, but applies the cascade only to records matching the current filter or search criteria. |
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/selection/hierarchy-selection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Hierarchy.cs" %}
+{% include code-snippet/tree-grid/selection/hierarchy-selection/hierarchy-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/selection/hierarchy-selection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Hierarchy.cs" %}
+{% include code-snippet/tree-grid/selection/hierarchy-selection/hierarchy-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.
 
 
