@@ -276,7 +276,7 @@ Dragging a template onto the canvas inserts the entire set of components defined
 
 The output will appear as follows:
 
-![Templates tab](./images/form-builder-templates.png)
+![Templates tab](./images/form-builder-form-templates.png)
 
 ## Customizing the toolbox items
 
