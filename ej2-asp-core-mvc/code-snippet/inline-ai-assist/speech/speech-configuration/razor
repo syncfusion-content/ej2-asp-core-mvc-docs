@@ -14,7 +14,15 @@
     }
 </style>
 
-@{ var buttonSettings = new { iconCss = "e-icons e-microphone", stopIconCss = "e-icons e-microphone-off" }; }
+@{
+    var buttonSettings = new
+    {
+        content = "Start Recording",
+        stopContent = "Stop Recording",
+        iconCss = "e-icons e-microphone",
+        stopIconCss = "e-icons e-microphone-off"
+    };
+}
 
 <div class="container" style="height: 350px; width: 650px;">
     <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onSummarizeClick()">Content Summarize</button>
