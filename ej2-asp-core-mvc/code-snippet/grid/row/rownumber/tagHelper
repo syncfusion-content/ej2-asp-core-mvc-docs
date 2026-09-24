@@ -1,0 +1,17 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowSorting="true" allowFiltering="true" height="273">
+    <e-grid-columns>
+        <e-grid-column type="RowNumber" textAlign="Center"></e-grid-column>
+        <e-grid-column field="ProductID" headerText="Product ID" width="120" visible="false" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Products" width="160" allowEditing="false"></e-grid-column>
+        <e-grid-column field="Category" headerText="Category" width="140" allowEditing="false"></e-grid-column>
+        <e-grid-column field="SellingPrice" headerText="Price" width="130" format="C" textAlign="Right"></e-grid-column>
+        <e-grid-column field="AvailableStock" headerText="In-Stock" width="120" textAlign="Right" template="#availableStockTemplate"></e-grid-column>
+        <e-grid-column field="SoldStock" headerText="Sold" width="120" textAlign="Right" template="#soldStockTemplate"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script type="text/x-template" id="availableStockTemplate">
+    <span>${AvailableStock} ${Unit}</span>
+</script>
+<script type="text/x-template" id="soldStockTemplate">
+    <span>${SoldStock} ${Unit}</span>
+</script>

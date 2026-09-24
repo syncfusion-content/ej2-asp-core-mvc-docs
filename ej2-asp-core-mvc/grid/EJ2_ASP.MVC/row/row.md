@@ -200,6 +200,19 @@ Here's an example that demonstrates how to use the `RowDataBound` event and `get
 
 > The `getRowInfo` method can only be used in the `RowDataBound` event. Attempting to use it elsewhere will result in an error.
 
+## Empty record mode
+
+The `emptyRecordMode` property determines how the empty record row is displayed when the Grid has no records. It supports two modes: `Sticky`, which keeps the empty record row visible during scrolling, and `Normal`, which allows the empty record row to scroll along with the Grid content.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/empty-record-mode/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-record-mode.cs" %}
+{% include code-snippet/grid/row/empty-record-mode/empty-record-mode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Row pinning (Frozen)
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid allows you to freeze rows to keep them visible while scrolling vertically through large datasets. This feature enhances the experience by maintaining important information within view at all times.
