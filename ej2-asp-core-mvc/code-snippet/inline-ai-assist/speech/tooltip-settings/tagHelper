@@ -1,17 +1,13 @@
 @using Syncfusion.EJ2.InteractiveChat;
 
-<style>
-    #editableText {
-        width: 100%;
-        min-height: 120px;
-        max-height: 300px;
-        overflow-y: auto;
-        font-size: 16px;
-        padding: 12px;
-        border-radius: 4px;
-        border: 1px solid;
-    }
-</style>
+@{
+    var tooltipSettings = new
+    {
+        content = "Click to start recording",
+        stopContent = "Click to stop recording",
+        position = "TopCenter"
+    };
+}
 
 <div class="container" style="height: 350px; width: 650px;">
     <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onSummarizeClick()">Content Summarize</button>
@@ -21,9 +17,7 @@
     </div>
 
     <ejs-inlineaiassist id="tooltipSettings" relateTo="#summarizeBtn" responseMode="Inline" created="onCreated" promptRequest="onPromptRequest">
-        <e-inlineaiassist-speechtotextsettings enable="true">
-            <e-speechtotextsettings-tooltipsettings content="Click to start recording" stopContent="Click to stop recording"></e-speechtotextsettings-tooltipsettings>
-        </e-inlineaiassist-speechtotextsettings>
+        <e-inlineaiassist-speechtotextsettings enable="true" tooltipSettings="tooltipSettings"></e-inlineaiassist-speechtotextsettings>
         <e-inlineaiassist-responsesettings itemSelect="onItemSelect"></e-inlineaiassist-responsesettings>
     </ejs-inlineaiassist>
 </div>
@@ -63,3 +57,16 @@
         }
     }
 </script>
+
+<style>
+    #editableText {
+        width: 100%;
+        min-height: 120px;
+        max-height: 300px;
+        overflow-y: auto;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+</style>
