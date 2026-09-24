@@ -18,9 +18,9 @@ This section explains how to use templates in the Form Renderer component.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-Templates can be added to a form in Form Renderer by setting the `template` property in `customWidgetSettings`. Map the template to a specific form field type by using the `type` property in `customWidgetSettings`.
+Templates can be added to a form in Form Renderer by setting the `Template` property in `CustomWidgetSettings`. Map the template to a specific form field type by using the `Type` property in `CustomWidgetSettings`.
 
-`customWidgetSettings` is an array property, so you can render any number of templates in the form.
+`CustomWidgetSettings` is an array property, so you can render any number of templates in the form.
 
 The `setFieldValue` method is used to set the value of a form field programmatically. When templates are assigned, this method can be used to pass the value set in the third-party component to the Form Renderer control.
 
@@ -317,6 +317,18 @@ public class LayoutNode { [JsonProperty("type")] public string Type { get; set; 
 
 ## Adding a template to a single or specific field
 
+{% if page.publishingplatform == "aspnet-mvc" %}
+
+You can also map a template to a single form field by using the `FieldName` and `TemplateId` properties.
+
+* `FieldName` - This property uses the **name** value of the form field in the schema. If the field name in the schema matches this property during form rendering, the corresponding template is rendered.
+
+* `TemplateId` - If the form field in the schema has a **templateId** property, assign the same value to this property. This maps the template to the corresponding form field.
+
+> In this case, the `Type` property is not required.
+
+{% elsif page.publishingplatform == "aspnet-core" %}
+
 You can also map a template to a single form field by using the `fieldName` and `templateId` properties.
 
 * `fieldName` - This property uses the **name** value of the form field in the schema. If the field name in the schema matches this property during form rendering, the corresponding template is rendered.
@@ -324,6 +336,8 @@ You can also map a template to a single form field by using the `fieldName` and 
 * `templateId` - If the form field in the schema has a **templateId** property, assign the same value to this property. This maps the template to the corresponding form field.
 
 > In this case, the `type` property is not required.
+
+{% endif %}
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 

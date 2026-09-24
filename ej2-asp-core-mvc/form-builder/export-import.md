@@ -20,9 +20,10 @@ You can use the exported schema in the Form Renderer control to render the same 
 
 ## Disabling the export
 
-Exporting can be disabled in the Form Builder component by setting the `allowExport` property to `false`. The default value of the property is `true`.
-
 {% if page.publishingplatform == "aspnet-mvc" %}
+
+Exporting can be disabled in the Form Builder component by setting the `AllowExport` property to `false`. The default value of the property is `true`.
+
 ```cshtml
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.FormBuilder
@@ -33,6 +34,9 @@ Exporting can be disabled in the Form Builder component by setting the `allowExp
 
 ```
 {% elsif page.publishingplatform == "aspnet-core" %}
+
+Exporting can be disabled in the Form Builder component by setting the `allowExport` property to `false`. The default value of the property is `true`.
+
 ```cshtml
 <ejs-form-builder id="form-builder-control"
                   allowExport="false">
@@ -47,7 +51,15 @@ The output will appear as follows:
 
 ## Import form schema
 
+{% if page.publishingplatform == "aspnet-mvc" %}
+
+To import a form, assign the exported schema to the `Schema` property of the Form Builder. This loads the form definition into the builder so that you can continue editing it.
+
+{% elsif page.publishingplatform == "aspnet-core" %}
+
 To import a form, assign the exported schema to the `schema` property of the Form Builder. This loads the form definition into the builder so that you can continue editing it.
+
+{% endif %}
 
 The following example shows how to use the same schema for both export and import scenarios.
 

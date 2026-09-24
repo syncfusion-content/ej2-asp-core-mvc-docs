@@ -78,7 +78,15 @@ The **Layout** category contains containers that group other components. Layout 
 
 ## Templates tab
 
+{% if page.publishingplatform == "aspnet-mvc" %}
+
+The **Templates** tab (available in Developer mode only) displays a flat list of pre-built form templates that you can drag and drop onto the canvas. These templates provide ready-made form layouts to help you quickly get started or add common scenarios to your form. You can also customize the available templates using the `FormTemplates` property.
+
+{% elsif page.publishingplatform == "aspnet-core" %}
+
 The **Templates** tab (available in Developer mode only) displays a flat list of pre-built form templates that you can drag and drop onto the canvas. These templates provide ready-made form layouts to help you quickly get started or add common scenarios to your form. You can also customize the available templates using the `formTemplates` property.
+
+{% endif %}
 
 
 {% if page.publishingplatform == "aspnet-mvc" %}
@@ -280,7 +288,15 @@ The output will appear as follows:
 
 ## Customizing the toolbox items
 
+{% if page.publishingplatform == "aspnet-mvc" %}
+
+The form fields in the toolbox can be customized using the `ToolboxCategories` property. 
+
+{% elsif page.publishingplatform == "aspnet-core" %}
+
 The form fields in the toolbox can be customized using the `toolboxCategories` property. 
+
+{% endif %}
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 

@@ -16,9 +16,19 @@ This section explains how to use templates in the Form Builder component.
 
 ## Adding Templates
 
-Templates can be added to the Form Builder by configuring the `ToolboxItemSetting` instance and passing it to the `ToolboxItems` method. Each `ToolboxItemSetting` is mapped to a form field by setting its Type property (using the `FormWidgetType` enum) and supplies the markup for the third-party control through its `Template` property.
+{% if page.publishingplatform == "aspnet-mvc" %}
 
-Pass any number of `ToolboxItemSetting` instances to the `ToolboxItems` collection to render that many templates in the Form Builder toolbox.
+Templates can be added to the Form Builder by configuring the `ToolboxItemSetting` instance and passing it to the `ToolboxItems` property. Each `ToolboxItemSetting` is mapped to a form field by setting its `Type` property and supplies the template for the third-party component through its `Template` property.
+
+Add any number of `ToolboxItemSetting` instances to the `ToolboxItems` collection to render multiple templates in the Form Builder toolbox.
+
+{% elsif page.publishingplatform == "aspnet-core" %}
+
+Templates can be added to the Form Builder by configuring the `e-form-builder-toolbox-item`. Each `e-form-builder-toolbox-item` is mapped to a form field by setting its `type` property and supplies the template for the third-party component through its `template` property.
+
+Add any number of `e-form-builder-toolbox-item` elements to the `e-form-builder-toolbox-items` to render multiple templates in the Form Builder toolbox.
+
+{% endif %}
 
 After you drag and drop the form field onto the central design canvas, the third-party component is rendered automatically.
 
@@ -233,13 +243,15 @@ The properties of the third party components can be added to the property panel 
 
 ## Exporting templates
 
-When the form schema is exported, the template itself is not included in the schema. However, a `templateId` property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `templateId` property of `toolboxItems`.
-
 {% if page.publishingplatform == "aspnet-mvc" %}
+
+When the form schema is exported, the template itself is not included in the schema. However, a `templateId` property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `TemplateId` property of `ToolboxItems`.
 
 In Form Renderer, additional configuration is required as described in the [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/form-renderer/template) to render templates in the form.
 
 {% elsif page.publishingplatform == "aspnet-core" %}
+
+When the form schema is exported, the template itself is not included in the schema. However, a `templateId` property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `templateId` property of `toolboxItems`.
 
 In Form Renderer, additional configuration is required as described in the [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/form-renderer/template) to render templates in the form.
 

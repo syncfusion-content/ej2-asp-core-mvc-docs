@@ -32,9 +32,6 @@ You can add different types of conditions to control how your form fields behave
 ### Conditional Visibility
 Show a field only when certain conditions are met. For example, you can make a field appear only if another field has a specific value. If no rule is set, the field is always visible.
 
-### Conditional Hide
-Hide a field when certain conditions are met. Use this if you want a field to be shown by default and hidden only in specific cases.
-
 ### Conditional Read-Only
 Make a field read-only (users can see it but not edit it) when the condition is met. Otherwise, the field is editable.
 

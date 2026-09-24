@@ -140,8 +140,6 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Form Builder tag helper in the `~/Pages/FormBuilder/Default.cshtml` page.
 
-The Form Builder component can be added directly to your page without assigning any schema or parameters. Simply use the component tag as shown below:
-
 {% tabs %}
 {% highlight cshtml tabtitle="Default.cshtml" %}
 
