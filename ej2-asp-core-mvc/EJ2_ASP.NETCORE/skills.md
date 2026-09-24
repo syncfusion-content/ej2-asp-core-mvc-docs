@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Syncfusion® ASP.NET Core Agent Skill for AI Assistant
 
-This guide introduces **Syncfusion ASP.NET Core Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core code using official APIs, patterns, and theming guidelines.
+This guide introduces **Syncfusion ASP.NET Core Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, Code Studio, etc.) to understand and generate accurate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core code using official APIs, patterns, and theming guidelines.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate Syncfusion<sup style="font-size:70%">&reg;</sup> component usage patterns, API structures, supported features, and project‑specific configuration.
 
@@ -189,7 +189,7 @@ npx skills update
 
 **Which agents and IDEs are supported?**
 
-Any Skills compatible agent or IDE that loads local skill files (Visual Studio Code, Cursor, CodeStudio, etc.).
+Any Skills compatible agent or IDE that loads local skill files (Visual Studio Code, Cursor, Code Studio, etc.).
 
 **Are skills loaded automatically?**
 

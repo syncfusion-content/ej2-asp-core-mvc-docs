@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion license generation - Syncfusion
+title: Overview of Syncfusion license generation | Syncfusion
 description: Learn here about how to generate Syncfusion ##Platform_Name## license key for syncfusion ##Platform_Name## application for license validation.
 platform: ej2-asp-core-mvc
 control: License Key Generation
@@ -49,4 +49,4 @@ If the Syncfusion<sup style="font-size:70%">&reg;</sup> account is not associate
 
 ## See Also
 
-* [How to Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in ASP .NET Core EJ2 Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application)
+* [How to Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in ASP.NET Core EJ2 Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application)

@@ -123,4 +123,4 @@ Make ajax call to the GetServerData() action method in chart load event to get J
 
 **Sample reference**
 
-Sample for how to get data from ajax call is available in [`chart sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/samples1051291506).
+Sample for how to get data from ajax call is available in [`chart sample`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/samples1051291506).

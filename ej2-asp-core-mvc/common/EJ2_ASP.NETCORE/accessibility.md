@@ -50,7 +50,7 @@ In addition to the methodologies mentioned above, Syncfusion<sup style="font-siz
 
 ### Screen reader support
 
-A screen reader allows people who are blind or visually impaired to use a computer by reading aloud the text that is displayed on the screen. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls followed the [WAI-ARIA](https://www.w3.org/WAI/about/groups/ariawg/) standards to work properly in the screen readers such as [Narrator](https://support.microsoft.com/en-US/accessibility/windows/narrator/complete-guide-to-narrator) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC.
+A screen reader allows people who are blind or visually impaired to use a computer by reading aloud the text that is displayed on the screen. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls followed the [WAI-ARIA](https://www.w3.org/WAI/about/groups/ariawg/) standards to work properly in the screen readers such as [Narrator](https://support.microsoft.com/en-us/accessibility/windows/narrator/complete-guide-to-narrator) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC.
 
 ### Right-To-Left support
 
@@ -74,7 +74,7 @@ Ensuring the accessibility of Syncfusion<sup style="font-size:70%">&reg;</sup> A
 
 * **Automated testing**: The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools.
 
-* **Manual testing**: This type of testing involves manually evaluating the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. During manual accessibility testing, testers will ensure accessibility using the screen readers such as [Narrator](https://support.microsoft.com/en-US/accessibility/windows/narrator/complete-guide-to-narrator) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC.
+* **Manual testing**: This type of testing involves manually evaluating the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. During manual accessibility testing, testers will ensure accessibility using the screen readers such as [Narrator](https://support.microsoft.com/en-us/accessibility/windows/narrator/complete-guide-to-narrator) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls will keep improving when there is anything required. It also involves client feedback to make the component more accessible.
 

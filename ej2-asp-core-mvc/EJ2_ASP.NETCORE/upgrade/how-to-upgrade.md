@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrading Syncfusion ##Platform_Name## installer to a latest version - Syncfusion
+title: Upgrade Syncfusion ##Platform_Name## Installer | Syncfusion
 description: Learn here about the how upgrade Syncfusion ##Platform_Name## installer to a latest version from website and control panel.
 platform: ej2-asp-core-mvc
 control: Upgrading
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET Core EJ2 installer to a latest version
+# Upgrading Syncfusion® ASP.NET Core EJ2 installer to a latest version
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 

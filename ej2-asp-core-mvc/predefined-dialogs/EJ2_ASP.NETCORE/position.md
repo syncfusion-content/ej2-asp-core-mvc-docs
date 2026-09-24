@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Positioning in ##Platform_Name## Predefined Dialogs
+# Positioning in ASP.NET Core Predefined Dialogs
 
 Customize the dialog position by using the `position` property. The position can be represented with specific `X` and `Y` values.
 

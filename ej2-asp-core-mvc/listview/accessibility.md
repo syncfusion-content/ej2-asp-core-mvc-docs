@@ -49,7 +49,7 @@ The following key shortcuts are used to access the ListView control without any 
 
 Output be like the below.
 
-![ASP .NET Core ListView - Accessibility](./images/nestedlist.png)
+![ASP.NET Core ListView - Accessibility](./images/nestedlist.png)
 
 ## ARIA attributes
 

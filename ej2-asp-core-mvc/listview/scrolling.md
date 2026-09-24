@@ -43,4 +43,4 @@ In the given example, new data is seamlessly added while scrolling. When you scr
 
 Output be like the below.
 
-![ASP .NET Core ListView - Scrolling](./images/scrolling.png)
+![ASP.NET Core ListView - Scrolling](./images/scrolling.png)

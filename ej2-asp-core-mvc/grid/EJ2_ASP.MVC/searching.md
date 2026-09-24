@@ -275,7 +275,7 @@ The following example demonstrates how to retrieve searched records using an ext
 
 ## See also
 
-* [How to perform search by using Wildcard and LIKE operator filter](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/filtering/filtering#wildcard-and-like-operator-filter)
+* [How to perform search by using Wildcard and LIKE operator filter](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/filtering/filtering#wildcard-and-like-operator-filter)
 
 * [Add clear icon in search in ASP.NET MVC  Grid](https://www.syncfusion.com/forums/139361/add-clear-icon-in-search-in-asp-net-mvc-grid)
 

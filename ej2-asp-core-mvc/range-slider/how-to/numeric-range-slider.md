@@ -37,4 +37,4 @@ The numeric values can be formatted into different decimal digits or fixed numbe
 
 
 
-![ASP .NET Core - Slider - Format](../images/slider-numeric-value.png)
+![ASP.NET Core - Slider - Format](../images/slider-numeric-value.png)

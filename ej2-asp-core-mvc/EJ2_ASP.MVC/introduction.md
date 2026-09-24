@@ -14,7 +14,7 @@ documentation: ug
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI (Essential<sup style="font-size:70%">&reg;</sup> JS 2) is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It also available in other frameworks such as JavaScript and Angular, React.
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
 ## How to best read this user guide
 
@@ -480,9 +480,9 @@ padding-top: 50px;
 <tr>
     <td>
         <div><p class="controlcategory-topics">GRIDS</p></div>
-        <div class="controlanchorlink"><a target="_self" aria-label="DataGrid" href="https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc"><span class="sf-home-icon sf-icon-datagrid"></span>DataGrid</a></div>
-        <div class="controlanchorlink"><a target="_self" aria-label="Pivot Table" href="https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started"><span class="sf-home-icon sf-icon-pivottable"></span>Pivot Table</a></div>
-        <div class="controlanchorlink"><a target="_self" aria-label="TreeGrid" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc"><span class="sf-home-icon sf-icon-treegrid"></span>TreeGrid</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="DataGrid" href="https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc"><span class="sf-home-icon sf-icon-datagrid"></span>DataGrid</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Pivot Table" href="https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/getting-started"><span class="sf-home-icon sf-icon-pivottable"></span>Pivot Table</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="TreeGrid" href="https://help.syncfusion.com/grid-sdk/asp-net-mvc/tree-grid/getting-started-mvc"><span class="sf-home-icon sf-icon-treegrid"></span>TreeGrid</a></div>
         <div class="control-anchor-link"><a target="_self" aria-label="MultiColumn ComboBox" href="https://ej2.syncfusion.com/aspnetmvc/documentation/multicolumn-combobox/getting-started"><span class="sf-home-icon sf-icon-multicolumncombobox"></span>MultiColumn ComboBox</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Rich Text Editor" href="https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/getting-started"><span class="sf-home-icon sf-icon-richtexteditor"></span>Rich Text Editor</a></div>
@@ -495,7 +495,7 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" aria-label="ListView" href="https://ej2.syncfusion.com/aspnetmvc/documentation/listview/getting-started"><span class="sf-home-icon sf-icon-listview"></span>ListView</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Tooltip" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tooltip/getting-started"><span class="sf-home-icon sf-icon-tooltip"></span>Tooltip</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Splitter" href="https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/getting-started"><span class="sf-home-icon sf-icon-splitter"></span>Splitter</a></div>
-        <div class="controlanchorlink"><a target="_self" aria-label="Dashboard" href="https://ej2.syncfusion.com/aspnetmvc/documentation/dashboard-layout/getting-started"><span class="sf-home-icon sf-icon-dashboardlayout"></span>Dashboard</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Dashboard" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/dashboard-layout/getting-started"><span class="sf-home-icon sf-icon-dashboardlayout"></span>Dashboard</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Card" href="https://ej2.syncfusion.com/aspnetmvc/documentation/card/getting-started"><span class="sf-home-icon sf-icon-card"></span>Card</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Avatar" href="https://ej2.syncfusion.com/aspnetmvc/documentation/avatar/getting-started"><span class="sf-home-icon sf-icon-avatar"></span>Avatar</a></div>
         <div class="control-anchor-link"><a target="_self" aria-label="Timeline" href="https://ej2.syncfusion.com/aspnetmvc/documentation/timeline/getting-started"><span class="sf-home-icon sf-icon-timeline"></span>Timeline</a></div>
@@ -578,7 +578,7 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" aria-label="Tabs" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tab/getting-started"><span class="sf-home-icon sf-icon-tabs"></span>Tabs</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Toolbar" href="https://ej2.syncfusion.com/aspnetmvc/documentation/toolbar/getting-started"><span class="sf-home-icon sf-icon-toolbar"></span>Toolbar</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="TreeView" href="https://ej2.syncfusion.com/aspnetmvc/documentation/treeview/getting-started"><span class="sf-home-icon sf-icon-treeview"></span>TreeView</a></div>
-        <div class="controlanchorlink"><a target="_self" aria-label="File Manager" href="https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/getting-started"><span class="sf-home-icon sf-icon-filemanager"></span>File Manager</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="File Manager" href="https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/getting-started"><span class="sf-home-icon sf-icon-filemanager"></span>File Manager</a></div>
         <div class="control-anchor-link"><a target="_self" aria-label="Ribbon" href="https://ej2.syncfusion.com/aspnetmvc/documentation/ribbon/getting-started"><span class="sf-home-icon sf-icon-ribbon"></span>Ribbon</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Breadcrumb" href="https://ej2.syncfusion.com/aspnetmvc/documentation/breadcrumb/getting-started"><span class="sf-home-icon sf-icon-breadcrumb"></span>Breadcrumb</a></div>
         <div class="control-anchor-link"><a target="_self" aria-label="Carousel" href="https://ej2.syncfusion.com/aspnetmvc/documentation/carousel/getting-started"><span class="sf-home-icon sf-icon-carousel"></span>Carousel</a></div>

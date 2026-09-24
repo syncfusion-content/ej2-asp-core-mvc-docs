@@ -14,7 +14,7 @@ The ASP.NET MVC Pivot Table component supports print functionality, allowing use
 
 ## Print pivot table
 
-Call the `print` method on the underlying [`Grid`](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc) instance (accessed via the `grid` property of the `pivotObj` ref) to print the rendered pivot table. The [`Grid`](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc) control captures the current state of the pivot table, including all applied filters, sorting, and formatting. The sample code below demonstrates how to trigger the print operation using an external button click.
+Call the `print` method on the underlying [`Grid`](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc) instance (accessed via the `grid` property of the `pivotObj` ref) to print the rendered pivot table. The [`Grid`](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc) control captures the current state of the pivot table, including all applied filters, sorting, and formatting. The sample code below demonstrates how to trigger the print operation using an external button click.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

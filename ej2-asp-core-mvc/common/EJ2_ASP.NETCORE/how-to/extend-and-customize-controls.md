@@ -213,4 +213,4 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-vi
 
 ## See also
 
-* [ASP.NET Core MVC view components](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-6.0) 
+* [ASP.NET Core MVC view components](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-10.0) 

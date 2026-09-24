@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion<sup>&reg;</sup> Telemetry  
+# Syncfusion<sup>&reg;</sup> Telemetry in ##Platform_Name##
 
 Syncfusion<sup>&reg;</sup> Telemetry library collects **anonymous usage data** to improve product quality and user experience. This data helps us better understand product usage, feature adoption, usage trends, and make informed decisions about future product planning. 
 
@@ -194,7 +194,7 @@ using Syncfusion.Telemetry;
 
 ### Step 2: Disable telemetry at application startup
 
-Call the `Telemetry.Disable()` in `Global.asax.cs` file before initializing or rendering any Syncfusion<sup>&reg;</sup> ASP.NET MVC component. 
+Call the `Telemetry.Disable()` in `Global.asax.cs` file before initializing or rendering any Syncfusion<sup>&reg;</sup> ASP.NET MVC Components. 
 
 {% tabs %} 
 

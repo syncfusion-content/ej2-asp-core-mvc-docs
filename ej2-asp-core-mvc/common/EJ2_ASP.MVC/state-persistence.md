@@ -40,7 +40,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 <td><b>Properties</b></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/grid/state-management" aria-label="Grid state persistence">Grid</a></td>
+<td><a href="https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/state-management" aria-label="Grid state persistence">Grid</a></td>
 <td>
 <ul>
 <li>Columns</li>
@@ -108,7 +108,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/state-persistence" aria-label="Pivot Table state persistence">Pivot Table</a></td>
+<td><a href="https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/state-persistence" aria-label="Pivot Table state persistence">Pivot Table</a></td>
 <td>
 <ul>
 <li>dataSourceSettings</li>
@@ -120,7 +120,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/state-persistence" aria-label="TreeGrid state persistence">TreeGrid</a></td>
+<td><a href="https://help.syncfusion.com/grid-sdk/asp-net-mvc/tree-grid/state-persistence" aria-label="TreeGrid state persistence">TreeGrid</a></td>
 <td>
 <ul>
 <li>columns</li>

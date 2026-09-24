@@ -95,7 +95,7 @@ In the following example, we have customized list items with built-in CSS classe
 
 Output be like the below.
 
-![ASP .NET Core ListView - Template](./images/contact-template.png)
+![ASP.NET Core ListView - Template](./images/contact-template.png)
 
 ## Group template
 
@@ -132,4 +132,4 @@ In the following example, we have grouped ListView based on the category. The ca
 
 Output be like the below.
 
-![ASP .NET Core ListView - Group Template](./images/group-template.png)
+![ASP.NET Core ListView - Group Template](./images/group-template.png)

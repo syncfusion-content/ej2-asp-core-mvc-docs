@@ -123,5 +123,5 @@ The Grid component provides a set of events that are triggered during drag and d
 
 ## See also
 
-[Sorting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/sorting)
-[Filtering data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/filtering/filtering)
+[Sorting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/sorting)
+[Filtering data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/filtering/filtering)
