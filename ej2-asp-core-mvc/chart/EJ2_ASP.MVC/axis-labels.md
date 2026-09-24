@@ -13,7 +13,7 @@ documentation: ug
 
 ## Smart Axis Labels
 
-When the axis labels overlap with each other, you can use [`LabelIntersectAction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelIntersectAction) property in the axis, to place them smartly.
+When the axis labels overlap with each other, you can use [`LabelIntersectAction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelIntersectAction) property in the axis, to place them smartly. This helps improve readability by automatically adjusting label visibility or orientation. The supported values are `None`, `Hide`, `Rotate45`, `Rotate90`, `Rotate45WithTrim`, `Rotate90WithTrim`, `Wrap`, `MultipleRows`, and `Trim`. The default value is `None`.
 
 When setting `LabelIntersectAction` as `Hide`
 
@@ -90,6 +90,60 @@ When setting `LabelIntersectAction` as `Rotate90`
 {% endhighlight %}
 {% highlight c# tabtitle="Rotate90.cs" %}
 {% include code-snippet/chart/axis/multiple/rotate90/rotate90.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+When setting `labelIntersectAction` as `Rotate45WithTrim`, the labels trimmed when the available space is insufficient and rotated by 45 degrees.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/multiple/rotate45withtrim/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="rotate45withtrim.cs" %}
+{% include code-snippet/chart/axis/multiple/rotate45withtrim/rotate45withtrim.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/multiple/rotate45withtrim/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="rotate45withtrim.cs" %}
+{% include code-snippet/chart/axis/multiple/rotate45withtrim/rotate45withtrim.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+When setting `labelIntersectAction` as `Rotate90WithTrim`, the labels trimmed when the available space is insufficient and rotated vertically.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/multiple/rotate90withtrim/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="rotate90withtrim.cs" %}
+{% include code-snippet/chart/axis/multiple/rotate90withtrim/rotate90withtrim.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/multiple/rotate90withtrim/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="rotate90withtrim.cs" %}
+{% include code-snippet/chart/axis/multiple/rotate90withtrim/rotate90withtrim.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
