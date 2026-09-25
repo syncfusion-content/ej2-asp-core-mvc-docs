@@ -1,0 +1,89 @@
+<div id="container">
+    <button type="button" id="open">Open dialog</button>
+    <button type="button" id="apply">Apply rule</button>
+    <button type="button" id="set">Set rule</button>
+    <button type="button" id="get">Get rule</button>
+    <button type="button" id="predicate">Get predicate</button>
+    <button type="button" id="isApplied">Check filter</button>
+    <button type="button" id="clear">Clear filter</button>
+
+    <ejs-grid id="grid" dataSource="@ViewBag.dataSource" enableVirtualization="true" allowSorting="true" height="400px" rowHeight="45" load="load" advancedFilterOpen="advancedFilterOpen" allowAdvancedFiltering="true" toolbar="@(new List<string>() { "AdvancedFilter" })">
+    <e-grid-pageSettings pageSize="50"></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="TicketID" headerText="Ticket ID" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="Title" headerText="Title" width="260"></e-grid-column>
+        <e-grid-column field="TypeofRequest" headerText="Type" width="150"></e-grid-column>
+        <e-grid-column field="Assignee" headerText="Assignee" width="150"></e-grid-column>
+        <e-grid-column field="Priority" headerText="Priority" width="130"></e-grid-column>
+        <e-grid-column field="Status" headerText="Status" width="130"></e-grid-column>
+        <e-grid-column field="CreatedDate" headerText="Created Date" width="140" textAlign="Right" format="yMd"></e-grid-column>
+        <e-grid-column field="DueDate" headerText="Due Date" width="140" textAlign="Right" format="yMd"></e-grid-column>
+    </e-grid-columns>
+    </ejs-grid>
+</div>
+
+<script>
+    var gridInstance;
+    var closeButton = false;
+
+    var initialAdvancedFilterRule = {
+        condition: 'and',
+        rules: [
+            {
+                field: 'Status',
+                label: 'Status',
+                type: 'string',
+                operator: 'notequal',
+                value: 'Done'
+            },
+            {
+                field: 'Priority',
+                label: 'Priority',
+                type: 'string',
+                operator: 'equal',
+                value: 'High'
+            }
+        ]
+    };
+
+    function load(args) {
+        if (args) {
+            args.enableSeamlessScrolling = true;
+        }
+
+        gridInstance = document.getElementById('grid').ej2_instances[0];
+        setTimeout(function () {
+            gridInstance.setProperties({
+                advancedFilterSettings: {
+                    queryBuilderSettings: {
+                        rule: initialAdvancedFilterRule
+                    }
+                }
+            });
+            gridInstance.applyAdvancedFilter(initialAdvancedFilterRule);
+        });
+    }
+
+    function advancedFilterOpen(args) {
+        if (closeButton) {
+            return;
+        }
+
+        args.dialog.buttons = args.dialog.buttons.concat({
+            buttonModel: { content: 'Close dialog' },
+            click: function () {
+                gridInstance.closeAdvancedFilterDialog();
+            }
+        });
+        args.dialog.dataBind();
+        closeButton = true;
+    }
+
+    document.getElementById('open').onclick = function () { gridInstance.openAdvancedFilterDialog(); };
+    document.getElementById('apply').onclick = function () { gridInstance.applyAdvancedFilter(initialAdvancedFilterRule); };
+    document.getElementById('set').onclick = function () { gridInstance.setAdvancedFilter(initialAdvancedFilterRule); };
+    document.getElementById('get').onclick = function () { console.log(gridInstance.getAdvancedFilter()); };
+    document.getElementById('predicate').onclick = function () { console.log(gridInstance.getPredicateFromRule(initialAdvancedFilterRule)); };
+    document.getElementById('isApplied').onclick = function () { console.log(gridInstance.isAdvancedFilterApplied()); };
+    document.getElementById('clear').onclick = function () { gridInstance.clearAdvancedFilter(); };
+</script>
