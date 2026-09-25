@@ -1,0 +1,53 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" enableVirtualization="true" allowSorting="true" height="400px" rowHeight="45" load="load" allowAdvancedFiltering="true" toolbar="@(new List<string>() { "AdvancedFilter" })">
+    <e-grid-pageSettings pageSize="50"></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="TicketID" headerText="Ticket ID" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="Title" headerText="Title" width="260"></e-grid-column>
+        <e-grid-column field="TypeofRequest" headerText="Type" width="150"></e-grid-column>
+        <e-grid-column field="Assignee" headerText="Assignee" width="150"></e-grid-column>
+        <e-grid-column field="Priority" headerText="Priority" width="130"></e-grid-column>
+        <e-grid-column field="Status" headerText="Status" width="130"></e-grid-column>
+        <e-grid-column field="CreatedDate" headerText="Created Date" width="140" textAlign="Right" format="yMd"></e-grid-column>
+        <e-grid-column field="DueDate" headerText="Due Date" width="140" textAlign="Right" format="yMd"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var initialAdvancedFilterRule = {
+        condition: 'and',
+        rules: [
+            {
+                field: 'Status',
+                label: 'Status',
+                type: 'string',
+                operator: 'notequal',
+                value: 'Done'
+            },
+            {
+                field: 'Priority',
+                label: 'Priority',
+                type: 'string',
+                operator: 'equal',
+                value: 'High'
+            }
+        ]
+    };
+
+    function load(args) {
+        if (args) {
+            args.enableSeamlessScrolling = true;
+        }
+
+        setTimeout(function () {
+            var grid = document.getElementById('grid').ej2_instances[0];
+            grid.setProperties({
+                advancedFilterSettings: {
+                    queryBuilderSettings: {
+                        rule: initialAdvancedFilterRule
+                    }
+                }
+            });
+            grid.applyAdvancedFilter(initialAdvancedFilterRule);
+        });
+    }
+</script>
