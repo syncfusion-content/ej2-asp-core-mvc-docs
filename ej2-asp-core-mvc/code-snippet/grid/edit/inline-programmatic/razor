@@ -5,6 +5,7 @@
     @Html.EJS().Button("delete").Content("Delete").CssClass("e-primary custom").Render()
     @Html.EJS().Button("updaterow").Content("Update Row").CssClass("e-primary custom").Render()
     @Html.EJS().Button("updatecell").Content("Update Cell").CssClass("e-primary custom").Render()
+    @Html.EJS().Button("save").Content("Save Bulk Changes").CssClass("e-primary custom").Render()
 </div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
 {
@@ -19,13 +20,15 @@
     document.getElementById('delete').onclick = handleButtonClick;
     document.getElementById('updaterow').onclick = handleButtonClick;
     document.getElementById('updatecell').onclick = handleButtonClick;
+    document.getElementById('save').onclick = handleButtonClick;
     function handleButtonClick(event){
         var grid = document.getElementById("grid").ej2_instances[0];
         if(event.target.id === "add") grid.addRecord({ "OrderID": Math.floor(Math.random() * 100000), "CustomerID": generateCustomerId(),"ShipCity": generateShipCity(), "ShipName": generateShipName()});
         else if(event.target.id === "edit") grid.startEdit();
         else if(event.target.id === "delete") grid.deleteRecord();
         else if(event.target.id === "updaterow") grid.updateRow(0, { OrderID: 10248, CustomerID: 'RTER', ShipCity: 'America', ShipName: 'Hanari' });
-        else grid.setCellValue((grid.currentViewData[0]).OrderID, 'CustomerID', 'Value Changed');
+        else if(event.target.id === "updatecell")grid.setCellValue((grid.currentViewData[0]).OrderID, 'CustomerID', 'Value Changed');
+        else grid.saveBulkChanges({ShipName: 'Island Trading', ShipCity: 'Tokyo'}, grid.getCurrentViewRecords().slice(0,3), () => { grid.refresh(); });
     }
     function generateCustomerId() {
         var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
