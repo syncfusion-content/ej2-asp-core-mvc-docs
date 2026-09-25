@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting and Importing in ##Platform_Name## Form Builder control | Syncfusion
-description: Learn how to export and import in the ##Platform_Name## Form Builder control. Use export to reuse the generated form schema in Form Renderer, and import to continue editing an existing schema in Form Builder.platform: ej2-asp-core-mvc
+description: Learn how to export and import in the ##Platform_Name## Form Builder control. Use export to reuse the generated form schema in Form Renderer, and import to continue editing an existing schema in Form Builder.
 platform: ej2-asp-core-mvc
 control: Exporting and Importing
 publishingplatform: ##Platform_Name##
@@ -69,7 +69,6 @@ The following example shows how to use the same schema for both export and impor
 
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.FormBuilder
-@using EJ2MVCSampleBrowser.Models
 
 <div class="control-section">
     @Html.EJS().FormBuilder("form-builder-control").Schema(ViewData["formSchema"]).Render()
