@@ -12,9 +12,9 @@ documentation: ug
 
 The Syncfusion AI AssistView supports mentions in the prompt editor, allowing users to select and reference items from a configured data source. When users type the configured mention character, a suggestion popup displays matching items, and they can select an item to insert it into the prompt.
 
-Use the `mentionSettings` property to configure the mention trigger character, data source, field mappings, filtering behavior, popup dimensions, and templates.
+Use the `mentions` property to configure the mention trigger character, data source, field mappings, filtering behavior, popup dimensions, and templates.
 
-## Configure the mention
+## Configure the mentions
 
 The following example demonstrates a basic mention configuration using the `@` character as the trigger and a local data source.
 
@@ -31,7 +31,7 @@ The following example demonstrates a basic mention configuration using the `@` c
 
 ## Configure mention settings
 
-The `mentionSettings` property accepts a `MentionSettingsModel` with the following properties.
+The `mentions` property accepts an array of mention settings. Each mention setting supports the following properties.
 
 | Property | Type | Default | Description |
 |---|---|---|---|
@@ -61,6 +61,8 @@ Use the `mentionChar` property inside [`mentions`](https://help.syncfusion.com/c
 {% endhighlight %}
 {% endtabs %}
 
+![MentionChar](images/mention-char.webp)
+
 ### Configure the mention data source
 
 Use the `dataSource` property inside [`mentions`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Mentions) to provide a local collection, such as a string array or an object array, or use a `DataManager` instance to retrieve data locally or from a remote data source.
@@ -73,6 +75,8 @@ Use the `dataSource` property inside [`mentions`](https://help.syncfusion.com/cr
 {% include code-snippet/ai-assistview/mentions/data-source/data-source.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![DataSource](images/data-source.webp)
 
 ### Configure mention fields
 
@@ -87,6 +91,8 @@ Use the `fields` property inside [`mentions`](https://help.syncfusion.com/cr/asp
 {% endhighlight %}
 {% endtabs %}
 
+![Fields](images/fields.webp)
+
 ### Configure the query
 
 Use the `query` property to apply additional data operations to the configured mention data source. It accepts a Syncfusion `Query` object. The default value is `null`.
@@ -99,6 +105,8 @@ Use the `query` property to apply additional data operations to the configured m
 {% include code-snippet/ai-assistview/mentions/query/query.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Query](images/query.webp)
 
 ### Configure the filter type
 
@@ -121,6 +129,8 @@ The following filter types are supported:
 {% endhighlight %}
 {% endtabs %}
 
+![FilterType](images/filter-type.webp)
+
 ### Configure highlighting
 
 Use the `highlight` property to specify whether the matching text is highlighted in the mention suggestion popup. The default value is `false`. When set to `true`, the portion of the suggestion item that matches the typed text is highlighted.
@@ -134,6 +144,8 @@ Use the `highlight` property to specify whether the matching text is highlighted
 {% endhighlight %}
 {% endtabs %}
 
+![Highlight](images/highlight.webp)
+
 ### Configure the mention character in selected mentions
 
 Use the `showMentionChar` property to specify whether the configured mention trigger character is displayed with the selected mention. The default value is `true`. When set to `false`, the trigger character is omitted from the displayed mention.
@@ -146,6 +158,8 @@ Use the `showMentionChar` property to specify whether the configured mention tri
 {% include code-snippet/ai-assistview/mentions/show-mention-char/show-mention-char.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![ShowMentionChar](images/show-mention-char.webp)
 
 ### Configure the display template
 
@@ -161,6 +175,8 @@ For example, you can display an icon, avatar, or additional information along wi
 {% include code-snippet/ai-assistview/mentions/display-template/display-template.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![DisplayTemplate](images/display-template.webp)
 
 ### Configure the mention popup size
 
@@ -178,6 +194,8 @@ Use the `popupWidth` and `popupHeight` properties to customize the dimensions of
 {% endhighlight %}
 {% endtabs %}
 
+![PopupSize](images/popup-size.webp)
+
 ### Configure the item template
 
 Use the `itemTemplate` property to customize the appearance of items in the mention suggestion popup. You can use it to display additional information or visual elements, such as an avatar, icon, or description, along with the mention item's display text.
@@ -190,6 +208,8 @@ Use the `itemTemplate` property to customize the appearance of items in the ment
 {% include code-snippet/ai-assistview/mentions/item-template/item-template.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![ItemTemplate](images/item-template.webp)
 
 ### Configure the no records template
 
@@ -204,6 +224,8 @@ Use the `noRecordsTemplate` property to customize the content displayed when no 
 {% endhighlight %}
 {% endtabs %}
 
+![NoRecordsTemplate](images/no-records-template.webp)
+
 ## Handle mention selection
 
 The `mentionSelect` event is triggered when a user selects an item from the mention suggestion popup. Use this event to access the selected mention data and perform custom actions.
@@ -216,3 +238,5 @@ The `mentionSelect` event is triggered when a user selects an item from the ment
 {% include code-snippet/ai-assistview/mentions/mention-select/mention-select.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![MentionSelect](images/mention-select.webp)
