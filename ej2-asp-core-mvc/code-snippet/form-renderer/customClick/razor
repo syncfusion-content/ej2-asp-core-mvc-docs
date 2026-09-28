@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.FormRenderer
+
+<div class="form-renderer-control">
+    @Html.EJS().FormRenderer("form-renderer-cancel").OnButtonClick("onButtonClick").Schema(ViewBag.FormSchema).Render()
+</div>
+
+<script>
+    function onButtonClick(args) {
+        // args.fieldName -> string
+        // args.label     -> string
+        // args.event     -> original button click event
+        console.log(args);
+    }
+</script>

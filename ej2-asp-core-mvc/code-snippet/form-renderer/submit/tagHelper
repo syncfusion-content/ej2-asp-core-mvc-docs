@@ -1,0 +1,13 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.FormRenderer
+
+<ejs-form-renderer id="form-renderer-submit" schema="ViewBag.FormSchema" submit="onSubmit"></ejs-form-renderer>
+
+<script>
+    function onSubmit(args) {
+        // args.data  -> Record<string, FieldDataType>
+        // args.isValid -> boolean
+        console.log(args);
+    }
+</script>

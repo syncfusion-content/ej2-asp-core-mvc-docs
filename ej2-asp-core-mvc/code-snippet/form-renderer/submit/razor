@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.FormRenderer
+
+<div id="form-renderer-control">
+    @Html.EJS().FormRenderer("form-renderer-submit").Schema(ViewBag.FormSchema).OnSubmit("onSubmit").Render()
+</div>
+
+<script>
+    function onSubmit(args) {
+        // args.data  -> Record<string, FieldDataType>
+        // args.isValid -> boolean
+        console.log(args);
+    }
+</script>
