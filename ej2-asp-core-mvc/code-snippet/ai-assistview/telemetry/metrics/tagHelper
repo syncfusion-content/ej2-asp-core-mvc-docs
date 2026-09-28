@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+@{
+    var defaultSuggestions = new string[] { "How do I set achievable goals at work?", "Why do people fly in their dreams?" };
+
+    var allowedMetrics = new[] { "status", "duration", "model", "inputTokens", "outputTokens", "totalTokens" };
+}
+
+<div class="aiassist-container" style="height: 420px; width: 550px;">
+    <ejs-aiassistview id="aiAssistView" promptSuggestions="@defaultSuggestions" promptRequest="onPromptRequest" created="onCreated">
+        <e-aiassistview-telemetrysettings enable="true" metrics="@allowedMetrics"></e-aiassistview-telemetrysettings>
+    </ejs-aiassistview>
+</div>
+
+<script>
+    var assistObj;
+    function onCreated() {
+        assistObj = this;
+    }
+    function onPromptRequest(args) {
+        setTimeout(() => {
+            var defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            // Mock telemetry data with hard-coded usage values.
+            var telemetryData = {
+                model: 'gpt-4o',
+                inputTokens: 128,
+                outputTokens: 512
+            };
+            assistObj.addPromptResponse(defaultResponse, true, telemetryData);
+        }, 1000);
+    }
+</script>
