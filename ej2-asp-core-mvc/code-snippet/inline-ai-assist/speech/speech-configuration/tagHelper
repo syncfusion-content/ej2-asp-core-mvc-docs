@@ -13,6 +13,16 @@
     }
 </style>
 
+@{
+    var buttonSettings = new
+    {
+        content = "Start Recording",
+        stopContent = "Stop Recording",
+        iconCss = "e-icons e-microphone",
+        stopIconCss = "e-icons e-microphone-off"
+    };
+}
+
 <div class="container" style="height: 350px; width: 650px;">
     <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onSummarizeClick()">Content Summarize</button>
     <div id="editableText" contenteditable="true">
@@ -21,7 +31,7 @@
     </div>
 
     <ejs-inlineaiassist id="speech-configuration" relateTo="#summarizeBtn" created="onCreated" promptRequest="onPromptRequest">
-        <e-inlineaiassist-speechtotextsettings enable="true" lang="en-US" allowInterimResults="true"></e-inlineaiassist-speechtotextsettings>
+        <e-inlineaiassist-speechtotextsettings enable="true" lang="en-US" allowInterimResults="true" buttonSettings="buttonSettings">></e-inlineaiassist-speechtotextsettings>
         <e-inlineaiassist-responsesettings itemSelect="onItemSelect"></e-inlineaiassist-responsesettings>
     </ejs-inlineaiassist>
 </div>
