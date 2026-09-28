@@ -1,0 +1,27 @@
+@using Syncfusion.EJ2
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).HeaderRowHeight(50).FooterRowHeight(50).RowHeight(100).Columns(col =>
+{
+	col.HeaderText("Image").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Width("120").Template("#gridTemplate").Add();
+	col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+	col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+	col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Format("C2").Add();
+	col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+}).Aggregates(aggregates =>
+{
+	aggregates.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>()
+	{
+		new Syncfusion.EJ2.Grids.GridAggregateColumn()
+		{
+			Field = "Freight",
+			Type = "Sum",
+			FooterTemplate = "Total Freight: ${Sum}"
+		}
+	}).Add();
+}).Render()
+
+<script type="text/x-template" id="gridTemplate">
+	<div class="image">
+		<img src="https://ej2.syncfusion.com/demos/src/grid/images/${EmployeeID}.png" alt="Employee" width="40" height="40" />
+	</div>
+</script>

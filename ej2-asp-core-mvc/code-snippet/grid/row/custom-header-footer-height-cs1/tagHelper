@@ -1,0 +1,22 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" headerRowHeight="50" footerRowHeight="50" rowHeight="100">
+	<e-grid-aggregates>
+		<e-grid-aggregate>
+			<e-aggregate-columns>
+				<e-aggregate-column field="Freight" type="Sum" footerTemplate="Total Freight: ${Sum}"></e-aggregate-column>
+			</e-aggregate-columns>
+		</e-grid-aggregate>
+	</e-grid-aggregates>
+	<e-grid-columns>
+		<e-grid-column headerText="Image" textAlign="Center" width="120" template="#gridTemplate"></e-grid-column>
+		<e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+		<e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+		<e-grid-column field="Freight" headerText="Freight" textAlign="Right" width="150" format="C2"></e-grid-column>
+		<e-grid-column field="ShipCity" headerText="Ship City" width="130"></e-grid-column>
+	</e-grid-columns>
+</ejs-grid>
+
+<script type="text/x-template" id="gridTemplate">
+	<div class="image">
+		<img src="https://ej2.syncfusion.com/demos/src/grid/images/${EmployeeID}.png" alt="Employee" width="40" height="40" />
+	</div>
+</script>

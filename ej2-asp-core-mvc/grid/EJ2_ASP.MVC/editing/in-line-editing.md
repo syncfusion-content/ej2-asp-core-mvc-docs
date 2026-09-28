@@ -78,6 +78,8 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 
 * To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
 
+* To perform bulk updates in the Grid, use the [saveBulkChanges]. This method enables multiple records to be updated programmatically in a single operation.
+
 > * In both normal and dialog editing modes, these methods can be used.
 
 {% tabs %}
@@ -206,7 +208,7 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
 
 ![Adding a new row at the bottom of the grid](../images/editing/inline-poistion.png)
 
->* Add [NewRowPostion](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) is supported for **Normal** and **Batch** editing modes.
+>* Add [NewRowPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) is supported for **Normal** and **Batch** editing modes.
 >* If you set [NewRowPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) as **Bottom**, the grid will display a blank row form at the bottom by default, allowing you to enter data for the new record. However, when the data is saved or updated, it will be inserted at the top of the grid. 
 
 ## Show add new row always in grid
