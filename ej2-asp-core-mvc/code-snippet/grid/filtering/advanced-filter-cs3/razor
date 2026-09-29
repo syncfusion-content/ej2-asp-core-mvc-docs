@@ -3,8 +3,6 @@
     <button type="button" id="apply">Apply rule</button>
     <button type="button" id="set">Set rule</button>
     <button type="button" id="get">Get rule</button>
-    <button type="button" id="predicate">Get predicate</button>
-    <button type="button" id="isApplied">Check filter</button>
     <button type="button" id="clear">Clear filter</button>
 
     @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableVirtualization().AllowSorting().Height("400px").RowHeight(45).Load("load").AdvancedFilterOpen("advancedFilterOpen").AllowAdvancedFiltering(true).Toolbar(new List<string>() { "AdvancedFilter" }).Columns(col =>
@@ -81,7 +79,5 @@
     document.getElementById('apply').onclick = function () { gridInstance.applyAdvancedFilter(initialAdvancedFilterRule); };
     document.getElementById('set').onclick = function () { gridInstance.setAdvancedFilter(initialAdvancedFilterRule); };
     document.getElementById('get').onclick = function () { console.log(gridInstance.getAdvancedFilter()); };
-    document.getElementById('predicate').onclick = function () { console.log(gridInstance.getPredicateFromRule(initialAdvancedFilterRule)); };
-    document.getElementById('isApplied').onclick = function () { console.log(gridInstance.isAdvancedFilterApplied()); };
     document.getElementById('clear').onclick = function () { gridInstance.clearAdvancedFilter(); };
 </script>
