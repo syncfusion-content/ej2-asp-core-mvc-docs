@@ -92,192 +92,31 @@ The **Templates** tab (available in Developer mode only) displays a flat list of
 {% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+
 {% highlight cshtml tabtitle="CSHTML" %}
-@using Syncfusion.EJ2
-@using Syncfusion.EJ2.FormBuilder
-
-<div>
-    @Html.EJS().FormBuilder("form-builder-control").FormTemplates(ViewData["formTemplate"]).Render()
-</div>
+{% include code-snippet/form-builder/field-components-templates/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FormBuilderController.cs" %}
 
-public partial class FormBuilderController : Controller
-{
-    public ActionResult Default()
-    {
-        ViewData["formTemplate"] = GetFormTemplate();
-        return View();
-    }
-    public List<FormTemplate> GetFormTemplate()
-    {
-        return new List<FormTemplate>
-        {
-            new FormTemplate
-            {
-                Id = "login form",
-                Title = "login",
-                Schema = GetLoginForm()
-            }
-        };
-    }
-    public Schema GetLoginForm()
-    {
-        return new Schema
-        {
-            Version = "0.1.0",
-            Properties = new Dictionary<string, BaseProperty>
-            {
-                ["emailAddress"] = new TextboxProperty { Id = "t1", Name = "emailAddress", Type = "string", Label = "Email Address", TextboxType = "email", Required = true, Widget = "textbox" },
-                ["password"] = new TextboxProperty { Id = "t2", Name = "password", Type = "string", Label = "Password", TextboxType = "password", Required = true, MinLength = 6, Widget = "textbox" },
-                ["rememberMe"] = new CheckboxProperty { Id = "c1", Name = "rememberMe", Type = "boolean", Label = "Remember Me", Widget = "checkbox" },
-                ["submit"] = new SubmitButtonProperty { Id = "s1", Name = "submit", Type = "button", Label = "Submit", ButtonType = "submit", Widget = "button", Style = "primary", Disabled = false }
-            },
-            Layout = new List<LayoutNode>
-            {
-                new LayoutNode { Type="field", PropertyId="emailAddress" },
-                new LayoutNode { Type="field", PropertyId="password" },
-                new LayoutNode { Type="field", PropertyId="rememberMe" },
-                new LayoutNode { Type="field", PropertyId="submit" }
-            },
-            Settings = new SchemaSettings { Name = "Login Form" }
-        };
-    }
-}
-public abstract class BaseProperty
-{
-    [JsonProperty("id")] public string Id { get; set; }
-    [JsonProperty("name")] public string Name { get; set; }
-    [JsonProperty("type")] public string Type { get; set; }
-    [JsonProperty("label")] public string Label { get; set; }
-    [JsonProperty("widget")] public string Widget { get; set; }
-    [JsonProperty("size")] public string Size { get; set; }
-}
-public class TextboxProperty : BaseProperty
-{
-    [JsonProperty("textboxType")] public string TextboxType { get; set; }
-    [JsonProperty("required")] public bool Required { get; set; }
-    [JsonProperty("minLength")] public int? MinLength { get; set; }
-}
-public class CheckboxProperty : BaseProperty { }
-public class SubmitButtonProperty : BaseProperty
-{
-    [JsonProperty("buttonType")] public string ButtonType { get; set; }
-    [JsonProperty("style")] public string Style { get; set; }
-    [JsonProperty("disabled")] public bool Disabled { get; set; }
-}
-public class Schema
-{
-    [JsonProperty("version")] public string Version { get; set; }
-    [JsonProperty("properties")] public Dictionary<string, BaseProperty> Properties { get; set; }
-    [JsonProperty("layout")] public List<LayoutNode> Layout { get; set; }
-    [JsonProperty("settings")] public SchemaSettings Settings { get; set; }
-}
-public class FormTemplate
-{
-    [JsonProperty("id")] public string Id { get; set; }
-    [JsonProperty("title")] public string Title { get; set; }
-    [JsonProperty("schema")] public Schema Schema { get; set; }
-}
-public class ToolboxCategories
-{
-    [JsonProperty("category")] public string Category { get; set; }
-    [JsonProperty("items")] public string[] Items { get; set; }
-}
-public class SchemaSettings { [JsonProperty("name")] public string Name { get; set; } }
-public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
-
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/form-builder/field-components-templates/controller.cs %}
 {% endhighlight %}
+
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
+
 {% highlight cshtml tabtitle="CSHTML" %}
-@model IndexModel
-
-<ejs-form-builder id="form-builder-control"
-                  formTemplates="Model.FormTemplate">
-</ejs-form-builder>
-
+{% include code-snippet/form-builder/field-components-templates/tagHelper %}
 {% endhighlight %}
+
 {% highlight c# tabtitle="FieldComponent.cs" %}
-public class IndexModel : PageModel
-{
-    public List<FormTemplate> FormTemplate { get; set; }
-
-    public void OnGet()
-    {
-        FormSchema = new Schema
-        {
-            Version = "0.1.0",
-            Properties = new Dictionary<string, BaseProperty>
-            {
-                ["emailAddress"] = new TextboxProperty { Id = "t1", Name = "emailAddress", Type = "string", Label = "Email Address", TextboxType = "email", Required = true, Widget = "textbox" },
-                ["password"] = new TextboxProperty { Id = "t2", Name = "password", Type = "string", Label = "Password", TextboxType = "password", Required = true, MinLength = 6, Widget = "textbox" },
-                ["rememberMe"] = new CheckboxProperty { Id = "c1", Name = "rememberMe", Type = "boolean", Label = "Remember Me", Widget = "checkbox" },
-                ["submit"] = new SubmitButtonProperty { Id = "s1", Name = "submit", Type = "button", Label = "Submit", ButtonType = "submit", Widget = "button", Style = "primary", Disabled = false }
-            },
-            Layout = new List<LayoutNode>
-            {
-                new LayoutNode { Type="field", PropertyId="emailAddress" },
-                new LayoutNode { Type="field", PropertyId="password" },
-                new LayoutNode { Type="field", PropertyId="rememberMe" },
-                new LayoutNode { Type="field", PropertyId="submit" }
-            },
-            Settings = new SchemaSettings { Name = "Login Form" }
-        };
-        FormTemplate = new List<FormTemplate>
-        {
-            new FormTemplate
-            {
-                Id = "login form",
-                Title = "login",
-                Schema = FormSchema
-            }
-        };
-    }
-}
-public abstract class BaseProperty
-{
-    [JsonProperty("id")] public string Id { get; set; }
-    [JsonProperty("name")] public string Name { get; set; }
-    [JsonProperty("type")] public string Type { get; set; }
-    [JsonProperty("label")] public string Label { get; set; }
-    [JsonProperty("widget")] public string Widget { get; set; }
-    [JsonProperty("size")] public string Size { get; set; }
-}
-public class TextboxProperty : BaseProperty
-{
-    [JsonProperty("textboxType")] public string TextboxType { get; set; }
-    [JsonProperty("required")] public bool Required { get; set; }
-    [JsonProperty("minLength")] public int? MinLength { get; set; }
-}
-public class CheckboxProperty : BaseProperty { }
-public class SubmitButtonProperty : BaseProperty
-{
-    [JsonProperty("buttonType")] public string ButtonType { get; set; }
-    [JsonProperty("style")] public string Style { get; set; }
-    [JsonProperty("disabled")] public bool Disabled { get; set; }
-}
-public class Schema
-{
-    [JsonProperty("version")] public string Version { get; set; }
-    [JsonProperty("properties")] public Dictionary<string, BaseProperty> Properties { get; set; }
-    [JsonProperty("layout")] public List<LayoutNode> Layout { get; set; }
-    [JsonProperty("settings")] public SchemaSettings Settings { get; set; }
-}
-public class FormTemplate
-{
-    [JsonProperty("id")] public string Id { get; set; }
-    [JsonProperty("title")] public string Title { get; set; }
-    [JsonProperty("schema")] public Schema Schema { get; set; }
-}
-public class SchemaSettings { [JsonProperty("name")] public string Name { get; set; } }
-public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
-
+{% include code-snippet/form-builder/field-components-templates/controller.cs %}
 {% endhighlight %}
+
 {% endtabs %}
+
 {% endif %}
 
 Dragging a template onto the canvas inserts the entire set of components defined by the template's schema. Submit buttons within templates are filtered out to prevent duplicate submit buttons.
@@ -301,131 +140,29 @@ The form fields in the toolbox can be customized using the `toolboxCategories` p
 {% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+
 {% highlight cshtml tabtitle="CSHTML" %}
-
-<div>
-    @Html.EJS().FormBuilder("form-builder-control").ToolboxCategories(ViewData["toolboxItemCategories"]).Render()
-</div>
-
+{% include code-snippet/form-builder/field-components-toolbox/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FormBuilderController.cs" %}
 
-public partial class FormBuilderController : Controller
-{
-    public ActionResult Default()
-    {
-        ViewData["toolboxItemCategories"] = GetToolboxCategories();
-        return View();
-    }
-    public List<ToolboxCategories> GetToolboxCategories()
-    {
-        return new List<ToolboxCategories>
-        {
-            new ToolboxCategories()
-            {
-                Category = "basic",
-                Items = new[] { "textbox", "textarea" }
-            },
-            new ToolboxCategories()
-            {
-                Category = "advanced",
-                Items = new[] { "date", "dateRange" }
-            },
-            new ToolboxCategories()
-            {
-                Category = "layout",
-                Items = new[] { "panel", "card" }
-            }
-        };
-    }
-}
-public abstract class BaseProperty
-{
-    [JsonProperty("id")] public string Id { get; set; }
-    [JsonProperty("name")] public string Name { get; set; }
-    [JsonProperty("type")] public string Type { get; set; }
-    [JsonProperty("label")] public string Label { get; set; }
-    [JsonProperty("widget")] public string Widget { get; set; }
-    [JsonProperty("size")] public string Size { get; set; }
-}
-public class TextboxProperty : BaseProperty
-{
-    [JsonProperty("textboxType")] public string TextboxType { get; set; }
-    [JsonProperty("required")] public bool Required { get; set; }
-    [JsonProperty("minLength")] public int? MinLength { get; set; }
-}
-public class CheckboxProperty : BaseProperty { }
-public class SubmitButtonProperty : BaseProperty
-{
-    [JsonProperty("buttonType")] public string ButtonType { get; set; }
-    [JsonProperty("style")] public string Style { get; set; }
-    [JsonProperty("disabled")] public bool Disabled { get; set; }
-}
-public class Schema
-{
-    [JsonProperty("version")] public string Version { get; set; }
-    [JsonProperty("properties")] public Dictionary<string, BaseProperty> Properties { get; set; }
-    [JsonProperty("layout")] public List<LayoutNode> Layout { get; set; }
-    [JsonProperty("settings")] public SchemaSettings Settings { get; set; }
-}
-public class ToolboxCategories
-{
-    [JsonProperty("category")] public string Category { get; set; }
-    [JsonProperty("items")] public string[] Items { get; set; }
-}
-public class SchemaSettings { [JsonProperty("name")] public string Name { get; set; } }
-public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
-
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/form-builder/field-components-toolbox/controller.cs %}
 {% endhighlight %}
+
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
+
 {% highlight cshtml tabtitle="CSHTML" %}
-
-@model IndexModel
-
-<ejs-form-builder id="form-builder-control"
-                  toolboxCategories="Model.ToolboxItemCategories">
-</ejs-form-builder>
-
+{% include code-snippet/form-builder/field-components-toolbox/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="FieldComponent.cs" %}
 
-public class IndexModel : PageModel
-{
-    public List<ToolboxCategories> ToolboxItemCategories { get; set; }
-
-    public void OnGet()
-    {
-        ToolboxItemCategories =
-        [
-            new()
-            {
-                Category = "basic",
-                Items = ["textbox", "textarea"]
-            },
-            new()
-            {
-                Category = "advanced",
-                Items = ["date", "dateRange"]
-            },
-            new()
-            {
-                Category = "layout",
-                Items = ["panel", "card"]
-            }
-        ];
-    }
-}
-public class ToolboxCategories
-{
-    [JsonProperty("category")] public string Category { get; set; }
-    [JsonProperty("items")] public string[] Items { get; set; }
-}
-
+{% highlight c# tabtitle="HomeController.cs" %} 
+{% include code-snippet/form-builder/field-components-toolbox/controller.cs %}
 {% endhighlight %}
+
 {% endtabs %}
 {% endif %}
 

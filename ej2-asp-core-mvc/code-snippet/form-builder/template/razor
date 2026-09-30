@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.FormBuilder
+
+@{
+    List<ToolboxItemSetting> toolboxItems = new List<ToolboxItemSetting>
+    {
+        new ToolboxItemSetting()
+        {
+            Type = FormWidgetType.Textbox,
+            Template = "#customWidgetTemplate"
+        }
+    };
+}
+<div class="control-section">
+    @Html.EJS().FormBuilder("form-builder-control").Schema(ViewBag.FormSchema).ToolboxItems(toolboxItems).Render()
+</div>
+
+<script id="customWidgetTemplate" type="text/x-template">
+    <input class="e-input"
+            id="${fieldData.id}"
+            name="${fieldData.name}"
+            type="text"
+            placeholder="${fieldData.placeholder}"
+            data-field-id="${fieldData.id}" />
+</script>

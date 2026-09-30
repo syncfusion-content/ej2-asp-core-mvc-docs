@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.FormBuilder
+@using EJ2MVCSampleBrowser.Models
+
+<div class="control-section">
+    @Html.EJS().FormBuilder("form-builder-control").Schema(ViewBag.FormSchema).Render()
+</div>
