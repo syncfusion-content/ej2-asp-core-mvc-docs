@@ -557,6 +557,8 @@ padding-top: 50px;
         <div><p class="controlcategory">FORMS</p></div>
         <div class="controlanchorlink"><a target="_self" aria-label="In-place Editor" href="https://ej2.syncfusion.com/aspnetmvc/documentation/in-place-editor/getting-started"><span class="sf-home-icon sf-icon-inplaceeditor"></span>In-place Editor</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Query Builder" href="https://ej2.syncfusion.com/aspnetmvc/documentation/query-builder/getting-started"><span class="sf-home-icon sf-icon-querybuilder"></span>Query Builder</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Form Builder" href="https://ej2.syncfusion.com/aspnetmvc/documentation/form-builder/getting-started"><span class="sf-home-icon sf-icon-formbuilder"></span>Form Builder</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Form Renderer" href="https://ej2.syncfusion.com/aspnetmvc/documentation/form-renderer/getting-started"><span class="sf-home-icon sf-icon-formrenderer"></span>Form Renderer</a></div>
         <div><p class="control-category">Interactive Chat</p></div>
         <div class="control-anchor-link"><a target="_self" aria-label="AI AssistView" href="https://ej2.syncfusion.com/aspnetmvc/documentation/ai-assistview/getting-started"><span class="sf-home-icon sf-icon-aiassistview"></span>AI AssistView</a></div>
         <div class="control-anchor-link"><a target="_self" aria-label="Chat UI" href="https://ej2.syncfusion.com/aspnetmvc/documentation/chat-ui/getting-started"><span class="sf-home-icon sf-icon-chatui"></span>Chat UI</a></div>
