@@ -20,6 +20,8 @@ You can hover over the telemetry button in any response toolbar to view the tele
 {% endhighlight %}
 {% endtabs %}
 
+![Telemetry getting started](images/telemetry-getting-started.webp)
+
 ## Configuring metrics
 
 You can control which telemetry metrics are captured in the report using the `metrics` property of the [telemetrySettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_TelemetrySettings) option. It accepts one or more values from the `TelemetryMetric` type, such as `status`, `duration`, `toolCalls`, `streamingChunks`, `model`, `inputTokens`, `outputTokens` and `totalTokens`.
@@ -45,6 +47,8 @@ Additionally, the order of metrics in the `metrics` array also determines the di
 {% endhighlight %}
 {% endtabs %}
 
+![Telemetry metrics](images/telemetry-metrics.webp)
+
 ## Customizing the report
 
 Use the `beforeReport` callback of the [telemetrySettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_TelemetrySettings) to intercept the generated report before it is rendered. It accepts the report (`TelemetryReport`) as an argument and allows you to modify it or `null` to suppress the report delivery. Custom attributes added in this callback will be displayed additionally in the telemetry tooltip.
@@ -54,6 +58,8 @@ Use the `beforeReport` callback of the [telemetrySettings](https://help.syncfusi
 {% include code-snippet/ai-assistview/telemetry/before-report/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![Telemetry before report](images/telemetry-before-report.webp)
 
 ## Displaying AI data
 
@@ -65,6 +71,8 @@ The AI AssistView automatically measures the metrics such as `duration`, `toolCa
 {% endhighlight %}
 {% endtabs %}
 
+![Telemetry usage data](images/telemetry-usage-data.webp)
+
 ### Custom attributes
 
 Pass custom key/value pairs through the `customAttributes` field of the [TelemetryData](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_TelemetryData) argument to surface domain-specific metrics (for example, `region`, `tenant`, `sessionId`, or `feature`) inside the telemetry report. Each entry is rendered as its own row in the telemetry tooltip and is included alongside the standard metrics regardless of the `metrics` filter.
@@ -74,6 +82,8 @@ Pass custom key/value pairs through the `customAttributes` field of the [Telemet
 {% include code-snippet/ai-assistview/telemetry/custom-attributes/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![Telemetry custom attributes](images/telemetry-custom-attributes.webp)
 
 ## Key characteristics
 
