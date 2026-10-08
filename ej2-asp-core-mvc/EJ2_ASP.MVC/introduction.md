@@ -425,48 +425,6 @@ padding-top: 20px;
   content: "\e74b";
 }
 
-<style>
-#table
-{
-border:0 !important;
-line-height: 160% !important;
-}
-
-tr
-{
-border:0 !important;
-}
-
-td
-{
-border:0 !important;
-vertical-align: top;
-}
-
-.controlanchorlink
-{
-font-size: 14px !important;
-text-decoration: none!important;
-text-align: left!important;
-padding: 2px 0px;
-}
-.controlcategory-topics
-{
-font-size: 14px !important;
-font-weight: 500!important;
-border:0 !important;
-line-height: 20px;
-}
-.controlcategory
-{
-font-size: 14px !important;
-font-weight: 500!important;
-border:0 !important;
-text-align: left!important;
-line-height: 20px;
-padding-top: 50px;
-}
-
 </style>
 <table id="table">
 <tbody>
@@ -483,38 +441,38 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" aria-label="DataGrid" href="https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc"><span class="sf-home-icon sf-icon-datagrid"></span>DataGrid</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Pivot Table" href="https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/getting-started"><span class="sf-home-icon sf-icon-pivottable"></span>Pivot Table</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="TreeGrid" href="https://help.syncfusion.com/grid-sdk/asp-net-mvc/tree-grid/getting-started-mvc"><span class="sf-home-icon sf-icon-treegrid"></span>TreeGrid</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="MultiColumn ComboBox" href="https://ej2.syncfusion.com/aspnetmvc/documentation/multicolumn-combobox/getting-started"><span class="sf-home-icon sf-icon-multicolumncombobox"></span>MultiColumn ComboBox</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="MultiColumn ComboBox" href="https://ej2.syncfusion.com/aspnetmvc/documentation/multicolumn-combobox/getting-started"><span class="sf-home-icon sf-icon-multicolumncombobox"></span>MultiColumn ComboBox</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Rich Text Editor" href="https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/getting-started"><span class="sf-home-icon sf-icon-richtexteditor"></span>Rich Text Editor</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Markdown Editor" href="https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/markdown-editor/getting-started"><span class="sf-home-icon sf-icon-markdowneditor"></span>Markdown Editor</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Markdown Editor" href="https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/markdown-editor/getting-started"><span class="sf-home-icon sf-icon-markdowneditor"></span>Markdown Editor</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Image Editor" href="https://ej2.syncfusion.com/aspnetmvc/documentation/image-editor/getting-started"><span class="sf-home-icon sf-icon-image_editor"></span>Image Editor</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Block Editor" href="https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/block-editor/getting-started"><span class="sf-home-icon sf-icon-blockeditor"></span>Block Editor</a></div>
         <div><p class="controlcategory">LAYOUT</p></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Dialog" href="https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/getting-started"><span class="sf-home-icon sf-icon-dialog"></span>Dialog</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Predefined Dialog" href="https://ej2.syncfusion.com/aspnetmvc/documentation/predefined-dialogs/getting-started"><span class="sf-home-icon sf-icon-predefineddialogs"></span>Predefined Dialog</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Predefined Dialog" href="https://ej2.syncfusion.com/aspnetmvc/documentation/predefined-dialogs/getting-started"><span class="sf-home-icon sf-icon-predefineddialogs"></span>Predefined Dialog</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="ListView" href="https://ej2.syncfusion.com/aspnetmvc/documentation/listview/getting-started"><span class="sf-home-icon sf-icon-listview"></span>ListView</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Tooltip" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tooltip/getting-started"><span class="sf-home-icon sf-icon-tooltip"></span>Tooltip</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Splitter" href="https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/getting-started"><span class="sf-home-icon sf-icon-splitter"></span>Splitter</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Dashboard" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/dashboard-layout/getting-started"><span class="sf-home-icon sf-icon-dashboardlayout"></span>Dashboard</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Card" href="https://ej2.syncfusion.com/aspnetmvc/documentation/card/getting-started"><span class="sf-home-icon sf-icon-card"></span>Card</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Avatar" href="https://ej2.syncfusion.com/aspnetmvc/documentation/avatar/getting-started"><span class="sf-home-icon sf-icon-avatar"></span>Avatar</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Timeline" href="https://ej2.syncfusion.com/aspnetmvc/documentation/timeline/getting-started"><span class="sf-home-icon sf-icon-timeline"></span>Timeline</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Timeline" href="https://ej2.syncfusion.com/aspnetmvc/documentation/timeline/getting-started"><span class="sf-home-icon sf-icon-timeline"></span>Timeline</a></div>
     </td>
     <td>
         <div><p class="controlcategory-topics">DATA VISUALIZATION</p></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Charts" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/charts/getting-started"><span class="sf-home-icon sf-icon-charts"></span>Charts</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="3D Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/3d-charts/getting-started"><span class="sf-home-icon sf-icon-3dchart"></span>3D Chart</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="3D Circular Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/3d-circular-charts/getting-started"><span class="sf-home-icon sf-icon-3dchart"></span>3D Circular Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="3D Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/3d-charts/getting-started"><span class="sf-home-icon sf-icon-3dchart"></span>3D Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="3D Circular Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/3d-circular-charts/getting-started"><span class="sf-home-icon sf-icon-3dchart"></span>3D Circular Chart</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Stock Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/stock-charts/getting-started"><span class="sf-home-icon sf-icon-stockchart"></span>Stock Chart</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Circular Gauge" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/circular-gauge/getting-started"><span class="sf-home-icon sf-icon-circulargauge"></span>Circular Gauge</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Linear Gauge" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/linear-gauge/getting-started"><span class="sf-home-icon sf-icon-lineargauge"></span>Linear Gauge</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Diagram" href="https://help.syncfusion.com/diagram-sdk/asp-net-mvc/getting-started"><span class="sf-home-icon sf-icon-diagram"></span>Diagram</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="HeatMap Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/heatmap-chart/getting-started"><span class="sf-home-icon sf-icon-heatmapchart"></span>HeatMap Chart</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Map" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/maps/getting-started"><span class="sf-home-icon sf-icon-maps"></span>Map</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Range Navigator" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/range-navigator/getting-started"><span class="sf-home-icon sf-icon-rangeselector"></span>Range Navigator</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Range Navigator" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/range-navigator/getting-started"><span class="sf-home-icon sf-icon-rangeselector"></span>Range Navigator</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Smith Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/smith-chart/getting-started"><span class="sf-home-icon sf-icon-smithchart"></span>Smith Chart</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Sparkline Charts" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/sparkline-charts/getting-started"><span class="sf-home-icon sf-icon-sparklinecharts"></span>Sparkline Charts</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Accumulation Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/accumulation-charts/getting-started"><span class="sf-home-icon sf-icon-accumulationchart"></span>Accumulation Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Accumulation Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/accumulation-charts/getting-started"><span class="sf-home-icon sf-icon-accumulationchart"></span>Accumulation Chart</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Barcode" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/barcode-generator/getting-started"><span class="sf-home-icon sf-icon-barcodegenerator"></span>Barcode</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="TreeMap" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/treemap/getting-started"><span class="sf-home-icon sf-icon-treemap"></span>TreeMap</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Bullet Chart" href="https://help.syncfusion.com/chart-sdk/asp-net-mvc/bullet-chart/getting-started"><span class="sf-home-icon sf-icon-bulletchart"></span>Bullet Chart</a></div>
@@ -548,18 +506,18 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" aria-label="Color Picker" href="https://ej2.syncfusion.com/aspnetmvc/documentation/color-picker/getting-started"><span class="sf-home-icon sf-icon-colorpicker"></span>Color Picker</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="File Upload" href="https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/getting-started"><span class="sf-home-icon sf-icon-fileupload"></span>File Upload</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Range Slider" href="https://ej2.syncfusion.com/aspnetmvc/documentation/range-slider/getting-started"><span class="sf-home-icon sf-icon-rangeslider"></span>Range Slider</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="TextArea" href="https://ej2.syncfusion.com/aspnetmvc/documentation/textarea/getting-started"><span class="sf-home-icon sf-icon-textarea"></span>TextArea</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="TextArea" href="https://ej2.syncfusion.com/aspnetmvc/documentation/textarea/getting-started"><span class="sf-home-icon sf-icon-textarea"></span>TextArea</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Toggle Switch Button" href="https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started"><span class="sf-home-icon sf-icon-toggleswitchbutton"></span>Toggle Switch Button</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Signature" href="https://ej2.syncfusion.com/aspnetmvc/documentation/signature/getting-started"><span class="sf-home-icon sf-icon-signature"></span>Signature</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Rating" href="https://ej2.syncfusion.com/aspnetmvc/documentation/rating/getting-started"><span class="sf-home-icon sf-icon-rating"></span>Rating</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="OTP Input" href="https://ej2.syncfusion.com/aspnetmvc/documentation/otp-input/getting-started"><span class="sf-home-icon sf-icon-otpinput"></span>OTP Input</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Speech To Text" href="https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/getting-started"><span class="sf-home-icon sf-icon-speechtotext"></span>Speech To Text</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Rating" href="https://ej2.syncfusion.com/aspnetmvc/documentation/rating/getting-started"><span class="sf-home-icon sf-icon-rating"></span>Rating</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="OTP Input" href="https://ej2.syncfusion.com/aspnetmvc/documentation/otp-input/getting-started"><span class="sf-home-icon sf-icon-otpinput"></span>OTP Input</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Speech To Text" href="https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/getting-started"><span class="sf-home-icon sf-icon-speechtotext"></span>Speech To Text</a></div>
         <div><p class="controlcategory">FORMS</p></div>
         <div class="controlanchorlink"><a target="_self" aria-label="In-place Editor" href="https://ej2.syncfusion.com/aspnetmvc/documentation/in-place-editor/getting-started"><span class="sf-home-icon sf-icon-inplaceeditor"></span>In-place Editor</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Query Builder" href="https://ej2.syncfusion.com/aspnetmvc/documentation/query-builder/getting-started"><span class="sf-home-icon sf-icon-querybuilder"></span>Query Builder</a></div>
-        <div><p class="control-category">Interactive Chat</p></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="AI AssistView" href="https://ej2.syncfusion.com/aspnetmvc/documentation/ai-assistview/getting-started"><span class="sf-home-icon sf-icon-aiassistview"></span>AI AssistView</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Chat UI" href="https://ej2.syncfusion.com/aspnetmvc/documentation/chat-ui/getting-started"><span class="sf-home-icon sf-icon-chatui"></span>Chat UI</a></div>
+        <div><p class="controlcategory">Interactive Chat</p></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="AI AssistView" href="https://ej2.syncfusion.com/aspnetmvc/documentation/ai-assistview/getting-started"><span class="sf-home-icon sf-icon-aiassistview"></span>AI AssistView</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Chat UI" href="https://ej2.syncfusion.com/aspnetmvc/documentation/chat-ui/getting-started"><span class="sf-home-icon sf-icon-chatui"></span>Chat UI</a></div>
     </td>
     <td>
         <div><p class="controlcategory-topics">DROPDOWNS</p></div>
@@ -567,7 +525,7 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" aria-label="ListBox" href="https://ej2.syncfusion.com/aspnetmvc/documentation/list-box/getting-started-mvc"><span class="sf-home-icon sf-icon-listbox"></span>ListBox</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="ComboBox" href="https://ej2.syncfusion.com/aspnetmvc/documentation/combo-box/getting-started"><span class="sf-home-icon sf-icon-combobox"></span>ComboBox</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Dropdown List" href="https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started"><span class="sf-home-icon sf-icon-dropdownlist"></span>Dropdown List</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="DropDownTree" href="https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-tree/getting-started"><span class="sf-home-icon sf-icon-dropdowntree"></span>DropDownTree</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="DropDownTree" href="https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-tree/getting-started"><span class="sf-home-icon sf-icon-dropdowntree"></span>DropDownTree</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Multiselect DropDown" href="https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/getting-started"><span class="sf-home-icon sf-icon-multiselectdropdown"></span>Multiselect DropDown</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Mention" href="https://ej2.syncfusion.com/aspnetmvc/documentation/mention/getting-started"><span class="sf-home-icon sf-icon-mention"></span>Mention</a></div>
         <div><p class="controlcategory">NAVIGATION</p></div>
@@ -579,11 +537,11 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" aria-label="Toolbar" href="https://ej2.syncfusion.com/aspnetmvc/documentation/toolbar/getting-started"><span class="sf-home-icon sf-icon-toolbar"></span>Toolbar</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="TreeView" href="https://ej2.syncfusion.com/aspnetmvc/documentation/treeview/getting-started"><span class="sf-home-icon sf-icon-treeview"></span>TreeView</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="File Manager" href="https://help.syncfusion.com/file-manager-sdk/asp-net-mvc/getting-started"><span class="sf-home-icon sf-icon-filemanager"></span>File Manager</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Ribbon" href="https://ej2.syncfusion.com/aspnetmvc/documentation/ribbon/getting-started"><span class="sf-home-icon sf-icon-ribbon"></span>Ribbon</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Ribbon" href="https://ej2.syncfusion.com/aspnetmvc/documentation/ribbon/getting-started"><span class="sf-home-icon sf-icon-ribbon"></span>Ribbon</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Breadcrumb" href="https://ej2.syncfusion.com/aspnetmvc/documentation/breadcrumb/getting-started"><span class="sf-home-icon sf-icon-breadcrumb"></span>Breadcrumb</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Carousel" href="https://ej2.syncfusion.com/aspnetmvc/documentation/carousel/getting-started"><span class="sf-home-icon sf-icon-carousel"></span>Carousel</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Carousel" href="https://ej2.syncfusion.com/aspnetmvc/documentation/carousel/getting-started"><span class="sf-home-icon sf-icon-carousel"></span>Carousel</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="AppBar" href="https://ej2.syncfusion.com/aspnetmvc/documentation/appbar/getting-started"><span class="sf-home-icon sf-icon-appbar"></span>AppBar</a></div>
-        <div class="control-anchor-link"><a target="_self" aria-label="Stepper" href="https://ej2.syncfusion.com/aspnetmvc/documentation/stepper/getting-started"><span class="sf-home-icon sf-icon-stepper"></span>Stepper</a></div>
+        <div class="controlanchorlink"><a target="_self" aria-label="Stepper" href="https://ej2.syncfusion.com/aspnetmvc/documentation/stepper/getting-started"><span class="sf-home-icon sf-icon-stepper"></span>Stepper</a></div>
         <div><p class="controlcategory">NOTIFICATION</p></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Toast" href="https://ej2.syncfusion.com/aspnetmvc/documentation/toast/getting-started"><span class="sf-home-icon sf-icon-toast"></span>Toast</a></div>
         <div class="controlanchorlink"><a target="_self" aria-label="Progress Bar" href="https://ej2.syncfusion.com/aspnetmvc/documentation/progress-bar/getting-started"><span class="sf-home-icon sf-icon-progressbar"></span>Progress Bar</a></div>
