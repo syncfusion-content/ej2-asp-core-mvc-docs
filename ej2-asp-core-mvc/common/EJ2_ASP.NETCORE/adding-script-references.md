@@ -241,7 +241,6 @@ The following table lists each NuGet package, the controls it covers, and the in
 
 {% highlight cshtml %}
 <script src="_content/Syncfusion.AspNetCore.DocumentEditor/scripts/sf-document-editor.min.js"></script>
-<script src="_content/Syncfusion.AspNetCore.DocumentEditor/scripts/sf-document-editor-container.min.js"></script>
 {% endhighlight %}
 
 </td>
