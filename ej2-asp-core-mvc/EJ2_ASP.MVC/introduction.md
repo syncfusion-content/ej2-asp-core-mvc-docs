@@ -424,6 +424,12 @@ padding-top: 20px;
 .sf-icon-accumulationchart:before {
   content: "\e74b";
 }
+.sf-icon-formbuilder:before {
+    content: "\e902";
+}
+.sf-icon-formrenderer:before {
+    content: "\e904";
+}
 
 </style>
 <table id="table">
