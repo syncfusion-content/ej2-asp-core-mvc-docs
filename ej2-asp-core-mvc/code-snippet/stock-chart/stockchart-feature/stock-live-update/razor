@@ -1,0 +1,400 @@
+<div class="control-section">
+    <div id="control-container">
+        @(
+            Html.EJS()
+                .StockChart("container")
+                .Width("1100px")
+                .Height("455px")
+                .Title("Live Stock Data")
+                .Theme(Syncfusion.EJ2.Theme.Material)
+                .Load("stockLoad")
+                .Loaded("stockLoaded")
+                .Series(series =>
+                {
+                    series
+                        .DataSource("stockData")
+                        .Type(ChartSeriesType.Candle)
+                        .XName("x")
+                        .Open("open")
+                        .High("high")
+                        .Low("low")
+                        .Close("close")
+                        .Volume("volume")
+                        .Add();
+                })
+                .SeriesType(new List<object>())
+                .IndicatorType(new List<object>())
+                .TrendlineType(new List<object>())
+                .Periods(periods =>
+                {
+                    periods
+                        .Text("1H")
+                        .Interval(1)
+                        .IntervalType(RangeIntervalType.Hours)
+                        .Selected(true)
+                        .Add();
+
+                    periods
+                        .Text("All")
+                        .Add();
+                })
+                .EnableCustomRange(false)
+                .Render()
+        )
+    </div>
+</div>
+
+<script>
+    /*
+     * Simulated one-minute candle in milliseconds.
+     */
+    var ONE_MINUTE_MS = 60 * 1000;
+
+    /*
+     * Tick frequency for updating the chart.
+     * In a real application, this would normally be approximately 60000.
+     */
+    var UPDATE_INTERVAL_MS = 100;
+
+    /*
+     * Adds one new candle after every ten updates.
+     */
+    var UPDATES_PER_CANDLE = 10;
+
+    /*
+     * Animation is disabled when updating the current candle.
+     */
+    var UPDATE_ANIMATION_DURATION = 0;
+
+    /*
+     * Animation duration when appending a new candle.
+     */
+    var ADD_ANIMATION_DURATION = 300;
+
+    /*
+     * Number of initial historical candles.
+     */
+    var INITIAL_CANDLE_COUNT = 120;
+
+    /*
+     * Initial stock price.
+     */
+    var INITIAL_PRICE = 375;
+
+    var stockChart = null;
+    var stockData = [];
+    var updateTimer = null;
+    var updateIndex = 0;
+
+    /**
+     * Returns a random number between the given values.
+     */
+    function randomBetween(minimum, maximum) {
+        return minimum + Math.random() * (maximum - minimum);
+    }
+
+    /**
+     * Rounds the given value to two decimal places.
+     */
+    function correctFloat(value) {
+        return Number(value.toFixed(2));
+    }
+
+    /**
+     * Returns the timestamp representing the beginning of the current minute.
+     */
+    function getCurrentMinute() {
+        return Math.floor(Date.now() / ONE_MINUTE_MS) * ONE_MINUTE_MS;
+    }
+
+    /**
+     * Creates one historical OHLCV candle.
+     */
+    function createHistoricalCandle(timestamp, openingPrice) {
+        var movement = randomBetween(-1.5, 1.5);
+
+        var close = correctFloat(
+            Math.max(1, openingPrice + movement)
+        );
+
+        var high = correctFloat(
+            Math.max(openingPrice, close) +
+            randomBetween(0.05, 0.7)
+        );
+
+        var low = correctFloat(
+            Math.max(
+                1,
+                Math.min(openingPrice, close) -
+                randomBetween(0.05, 0.7)
+            )
+        );
+
+        return {
+            x: new Date(timestamp),
+            open: correctFloat(openingPrice),
+            high: high,
+            low: low,
+            close: close,
+            volume: Math.round(randomBetween(1000, 5000))
+        };
+    }
+
+    /**
+     * Creates the initial local stock data.
+     */
+    function createInitialLocalData() {
+        var currentMinute = getCurrentMinute();
+
+        var startingTime =
+            currentMinute -
+            (INITIAL_CANDLE_COUNT - 1) * ONE_MINUTE_MS;
+
+        var price = INITIAL_PRICE;
+
+        stockData = [];
+
+        for (
+            var index = 0;
+            index < INITIAL_CANDLE_COUNT;
+            index++
+        ) {
+            var timestamp =
+                startingTime + index * ONE_MINUTE_MS;
+
+            var candle =
+                createHistoricalCandle(timestamp, price);
+
+            stockData.push(candle);
+            price = candle.close;
+        }
+    }
+
+    /**
+     * Returns the StockSeries instance that exposes
+     * setData and addPoint.
+     */
+    function getCandleSeries() {
+        if (
+            stockChart &&
+            stockChart.series &&
+            stockChart.series.length &&
+            typeof stockChart.series[0].setData === 'function' &&
+            typeof stockChart.series[0].addPoint === 'function'
+        ) {
+            return stockChart.series[0];
+        }
+
+        return null;
+    }
+
+    /**
+     * Creates an updated version of the currently forming candle.
+     */
+    function createUpdatedCandle(currentCandle) {
+        var movement = correctFloat(
+            randomBetween(-1.5, 1.5)
+        );
+
+        var newClose = correctFloat(
+            Math.max(
+                1,
+                currentCandle.close + movement
+            )
+        );
+
+        return {
+            x: currentCandle.x,
+            open: currentCandle.open,
+            high: correctFloat(
+                Math.max(
+                    currentCandle.high,
+                    newClose
+                )
+            ),
+            low: correctFloat(
+                Math.min(
+                    currentCandle.low,
+                    newClose
+                )
+            ),
+            close: newClose,
+            volume:
+                currentCandle.volume +
+                Math.round(randomBetween(10, 100))
+        };
+    }
+
+    /**
+     * Creates a new candle using the previous candle's close value.
+     */
+    function createNewCandle(previousCandle) {
+        var openingPrice = previousCandle.close;
+
+        return {
+            x: new Date(
+                previousCandle.x.getTime() +
+                ONE_MINUTE_MS
+            ),
+            open: openingPrice,
+            high: openingPrice,
+            low: openingPrice,
+            close: openingPrice,
+            volume: Math.round(
+                randomBetween(1000, 5000)
+            )
+        };
+    }
+
+    /**
+     * Updates the currently forming candle.
+     */
+    function updateCurrentPoint(candle) {
+        var series = getCandleSeries();
+
+        if (!series) {
+            return;
+        }
+
+        series.setData(
+            candle,
+            UPDATE_ANIMATION_DURATION
+        );
+    }
+
+    /**
+     * Appends a new candle.
+     */
+    function addNewPoint(candle) {
+        var series = getCandleSeries();
+
+        if (!series) {
+            return;
+        }
+
+        series.addPoint(
+            candle,
+            ADD_ANIMATION_DURATION
+        );
+    }
+
+    /**
+     * Updates the forming candle or appends a new candle.
+     */
+    function processDynamicUpdate() {
+        if (!stockData.length) {
+            return;
+        }
+
+        var lastIndex = stockData.length - 1;
+        var currentCandle = stockData[lastIndex];
+
+        var shouldAddNewCandle =
+            updateIndex > 0 &&
+            updateIndex % UPDATES_PER_CANDLE === 0;
+
+        if (shouldAddNewCandle) {
+            var newCandle =
+                createNewCandle(currentCandle);
+
+            stockData.push(newCandle);
+            addNewPoint(newCandle);
+        } else {
+            var updatedCandle =
+                createUpdatedCandle(currentCandle);
+
+            stockData[lastIndex] = updatedCandle;
+            updateCurrentPoint(updatedCandle);
+        }
+
+        updateIndex++;
+    }
+
+    /**
+     * Starts the live update timer.
+     */
+    function startDynamicUpdates() {
+        if (updateTimer !== null) {
+            return;
+        }
+
+        updateTimer = window.setInterval(
+            processDynamicUpdate,
+            UPDATE_INTERVAL_MS
+        );
+    }
+
+    /**
+     * Stops the live update timer.
+     */
+    function stopDynamicUpdates() {
+        if (updateTimer !== null) {
+            window.clearInterval(updateTimer);
+            updateTimer = null;
+        }
+    }
+
+    /**
+     * Configures the Stock Chart before rendering.
+     */
+    function stockLoad(args) {
+        stockChart = args.stockChart;
+
+        stockChart.chartArea = {
+            border: {
+                width: 0
+            }
+        };
+
+        stockChart.primaryXAxis = {
+            valueType: 'DateTime',
+            labelFormat: 'HH:mm'
+        };
+
+        stockChart.primaryYAxis = {
+            labelPosition: 'Outside'
+        };
+
+        stockChart.series[0].dataSource = stockData;
+
+        stockChart.series[0].lastValueLabel = {
+            enable: true,
+            background: '#e74c3d',
+            dashArray: '3,2',
+            lineWidth: 1,
+            font: {
+                color: '#ffffff',
+                size: '11px'
+            }
+        };
+    }
+
+    /**
+     * Starts live updates after the Stock Chart is rendered.
+     */
+    function stockLoaded(args) {
+        stockChart = args.stockChart;
+
+        if (!stockChart) {
+            var chartElement =
+                document.getElementById('container');
+
+            if (
+                chartElement &&
+                chartElement.ej2_instances &&
+                chartElement.ej2_instances.length
+            ) {
+                stockChart = chartElement.ej2_instances[0];
+            }
+        }
+
+        startDynamicUpdates();
+    }
+
+    createInitialLocalData();
+
+    window.addEventListener(
+        'beforeunload',
+        stopDynamicUpdates
+    );
+</script>
