@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion ASP.NET Core Pivot Table | Syncfusion
 description: Explore ASP.NET Core Pivot Table features, data analysis, data sources, layouts, exporting, performance, accessibility, and AI capabilities.
-control: Pivot Table
+control: Index
 platform: ej2-asp-core-mvc
 documentation: ug
 publishingplatform: ##Platform_Name##
