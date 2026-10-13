@@ -1,0 +1,95 @@
+@{
+    var border = new
+    {
+        color = "black",
+        dashArray = "2",
+        width = 2
+    };
+
+    var connectorLineStyle = new
+    {
+        color = "black",
+        width = 2
+    };
+
+    var smartLabelSettings = new
+    {
+        background = "#4f4f4f",
+        border = border,
+        connectorLineStyle = connectorLineStyle,
+        pointerShape = "Arrow",
+        offset = 0.5
+    };
+}
+
+<ejs-chart id="container" title="Chart Title">
+    <e-chart-tooltipsettings enable="true">
+    </e-chart-tooltipsettings>
+
+    <e-chart-legendsettings visible="true">
+    </e-chart-legendsettings>
+
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category">
+    </e-chart-primaryxaxis>
+
+    <e-chart-primaryyaxis visible="false">
+    </e-chart-primaryyaxis>
+
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataA" xName="x" yName="y" name="Category A" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn" fill="#254061" columnWidth="0.6">
+            <e-series-marker>
+                <e-series-datalabel visible="true" name="text" fill="Transparent" labelIntersectAction="@Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically" smartLabelSettings="smartLabelSettings">
+                </e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.dataB" xName="x" yName="y" name="Category B" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn" fill="#376092" columnWidth="0.6">
+            <e-series-marker>
+                <e-series-datalabel visible="true" name="text" fill="Transparent" labelIntersectAction="@Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically" smartLabelSettings="smartLabelSettings">
+                </e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.dataC" xName="x" yName="y" name="Category C" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn" fill="#4f81bd" columnWidth="0.6">
+            <e-series-marker>
+                <e-series-datalabel visible="true" name="text" fill="Transparent" labelIntersectAction="@Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically" smartLabelSettings="smartLabelSettings">
+                </e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.dataD" xName="x" yName="y" name="Category D" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn" fill="CornflowerBlue" columnWidth="0.6">
+            <e-series-marker>
+                <e-series-datalabel visible="true" name="text" fill="Transparent" labelIntersectAction="@Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically" smartLabelSettings="smartLabelSettings">
+                </e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.dataE" xName="x" yName="y" name="Category E" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn" fill="LightBlue" columnWidth="0.6">
+            <e-series-marker>
+                <e-series-datalabel visible="true" name="text" fill="Transparent" labelIntersectAction="@Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically" smartLabelSettings="smartLabelSettings">
+                </e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.dataF" xName="x" yName="y" name="Category F" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn" fill="LightSteelBlue" columnWidth="0.6">
+            <e-series-marker>
+                <e-series-datalabel visible="true" name="text" fill="Transparent" labelIntersectAction="@Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically" smartLabelSettings="smartLabelSettings">
+                </e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.dataG" xName="x" yName="y" name="Category G" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn" fill="Moccasin" columnWidth="0.6">
+            <e-series-marker>
+                <e-series-datalabel visible="true" name="text" fill="Transparent" labelIntersectAction="@Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically" smartLabelSettings="smartLabelSettings">
+                </e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.dataH" xName="x" yName="y" name="Category H" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn" fill="LightGrey" columnWidth="0.6">
+            <e-series-marker>
+                <e-series-datalabel visible="true" name="text" fill="Transparent" labelIntersectAction="@Syncfusion.EJ2.Charts.DataLabelIntersectAction.RelocateVertically" smartLabelSettings="smartLabelSettings">
+                </e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

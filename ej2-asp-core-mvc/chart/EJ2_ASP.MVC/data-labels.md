@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Labels in ##Platform_Name## Chart | Syncfusion
-description: Learn here all about Data Labels in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+description: Learn here how to use Data Labels in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Labels
 publishingplatform: ##Platform_Name##
@@ -268,6 +268,50 @@ Data label for the chart can be formatted using [`Format`](https://help.syncfusi
 
 
 N> `Rx` and `Ry` properties requires `Border` values not to be null.
+
+### Handling Overlapping Data Labels
+
+Use the `labelIntersectAction` property to specify how overlapping data labels are handled.
+
+The available options are:
+
+- `None` - Displays all data labels even when they overlap.
+- `Hide` - Hides overlapping data labels.
+- `Rotate90` - Rotates overlapping data labels by 90 degrees.
+- `RelocateVertically` - Relocates overlapping data labels vertically.
+- `RelocateHorizontally` - Relocates overlapping data labels horizontally.
+
+The `RelocateVertically` and `RelocateHorizontally` options are supported only for the following series types:
+
+- `StackingColumn`
+- `StackingColumn100`
+- `StackingBar`
+- `StackingBar100`
+
+These relocation modes enable the Smart Data Label feature, which improves readability by relocating overlapping data labels and connecting them to their corresponding data points using connector lines. Use the `smartLabelSettings` property to customize relocated labels through the `background`, `pointerShape`, `border`, `connectorLineStyle`, and `offset` settings. The `offset` property is applicable only when `labelIntersectAction` is set to `RelocateVertically`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/datalabels/smart-data-label/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Smart-data-label.cs" %}
+{% include code-snippet/chart/datalabels/smart-data-label/smart-data-label.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/datalabels/smart-data-label/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Smart-data-label.cs" %}
+{% include code-snippet/chart/datalabels/smart-data-label/smart-data-label.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Customizing Specific Point
 
