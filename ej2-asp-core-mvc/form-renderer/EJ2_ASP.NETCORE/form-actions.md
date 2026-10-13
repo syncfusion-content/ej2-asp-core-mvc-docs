@@ -53,84 +53,14 @@ When the user clicks the submit button, the renderer validates the form. If vali
 
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a submit button. When the user clicks **Submit**, the `submit` event is raised with the form data and the validation status:
 
-```cshtml
-@page
-@model EJ2CoreSampleBrowser.Pages.FormRenderer.DefaultModel
-
-<div id="form-control control-wrapper">
-    <ejs-form-renderer id="form-renderer-control" schema="@Model.FormSchema"
-                       submit="onSubmit"></ejs-form-renderer>
-</div>
-
-<script>
-    function onSubmit(args) {
-        // args.data    -> { emailAddress: '...', password: '...', rememberMe: true }
-        // args.isValid -> true when every required field passes validation
-        console.log(args);
-    }
-</script>
-```
-
-```csharp
-
-public class DefaultModel : PageModel
-    {
-        public Schema FormSchema { get; set; }
-        public void OnGet()
-        {
-            FormSchema = new Schema
-            {
-                Version = "0.1.0",
-                Properties = new Dictionary<string, BaseProperty>
-                {
-                    ["emailAddress"] = new TextboxProperty { Id = "t1", Name = "emailAddress", Type = "string", Label = "Email Address", TextboxType = "email", Required = true, Widget = "textbox" },
-                    ["password"] = new TextboxProperty { Id = "t2", Name = "password", Type = "string", Label = "Password", TextboxType = "password", Required = true, MinLength = 6, Widget = "textbox" },
-                    ["rememberMe"] = new CheckboxProperty { Id = "c1", Name = "rememberMe", Type = "boolean", Label = "Remember Me", Widget = "checkbox" },
-                    ["submit"] = new SubmitButtonProperty { Id = "s1", Name = "submit", Type = "button", Label = "Submit", ButtonType = "submit", Widget = "button", Style = "primary", Disabled = false }
-                },
-                Layout = new List<LayoutNode>
-                {
-                    new LayoutNode { Type="field", PropertyId="emailAddress" },
-                    new LayoutNode { Type="field", PropertyId="password" },
-                    new LayoutNode { Type="field", PropertyId="rememberMe" },
-                    new LayoutNode { Type="field", PropertyId="submit" }
-                },
-                Settings = new SchemaSettings { Name = "Login Form" }
-            };
-        }
-    }
-    public abstract class BaseProperty
-    {
-        [JsonProperty("id")] public string Id { get; set; }
-        [JsonProperty("name")] public string Name { get; set; }
-        [JsonProperty("type")] public string Type { get; set; }
-        [JsonProperty("label")] public string Label { get; set; }
-        [JsonProperty("widget")] public string Widget { get; set; }
-        [JsonProperty("size")] public string Size { get; set; }
-    }
-    public class TextboxProperty : BaseProperty
-    {
-        [JsonProperty("textboxType")] public string TextboxType { get; set; }
-        [JsonProperty("required")] public bool Required { get; set; }
-        [JsonProperty("minLength")] public int? MinLength { get; set; }
-    }
-    public class CheckboxProperty : BaseProperty { }
-    public class SubmitButtonProperty : BaseProperty
-    {
-        [JsonProperty("buttonType")] public string ButtonType { get; set; }
-        [JsonProperty("style")] public string Style { get; set; }
-        [JsonProperty("disabled")] public bool Disabled { get; set; }
-    }
-    public class Schema
-    {
-        [JsonProperty("version")] public string Version { get; set; }
-        [JsonProperty("properties")] public Dictionary<string, BaseProperty> Properties { get; set; }
-        [JsonProperty("layout")] public List<LayoutNode> Layout { get; set; }
-        [JsonProperty("settings")] public SchemaSettings Settings { get; set; }
-    }
-    public class SchemaSettings { [JsonProperty("name")] public string Name { get; set; } }
-    public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/submit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/submit/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 > The `submit` handler is wired to the Tag Helper through the `submit="onSubmit"` attribute. The handler receives the same `data` and `isValid` payload that the JavaScript control instance receives, so you can perform any server-side round trip from a normal `<form>` post or an AJAX call from the script block.
 
@@ -156,76 +86,14 @@ The `reset` button does not raise an event. Clicking it triggers the browser's n
 
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a reset button. When the user clicks **Reset**, every field is restored to its initial state:
 
-```cshtml
-@page
-@model EJ2CoreSampleBrowser.Pages.FormRenderer.DefaultModel
-
-<div id="form-control control-wrapper">
-    <ejs-form-renderer id="form-renderer-control" schema="@Model.FormSchema"></ejs-form-renderer>
-</div>
-```
-
-```csharp
-public class DefaultModel : PageModel
-    {
-        public Schema FormSchema { get; set; }
-
-        public void OnGet()
-        {
-            FormSchema = new Schema
-            {
-                Version = "0.1.0",
-                Properties = new Dictionary<string, BaseProperty>
-                {
-                    ["emailAddress"] = new TextboxProperty { Id = "t1", Name = "emailAddress", Type = "string", Label = "Email Address", TextboxType = "email", Required = true, Widget = "textbox" },
-                    ["password"] = new TextboxProperty { Id = "t2", Name = "password", Type = "string", Label = "Password", TextboxType = "password", Required = true, MinLength = 6, Widget = "textbox" },
-                    ["rememberMe"] = new CheckboxProperty { Id = "c1", Name = "rememberMe", Type = "boolean", Label = "Remember Me", Widget = "checkbox" },
-                    ["submit"] = new SubmitButtonProperty { Id = "s1", Name = "submit", Type = "button", Label = "Submit", ButtonType = "submit", Widget = "button", Style = "primary", Disabled = false }
-                },
-                Layout = new List<LayoutNode>
-                {
-                    new LayoutNode { Type="field", PropertyId="emailAddress" },
-                    new LayoutNode { Type="field", PropertyId="password" },
-                    new LayoutNode { Type="field", PropertyId="rememberMe" },
-                    new LayoutNode { Type="field", PropertyId="submit" }
-                },
-                Settings = new SchemaSettings { Name = "Login Form" }
-            };
-        }
-    }
-    public abstract class BaseProperty
-    {
-        [JsonProperty("id")] public string Id { get; set; }
-        [JsonProperty("name")] public string Name { get; set; }
-        [JsonProperty("type")] public string Type { get; set; }
-        [JsonProperty("label")] public string Label { get; set; }
-        [JsonProperty("widget")] public string Widget { get; set; }
-        [JsonProperty("size")] public string Size { get; set; }
-    }
-    public class TextboxProperty : BaseProperty
-    {
-        [JsonProperty("textboxType")] public string TextboxType { get; set; }
-        [JsonProperty("required")] public bool Required { get; set; }
-        [JsonProperty("minLength")] public int? MinLength { get; set; }
-    }
-    public class CheckboxProperty : BaseProperty { }
-    public class SubmitButtonProperty : BaseProperty
-    {
-        [JsonProperty("buttonType")] public string ButtonType { get; set; }
-        [JsonProperty("style")] public string Style { get; set; }
-        [JsonProperty("disabled")] public bool Disabled { get; set; }
-    }
-    public class Schema
-    {
-        [JsonProperty("version")] public string Version { get; set; }
-        [JsonProperty("properties")] public Dictionary<string, BaseProperty> Properties { get; set; }
-        [JsonProperty("layout")] public List<LayoutNode> Layout { get; set; }
-        [JsonProperty("settings")] public SchemaSettings Settings { get; set; }
-    }
-    public class SchemaSettings { [JsonProperty("name")] public string Name { get; set; } }
-    public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
-
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/reset/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/reset/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding custom click actions
 
@@ -255,85 +123,14 @@ When the user clicks a `buttonType: "button"` button, the renderer raises the `b
 
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a custom click button. When the user clicks **Cancel**, the `buttonClick` event is raised with the button's name, label, and the original click event:
 
-```cshtml
-@page
-@model EJ2CoreSampleBrowser.Pages.FormRenderer.DefaultModel
-
-<div id="form-control control-wrapper">
-    <ejs-form-renderer id="form-renderer-control" schema="@Model.FormSchema"
-                       button-click="onButtonClick"></ejs-form-renderer>
-</div>
-
-<script>
-    function onButtonClick(args) {
-        // args.fieldName -> 'defaultFormcancel'
-        // args.label     -> 'Cancel'
-        // args.event     -> the original click event
-        console.log(args);
-    }
-</script>
-```
-
-```csharp
-public class DefaultModel : PageModel
-    {
-        public Schema FormSchema { get; set; }
-        public void OnGet()
-        {
-            FormSchema = new Schema
-            {
-                Version = "0.1.0",
-                Properties = new Dictionary<string, BaseProperty>
-                {
-                    ["emailAddress"] = new TextboxProperty { Id = "t1", Name = "emailAddress", Type = "string", Label = "Email Address", TextboxType = "email", Required = true, Widget = "textbox" },
-                    ["password"] = new TextboxProperty { Id = "t2", Name = "password", Type = "string", Label = "Password", TextboxType = "password", Required = true, MinLength = 6, Widget = "textbox" },
-                    ["rememberMe"] = new CheckboxProperty { Id = "c1", Name = "rememberMe", Type = "boolean", Label = "Remember Me", Widget = "checkbox" },
-                    ["submit"] = new SubmitButtonProperty { Id = "s1", Name = "submit", Type = "button", Label = "Submit", ButtonType = "submit", Widget = "button", Style = "primary", Disabled = false }
-                },
-                Layout = new List<LayoutNode>
-                {
-                    new LayoutNode { Type="field", PropertyId="emailAddress" },
-                    new LayoutNode { Type="field", PropertyId="password" },
-                    new LayoutNode { Type="field", PropertyId="rememberMe" },
-                    new LayoutNode { Type="field", PropertyId="submit" }
-                },
-                Settings = new SchemaSettings { Name = "Login Form" }
-            };
-        }
-    }
-    public abstract class BaseProperty
-    {
-        [JsonProperty("id")] public string Id { get; set; }
-        [JsonProperty("name")] public string Name { get; set; }
-        [JsonProperty("type")] public string Type { get; set; }
-        [JsonProperty("label")] public string Label { get; set; }
-        [JsonProperty("widget")] public string Widget { get; set; }
-        [JsonProperty("size")] public string Size { get; set; }
-    }
-    public class TextboxProperty : BaseProperty
-    {
-        [JsonProperty("textboxType")] public string TextboxType { get; set; }
-        [JsonProperty("required")] public bool Required { get; set; }
-        [JsonProperty("minLength")] public int? MinLength { get; set; }
-    }
-    public class CheckboxProperty : BaseProperty { }
-    public class SubmitButtonProperty : BaseProperty
-    {
-        [JsonProperty("buttonType")] public string ButtonType { get; set; }
-        [JsonProperty("style")] public string Style { get; set; }
-        [JsonProperty("disabled")] public bool Disabled { get; set; }
-    }
-    public class Schema
-    {
-        [JsonProperty("version")] public string Version { get; set; }
-        [JsonProperty("properties")] public Dictionary<string, BaseProperty> Properties { get; set; }
-        [JsonProperty("layout")] public List<LayoutNode> Layout { get; set; }
-        [JsonProperty("settings")] public SchemaSettings Settings { get; set; }
-    }
-    public class SchemaSettings { [JsonProperty("name")] public string Name { get; set; } }
-    public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
-
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/customClick/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/customClick/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Detecting the field change
 
@@ -356,86 +153,14 @@ When the value of a field changes, the renderer:
 
 The following example renders a Form Renderer with textbox and checkbox fields. Whenever the value of any field changes, the `change` event is raised with the changed field's name, label, and new value:
 
-```cshtml
-@page
-@model EJ2CoreSampleBrowser.Pages.FormRenderer.DefaultModel
-
-<div id="form-control control-wrapper">
-    <ejs-form-renderer id="form-renderer-control" schema="@Model.FormSchema"
-                       change="onChange"></ejs-form-renderer>
-</div>
-
-<script>
-    function onChange(args) {
-        // args.fieldName -> e.g. 'emailAddress', 'rememberMe'
-        // args.label     -> the form field's display label
-        // args.value     -> the new value
-        console.log(args);
-    }
-</script>
-```
-
-```csharp
-
-public class DefaultModel : PageModel
-    {
-        public Schema FormSchema { get; set; }
-        public void OnGet()
-        {
-            FormSchema = new Schema
-            {
-                Version = "0.1.0",
-                Properties = new Dictionary<string, BaseProperty>
-                {
-                    ["emailAddress"] = new TextboxProperty { Id = "t1", Name = "emailAddress", Type = "string", Label = "Email Address", TextboxType = "email", Required = true, Widget = "textbox" },
-                    ["password"] = new TextboxProperty { Id = "t2", Name = "password", Type = "string", Label = "Password", TextboxType = "password", Required = true, MinLength = 6, Widget = "textbox" },
-                    ["rememberMe"] = new CheckboxProperty { Id = "c1", Name = "rememberMe", Type = "boolean", Label = "Remember Me", Widget = "checkbox" },
-                    ["submit"] = new SubmitButtonProperty { Id = "s1", Name = "submit", Type = "button", Label = "Submit", ButtonType = "submit", Widget = "button", Style = "primary", Disabled = false }
-                },
-                Layout = new List<LayoutNode>
-                {
-                    new LayoutNode { Type="field", PropertyId="emailAddress" },
-                    new LayoutNode { Type="field", PropertyId="password" },
-                    new LayoutNode { Type="field", PropertyId="rememberMe" },
-                    new LayoutNode { Type="field", PropertyId="submit" }
-                },
-                Settings = new SchemaSettings { Name = "Login Form" }
-            };
-        }
-    }
-    public abstract class BaseProperty
-    {
-        [JsonProperty("id")] public string Id { get; set; }
-        [JsonProperty("name")] public string Name { get; set; }
-        [JsonProperty("type")] public string Type { get; set; }
-        [JsonProperty("label")] public string Label { get; set; }
-        [JsonProperty("widget")] public string Widget { get; set; }
-        [JsonProperty("size")] public string Size { get; set; }
-    }
-    public class TextboxProperty : BaseProperty
-    {
-        [JsonProperty("textboxType")] public string TextboxType { get; set; }
-        [JsonProperty("required")] public bool Required { get; set; }
-        [JsonProperty("minLength")] public int? MinLength { get; set; }
-    }
-    public class CheckboxProperty : BaseProperty { }
-    public class SubmitButtonProperty : BaseProperty
-    {
-        [JsonProperty("buttonType")] public string ButtonType { get; set; }
-        [JsonProperty("style")] public string Style { get; set; }
-        [JsonProperty("disabled")] public bool Disabled { get; set; }
-    }
-    public class Schema
-    {
-        [JsonProperty("version")] public string Version { get; set; }
-        [JsonProperty("properties")] public Dictionary<string, BaseProperty> Properties { get; set; }
-        [JsonProperty("layout")] public List<LayoutNode> Layout { get; set; }
-        [JsonProperty("settings")] public SchemaSettings Settings { get; set; }
-    }
-    public class SchemaSettings { [JsonProperty("name")] public string Name { get; set; } }
-    public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
-
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/change/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/change/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Customizing the form once the control is rendered
 
@@ -443,81 +168,11 @@ The `created` event fires **once**, after the form has finished rendering and ev
 
 The following example renders a Form Renderer with email, password, and remember-me fields. Once the form has finished rendering, the `created` event is raised with an empty payload:
 
-```cshtml
-@page
-@model EJ2CoreSampleBrowser.Pages.FormRenderer.DefaultModel
-
-<div id="form-control control-wrapper">
-    <ejs-form-renderer id="form-renderer-control" schema="@Model.FormSchema"
-                       created="onCreated"></ejs-form-renderer>
-</div>
-
-<script>
-    function onCreated() {
-        // The form and every input are now in the DOM.
-        // Use this hook to attach third-party masks, fetch child EJ2
-        // instances via getComponent, or wire up external toolbar buttons.
-        console.log("Form is created");
-    }
-</script>
-```
-
-```csharp
-public class DefaultModel : PageModel
-    {
-        public Schema FormSchema { get; set; }
-        public void OnGet()
-        {
-            FormSchema = new Schema
-            {
-                Version = "0.1.0",
-                Properties = new Dictionary<string, BaseProperty>
-                {
-                    ["emailAddress"] = new TextboxProperty { Id = "t1", Name = "emailAddress", Type = "string", Label = "Email Address", TextboxType = "email", Required = true, Widget = "textbox" },
-                    ["password"] = new TextboxProperty { Id = "t2", Name = "password", Type = "string", Label = "Password", TextboxType = "password", Required = true, MinLength = 6, Widget = "textbox" },
-                    ["rememberMe"] = new CheckboxProperty { Id = "c1", Name = "rememberMe", Type = "boolean", Label = "Remember Me", Widget = "checkbox" },
-                    ["submit"] = new SubmitButtonProperty { Id = "s1", Name = "submit", Type = "button", Label = "Submit", ButtonType = "submit", Widget = "button", Style = "primary", Disabled = false }
-                },
-                Layout = new List<LayoutNode>
-                {
-                    new LayoutNode { Type="field", PropertyId="emailAddress" },
-                    new LayoutNode { Type="field", PropertyId="password" },
-                    new LayoutNode { Type="field", PropertyId="rememberMe" },
-                    new LayoutNode { Type="field", PropertyId="submit" }
-                },
-                Settings = new SchemaSettings { Name = "Login Form" }
-            };
-        }
-    }
-    public abstract class BaseProperty
-    {
-        [JsonProperty("id")] public string Id { get; set; }
-        [JsonProperty("name")] public string Name { get; set; }
-        [JsonProperty("type")] public string Type { get; set; }
-        [JsonProperty("label")] public string Label { get; set; }
-        [JsonProperty("widget")] public string Widget { get; set; }
-        [JsonProperty("size")] public string Size { get; set; }
-    }
-    public class TextboxProperty : BaseProperty
-    {
-        [JsonProperty("textboxType")] public string TextboxType { get; set; }
-        [JsonProperty("required")] public bool Required { get; set; }
-        [JsonProperty("minLength")] public int? MinLength { get; set; }
-    }
-    public class CheckboxProperty : BaseProperty { }
-    public class SubmitButtonProperty : BaseProperty
-    {
-        [JsonProperty("buttonType")] public string ButtonType { get; set; }
-        [JsonProperty("style")] public string Style { get; set; }
-        [JsonProperty("disabled")] public bool Disabled { get; set; }
-    }
-    public class Schema
-    {
-        [JsonProperty("version")] public string Version { get; set; }
-        [JsonProperty("properties")] public Dictionary<string, BaseProperty> Properties { get; set; }
-        [JsonProperty("layout")] public List<LayoutNode> Layout { get; set; }
-        [JsonProperty("settings")] public SchemaSettings Settings { get; set; }
-    }
-    public class SchemaSettings { [JsonProperty("name")] public string Name { get; set; } }
-    public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/created/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/created/controller.cs %}
+{% endhighlight %}
+{% endtabs %}

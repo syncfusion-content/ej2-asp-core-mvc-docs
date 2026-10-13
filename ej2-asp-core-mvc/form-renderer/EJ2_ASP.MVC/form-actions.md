@@ -52,31 +52,14 @@ When the user clicks the submit button, the renderer validates the form. If vali
 
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a submit button. When the user clicks **Submit**, the `submit` event is raised with the form data and the validation status:
 
-```cshtml
-@using Syncfusion.EJ2
-@using Syncfusion.EJ2.FormRenderer
-@using EJ2MVCSampleBrowser.Models
-
-@section ControlsSection {
-
-    <div class="control-section">
-        <div class="col-lg-8">
-            @Html.EJS().FormRenderer("form-renderer-submit")
-                .Schema((ViewData["formSchema"]))
-                .Submit("onSubmit")
-                .Render()
-        </div>
-    </div>
-
-    <script>
-        function onSubmit(args) {
-            // args.data  -> Record<string, FieldDataType>
-            // args.isValid -> boolean
-            console.log(args);
-        }
-    </script>
-}
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/submit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/submit/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ### Server-side schema
 
@@ -179,22 +162,14 @@ The `reset` button does not raise an event. Clicking it triggers the browser's n
 
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a reset button. When the user clicks **Reset**, every field is restored to its initial state:
 
-```cshtml
-@using Syncfusion.EJ2
-@using Syncfusion.EJ2.FormRenderer
-@using EJ2MVCSampleBrowser.Models
-
-@section ControlsSection {
-
-    <div class="control-section">
-        <div class="col-lg-8">
-            @Html.EJS().FormRenderer("form-renderer-reset")
-                .Schema((ViewData["formSchema"]))
-                .Render()
-        </div>
-    </div>
-}
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/reset/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/reset/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding custom click actions
 
@@ -223,32 +198,14 @@ When the user clicks a `buttonType: "button"` button, the renderer raises the `b
 
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a custom click button. When the user clicks **Cancel**, the `buttonClick` event is raised with the button's name, label, and the original click event:
 
-```cshtml
-@using Syncfusion.EJ2
-@using Syncfusion.EJ2.FormRenderer
-@using EJ2MVCSampleBrowser.Models
-
-@section ControlsSection {
-
-    <div class="control-section">
-        <div class="col-lg-8">
-            @Html.EJS().FormRenderer("form-renderer-button-click")
-                .Schema((ViewData["formSchema"]))
-                .ButtonClick("onButtonClick")
-                .Render()
-        </div>
-    </div>
-
-    <script>
-        function onButtonClick(args) {
-            // args.fieldName -> string
-            // args.label     -> string
-            // args.event     -> original button click event
-            console.log(args);
-        }
-    </script>
-}
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/customClick/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/customClick/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Detecting the field change
 
@@ -271,32 +228,14 @@ When the value of a field changes, the renderer:
 
 The following example renders a Form Renderer with textbox and checkbox fields. Whenever the value of any field changes, the `change` event is raised with the changed field's name, label, and new value:
 
-```cshtml
-@using Syncfusion.EJ2
-@using Syncfusion.EJ2.FormRenderer
-@using EJ2MVCSampleBrowser.Models
-
-@section ControlsSection {
-
-    <div class="control-section">
-        <div class="col-lg-8">
-            @Html.EJS().FormRenderer("form-renderer-change")
-                .Schema((ViewData["formSchema"]))
-                .Change("onChange")
-                .Render()
-        </div>
-    </div>
-
-    <script>
-        function onChange(args) {
-            // args.fieldName -> string
-            // args.label     -> string
-            // args.value     -> FieldDataType
-            console.log(args);
-        }
-    </script>
-}
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/change/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/change/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Customizing the form once the control is rendered
 
@@ -304,33 +243,14 @@ The `created` event fires **once**, after the form has finished rendering and ev
 
 The following example renders a Form Renderer with email, password, and remember-me fields. Once the form has finished rendering, the `created` event is raised with an empty payload:
 
-```cshtml
-@using Syncfusion.EJ2
-@using Syncfusion.EJ2.FormRenderer
-@using EJ2MVCSampleBrowser.Models
-
-@section ControlsSection {
-
-    <div class="control-section">
-        <div class="col-lg-8">
-            @Html.EJS().FormRenderer("form-renderer-created")
-                .Schema((ViewData["formSchema"]))
-                .Created("onCreated")
-                .Render()
-        </div>
-    </div>
-
-    <script>
-        function onCreated() {
-            // Fires once after the form has finished rendering.
-            // Useful for getComponent(), masks, toolbar wiring, etc.
-            var formRenderer = document.getElementById('form-renderer-created')
-                .ej2_instances[0];
-            console.log('Form is created', formRenderer);
-        }
-    </script>
-}
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-renderer/created/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/form-renderer/created/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Wiring up multiple events
 

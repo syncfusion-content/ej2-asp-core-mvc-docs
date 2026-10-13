@@ -1,0 +1,63 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.FormRenderer
+
+<div>
+    @Html.EJS().FormRenderer("form-renderer-control").CustomWidgetSettings(settings =>
+    {
+        settings.TemplateId("emailTemplate").Template("#inputTemplate").Add();
+        settings.FieldName("password").Template("#inputTemplate").Add();
+
+    }).Schema(ViewBag.FormSchema).Created("onFormRendererCreated").Render()
+</div>
+
+<script id="inputTemplate" type="text/x-template">
+    <input class="e-input"
+            id="${fieldData.id}"
+            name="${fieldData.name}"
+            type="text"
+            placeholder="${fieldData.placeholder}"
+            data-field-id="${fieldData.id}"/>
+</script>
+<script>
+    function onFormRendererCreated() {
+        var formRendererInstance = ej.base.getComponent(
+            document.getElementById('form-renderer-control'),
+            'form-renderer'
+        );
+        if (!formRendererInstance) {
+            console.error('FormRenderer instance not found!');
+            return;
+        }
+        var rootEl = document.getElementById('form-renderer-control');
+
+        rootEl.addEventListener('change', function (e) {
+            var inputEl = e.target;
+            var parentEl = inputEl.closest('[data-field-id]');
+            if (!parentEl) return;
+
+            var fieldId = parentEl.getAttribute('data-field-id');
+            var value = inputEl.type === 'checkbox' ? inputEl.checked : inputEl.value;
+            formRendererInstance.setFieldValue(fieldId, value);
+        });
+
+        rootEl.addEventListener('input', function (e) {
+            var inputEl = e.target;
+            var parentEl = inputEl.closest('[data-field-id]');
+            if (!parentEl) return;
+
+            var fieldId = parentEl.getAttribute('data-field-id');
+            var value = inputEl.type === 'checkbox' ? inputEl.checked : inputEl.value;
+            formRendererInstance.setFieldValue(fieldId, value);
+        });
+
+        rootEl.addEventListener('blur', function (e) {
+            var inputEl = e.target;
+            var parentEl = inputEl.closest('[data-field-id]');
+            if (!parentEl) return;
+            if (inputEl.type === 'checkbox') return;
+
+            var fieldId = parentEl.getAttribute('data-field-id');
+            formRendererInstance.setFieldValue(fieldId, inputEl.value);
+        }, true);
+    }
+</script>

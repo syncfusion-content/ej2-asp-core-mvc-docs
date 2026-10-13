@@ -1,0 +1,5 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.FormRenderer
+
+<ejs-form-builder id="form-builder-control" formTemplates=ViewBag.formTemplate></ejs-form-builder>

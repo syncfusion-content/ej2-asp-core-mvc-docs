@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.FormRenderer
+
+<div class="form-renderer-control">
+    @Html.EJS().FormRenderer("form-renderer-submit").OnChange("onChange").Schema(ViewBag.FormSchema).Render()
+</div>
+
+<script>
+    function onChange(args) {
+        // args.fieldName -> string
+        // args.label     -> string
+        // args.value     -> FieldDataType
+        console.log(args);
+    }
+</script>
