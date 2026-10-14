@@ -2,8 +2,9 @@
 layout: post
 title: Getting Started with ASP.NET MVC DataGrid in Replit | Syncfusion
 description: Learn how to use Replit Agent to create or edit a Syncfusion ASP.NET MVC DataGrid application and run it on a compatible Windows host.
-platform: ASP.NET MVC
-control: DataGrid
+platform: ej2-asp-core-mvc
+control: Common
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

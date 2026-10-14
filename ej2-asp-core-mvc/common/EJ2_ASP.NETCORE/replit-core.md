@@ -2,8 +2,9 @@
 layout: post
 title: Getting Started with ASP.NET Core DataGrid in Replit | Syncfusion
 description: Learn how to create an ASP.NET Core Razor Pages application in Replit and add the Syncfusion ASP.NET Core DataGrid using Replit Agent or the Shell.
-platform: ASP.NET Core
-control: DataGrid
+platform: ej2-asp-core-mvc
+control: Common
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -18,7 +19,7 @@ Both approaches create an ASP.NET Core Razor Pages application with a DataGrid.
 
 ## What is Replit?
 
-[Replit](https://replit.com) is a browser based, AI powered development environment (agentic UI builder) that lets you write, run, and deploy applications entirely in the cloud. It requires no local setup and is well suited for users who are new to software development, or who want to prototype and iterate quickly without configuring local development tools.
+[Replit](https://replit.com) is a browser based, AI powered development environment that lets you write, run, and deploy applications entirely in the cloud. It requires no local setup and is well suited for users who are new to software development, or who want to prototype and iterate quickly without configuring local development tools.
 
 ## Prerequisites
 
