@@ -19,7 +19,7 @@ Both approaches create an ASP.NET Core Razor Pages application with a DataGrid.
 
 ## What is Replit?
 
-[Replit](https://replit.com) is a browser based, AI powered development environment that lets you write, run, and deploy applications entirely in the cloud. It requires no local setup and is well suited for users who are new to software development, or who want to prototype and iterate quickly without configuring local development tools.
+[Replit](https://replit.com) is a browser based, AI powered development environment that lets you write, run, and deploy applications entirely in the cloud. It requires no local setup and is well suited for users who are new to software development or who want to prototype and iterate quickly without configuring local development tools.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Before you begin, ensure you have:
 * A Replit environment with the .NET SDK.
 * A valid [Syncfusion license key](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview), either a trial or a commercial key.
 
-## Create an Empty project in Replit
+## Create an empty project in Replit
 
 1. Sign in to [Replit](https://replit.com).
 2. Click **New** and select **Empty project**. <br/>
@@ -71,7 +71,7 @@ Example prompt:
 {% tabs %}
 {% highlight bash tabtitle="Prompt" %}
 
-Create the Syncfusion core applicaltion with data grid component with fluent2 theme. And Enable sorting, paging, filtering features.
+Create a Syncfusion ASP.NET Core application that includes a DataGrid component. Apply the Fluent 2 theme and enable sorting, paging, and filtering functionalities.
 
 {% endhighlight %}
 {% endtabs %}
@@ -99,11 +99,11 @@ Once Agent finishes generating the application code, click the **Run** button (â
 
 {% tabcontent Using Shell %}
 
-## Verify dotnet version
+## Verify the .NET version
 
-Verify the dotnet version by running `dotnet --info` in the Shell tab.
+Verify the .NET version by running `dotnet --info` in the Shell tab.
 
-If the .NET SDK is not available in your Replit workspace, use a below prompt to install desired .NET version. Here using .NET 10 version.
+If the .NET SDK is not available in your Replit workspace, use the prompt below to install the required .NET version. In this example, we use .NET 10.
 
 {% tabs %}
 {% highlight bash tabtitle="Prompt" %}

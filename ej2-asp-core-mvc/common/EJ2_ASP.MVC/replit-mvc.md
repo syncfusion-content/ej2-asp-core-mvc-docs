@@ -23,7 +23,7 @@ Before you begin, ensure you have:
 * A free or paid [Replit account](https://replit.com).
 * A configured Syncfusion NuGet package source and a valid [Syncfusion license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview), either a trial or a commercial key.
 
-## Create an Empty project in Replit
+## Create an empty project in Replit
 
 1. Sign in to [Replit](https://replit.com).
 2. Click **New** and select **Empty project**. <br/>
@@ -62,7 +62,7 @@ Example prompt:
 {% tabs %}
 {% highlight bash tabtitle="Prompt" %}
 
-Create the Syncfusion MVC applicaltion with data grid component with fluent2 theme. And Enable sorting feature.
+Create a Syncfusion ASP.NET MVC application with a DataGrid component. Apply the Fluent2 theme and enable the sorting feature.
 
 {% endhighlight %}
 {% endtabs %}
