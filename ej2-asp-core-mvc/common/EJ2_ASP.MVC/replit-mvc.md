@@ -20,7 +20,7 @@ This guide explains how to use [Replit](https://replit.com) and Replit Agent to 
 Before you begin, ensure you have:
 
 * A free or paid [Replit account](https://replit.com).
-* A configured Syncfusion NuGet package source and a valid [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview), either a trial or a commercial key.
+* A configured Syncfusion NuGet package source and a valid [Syncfusion license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview), either a trial or a commercial key.
 
 ## Create an Empty project in Replit
 
@@ -41,7 +41,7 @@ Before proceeding, click the **+** icon in the tab bar and select **Shell** from
 
 ## Install the Syncfusion ASP.NET MVC DataGrid skill
 
-In the Shell tab, run the following command to install the ASP.NET Core DataGrid [skill](https://github.com/syncfusion/aspnetmvc-ui-components-skills/tree/master/skills/syncfusion-aspnetmvc-grid):
+In the Shell tab, run the following command to install the ASP.NET MVC DataGrid [skill](https://github.com/syncfusion/aspnetmvc-ui-components-skills/tree/master/skills/syncfusion-aspnetmvc-grid):
 
 {% tabs %}
 {% highlight bash tabtitle="npm" %}
@@ -54,7 +54,7 @@ npx skills add syncfusion/aspnetmvc-ui-components-skills --skill syncfusion-aspn
 
 ## Prompt Replit Agent to create the application
 
-Once the skill is installed, Replit Agent can generate the ASP.NET Core DataGrid application from a prompt. Open the Replit Agent panel and enter a prompt such as:
+Once the skill is installed, Replit Agent can generate the ASP.NET MVC DataGrid application from a prompt. Open the Replit Agent panel and enter a prompt such as:
 
 Example prompt:
 
@@ -79,7 +79,7 @@ The agent will:
 
 ## Run the Application
 
-Once Agent finishes generating the application code, click the **Run** button (▶) at the top of the Replit workspace. The ASP.NET Core DataGrid application will be built and rendered in the preview pane, as shown below.
+Once Agent finishes generating the application code, click the **Run** button (▶) at the top of the Replit workspace. The ASP.NET MVC DataGrid application will be built and rendered in the preview pane, as shown below.
 
 ![ASP.NET MVC DataGrid rendered inside the Replit preview pane](./images/replit-mvc-agent.webp)
 
@@ -89,7 +89,7 @@ Use Replit Secrets to store sensitive information such as license keys and datab
 
 1. Click the **Secrets** icon (lock icon) in the left sidebar.
 2. Add a secret with a key and value (for example, `SYNCFUSION_LICENSE_KEY=your_key_here`).
-3. Access the value in ASP.NET Core using `Environment.GetEnvironmentVariable("SYNCFUSION_LICENSE_KEY")`.
+3. Access the value in ASP.NET MVC using `Environment.GetEnvironmentVariable("SYNCFUSION_LICENSE_KEY")`.
 
 ## Publish the Application
 
@@ -110,6 +110,6 @@ Replit allows you to publish your application to a live public URL without leavi
 
 ## See also
 
-* [Getting started with the ASP.NET MVC Grid](https://help.syncfusion.com/aspnetmvc/grid/getting-started)
-* [ASP.NET MVC Grid documentation](https://help.syncfusion.com/aspnetmvc/grid/overview)
+* [Getting started with the ASP.NET MVC Grid](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc)
+* [ASP.NET MVC Grid documentation](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/overview)
 * [Replit documentation](https://docs.replit.com/)

@@ -26,7 +26,7 @@ Before you begin, ensure you have:
 
 * A free or paid [Replit account](https://replit.com).
 * A Replit environment with the .NET SDK.
-* A valid [Syncfusion license key](https://help.syncfusion.com/document-processing/licensing/overview), either a trial or a commercial key.
+* A valid [Syncfusion license key](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview), either a trial or a commercial key.
 
 ## Create an Empty project in Replit
 
@@ -231,6 +231,39 @@ Open `Pages/Index.cshtml` and replace its contents with the following example:
 </ejs-grid>
 
 {% endhighlight %}
+
+{% highlight cs tabtitle="Index.cshtml.cs" %}
+
+namespace CoreApp.Pages;
+
+public class IndexModel : PageModel
+{
+    public void OnGet()
+    {
+
+    }
+}
+public class Order
+{
+    public Order() { }
+    public Order(int id, string customer, DateTime date, string country, double freight)
+    {
+        this.OrderID = id;
+        this.CustomerID = customer;
+        this.OrderDate = date;
+        this.ShipCountry = country;
+        this.Freight = freight;
+    }
+
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public DateTime? OrderDate { get; set; }
+    public string ShipCountry { get; set; }
+    public double? Freight { get; set; }
+}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Run the application
