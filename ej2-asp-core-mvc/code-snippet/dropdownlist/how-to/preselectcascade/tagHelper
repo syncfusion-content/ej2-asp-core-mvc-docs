@@ -16,7 +16,7 @@
 </div>
 <script type="text/javascript">
     function countrychange() {
-        // disable the state DropDownList
+        // disable the state DropDownList.
         var countryObj = document.getElementById('country').ej2_instances[0];
         var state = document.getElementById('state').ej2_instances[0];
         var city = document.getElementById('city').ej2_instances[0];
@@ -25,28 +25,28 @@
         var tempQuery = new ej.data.Query().where('CountryId', 'equal', countryObj.value);
         // set the framed query based on selected value in country DropDownList.
         state.query = tempQuery;
-        // preselect an item from filtered state DropDownList
+        // preselect an item from filtered state DropDownList.
         state.index = 0;
-        //  bind the property changes to state DropDownList
+        //  bind the property changes to state DropDownList.
         state.dataBind();
-        // preselect an item from filtered city DropDownList
+        // preselect an item from filtered city DropDownList.
         city.index = 0;
-        // disable the city DropDownList
+        // disable the city DropDownList.
         city.enabled = false;
-        // bind the property changes to City DropDownList
+        // bind the property changes to City DropDownList.
         city.dataBind();
     }
     function statechange() {
         var stateObj = document.getElementById('state').ej2_instances[0];
         var city = document.getElementById('city').ej2_instances[0];
         city.enabled = true;
-        //Query the data source based on state DropDownList selected value
+        //Query the data source based on state DropDownList selected value.
         var tempQuery = new ej.data.Query().where('StateId', 'equal', stateObj.value);
         //set the framed query based on selected value in city DropDownList.
         city.query = tempQuery;
-        //clear the existing selection
+        //clear the existing selection.
         city.text = null;
-        //bind the property change to city DropDownList
+        //bind the property change to city DropDownList.
         city.dataBind();
 
     }

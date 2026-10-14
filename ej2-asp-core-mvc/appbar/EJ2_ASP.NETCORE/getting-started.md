@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## AppBar Control
-description: Check out and learn about getting started with ##Platform_Name## AppBar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## AppBar | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## AppBar by adding the Navigations NuGet package and rendering a top app bar in a Razor Pages app.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core AppBar Control
+# Getting Started with ##Platform_Name## AppBar
 
 This section briefly explains how to include the [ASP.NET Core AppBar](https://www.syncfusion.com/aspnet-core-ui-controls/appbar) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
@@ -99,6 +99,8 @@ Add the [ASP.NET Core AppBar](https://www.syncfusion.com/aspnet-core-ui-controls
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core AppBar](https://www.syncfusion.com/aspnet-core-ui-controls/appbar) control will render in your default web browser.
 
 ![ASP.NET Core AppBar Control](images/getting_started.png)
+
+N> To use controls from other Syncfusion packages, install the corresponding NuGet packages and reference their [static web asset files](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#individual-control-script-references).
 
 ## See also
 

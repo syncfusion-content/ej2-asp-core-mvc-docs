@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hide Sidebar in ##Platform_Name## Sidebar Component
-description: Learn here all about Hide Sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Hide Sidebar in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to show or hide the Syncfusion ##Platform_Name## Sidebar when navigating between pages in your application.
 platform: ej2-asp-core-mvc
 control: Hide Sidebar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Hide Sidebar
+# Hide Sidebar in ##Platform_Name## Sidebar
 
 The following example demonstrates how to hide layout page sidebar. Initially sidebar is rendered with layout page. While navigate to another page, it hides the layout page sidebar.
 

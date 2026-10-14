@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating items in Syncfusion ##Platform_Name## Carousel Control | Syncfusion
-description: Checkout and learn about populating items in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
+title: Populating Items in ##Platform_Name## Carousel | Syncfusion
+description: Bind slides to the ##Platform_Name## Carousel via item templates or a data source, set the selected index, and show partial adjacent slides.
 platform: ej2-asp-core-mvc
 control: Populating Items
 publishingplatform: ##Platform_Name##
@@ -101,6 +101,6 @@ The following example code depicts the functionality of `partialVisible` and wit
 
 ## See also
 
-* [Customizing partial slides size](./styles-and-appearance/#customizing-partial-slides-size)
+* [Customizing partial slides size](./styles-and-appearance#customizing-partial-slides-size)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselUGSample).

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Badge Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Badge Control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Badge Control | Syncfusion
+description: Check out and learn about getting started with ##Platform_Name## Badge Control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Badge
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Badge Control
+# Getting Started with ##Platform_Name## Badge Control
 
 This section briefly explains how to include the [ASP.NET Core Badge](https://www.syncfusion.com/aspnet-core-ui-controls/badge) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

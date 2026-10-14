@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Maskedtextbox For And Model Binding in ##Platform_Name## Maskedtextbox Control | Syncfusion
-description: Learn here all about Maskedtextbox For And Model Binding in Syncfusion ##Platform_Name## Maskedtextbox component of syncfusion and more.
+title: How to bind ##Platform_Name## MaskedTextBox to a model | Syncfusion
+description: Bind Syncfusion ##Platform_Name## MaskedTextBox to a strongly typed ASP.NET MVC model using the MaskedTextBoxFor HtmlHelper extension to render model-bound inputs.
 platform: ej2-asp-core-mvc
 control: Maskedtextbox For And Model Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# MaskedTextBoxFor and Model Binding
+# How to bind ##Platform_Name## MaskedTextBox to a model
 
 This section demonstrates the Strongly typed extension support in MaskedTextBox. The view which bind with any model is called as strongly typed view. You can bind any class as model to view. You can access model properties on that view. You can use data associated with model to render controls.
 

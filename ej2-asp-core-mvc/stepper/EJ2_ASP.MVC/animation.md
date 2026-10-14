@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation with ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about Animation with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to configure animation in the Syncfusion ##Platform_Name## Stepper by customizing transition duration, delay, and animation behavior.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Animation in ##Platform_Name## Stepper control
+# Animation in ##Platform_Name## Stepper
 
 The Stepper progress state can be animated, smoothly transitioning from one step to another. You can customize the animation's [Duration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Duration) and [Delay](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Delay), by using the [Animation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Animation) property.
 

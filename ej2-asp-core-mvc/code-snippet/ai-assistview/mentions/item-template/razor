@@ -1,0 +1,118 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+@{
+    var agents = new List<object>
+    {
+        new
+        {
+            id = "TechSupport",
+            name = "TechSupport",
+            description = "Troubleshoot technical issues",
+            placeholder = "Ask about VPN, network, or device issues"
+        },
+        new
+        {
+            id = "HRAssistant",
+            name = "HRAssistant",
+            description = "Get assistance with HR policies",
+            placeholder = "Ask about leave, benefits, and HR policies"
+        },
+        new
+        {
+            id = "KnowledgeBase",
+            name = "KnowledgeBase",
+            description = "Search internal documentation",
+            placeholder = "Search the internal knowledge base"
+        }
+    };
+    var commands = new List<object>
+    {
+        new
+        {
+            id = "table",
+            name = "/table",
+            description = "Answer as a markdown table",
+            placeholder = "Format the response as a table"
+        },
+        new
+        {
+            id = "rewrite",
+            name = "/rewrite",
+            description = "Rewrite content for clarity",
+            placeholder = "Improve clarity and professional tone"
+        },
+        new
+        {
+            id = "checklist",
+            name = "/checklist",
+            description = "Create a step-by-step checklist",
+            placeholder = "Convert the response into a checklist"
+        }
+    };
+
+    var mentions = new List<object>
+    {
+        new
+        {
+            mentionChar = "@",
+            dataSource = agents,
+            fields = new { text = "name", value = "id" },
+            itemTemplate = @"<div class='mention-item'><span class='mention-name'>${name}</span><span class='mention-description'>${description}</span></div>"
+        },
+        new
+        {
+            mentionChar = "/",
+            dataSource = commands,
+            fields = new { text = "name", value = "id" },
+            showMentionChar = false,
+            itemTemplate = @"<div class='mention-item'><span class='mention-name'>${name}</span><span class='mention-description'>${description}</span></div>"
+        }
+    };
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    @(
+        Html.EJS().AIAssistView("item-template")
+            .PromptPlaceholder("Type '@' for agents or '/' for commands...")
+            .Mentions((object)mentions)
+            .PromptRequest("onPromptRequest")
+            .Created("onCreated")
+            .Render()
+    )
+</div>
+
+<script>
+    var assistObj;
+
+    function onCreated() {
+        assistObj = this;
+    }
+
+    function onPromptRequest() {
+        setTimeout(function () {
+            var defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+        }, 1000);
+    }
+</script>
+
+<style>
+    .e-assist-mention .mention-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 38px;
+        padding: 6px 0;
+        line-height: 1.2;
+    }
+
+    .e-assist-mention .mention-name {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .e-assist-mention .mention-description {
+        margin-top: 2px;
+        color: var(--color-sf-text-muted, #6b6b6b);
+        font-size: 11px;
+    }
+</style>

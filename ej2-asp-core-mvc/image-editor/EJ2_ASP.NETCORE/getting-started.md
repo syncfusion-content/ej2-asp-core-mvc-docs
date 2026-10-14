@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core ImageEditor Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET Core Image Editor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## ImageEditor | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## ImageEditor in an web app using Razor pages, TagHelper, and Syncfusion NuGet packages.
 platform: ej2-asp-core-mvc
 control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Image Editor Control
+# Getting Started with ##Platform_Name## ImageEditor
 
 This section briefly explains how to include the [ASP.NET Core Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

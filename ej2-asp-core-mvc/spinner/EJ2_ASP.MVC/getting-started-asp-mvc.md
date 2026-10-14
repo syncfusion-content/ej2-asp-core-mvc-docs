@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Spinner Component
-description: Checkout and learn about getting started with ##Platform_Name## Spinner component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Spinner | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Spinner control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started Asp Mvc
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Spinner Control
+# Getting Started with ##Platform_Name## Spinner
 
 This section briefly explains how to include the ASP.NET MVC Spinner control in an ASP.NET MVC application using Visual Studio.
 

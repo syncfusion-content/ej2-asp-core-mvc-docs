@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Position in ##Platform_Name## Tooltip Control | Syncfusion
-description: Learn here all about Position in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+title: Position in ##Platform_Name## Tooltip | Syncfusion
+description: Position the Syncfusion ##Platform_Name## Tooltip in any of 12 static locations around the target element using the configurable position property.
 platform: ej2-asp-core-mvc
 control: Position
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip Positioning in Tooltip Control
+# Position in ##Platform_Name## Tooltip
 
 Tooltips can be attached to 12 static locations around the target. On initializing the Tooltip, you can set the position property with any one of the following values:
 
@@ -55,7 +55,7 @@ N> By default, Tooltip is placed at the `TopCenter` of the target element.
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Position](./images/tooltip-position.png)
+![ASP.NET Core - Tooltip - Position](./images/tooltip-position.png)
 
 ## Tip pointer positioning
 
@@ -95,7 +95,7 @@ The following code example illustrates how to set the pointer to the start posit
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Tip Pointer Position](./images/tip-pointer.png)
+![ASP.NET Core - Tooltip - Tip Pointer Position](./images/tip-pointer.png)
 
 By default, tip pointers are auto adjusted so that the arrow does not point outside the target element.
 
@@ -132,7 +132,7 @@ N> When mouse trailing option is enabled, the tip pointer position gets auto adj
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Dynamic Position](./images/dynamic-position.png)
+![ASP.NET Core - Tooltip - Dynamic Position](./images/dynamic-position.png)
 
 ## Mouse Trailing
 
@@ -165,7 +165,7 @@ Tooltips can be positioned relative to the mouse pointer. This behavior can be e
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Mouse Trail](./images/mouse-trail.png)
+![ASP.NET Core - Tooltip - Mouse Trail](./images/mouse-trail.png)
 
 N> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
 
@@ -205,6 +205,6 @@ The following code example illustrates how to set offset values.
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Offset Value](./images/offset-values.png)
+![ASP.NET Core - Tooltip - Offset Value](./images/offset-values.png)
 
 N> By default, collision is handled automatically and therefore when collision is detected the Tooltip fits horizontally and flips vertically.

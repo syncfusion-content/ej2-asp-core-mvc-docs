@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Variations in ##Platform_Name## Sidebar |  Syncfusion
-description: Learn here all about Variations in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Sidebar Types in ##Platform_Name## Sidebar | Syncfusion
+description: Learn about the available Sidebar types in Syncfusion ##Platform_Name## Sidebar, including Over, Push, Slide, and Auto modes.
 platform: ej2-asp-core-mvc
 control: Variations
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Types in ##Platform_Name## Sidebar Control
+# Sidebar Types in ##Platform_Name## Sidebar
 
 The Sidebar component's expand behavior can be modified based on the purpose of use.
 

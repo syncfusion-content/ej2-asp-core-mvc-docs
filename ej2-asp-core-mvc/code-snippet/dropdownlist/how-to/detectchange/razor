@@ -1,7 +1,7 @@
 @Html.EJS().Button("change").Content("Change the value dynamically").Render()
 <div class="control-wrapper">
     <div id="default" style='padding-top:75px;'>
-        @Html.EJS().DropDownList("employee").Placeholder("Select a employee").Index(2).Change("onChange").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "Name" }).Render()
+        @Html.EJS().DropDownList("employee").Placeholder("Select an employee").Index(2).Change("onChange").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "Name", Value = "Name" }).Render()
     </div>
 </div>
 <p id='event'> </p>
@@ -14,10 +14,10 @@
         let element = document.createElement('p');
         document.getElementById("event").innerHTML = "";
         if (args.isInteracted) {
-            element.innerText = 'Changes happened by Interaction';
+            element.innerText = 'Changed by user interaction';
         }
         else {
-            element.innerText = 'Changes happened by programmatic';
+            element.innerText = 'Changed programmatically';
         }
         document.getElementById('event').append(element);
     }

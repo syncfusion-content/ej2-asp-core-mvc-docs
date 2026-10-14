@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open menu item on click only in ##Platform_Name## Menu Component
-description: This section helps to learn how to open sub menu on menu item click ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: How to open sub menus on click in ##Platform_Name## Menu | Syncfusion
+description: Make Syncfusion ##Platform_Name## Menu sub menus open only on item click by setting showItemOnClick to true instead of the default hover behavior.
 platform: ej2-asp-core-mvc
 control: Menu
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Open menu and sub menu on click only
+# How to open sub menus on click in ##Platform_Name## Menu
 
 You can open menu items and sub menu on menu item click by setting [`showItemOnClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_ShowItemOnClick) property of the Menu. To open sub menu items only on item click, should be set as `true`.
 

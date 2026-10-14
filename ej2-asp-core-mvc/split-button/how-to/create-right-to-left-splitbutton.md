@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create Right To Left Splitbutton in ##Platform_Name## Split Button Component
-description: Learn here all about Create Right To Left Splitbutton in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
+title: RTL Support in ##Platform_Name## Split Button | Syncfusion
+description: Enable right-to-left support in the Syncfusion ##Platform_Name## Split Button by setting the enableRtl property to display content in RTL layouts.
 platform: ej2-asp-core-mvc
 control: Create Right To Left Splitbutton
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Create right-to-left SplitButton
+# RTL Support in ##Platform_Name## Split Button | Syncfusion
 
 SplitButton component has RTL support. This can be achieved by setting [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_EnableRtl) as `true`.
 

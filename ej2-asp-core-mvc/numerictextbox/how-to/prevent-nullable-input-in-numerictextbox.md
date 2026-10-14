@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent Nullable Input In Numerictextbox in ##Platform_Name## Numerictextbox Component
-description: Learn here all about Prevent Nullable Input In Numerictextbox in Syncfusion ##Platform_Name## Numerictextbox component of syncfusion and more.
+title: Prevent Nullable Input in ##Platform_Name## Numeric TextBox | Syncfusion
+description: Learn how to prevent null values in ##Platform_Name## Numeric TextBox and ensure a valid numeric value is always maintained.
 platform: ej2-asp-core-mvc
 control: Prevent Nullable Input In Numerictextbox
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Prevent nullable input in NumericTextBox
+# Prevent Nullable Input in ##Platform_Name## NumericTextBox
 
 By default, the value of the NumericTextBox sets to null. In some applications, the value of the NumericTextBox should not be null at any instance. In such cases, following sample can be used to prevent nullable input in NumericTextBox.
 

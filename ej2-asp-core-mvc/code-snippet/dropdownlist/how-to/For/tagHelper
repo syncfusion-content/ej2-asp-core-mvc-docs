@@ -1,3 +1,5 @@
+@model WebApplication1.Models.Countries
+
 <form method="post">
     <div class="control-wrapper">
         <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>

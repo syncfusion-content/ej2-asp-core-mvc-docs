@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Virtualization in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Virtualization in ##Platform_Name## ListView | Syncfusion
+description: Enable UI virtualization in Syncfusion ##Platform_Name## ListView using the enableVirtualization option to render only visible items for large datasets.
 platform: ej2-asp-core-mvc
 control: Virtualization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# UI Virtualization
+# Virtualization in ##Platform_Name## ListView
 
 UI virtualization loads only viewable list items in a view port, which will improve the ListView performance while loading a large number of data.
 
@@ -50,7 +50,7 @@ It has two types of scrollers as follows:
 
 Output be like the below.
 
-![ASP .NET Core ListView - Virtualization](./images/virtualization.png)
+![ASP.NET Core ListView - Virtualization](./images/virtualization.png)
 
 We can use `template` property to customize list items in UI virtualization.
 
@@ -81,7 +81,7 @@ We can use `template` property to customize list items in UI virtualization.
 
 Output be like the below.
 
-![ASP .NET Core ListView - Virtualization Template](./images/virtualization-template.png)
+![ASP.NET Core ListView - Virtualization Template](./images/virtualization-template.png)
 
 ## Conditional rendering
 
@@ -122,4 +122,4 @@ In the following sample, the light blue is applied for the even list and light c
 
 Output be like the below.
 
-![ASP .NET Core ListView - Virtualization Conditional](./images/virtualization-conditional.png)
+![ASP.NET Core ListView - Virtualization Conditional](./images/virtualization-conditional.png)

@@ -1,6 +1,6 @@
 <ejs-button id="pdf" content="Pdf Export" isPrimary="true"></ejs-button>
 
-<ejs-pivotview id="PivotView" height="300" allowPdfExport="true" enableVirtualization="true">
+<ejs-pivotview id="PivotView" height="300" allowPdfExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1"

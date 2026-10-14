@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ejfor in ##Platform_Name## Drop Down List Component
-description: Learn here all about Ejfor in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to render ##Platform_Name## DropDownListFor in MVC | Syncfusion
+description: Render Syncfusion ##Platform_Name## DropDownListFor HtmlHelper in ASP.NET MVC by binding model values and selecting items via the post method on submit.
 platform: ej2-asp-core-mvc
 control: Ejfor
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# DropDownListFor
+# How to render ##Platform_Name## DropDownListFor in MVC
 
-The DropDownListFor control can be rendered by passing values and data from the model. The selected values can be retrieved during form submit using the post method.
+The [DropDownListFor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownListForBuilder.html) control can be rendered by passing values and data from the model. The selected values can be retrieved during form submit using the post method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -21,6 +21,9 @@ The DropDownListFor control can be rendered by passing values and data from the 
 {% endhighlight %}
 {% highlight c# tabtitle="For.cs" %}
 {% include code-snippet/dropdownlist/how-to/For/For.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Countries.cs" %}
+{% include code-snippet/dropdownlist/how-to/For/Countries.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,6 +36,9 @@ The DropDownListFor control can be rendered by passing values and data from the 
 {% highlight c# tabtitle="For.cs" %}
 {% include code-snippet/dropdownlist/how-to/For/For.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Countries.cs" %}
+{% include code-snippet/dropdownlist/how-to/For/Countries.cs %}
+{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
@@ -40,11 +46,11 @@ The DropDownListFor control can be rendered by passing values and data from the 
 
 ## Data Annotation
 
-Data Annotations help us to define the rules to the model classes or properties for data validation and displaying suitable messages to end users.
+Data Annotations help define the rules for the model classes or properties for data validation and displaying suitable messages to end users.
 
-Data Annotations includes built-in validation attributes for different validation rules, which can be applied to the properties of model class. ASP.NET Framework will automatically enforce these validation rules and display validation messages in the view.
+Data Annotations include built-in validation attributes for different validation rules, which can be applied to the properties of the model class. ASP.NET Framework will automatically enforce these validation rules and display validation messages in the view.
 
-Using `value` property gets or sets the value of the selected item in the control.
+The [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Value) property gets or sets the value of the selected item in the control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -4,7 +4,7 @@
         </ejs-dropdownlist>
     </div>
 </div>
-<ejs-button id="button" content="Null the value"></ejs-button>
+<ejs-button id="button" content="Set Null value to property"></ejs-button>
 
 <script>
     document.getElementById('button').onclick = () => {

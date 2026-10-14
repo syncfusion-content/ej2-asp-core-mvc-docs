@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Rating Control | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Rating | Syncfusion
+description: Learn how to customize rating items in Syncfusion ##Platform_Name## Rating using templates, including emoji, SVG, PNG, and custom symbol content.
 platform: ej2-asp-core-mvc
 control: Templates
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Templates in ASP.NET MVC Rating Control
+# Templates in ##Platform_Name## Rating
 
 The ASP.NET MVC Rating control allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
 

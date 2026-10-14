@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Undo Redo ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Undo Redo in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: Undo and Redo in ##Platform_Name## ImageEditor | Syncfusion
+description: Reverse or repeat Syncfusion ##Platform_Name## ImageEditor editing actions using undo and redo commands, with config limits on undoStackCapacity.
 platform: ej2-asp-core-mvc
-control: Undo Redo
+control: ImageEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo Redo in the ##Platform_Name## Image Editor control
+# Undo and Redo in ##Platform_Name## ImageEditor
 
 The undo and redo functionalities provide a way to reverse and repeat editing actions performed on an image. These features are essential for maintaining control and flexibility during the editing process. 
 
-In an image editor, the undo and redo history typically have a limited capacity, and the number of steps that can be stored is 16 steps, meaning that the editor keeps track of the most recent 16 actions performed on the image. Once the history reaches its maximum capacity, any new actions beyond the 16th step will result in the removal of the oldest action from the history.
+In an [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor), the undo and redo history typically have a limited capacity, and the number of steps that can be stored is 16 steps, meaning that the editor keeps track of the most recent 16 actions performed on the image. Once the history reaches its maximum capacity, any new actions beyond the 16th step will result in the removal of the oldest action from the history.
 
 ## Undo the action 
 

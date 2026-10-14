@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Chips Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Chips | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Chips control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Chips Control
+# Getting Started with ##Platform_Name## Chips
 
 This section briefly explains how to include the [ASP.NET MVC Chips](https://www.syncfusion.com/aspnet-mvc-ui-controls/chips) control in an ASP.NET MVC application using Visual Studio.
 
@@ -96,6 +96,6 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chips 
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chips control will be rendered in the default web browser.
 
-![ASP.NET MVC Chips Control](images/chip.png)
+![ASP.NET MVC Chips Control](images/chip.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Chip/ASP.NET%20MVC%20Razor%20Examples).

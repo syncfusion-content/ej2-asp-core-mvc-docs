@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion ASP.NET Core control and yeoman tool
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+description: Learn about scaffolding Syncfusion ASP.NET Core applications using the Yeoman tool and Syncfusion Essential JS 2 in Visual Studio Code.
 platform: ej2-asp-core-mvc
 control: Yeoman
 publishingplatform: ##Platform_Name##

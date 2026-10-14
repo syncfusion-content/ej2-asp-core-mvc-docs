@@ -1,0 +1,7 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-multiselect id="records" dataSource="@ViewBag.data" placeholder="Select a item" value="@ViewBag.value" mode="CheckBox" showDropDownIcon="true" showSelectAll="true" allowFiltering="true" enableVirtualization="true" popupHeight="200px" maximumSelectionLength="15000" summaryTagCount="5" summaryTagTemplate="${selectedCount} items selected">
+            <e-multiselect-fields value="Text" text="Text"></e-multiselect-fields>
+        </ejs-multiselect>
+    </div>
+</div>

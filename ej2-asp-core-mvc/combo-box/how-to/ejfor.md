@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ejfor in ##Platform_Name## Combo Box Component
-description: Learn here all about Ejfor in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
+title: How to render ComboBoxFor in ##Platform_Name## ComboBox | Syncfusion
+description: Render Syncfusion ##Platform_Name## ComboBoxFor from a model and retrieve the selected values on form submit using the HTTP post method.
 platform: ej2-asp-core-mvc
 control: Ejfor
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# ComboBoxFor
+# How to render ComboBoxFor in ##Platform_Name## ComboBox
 
 The ComboBoxFor component can be rendered by passing values and data from the model. The selected values can be retrieved during form submit using the post method.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Numeric Textbox Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Numeric Textbox control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Numeric TextBox | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Numeric TextBox control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Numeric Textbox
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Numeric Textbox Control
+# Getting Started with ##Platform_Name## NumericTextBox
 
 This section briefly explains how to include the [ASP.NET Core Numeric Textbox](https://www.syncfusion.com/aspnet-core-ui-controls/numeric-textbox) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

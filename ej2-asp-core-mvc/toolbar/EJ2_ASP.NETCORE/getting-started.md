@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Toolbar Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Toolbar | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Toolbar control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Getting Started with ASP.NET Core Toolbar Control
+# Getting Started with ##Platform_Name## Toolbar
 
 This section briefly explains how to include the [ASP.NET Core Toolbar](https://www.syncfusion.com/aspnet-core-ui-controls/toolbar) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
@@ -96,7 +95,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can customize Toolbar items by rendering HTML elements or Syncfusion components through the content template. This allows you to place interactive controls directly within the Toolbar.
 
-In the following example, [Button](../button), [MaskedTextBox](../maskedtextbox), [RadioButton](../radio-button), [DropDownList](../drop-down-list) controls are added to the Toolbar using the content template. Define these controls within the content template property to render them as Toolbar items, as shown in the code below.
+In the following example, [Button](../button), [MaskedTextBox](../maskedtextbox), [RadioButton](../radio-button), [DropDownList](../drop-down-list) controls are added to the Toolbar using the content template. To use these controls, install the corresponding NuGet packages and reference their [static web asset files](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#individual-control-script-references). Then, define the controls within the content template property to render them as Toolbar items, as shown in the following code example.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}

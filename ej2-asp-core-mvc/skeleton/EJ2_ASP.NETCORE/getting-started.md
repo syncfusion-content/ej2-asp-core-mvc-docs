@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Skeleton Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Skeleton Control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Skeleton | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Skeleton control. Explore setup, skeleton shapes, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Skeleton
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Skeleton Control
+# Getting Started with ##Platform_Name## Skeleton
 
 This section briefly explains how to include the [ASP.NET Core Skeleton](https://www.syncfusion.com/aspnet-core-ui-controls/skeleton) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

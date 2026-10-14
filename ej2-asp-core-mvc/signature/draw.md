@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Draw a Signature in ##Platform_Name## Signature Component
-description: Learn here all about Draw a Signature in Syncfusion ##Platform_Name## Signature component of Syncfusion Essential JS 2 and more.
+title: Draw a Signature in ##Platform_Name## Signature | Syncfusion
+description: Learn how to draw text-based signatures in the Syncfusion ##Platform_Name## Signature component using different font families and font sizes.
 platform: ej2-asp-core-mvc
 control: Draw a Signature
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Draw a Signature
+# Draw a Signature in ##Platform_Name## Signature
 
 ## Draw
 

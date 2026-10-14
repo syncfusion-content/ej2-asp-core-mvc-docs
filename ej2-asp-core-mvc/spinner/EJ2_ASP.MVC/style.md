@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Spinner Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Spinner component of Syncfusion Essential JS 2 and more.
+title: CSS Structures in ##Platform_Name## Spinner | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Spinner appearance by modifying CSS styles for Material, Fabric, Bootstrap, Bootstrap 4, and High Contrast themes.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS structures
+# CSS Structures in ##Platform_Name## Spinner
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

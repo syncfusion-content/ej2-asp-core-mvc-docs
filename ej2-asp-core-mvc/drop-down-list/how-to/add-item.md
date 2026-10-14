@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add Item in ##Platform_Name## Drop Down List Component | Syncfusion
-description: Learn here all about how to add item in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to add items in ##Platform_Name## DropDownList | Syncfusion
+description: Insert a Syncfusion ##Platform_Name## DropDownList item at any index using the addItem method, with default insertion appending to the list end.
 platform: ej2-asp-core-mvc
 control: Add Item
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Add item in between in DropDownList
+# How to add item in ##Platform_Name## DropDownList
 
-You can add item in between based on item [index](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Index). If you add new item without item index, item will be added as last item in list.
+You can insert an item at a specific position by passing the target [index](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Index). If you add a new item without specifying an index, it will be appended as the last item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

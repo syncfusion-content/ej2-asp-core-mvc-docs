@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Context in ##Platform_Name## Sidebar |  Syncfusion
-description: Learn here all about Custom Context in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Custom Context in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to render the Syncfusion ##Platform_Name## Sidebar within a custom container by using the target property instead of the default body element.
 platform: ej2-asp-core-mvc
 control: Custom Context
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Context in ##Platform_Name## Sidebar Control
+# Custom Context in ##Platform_Name## Sidebar
 
 By default, Sidebar initializes context to the body element. Using the [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Target) property, set context element to initialize Sidebar inside any HTML element apart from the body element.
 

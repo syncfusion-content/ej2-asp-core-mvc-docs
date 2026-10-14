@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Server Actions in ##Platform_Name## In Place Editor Component
-description: Learn here all about Server Actions in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Server Actions in ##Platform_Name## InplaceEditor | Syncfusion
+description: Persist Syncfusion ##Platform_Name## InplaceEditor value edits to a server using the url property, primaryKey, and adapter configuration for remote submissions.
 platform: ej2-asp-core-mvc
 control: Server Actions
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Server actions
+# Server Actions in ##Platform_Name## InplaceEditor
 
 By passing In-place Editor control value to the server, the [`PrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PrimaryKey) property value must require, otherwise action not performed for remote data.
 
@@ -80,4 +80,4 @@ The output will be as follows.
 
 ## See Also
 
-* [Indicate the server actions in the editor](./how-to/custom-indication/)
+* [Indicate the server actions in the editor](./how-to/custom-indication)

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in ASP.NET Core Mention control | Syncfusion
-description: Learn here all about localization in Syncfusion ASP.NET Core Mention control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Mention | Syncfusion
+description: Localize Syncfusion ##Platform_Name## Mention default no-records and loading text by setting the locale property and registering a translation object.
 platform: ej2-asp-core-mvc
 control: Localization
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization in ASP.NET Core Mention
+# Localization in ##Platform_Name## Mention
 
 ASP.NET Core Mention control can be localized. Refer to ASP.NET Core [Localization](../../common/EJ2_ASP.NETCORE/localization.md) topic to localize Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 

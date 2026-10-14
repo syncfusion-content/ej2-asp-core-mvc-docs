@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Indication in ##Platform_Name## In Place Editor Component
-description: Learn here all about Custom Indication in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Add custom indication in InplaceEditor | Syncfusion
+description: Show a visual cue on Syncfusion ##Platform_Name## InplaceEditor unsaved values by highlighting elements through the actionSuccess event when the submit fails.
 platform: ej2-asp-core-mvc
 control: Custom Indication
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Add custom indication to unsaved value
+# How to add custom indication in ##Platform_Name## InplaceEditor
 
 You can add custom indication to unsaved input value by using the [`actionSuccess`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_ActionSuccess) event, when data not submitted to the server.
 

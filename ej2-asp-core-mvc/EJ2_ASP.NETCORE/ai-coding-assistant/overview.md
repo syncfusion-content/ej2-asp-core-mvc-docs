@@ -15,7 +15,7 @@ The **Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant** are
 AI Coding Assistant:
 
 * **The SyncfusionAspNetCoreAssistant MCP Server**
-  Processes advanced prompts and returns tailored code suggestions via [MCP-compatible clients](https://modelcontextprotocol.io/clients).
+  Processes advanced prompts and returns tailored code suggestions via [MCP-compatible clients](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro).
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ To use the AI Coding Assistant, you need:
 
 * A [Syncfusion<sup style="font-size:70%">&reg;</sup> user account](https://www.syncfusion.com/account)
 * An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
-  - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)
+  - [Commercial License](https://www.syncfusion.com/sales/pricing)
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)
   - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
 * An active [API KEY](https://syncfusion.com/account/api-key)
@@ -66,5 +66,5 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant is desi
 
 ## See also
 
-* Add the [SyncfusionAspNetCore MCP Server](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/mcp-server) to an MCP-enabled client
+* Add the [SyncfusionAspNetCore MCP Server](https://ej2.syncfusion.com/aspnetcore/documentation/mcp) to an MCP-enabled client
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)

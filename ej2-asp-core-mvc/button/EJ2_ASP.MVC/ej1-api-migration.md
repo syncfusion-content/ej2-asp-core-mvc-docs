@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Button Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
+title: Ej1 Api Migration in ##Platform_Name## Button | Syncfusion
+description: Map Essential JS 1 Button properties, methods, and events to their Essential JS 2 equivalents for ##Platform_Name## migration.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# Ej1 Api Migration in ##Platform_Name## Button
 
 This article describes the API migration process of Button component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

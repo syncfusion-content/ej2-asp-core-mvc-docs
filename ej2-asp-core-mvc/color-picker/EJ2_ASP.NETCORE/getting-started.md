@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Color Picker Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Color Picker control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Color Picker | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Color Picker control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Color Picker
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Color Picker Control
+# Getting Started with ##Platform_Name## Color Picker
 
 This section briefly explains how to include the [ASP.NET Core Color Picker](https://www.syncfusion.com/aspnet-core-ui-controls/color-picker) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

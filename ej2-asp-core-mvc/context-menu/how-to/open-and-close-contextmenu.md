@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Open And Close Contextmenu in ##Platform_Name## Context Menu Component
-description: Learn here all about how to open and close ContextMenu in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
+title: How to open and close ##Platform_Name## Context Menu | Syncfusion
+description: Open and close the Syncfusion ##Platform_Name## Context Menu programmatically with the open and close methods at any top/left position.
 platform: ej2-asp-core-mvc
 control: Open And Close Contextmenu
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Open and close ContextMenu
+# How to open and close ##Platform_Name## Context Menu
 
-ContextMenu can be opened and closed programmatically whenever required by using the open and close methods.
+The ContextMenu can be opened and closed programmatically whenever required by using the [`open`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_Open_System_Double_System_Double_System_Double_) and [`close`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_Close) methods.
 
-In the following example, the ContextMenu is opened using the `open` method at the specified position using `top` and `left`. Also, ContextMenu is closed using `close` method on ContextMenu item click or document click.
+In the following example, the ContextMenu is opened using the `open` method at the specified position using the `left` and `top` arguments (`open(60, 20)`). The ContextMenu closes automatically on item click or document click.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

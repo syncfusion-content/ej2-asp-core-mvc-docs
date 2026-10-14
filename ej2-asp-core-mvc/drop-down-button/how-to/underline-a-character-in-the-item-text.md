@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Underline A Character In The Item Text in ##Platform_Name## Drop Down Button Component
-description: Learn here all about how to underline a character in the item text in Syncfusion ##Platform_Name## Drop Down Button component of syncfusion and more.
+title: Underline Item Text in ##Platform_Name## DropDownButton | Syncfusion
+description: Underline a specific character in the Syncfusion ##Platform_Name## DropDownButton item text by adding a u tag in the beforeItemRender event innerHTML.
 platform: ej2-asp-core-mvc
 control: Underline A Character In The Item Text
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Underline a character in the item text
+# Underline a Character in ##Platform_Name## DropDownButton
 
 Underline a particular character in a text can be handled in [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_BeforeItemRender) event by adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 

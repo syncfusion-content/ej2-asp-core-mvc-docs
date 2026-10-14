@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Context Menu Component | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
+title: How to use a template in ##Platform_Name## Context Menu | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Context Menu submenu items with a custom template, such as a table layout, via the beforeItemRender event.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template
+# How to use a template in ##Platform_Name## Context Menu
 
 ## Table in Sub ContextMenu
 
-Menu items of the ContextMenu can be customized according to the requirement. The section explains about how to customize table template in sub menu item.
+Menu items of the ContextMenu can be customized according to the requirement. This section explains how to customize a table template in a submenu item.
 
-This can be achieved by appending table layout while `li` rendering by using [`beforeItemRender`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenu~BeforeItemRender.html) event.
+This can be achieved by appending a table layout during the rendering of each `li` element by using the [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,11 +41,11 @@ This can be achieved by appending table layout while `li` rendering by using [`b
 
 
 
-### UI Components in ContextMenu
+### UI controls in ContextMenu
 
-UI components can also be placed inside the each `li` element of ContextMenu.
+UI controls can also be placed inside each `li` element of the ContextMenu.
 
-In the following example, CheckBox component is placed inside each `li` element and this can be achieved by creating CheckBox component in [`beforeItemRender`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenu~BeforeItemRender.html) event and appending it into the `li` element.
+In the following example, a CheckBox control is placed inside each `li` element by creating a CheckBox control in the [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event and appending it into the `li` element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

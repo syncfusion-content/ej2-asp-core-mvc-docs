@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## In Place Editor Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## InplaceEditor | Syncfusion
+description: Customize Syncfusion ##Platform_Name## InplaceEditor appearance using CSS classes for the wrapper, popup, spinner, edited text, and edit-button container elements.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS structures
+# Style in ##Platform_Name## InplaceEditor
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

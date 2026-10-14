@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Multi Select Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## MultiSelect | Syncfusion
+description: Migrate Syncfusion EJ1 ##Platform_Name## MultiSelect to EJ2 by mapping tag prefix, namespaces, and APIs from ejMultiselect to ej2-multiselect.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ##Platform_Name## MultiSelect
 
-This article describes the API migration process of multiselect component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of the MultiSelect control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
-## Accessibility and Localization
+## Accessibility and localization
 
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
@@ -43,8 +43,8 @@ This article describes the API migration process of multiselect component from E
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Data Source | **Property** : Datasource<br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Datasource((IEnumerable<Employee>)ViewData["LocalDataSource"]).DropDownListFields(Df => Df.Text("Text").Value("Country"))` | **Property** : Datasource <br/><br/> ` @Html.EJS().MultiSelect("default").DataSource((IEnumerable<object>)ViewBag.localdata).Render()` |
-| Query | **Property** : Query<br/> <br/>`@Html.EJ().DropDownList("customerList").Datasource(ds => ds.URL("https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/").CrossDomain(true)).Query("ej.Query().from('Customers').take(6)").DropDownListFields(f => f.Text("CustomerID"))` | **Property** : Query<br/> <br/>`@Html.EJS().MultiSelect("remote").Query((string)ViewBag.query).DataSource(obj => obj.Url("http://services.odata.org/V4/Northwind/Northwind.svc/").CrossDomain(true).Adaptor("ODataV4Adaptor")).Fields( new MultiSelectFieldSettings { Text = "FirstName", Value = "EmployeeID" }).Render()` |
-| Fields | **Property** : Fields<br/> <br/>`@Html.EJ().DropDownList("customerList").Datasource(ds => ds.URL("https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/").CrossDomain(true)).Query("ej.Query().from('Customers').take(6)").DropDownListFields(f => f.Text("CustomerID"))` | **Property** : Fields<br/> <br/>`@Html.EJS().MultiSelect("remote").Query((string)ViewBag.query).DataSource(obj => obj.Url("http://services.odata.org/V4/Northwind/Northwind.svc/").CrossDomain(true).Adaptor("ODataV4Adaptor")).Fields( new MultiSelectFieldSettings { Text = "FirstName", Value = "EmployeeID" }).Render()` |
+| Query | **Property** : Query<br/> <br/>`@Html.EJ().DropDownList("customerList").Datasource(ds => ds.URL("https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/").CrossDomain(true)).Query("ej.Query().from('Customers').take(6)").DropDownListFields(f => f.Text("CustomerID"))` | **Property** : Query<br/> <br/>`@Html.EJS().MultiSelect("remote").Query((string)ViewBag.query).DataSource(obj => obj.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").CrossDomain(true).Adaptor("ODataV4Adaptor")).Fields( new MultiSelectFieldSettings { Text = "FirstName", Value = "EmployeeID" }).Render()` |
+| Fields | **Property** : Fields<br/> <br/>`@Html.EJ().DropDownList("customerList").Datasource(ds => ds.URL("https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/").CrossDomain(true)).Query("ej.Query().from('Customers').take(6)").DropDownListFields(f => f.Text("CustomerID"))` | **Property** : Fields<br/> <br/>`@Html.EJS().MultiSelect("remote").Query((string)ViewBag.query).DataSource(obj => obj.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").CrossDomain(true).Adaptor("ODataV4Adaptor")).Fields( new MultiSelectFieldSettings { Text = "FirstName", Value = "EmployeeID" }).Render()` |
 | Action Begin | **Event** : ActionBegin<br/> <br/>` @Html.EJ().DropDownList("selectCompany").ClientSideEvents(e => e.ActionBegin("onActionBegin")` | **Event** : ActionBegin<br/> <br/>`@Html.EJS().MultiSelect("list").ActionBegin("onActionBegin").Render()` |
 | Action Complete | **Event** : ActionComplete<br/> <br/>`@Html.EJ().DropDownList("selectCompany").ClientSideEvents(e => e.ActionComplete("onActionComplete")` | **Event** : ActionComplete<br/> <br/>`@Html.EJS().MultiSelect("list").ActionComplete("onActionComplete").Render()` |
 | Action Failure | **Event** : ActionFailure<br/> <br/>`@Html.EJ().DropDownList("selectCompany").ClientSideEvents(e => e.ActionFailure("onActionFailure")` | **Event** : ActionFailure<br/> <br/>`@Html.EJS().MultiSelect("list").ActionFailure("onActionFailure").Render()` |
@@ -113,13 +113,13 @@ This article describes the API migration process of multiselect component from E
 
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
-| Virtual Scrolling | **Property** : AllowVirtualScrolling<br/> <br/>`@Html.EJ().DropDownList("default").AllowVirtualScrolling(true)` | It will be acheived in sample level using `actionComplete` event |
+| Virtual Scrolling | **Property** : AllowVirtualScrolling<br/> <br/>`@Html.EJ().DropDownList("default").AllowVirtualScrolling(true)` | It is achieved at the sample level through the `actionComplete` event. |
 | Virtual Scroll Mode | **Property** : VirtualScrollMode<br/> <br/>`@Html.EJ().DropDownList("default").AllowVirtualScrolling(true).VirtualScrollMode(VirtualScrollMode.Normal)` | Not Applicable |
 | Custom class | **Property** : CssClass<br/> <br/>`@Html.EJ().DropDownList("default").CssClass('customstyle')` | **Property** : CssClass<br/> <br/>`@Html.EJS().MultiSelect("default").CssClass('customstyle').Render()` |
 | Delimiter Char | **Property** : DelimiterChar<br/> <br/>`@Html.EJ().DropDownList("default").DelimiterChar('.')` | **Property** : DelimiterChar<br/> <br/>`@Html.EJS().MultiSelect("default").DelimiterChar('.').Render()` |
 | Enable | **Property** : Enable<br/> <br/>`<@Html.EJ().DropDownList("default").Enable(true)` | **Property** : Enabled <br/> <br/>`@Html.EJS().MultiSelect("default").Enabled(true).Render()` |
 | Persistence | **Property** : EnablePersistence<br/> <br/>`@Html.EJ().DropDownList("default").EnablePersistence(true)` | **Property** : EnablePersistence <br/> <br/>`@Html.EJS().MultiSelect("default").EnablePersistence(true).Render()` |
-| Load On Demand | **Property** : LoadOnDemand<br/> <br/>`@Html.EJ().DropDownList("default").LoadOnDemand(true)` | By default, provided load on demand support |
+| Load on demand | **Property** : LoadOnDemand<br/> <br/>`@Html.EJ().DropDownList("default").LoadOnDemand(true)` | Provided by default. |
 | Height | **Property** : Height<br/> <br/>`@Html.EJ().DropDownList("default").Height(100)` | Not Applicable |
 | Html Attributes | **Property** : HtmlAttributes <br/> <br/>`@Html.EJ().DropDownList("default").HtmlAttributes((IDictionary<string,object>)ViewData["HtmlAttrData"])` | **Property** : HtmlAttributes <br/> <br/>`@Html.EJS().MultiSelect("default").HtmlAttributes((IDictionary<string,object>)ViewData.htmlAttrData).Render()` |
 | Width | **Property** : Width <br/> <br/>`@Html.EJ().DropDownList("default").Width(500)` | **Property** : Width <br/> <br/>`@Html.EJS().MultiSelect("default").Width(400).Render()` |
@@ -130,7 +130,7 @@ This article describes the API migration process of multiselect component from E
 | Target ID | **Property** : TargetID <br/> <br/>`@Html.EJ().DropDownList("DropDownList1").TargetID("mail")<div id="mail"><ul><li><div class="mailtools categorize"></div>Categorize and Move</li></ul></div>` | Not Applicable |
 | Text | **Property** : Text <br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Text("Employee Name")` | **Property** : Text <br/><br/> `@Html.EJS().MultiSelect("default").Text("Employee Name").Render()` |
 | Validation Message | **Property** : ValidationMessage <br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Datasource((IEnumerable<Data>)ViewData["DropDownSource"]).DropDownListFields(Df => Df.Text("Text").Value("Value")).ValidationMessage(message => message.AddMessage("required", "* Required").AddMessage("min","Select > 30")))` | The default error message for a rule can be customizable by defining it along with concern rule. |
-| Validation Rules | **Property** : ValidationRules <br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Datasource((IEnumerable<Data>)ViewData["DropDownSource"]).DropDownListFields(Df => Df.Text("Text").Value("Value")).ValidationRules(vr => vr.AddRule("required", true).AddRule("min",30))` | Use Form validator to validate the multiselect component and set validation rules. |
+| Validation Rules | **Property** : ValidationRules <br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Datasource((IEnumerable<Data>)ViewData["DropDownSource"]).DropDownListFields(Df => Df.Text("Text").Value("Value")).ValidationRules(vr => vr.AddRule("required", true).AddRule("min",30))` | Use Form validator to validate the multiselect control and set validation rules. |
 | Value | **Property** : Value <br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Value("Employee Value")` | **Property** : Value <br/><br/> `@Html.EJS().MultiSelect("default").Value(ViewBag.value).Render()` |
 | Watermark Text | **Property** : WatermarkText <br/> <br/>`@Html.EJ().DropDownList("DropDownList1").WatermarkText("Select employee")` | **Property** : Placeholder <br/><br/> `@Html.EJS().MultiSelect("default").Placeholder('Select employee').Render()` |
 | Custom Value | Not Applicable | **Property** : AllowCustomValue <br/><br/> `@Html.EJS().MultiSelect("default").AllowCustomValue(true).Render() ` |

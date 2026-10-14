@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion license generation - Syncfusion
+title: Overview of Syncfusion license generation | Syncfusion
 description: Learn here about how to generate Syncfusion ##Platform_Name## license key for syncfusion ##Platform_Name## application for license validation.
 platform: ej2-asp-core-mvc
 control: License Key Generation
@@ -8,14 +8,14 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Generate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET Core EJ2 License key
+# Generate Syncfusion ASP.NET Core License key
 
 License keys can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
 
 ![Get Community License Key](images/get-community-license-key.png)
 
-N> * Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are **version and platform specific**. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
-* Refer to this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
+N> * Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are **version and platform specific**. Refer to the [KB](https://support.syncfusion.com/kb/article/7898/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
+* Refer to this [KB](https://support.syncfusion.com/kb/article/7865/which-version-license-key-should-i-use-in-my-application) to know which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
 
 ## Claim License key
 
@@ -49,4 +49,4 @@ If the Syncfusion<sup style="font-size:70%">&reg;</sup> account is not associate
 
 ## See Also
 
-* [How to Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in ASP .NET Core EJ2 Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application)
+* [How to Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in ASP.NET Core EJ2 Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application)

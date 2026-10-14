@@ -1,6 +1,6 @@
 @model List<QueryBuilderSample.Controllers.EmployeeView>
 
-@Html.EJS().QueryBuilder("querybuilder").Width("72%").Columns(col =>
+@Html.EJS().QueryBuilder("querybuilder").Width("72%").MaxGroupCount(2).Columns(col =>
 {
    col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
    col.Field("FirstName").Label("First Name").Type("string").Add();

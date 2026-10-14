@@ -1,8 +1,8 @@
 <ejs-button id="change" content="Change the value dynamically"></ejs-button>
 <div class="control-wrapper">
     <div id="default" style='padding-top:75px;'>
-        <ejs-dropdownlist id="employee" change="onChange" dataSource="@ViewBag.data" placeholder="Select a employee" index="2" popupHeight="220px">
-            <e-dropdownlist-fields value="Name" </e-dropdownlist-fields>
+        <ejs-dropdownlist id="employee" change="onChange" dataSource="@ViewBag.data" placeholder="Select an employee" index="2" popupHeight="200px">
+            <e-dropdownlist-fields value="Name" text="Name"></e-dropdownlist-fields>
         </ejs-dropdownlist>
     </div>
 </div>
@@ -16,10 +16,10 @@
         let element = document.createElement('p');
         document.getElementById("event").innerHTML = "";
         if (args.isInteracted) {
-            element.innerText = 'Changes happened by Interaction';
+            element.innerText = 'Changed by user interaction';
         }
         else {
-            element.innerText = 'Changes happened by programmatic';
+            element.innerText = 'Changed programmatically';
         }
         document.getElementById('event').append(element);
     }

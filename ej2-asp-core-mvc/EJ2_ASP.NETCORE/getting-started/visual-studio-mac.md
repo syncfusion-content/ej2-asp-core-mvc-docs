@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core application in Visual Studio Mac
 
-This article provides step-by-step instructions for building ASP.NET Core application with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control using [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/).
+This article provides step-by-step instructions for building ASP.NET Core application with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control using [Visual Studio for Mac](https://learn.microsoft.com/en-us/visualstudio/mac/what-happened-to-vs-for-mac).
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ This article provides step-by-step instructions for building ASP.NET Core applic
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio-mac#create-a-razor-pages-web-app)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio-mac)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 

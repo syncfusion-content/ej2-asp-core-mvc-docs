@@ -6,7 +6,7 @@ platform: common
 documentation: ug
 --- 
 
-# Downloading Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Linux Installer
+# Downloading Syncfusion Essential Studio Linux Installer
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Linux installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/) website. You can either download the licensed installer or try our trial installer depending on your license. The Linux installer is provided in `.zip` format and does not require an unlock key to install. This guide covers the following options:
 
@@ -59,7 +59,7 @@ If you have already obtained Syncfusion<sup style="font-size:70%">&reg;</sup> co
 
    N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
-4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/common/essential-studio/licensing/how-to-generate) at any time before the trial period expires (as shown in the screenshot below).
+4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://support.syncfusion.com/kb/article/7053/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/common/essential-studio/licensing/how-to-generate) at any time before the trial period expires (as shown in the screenshot below).
 
    ![Start trial - download installer](images/start-trial-download-installer.png)
 

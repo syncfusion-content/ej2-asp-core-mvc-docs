@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core MultiColumn ComboBox | Syncfusion
-description: Checkout and learn about getting started with ASP.NET Core MultiColumn ComboBox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Learn to set up and configure the Syncfusion ##Platform_Name## MultiColumn ComboBox control with step-by-step instructions, code examples, and best practices.
 platform: ej2-asp-core-mvc
 control: MultiColumn ComboBox
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core MultiColumn ComboBox control
+# Getting Started with ##Platform_Name## MultiColumn ComboBox
 
 This section briefly explains how to include the [ASP.NET Core MultiColumn ComboBox](https://www.syncfusion.com/aspnet-core-ui-controls/multicolumn-combobox) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Split Button Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Split Button Control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Split Button | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Split Button control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Split Button
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Split Button Control
+# Getting Started with ##Platform_Name## Split Button
 
 This section briefly explains how to include the [ASP.NET Core Split Button](https://www.syncfusion.com/aspnet-core-ui-controls/split-button) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

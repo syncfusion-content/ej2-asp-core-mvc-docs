@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Timeline Control | Syncfusion
-description: Checkout and learn about Events in Syncfusion ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Timeline | Syncfusion
+description: Handle the Syncfusion ##Platform_Name## Timeline `created` event to detect when the control rendering is completed.
 platform: ej2-asp-core-mvc
 control: Events
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in ##Platform_Name## Timeline control
+# Events in ##Platform_Name## Timeline
 
 This section describes the Timeline events that will be triggered when an appropriate actions are performed. The following events are available in the Timeline control.
 

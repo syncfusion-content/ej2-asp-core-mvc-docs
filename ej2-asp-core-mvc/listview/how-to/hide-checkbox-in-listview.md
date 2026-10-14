@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Hide Checkbox In ListView in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Hide Checkbox In ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to hide checkbox in ##Platform_Name## ListView | Syncfusion
+description: Hide the Syncfusion ##Platform_Name## ListView checkbox column by setting showCheckBox false and disabling the entire header by setting showHeaderCheckBox false.
 platform: ej2-asp-core-mvc
 control: Hide Checkbox In ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Hide checkbox in ListView
+# How to hide checkbox in ##Platform_Name## ListView
 
-The checkbox of the any list item can be hidden by using [`htmlAttributes`](https://ej2.syncfusion.com/documentation/api/list-view/#htmlattributes) of [`fields`](https://ej2.syncfusion.com/documentation/api/list-view/#fields) object. With the help of `htmlAttributes` we can add unique class to each list item that will be rendered from the data source, from the CSS class we can hide the checkbox of the list item.
+The checkbox of the any list item can be hidden by using [`htmlAttributes`](https://ej2.syncfusion.com/documentation/api/list-view#htmlattributes) of [`fields`](https://ej2.syncfusion.com/documentation/api/list-view#fields) object. With the help of `htmlAttributes` we can add unique class to each list item that will be rendered from the data source, from the CSS class we can hide the checkbox of the list item.
 
 In this sample, we had hidden the multiple leaf node of nested list. The `e-checkbox-hidden` class has been added in the data source where the checkbox needs to be hidden. Refer the below snippet for simple data source.
 

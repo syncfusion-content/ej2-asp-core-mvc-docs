@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## In Place Editor Component
-description: Learn here all about Localization in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## InplaceEditor | Syncfusion
+description: Localize Syncfusion ##Platform_Name## InplaceEditor using locale values and translation objects for Arabic, German, and French cultures.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Localization in ##Platform_Name## InplaceEditor
 
 ## Localization
 

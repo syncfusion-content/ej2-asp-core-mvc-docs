@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Colorpicker in ##Platform_Name## Color Picker Control | Syncfusion
-description: Learn here all about how to customize Colorpicker in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
+title: How to customize ##Platform_Name## Color Picker | Syncfusion
+description: Load custom colors in Syncfusion ##Platform_Name## Color Picker with presetColors and style palette tiles via the beforeTileRender event.
 platform: ej2-asp-core-mvc
 control: Customize Colorpicker
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize ColorPicker Control
+# How to customize ##Platform_Name## Color Picker
 
 ## Custom palette
 

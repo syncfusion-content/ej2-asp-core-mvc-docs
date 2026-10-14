@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Wai Aria Accessibility in ##Platform_Name## Uploader Component
-description: Learn here all about Wai Aria Accessibility in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## File Upload | Syncfusion
+description: Review Syncfusion ##Platform_Name## File Upload accessibility compliance with WCAG 2.2 AA, Section 508, screen reader, RTL, and color contrast.
 platform: ej2-asp-core-mvc
 control: Wai Aria Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Accessibility in Uploader Control
+# Accessibility in ##Platform_Name## File Upload
 
-The Uploader component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Uploader control follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Uploader component is outlined below.
 
@@ -40,9 +40,9 @@ The accessibility compliance for the Uploader component is outlined below.
 
 ## Keyboard interaction
 
-The uploader control characterized with complete ARIA accessibility support that helps to be accessible by on-screen readers and other assistive technology devices.
+The Uploader control provides complete ARIA accessibility support, making it accessible to on-screen readers and other assistive technology devices.
 
-The following are the standard keys that works on uploader control:
+The following standard keys work on the Uploader control:
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
@@ -59,7 +59,6 @@ The following are the standard keys that works on uploader control:
 {% endhighlight %}
 {% highlight c# tabtitle="Keyboard.cs" %}
 {% include code-snippet/uploader/keyboard/keyboard.cs %}
-{% include code-snippet/uploader/keyboard/keyboard.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,14 +70,13 @@ The following are the standard keys that works on uploader control:
 {% endhighlight %}
 {% highlight c# tabtitle="Keyboard.cs" %}
 {% include code-snippet/uploader/keyboard/keyboard.cs %}
-{% include code-snippet/uploader/keyboard/keyboard.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 ## Ensuring accessibility
 
-The Uploader component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Uploader control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Uploader component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/uploader.html) in a new window to evaluate the accessibility of the Uploader component with accessibility tools.
 
@@ -86,4 +84,4 @@ The accessibility compliance of the Uploader component is shown in the following
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## components](../common/accessibility)
+* [Accessibility in ##Platform_Name## components](../common/accessibility)

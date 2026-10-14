@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Placeholder in ##Platform_Name## OTP Input Control | Syncfusion
-description: Checkout and learn here all about Placeholder in ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
+title: Placeholder in ##Platform_Name## OTP Input | Syncfusion
+description: Learn how to configure placeholder text in ##Platform_Name## OTP Input using single-character or multi-character values to guide user input.
 platform: ej2-asp-core-mvc
 control: OTP Input
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Placeholder in ASP.NET MVC OTP Input control
+# Placeholder in ##Platform_Name## OTP Input
 
 The placeholder in OTP Input specifies the text that is shown as a hint or placeholder until the user enters a value in the input field. It acts as a guidance for the users regarding the expected input format or purpose of the input field.
 

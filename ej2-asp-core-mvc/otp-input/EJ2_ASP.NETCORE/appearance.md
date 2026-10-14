@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## OTP Input Control | Syncfusion
-description: Checkout and learn here all about Appearance in ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
+title: Appearance in ##Platform_Name## OTP Input | Syncfusion
+description: Customize the appearance of ##Platform_Name## OTP Input by configuring input length, disabled state, and predefined CSS classes for styling.
 platform: ej2-asp-core-mvc
 control: OTP Input
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Appearance in ASP.NET Core OTP Input control
+# Appearance in ##Platform_Name## OTP Input
 
 You can also customize the appearance of OTP Input control.
 

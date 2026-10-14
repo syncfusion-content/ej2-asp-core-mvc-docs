@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Horizontal in ##Platform_Name## Card Control | Syncfusion
-description: Learn here all about Horizontal in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Horizontal Card in ##Platform_Name## Card | Syncfusion
+description: Lay out the Syncfusion ##Platform_Name## Card horizontally with e-card-horizontal and stack one column vertically using the e-card-stacked class.
 platform: ej2-asp-core-mvc
 control: Horizontal
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Horizontal Card in Card Control
+# Horizontal Card in ##Platform_Name## Card
 
 By default, all the card elements are aligned vertically one after the other as in the DOM. You can achieve the element to align horizontally as well as by adding the class `e-card-horizontal` in the root card element.
 

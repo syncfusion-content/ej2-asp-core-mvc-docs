@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Dialog Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Dialog | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## Dialog control in an MVC application using Visual Studio with Html helper and TagHelper support.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Getting Started with ASP.NET MVC Dialog Control
+# Getting Started with ASP.NET MVC Dialog
 
 This section briefly explains how to include the [ASP.NET MVC Dialog](https://www.syncfusion.com/aspnet-mvc-ui-controls/modal-dialog) control in an ASP.NET MVC application using Visual Studio.
 
@@ -95,7 +94,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Dialog
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Dialog control will be rendered in the default web browser.
 
-![ASP.NET MVC Dialog Control](images/dialog-getting.png)
+![ASP.NET MVC Dialog Control](images/dialog-getting.webp)
 
 N> In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document.body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
 
@@ -113,7 +112,7 @@ N> When the modal dialog is opened, the Dialog's target scrolling will be disabl
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Modal Dialog](images/modal-dialog-getting.png)
+![ASP.NET MVC Modal Dialog](images/modal-dialog-getting.webp)
 
 N>In the dialog control, if the dialog is rendered based on the body, then the dialog gets its height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, we can set the CSS style for the html and body to get the dialog height.
 
@@ -190,9 +189,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/Grid/DialogEditing#/bootstrap5)
+* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/grid/dialogediting#/fluent2)
 * [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
-* [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
-* [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
-* [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
-* [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+* [How to position the Dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
+* [Prevent closing of modal Dialog](./how-to/prevent-closing-of-modal-dialog)
+* [Close dialog while click on outside of Dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
+* [How to make a reusable alert and confirm Dialog](./how-to/render-a-dialog-using-utility-functions)

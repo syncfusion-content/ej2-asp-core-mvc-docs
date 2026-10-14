@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Breadcrumb Control | Syncfusion
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## Breadcrumb | Syncfusion
+description: Add icons to Breadcrumb items in ##Platform_Name## using the iconCss property to show home, folder, or custom icons next to each item.
 platform: ej2-asp-core-mvc
 control: Icons
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons in ASP.NET Core Breadcrumb Control
+# Icons in ##Platform_Name## Breadcrumb
 
 The Breadcrumb component contains an icon or image to provide a visual representation of an item.
 
@@ -36,7 +36,8 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 {% include code-snippet/breadcrumb/getting-started/items/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -168,7 +169,8 @@ To show icon only for the first item in the Breadcrumb component, add icons to t
 {% include code-snippet/breadcrumb/getting-started/items/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ![Displaying Icon for First Time in ASP.NET Core Breadcrumb](images/items.PNG)

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render Palette Alone in ##Platform_Name## Color Picker Control | Syncfusion
-description: Learn here all about Render Palette Alone in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
+title: How to render palette in ##Platform_Name## Color Picker | Syncfusion
+description: Render only the palette area in Syncfusion ##Platform_Name## Color Picker by setting mode to Palette and disabling modeSwitcher and showButtons.
 platform: ej2-asp-core-mvc
 control: Render Palette Alone
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Render palette alone in Color Picker Control
+# How to render palette in ##Platform_Name## Color Picker
 
 To render the `Palette` alone in ColorPicker, specify the [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Mode) property as `Palette`, and set the [modeSwitcher](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_ModeSwitcher) property to `false`.
 

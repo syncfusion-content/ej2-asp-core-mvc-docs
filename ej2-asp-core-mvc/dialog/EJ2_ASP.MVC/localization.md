@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Dialog Component
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Dialog | Syncfusion
+description: Localize the close button tooltip text of the Syncfusion ##Platform_Name## Dialog by setting the culture and using the L10n load function with translation objects.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Localization in ASP.NET MVC Dialog
 
-# Localization
-
-Localization library allows to localize the default text content of Dialog. In Dialog, The close button's tooltip text alone will be localize based on culture.
+The localization library allows you to localize the default text content of the Dialog. In the Dialog, the close button's tooltip text alone will be localize based on culture.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -19,7 +18,7 @@ Localization library allows to localize the default text content of Dialog. In D
 
 ## Loading translations
 
-To load translation object in an application use `load` function of `L10n` class.
+To load the translation object in an application, use the `load` function of the `L10n` class.
 
 In the below sample, `French` culture is set to Dialog and change the close button's tooltip text.
 
@@ -46,8 +45,6 @@ In the below sample, `French` culture is set to Dialog and change the close butt
 {% endtabs %}
 {% endif %}
 
+The output looks like the following.
 
-
-Output be like the below.
-
-![dialog](./images/dialog-locale.png)
+![French localized Dialog close button tooltip](./images/dialog-locale.png)

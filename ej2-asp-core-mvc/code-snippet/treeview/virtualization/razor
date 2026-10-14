@@ -1,0 +1,17 @@
+<div class="treecontainer">
+    @Html.EJS().TreeView("tree").EnableVirtualization(true).ShowCheckBox(true).Height("400px").Fields(
+        field => field.Id("Id")
+                      .ParentID("PId")
+                      .Text("Name")
+                      .HasChildren("HasChild")
+                      .Expanded("Expanded")
+                      .DataSource(ViewBag.data)
+    ).Render()
+</div>
+
+<style>
+    .treecontainer {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+</style>

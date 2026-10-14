@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Progress Bar Component
+title: Events in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Events in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Events
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Events
+# Events in ASP.NET Core Progress Bar
 
 ## ValueChanged
 
@@ -23,8 +23,7 @@ This event is triggered when the progress value is changed.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/value-changed/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Value-changed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -32,8 +31,7 @@ This event is triggered when the progress value is changed.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/value-changed/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Value-changed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -48,8 +46,7 @@ This event is triggered when the progress attains the Maximum value.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/progress-completed/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Progress-completed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -57,7 +54,6 @@ This event is triggered when the progress attains the Maximum value.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/progress-completed/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Progress-completed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

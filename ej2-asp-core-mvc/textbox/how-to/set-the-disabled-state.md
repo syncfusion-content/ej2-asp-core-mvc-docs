@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set The Disabled State in Syncfusion ##Platform_Name## Textbox Component
-description: Learn here all about Set The Disabled State in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
+title: How to set disabled state in ##Platform_Name## TextBox | Syncfusion
+description: Disable the Syncfusion ##Platform_Name## TextBox by setting the `enabled` property to `false`, preventing user interaction with the input.
 platform: ej2-asp-core-mvc
 control: Set The Disabled State
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set the disabled state
+# How to set disabled state in ##Platform_Name## TextBox
 
 To disable the TextBox, set the `enabled` property to `false`.
 

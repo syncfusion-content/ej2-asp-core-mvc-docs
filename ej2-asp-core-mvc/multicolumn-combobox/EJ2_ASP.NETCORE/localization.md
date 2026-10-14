@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## MultiColumn Combobox Control | Syncfusion
-description: Checkout and learn about Localization in Syncfusion ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Configure localization and cultural settings in the Syncfusion ##Platform_Name## MultiColumn ComboBox to display content in different languages.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization in ##Platform_Name## MultiColumn Combobox control
+# Localization in ##Platform_Name## MultiColumn ComboBox
 
 The Localization library allows you to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_NoRecordsTemplate) property according to the culture currently assigned to the MultiColumn ComboBox.
 

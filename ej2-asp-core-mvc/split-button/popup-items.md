@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Popup Items in ##Platform_Name## Split Button Component
-description: Learn here all about Popup Items in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
+title: Popup Items in ##Platform_Name## Split Button | Syncfusion
+description: Learn how to customize popup items in the Syncfusion ##Platform_Name## Split Button with icons, item templates, and popup templates for enhanced user interactions.
 platform: ej2-asp-core-mvc
 control: Popup Items
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Popup Items
+# Popup Items in ##Platform_Name## Split Button
 
 ## Icons
 

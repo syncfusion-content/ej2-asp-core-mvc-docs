@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Display Modes in ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about linear and radial display modes in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Display Modes in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn about linear and radial display modes in the Syncfusion ##Platform_Name## Speed Dial, including layout options, directions, and radial menu configurations.
 platform: ej2-asp-core-mvc
 control: Display Modes
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Display Modes in ASP.NET MVC Speed Dial Control
+# Display Modes in ##Platform_Name## Speed Dial
 
 The action items in ASP.NET MVC Speed Dial can be displayed in `Linear` and `Radial` display modes by setting [Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property.
 

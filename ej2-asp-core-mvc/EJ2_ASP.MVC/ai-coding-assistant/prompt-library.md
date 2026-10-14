@@ -267,4 +267,4 @@ The Syncfusion ASP.NET MVC Calendar supports flexible date selection, localizati
 ## See also
 
 * [AI Coding Assistant Overview](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
-* [SyncfusionAspNetMvcAssistant MCP Server](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/mcp-server)
+* [SyncfusionAspNetMvcAssistant MCP Server](https://ej2.syncfusion.com/aspnetmvc/documentation/mcp)

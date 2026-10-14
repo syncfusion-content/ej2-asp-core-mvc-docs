@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Lock Group/Rule in ##Platform_Name## Query Builder Component | Syncfusion
-description: Learn here all about Lock Group/Rule in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Lock Groups and Rules in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to lock groups and rules in ##Platform_Name## Query Builder to prevent modifications and control edit access.
 platform: ej2-asp-core-mvc
 control: Lock Group/Rule
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Lock Group/Rule in ##Platform_Name## Query builder control
+# Lock Groups and Rules in ##Platform_Name## Query Builder
 
-The Query Builder provides the functionality to lock individual rules or entire groups. When a rule is locked, it prevents users from modifying its field, operator, and value, effectively disabling these components. Similarly, locking a group disables all elements contained within it. This feature offers users greater control over their query configurations, ensuring that specific rules or groups remain unchanged. Additionally, users can manage the visibility of locking buttons through the [`ShowButtons`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ShowButtons) function, allowing for seamless control over the locking mechanism.
+The Query Builder provides the functionality to lock individual rules or entire groups. When a rule is locked, it prevents users from modifying its field, operator, and value, effectively disabling these components. Similarly, locking a group disables all elements contained within it. This feature offers users greater control over their query configurations, ensuring that specific rules or groups remain unchanged. Additionally, users can manage the visibility of locking buttons through the [`ShowButtons`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ShowButtons) property, allowing for seamless control over the locking mechanism.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,5 +40,5 @@ The Query Builder provides the functionality to lock individual rules or entire 
 
 You can lock groups and rules by interacting through the user interface and methods.
 
-* Use the `lockGroup` method to lock group.
-* Use the `lockRule` method to lock rule.
+* Use the `lockGroup` method to lock a group.
+* Use the `lockRule` method to lock a rule.

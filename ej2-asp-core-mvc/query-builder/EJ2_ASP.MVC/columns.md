@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## Query Builder Component | Syncfusion
-description: Learn here all about Columns in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Columns in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to configure columns in ##Platform_Name## Query Builder, including auto generation, labels, operators, formatting, validation, and templates.
 platform: ej2-asp-core-mvc
 control: Columns
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Column Binding
+# Columns in ##Platform_Name## Query Builder
 
 The column definitions are used as the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_DataSource) schema in the Query Builder. This plays a vital role in rendering column values. The query builder operations such as create or delete conditions and create or delete groups are performed based on the column definitions. The [`Field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilderColumn.html#Syncfusion_EJ2_QueryBuilder_QueryBuilderColumn_Field) property of the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) is necessary to map the data source values in the query builder columns.
 
@@ -17,7 +17,7 @@ N> If the column field is not specified in the data source, the column values wi
 
 ## Auto generation
 
-The [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) are automatically generated when the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) declaration is empty or undefined while initializing the query builder. All the columns in the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_DataSource) are bound as the query builder columns.
+The [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) are automatically generated when the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) declaration is empty or undefined while initializing the query builder. All the columns in the `DataSource` are bound as the query builder columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -55,23 +55,23 @@ N> If both the field and headerText are not defined in the column, the column re
 ## Operators
 
 The operator for a column can be defined in the columns property.
-The available operators and its supported data types are:
+The available operators and their supported data types are:
 
 | Operators | Description | Supported Types |
 | ------------ | ----------------------- | ------------------ |
 | startswith  | Checks whether the value begins with the specified value. | String |
 | endswith  | Checks whether the value ends with the specified value. | String |
 | contains | Checks whether the value contains the specified value. | String |
-| equal | Checks whether the value is equal to the specified value. | String|Number/Date/Boolean |
-| notequal | Checks for values not equal to the specified value. | String/Number| Date| Boolean |
+| equal | Checks whether the value is equal to the specified value. | String/Number/Date/Boolean |
+| notequal | Checks for values not equal to the specified value. | String/Number/Date/Boolean |
 | greaterthan | Checks whether the value is greater than the specified value. | Date/Number |
 | greaterthanorequal | Checks whether a value is greater than or equal to the specified value. | Date/Number |
-| lessthan | Checks whether the value is less than the specified value.| Date/Number |
+| lessthan | Checks whether the value is less than the specified value. | Date/Number |
 | lessthanorequal | Checks whether the value is less than or equal to the specified value. | Date/Number |
-| between | Checks whether the value is between the two-specific value. | Date/Number |
-| notbetween | Checks whether the value is not between the two-specific value. | Date/Number |
-| in | Checks whether the value is one of the specific values. | String/Number |
-| notin | Checks whether the value is not in the specific values. | String/Number |
+| between | Checks whether the value is between the two specified values. | Date/Number |
+| notbetween | Checks whether the value is not between the two specified values. | Date/Number |
+| in | Checks whether the value is one of the specified values. | String/Number |
+| notin | Checks whether the value is not in the specified values. | String/Number |
 
 ## Step
 
@@ -79,7 +79,7 @@ The Query Builder allows you to set the step values to the number fields. So tha
 
 ## Format
 
-The Query Builder formats date and number values. Use the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilderColumn.html#Syncfusion_EJ2_QueryBuilder_QueryBuilderColumn_Format) property, to format date and number values.
+The Query Builder formats date and number values. Use the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilderColumn.html#Syncfusion_EJ2_QueryBuilder_QueryBuilderColumn_Format) property to format date and number values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -108,10 +108,10 @@ The Query Builder formats date and number values. Use the [`Format`](https://hel
 
 ## Validations
 
-Validation allows you to validate the conditions and it display errors for invalid fields while using the `validateFields` method. To enable validation in the query builder, set [`AllowValidation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_AllowValidation) to true. Column fields are validated after setting [`AllowValidation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_AllowValidation) to true. So, you should manually configure the validation for Operator and Value fields through `Validation`.
+Validation allows you to validate the conditions and it displays errors for invalid fields while using the `validateFields` method. To enable validation in the query builder, set `AllowValidation` to true. Column fields are validated after setting [`AllowValidation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_AllowValidation) to `true`. So, you should manually configure the validation for Operator and Value fields through `Validation`.
 
 N> Set `isRequired` validation for Operator and Value fields.
-N> Set `min`, `max` values for number values.
+<br/> Set `min`, `max` values for number values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -143,10 +143,10 @@ N> Set `min`, `max` values for number values.
 Template allows you to define your own input widgets for columns. To implement the template, you can define the following functions.
 
 * `create`: Creates the custom component.
-* `write`: Wire events for the custom component.
-* `destroy`: Destroy the custom component.
+* `write`: Wires events for the custom component.
+* `destroy`: Destroys the custom component.
 
-In the following sample, dropdown is used as the custom component in Payment Mode column.
+In the following sample, a dropdown is used as the custom component in the Payment Mode column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

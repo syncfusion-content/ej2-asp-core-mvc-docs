@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group Header in ##Platform_Name## Drop Down List Component
-description: Learn here all about group header in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Disable fixed group headers in DropDownList | Syncfusion
+description: Disable Syncfusion ##Platform_Name## DropDownList fixed group headers by setting CSS visibility hidden on the e-fixed-group class element.
 platform: ej2-asp-core-mvc
 control: Group Header
 publishingplatform: ##Platform_Name##
@@ -9,18 +9,18 @@ documentation: ug
 ---
 
 
-# Disable the Fixed group header in DropDownList
+# How to disable fixed group headers in ##Platform_Name## DropDownList
 
-The following example demonstrate about how to disable the Fixed group header in DropDownList through CSS by using `visibility` attribute.
+The following example demonstrates how to disable the fixed group header in the DropDownList through CSS by setting the `visibility` property. Fixed group headers appear when the DropDownList [fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownListFieldSettings.html) [groupBy](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownListFieldSettings.html#Syncfusion_EJ2_DropDowns_DropDownListFieldSettings_GroupBy) property is configured.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dropdownlist/how-to/disbalefixedheader/tagHelper %}
+{% include code-snippet/dropdownlist/how-to/disablefixedheader/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Vegetables.cs" %}
-{% include code-snippet/dropdownlist/how-to/disbalefixedheader/Vegetables.cs %}
+{% include code-snippet/dropdownlist/how-to/disablefixedheader/Vegetables.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ The following example demonstrate about how to disable the Fixed group header in
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dropdownlist/how-to/disbalefixedheader/razor %}
+{% include code-snippet/dropdownlist/how-to/disablefixedheader/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Vegetables.cs" %}
-{% include code-snippet/dropdownlist/how-to/disbalefixedheader/Vegetables.cs %}
+{% include code-snippet/dropdownlist/how-to/disablefixedheader/Vegetables.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

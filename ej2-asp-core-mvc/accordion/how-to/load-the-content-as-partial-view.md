@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load The Content As Partial View in ##Platform_Name## Accordion Component
+title: Load accordion content as partial view | Syncfusion
 description: Learn here all about how to load the content as partial view in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load The Content As Partial View
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Load the content as partial view to Accordion
+# Load the content as partial view in ##Platform_Name## Accordion
 
 Since Accordion is a Navigation control, it doesn't have support to load any content directly or using any DataAdaptor. But it is provided with the items support. So to load the content as partial view, you would need to make use of the AJAX or EJ2 Datamanager as described in [How-To](./load-accordion-with-data-source) section help document.
 

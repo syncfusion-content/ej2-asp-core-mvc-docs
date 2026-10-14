@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## TextArea control | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion ##Platform_Name## TextArea control of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## TextArea | Syncfusion
+description: Adjust the Syncfusion ##Platform_Name## TextArea size by applying the `e-small` or `e-bigger` CSS class to render smaller or larger variants.
 platform: ej2-asp-core-mvc
 control: Style and Appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sizing in ##Platform_Name## TextArea Control
+# Style and Appearance in ##Platform_Name## TextArea
 
 you can adjust the size of the TextArea by applying specific classes:
 

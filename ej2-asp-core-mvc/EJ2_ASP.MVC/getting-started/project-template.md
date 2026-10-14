@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Component | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+description: Learn how to create a Syncfusion ASP.NET MVC web application quickly using the Syncfusion Visual Studio Project Template and Essential JS 2 controls.
 platform: ej2-asp-core-mvc
 control: Project Template
 publishingplatform: ##Platform_Name##
@@ -14,7 +14,7 @@ documentation: ug
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC platform to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC web application using Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls.
 
-N> Starting with v16.2.0.x, if you reference to Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use the controls.
+N> Starting with v16.2.0.x, if you reference to Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use the controls.
 
 ## Getting started with ASP.NET MVC 5
 
@@ -22,10 +22,10 @@ N> Starting with v16.2.0.x, if you reference to Syncfusion<sup style="font-size:
 
 To get started with ASP.NET MVC 5 application, ensure the following software to be installed on the machine.
 
-* .Net Framework 4.5 and above.
+* .NET Framework 4.5 and above.
 * ASP.NET MVC 5
 * Visual Studio 2017
-* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/)
+* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2)
 
 ### Create ASP.NET MVC 5 web application
 
@@ -84,10 +84,10 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 To get started with ASP.NET MVC 4 application, ensure the following software to be installed on the machine.
 
-* .Net Framework 4.5 and above.
+* .NET Framework 4.5 and above.
 * ASP.NET MVC 4
 * Visual Studio 2017
-* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/)
+* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2)
 
 ### Create ASP.NET MVC 4 web application
 

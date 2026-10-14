@@ -1,21 +1,22 @@
 ---
 layout: post
-title: Create Nested Dialog in ##Platform_Name## Dialog Component
-description: Learn here all about Create Nested Dialog in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: How to create nested Dialog in ##Platform_Name## Dialog | Syncfusion
+description: Nest a Dialog inside another Syncfusion ##Platform_Name## Dialog by initializing the inner Dialog with the outer Dialog as its target.
 platform: ej2-asp-core-mvc
 control: Create Nested Dialog
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# How to create nested Dialog in ASP.NET MVC Dialog
 
-# Create nested Dialog
+A Dialog can be nested within another Dialog. The following sample demonstrates a nested Dialog, containing an outer (parent) Dialog and an inner (child) Dialog.
 
-A Dialog can be nested within another Dialog. The below sample contains parent and child Dialog (inner Dialog).
+## Implementation Steps
 
 **Step 1**:
 
-Create two div elements with id `#dialog` and `#innerDialog`.
+Create two div elements with ids `#dialog` and `#innerDialog`.
 
 **Step 2**:
 
@@ -23,7 +24,7 @@ Initialize the Dialog as mentioned in the below sample.
 
 **Step 3**:
 
-Set the inner Dialog target as `#dialog`.
+Set the inner Dialog's [`target`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.popups.dialog.html#Syncfusion_EJ2_Popups_Dialog_Target) property to `"#dialog"` (the ID of the parent Dialog element).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,8 +48,6 @@ Set the inner Dialog target as `#dialog`.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 Output be like the below.
 

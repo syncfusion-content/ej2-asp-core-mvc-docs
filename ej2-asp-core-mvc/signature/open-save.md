@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open and Save in ##Platform_Name## Signature Component
-description: Learn here all about Open and Save in Syncfusion ##Platform_Name## Signature component of Syncfusion Essential JS 2 and more.
+title: Open and Save in ##Platform_Name## Signature | Syncfusion
+description: Learn how to open and save signatures in the Syncfusion ##Platform_Name## Signature component using base64, URL, blob, and image formats.
 platform: ej2-asp-core-mvc
 control: Open and Save
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Open and Save Signature
+# Open and Save in ##Platform_Name## Signature
 
 The Signature control supports to open the signature by using hosted/online URL or base64. And it also supports various save options like image, base64, and blob.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nested Class in ##Platform_Name## Drop Down List Component
-description: Learn here all about nested class in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Nested Class in ##Platform_Name## DropDownList Component | Syncfusion
+description: Learn here all about nested class in Syncfusion ##Platform_Name## DropDownList component of Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Nested Class
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Model binding with nested class
 
-The following example demonstrate on how to model bind data to DropDownList with nested classes in controller.
+The following example demonstrates how to model bind data to DropDownList with nested classes in controller.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

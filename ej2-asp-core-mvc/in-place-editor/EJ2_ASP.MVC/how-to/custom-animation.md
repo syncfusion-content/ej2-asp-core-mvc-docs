@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Animation in ##Platform_Name## In Place Editor Component
-description: Learn here all about Custom Animation in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: How to set custom animation in ##Platform_Name## InplaceEditor | Syncfusion
+description: Customize Syncfusion ##Platform_Name## InplaceEditor popup-mode open and close animations by configuring Tooltip properties on the Model inside PopupSettings API.
 platform: ej2-asp-core-mvc
 control: Custom Animation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set custom animation for popup mode
+# How to set custom animation in ##Platform_Name## InplaceEditor
 
 In popup mode, the In-place Editor rendered with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC `Tooltip` control. You can use tooltip properties and events to customize the popup by configure properties into the [`Model`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Model) property inside the [`PopupSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PopupSettings) API.
 

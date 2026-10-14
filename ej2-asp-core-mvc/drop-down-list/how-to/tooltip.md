@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Drop Down List Component
-description: Learn here all about tooltip in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to add tooltips to ##Platform_Name## DropDownList items | Syncfusion
+description: Add a Syncfusion Tooltip to ##Platform_Name## DropDownList items via beforeRender, displaying each item's Name and Code in the tooltip.
 platform: ej2-asp-core-mvc
 control: Tooltip
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# DropDownList options with tooltip
+# How to add tooltips to ##Platform_Name## DropDownList items
 
-You can achieve this behavior by using `ej2-tooltip` component. When the mouse hovers on the DropDownList option, the tooltip displays some details related to hovered list item.
+You can add tooltips to DropDownList items by using the `ej.popups.Tooltip` component. When the mouse hovers over a DropDownList item, the tooltip displays the item's Name and Code. The Tooltip is instantiated client-side, appended to the `body`, and its `beforeRender` event is used to set the content based on the hovered list item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

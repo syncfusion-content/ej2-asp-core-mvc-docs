@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resizing in ##Platform_Name## DropDownList Control | Syncfusion
-description: Learn here all about Popup Resizing in Syncfusion ##Platform_Name## DropDownList control of Syncfusion Essential JS 2 and more.
+title: Popup Resize in ##Platform_Name## DropDownList | Syncfusion
+description: Allow users to resize the Syncfusion ##Platform_Name## DropDownList popup dynamically by enabling the allowResize property and persisting dimensions across sessions.
 platform: ej2-asp-core-mvc
 control: Resizing
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,15 @@ documentation: ug
 ---
 
 
-# Resizing in ##Platform_Name## DropDownList Control
-
-You can dynamically adjust the size of the popup in the DropDownList component by using the [AllowResize](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.dropdownlist.html#Syncfusion_EJ2_DropDowns_DropDownList_AllowResize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
+# Popup Resize in ##Platform_Name## DropDownList
+1
+You can dynamically adjust the size of the popup in the DropDownList component by using the [AllowResize](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.dropdownlist.html#Syncfusion_EJ2_DropDowns_DropDownList_AllowResize) property. When enabled, users can resize the popup, improving visibility and control. The resized dimensions are retained across sessions for a consistent user experience.
 
 The following sample illustrates the implementation of the Popup Resize feature.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-{% tabs %}
+{% tabs %}a
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownlist/popup-resize/tagHelper %}
 {% endhighlight %}
@@ -43,4 +43,4 @@ public class PopupResizeData
 {% endif %}
 
 
-![Resizing in DropDownList Component](./images/dropdownlist-disable.png)
+![Resizing in DropDownList Component](./images/dropdownlist-resize.gif)

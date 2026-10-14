@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Rating Control | Syncfusion
-description: Learn here all about Appearance in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## Rating | Syncfusion
+description: Learn how to customize the appearance of Syncfusion ##Platform_Name## Rating, including item count, visibility, read-only mode, disabled state, and CSS styling.
 platform: ej2-asp-core-mvc
 control: Appearance
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Appearance in ASP.NET MVC Rating Control
+# Appearance in ##Platform_Name## Rating
 
 You can also customize the appearance of rating control.
 

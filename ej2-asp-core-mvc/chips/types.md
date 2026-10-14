@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Chips Control | Syncfusion
-description: Learn here all about Types in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Chips | Syncfusion
+description: Use Syncfusion ##Platform_Name## Chips as Input, Choice, Filter, or Action chips to capture user input, select options, or trigger commands.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Types in Chips Control
+# Types in ##Platform_Name## Chips
 
 The ChipList control has the following types.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Combo Box Control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## ComboBox | Syncfusion
+description: Bind Syncfusion ##Platform_Name## ComboBox to local arrays, OData, OData V4, Web API, XML, JSON, or JSONP using the dataSource property and DataManager adaptors.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding in Combo Box Control
+# Data Binding in ##Platform_Name## ComboBox
 
 The ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_DataSource) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 

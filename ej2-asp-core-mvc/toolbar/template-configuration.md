@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Template Configuration in ##Platform_Name## Toolbar Component | Syncfusion
-description: Learn here all about Template Configuration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to configure templates in ##Platform_Name## Toolbar | Syncfusion
+description: Render the Syncfusion ##Platform_Name## Toolbar from an item-based collection or by HTML elements using the `target` property with element IDs.
 platform: ej2-asp-core-mvc
 control: Template Configuration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# How to Configure Templates in ##Platform_Name## Toolbar
 
-# Template Configuration
+The Toolbar can be rendered by item-based collection or by HTML elements. To render it based on a given HTML element, set the `target` property (string) to the element's `id`. Template rendering requires only the HTML element structure.
 
-The Toolbar can be rendered by item based collection and by HTML elements.  To render it based on the given HTML element, use `id` as the `target` property. To render the Toolbar, follow the below structure of the HTML elements:
+To render the Toolbar, follow the below structure of the HTML elements:
 
 ```html
   <div id='template_toolbar'>   --> Root Toolbar Element
@@ -47,11 +48,9 @@ Here, the template ID, `#template_toolbar` is directly appended to the Toolbar.
 {% endtabs %}
 {% endif %}
 
-
-
 ## Popup customization
 
-`Popup` is one of the supported responsive modes of the Toolbar. The Toolbar commands, popup mode priority and button text mode customizations are achieved in the item based rendering through property declaration. For more information on popup mode, refer [here](./responsive-mode/)
+`Popup` is one of the supported responsive modes of the Toolbar. The Toolbar commands, popup mode priority and button text mode customizations are achieved in the item based rendering through property declaration. For more information on popup mode, refer [here](./responsive-mode)
 
 The above behavior can also be achieved with template rendering by defining `equivalent class` names instead of property declaration.
 
@@ -94,9 +93,9 @@ Class              | Description
 {% endtabs %}
 {% endif %}
 
-## Integrate menu component
+## Integrate Menu component
 
-You can integrate menu component as toolbar item in Toolbar using content template property. Menu can be populated with items as needed.
+You can integrate the Menu component as a Toolbar item using the content template property. The content template property allows you to wrap any component (such as Menu) inside a Toolbar item div. Menu can be populated with items as needed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

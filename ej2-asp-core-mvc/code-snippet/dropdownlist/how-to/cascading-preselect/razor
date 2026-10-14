@@ -7,7 +7,7 @@
 <script type="text/javascript">
     var totalData;
     function stateCreated() {
-        // disable the state DropDownList
+        // filters/sets the data source
         var countryObj = document.getElementById('CountryId').ej2_instances[0];
         var state = document.getElementById('StateId').ej2_instances[0];
         totalData = state.dataSource
@@ -18,7 +18,7 @@
         state.dataSource = tempQuery.executeLocal(dataManager);
     }
     function countrychange() {
-        // disable the state DropDownList
+        // Enable the state DropDownList
         var countryObj = document.getElementById('CountryId').ej2_instances[0];
         var state = document.getElementById('StateId').ej2_instances[0];
         state.enabled = true;

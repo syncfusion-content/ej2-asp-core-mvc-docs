@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Radio Button Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
+title: Migrate from Essential JS 1 to ##Platform_Name## Radio Button | Syncfusion
+description: Learn how to migrate Radio Button APIs from Essential JS 1 (EJ1) to Essential JS 2 in ##Platform_Name## applications.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# Migrate Radio Button from Essential JS 1 to Essential JS 2
 
 This article describes the API migration process of RadioButton component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core ProgressBar Control | Syncfusion 
+title: Getting Started with ASP.NET Core Progress Bar | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core ProgressBar Control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: ProgressBar
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core ProgressBar Control
+# Getting Started with ASP.NET Core Progress Bar
 
 This section briefly explains how to include the [ASP.NET Core ProgressBar](https://www.syncfusion.com/aspnet-core-ui-controls/progressbar) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

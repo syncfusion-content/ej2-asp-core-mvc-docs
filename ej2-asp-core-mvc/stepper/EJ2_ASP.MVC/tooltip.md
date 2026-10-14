@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about Tooltip in ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to display tooltips in the Syncfusion ##Platform_Name## Stepper, including custom tooltip templates and dynamic step information.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tooltip in ##Platform_Name## Stepper control
+# Tooltip in ##Platform_Name## Stepper
 
 The Stepper control supports tooltip to show additional information in the steps by setting the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ShowTooltip) property to `true`.
 

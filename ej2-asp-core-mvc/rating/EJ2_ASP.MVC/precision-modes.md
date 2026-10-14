@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Precision Modes in ##Platform_Name## Rating Control | Syncfusion
-description: Learn here all about Precision Modes in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Precision Modes in ##Platform_Name## Rating | Syncfusion
+description: Learn about the precision modes available in Syncfusion ##Platform_Name## Rating, including full, half, quarter, and exact rating values.
 platform: ej2-asp-core-mvc
 control: Precision Modes
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Precision Modes in ASP.NET MVC Rating Control
+# Precision Modes in ##Platform_Name## Rating
 
 You can use the [Precision](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Precision) property of the ASP.NET MVC Rating control to provide ratings with varying levels of precision.
 

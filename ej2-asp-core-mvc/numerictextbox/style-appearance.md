@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## NumericTextBox Component
-description: Learn here all about style and appearance in ##Platform_Name## NumericTextBox component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## Numeric TextBox | Syncfusion
+description: Learn how to customize the style and appearance of ##Platform_Name## Numeric TextBox using CSS to modify wrapper elements, input fields, and spinner icons.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style and appearance in NumericTextBox Component
+# Style and Appearance in ##Platform_Name## NumericTextBox
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
 

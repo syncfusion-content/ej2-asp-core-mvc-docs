@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styles in ##Platform_Name## Skeleton Control | Syncfusion
-description: Checkout and learn here all about styles and how to use them in ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more details.
+title: Styles in ##Platform_Name## Skeleton | Syncfusion
+description: Learn how to customize the Syncfusion ##Platform_Name## Skeleton control using CssClass and Visible properties to control appearance and visibility.
 platform: ej2-asp-core-mvc
 control: Styles
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Styles in ASP.NET MVC Skeleton Control
+# Styles in ##Platform_Name## Skeleton
 
 You can customize skeleton control in the below ways.
 

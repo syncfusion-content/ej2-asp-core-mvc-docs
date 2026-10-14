@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Predefined Dialogs | Syncfusion
-description: Checkout and learn about getting started with ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Learn how to get started with ##Platform_Name## Predefined Dialogs, including setup, configuration, and displaying Alert, Confirm, and Prompt dialogs.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Predefined Dialogs
+# Getting Started with ##Platform_Name## Predefined Dialogs
 
 This section briefly explains how to include ASP.NET Core Predefined Dialogs in an ASP.NET Core application using Visual Studio.
 

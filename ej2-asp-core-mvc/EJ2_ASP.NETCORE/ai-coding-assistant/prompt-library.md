@@ -267,4 +267,4 @@ The Syncfusion ASP.NET Core Calendar supports flexible date selection, localizat
 ## See also
 
 * [AI Coding Assistant Overview](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
-* [SyncfusionAspNetCoreAssistant MCP Server](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/mcp-server)
+* [SyncfusionAspNetCoreAssistant MCP Server](https://ej2.syncfusion.com/aspnetcore/documentation/mcp)

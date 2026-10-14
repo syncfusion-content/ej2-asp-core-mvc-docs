@@ -44,7 +44,7 @@ Nuget\Install-Package Markdig
  
 ## Generate API Key
 
-1. **Access Google AI Studio**: Instructs users to sign into [Google AI Studio](https://aistudio.google.com/app/apikey) with a Google account or create a new account if needed. 
+1. **Access Google AI Studio**: Instructs users to sign into [Google AI Studio](https://aistudio.google.com/app/api-keys) with a Google account or create a new account if needed. 
 
 2. **Navigate to API Key Creation**: Go to the `Get API Key` option in the left-hand menu or top-right corner of the dashboard. Click the `Create API Key` button.
 

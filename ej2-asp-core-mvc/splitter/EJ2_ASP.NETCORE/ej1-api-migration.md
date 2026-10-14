@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Splitter Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Migration from Essential JS 1 in ##Platform_Name## Splitter | Syncfusion
+description: Learn how to migrate Splitter APIs from Essential JS1 to Syncfusion ##Platform_Name## Splitter, including methods, events, and localization.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# Migration from Essential JS 1 in ##Platform_Name## Splitter
 
 This article describes the API migration process of Splitter component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

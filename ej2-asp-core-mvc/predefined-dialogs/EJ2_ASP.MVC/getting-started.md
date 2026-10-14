@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ASP.NET MVC Predefined Dialogs | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+description: Learn how to get started with ASP.NET MVC Predefined Dialogs, including setup, configuration, and displaying Alert, Confirm, and Prompt dialogs.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about Globalization in ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to localize and globalize the Syncfusion ##Platform_Name## Stepper with culture-specific text and right-to-left (RTL) layout support.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Globalization in ##Platform_Name## Stepper control
+# Globalization in ##Platform_Name## Stepper
 
 ## Localization
 

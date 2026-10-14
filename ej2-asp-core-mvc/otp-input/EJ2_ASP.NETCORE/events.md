@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## OTP Input Control | Syncfusion
-description: Checkout and learn here all about Events in ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
+title: Events in ##Platform_Name## OTP Input | Syncfusion
+description: Learn about ##Platform_Name## OTP Input events, including Created, Focus, Blur, Input, and ValueChanged, to handle user interactions effectively.
 platform: ej2-asp-core-mvc
 control: OTP Input
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in ASP.NET Core OTP Input control
+# Events in ##Platform_Name## OTP Input
 
 This section describes the OTP Input events that will be triggered when appropriate actions are performed. The following events are available in the OTP Input control.
 

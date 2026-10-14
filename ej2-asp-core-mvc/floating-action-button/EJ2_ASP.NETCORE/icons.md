@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Floating Action Button Control | Syncfusion
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Floating Action Button control of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## FloatingActionButton | Syncfusion
+description: Configure Syncfusion ##Platform_Name## FloatingActionButton icons using Syncfusion, material, bootstrap, or custom font icons with fontFamily and cssClass.
 platform: ej2-asp-core-mvc
 control: Icons
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons in Asp.Net Core Floating Action Button Control
+# Icons in ##Platform_Name## FloatingActionButton
 
 You can customize the icon and text of Asp.Net Core Floating Action Button(FAB) using [IconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconCss) and [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Content) properties.
 

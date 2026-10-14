@@ -18,7 +18,7 @@
         var state = document.getElementById('state').ej2_instances[0];
         var city = document.getElementById('city').ej2_instances[0];
         state.enabled = true;
-        //frame the query based on selected value in country DropDownList.
+        //build the query based on selected value in country DropDownList.
         var tempQuery = new ej.data.Query().where('CountryId', 'equal', countryObj.value);
         // set the framed query based on selected value in country DropDownList.
         state.query = tempQuery;

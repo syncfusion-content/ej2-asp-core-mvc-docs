@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## MultiColumn Combobox Control | Syncfusion
-description: Checkout and learn about Data binding in Syncfusion ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Explore how to bind local and remote data sources to the Syncfusion ##Platform_Name## MultiColumn ComboBox using DataSource property and DataManager.
 platform: ej2-asp-core-mvc
 control: Data binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data binding in ##Platform_Name## MultiColumn Combobox control
+# Data Binding in ##Platform_Name## MultiColumn ComboBox
 
 The MultiColumn ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_DataSource) property. It supports the data type of `object arrays` or `DataManager`.
 

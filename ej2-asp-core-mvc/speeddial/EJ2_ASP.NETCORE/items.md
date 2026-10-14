@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Items in ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn here all about action items and how to configure action items in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Items in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn about action items and customization options in the Syncfusion ##Platform_Name## Speed Dial, including icons, text, templates, animations, and item states.
 platform: ej2-asp-core-mvc
 control: Items
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Items in ASP.NET Core Speed Dial Control
+# Items in ##Platform_Name## Speed Dial
 
 The action items in ASP.NET Core Speed Dial can be added by using [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Items) property.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons And Templates in ##Platform_Name## List Box Component
-description: Learn here all about Icons And Templates in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
+title: Icons and Templates in ##Platform_Name## ListBox | Syncfusion
+description: Customize Syncfusion ##Platform_Name## ListBox item templates and iconCss using the template property to render images, avatars, badges, or custom HTML.
 platform: ej2-asp-core-mvc
 control: Icons And Templates
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons and Customization
+# Icons and Templates in ##Platform_Name## ListBox
 
 ## Icons
 

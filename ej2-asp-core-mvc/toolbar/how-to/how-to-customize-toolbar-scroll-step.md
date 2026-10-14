@@ -1,19 +1,18 @@
 ---
 layout: post
-title: To Customize Toolbar Scroll Step in ##Platform_Name## Toolbar Component | Syncfusion
-description: Learn here all about How To Customize Toolbar Scroll Step in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to customize scroll step in ##Platform_Name## Toolbar | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Toolbar scrolling distance when clicking the left or right navigation icons by setting the `ScrollStep` property.
 platform: ej2-asp-core-mvc
 control: How To Customize Toolbar Scroll Step
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# How to customize scroll step in ##Platform_Name## Toolbar
 
-# How to customize toolbar scrollStep
+You can customize the scrolling distance of the Toolbar when you click the left and right navigation icons. The `ScrollStep` property determines the distance, in pixels, that the Toolbar scrolls each time a navigation icon is clicked. Set the `ScrollStep` property to the required numeric value to customize the scrolling distance.
 
-Toolbar supports to customize the scrolling distance when you click the left and right side navigation icons. we can customize `ScrollStep` property for scrolling distance. Refer to the following code example.
-
-By using Toolbar scrollStep property, pass a required value to customize toolbar scrollStep.
+Refer to the following code example. In this example, the `ScrollStep` property is set to `50`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,4 +36,3 @@ By using Toolbar scrollStep property, pass a required value to customize toolbar
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-

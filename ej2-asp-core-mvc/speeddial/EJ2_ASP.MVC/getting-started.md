@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Speed Dial | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Speed Dial. Explore setup, positioning, display modes, events, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC SpeedDial Control
+# Getting Started with ##Platform_Name## Speed Dial
 
 This section briefly explains how to include the [ASP.NET MVC SpeedDial](https://www.syncfusion.com/aspnet-mvc-ui-controls/speed-dial) control in an ASP.NET MVC application using Visual Studio.
 
@@ -98,7 +98,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC SpeedD
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC SpeedDial control will be rendered in the default web browser.
 
-![ASP.NET MVC SpeedDial Control](images/speeddial-component.png)
+![ASP.NET MVC SpeedDial Control](images/speeddial-component.webp)
 
 ## Positioning
 
@@ -113,7 +113,7 @@ The speed dial can be positioned using the [`position`](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC SpeedDial Control](images/speeddial-position-sample.png)
+![ASP.NET MVC SpeedDial Control](images/speeddial-position-sample.webp)
 
 ## Linear and radial display modes
 
@@ -128,9 +128,9 @@ You can use the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC SpeedDial Control](images/speeddial-mode-linear-sample.png)
+![ASP.NET MVC SpeedDial Control](images/speeddial-mode-linear-sample.webp)
 
-![ASP.NET MVC SpeedDial Control](images/speeddial-mode-radial-sample.png)
+![ASP.NET MVC SpeedDial Control](images/speeddial-mode-radial-sample.webp)
 
 ## Clicked event
 
@@ -146,4 +146,4 @@ You can use this event to perform the required action.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC SpeedDial Control](images/speeddial-event-sample.png)
+![ASP.NET MVC SpeedDial Control](images/speeddial-event-sample.webp)

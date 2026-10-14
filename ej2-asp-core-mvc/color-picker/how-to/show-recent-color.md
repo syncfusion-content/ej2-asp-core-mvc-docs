@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show Recent color in ##Platform_Name## Color Picker Control | Syncfusion
-description: Learn here all about Show Recent color in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
+title: How to show recent color in ##Platform_Name## Color Picker | Syncfusion
+description: Display up to ten recently selected colors as tiles in Syncfusion ##Platform_Name## Color Picker palette mode using the showRecentColors property.
 platform: ej2-asp-core-mvc
 control: Render Palette Alone
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Show Recent color in Color Picker Control
+# How to show recent color in ##Platform_Name## Color Picker
 
 The [ShowRecentColors](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_ShowRecentColors) property enables the display of recently selected colors in the ColorPicker when in palette mode. This feature helps users quickly access their most frequently used colors.
 

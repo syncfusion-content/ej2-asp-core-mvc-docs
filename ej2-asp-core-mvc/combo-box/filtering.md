@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Combo Box Control | Syncfusion
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Combo Box Control of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## ComboBox | Syncfusion
+description: Enable Syncfusion ##Platform_Name## ComboBox filtering with allowFiltering and refresh the popup via updateData inside the filtering event for custom queries.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering in Combo Box Control
+# Filtering in ##Platform_Name## ComboBox
 
 The ComboBox has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_AllowFiltering) is enabled. The filter operation starts as soon as you start typing characters in the control.
 

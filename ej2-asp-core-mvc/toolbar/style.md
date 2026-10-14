@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Toolbar Component | Syncfusion
-description: Checkout and learn here all about style and appearance in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Toolbar | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Toolbar appearance using CSS to modify the root element, items, and command button properties.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Style in ##Platform_Name## Toolbar
 
-# CSS Structure in ##Platform_Name## Toolbar Component
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
+## Customizing the Toolbar
 
-## Customizing Toolbar
-
-Use the following CSS to customize the Toolbar.
+Use the following CSS to customize the Toolbar root element.
 
 ```CSS
 
@@ -38,7 +37,7 @@ Use the following CSS to customize the items of Toolbar.
 
 ```
 
-Use the following CSS to customize the button in the items of Toolbar.
+Use the following CSS to customize the button in the items of the Toolbar.
 
 ```CSS
 
@@ -62,7 +61,7 @@ Use the following CSS to customize the item icon of Toolbar control.
 
 ```
 
-## Customizing the hover state of Toolbar control
+## Customizing the hover state of the Toolbar
 
 Use the following CSS to customize the toolbar item when hovering.
 
@@ -75,7 +74,7 @@ Use the following CSS to customize the toolbar item when hovering.
 
 ```
 
-## Customizing selected item of Toolbar control
+## Customizing the selected item of the Toolbar
 
 Use the following CSS to customize the selected toolbar item.
 

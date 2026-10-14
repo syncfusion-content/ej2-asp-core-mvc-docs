@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Shapes in ##Platform_Name## Skeleton Control | Syncfusion
-description: Checkout and learn here all about shapes and how to use them in ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more details.
+title: Shapes in ##Platform_Name## Skeleton | Syncfusion
+description: Learn how to use the built-in shape variants in the Syncfusion ##Platform_Name## Skeleton control, including circle, square, rectangle, and text shapes.
 platform: ej2-asp-core-mvc
 control: Shapes
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Shapes in ASP.NET MVC Skeleton Control
+# Shapes in ##Platform_Name## Skeleton
 
 The Skeleton control support various built-in shape variants to design layout of the page. You can use the [Shape](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Notifications.Skeleton.html#Syncfusion_EJ2_Notifications_Skeleton_Shape) property to create a preview of any layout.
 

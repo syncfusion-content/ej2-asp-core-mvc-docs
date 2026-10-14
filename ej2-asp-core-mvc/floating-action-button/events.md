@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## FloatingActionButton Control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## FloatingActionButton control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## FloatingActionButton | Syncfusion
+description: Handle Syncfusion ##Platform_Name## FloatingActionButton events like created to run code after the component is initialized in the page.
 platform: ej2-asp-core-mvc
 control: Events
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in Floating Action Button Control
+# Events in ##Platform_Name## FloatingActionButton
 
 This section explains the available events in Floating Action Button Control.
 

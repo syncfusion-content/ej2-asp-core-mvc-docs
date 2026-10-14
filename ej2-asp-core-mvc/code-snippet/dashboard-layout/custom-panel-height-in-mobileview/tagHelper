@@ -1,0 +1,49 @@
+@{
+    ...
+    panelCellSpacingModel modelValue = new panelCellSpacingModel();
+    modelValue.cellSpacing = new double[] { 20, 20 };
+}
+
+
+<div>
+    <!--  Dashboardlayout element declaration -->
+    <ejs-dashboardlayout id="dashboard_default" columns="5" cellSpacing="@modelValue.cellSpacing" mediaQuery="max-width: 700px">
+        <e-dashboardlayout-panels>
+            <e-dashboardlayout-panel id="Panel0" sizeX="1" sizeY="1" row="0" col="0" content="<div class='content'>0</div>" mobilePanelHeight="0.25">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel id="Panel1" sizeX="1" sizeY="1" row="0" col="1" content="<div class='content'>1</div>" mobilePanelHeight="0.5">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel id="Panel2" sizeX="1" sizeY="1" row="1" col="0" content="<div class='content'>2</div>" mobilePanelHeight="0.75">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel id="Panel3" sizeX="1" sizeY="1" row="2" col="0" content="<div class='content'>3</div>" mobilePanelHeight="1">
+            </e-dashboardlayout-panel>
+        </e-dashboardlayout-panels>
+    </ejs-dashboardlayout>
+</div>
+<!-- end of dashboardlayout element -->
+<style>
+    /* DashboardLayout element styles  */
+    #dashboard_default .e-panel .e-panel-container .content {
+        font-weight: 600;
+        text-align: center;
+        padding: 5px;
+        line-height: 100%;
+    }
+
+    .e-dashboard-layout.e-control .e-panel .e-panel-container .e-panel-header {
+        color: rgba(0, 0, 0, 0.61);
+    }
+
+    .e-dashboard-layout.e-control .e-panel:hover {
+        border: 0px;
+    }
+
+    .e-dashboard-layout.e-control .e-panel .e-panel-header {
+        font-size: 15px;
+        font-weight: 500;
+        height: 37px;
+        padding: 10px;
+        vertical-align: middle;
+        border-bottom: 0.5px solid rgba(0, 0, 0, .125);
+    }
+</style>

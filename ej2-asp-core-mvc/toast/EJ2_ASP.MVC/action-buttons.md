@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Action Buttons in ##Platform_Name## Toast Component
-description: Learn here all about Action Buttons in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
+title: Action Buttons in ##Platform_Name## Toast | Syncfusion
+description: Add action buttons to the Syncfusion ##Platform_Name## Toast by binding a collection of ##Platform_Name## button models to the `Buttons` property with click callbacks.
 platform: ej2-asp-core-mvc
 control: Action Buttons
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Action Buttons
+# Action Buttons in ##Platform_Name## Toast
 
 You can include action buttons to the toast control by adding the [`Buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_Buttons) property. The collection of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC button models can be bound to the `model` property inside the `Buttons` property. You can also include the click event callback function for each button.
 
@@ -44,4 +43,4 @@ Output be like the below.
 
 ## See Also
 
-* [How to add dynamic template](./how-to/add-dynamic-template/)
+* [How to add dynamic template](./how-to/add-dynamic-template)

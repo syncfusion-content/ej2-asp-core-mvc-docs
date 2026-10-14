@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Use Case Scenarios in ##Platform_Name## Menu Component
-description: Learn here all about Use Case Scenarios in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: Use Case Scenarios in ##Platform_Name## Menu | Syncfusion
+description: Implement Syncfusion ##Platform_Name## Menu scrollable, toolbar, and navigation scenarios using the cssClass, orientation, and template property APIs.
 platform: ej2-asp-core-mvc
 control: Use Case Scenarios
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Use case scenarios
+# Use Case Scenarios in ##Platform_Name## Menu
 
 ## Scrollable menu
 

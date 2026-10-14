@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create Wizard Using Accordion in ##Platform_Name## Accordion Control | Syncfusion
+title: Create wizard using Accordion in ##Platform_Name## Accordion | Syncfusion
 description: Learn here all about Create Wizard Using Accordion in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Wizard Using Accordion
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Create wizard using Accordion
+# Create wizard using Accordion in ##Platform_Name## Accordion
 
 Accordion items can be disabled dynamically by passing the index and boolean value with the enableItem method.
 

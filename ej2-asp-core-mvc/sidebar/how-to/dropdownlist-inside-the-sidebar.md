@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dropdownlist Inside The Sidebar in ##Platform_Name## Sidebar Component
-description: Learn here all about Dropdownlist Inside The Sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Add a DropDownList Inside ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to use a DropDownList inside the Syncfusion ##Platform_Name## Sidebar and prevent the Sidebar from closing when interacting with the DropDownList popup.
 platform: ej2-asp-core-mvc
 control: Dropdownlist Inside The Sidebar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Adding Dropdownlist inside the sidebar
+# Add a DropDownList Inside ##Platform_Name## Sidebar
 
 While clicking the dropdownlist items inside the sidebar element,it closes the sidebar component. By default, the closeonDocumentClick property will close the Sidebar element whenever the click action will be triggered outside of the Sidebar element. The DropDownList popup element placed outside of the Sidebar element (body tag instead of sidebar element). So, during the popup element interactions (click, mousedown) the closeonDocumentClick will trigger and close the sidebar.
 

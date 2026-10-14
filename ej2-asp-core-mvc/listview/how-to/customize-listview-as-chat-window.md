@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Customize ListView As Chat Window in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Customize ListView As Chat Window in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to use ListView as chat window in ##Platform_Name## | Syncfusion
+description: Render a Syncfusion ##Platform_Name## ListView-based chat window with avatar, message text, and timestamp fields, dynamically prepending or appending messages.
 platform: ej2-asp-core-mvc
 control: Customize ListView As Chat Window
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize ListView as Chat Window
+# How to use ListView as chat window in ##Platform_Name##
 
-ListView can be customized as chat window. To achieve that, use the ListView [template](https://ej2.syncfusion.com/documentation/api/list-view/#template) property and [Avatar](https://ej2.syncfusion.com/documentation/avatar/getting-started) control.
+ListView can be customized as chat window. To achieve that, use the ListView [template](https://ej2.syncfusion.com/documentation/api/list-view#template) property and [Avatar](https://ej2.syncfusion.com/documentation/avatar/getting-started) control.
 
     * The ListView template property is used to showcase the ListView as chat window.
     * Avatar control is used to design the image of contact person.
@@ -50,7 +50,7 @@ In ListView template, we have rendered the list items based on receiver and send
 
     
 * Use textbox to get message from user.  
-* Add the textbox message to ListView dataSource using [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view/#additem) method.
+* Add the textbox message to ListView dataSource using [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view#additem) method.
 
 ```typescript
 

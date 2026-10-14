@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maximum Length with ##Platform_Name## Textarea control | Syncfusion
-description: Limiting the maximum number of characters in the ##Platform_Name## Textarea control of Syncfusion Essential JS 2 and more details.
+title: Maximum Length in ##Platform_Name## TextArea | Syncfusion
+description: Limit the maximum number of characters a user can enter in the Syncfusion ##Platform_Name## TextArea using the `MaxLength` property.
 platform: ej2-asp-core-mvc
 control: Maximum Length
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maximum Length in ##Platform_Name## TextArea Control
+# Maximum Length in ##Platform_Name## TextArea
 
 You can enforce a maximum length limit for the text input in the TextArea using the [MaxLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_MaxLength) property. This property allows to define the maximum number of characters that users can input into the TextArea.
 

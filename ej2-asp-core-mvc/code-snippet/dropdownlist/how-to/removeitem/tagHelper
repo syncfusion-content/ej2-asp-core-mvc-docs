@@ -6,14 +6,14 @@
     </div>
 </div>
 
-<ejs-button id="first" content="Remove 0th item"></ejs-button>
+<ejs-button id="first" content="Remove the first item"></ejs-button>
 
 <script>
     document.getElementById('first').onclick = () => {
         // create DropDownList object
         let obj = document.getElementById('games');
         if (obj.ej2_instances[0].list) {
-            // Remove the selected value if 0th index selected
+            // clear the selected value if 0th index selected
             var dropObject = document.getElementById("games");
             var dropDownListObject = dropObject.ej2_instances[0];
             if (dropDownListObject.index === 0) {
@@ -24,7 +24,7 @@
             (obj.ej2_instances[0].list.querySelectorAll('li')[0]).remove();
             if (!obj.ej2_instances[0].list.querySelectorAll('li')[0]) {
                 dropDownListObject.dataSource = [];
-                // enable the nodata template when no data source is empty.
+                // enable the no-data template when the data source is empty.
                 obj.ej2_instances[0].list.classList.add('e-nodata');
             }
         }

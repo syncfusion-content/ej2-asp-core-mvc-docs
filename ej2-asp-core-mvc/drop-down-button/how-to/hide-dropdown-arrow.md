@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hide Dropdown Arrow in ##Platform_Name## Drop Down Button Component
-description: Learn here all about how to hide dropdown arrow in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
+title: How to hide dropdown arrow in ##Platform_Name## DropDownButton | Syncfusion
+description: Hide the dropdown arrow of the Syncfusion ##Platform_Name## DropDownButton by adding the e-caret-hide class via the cssClass property.
 platform: ej2-asp-core-mvc
 control: Hide Dropdown Arrow
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Hide dropdown arrow
+# How to hide dropdown arrow in ##Platform_Name## DropDownButton
 
 You can hide the dropdown arrow from the DropDownButton by adding class `e-caret-hide` to DropDownButton element using [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_CssClass) property.
 

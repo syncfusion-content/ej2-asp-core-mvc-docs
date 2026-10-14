@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Menu Using Events in ##Platform_Name## Menu Component
-description: Learn here all about Customize Menu Using Events in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: How to customize ##Platform_Name## Menu using events | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Menu items using the beforeItemRender, beforeOpen, beforeClose, and select events to change labels and behavior.
 platform: ej2-asp-core-mvc
 control: Customize Menu Using Events
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize menu using events
+# How to customize ##Platform_Name## Menu using events
 
 The Menu provides a set of `events` to enable users to customize it.
 

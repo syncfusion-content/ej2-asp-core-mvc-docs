@@ -15,13 +15,13 @@ namespace WebApplication1.Controllers
             BeneficiaryViewModel model = new BeneficiaryViewModel();
             List<Person> person = new List<Person>();
             person.Add(new Person { AccountNumber = "5000102394555", PersonName = new Name { FirstName = "Mary", LastName = "Elizabeth", FullName = "Mary Elizabeth" } });
-            person.Add(new Person { AccountNumber = "5000102394556", PersonName = new Name { FirstName = "Liz ", LastName = "Smith", FullName = "Liz Smith" } });
+            person.Add(new Person { AccountNumber = "5000102394556", PersonName = new Name { FirstName = "Liz", LastName = "Smith", FullName = "Liz Smith" } });
             person.Add(new Person { AccountNumber = "5000102394557", PersonName = new Name { FirstName = "Ada", LastName = "Maria", FullName = "Ada Maria" } });
             person.Add(new Person { AccountNumber = "5000102394558", PersonName = new Name { FirstName = "Elizabeth", LastName = "Smith", FullName = "Elizabeth Smith" } });
             person.Add(new Person { AccountNumber = "5000102394559", PersonName = new Name { FirstName = "George", LastName = "David", FullName = "George David" } });
             person.Add(new Person { AccountNumber = "5000102394560", PersonName = new Name { FirstName = "Nancy", LastName = "Rose", FullName = "Nancy Rose" } });
             model.BeneficiaryList = person;
-            model.SelectedAccountNumber = "persondetails";
+            model.SelectedAccountNumber = "5000102394556";
             return View(model);
         }
     }

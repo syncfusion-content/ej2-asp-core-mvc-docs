@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core DropDownTree Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core DropDownTree control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## DropdownTree | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## DropdownTree control in an ASP.NET Core web app using Razor pages, TagHelper, and Syncfusion NuGet packages.
 platform: ej2-asp-core-mvc
 control: DropDownTree
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core DropDownTree Control
+# Getting Started with ##Platform_Name## DropdownTree
 
 This section briefly explains how to include the [ASP.NET Core DropDownTree](https://www.syncfusion.com/aspnet-core-ui-controls/dropdown-tree) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Validate text when renaming in ##Platform_Name## TreeView Control | Syncfusion
-description: Learn here all about Validate the Text When Renaming The Tree Node in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
+title: Validate Text When Renaming TreeView Node - ##Platform_Name## | Syncfusion
+description: Validate Syncfusion ##Platform_Name## TreeView node text during rename using the nodeEdited event, preventing empty or duplicate values.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Validate the text when renaming the tree node
+# Validate text when renaming TreeView node in ##Platform_Name##
 
-You can validate the tree node text during editing by using the `nodeEdited` event of the TreeView. The following example shows how to validate and prevent empty values in a tree node.
+You can validate the tree node text during editing by using the [nodeEdited](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_NodeEdited) event of the TreeView. The following example shows how to validate and prevent empty values in a tree node.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

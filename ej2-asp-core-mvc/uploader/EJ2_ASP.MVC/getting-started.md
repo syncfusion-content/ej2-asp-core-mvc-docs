@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Uploader Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## File Upload | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## File Upload control. Explore setup, async upload, configuration, and rendering examples.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Uploader Control
+# Getting Started with ##Platform_Name## File Upload
 
 This section briefly explains how to include the [ASP.NET MVC Uploader](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) control in an ASP.NET MVC application using Visual Studio.
 
@@ -127,7 +127,7 @@ You can handle the success and failure actions using the [Success](https://help.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Uploader Actions](images/uploader-auto-01.png)
+![ASP.NET MVC Uploader Actions](images/uploader-auto-01.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Uploader/ASP.NET%20MVC%20Razor%20Examples).
 
@@ -137,4 +137,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 * [Achieve file upload programmatically](./how-to/achieve-file-upload-programmatically)
 * [Achieve invisible upload](./how-to/achieve-invisible-upload)
 
-> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) that shows how to render the file upload and browse the files which you want to upload to the server.
+> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) that shows how to render the file upload and browse the files which you want to upload to the server.

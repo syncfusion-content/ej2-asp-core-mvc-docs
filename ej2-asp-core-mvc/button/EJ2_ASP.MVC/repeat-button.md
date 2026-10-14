@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Repeat button in the ##Platform_Name## Button control | Syncfusion
-description: Learn here all about Repeat button in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more details.
+title: Repeat Button in ##Platform_Name## Button | Syncfusion
+description: Enable continuous click events on the ##Platform_Name## Button with enableRepeat, repeatDelay, and repeatInterval properties.
 platform: ej2-asp-core-mvc
 control: Repeat Button
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Repeat button in the ##Platform_Name## Button control
+# Repeat Button in ##Platform_Name## Button
 
 The Button component provides repeat-click functionality through the `enableRepeat` property. When enabled, the Button continuously triggers the `clicked` event while the user presses and holds the Button.
 

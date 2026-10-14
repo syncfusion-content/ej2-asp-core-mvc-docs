@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Progress Bar Component
+title: Tooltip in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tooltip in ##Platform_Name## ProgressBar Component
+# Tooltip in ASP.NET MVC Progress Bar
 
 ## Tooltip
 
@@ -20,8 +20,7 @@ The tooltip for the progress bar is used to represent the progress value. During
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip1/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -29,8 +28,7 @@ The tooltip for the progress bar is used to represent the progress value. During
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip1/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -45,8 +43,7 @@ By default, the tooltip shows information about progress. In addition to that, s
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip2/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Format.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -54,8 +51,7 @@ By default, the tooltip shows information about progress. In addition to that, s
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip2/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Format.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -70,8 +66,7 @@ The [`Fill`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Progres
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip3/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -79,6 +74,5 @@ The [`Fill`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Progres
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip3/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}

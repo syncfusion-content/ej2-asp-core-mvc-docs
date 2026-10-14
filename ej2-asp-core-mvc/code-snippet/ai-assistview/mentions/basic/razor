@@ -1,0 +1,64 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+@{
+    var agents = new List<object>
+    {
+        new
+        {
+            id = "TechSupport",
+            name = "TechSupport",
+            description = "Troubleshoot technical issues",
+            placeholder = "Ask about VPN, network, or device issues"
+        },
+        new
+        {
+            id = "HRAssistant",
+            name = "HRAssistant",
+            description = "Get assistance with HR policies",
+            placeholder = "Ask about leave, benefits, and HR policies"
+        },
+        new
+        {
+            id = "KnowledgeBase",
+            name = "KnowledgeBase",
+            description = "Search internal documentation",
+            placeholder = "Search the internal knowledge base"
+        }
+    };
+
+    var mentions = new List<object>
+    {
+        new
+        {
+            mentionChar = "@",
+            dataSource = agents,
+            fields = new { text = "name", value = "id" }
+        }
+    };
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    @(
+        Html.EJS().AIAssistView("basic")
+            .PromptPlaceholder("Type '@' to mention an agent...")
+            .Mentions((object)mentions)
+            .PromptRequest("onPromptRequest")
+            .Created("onCreated")
+            .Render()
+    )
+</div>
+
+<script>
+    var assistObj;
+
+    function onCreated() {
+        assistObj = this;
+    }
+
+    function onPromptRequest() {
+        setTimeout(function () {
+            var defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            assistObj.addPromptResponse(defaultResponse);
+        }, 1000);
+    }
+</script>

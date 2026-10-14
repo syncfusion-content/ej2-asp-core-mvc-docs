@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ListBox Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## ListBox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## ListBox | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name##ListBox control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started Mvc
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC ListBox Control
+# Getting Started with ##Platform_Name## ListBox
 
 This section briefly explains how to include the [ASP.NET MVC ListBox](https://www.syncfusion.com/aspnet-core-ui-controls/listbox) control in an ASP.NET MVC application using Visual Studio.
 
@@ -102,6 +102,6 @@ public ActionResult Index()
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC ListBox control will be rendered in the default web browser.
 
-![ASP.NET MVC ListBox Control](images/listbox-control.png)
+![ASP.NET MVC ListBox Control](images/listbox-control.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ListBox/ASP.NET%20MVC%20Razor%20Examples).

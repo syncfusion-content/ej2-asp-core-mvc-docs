@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open Close Sidebar in ##Platform_Name## Sidebar Component
-description: Learn here all about Open Close Sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Open and Close Sidebar in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to open, close, and toggle the Syncfusion ##Platform_Name## Sidebar programmatically using built-in methods.
 platform: ej2-asp-core-mvc
 control: Open Close Sidebar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Open and close the Sidebar
+# Open and Close Sidebar in ##Platform_Name## Sidebar
 
 Opening and closing the Sidebar can be achieved with built-in public methods.
 

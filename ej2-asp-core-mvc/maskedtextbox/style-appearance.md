@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## MaskedTextBox Component
-description: Learn here all about style and appearance in ##Platform_Name## MaskedTextBox component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## MaskedTextBox | Syncfusion
+description: Customize Syncfusion ##Platform_Name## MaskedTextBox appearance using CSS classes for input wrapper, focus, error, success, and disabled states via custom theme.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style and appearance in MaskedTextBox Component
+# Style and Appearance in ##Platform_Name## MaskedTextBox
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
 

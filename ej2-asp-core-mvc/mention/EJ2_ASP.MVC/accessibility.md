@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ASP.NET MVC Mention control | Syncfusion
-description: Learn here all about accessibility in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Mention | Syncfusion
+description: Syncfusion ##Platform_Name## Mention meets WCAG 2.2 by using aria-selected and aria-activedescendant attributes on the suggestion popup for screen reader access.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ejmvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in Mention
+# Accessibility in ##Platform_Name## Mention
 
 Web accessibility makes web contents and applications more accessible to people with disabilities. The Mention control provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using attributes such as `aria-selected` and `aria-activedescendent`.
 

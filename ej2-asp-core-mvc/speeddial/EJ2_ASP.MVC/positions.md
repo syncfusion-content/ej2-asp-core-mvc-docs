@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Position in ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about different built in positions in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Position in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn about the built-in positioning options in the Syncfusion ##Platform_Name## Speed Dial, including viewport placement, hover behavior, and programmatic control.
 platform: ej2-asp-core-mvc
 control: Position
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Positions in ASP.NET MVC Speed Dial Control
+# Position in ##Platform_Name## Speed Dial
 
 The Speed dial control can be positioned anywhere on the [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Target) using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position) property. If the `Target` is not defined, then Speed Dial is positioned based on the browser viewport.
 

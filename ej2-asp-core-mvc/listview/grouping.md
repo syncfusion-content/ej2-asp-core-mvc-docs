@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Grouping in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Grouping in ##Platform_Name## ListView | Syncfusion
+description: Group Syncfusion ##Platform_Name## ListView items by category using groupBy fields and customize the group header via groupTemplate or default template.
 platform: ej2-asp-core-mvc
 control: Grouping
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Grouping
+# Grouping in ##Platform_Name## ListView
 
 The ListView supports to wrap the nested element into a group based on the category. The category of each list item can be mapped with [`groupBy`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListViewFieldSettings.html#Syncfusion_EJ2_Lists_ListViewFieldSettings_GroupBy) field in the data table, that also supports single-level navigation.
 
@@ -42,10 +42,10 @@ In the following sample, The cars are grouped based on its category by using the
 
 Output be like the below.
 
-![ASP .NET Core ListView - Grouping](./images/grouping.png)
+![ASP.NET Core ListView - Grouping](./images/grouping.png)
 
 ## Customization
 
 The grouping header can be customized by using the groupTemplate property for both inline and fixed group header. The complete customization description and explanation with an example is given in the following link.
 
-[ASP .NET Core ListView - Group Template](./customizing-templates#group-template).
+[ASP.NET Core ListView - Group Template](./customizing-templates#group-template).

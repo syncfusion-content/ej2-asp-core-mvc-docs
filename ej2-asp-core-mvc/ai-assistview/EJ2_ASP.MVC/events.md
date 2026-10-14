@@ -103,6 +103,19 @@ The [AttachmentRemoved](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
+## attachmentRemoving
+
+The [AttachmentRemoving](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_AttachmentRemoving) event is triggered when an attached file is being removed in the AI AssistView.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/events/attachmentRemoving/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="AttachmentRemoving.cs" %}
+{% include code-snippet/ai-assistview/events/attachmentRemoving/attachmentRemoving.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## attachmentClick
 The `AttachmentClick` event is triggered when an attached file is clicked in the AI AssistView.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize Radiobutton Appearance in ##Platform_Name## Radio Button Component
-description: Learn here all about Customize Radiobutton Appearance in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
+title: Customize Radio Button Appearance in ##Platform_Name## | Syncfusion
+description: Learn how to customize the appearance of ##Platform_Name## Radio Button using custom CSS classes and the cssClass property.
 platform: ej2-asp-core-mvc
 control: Customize Radiobutton Appearance
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customize RadioButton Appearance
+# Customize Radio Button Appearance in ##Platform_Name##
 
 You can customize the appearance of the RadioButton component by using the CSS rules.
 Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.RadioButton.html#Syncfusion_EJ2_Buttons_RadioButton_CssClass) property.

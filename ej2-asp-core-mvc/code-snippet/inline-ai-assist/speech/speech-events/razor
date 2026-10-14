@@ -1,0 +1,157 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.InteractiveChat
+
+<style>
+    #editableText {
+        width: 100%;
+        min-height: 120px;
+        max-height: 300px;
+        overflow-y: auto;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+    .integration-speechtotext-section {
+        width: 650px;
+        margin: 0 auto;
+    }
+    .speech-info-panel {
+        margin-bottom: 10px;
+    }
+    .speech-status {
+        margin-bottom: 4px;
+    }
+    .transcript-display {
+        min-height: 22px;
+    }
+    .error-text {
+        color: #c62828;
+    }
+    .status-indicator {
+        display: inline;
+    }
+    .transcript-display:empty::before {
+        content: "Waiting for speech input...";
+    }
+</style>
+
+<div class="integration-speechtotext-section">
+    <div class="speech-info-panel">
+        <div class="speech-status">
+            <label>Recording Status:</label>
+            <span id="recordingStatus" class="status-indicator ready">Ready to record</span>
+        </div>
+        <div class="transcript-section">
+            <label>Live Transcript:</label>
+            <div id="transcriptDisplay" class="transcript-display"></div>
+        </div>
+        <div class="error-section" id="errorMessage" style="display: none;">
+            <span class="error-text"></span>
+        </div>
+    </div>
+    <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onSummarizeClick()">Content Summarize</button>
+    <div id="editableText" contenteditable="true">
+        <p>Inline AI Assist component provides intelligent text processing capabilities that enhance user productivity. It leverages advanced natural language processing to understand context and deliver precise suggestions. Users can seamlessly integrate AI-powered features into their applications.</p>
+        <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
+    </div>
+
+    @Html.EJS().InlineAIAssist("speechEvents").RelateTo("#summarizeBtn").ResponseMode("Inline").Created("onCreated").PromptRequest("onPromptRequest").SpeechToTextOnStart("onSpeechStart").SpeechToTextOnStop("onSpeechStop").SpeechToTextTranscriptChanged("onTranscriptChanged").SpeechToTextOnError("onSpeechError").SpeechToTextSettings(new InlineAIAssistSpeechToTextSettings { Enable = true }).ResponseSettings(new InlineAIAssistResponseSettings { ItemSelect = "onItemSelect" }).Render()
+</div>
+
+<script>
+    var inlineAssist;
+    var isAccepted = false;
+    var lastTranscript = '';
+
+    function onCreated() {
+        inlineAssist = this;
+    }
+
+    function onPromptRequest(args) {
+        setTimeout(function () {
+            var defaultResponse = 'For real-time prompt processing, connect the Inline AI Assist component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            inlineAssist.addResponse(defaultResponse, true);
+        }, 1000);
+    }
+
+    function onItemSelect(args) {
+        if (args.command.label === 'Accept') {
+            isAccepted = true;
+            var editable = document.getElementById('editableText');
+            if (editable) {
+                editable.innerHTML = '<p>' + inlineAssist.prompts[inlineAssist.prompts.length - 1].response + '</p>';
+            }
+            inlineAssist.hidePopup();
+        } else if (args.command.label === 'Discard') {
+            isAccepted = false;
+            inlineAssist.hidePopup();
+        }
+    }
+
+    function onSummarizeClick() {
+        if (inlineAssist) {
+            inlineAssist.showPopup();
+        }
+    }
+
+    function onSpeechStart() {
+        var recordingStatus = document.getElementById('recordingStatus');
+        if (recordingStatus) {
+            recordingStatus.textContent = 'Recording...';
+            recordingStatus.className = 'status-indicator recording';
+        }
+        var errorMessage = document.getElementById('errorMessage');
+        if (errorMessage) {
+            errorMessage.style.display = 'none';
+        }
+    }
+
+    function onSpeechStop() {
+        var recordingStatus = document.getElementById('recordingStatus');
+        if (recordingStatus) {
+            recordingStatus.textContent = 'Ready to record';
+            recordingStatus.className = 'status-indicator ready';
+        }
+        var transcriptDisplay = document.getElementById('transcriptDisplay');
+        if (transcriptDisplay && lastTranscript) {
+            transcriptDisplay.textContent = lastTranscript;
+            transcriptDisplay.style.fontStyle = 'normal';
+        }
+        setTimeout(function () {
+            lastTranscript = '';
+            if (transcriptDisplay) {
+                transcriptDisplay.textContent = 'Waiting for speech input...';
+            }
+        }, 2000);
+    }
+
+    function onTranscriptChanged(args) {
+        var currentTranscript = (args && (args.text || args.value || args.transcript || (args.result && args.result.transcript))) || '';
+        var isFinal = (args && (args.isFinal || args.final || (args.result && args.result.isFinal))) || false;
+        if (currentTranscript) {
+            lastTranscript = currentTranscript;
+        }
+        var transcriptDisplay = document.getElementById('transcriptDisplay');
+        if (transcriptDisplay) {
+            transcriptDisplay.textContent = currentTranscript;
+            transcriptDisplay.style.fontStyle = isFinal ? 'normal' : 'italic';
+        }
+    }
+
+    function onSpeechError(args) {
+        var errorMessage = document.getElementById('errorMessage');
+        if (errorMessage) {
+            var errorText = errorMessage.querySelector('.error-text');
+            if (errorText) {
+                errorText.textContent = 'Error: ' + ((args && args.error) || 'Speech recognition error occurred');
+            }
+            errorMessage.style.display = 'block';
+        }
+        var recordingStatus = document.getElementById('recordingStatus');
+        if (recordingStatus) {
+            recordingStatus.textContent = 'Ready to record';
+            recordingStatus.className = 'status-indicator ready';
+        }
+    }
+</script>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Dimension in ##Platform_Name## Tooltip Control | Syncfusion
-description: Learn here all about Setting Dimension in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+title: Setting Dimension in ##Platform_Name## Tooltip | Syncfusion
+description: Set the Syncfusion ##Platform_Name## Tooltip width and height using the width and height properties to control outer dimensions or use auto sizing.
 platform: ej2-asp-core-mvc
 control: Setting Dimension
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Setting Dimension in Tooltip Control
+# Setting Dimension in ##Platform_Name## Tooltip
 
 ## Height and width
 
@@ -44,7 +44,7 @@ The following sample explains how to set dimensions for the Tooltip.
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Dimension](./images/tooltip-dimension.png)
+![ASP.NET Core - Tooltip - Dimension](./images/tooltip-dimension.png)
 
 ### Scroll mode
 
@@ -77,6 +77,6 @@ When `height` is specified with a certain pixel value and the Tooltip content ov
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Scroll Mode](./images/tooltip-scroll.png)
+![ASP.NET Core - Tooltip - Scroll Mode](./images/tooltip-scroll.png)
 
 N> The scrolling mode can best be seen when the sticky mode of the Tooltip is enabled. To enable sticky mode, set the `isSticky` property to true.

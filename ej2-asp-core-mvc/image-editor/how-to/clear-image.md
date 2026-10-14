@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Filter in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: How to clear an image in ##Platform_Name## ImageEditor | Syncfusion
+description: Programmatically clear edits from a Syncfusion ##Platform_Name## ImageEditor canvas using the clearImage and reset methods after destructive operations.
 platform:  ej2-asp-core-mvc
 control: Clear Image
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Clear an Image ##Platform_Name## Image Editor control
 
-The `clearImage` method in the image editor control is indeed useful for scenarios where you need to ensure that the image editor is emptied before reopening it, especially if the editor is used within a dialog. By using clearImage before closing the dialog, you can ensure that the editor does not retain the previously loaded image when the dialog is reopened. This allows users to start fresh with a new image selection.
+The `clearImage` method in the [Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) control is indeed useful for scenarios where you need to ensure that the image editor is emptied before reopening it, especially if the editor is used within a dialog. By using clearImage before closing the dialog, you can ensure that the editor does not retain the previously loaded image when the dialog is reopened. This allows users to start fresh with a new image selection.
 
 Here is an example of clearing an Image using `clearImage` method. 
 

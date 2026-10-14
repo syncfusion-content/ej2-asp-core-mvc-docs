@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Set Item Wise Custom Template in ##Platform_Name## Toolbar Component | Syncfusion
-description: Learn here all about Set Item Wise Custom Template in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to set custom template in ##Platform_Name## Toolbar | Syncfusion
+description: Add a custom template to a Syncfusion ##Platform_Name## Toolbar item by passing an HTML element string or query selector to the `template` property.
 platform: ej2-asp-core-mvc
 control: Set Item Wise Custom Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# How to set custom template in ##Platform_Name## Toolbar
 
-# Set item-wise custom template
-
-The Toolbar supports adding template commands using the  `template` property. Template property can be given as the `HTML element` that is either a `string`  or a `query selector`.
+The Toolbar supports adding custom templates to items using the `template` property, which accepts HTML as either an inline string or a query selector. 
 
 ## As a string
 
-The HTML element tag can be given as a string for the template property. Here, the checkbox is rendered as a HTML template.
+You can provide the HTML element as a string for the template property. In this example, a checkbox is rendered as an inline HTML template.
 
 ```typescript
 template: "<div><input type='checkbox' id='check1' checked=''>Accept</input></div>"
@@ -24,7 +23,7 @@ template: "<div><input type='checkbox' id='check1' checked=''>Accept</input></di
 
 ## As a selector
 
-The template property also allows getting template content through query `selector`. Here, checkbox 'ID' attribute is specified in the template.
+The template property also allows you to reference template content through a query selector. Here, the checkbox ID attribute is specified in the template.
 
 ```typescript
 template: "#Template"

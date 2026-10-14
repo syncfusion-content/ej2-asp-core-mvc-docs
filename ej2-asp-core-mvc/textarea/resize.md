@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resize with ##Platform_Name## Textarea control | Syncfusion
-description: Checkout and learn about Resize with ##Platform_Name## Textarea control of Syncfusion Essential JS 2 and more details.
+title: Resize in ##Platform_Name## TextArea | Syncfusion
+description: Configure the Syncfusion ##Platform_Name## TextArea resizing behavior using the `ResizeMode` API with Vertical, Horizontal, Both, or None options.
 platform: ej2-asp-core-mvc
 control: Resize
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize in ##Platform_Name## TextArea Control
+# Resize in ##Platform_Name## TextArea
 
 The TextArea allows users to input and edit large amounts of text. Resizing this control effectively can enhance the user experience and accommodate varying content needs. This resizing behavior can be enabled and configured using the [ResizeMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_ResizeMode) API, which offers several options for resizing the TextArea:
 

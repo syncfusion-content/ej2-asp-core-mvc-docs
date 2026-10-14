@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Getting Started with ##Platform_Name## Stepper | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Stepper control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Stepper Control
+# Getting Started with ##Platform_Name## Stepper
 
 This section briefly explains about how to include `ASP.NET MVC Stepper` control in your ASP.NET MVC application using Visual Studio.
 
@@ -112,7 +112,7 @@ You can define steps by setting the `Steps` property.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Stepper control will be rendered in the default web browser.
 
-![ASP.NET MVC Stepper Control](images/stepper-gettingstarted.jpg)
+![ASP.NET MVC Stepper Control](images/stepper-gettingstarted.webp)
 
 ## Configure icon and label
 
@@ -127,4 +127,4 @@ You can define the step icon and label by setting the `IconCss` and `Label` prop
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Stepper Icon and Label](images/stepper-iconLabel.jpg)
+![ASP.NET MVC Stepper Icon and Label](images/stepper-iconLabel.webp)

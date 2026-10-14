@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core FAB Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Floating Action Button Control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## FloatingActionButton | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## FloatingActionButton control in an ASP.NET Core web app using Razor pages, TagHelper, and NuGet packages.
 platform: ej2-asp-core-mvc
 control: Floating Action Button
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Floating Action Button Control
+# Getting Started with ##Platform_Name## FloatingActionButton
 
 This section briefly explains how to include the [ASP.NET Core Floating Action Button](https://www.syncfusion.com/aspnet-core-ui-controls/fab) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

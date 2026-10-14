@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right To Left in ##Platform_Name## Check Box Control | Syncfusion
-description: Learn here all about Right to Left in Syncfusion ##Platform_Name## Check Box control of Syncfusion Essential JS 2 and more.
+title: Enable right-to-left in ##Platform_Name## Checkbox | Syncfusion
+description: Flip the ##Platform_Name## Checkbox to right-to-left layout for RTL languages by setting the enableRtl property to true.
 platform: ej2-asp-core-mvc
 control: Right To Left
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Right To Left in Check Box Control
+# Enable right-to-left in ##Platform_Name## Checkbox
 
 CheckBox component has RTL support. This can be achieved by setting [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_EnableRtl) as `true`.
 

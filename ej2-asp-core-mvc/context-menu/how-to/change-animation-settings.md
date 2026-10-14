@@ -1,25 +1,27 @@
 ---
 layout: post
-title: Change Animation Settings in ##Platform_Name## Context Menu Component | Syncfusion
-description: Learn here all about how to change Animation Settings in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
+title: How to change animations in ##Platform_Name## Context Menu | Syncfusion
+description: Configure Syncfusion ##Platform_Name## Context Menu submenu open/close animations via animationSettings, choosing None, SlideDown, ZoomIn, or FadeIn.
 platform: ej2-asp-core-mvc
 control: Change Animation Settings
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Change animation settings
+# How to change animations in ##Platform_Name## Context Menu
 
-To change the animation of the ContextMenu, [`animationSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenu~AnimationSettings.html) property is used. The supported effects for ContextMenu are,
+To change the animation of the ContextMenu, the [`animationSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_AnimationSettings) property is used. This property applies to both the submenu open and close animations. The supported effects for the ContextMenu are,
 
 | Effect | Functionality |
 | ------------ | ----------------------- |
-| None | Specifies the sub menu transform with no animation effect. |
-| SlideDown | Specifies the sub menu transform with slide down effect. |
-| ZoomIn | Specifies the sub menu transform with zoom in effect. |
-| FadeIn | Specifies the sub menu transform with fade in effect. |
+| None | Specifies the submenu transform with no animation effect. |
+| SlideDown | Specifies the submenu transform with slide down effect. |
+| ZoomIn | Specifies the submenu transform with zoom in effect. |
+| FadeIn | Specifies the submenu transform with fade in effect. |
 
-The following sample illustrates how to open ContextMenu with `FadeIn` effect with the `duration` of `800ms`.
+Along with the `Effect`, the `Duration` (in milliseconds) and `Easing` options can be set to control the animation timing.
+
+The following sample illustrates how to open the ContextMenu with the `FadeIn` effect and a `duration` of `800ms`. The `Effect` value can be changed to `None`, `SlideDown`, or `ZoomIn` to see the other animations.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

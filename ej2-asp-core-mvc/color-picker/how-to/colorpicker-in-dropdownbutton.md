@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Colorpicker In Dropdownbutton in ##Platform_Name## Color Picker Control | Syncfusion
-description: Learn here all about Colorpicker In Dropdownbutton in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
+title: How to use ColorPicker in DropDownButton in ##Platform_Name## | Syncfusion
+description: Render Syncfusion ##Platform_Name## Color Picker inline and pass its wrapper as the target of a DropDownButton to open the picker on click.
 platform: ej2-asp-core-mvc
 control: Colorpicker In Dropdownbutton
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# ColorPicker in DropDownButton
+# How to use ColorPicker in DropDownButton in ##Platform_Name##
 
 This section explains about how to render the ColorPicker in DropDownButton. The [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Splitbuttons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_Target) property of the DropDownButton helps to achieve this scenario. To know about the usage of `target` property, refer to [Popup templating](./../../drop-down-button/popup-items.html#popup-templating) section.
 

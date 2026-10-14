@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Tooltip Control | Syncfusion
-description: Learn here all about animation support in Syncfusion ##Platform_Name## Tooltip component, its elements and more.
+title: Animation in ##Platform_Name## Tooltip | Syncfusion
+description: Configure animation effects for the Syncfusion ##Platform_Name## Tooltip using the animation property to control duration, delay, and easing transitions.
 platform: ej2-asp-core-mvc
 control: Animation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Animation in Tooltip Control
+# Animation in ##Platform_Name## Tooltip
 
 To animate the Tooltip, a set of specific animation effects are available, and it can be controlled using the `animation` property. The animation property also allows you to set delay, duration, and various other effects of your choice.
 
@@ -44,7 +44,7 @@ By default, Tooltip entrance occurs over 150 ms using the `ease-out` timing func
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Animation](./images/tooltip-animation.png)
+![ASP.NET Core - Tooltip - Animation](./images/tooltip-animation.png)
 
 The default animation effect for the Tooltip is set to `FadeIn` for its open action, and `FadeOut` for its close action. The default `duration` is set to 150 ms and `delay` is set to 0.
 
@@ -106,7 +106,7 @@ Refer to the code snippet below to apply animations using public methods.
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Animation Open Close Method](./images/tooltip-animation.png)
+![ASP.NET Core - Tooltip - Animation Open Close Method](./images/tooltip-animation.png)
 
 ## Apply transition
 
@@ -139,4 +139,4 @@ The transition effect can be applied on Tooltips by using the `beforeRender` eve
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip - Animation Transition](./images/tooltip-transition.png)
+![ASP.NET Core - Tooltip - Animation Transition](./images/tooltip-transition.png)

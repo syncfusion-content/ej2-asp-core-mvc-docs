@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animations and Transitions in Syncfusion ##Platform_Name## Carousel Control
-description: Checkout and learn about Animations and Transitions in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
+title: Animations and Transitions in ##Platform_Name## Carousel | Syncfusion
+description: Configure slide animations, autoplay intervals, pause-on-hover, looping, and touch swiping in the ##Platform_Name## Carousel.
 platform: ej2-asp-core-mvc
 control: Animations and Transitions
 publishingplatform: ##Platform_Name##

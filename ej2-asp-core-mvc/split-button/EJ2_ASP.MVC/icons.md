@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Split Button Control | Syncfusion
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## Split Button | Syncfusion
+description: Learn how to add, customize, and position icons in the Syncfusion ##Platform_Name## Split Button, including support for vertical button layouts.
 platform: ej2-asp-core-mvc
 control: Icons
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons in SplitButton Control
+# Icons in ##Platform_Name## Split Button
 
 ## SplitButton Icons
 

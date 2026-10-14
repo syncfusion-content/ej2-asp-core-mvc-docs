@@ -1,0 +1,118 @@
+@using Syncfusion.EJ2.InteractiveChat;
+@using System.Text.Json;
+
+@{
+    var promptsData = new[]
+    {
+        new { prompt = "What is AI?", response = "<div> AI stands for Artificial Intelligence, enabling machines to mimic human intelligence for tasks such as learning, problem - solving, and decision - making.</ div >", suggestionData = new List<string> { } }
+    };
+
+    var promptsJson = JsonSerializer.Serialize(promptsData);
+}
+
+<div class="aiassist-container" style="height: 400px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" prompts="@promptsData" responseItemTemplate="#responseItemTemplate" responseAnimationTemplate="#responseAnimationTemplate" promptRequest="onPromptRequest" created="onCreated"></ejs-aiassistview>
+</div>
+
+<script>
+    var assistObj;
+    var prompts = @Html.Raw(promptsJson);
+    function onCreated() {
+        assistObj = this;
+    }
+    function onPromptRequest(args) {
+        setTimeout(() => {
+            var foundPrompt = prompts.find(prompt => prompt.prompt == args.prompt);
+            var defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            assistObj.addPromptResponse(foundPrompt ? foundPrompt.response : defaultResponse);
+        }, 2000);
+    }
+</script>
+
+<script id="responseItemTemplate" type="text/x-jsrender">
+    <div class="responseItemContent">
+        <div class="response-header">
+            <span class="e-icons e-assistview-icon"></span>
+            AI Assist
+        </div>
+        <div class="responseContent">${response}</div>
+    </div>
+</script>
+
+<script id="responseAnimationTemplate" type="text/x-jsrender">
+    <div class="assistview-loading-status">
+        <div class="assistview-grid-icon">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+        <span class="assistview-loading-label">Generating</span>
+    </div>
+</script>
+
+<style>
+    .responseItemContent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px
+    }
+    .responseItemContent .response-header {
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    .responseItemContent .responseContent {
+        margin-left: 35px;
+    }
+    .responseItemContent .response-header .e-assistview-icon:before {
+        margin-right: 10px;
+    }
+    .aiassist-container .e-response-item-template .e-toolbar-items {
+        margin-left: 35px;
+    }
+    .assistview-loading-status {
+        display: flex;
+        gap: 10px;
+        color: #666;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+    .assistview-grid-icon {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
+    .assistview-grid-icon span {
+        width: 4px;
+        height: 4px;
+        background: #8a8a8a;
+        border-radius: 1px;
+        opacity: 0.25;
+        animation: assistview-pulse 1.8s ease-in-out infinite;
+    }
+    .assistview-grid-icon span:nth-child(1) { animation-delay: 0s; }
+    .assistview-grid-icon span:nth-child(2) { animation-delay: 0.1s; }
+    .assistview-grid-icon span:nth-child(3) { animation-delay: 0.2s; }
+    .assistview-grid-icon span:nth-child(4) { animation-delay: 0.3s; }
+    .assistview-grid-icon span:nth-child(5) { animation-delay: 0.4s; }
+    .assistview-grid-icon span:nth-child(6) { animation-delay: 0.5s; }
+    .assistview-grid-icon span:nth-child(7) { animation-delay: 0.6s; }
+    .assistview-grid-icon span:nth-child(8) { animation-delay: 0.7s; }
+    .assistview-grid-icon span:nth-child(9) { animation-delay: 0.8s; }
+    @@keyframes assistview-pulse {
+        0%,
+        100% {
+            opacity: 0.25;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+</style>

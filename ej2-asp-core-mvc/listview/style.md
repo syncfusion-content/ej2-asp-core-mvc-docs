@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## ListView | Syncfusion
+description: Customize Syncfusion ##Platform_Name## ListView appearance using the e-listview, e-list-item, and e-list-group classes for list, items, and groups CSS structure.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS Structure
+# Style in ##Platform_Name## ListView
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on  user preference.
 

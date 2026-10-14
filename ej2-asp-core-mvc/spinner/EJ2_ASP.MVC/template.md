@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Spinner Component
-description: Learn here all about Template in Syncfusion ##Platform_Name## Spinner component of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## Spinner | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Spinner by defining a custom template with the setSpinner method to display personalized loading indicators.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set the template to the Spinner
+# Template in ##Platform_Name## Spinner
 
 You can use custom templates on the Spinner instead of the default Spinner by specifying the template in the `setSpinner` method.
 

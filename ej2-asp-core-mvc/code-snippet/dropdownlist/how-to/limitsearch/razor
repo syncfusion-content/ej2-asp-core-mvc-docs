@@ -1,12 +1,12 @@
     @Html.EJS().DropDownList("customers").Placeholder("Select a customer").PopupHeight("200px").DataSource(dataManger =>
-                dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor("ODataV4Adaptor").CrossDomain(true)).AllowFiltering(true).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings
+                dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor("ODataV4Adaptor").CrossDomain(true)).AllowFiltering(true).Filtering("onfiltering").Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings
                 {
                     Value = "ContactName",
                 }).Query("new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6)").Render()
     <script>
         function onfiltering(e) {
             var CBObj = document.getElementById("customers").ej2_instances[0];
-            // load overall data when search key empty.
+            // load all data when the search text is empty.
             if (e.text == '' && e.text.length < 3) {
                 e.updateData(CBObj.dataSource);
             }

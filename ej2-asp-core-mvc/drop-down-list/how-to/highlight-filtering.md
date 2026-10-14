@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Highlight Filtering in ##Platform_Name## Drop Down List Component
-description: Learn here all about highlight filtering in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Highlight Matched Characters in ##Platform_Name## DropDownList | Syncfusion
+description: Highlight matched characters in Syncfusion ##Platform_Name## DropDownList filtering by calling the highlightSearch method to bold the typed substring.
 platform: ej2-asp-core-mvc
 control: Highlight Filtering
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Highlight the matched character in filtering
+# Highlight Matched Characters in ##Platform_Name## DropDownList
 
-By using the **highlightSearch** method, you can highlight the matched character in DropDownList filtering.
+Use the [`highlightSearch`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.html#Syncfusion_EJ2_DropDowns_highlightSearch) method to highlight the matched characters in DropDownList filtering. The [`highlightSearch`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.html#Syncfusion_EJ2_DropDowns_highlightSearch) method accepts the following parameters: `item` (the list item element), `query` (the search string to highlight), `ignoreCase` (boolean, whether to ignore case when matching), and `filterType` (the matching strategy, e.g., `StartsWith`, `Contains`, `EndsWith`). The method is typically called from the `itemCreated` event of the DropDownList fields, using the search string captured in the [`filtering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Filtering) event handler, and the filtered data is refreshed via [`updateData`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.FilteringEventArgs.html#Syncfusion_EJ2_DropDowns_FilteringEventArgs_UpdateData).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

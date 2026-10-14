@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change Size in ##Platform_Name## Switch Component
-description: Learn here all about Change Size in Syncfusion ##Platform_Name## Switch component of Syncfusion Essential JS 2 and more.
+title: How to change size in ##Platform_Name## Toggle Switch Button | Syncfusion
+description: Change the size of the Syncfusion ##Platform_Name## Toggle Switch Button to small by applying the `e-small` CSS class via the `cssClass` property.
 platform: ej2-asp-core-mvc
 control: Change Size
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Change Size
+# How to change size in ##Platform_Name## Toggle Switch Button
 
 The different Switch sizes available are default and small. To reduce the size of default Switch to small, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_CssClass) property to `e-small`.
 

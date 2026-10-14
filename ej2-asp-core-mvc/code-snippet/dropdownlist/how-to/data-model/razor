@@ -1,6 +1,6 @@
 @using (Html.BeginForm())
 {
-    @Html.EJS().DropDownListFor(model => model.EnquiringAboutSelect).Placeholder("Select a Country").DataSource(Model?.EnquiringAboutSelectListItems).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Text" }).Placeholder("Please Select Enquiring About").Render()
+    @Html.EJS().DropDownListFor(model => model.EnquiringAboutSelect).Placeholder("Please Select Enquiring About").DataSource(Model?.EnquiringAboutSelectListItems).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "Text", Value = "Value" }).Render()
     <div>
         @Html.ValidationMessageFor(model => model.EnquiringAboutSelect)
     </div>

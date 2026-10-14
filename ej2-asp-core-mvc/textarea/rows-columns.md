@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows and Columns count in ##Platform_Name## Textarea control | Syncfusion
-description: Adjusting the size of the ##Platform_Name## Textarea control of Syncfusion Essential JS 2 and more details.
+title: Rows and Columns in ##Platform_Name## TextArea | Syncfusion
+description: Set the Syncfusion ##Platform_Name## TextArea dimensions using the `Rows` and `Cols` properties to control vertical lines and horizontal character width.
 platform: ej2-asp-core-mvc
 control: Rows and Columns Count
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Rows and Columns in ##Platform_Name## TextArea Control
+# Rows and Columns in ##Platform_Name## TextArea
 
 Two essential attributes, `rows` and `columns`, play a pivotal role in customizing the TextArea's appearance and layout.
 The `rows`attribute determines the initial visible number of lines within the TextArea, controlling its vertical size. Conversely, the `columns` attribute specifies the visible width of the TextArea in characters per line, determining its initial width.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Multi Select Control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## MultiSelect | Syncfusion
+description: Localize Syncfusion ##Platform_Name## MultiSelect no-records and action-failure template text using locale values and translation objects for global apps.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -9,20 +9,20 @@ documentation: ug
 ---
 
 
-# Localization in MultiSelect Control
+# Localization in ##Platform_Name## MultiSelect
 
-The Localization library allows you to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_NoRecordsTemplate) and [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ActionFailureTemplate) properties according to the culture currently assigned to the MultiSelect.
+The Localization library allows you to localize the static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_NoRecordsTemplate) and [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ActionFailureTemplate) properties according to the culture currently assigned to the MultiSelect.
 
-| Locale key | en-US (default)
-|------|------
-| noRecordsTemplate |  No records found
-| actionFailureTemplate | The request failed
+| Locale key | en-US (default) |
+| --- | --- |
+| `noRecordsTemplate` | No records found |
+| `actionFailureTemplate` | The request failed |
 
 ## Loading translations
 
-To load translation object to your application, use load function of the **L10n** class.
+To load a translation object into your application, use the `load` function of the **L10n** class.
 
-In the following sample, French culture is set to the MultiSelect and no data is loaded. Hence, the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_NoRecordsTemplate) property displays its text in French culture initially, and if the sample is run offline, the [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ActionFailureTemplate) property displays its text appropriately.
+In the following sample, the French culture is set on the MultiSelect and no data is loaded. The [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_NoRecordsTemplate) property initially displays its text in French. If the sample is run offline, the [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ActionFailureTemplate) property displays its text appropriately.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,7 +49,7 @@ In the following sample, French culture is set to the MultiSelect and no data is
 
 
 
-## See Also
+## See also
 
 * [Accessibility](./accessibility)
 * [How to bind the data to the combobox](./data-binding)

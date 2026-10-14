@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range in ##Platform_Name## Progress Bar Component
+title: Range in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Range in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Range
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Range
+# Range in ASP.NET Core Progress Bar
 
 <!-- markdownlint-disable MD033 -->
 
@@ -21,8 +21,7 @@ Range represents the entire span of the progress bar and can be defined using th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/range/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Range.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -30,7 +29,6 @@ Range represents the entire span of the progress bar and can be defined using th
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/range/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Range.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

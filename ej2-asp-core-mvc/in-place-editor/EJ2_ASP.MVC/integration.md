@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integration in ##Platform_Name## In Place Editor Component | Syncfusion
-description: Learn here all about Integration in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Integration in ##Platform_Name## InplaceEditor | Syncfusion
+description: Embed custom HTML5 input templates in Syncfusion ##Platform_Name## InplaceEditor using the Template property as a string or query selector.
 platform: ej2-asp-core-mvc
 control: Integration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Integrate HTML5 controls (Template)
+# Integration in ##Platform_Name## InplaceEditor
 
 The In-place Editor supports adding HTML5 input controls using the [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Template) property. The `Template` property can be given as either a `string` or a `query selector`.
 

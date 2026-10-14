@@ -1,10 +1,11 @@
 @Html.EJS().Button("btn").Content("Get Items").Render()
-@Html.EJS().DropDownList("customers").Placeholder("Select a customer").PopupHeight("200px").DataSource(dataManger =>
-            dataManger.Url("http://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor("ODataV4Adaptor").CrossDomain(true)).Fields(new DropDownListFieldSettings
+@Html.EJS().DropDownList("customers").Placeholder("Select a customer").ActionComplete("actionComplete").PopupHeight("200px").DataSource(dataManger =>
+            dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor("ODataV4Adaptor").CrossDomain(true)).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings
             {
                 Text = "ContactName",
                 Value = "CustomerID"
-            }).Query((string)ViewBag.query).Render()
+            }).Query("new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6)").Render()
+<p id="event"> </p>
 <script>
  function actionComplete (e) {
          // get total items count

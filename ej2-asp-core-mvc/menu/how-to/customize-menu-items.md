@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Menu Items in ##Platform_Name## Menu | Syncfusion
-description: Learn here all about Customize Menu Items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: How to customize menu items in ##Platform_Name## Menu | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Menu items dynamically by adding or removing items with addItem, removeItem, and insertItem methods on the instance.
 platform: ej2-asp-core-mvc
 control: Customize Menu Items
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize menu items
+# How to customize menu items in ##Platform_Name## Menu
 
 ## Add or remove menu items
 

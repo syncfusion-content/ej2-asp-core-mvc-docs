@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styles in ##Platform_Name## Floating Action Button Control | Syncfusion
-description: Learn here all about Styles in Syncfusion ##Platform_Name## Floating Action Button control of Syncfusion Essential JS 2 and more.
+title: Styles in ##Platform_Name## FloatingActionButton | Syncfusion
+description: Customize Syncfusion ##Platform_Name## FloatingActionButton with cssClass, iconCss, primary, secondary, success, info, warning, danger, and light or dark variants.
 platform: ej2-asp-core-mvc
 control: Styles
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Styles in ASP.NET Core Floating Action Button Control
+# Styles in ##Platform_Name## FloatingActionButton
 
 This section explains the different styles of Floating Action Button.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Form Submit in ##Platform_Name## List Box Component
-description: Learn here all about Form Submit in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
+title: How to submit a form with ##Platform_Name## ListBox | Syncfusion
+description: Submit Syncfusion ##Platform_Name## ListBox selected values via an form by naming the list input and binding value to a controller action.
 platform: ej2-asp-core-mvc
 control: Form Submit
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Form submit to the list box
+# How to submit a form with ##Platform_Name## ListBox
 
 In the following code snippet, the value that is in selected state will be sent on form submit.
 

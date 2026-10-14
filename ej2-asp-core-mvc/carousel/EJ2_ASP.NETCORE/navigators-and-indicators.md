@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigations in Syncfusion ##Platform_Name## Carousel Control
-description: Checkout and learn about Navigations and Indicators in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
+title: Navigators and Indicators in ##Platform_Name## Carousel | Syncfusion
+description: Customize previous and next buttons, indicator dots, fraction and progress indicators, and slide preview templates in the Core Carousel.
 platform: ej2-asp-core-mvc
 control: Navigations and Indicators
 publishingplatform: ##Platform_Name##

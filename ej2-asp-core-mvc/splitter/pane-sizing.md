@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pane Sizing in ##Platform_Name## Splitter Component
-description: Learn here all about Pane Sizing in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Pane Sizing in ##Platform_Name## Splitter | Syncfusion
+description: Learn how to configure pane sizing in the Syncfusion ##Platform_Name## Splitter using pixel and percentage values, fixed panes, and auto-sized layouts.
 platform: ej2-asp-core-mvc
 control: Pane Sizing
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pane sizing
+# Pane Sizing in ##Platform_Name## Splitter
 
 Splitter allows you to provide pane sizes either in pixel or percentage formats.
 

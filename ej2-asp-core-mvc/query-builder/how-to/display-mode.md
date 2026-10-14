@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Mode in ##Platform_Name## Query Builder Component
-description: Learn here all about Display Mode in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Display Mode in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to display ##Platform_Name## Query Builder in horizontal or vertical layout using the DisplayMode property.
 platform: ej2-asp-core-mvc
 control: Display Mode
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Display Options
+# Display Mode in ##Platform_Name## Query Builder
 
-Display options allow you to view the Query Builder Vertically or Horizontally. For this, you should use the `DisplayMode` property.
+Display options allow you to view the Query Builder vertically or horizontally. For this, you should use the `DisplayMode` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,5 +38,5 @@ Display options allow you to view the Query Builder Vertically or Horizontally. 
 
 
 
-N> The default view in the desktop mode is Horizontal.
-<br/> The default view in the mobile mode is Vertical.
+N> The default view in the desktop mode is `Horizontal`.
+<br/> The default view in the mobile mode is `Vertical`.

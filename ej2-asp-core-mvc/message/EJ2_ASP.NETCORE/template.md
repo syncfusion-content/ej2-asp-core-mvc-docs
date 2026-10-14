@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template with ##Platform_Name## Message Control | Syncfusion
-description: Checkout and learn about template with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
+title: Template in ##Platform_Name## Message | Syncfusion
+description: Use Syncfusion ##Platform_Name## Message templates by binding HTML content via the content property or `<e-content-template>` tag for fully custom layouts.
 platform: ej2-asp-core-mvc
 control: Message
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template in Message control
+# Template in ##Platform_Name## Message
 
 The message supports templates that allow you to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the `content` property or added directly to the `<e-content-template>` tag.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Format in ##Platform_Name## Range Slider Control | Syncfusion
-description: Learn here all about Format in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Format in ##Platform_Name## Range Slider | Syncfusion
+description: Explore value formatting in Syncfusion ##Platform_Name## Range Slider using format API, ticks, and tooltip customization
 platform: ej2-asp-core-mvc
 control: Format
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Formatting in Range Slider Control
+# Format in ##Platform_Name## Range Slider
 
 The `format` feature used to customize the units of Slider values to desired format. The formatted values will also be applied to the ARIA attributes of the slider. There are two ways of achieving formatting in slider.
 
-* Use the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTooltipData.html#Syncfusion_EJ2_Inputs_SliderTooltipData_Format) API of slider which utilizes our [Internationalization](../common/internationalization#loading-culture-data) to format values.
+* Use the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTooltipData.html#Syncfusion_EJ2_Inputs_SliderTooltipData_Format) API of slider which utilizes our [Internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#loading-culture-data) to format values.
 
 * Customize using the events namely `renderingTicks` and `tooltipChange`.
 
@@ -42,7 +42,7 @@ The `format` feature used to customize the units of Slider values to desired for
 
 
 
-![ASP .NET Core - Slider - Format](./images/slider-format.png)
+![ASP.NET Core - Slider - Format](./images/slider-format.png)
 
 ## Using format API
 
@@ -73,7 +73,7 @@ In this method, we have different predefined formatting styles like Numeric (N),
 
 
 
-![ASP .NET Core - Slider - Format API](./images/slider-format-api.png)
+![ASP.NET Core - Slider - Format API](./images/slider-format-api.png)
 
 ## Using Events
 
@@ -104,4 +104,4 @@ In this method, we will be retrieving the values from the slider events then pro
 
 
 
-![ASP .NET Core - Slider - Events](./images/slider-events.png)
+![ASP.NET Core - Slider - Events](./images/slider-events.png)

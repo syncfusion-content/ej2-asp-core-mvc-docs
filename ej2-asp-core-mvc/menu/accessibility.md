@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Menu Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Menu | Syncfusion
+description: Syncfusion ##Platform_Name## Menu follows WCAG 2.2, Section 508, and ADA standards with WAI-ARIA roles, keyboard navigation, and right-to-left support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in Menu Control
+# Accessibility in ##Platform_Name## Menu
 
 The Menu component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

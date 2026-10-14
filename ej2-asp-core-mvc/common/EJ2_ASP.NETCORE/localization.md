@@ -20,7 +20,7 @@ N> You can get default and culture based JSON files from [GitHub](https://github
 
 ### Adding culture based JSON files
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> [locale data](https://www.npmjs.com/package/@syncfusion/ej2-locale) is also available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules/@syncfusion/ej2-locale/src`.
+Syncfusion<sup style="font-size:70%">&reg;</sup> [locale data](    https://www.npmjs.com/package/@syncfusion/ej2-locale) is also available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules/@syncfusion/ej2-locale/src`.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create Dual List From ListView in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Create Dual List From ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to create a dual ListView in ##Platform_Name## | Syncfusion
+description: Build a dual Syncfusion ##Platform_Name## ListView picker that lets users move items between two lists with drag-drop and toolbar transfer buttons.
 platform: ej2-asp-core-mvc
 control: Create Dual List From ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create Dual List from ListView
+# How to create a dual ListView in ##Platform_Name##
 
 The dual list contains two ListView. This allows you to move list items from one list to another using the client-side events. This section explains how to integrate the ListView control to achieve dual list.
 
@@ -27,7 +27,7 @@ The dual list supports:
 * Moving selected data from one list to another.
 * Filtering the list by using a client-side typed character.
 
-In the ListView control, sorting is enabled using the [sortOrder](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) property, and the [select](https://ej2.syncfusion.com/documentation/api/list-view/#select) event is triggered while selecting an item. Here, the select event is triggered to enable and disable button states.
+In the ListView control, sorting is enabled using the [sortOrder](https://ej2.syncfusion.com/documentation/api/list-view#sortorder) property, and the [select](https://ej2.syncfusion.com/documentation/api/list-view#select) event is triggered while selecting an item. Here, the select event is triggered to enable and disable button states.
 
 ## Manipulating data
 
@@ -41,15 +41,15 @@ In the ListView control, sorting is enabled using the [sortOrder](https://ej2.sy
 
 ### Moving selected item from one list to another list (>) and (<)
 
-* The [Select](https://ej2.syncfusion.com/documentation/api/list-view/#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
+* The [Select](https://ej2.syncfusion.com/documentation/api/list-view#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
 
 ### Filtering method
 
-* The filtering method is used to filter list items when typing a character in the text box. In this method, the [`dataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/) has been used to fetch data from the data source and display in ListView.
+* The filtering method is used to filter list items when typing a character in the text box. In this method, the [`dataManager`](https://ej2.syncfusion.com/documentation/data/getting-started) has been used to fetch data from the data source and display in ListView.
 
 ### Sorting
 
-* By using the dual list, list items can be sorted in the ListView control using the [sortOrder](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) property.
+* By using the dual list, list items can be sorted in the ListView control using the [sortOrder](https://ej2.syncfusion.com/documentation/api/list-view#sortorder) property.
 
 You can enable sorting in one ListView; in the same order, data can be transferred to another ListView.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## MultiColumn Combobox Control | Syncfusion
-description: Checkout and learn about Virtualization in Syncfusion ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Virtualization in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Optimize performance with virtual scrolling in the Syncfusion ##Platform_Name## MultiColumn ComboBox to efficiently handle large datasets.
 platform: ej2-asp-core-mvc
 control: Virtualization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Virtualization in ##Platform_Name## MultiColumn Combobox control
+# Virtualization in ##Platform_Name## MultiColumn ComboBox
 
 MultiColumn ComboBox virtualization is a technique used to efficiently render extensive lists of items while minimizing the impact on performance. This method is particularly advantageous when dealing with large datasets because it ensures that only a fixed number of DOM (Document Object Model) elements are created. When scrolling through the list, existing DOM elements are reused to display relevant data instead of generating new elements for each item. This recycling process is managed internally.
 

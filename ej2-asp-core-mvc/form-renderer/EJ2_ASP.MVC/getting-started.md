@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Form Renderer Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Form Renderer control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Form Renderer Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Form Renderer control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Mvc
 publishingplatform: ##Platform_Name##

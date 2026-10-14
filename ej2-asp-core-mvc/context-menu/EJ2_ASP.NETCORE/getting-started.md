@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ContextMenu Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## ContextMenu control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Context Menu | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Context Menu control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core ContextMenu Control
+# Getting Started with ##Platform_Name## Context Menu
 
 This section briefly explains how to include the [ASP.NET Core ContextMenu](https://www.syncfusion.com/aspnet-core-ui-controls/context-menu) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

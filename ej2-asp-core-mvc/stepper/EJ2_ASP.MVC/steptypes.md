@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Step Types in ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about Step Types in ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Step Types in ##Platform_Name## Stepper | Syncfusion
+description: Learn about the step types available in the Syncfusion ##Platform_Name## Stepper, including default, label, and indicator display modes.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Step types in ##Platform_Name## Stepper control
+# Step Types in ##Platform_Name## Stepper
 
 The Stepper control provides support for displaying steps with the following step types.
 

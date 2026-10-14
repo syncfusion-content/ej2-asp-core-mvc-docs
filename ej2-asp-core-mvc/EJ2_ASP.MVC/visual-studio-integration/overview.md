@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Visual Studio Integration
+# Visual Studio Integration in ASP.NET MVC
 
 ## Overview
 
@@ -43,6 +43,6 @@ Syncfusion® provides the following supports in Visual Studio:
 
 ### Selected Syncfusion ASP.NET MVC (Essential JS2) application in Visual Studio
 
-![selected syncfusion aspnetmvc](images/selected-syncfusion-mvc-application.png)
+![selected syncfusion ASP.NET MVC](images/selected-syncfusion-mvc-application.png)
 
 N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.

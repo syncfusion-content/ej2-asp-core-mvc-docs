@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Rating Control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Events in ##Platform_Name## Rating | Syncfusion
+description: Learn about the events available in Syncfusion ##Platform_Name## Rating, including item rendering, creation, value changes, and item hover interactions.
 platform: ej2-asp-core-mvc
 control: Events
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in Rating Control
+# Events in ##Platform_Name## Rating
 
 This section describes the rating events that will be triggered when appropriate actions are performed. The following events are available in the rating control.
 

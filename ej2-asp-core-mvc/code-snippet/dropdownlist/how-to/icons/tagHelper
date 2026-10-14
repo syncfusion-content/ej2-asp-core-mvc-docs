@@ -1,7 +1,7 @@
 <div id='iconList' class='col-lg-6' style='padding-top:15px'>
     <div class='content'>
         <ejs-dropdownlist id="icons" dataSource="@ViewBag.icondata" placeholder="Select a social media">
-            <e-dropdownlist-fields Value="SocialMediaName" iconCss="Class" value="Id"></e-dropdownlist-fields>
+            <e-dropdownlist-fields Value="SocialMediaName" iconCss="Class"></e-dropdownlist-fields>
         </ejs-dropdownlist>
     </div>
 </div>
