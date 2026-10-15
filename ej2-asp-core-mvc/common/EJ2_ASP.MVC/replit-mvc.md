@@ -78,13 +78,13 @@ The agent will:
 
 ![Files Panel in Replit](./images/files-tab-replit.webp)
 
-## Run the Application
+## Run the application
 
 Once Agent finishes generating the application code, click the **Run** button (▶) at the top of the Replit workspace. The ASP.NET MVC DataGrid application will be built and rendered in the preview pane, as shown below.
 
 ![ASP.NET MVC DataGrid rendered inside the Replit preview pane](./images/replit-mvc-agent.webp)
 
-## Environment Variables in Replit
+## Environment variables in Replit
 
 Use Replit Secrets to store sensitive information such as license keys and database URLs:
 
@@ -92,7 +92,7 @@ Use Replit Secrets to store sensitive information such as license keys and datab
 2. Add a secret with a key and value (for example, `SYNCFUSION_LICENSE_KEY=your_key_here`).
 3. Access the value in ASP.NET MVC using `Environment.GetEnvironmentVariable("SYNCFUSION_LICENSE_KEY")`.
 
-## Publish the Application
+## Publish the application
 
 Replit allows you to publish your application to a live public URL without leaving the browser. To deploy your application:
 

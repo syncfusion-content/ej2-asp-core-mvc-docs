@@ -38,7 +38,7 @@ Before you begin, ensure you have:
 4. To rename the project, click the project name dropdown located at the top of the Replit workspace, select **Edit project details**, and enter a name such as `datagrid-app`. <br/>
 ![Edit project details in Replit](./images/edit-project-details-replit.webp)
 
-## Create an ASP.NET Core DataGrid Application in Replit
+## Create an ASP.NET Core DataGrid application in Replit
 
 This section explains how to add a simple ASP.NET Core DataGrid application to the current Replit project and integrate the DataGrid component with the minimum required setup using either of the following approaches.
 
@@ -89,7 +89,7 @@ The agent will:
 
 ![Files Panel in Replit](./images/files-tab-replit.webp)
 
-## Run the Application
+## Run the application
 
 Once Agent finishes generating the application code, click the **Run** button (▶) at the top of the Replit workspace. The ASP.NET Core DataGrid application will be built and rendered in the preview pane, as shown below.
 
@@ -196,7 +196,7 @@ Register the Syncfusion script manager before the closing `</body>` tag in the s
 {% endhighlight %}
 {% endtabs %}
 
-## Add the Syncfusion ASP.NET Core DataGrid
+## Add the ASP.NET Core DataGrid
 
 Open `Pages/Index.cshtml` and replace its contents with the following example:
 
@@ -289,7 +289,7 @@ The ASP.NET Core DataGrid application will be built and rendered in the preview 
 
 {% endtabcontents %}
 
-## Environment Variables in Replit
+## Environment variables in Replit
 
 Use Replit Secrets to store sensitive information such as license keys and database URLs:
 
@@ -297,7 +297,7 @@ Use Replit Secrets to store sensitive information such as license keys and datab
 2. Add a secret with a key and value (for example, `SYNCFUSION_LICENSE_KEY=your_key_here`).
 3. Access the value in ASP.NET Core using `Environment.GetEnvironmentVariable("SYNCFUSION_LICENSE_KEY")`.
 
-## Publish the Application in Replit
+## Publish the application in Replit
 
 Replit allows you to publish your application to a live public URL without leaving the browser. To deploy your application:
 
