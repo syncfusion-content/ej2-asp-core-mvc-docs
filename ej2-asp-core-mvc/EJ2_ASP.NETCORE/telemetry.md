@@ -10,7 +10,7 @@ documentation: ug
 
 # Syncfusion<sup>&reg;</sup> Telemetry  
 
-Syncfusion<sup>&reg;</sup> Telemetry library collects **anonymous usage data** to improve product quality and user experience. This data helps us better understand product usage, feature adoption, usage trends, and make informed decisions about future product planning. 
+Syncfusion<sup>&reg;</sup> Telemetry, available from **v34.2.2** onwards, collects **anonymous usage data** to improve product quality and developer experience. This data helps us understand product usage patterns, feature adoption, and usage trends, enabling informed decisions for 
 
 Telemetry is **enabled by default**. However, you can disable it at any time if required. 
 
