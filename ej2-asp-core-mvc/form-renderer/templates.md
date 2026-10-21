@@ -18,7 +18,7 @@ This section explains how to use templates in the Form Renderer component.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-Templates can be added to a form in Form Renderer by setting the `Template` property in `CustomWidgetSettings`. Map the template to a specific form field type by using the `Type` property in `CustomWidgetSettings`.
+Templates can be added to a form in Form Renderer by setting the [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.CustomWidgetSetting.html#Syncfusion_EJ2_FormRenderer_CustomWidgetSetting_Template) property in `CustomWidgetSettings`. Map the template to a specific form field type by using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.CustomWidgetSetting.html#Syncfusion_EJ2_FormRenderer_CustomWidgetSetting_Type) property in `CustomWidgetSettings`.
 
 `CustomWidgetSettings` is an array property, so you can render any number of templates in the form.
 
@@ -26,7 +26,7 @@ The `setFieldValue` method is used to set the value of a form field programmatic
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-Templates can be added to a form in Form Renderer by adding `<e-form-renderer-custom-widget-setting>` child tags inside the `<e-form-renderer-custom-widget-settings>` tag of the `<ejs-form-renderer>` tag helper. Map the template to a specific form field type by using the `type` attribute on the `<e-form-renderer-custom-widget-setting>` tag.
+Templates can be added to a form in Form Renderer by adding `<e-form-renderer-custom-widget-setting>` child tags inside the `<e-form-renderer-custom-widget-settings>` tag of the `<ejs-form-renderer>` tag helper. Map the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormRenderer.CustomWidgetSetting.html#Syncfusion_EJ2_FormRenderer_CustomWidgetSetting_Template) to a specific form field type by using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormRenderer.CustomWidgetSetting.html#Syncfusion_EJ2_FormRenderer_CustomWidgetSetting_Type) attribute on the `<e-form-renderer-custom-widget-setting>` tag.
 
 You can add any number of `<e-form-renderer-custom-widget-setting>` child tags to render multiple templates in the form.
 
@@ -68,7 +68,7 @@ The `setFieldValue` method is used to set the value of a form field programmatic
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-You can also map a template to a single form field by using the `FieldName` and `TemplateId` properties.
+You can also map a template to a single form field by using the [FieldName](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.CustomWidgetSetting.html#Syncfusion_EJ2_FormRenderer_CustomWidgetSetting_FieldName) and [TemplateId](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.CustomWidgetSetting.html#Syncfusion_EJ2_FormRenderer_CustomWidgetSetting_TemplateId) properties.
 
 * `FieldName` - This property uses the **name** value of the form field in the schema. If the field name in the schema matches this property during form rendering, the corresponding template is rendered.
 
@@ -78,7 +78,7 @@ You can also map a template to a single form field by using the `FieldName` and 
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-You can also map a template to a single form field by using the `fieldName` and `templateId` properties.
+You can also map a template to a single form field by using the [fieldName](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormRenderer.CustomWidgetSetting.html#Syncfusion_EJ2_FormRenderer_CustomWidgetSetting_FieldName) and [templateId](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormRenderer.CustomWidgetSetting.html#Syncfusion_EJ2_FormRenderer_CustomWidgetSetting_TemplateId) properties.
 
 * `fieldName` - This property uses the **name** value of the form field in the schema. If the field name in the schema matches this property during form rendering, the corresponding template is rendered.
 

@@ -39,7 +39,7 @@ new SubmitButtonProperty
 }
 ```
 
-When the user clicks the submit button, the renderer validates the form. If validation passes, the `submit` event fires with the current form data and an `isValid` flag.
+When the user clicks the submit button, the renderer validates the form. If validation passes, the [submit](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_OnSubmit) event fires with the current form data and an `isValid` flag.
 
 | Member | Type | Description |
 | --- | --- | --- |
@@ -188,7 +188,7 @@ new ButtonProperty
 }
 ```
 
-When the user clicks a `buttonType: "button"` button, the renderer raises the `buttonClick` event.
+When the user clicks a `buttonType: "button"` button, the renderer raises the [buttonClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_OnButtonClick) event.
 
 | Member | Type | Description |
 | --- | --- | --- |
@@ -209,7 +209,7 @@ The following example renders a Form Renderer with email, password, and remember
 
 ## Detecting the field change
 
-When the value of any field changes, the renderer raises the `change` event. Typing into the `email` or `password` field, picking a date, toggling a switch, picking a value from a dropdown, and program-driven changes from expression evaluation all raise it.
+When the value of any field changes, the renderer raises the [change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_OnChange) event. Typing into the `email` or `password` field, picking a date, toggling a switch, picking a value from a dropdown, and program-driven changes from expression evaluation all raise it.
 
 | Member | Type | Description |
 | --- | --- | --- |
@@ -239,7 +239,7 @@ The following example renders a Form Renderer with textbox and checkbox fields. 
 
 ## Customizing the form once the control is rendered
 
-The `created` event fires **once**, after the form has finished rendering and every input is in the DOM. Use it for any setup that needs the renderer to be ready — for example, calling `getComponent` to obtain an input instance, attaching a third-party mask, or wiring up toolbar buttons that operate on the form.
+The [created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_Created) event fires **once**, after the form has finished rendering and every input is in the DOM. Use it for any setup that needs the renderer to be ready — for example, calling `getComponent` to obtain an input instance, attaching a third-party mask, or wiring up toolbar buttons that operate on the form.
 
 The following example renders a Form Renderer with email, password, and remember-me fields. Once the form has finished rendering, the `created` event is raised with an empty payload:
 

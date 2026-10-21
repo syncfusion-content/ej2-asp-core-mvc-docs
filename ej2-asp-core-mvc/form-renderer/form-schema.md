@@ -76,7 +76,11 @@ A flat dictionary where each key represents a property and its corresponding val
 
 ### Layout Definitions
 
-The `layout` property in the form schema defines the layout nodes within which the widgets are placed. The example below uses the same `firstName` and `country` fields defined above, both placed within a single panel:
+{% if page.publishingplatform == "aspnet-mvc" %}
+The [layout](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_Layout) property in the form schema defines the layout nodes within which the widgets are placed. The example below uses the same `firstName` and `country` fields defined above, both placed within a single panel:
+{% elsif page.publishingplatform == "aspnet-core" %}
+The [layout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_Layout) property in the form schema defines the layout nodes within which the widgets are placed. The example below uses the same `firstName` and `country` fields defined above, both placed within a single panel:
+{% endif %}
 
 ```json
 {

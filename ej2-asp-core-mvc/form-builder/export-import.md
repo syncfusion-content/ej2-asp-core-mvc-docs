@@ -22,7 +22,7 @@ You can use the exported schema in the Form Renderer control to render the same 
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-Exporting can be disabled in the Form Builder component by setting the `AllowExport` property to `false`. The default value of the property is `true`.
+Exporting can be disabled in the Form Builder component by setting the [AllowExport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_AllowExport) property to `false`. The default value of the property is `true`.
 
 {% tabs %}
 
@@ -38,7 +38,7 @@ Exporting can be disabled in the Form Builder component by setting the `AllowExp
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-Exporting can be disabled in the Form Builder component by setting the `allowExport` property to `false`. The default value of the property is `true`.
+Exporting can be disabled in the Form Builder component by setting the [allowExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_AllowExport) property to `false`. The default value of the property is `true`.
 
 {% tabs %}
 

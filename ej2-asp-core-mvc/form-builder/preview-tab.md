@@ -22,7 +22,7 @@ You can switch to the **Preview** tab to see a live preview of the form. This vi
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-The preview option can be disabling by setting the `EnablePreview` property to `false`. The default value is `true`.
+The preview option can be disabling by setting the [EnablePreview](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_EnablePreview) property to `false`. The default value is `true`.
 
 {% tabs %}
 
@@ -38,7 +38,7 @@ The preview option can be disabling by setting the `EnablePreview` property to `
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-The preview option can be disabling by setting the `enablePreview` property to `false`. The default value is `true`.
+The preview option can be disabling by setting the [enablePreview](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_EnablePreview) property to `false`. The default value is `true`.
  
 {% tabs %}
 

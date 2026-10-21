@@ -18,13 +18,13 @@ This section explains how to use templates in the Form Builder component.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-Templates can be added to the Form Builder by configuring the `ToolboxItemSetting` instance and passing it to the `ToolboxItems` property. Each `ToolboxItemSetting` is mapped to a form field by setting its `Type` property and supplies the template for the third-party component through its `Template` property.
+Templates can be added to the Form Builder by configuring the `ToolboxItemSetting` instance and passing it to the `ToolboxItems` property. Each `ToolboxItemSetting` is mapped to a form field by setting its [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_Type) property and supplies the template for the third-party component through its [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_Template) property.
 
 Add any number of `ToolboxItemSetting` instances to the `ToolboxItems` collection to render multiple templates in the Form Builder toolbox.
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-Templates can be added to the Form Builder by configuring the `e-form-builder-toolbox-item`. Each `e-form-builder-toolbox-item` is mapped to a form field by setting its `type` property and supplies the template for the third-party component through its `template` property.
+Templates can be added to the Form Builder by configuring the `e-form-builder-toolbox-item`. Each `e-form-builder-toolbox-item` is mapped to a form field by setting its [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_Type) property and supplies the template for the third-party component through its [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_Template) property.
 
 Add any number of `e-form-builder-toolbox-item` elements to the `e-form-builder-toolbox-items` to render multiple templates in the Form Builder toolbox.
 
@@ -73,13 +73,13 @@ The properties of the third party components can be added to the property panel 
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-When the form schema is exported, the template itself is not included in the schema. However, a `templateId` property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `TemplateId` property of `ToolboxItems`.
+When the form schema is exported, the template itself is not included in the schema. However, a [templateId](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_TemplateId) property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `TemplateId` property of `ToolboxItems`.
 
 In Form Renderer, additional configuration is required as described in the [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/form-renderer/template) to render templates in the form.
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-When the form schema is exported, the template itself is not included in the schema. However, a `templateId` property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `templateId` property of `toolboxItems`.
+When the form schema is exported, the template itself is not included in the schema. However, a [templateId](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_TemplateId) property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `templateId` property of `toolboxItems`.
 
 In Form Renderer, additional configuration is required as described in the [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/form-renderer/template) to render templates in the form.
 
