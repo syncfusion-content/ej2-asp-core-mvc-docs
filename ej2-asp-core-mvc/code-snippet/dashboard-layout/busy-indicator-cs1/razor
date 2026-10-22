@@ -1,0 +1,60 @@
+@model WebApplication.Controllers.HomeController.spacingModel
+@{
+    var busyIndicatorTemplate = "<span role='status' aria-label='Loading'><svg width='16' height='16' viewBox='0 0 16 16' aria-hidden='true'><circle cx='8' cy='8' r='6' fill='none' stroke='#3b82f6' stroke-width='2' stroke-dasharray='24 12'><animateTransform attributeName='transform' type='rotate' from='0 8 8' to='360 8 8' dur='0.8s' repeatCount='indefinite'/></circle></svg></span>";
+}
+
+<div id='container'>
+    <div id="defaultLayout">
+        <!--  Dashboardlayout element declaration -->
+        @Html.EJS().DashboardLayout("defaultLayout").Columns(5).CellSpacing(Model.cellSpacing).Panels(Panel =>
+        {
+            Panel.Id("panel-0").SizeX(1).SizeY(1).Row(0).Col(0).Header("Panel 0").ShowBusyIndicator(true).BusyIndicatorTemplate(busyIndicatorTemplate).Content("<div>Loading...</div>").Add();
+            Panel.Id("panel-1").SizeX(3).SizeY(2).Row(0).Col(1).Header("Panel 1").ShowBusyIndicator(true).BusyIndicatorTemplate(busyIndicatorTemplate).Content("<div>Loading...</div>").Add();
+            Panel.Id("panel-2").SizeX(1).SizeY(3).Row(0).Col(4).Header("Panel 2").ShowBusyIndicator(true).BusyIndicatorTemplate(busyIndicatorTemplate).Content("<div>Loading...</div>").Add();
+            Panel.Id("panel-3").SizeX(1).SizeY(1).Row(1).Col(0).Header("Panel 3").ShowBusyIndicator(true).BusyIndicatorTemplate(busyIndicatorTemplate).Content("<div>Loading...</div>").Add();
+            Panel.Id("panel-4").SizeX(2).SizeY(1).Row(2).Col(0).Header("Panel 4").ShowBusyIndicator(true).BusyIndicatorTemplate(busyIndicatorTemplate).Content("<div>Loading...</div>").Add();
+            Panel.Id("panel-5").SizeX(1).SizeY(1).Row(2).Col(2).Header("Panel 5").ShowBusyIndicator(true).BusyIndicatorTemplate(busyIndicatorTemplate).Content("<div>Loading...</div>").Add();
+            Panel.Id("panel-6").SizeX(1).SizeY(1).Row(2).Col(3).Header("Panel 6").ShowBusyIndicator(true).BusyIndicatorTemplate(busyIndicatorTemplate).Content("<div>Loading...</div>").Add();
+        }).Render()
+        <!-- end of dashboardlayout element -->
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Create instances for dashboardlayout element
+        var dashboardObject = document.getElementById('defaultLayout').ej2_instances[0];
+        setTimeout(function () {
+            dashboardObject.panels.forEach(function (panel) {
+                panel.showBusyIndicator = false;
+                panel.content = '<div>Data Loaded Successfully</div>';
+            });
+            dashboardObject.dataBind();
+        }, 5000);
+    });
+</script>
+
+<style>
+    /* DashboardLayout element styles  */
+    #container {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    #defaultLayout .e-panel .e-panel-container .content {
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        line-height: 90px;
+    }
+
+    #defaultLayout .e-panel {
+        transition: none !important;
+    }
+
+    #defaultLayout .e-panel .e-panel-content {
+        align-content: center;
+        text-align: center;
+    }
+</style>
