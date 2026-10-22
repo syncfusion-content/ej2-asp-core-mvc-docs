@@ -58,7 +58,7 @@ You can use the [responseAnimationTemplate](https://help.syncfusion.com/cr/aspne
 {% endhighlight %}
 {% endtabs %}
 
-![ResponseAnimationTemplate](images/response-animation-template.png)
+![ResponseAnimationTemplate](images/response-animation-template.webp)
 
 ## Prompt suggestion item template
 
