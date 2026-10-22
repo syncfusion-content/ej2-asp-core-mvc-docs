@@ -18,7 +18,7 @@ This section explains how to use templates in the Form Builder component.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-Templates can be added to the Form Builder by configuring the `ToolboxItemSetting` instance and passing it to the `ToolboxItems` property. Each `ToolboxItemSetting` is mapped to a form field by setting its [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_Type) property and supplies the template for the third-party component through its [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_Template) property.
+Templates can be added to the Form Builder by configuring the [ToolboxItemSetting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html) instance and passing it to the `ToolboxItems` property. Each `ToolboxItemSetting` is mapped to a form field by setting its [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_Type) property and supplies the template for the third-party component through its [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_Template) property.
 
 Add any number of `ToolboxItemSetting` instances to the `ToolboxItems` collection to render multiple templates in the Form Builder toolbox.
 
