@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Field Components Panel in ##Platform_Name## Form Builder control
+title: Field Components Panel in ##Platform_Name## Form Builder | Syncfusion
 description: Learn how to use the Field Components Panel in the ##Platform_Name## Form Builder control to create a form using the drag-and-drop interface.
 platform: ej2-asp-core-mvc
 control: Field Components Panel
