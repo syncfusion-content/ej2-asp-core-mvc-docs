@@ -7,9 +7,6 @@
         <e-form-renderer-custom-widget-setting templateId="emailTemplate"
                                                template="#inputTemplate">
         </e-form-renderer-custom-widget-setting>
-        <e-form-renderer-custom-widget-setting fieldName="password"
-                                               template="#inputTemplate">
-        </e-form-renderer-custom-widget-setting>
     </e-form-renderer-custom-widget-settings>
 </ejs-form-renderer>
 <script id="inputTemplate" type="text/x-template">
