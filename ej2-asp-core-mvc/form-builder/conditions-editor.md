@@ -36,7 +36,7 @@ Show a field only when certain conditions are met. For example, you can make a f
 Make a field read-only (users can see it but not edit it) when the condition is met. Otherwise, the field is editable.
 
 ### Conditional Disable
-Disable a field (it will be greyed out and cannot be filled in) when the condition is met. Disabled fields are not included in form submissions.
+Disable a field (it will be grayed out and cannot be filled in) when the condition is met. Disabled fields are not included in form submissions.
 
 ### Conditional Required
 Make a field required only when certain conditions are met. For example, you can require a phone number only if the user selects "Phone" as their contact preference.

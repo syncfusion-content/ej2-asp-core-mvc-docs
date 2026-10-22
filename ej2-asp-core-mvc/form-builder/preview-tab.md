@@ -27,11 +27,11 @@ The preview option can be disabling by setting the [EnablePreview](https://help.
 {% tabs %}
 
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/form-builder/preview-tab/razor %}
+{% include code-snippet/form-builder/preview/razor %}
 {% endhighlight %}
 
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/form-builder/preview-tab/controller.cs %}
+{% include code-snippet/form-builder/preview/controller.cs %}
 {% endhighlight %}
 
 {% endtabs %}
@@ -43,11 +43,11 @@ The preview option can be disabling by setting the [enablePreview](https://help.
 {% tabs %}
 
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/form-builder/preview-tab/razor %}
+{% include code-snippet/form-builder/preview/razor %}
 {% endhighlight %}
 
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/form-builder/preview-tab/controller.cs %}
+{% include code-snippet/form-builder/preview/controller.cs %}
 {% endhighlight %}
 
 {% endtabs %}
