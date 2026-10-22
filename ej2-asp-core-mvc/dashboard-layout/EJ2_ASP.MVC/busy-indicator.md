@@ -69,4 +69,4 @@ The following sample demonstrates how to use the `showBusyIndicator` and `busyIn
 {% endtabs %}
 {% endif %}
 
-> Refer to the [ASP.NET MVC Dashboard Layout](https://www.syncfusion.com/aspnet-mvc-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [ASP.NET MVC Dashboard Layout example](https://ej2.syncfusion.com/aspnetmvc/demos/#/fluent2/dashboard-layout/default.html) to knows how to present and manipulate data.
+> Refer to the [ASP.NET MVC Dashboard Layout](https://www.syncfusion.com/aspnet-mvc-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. Also explore our [ASP.NET MVC Dashboard Layout example](https://ej2.syncfusion.com/demos/#/fluent2/dashboard-layout/default.html) to knows how to present and manipulate data.
