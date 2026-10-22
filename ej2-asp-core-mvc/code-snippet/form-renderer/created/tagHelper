@@ -1,0 +1,15 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.FormRenderer
+
+<ejs-form-renderer id="form-renderer-created" schema="ViewBag.FormSchema" created="onCreated"></ejs-form-renderer>
+
+<script>
+    function onCreated() {
+        // Fires once after the form has finished rendering.
+        // Useful for getComponent(), masks, toolbar wiring, etc.
+        var formRenderer = document.getElementById('form-renderer-created')
+            .ej2_instances[0];
+        console.log('Form is created', formRenderer);
+    }
+</script>

@@ -44,53 +44,32 @@ Properties of the built-in Syncfusion controls, or properties related to the [te
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-```cshtml
-@using Syncfusion.EJ2
-@using Syncfusion.EJ2.FormBuilder
+{% tabs %}
 
-<div>
-    @Html.EJS().FormBuilder("form-builder-control").Render()
-</div>
-<script>
-    setTimeout(function () {
-        var el = document.getElementById('form-builder-control');
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-builder/property-panel-setproperty/razor %}
+{% endhighlight %}
 
-        var fbInstance = el.ej2_instances[0];
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/form-builder/property-panel-setproperty/controller.cs %}
+{% endhighlight %}
 
-        fbInstance.setProperty('textarea', {
-            key: 'enableRtl',
-            label: 'Enable RTL',
-            type: 'boolean',
-            default: false
-        });
-    }, 100);
-</script>
-
-```
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-```cshtml
+{% tabs %}
 
-<ejs-form-builder  id="form-builder-control">
-</ejs-form-builder>
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-builder/property-panel-setproperty/razor %}
+{% endhighlight %}
 
-<script>
-    setTimeout(function() {
-        var el = document.getElementById('form-builder-control');
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/form-builder/property-panel-setproperty/controller.cs %}
+{% endhighlight %}
 
-        var fbInstance = el.ej2_instances[0];
+{% endtabs %}
 
-        fbInstance.setProperty('textarea', {
-            key: 'enableRtl',
-            label: 'Enable RTL',
-            type: 'boolean',
-            default: false
-        });
-    }, 100);
-</script>
-
-```
 {% endif %}
 
 ![Adding new Property in property panel](./images/form-builder-setproperty.png)
@@ -101,40 +80,31 @@ An existing property in the property panel can be hidden by getting the property
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-```cshtml
-<div>
-    @Html.EJS().FormBuilder("form-builder-control").Render()
-</div>
-<script>
-    setTimeout(function () {
-        var el = document.getElementById('form-builder-control');
+{% tabs %}
 
-        var fbInstance = el.ej2_instances[0];
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-builder/property-panel-getproperty/razor %}
+{% endhighlight %}
 
-        fbInstance.getProperty('textarea', "label").visible = false;
-        fbInstance.refresh();
-    }, 100);
-</script>
-```
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/form-builder/property-panel-getproperty/controller.cs %}
+{% endhighlight %}
+
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-```cshtml
+{% tabs %}
 
-<ejs-form-builder id="form-builder-control"></ejs-form-builder>
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-builder/property-panel-getproperty/razor %}
+{% endhighlight %}
 
-<script>
-    setTimeout(function () {
-        var el = document.getElementById('form-builder-control');
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/form-builder/property-panel-getproperty/controller.cs %}
+{% endhighlight %}
 
-        var fbInstance = el.ej2_instances[0];
-
-        fbInstance.getProperty('textarea', "label").visible = false;
-        fbInstance.refresh();
-    }, 100);
-</script>
-
-```
+{% endtabs %}
 
 {% endif %}
 

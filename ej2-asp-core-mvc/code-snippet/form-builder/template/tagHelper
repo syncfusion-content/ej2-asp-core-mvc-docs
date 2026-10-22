@@ -1,0 +1,20 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.FormRenderer
+
+<ejs-form-builder schema="ViewBag.FormSchema" id="form-builder-control">
+    <e-form-builder-toolbox-items>
+        <e-form-builder-toolbox-item type="Textbox" template="#inputTemplate">
+        </e-form-builder-toolbox-item>
+    </e-form-builder-toolbox-items>
+</ejs-form-builder>
+
+<!-- Textbox -->
+<script id="inputTemplate" type="text/javascript">
+    <input class="e-input"
+        id="form-renderer-control-${fieldData.id}"
+        name="${fieldData.name}"
+        type="text"
+        placeholder="${fieldData.placeholder}"
+        data-field-id="${fieldData.id}" />
+</script>
