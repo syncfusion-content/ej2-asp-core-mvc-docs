@@ -5,8 +5,6 @@
     @Html.EJS().FormRenderer("form-renderer-control").CustomWidgetSettings(settings =>
     {
         settings.TemplateId("emailTemplate").Template("#inputTemplate").Add();
-        // settings.FieldName("password").Template("#inputTemplate").Add();
-
     }).Schema(ViewBag.FormSchema).Created("onFormRendererCreated").Render()
 </div>
 
