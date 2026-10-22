@@ -1,0 +1,69 @@
+@{
+    panelCellSpacingModel modelValue = new panelCellSpacingModel();
+    modelValue.cellSpacing = new double[] { 5, 5 };
+    var busyIndicatorTemplate = "<span role='status' aria-label='Loading'><svg width='16' height='16' viewBox='0 0 16 16' aria-hidden='true'><circle cx='8' cy='8' r='6' fill='none' stroke='#3b82f6' stroke-width='2' stroke-dasharray='24 12'><animateTransform attributeName='transform' type='rotate' from='0 8 8' to='360 8 8' dur='0.8s' repeatCount='indefinite'/></circle></svg></span>";
+}
+
+<div id='container'>
+    <div id="defaultLayout">
+        <!--  Dashboardlayout element declaration -->
+        <ejs-dashboardlayout id="defaultLayout" columns="5" cellSpacing="@modelValue.cellSpacing">
+            <e-dashboardlayout-panels>
+                <e-dashboardlayout-panel id="panel-0" sizeX="1" sizeY="1" row="0" col="0" header="Panel 0" showBusyIndicator="true" busyIndicatorTemplate="@busyIndicatorTemplate" content="<div>Loading...</div>">
+                </e-dashboardlayout-panel>
+                <e-dashboardlayout-panel id="panel-1" sizeX="3" sizeY="2" row="0" col="1" header="Panel 1" showBusyIndicator="true" busyIndicatorTemplate="@busyIndicatorTemplate" content="<div>Loading...</div>">
+                </e-dashboardlayout-panel>
+                <e-dashboardlayout-panel id="panel-2" sizeX="1" sizeY="3" row="0" col="4" header="Panel 2" showBusyIndicator="true" busyIndicatorTemplate="@busyIndicatorTemplate" content="<div>Loading...</div>">
+                </e-dashboardlayout-panel>
+                <e-dashboardlayout-panel id="panel-3" sizeX="1" sizeY="1" row="1" col="0" header="Panel 3" showBusyIndicator="true" busyIndicatorTemplate="@busyIndicatorTemplate" content="<div>Loading...</div>">
+                </e-dashboardlayout-panel>
+                <e-dashboardlayout-panel id="panel-4" sizeX="2" sizeY="1" row="2" col="0" header="Panel 4" showBusyIndicator="true" busyIndicatorTemplate="@busyIndicatorTemplate" content="<div>Loading...</div>">
+                </e-dashboardlayout-panel>
+                <e-dashboardlayout-panel id="panel-5" sizeX="1" sizeY="1" row="2" col="2" header="Panel 5" showBusyIndicator="true" busyIndicatorTemplate="@busyIndicatorTemplate" content="<div>Loading...</div>">
+                </e-dashboardlayout-panel>
+                <e-dashboardlayout-panel id="panel-6" sizeX="1" sizeY="1" row="2" col="3" header="Panel 6" showBusyIndicator="true" busyIndicatorTemplate="@busyIndicatorTemplate" content="<div>Loading...</div>">
+                </e-dashboardlayout-panel>
+            </e-dashboardlayout-panels>
+        </ejs-dashboardlayout>
+        <!-- end of dashboardlayout element -->
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Create instances for dashboardlayout element
+        var dashboardObject = document.getElementById('defaultLayout').ej2_instances[0];
+        setTimeout(function () {
+            dashboardObject.panels.forEach(function (panel) {
+                panel.showBusyIndicator = false;
+                panel.content = '<div>Data Loaded Successfully</div>';
+            });
+            dashboardObject.dataBind();
+        }, 5000);
+    });
+</script>
+
+<style>
+    /* DashboardLayout element styles  */
+    #container {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    #defaultLayout .e-panel .e-panel-container .content {
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        line-height: 90px;
+    }
+
+    #defaultLayout .e-panel {
+        transition: none !important;
+    }
+
+    #defaultLayout .e-panel .e-panel-content {
+        align-content: center;
+        text-align: center;
+    }
+</style>
