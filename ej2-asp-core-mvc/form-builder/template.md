@@ -73,13 +73,13 @@ The properties of the third party components can be added to the property panel 
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-When the form schema is exported, the template itself is not included in the schema. However, a [templateId](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_TemplateId) property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `TemplateId` property of `ToolboxItems`.
+When the form schema is exported, the template itself is not included in the schema. However, a [templateId](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_TemplateId) property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `TemplateId` property of [ToolboxItems](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_ToolboxItems).
 
 In Form Renderer, additional configuration is required as described in the [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/form-renderer/template) to render templates in the form.
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-When the form schema is exported, the template itself is not included in the schema. However, a [templateId](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_TemplateId) property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `templateId` property of `toolboxItems`.
+When the form schema is exported, the template itself is not included in the schema. However, a [templateId](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.ToolboxItemSetting.html#Syncfusion_EJ2_FormBuilder_ToolboxItemSetting_TemplateId) property is added to the form schema to notify Form Renderer that a template is mapped to the corresponding element. This value is set through the `templateId` property of [toolboxItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_ToolboxItems).
 
 In Form Renderer, additional configuration is required as described in the [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/form-renderer/template) to render templates in the form.
 

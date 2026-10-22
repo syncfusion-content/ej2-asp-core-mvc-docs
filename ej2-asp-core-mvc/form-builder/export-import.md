@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting and Importing in ##Platform_Name## Form Builder control | Syncfusion
-description: Learn how to export and import in the ##Platform_Name## Form Builder control. Use export to reuse the generated form schema in Form Renderer, and import to continue editing an existing schema in Form Builder.platform: ej2-asp-core-mvc
+description: Learn how to export and import in the ##Platform_Name## Form Builder control. Use export to reuse the generated form schema in Form Renderer, and import to continue editing an existing schema in Form Builder.
 platform: ej2-asp-core-mvc
 control: Exporting and Importing
 publishingplatform: ##Platform_Name##
@@ -63,15 +63,15 @@ The output will appear as follows:
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-To import a form, assign the exported schema to the `Schema` property of the Form Builder. This loads the form definition into the builder so that you can continue editing it.
+To import a form, assign the exported schema to the [Schema](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_Schema) property of the Form Builder. This loads the form definition into the builder so that you can continue editing it.
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-To import a form, assign the exported schema to the `schema` property of the Form Builder. This loads the form definition into the builder so that you can continue editing it.
+To import a form, assign the exported schema to the [schema](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_Schema) property of the Form Builder. This loads the form definition into the builder so that you can continue editing it.
 
 {% endif %}
 
-The following example shows how to use the same schema for both export and import scenarios.
+The following example shows how to import a schema object to the Form Builder.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 

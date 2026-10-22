@@ -2,4 +2,4 @@
 @model IndexModel
 @using Syncfusion.EJ2.FormRenderer
 
-<ejs-form-builder id="form-builder-control" allowExport="false"></ejs-form-builder>
+<ejs-form-builder id="form-builder-control" schema="@ViewBag.FormSchema"></ejs-form-builder>

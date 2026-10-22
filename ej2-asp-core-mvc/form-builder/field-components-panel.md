@@ -80,11 +80,11 @@ The **Layout** category contains containers that group other components. Layout 
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-The **Templates** tab (available in Developer mode only) displays a flat list of pre-built form templates that you can drag and drop onto the canvas. These templates provide ready-made form layouts to help you quickly get started or add common scenarios to your form. You can also customize the available templates using the `FormTemplates` property.
+The **Templates** tab (available in Developer mode only) displays a flat list of pre-built form templates that you can drag and drop onto the canvas. These templates provide ready-made form layouts to help you quickly get started or add common scenarios to your form. You can also customize the available templates using the [FormTemplates](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_FormTemplates) property.
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-The **Templates** tab (available in Developer mode only) displays a flat list of pre-built form templates that you can drag and drop onto the canvas. These templates provide ready-made form layouts to help you quickly get started or add common scenarios to your form. You can also customize the available templates using the `formTemplates` property.
+The **Templates** tab (available in Developer mode only) displays a flat list of pre-built form templates that you can drag and drop onto the canvas. These templates provide ready-made form layouts to help you quickly get started or add common scenarios to your form. You can also customize the available templates using the [formTemplates](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_FormTemplates) property.
 
 {% endif %}
 
@@ -129,11 +129,11 @@ The output will appear as follows:
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-The form fields in the toolbox can be customized using the `ToolboxCategories` property. 
+The form fields in the toolbox can be customized using the [ToolboxCategories](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_ToolboxCategories) property. 
 
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-The form fields in the toolbox can be customized using the `toolboxCategories` property. 
+The form fields in the toolbox can be customized using the [toolboxCategories](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_ToolboxCategories) property. 
 
 {% endif %}
 

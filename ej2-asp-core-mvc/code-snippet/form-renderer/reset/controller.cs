@@ -14,7 +14,25 @@ public class HomeController : Controller
                 ["emailAddress"] = new TextboxProperty { Id = "t1", Name = "emailAddress", Type = "string", Label = "Email Address", TextboxType = "email", Required = true, Widget = "textbox" },
                 ["password"] = new TextboxProperty { Id = "t2", Name = "password", Type = "string", Label = "Password", TextboxType = "password", Required = true, MinLength = 6, Widget = "textbox" },
                 ["rememberMe"] = new CheckboxProperty { Id = "c1", Name = "rememberMe", Type = "boolean", Label = "Remember Me", Widget = "checkbox" },
-                ["reset"] = new SubmitButtonProperty { Id = "reset_button_initial", Name = "defaultFormreset", Type = "button", Label = "Reset", ButtonType = "reset", Widget = "button", Style = "primary", Disabled = false, Size = "Bigger" }
+                ["reset"] = new SubmitButtonProperty
+                {
+                    Id = "reset_button_initial",
+                    Name = "defaultFormreset",
+                    Type = "button",
+                    Label = "Reset",
+                    ButtonType = "reset",
+                    Widget = "button",
+                    Style = "primary",
+                    Disabled = false,
+                    Size = "Bigger",
+                    AllowMultiple = true,
+                    Gap = "16px",
+                    ButtonsGroups = new List<ButtonGroup>
+                    {
+                        new ButtonGroup { Label = "Reset", Type = "reset", Style = "primary", IconCss = "", IconPosition = "Left", Disabled = false },
+                        new ButtonGroup { Label = "Submit", Type = "submit", Style = "primary", IconCss = "", IconPosition = "Left", Disabled = false }
+                    }
+                }
             },
             Layout = new List<LayoutNode>
             {
@@ -51,6 +69,18 @@ public class SubmitButtonProperty : BaseProperty
 {
     [JsonProperty("buttonType")] public string ButtonType { get; set; }
     [JsonProperty("style")] public string Style { get; set; }
+    [JsonProperty("disabled")] public bool Disabled { get; set; }
+    [JsonProperty("allowMultiple")] public bool AllowMultiple { get; set; }
+    [JsonProperty("gap")] public string Gap { get; set; }
+    [JsonProperty("buttonsGroups")] public List<ButtonGroup> ButtonsGroups { get; set; }
+}
+public class ButtonGroup
+{
+    [JsonProperty("label")] public string Label { get; set; }
+    [JsonProperty("type")] public string Type { get; set; }
+    [JsonProperty("style")] public string Style { get; set; }
+    [JsonProperty("iconCss")] public string IconCss { get; set; }
+    [JsonProperty("iconPosition")] public string IconPosition { get; set; }
     [JsonProperty("disabled")] public bool Disabled { get; set; }
 }
 public class Schema
