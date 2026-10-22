@@ -10,7 +10,11 @@ documentation: ug
 
 # Form Schema in ##Platform_Name## Form Renderer component
 
-The Form Renderer is a schema-driven component. Everything the form renders — fields, layout, validation, conditional logic, and expression values — is declared in a single JSON object called the **form schema**, and that schema is passed to the component through the `schema` property.
+{% if page.publishingplatform == "aspnet-mvc" %}
+The Form Renderer is a schema-driven component. Everything the form renders — fields, layout, validation, conditional logic, and expression values — is declared in a single JSON object called the **form schema**, and that schema is passed to the component through the [schema](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_Schema) property.
+{% elsif page.publishingplatform == "aspnet-core" %}
+The Form Renderer is a schema-driven component. Everything the form renders — fields, layout, validation, conditional logic, and expression values — is declared in a single JSON object called the **form schema**, and that schema is passed to the component through the [schema](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_Schema) property.
+{% endif %}
 
 ```html
 <ejs-form-renderer id="form-renderer-control" :schema="formSchema"></ejs-form-renderer>
