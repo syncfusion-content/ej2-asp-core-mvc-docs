@@ -66,6 +66,20 @@ N> You can use theme files in the **customized** folder if you don't want google
 
 3. Run the application and it will load the resources with application required controls.
 
+## Download Separate Individual & Dependent Scripts
+
+In the Syncfusion Custom Resource Generator (CRG), there is a checkbox labeled **Individual scripts**.
+
+When this checkbox is selected along with the desired component(s), the downloaded resources will include the component's script file and its dependent scripts as separate individual files (rather than a combined bundle). 
+
+If the **Minified** option is selected, each file will be provided in its minified version (e.g., `.min.js`); otherwise, the full unminified versions will be downloaded separately.
+
+![Individual scripts checkbox](images/individual-script.png)
+
+The image below shows the individual script files for the selected component and its dependencies separately.
+
+![individual scripts and dependencies](images/dependent-scripts.png)
+
 ## Import previously generated settings into the CRG
 
 To add more controls or upgrade the latest Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC library resources, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
