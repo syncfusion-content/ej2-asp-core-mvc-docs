@@ -13,9 +13,13 @@ documentation: ug
 Validations make sure a form only accepts values that satisfy the rules declared in the schema. The Form Renderer runs validations declaratively — every rule lives next to the field it constrains, so the form's behavior is fully described by the JSON schema and no hand-written validator is needed.
 
 Validation runs in two situations:
-
-* **On submit** — when the user clicks a `buttonType: "submit"` button. The renderer checks every visible, enabled field. If any rule fails, the `submit` event will be raised with `isValid` argument with `false` as value and the failing field shows an error message.
+{% if page.publishingplatform == "aspnet-mvc" %}
+* **On submit** — when the user clicks a `buttonType: "submit"` button. The renderer checks every visible, enabled field. If any rule fails, the [submit](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_OnSubmit) event will be raised with `isValid` argument with `false` as value and the failing field shows an error message.
 * **On change** — for the most common rules, the renderer re-runs the validation as soon as the field's value changes, so the user sees errors clear in real time instead of waiting for submit.
+{% elsif page.publishingplatform == "aspnet-core" %}
+* **On submit** — when the user clicks a `buttonType: "submit"` button. The renderer checks every visible, enabled field. If any rule fails, the [submit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormRenderer.FormRenderer.html#Syncfusion_EJ2_FormRenderer_FormRenderer_OnSubmit) event will be raised with `isValid` argument with `false` as value and the failing field shows an error message.
+* **On change** — for the most common rules, the renderer re-runs the validation as soon as the field's value changes, so the user sees errors clear in real time instead of waiting for submit.
+{% endif %}
 
 Validations come in two flavors:
 
