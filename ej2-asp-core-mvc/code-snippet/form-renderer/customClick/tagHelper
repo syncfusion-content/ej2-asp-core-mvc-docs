@@ -1,0 +1,14 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.FormRenderer
+
+<ejs-form-renderer id="form-renderer-control" schema="ViewBag.FormSchema" buttonClick="onButtonClick"></ejs-form-renderer>
+
+<script>
+    function onButtonClick(args) {
+        // args.fieldName -> string
+        // args.label     -> string
+        // args.event     -> original button click event
+        console.log(args);
+    }
+</script>
