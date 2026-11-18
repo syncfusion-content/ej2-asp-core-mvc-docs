@@ -36,6 +36,10 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
+> **Note:**  HTML Helper rendering support is applicable only to the overall Syncfusion.EJ2.AspNet.Core NuGet package. Individual component-wise NuGet packages do not support rendering controls using HTML helpers.
+
+N> Support for HTML helpers was removed from version 34.1.29 and was retained in version 35.1.46.
+
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core namespace
 
 Open `~/Views/_ViewImports.cshtml` file and add the `Syncfusion.EJ2` namespace.
