@@ -38,7 +38,7 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are av
 
 > **Note:**  HTML Helper rendering support is applicable only to the overall Syncfusion.EJ2.AspNet.Core NuGet package. Individual component-wise NuGet packages do not support rendering controls using HTML helpers.
 
-N> Support for HTML helpers was removed from Syncfusion.EJ2.AspNet.Core version 34.1.29 and was retained in version 35.1.46.
+N> Support for HTML helpers was removed from Syncfusion.EJ2.AspNet.Core version 34.1.29 and this support has been retained and is available again from v35.1.46 onward
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core namespace
 
