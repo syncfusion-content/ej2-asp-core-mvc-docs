@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.FormBuilder
+
+<div>
+    @Html.EJS().FormBuilder("form-builder-control").Render()
+</div>
+<script>
+    setTimeout(function () {
+        var el = document.getElementById('form-builder-control');
+
+        var fbInstance = el.ej2_instances[0];
+
+        fbInstance.setProperty('textarea', {
+            key: 'enableRtl',
+            label: 'Enable RTL',
+            type: 'boolean',
+            default: false
+        });
+    }, 100);
+</script>

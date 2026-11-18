@@ -1,0 +1,14 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.FormRenderer
+
+<ejs-form-renderer id="form-renderer-control" schema="ViewBag.FormSchema" change="onChange"></ejs-form-renderer>
+
+<script>
+    function onChange(args) {
+        // args.fieldName -> string
+        // args.label     -> string
+        // args.value     -> FieldDataType
+        console.log(args);
+    }
+</script>

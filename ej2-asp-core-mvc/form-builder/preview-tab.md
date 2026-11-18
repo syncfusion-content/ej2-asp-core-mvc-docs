@@ -22,27 +22,36 @@ You can switch to the **Preview** tab to see a live preview of the form. This vi
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-The preview option can be disabling by setting the `EnablePreview` property to `false`. The default value is `true`.
+The preview option can be disabling by setting the [EnablePreview](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_EnablePreview) property to `false`. The default value is `true`.
 
-```cshtml
-@using Syncfusion.EJ2
-@using Syncfusion.EJ2.FormBuilder
+{% tabs %}
 
-<div>
-    @Html.EJS().FormBuilder("form-builder-control").EnablePreview(false).Render()
-</div>
-```
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-builder/preview/razor %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/form-builder/preview/controller.cs %}
+{% endhighlight %}
+
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-core" %}
 
-The preview option can be disabling by setting the `enablePreview` property to `false`. The default value is `true`.
+The preview option can be disabling by setting the [enablePreview](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FormBuilder.FormBuilder.html#Syncfusion_EJ2_FormBuilder_FormBuilder_EnablePreview) property to `false`. The default value is `true`.
+ 
+{% tabs %}
 
-```cshtml
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/form-builder/preview/razor %}
+{% endhighlight %}
 
-<ejs-form-builder id="form-builder-control"
-                  enablePreview="false">
-</ejs-form-builder>
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/form-builder/preview/controller.cs %}
+{% endhighlight %}
 
-```
+{% endtabs %}
+
 {% endif %}
 
 The output will appear as follows:
