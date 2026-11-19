@@ -18,6 +18,7 @@ This section briefly explains about how to include the [ASP.NET Core AI AssistVi
 
 | .NET version | Minimum Visual Studio version |
 |--------------|------------------------------|
+| .NET 11.0 | Visual Studio 2026 18.0.0 or later |
 | .NET 10.0 | Visual Studio 2026 18.0.0 or later |
 | .NET 9.0 | Visual Studio 2022 17.12.0 or later |
 | .NET 8.0 | Visual Studio 2022 17.8.0 or later |
