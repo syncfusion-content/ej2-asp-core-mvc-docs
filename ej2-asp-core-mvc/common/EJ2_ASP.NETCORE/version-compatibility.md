@@ -14,6 +14,7 @@ The following table represents the supported .NET and .NET Core versions by diff
 
 | Version | Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls Version |
 | ------------- | ------------- |
+| [.NET 11.0](https://dotnet.microsoft.com/en-us/download/dotnet/11.0) | 35.1.46 and above |
 | [.NET 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) | 31.2.10 and above |
 | [.NET 9.0](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) | 27.2.2 and above |
 | [.NET 8.0](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-8/) | 23.1.36 and above |
