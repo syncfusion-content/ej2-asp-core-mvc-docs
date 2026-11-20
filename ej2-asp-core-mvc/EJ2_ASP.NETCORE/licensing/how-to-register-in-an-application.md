@@ -42,9 +42,9 @@ N> * Place the license key between double quotes. Also, ensure that Syncfusion.L
 * Ensure the `Syncfusion.Licensing` namespace is available in the file where you register the license key.
 * Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
 
-## For ASP.NET Core application using .NET 8.0 or .NET 9.0
+## For ASP.NET Core application using .NET 8.0, .NET 9.0, .NET 10.0, or .NET 11.0
 
-Register the license key in the `Program.cs` file if you created the ASP.NET Core web application with Visual Studio 2022 and .NET 8.0 or .NET 9.0.
+Register the license key in the `Program.cs` file if you created the ASP.NET Core web application with .NET 8.0, .NET 9.0, .NET 10.0, or .NET 11.0.
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" %}
