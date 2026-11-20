@@ -42,10 +42,10 @@ The following steps are used to create the **Syncfusion<sup style="font-size:70%
 
     | **Project Type** | **.NET Core Version** | **Themes** | **Assets From** |
     |---------------------|--------------------------|---------------|--------------------|
-    | ASP.NET Core Web App | .NET 8.0, .NET 9.0, and .NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
-    | ASP.NET Core Web App (Model-View-Controller) | .NET 8.0, .NET 9.0, and .NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
-    | Angular | .NET 8.0, .NET 9.0, and .NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
-    | React | .NET 8.0, .NET 9.0, and .NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
+    | ASP.NET Core Web App | .NET 8.0, .NET 9.0, .NET 10.0, and .NET 11.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
+    | ASP.NET Core Web App (Model-View-Controller) | .NET 8.0, .NET 9.0, .NET 10.0, and .NET 11.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
+    | Angular | .NET 8.0, .NET 9.0, .NET 10.0, and .NET 11.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
+    | React | .NET 8.0, .NET 9.0, .NET 10.0, and .NET 11.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
 
     > The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Project Template provides ASP.NET Core, Angular, and React project templates support from v17.1.0.47.
 
